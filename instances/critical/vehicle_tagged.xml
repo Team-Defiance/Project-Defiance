@@ -1,0 +1,71 @@
+<instance description="" template="critical">
+	<group name="critical_bag">
+		<group name="critical_indicators">
+			<enum name="indicator_01" value="vehicle_crew_shocked" />
+			<enum name="indicator_02" value="" />
+			<enum name="indicator_03" value="" />
+		</group>
+		<string name="description" value="Vehicle visible in FOW, +25% damage taken, -25% armor. " />
+		<bool name="is_unique" value="True" />
+		<group name="kicker_message">
+			<locstring name="message" value="180" mod="84428889d71d41a48e2eff09c2425d54" />
+			<float name="message_colour_a" value="255" />
+			<float name="message_colour_b" value="0" />
+			<float name="message_colour_g" value="0" />
+			<float name="message_colour_r" value="255" />
+			<float name="message_seconds" value="5" />
+			<float name="offset_x" value="0" />
+			<float name="offset_y" value="0" />
+		</group>
+		<enum name="target" value="tp_entity" />
+		<list name="actions">
+			<template_reference name="action" value="action\timed_action">
+				<float name="duration" value="15" />
+				<bool name="fire_and_forget" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\slot_item_add">
+						<instance_reference name="slot_item" value="slot_item\british\hammer_vision_item_mp" />
+						<bool name="permanent" value="False" />
+						<uniqueid name="id" value="1073743340" />
+					</template_reference>
+					<template_reference name="action" value="action\apply_modifiers_action">
+						<float name="duration" value="15" />
+						<bool name="permanent" value="False" />
+						<list name="modifiers">
+							<template_reference name="modifier" value="modifiers\armor_modifier">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.75" />
+								<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\received_damage_modifier">
+								<enum name="application_type" value="apply_to_entity" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="1.25" />
+								<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="1073743342" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073743341" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+		</list>
+		<template_reference name="ui_info" value="tables\ui_info">
+			<locstring name="screen_name" value="186" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="185" mod="84428889d71d41a48e2eff09c2425d54" />
+			<icon name="icon_name" value="Icons_criticals_temp_stun" />
+			<string name="hotkey_name" value="" />
+		</template_reference>
+		<bool name="repairable" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="1073741824" />
+</instance>
