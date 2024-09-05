@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\structures\command_post\command_post" />
+			<file name="animator" value="armies\german\structures\base_building_4\base_building_4" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -210,7 +210,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="20" />
+					<float name="fuel" value="45" />
 					<float name="manpower" value="175" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -262,10 +262,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Orders in Stug III, Flakpanzer IV Ostwind, Panzer V &quot;Panther&quot; Medium Tank, Panzerwerfer 42 Rocket Halftrack." />
+			<string name="extra_text_deprecated" value="Provides access to advanced vehicle augmentation as well as production of the Panther and Panzerwerfer 42" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11007127" />
+			<locstring name="help_text" value="825" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="S" />
 			<icon name="icon_name" value="Icons_buildings_building_german_hintere_panzerwerk" />
 			<enum name="kill_type" value="building" />
@@ -325,7 +325,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hintere_panzerwerk_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_german_schweres_kriegswerk_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -490,7 +490,19 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="830" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
 				</template_reference>
 			</list>
 		</template_reference>
