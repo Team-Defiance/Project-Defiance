@@ -227,10 +227,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Grants Manpower and can upgrade to escalate Battle Phases." />
+			<string name="extra_text_deprecated" value="Allows production of Pioneers, Grenadiers and Panzergrenadiers. Research Battle Phases to unlock additional equipment, units and construction options." />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="2099300" />
+			<locstring name="help_text" value="823" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="axis_foundation_hq" />
 			<icon name="icon_name" value="Icons_buildings_building_german_hq" />
 			<enum name="kill_type" value="building" />
@@ -244,7 +244,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="2099301" />
+			<locstring name="screen_name" value="822" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -282,7 +282,7 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_german_headquarters_s_portrait" />
 			<locstring name="brief_text" value="38" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="extra_text" value="11041840" />
+			<locstring name="extra_text" value="824" mod="84428889d71d41a48e2eff09c2425d54" />
 			<bool name="show_in_build_log" value="True" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_entity_appearance" value="True" />
@@ -290,7 +290,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hq_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hintere_panzerwerk_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -662,6 +662,12 @@
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\panzergrenadiere\panzergrenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="14" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>

@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="7" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007013" />
+						<locstring name="help_text" value="811" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="G" />
 						<icon name="icon_name" value="Icons_units_unit_german_grenadier" />
 						<bool name="minimap_team_only" value="False" />
@@ -210,7 +210,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\add_to_squad_loadout_action">
 							<uniqueid name="id" value="1073745118" />
-							<instance_reference name="unit_type" value="ebps\races\german\soldiers\grenadiere\grenadier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="unit_type" value="ebps\races\german\soldiers\grenadiere\grenadier_squadlead_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
