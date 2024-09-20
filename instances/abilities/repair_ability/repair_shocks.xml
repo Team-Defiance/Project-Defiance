@@ -172,7 +172,7 @@
 													<uniqueid name="id" value="1073745988" />
 												</template_reference>
 												<template_reference name="action" value="action\heal_action">
-													<float name="amount" value="1.35" />
+													<float name="amount" value="1.3" />
 													<group name="target_info">
 														<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 															<list name="target_infos">
@@ -217,7 +217,7 @@
 													</list>
 													<list name="action_table">
 														<template_reference name="action" value="action\heal_action">
-															<float name="amount" value="0.2" />
+															<float name="amount" value="0.8" />
 															<group name="target_info">
 																<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 																	<list name="target_infos">
@@ -583,11 +583,6 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="638" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="34" />

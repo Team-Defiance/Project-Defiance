@@ -1008,7 +1008,7 @@
 			<bool name="can_attack_occupant" value="True" />
 			<bool name="can_do_facing_on_load" value="False" />
 			<bool name="despawn_on_load" value="False" />
-			<bool name="disable_area_effect_on_overflow_slot" value="False" />
+			<bool name="disable_area_effect_on_overflow_slot" value="True" />
 			<bool name="disable_unload" value="False" />
 			<bool name="disallow_load_command" value="False" />
 			<bool name="enable_trigger_abilities_in_hold" value="True" />
@@ -1020,7 +1020,7 @@
 			<float name="min_hold_seconds" value="1" />
 			<float name="num_slots" value="7" />
 			<float name="num_squad_slots" value="1" />
-			<float name="percent_unload_on_death" value="0.5" />
+			<float name="percent_unload_on_death" value="0" />
 			<bool name="revert_ownership" value="False" />
 			<bool name="scavenge_enabled" value="False" />
 			<group name="scavenge_resource">

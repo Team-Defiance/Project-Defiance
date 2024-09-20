@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.725" />
-			<float name="far" value="0.6" />
-			<float name="mid" value="0.65" />
+			<float name="far" value="0.675" />
+			<float name="mid" value="0.713" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="14" />
-			<float name="min" value="14" />
+			<float name="max" value="12" />
+			<float name="min" value="12" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -357,7 +357,7 @@
 				<float name="near" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="5" />
+				<float name="max" value="4" />
 				<float name="min" value="4" />
 			</group>
 			<list name="on_reload_actions">
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="1.5" />
+			<float name="near" value="1.45" />
 			<float name="far" value="1.25" />
-			<float name="mid" value="1.4" />
+			<float name="mid" value="1.35" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

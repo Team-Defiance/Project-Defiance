@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\structures\base_building_3\base_building_3" />
+			<file name="animator" value="armies\german\structures\command_post\command_post" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -163,6 +163,18 @@
 			<float name="spacing_distance" value="0" />
 			<bool name="self_construct" value="False" />
 			<list name="on_construction_actions">
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747013" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\mech_beasts_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747014" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_equipment_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747015" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_infantry_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -667,7 +679,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -687,6 +699,7 @@
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\demolishable_ext">

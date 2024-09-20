@@ -16,7 +16,7 @@
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007025" />
+						<locstring name="screen_name" value="866" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="Panzer Grenadier" />
 						<group name="speaker_generic">
 							<string name="code_1" value="xs" />
@@ -233,7 +233,7 @@
 								</template_reference>
 								<template_reference name="requirement" value="requirements\required_squad_veterancy">
 									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
+									<locstring name="ui_name" value="1092" mod="84428889d71d41a48e2eff09c2425d54" />
 									<float name="veterancy_rank" value="1" />
 								</template_reference>
 							</list>

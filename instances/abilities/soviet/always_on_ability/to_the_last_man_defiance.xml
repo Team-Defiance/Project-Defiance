@@ -50,7 +50,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.95" />
+									<float name="value" value="0.925" />
 									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 								</template_reference>
 							</list>
@@ -100,7 +100,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.95" />
+											<float name="value" value="0.925" />
 											<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 										</template_reference>
 									</list>
@@ -150,7 +150,7 @@
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="" />
 													<enum name="usage_type" value="multiplication" />
-													<float name="value" value="0.95" />
+													<float name="value" value="0.925" />
 													<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 												</template_reference>
 											</list>
@@ -200,7 +200,7 @@
 															<string name="modifier_id" value="" />
 															<string name="target_type_name" value="" />
 															<enum name="usage_type" value="multiplication" />
-															<float name="value" value="0.95" />
+															<float name="value" value="0.925" />
 															<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 														</template_reference>
 													</list>
@@ -289,7 +289,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.95" />
+									<float name="value" value="0.925" />
 									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 								</template_reference>
 							</list>
@@ -389,6 +389,14 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="937" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="34" />

@@ -775,6 +775,12 @@
 					<instance_reference name="squad" value="sbps\races\soviet\soldiers\soviet_hmg_squad\dshk38_hmgsquad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="14" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\soviet\vehicles\m3a1_scout_car_squad\m3a1_scoutcar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
 			</list>
 			<list name="bonus_xp_from_hold_list">
 			</list>
@@ -789,7 +795,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\soviet\research\hq_healing_aura_mp" />
+				<instance_reference name="upgrade" value="upgrade\soviet\research\hq_medics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\repair_station_ext">

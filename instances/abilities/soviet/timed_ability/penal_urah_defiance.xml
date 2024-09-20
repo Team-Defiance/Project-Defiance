@@ -214,7 +214,7 @@
 		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="" />
+		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -241,7 +241,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="796" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11055005" />
+			<locstring name="help_text" value="894" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="H" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_oorah" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
@@ -294,6 +294,17 @@
 								<float name="veterancy_rank" value="5" />
 							</template_reference>
 						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="899" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="veterancy_rank" value="4" />
 					</template_reference>
 				</list>
 			</template_reference>
