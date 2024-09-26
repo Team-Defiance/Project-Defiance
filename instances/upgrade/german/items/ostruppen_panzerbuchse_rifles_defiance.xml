@@ -30,12 +30,12 @@
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="1" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="1668" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1667" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="1670" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1669" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="D" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_soviet_ptrs_41" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1666" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="1668" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
@@ -45,12 +45,12 @@
 			<template_reference name="action" value="action\slot_item_add">
 				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073750873" />
+				<uniqueid name="id" value="1073750893" />
 			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
 				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073750874" />
+				<uniqueid name="id" value="1073750894" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -68,6 +68,14 @@
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\german\items\ostruppen_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="1677" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

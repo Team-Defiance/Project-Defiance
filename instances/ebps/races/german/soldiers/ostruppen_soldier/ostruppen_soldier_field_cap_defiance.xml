@@ -27,7 +27,7 @@
 					<string name="state_machine_name" value="RoleVariation" />
 					<string name="undo_action_state_name" value="" />
 					<bool name="retrigger" value="False" />
-					<uniqueid name="id" value="1073750772" />
+					<uniqueid name="id" value="1073750803" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -523,10 +523,10 @@
 								<bool name="apply_to_entities_in_squad" value="False" />
 								<bool name="trigger_publish_event" value="False" />
 								<instance_reference name="upgrade" value="upgrade\german\commander\ability\can_camouflage" />
-								<uniqueid name="id" value="1073750775" />
+								<uniqueid name="id" value="1073750804" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073750776" />
+						<uniqueid name="id" value="1073750805" />
 						<bool name="fire_and_forget_non_global" value="False" />
 						<template_reference name="ui_help_text" value="tables\help_text_phrase">
 							<int name="phrase_order" value="0" />
@@ -549,7 +549,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073750777" />
+						<uniqueid name="id" value="1073750806" />
 					</template_reference>
 					<template_reference name="action" value="action\requirement_action">
 						<bool name="check_self" value="False" />
@@ -572,10 +572,10 @@
 								<bool name="apply_to_entities_in_squad" value="False" />
 								<bool name="trigger_publish_event" value="False" />
 								<instance_reference name="upgrade" value="upgrade\german\commander\ability\can_camouflage" />
-								<uniqueid name="id" value="1073750778" />
+								<uniqueid name="id" value="1073750807" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073750779" />
+						<uniqueid name="id" value="1073750808" />
 						<bool name="fire_and_forget_non_global" value="False" />
 						<template_reference name="ui_help_text" value="tables\help_text_phrase">
 							<int name="phrase_order" value="0" />
@@ -598,7 +598,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073750780" />
+						<uniqueid name="id" value="1073750809" />
 					</template_reference>
 				</list>
 			</group>
@@ -616,7 +616,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073750781" />
+						<uniqueid name="id" value="1073750810" />
 					</template_reference>
 				</list>
 			</group>
@@ -634,7 +634,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073750782" />
+						<uniqueid name="id" value="1073750811" />
 					</template_reference>
 				</list>
 			</group>
@@ -847,7 +847,7 @@
 							<float name="deceleration_multiplier" value="0.3" />
 							<float name="pathfinding_size_x" value="0" />
 							<float name="pathfinding_size_y" value="0" />
-							<uniqueid name="id" value="1073750790" />
+							<uniqueid name="id" value="1073750812" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="1" />
@@ -863,10 +863,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073750791" />
+							<uniqueid name="id" value="1073750813" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073750792" />
+					<uniqueid name="id" value="1073750814" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -902,5 +902,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742089" />
+	<uniqueid name="pbgid" value="1073742091" />
 </instance>
