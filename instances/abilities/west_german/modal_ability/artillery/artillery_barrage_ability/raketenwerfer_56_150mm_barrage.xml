@@ -46,28 +46,18 @@
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\artillery_attack">
-							<bool name="disable_parent_hardpoint" value="False" />
-							<group name="filter_weapons">
-								<instance_reference name="weapon_01" value="" />
-								<instance_reference name="weapon_02" value="" />
-								<instance_reference name="weapon_03" value="" />
-							</group>
-							<float name="num_salvo" value="6" />
-							<float name="use_hardpoint" value="2" />
-							<bool name="face_to_target" value="True" />
-							<uniqueid name="id" value="1073748197" />
-							<bool name="target_override_direction_times_max_range" value="False" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073748198" />
-					<bool name="can_prevent_refund" value="True" />
+				<template_reference name="action" value="action\artillery_attack">
+					<bool name="disable_parent_hardpoint" value="False" />
+					<group name="filter_weapons">
+						<instance_reference name="weapon_01" value="" />
+						<instance_reference name="weapon_02" value="" />
+						<instance_reference name="weapon_03" value="" />
+					</group>
+					<float name="num_salvo" value="6" />
+					<float name="use_hardpoint" value="2" />
+					<bool name="face_to_target" value="True" />
+					<uniqueid name="id" value="1073750802" />
+					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -150,7 +140,7 @@
 			<locstring name="extra_text" value="1281" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="1280" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_abilities_ability_british_rp3_he_rocket_barrage" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_rocket_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="1278" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -171,9 +161,9 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_howitzer_barrage" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
 		<float name="ui_reticule_radius_min" value="7.5" />
-		<float name="ui_reticule_radius_max" value="25" />
+		<float name="ui_reticule_radius_max" value="24" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
