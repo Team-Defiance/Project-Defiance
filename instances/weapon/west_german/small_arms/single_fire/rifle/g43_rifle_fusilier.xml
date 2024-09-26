@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.75" />
-			<float name="far" value="0.35" />
-			<float name="mid" value="0.65" />
+			<float name="far" value="0.425" />
+			<float name="mid" value="0.625" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.9" />
+			<float name="accuracy_multiplier" value="0.75" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -430,13 +430,13 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="small_arms" />
-		<string name="name" value="G43 Kurz Carbine" />
+		<string name="name" value="G43 Full Sized Rifle" />
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="mid" value="1.15" />
 			<float name="far" value="1.05" />
-			<float name="near" value="1.4" />
+			<float name="near" value="1.25" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

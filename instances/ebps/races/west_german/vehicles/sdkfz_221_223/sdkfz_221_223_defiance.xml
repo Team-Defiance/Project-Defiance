@@ -23,6 +23,33 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\animator_set_variable">
+					<string name="variable_name" value="acces_frontshow" />
+					<uniqueid name="id" value="1073748256" />
+					<template_reference name="set_variable_option" value="options\action\animator_set_variable\animator_set_variable">
+						<float name="variable_value" value="0" />
+						<float name="variable_increment_per_tick" value="0" />
+						<float name="variable_cap" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_variable">
+					<string name="variable_name" value="acces_jerry" />
+					<uniqueid name="id" value="1073748257" />
+					<template_reference name="set_variable_option" value="options\action\animator_set_variable\animator_set_variable">
+						<float name="variable_value" value="1" />
+						<float name="variable_increment_per_tick" value="0" />
+						<float name="variable_cap" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_variable">
+					<string name="variable_name" value="acces_rear" />
+					<uniqueid name="id" value="1073748258" />
+					<template_reference name="set_variable_option" value="options\action\animator_set_variable\animator_set_variable">
+						<float name="variable_value" value="0" />
+						<float name="variable_increment_per_tick" value="0" />
+						<float name="variable_cap" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -62,8 +89,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_armored_car_sdkfz_222_mp" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="5.4" />
-			<float name="rear_armor" value="4" />
+			<float name="armor" value="9" />
+			<float name="rear_armor" value="4.5" />
 			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

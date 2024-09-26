@@ -470,6 +470,21 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\mgnest_mg42t_dummy_mp" />
 						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="0.5" />
+								<float name="z" value="2.5" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\pillbox_mg42_mp" />
+						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
@@ -482,8 +497,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\concrete_bunker_mg42_mp" />
-				<instance_reference name="upgrade" value="upgrade\german\items\bunker_medic_station_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\concrete_bunker_mg42_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\concrete_bunker_medic_station_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
@@ -491,14 +506,14 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
+						<string name="sync_target_name" value="HeavyMachineGun_Target" />
 						<list name="role_list">
 							<group name="role">
 								<string name="animator_bp" value="armies\german\soldiers\hmg\hmg" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
+								<string name="sync_action_name" value="HMG_Attach_Skeleton" />
 								<bool name="sync_on_create" value="False" />
 								<string name="abandon_event_name" value="" />
 								<string name="animator_bp_female" value="" />

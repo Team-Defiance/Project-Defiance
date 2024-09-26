@@ -53,9 +53,9 @@
 		<group name="starting_resources">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="30" />
-			<float name="manpower" value="280" />
-			<float name="munition" value="30" />
+			<float name="fuel" value="35" />
+			<float name="manpower" value="300" />
+			<float name="munition" value="80" />
 			<float name="popcap" value="0" />
 		</group>
 		<list name="start_actions">
@@ -120,41 +120,20 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\aef_hq_engineer_call_in" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\m10_deploy" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\240mm_offmap_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\elite_vehicle_crews" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_30_caliber_lmg" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\m21_mortar_halftrack_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\time_on_target_artillery" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\p47_rocket_attack" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_defensive_buildings" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\pathfinders_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\air_drop_combat_group" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\greyhound_recon_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_flamethrowers" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\artillery_smoke_barrage" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_flares" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\pathfinders_recon_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\sherman_modifications" />
-			<instance_reference name="ability" value="abilities\aef\timed_ability\commander_ability\raid_tactics" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\airdropped_mines_mp" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\mechanized_group_mp" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\cavalry_riflemen_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\cover_to_cover" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\urban_assault_kit" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\passive_ability\sherman_urban_assault_package" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\paratroopers_paradrop_mp" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\paratroopers_paradrop" />
+			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\m26_pershing_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\mixed_he_wp_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\operation_breakout_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p47_mg_rocket_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="32" />
-				<float name="fuel" value="-1" />
-				<float name="manpower" value="-1" />
-				<float name="munition" value="-1" />
-				<float name="soviet_progression" value="100" />
-				<float name="soviet_227" value="100" />
+				<float name="command" value="20" />
+				<float name="fuel" value="450" />
+				<float name="manpower" value="1750" />
+				<float name="munition" value="800" />
+				<float name="soviet_progression" value="-1" />
+				<float name="soviet_227" value="-1" />
 				<float name="popcap" value="-1" />
 			</template_reference>
 		</group>
@@ -236,9 +215,6 @@
 		<group name="ai_production_info">
 			<list name="base_building_list">
 				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armored_rifle_command_mp" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armor_command_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\company_weapons_pool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\rifle_command_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
@@ -335,10 +311,10 @@
 		<list name="starting_buildings">
 			<group name="starting_building">
 				<string name="key" value="default" />
-				<instance_reference name="building" value="ebps\races\aef\buildings\base_building\aef_base_stamper" />
+				<instance_reference name="building" value="ebps\races\aef\buildings\base_building\aef_custom_base_stamper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>
@@ -347,10 +323,10 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="default_mp" />
-				<instance_reference name="building" value="ebps\races\aef\buildings\base_building\aef_base_stamper" />
+				<instance_reference name="building" value="ebps\races\aef\buildings\base_building\aef_custom_base_stamper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\aef\tier_0\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>
@@ -359,7 +335,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="bunker" />
-				<instance_reference name="building" value="ebps\races\aef\buildings\defensive_structures\aef_mg_nest_perimeter_mp" />
+				<instance_reference name="building" value="ebps\races\aef\buildings\defensive_structures\bunkers\aef_mg_nest_perimeter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">
@@ -402,7 +378,7 @@
 				<instance_reference name="building" value="ebps\races\aef\buildings\base_building\aef_base_stamper" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>

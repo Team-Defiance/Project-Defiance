@@ -19,27 +19,27 @@
 						<locstring name="screen_name" value="1060" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="sniper" />
 						<group name="speaker_generic">
-							<string name="code_1" value="" />
+							<string name="code_1" value="jg" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speaker_specific">
-							<string name="code_1" value="sn" />
+							<string name="code_1" value="jg" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speech_code_2">
-							<string name="code_1" value="sn" />
+							<string name="code_1" value="jg" />
 							<string name="code_2" value="in" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speech_code_3">
-							<string name="code_1" value="snx" />
-							<string name="code_2" value="sni" />
-							<string name="code_3" value="inf" />
+							<string name="code_1" value="jg" />
+							<string name="code_2" value="inf" />
+							<string name="code_3" value="" />
 						</group>
 						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="40" />
+						<int name="ui_priority" value="50" />
 						<bool name="use_random_entity_speaker" value="False" />
 						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_sniper_w_portrait" />
 						<group name="speaker_specific_alt">

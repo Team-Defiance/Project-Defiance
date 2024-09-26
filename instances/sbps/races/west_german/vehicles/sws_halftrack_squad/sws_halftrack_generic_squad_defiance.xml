@@ -231,6 +231,12 @@
 					<instance_reference name="upgrade" value="upgrade\west_german\items\nachtjager_sws_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073747078" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\west_german\items\pioneer_stg44_sws_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073748230" />
+				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>

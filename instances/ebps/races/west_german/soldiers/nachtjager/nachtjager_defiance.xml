@@ -311,19 +311,19 @@
 			<enum name="selection_type" value="squad_select" />
 			<bool name="sloppy_selectable" value="True" />
 			<group name="speaker">
-				<string name="code_1" value="sn" />
-				<string name="code_2" value="" />
+				<string name="code_1" value="jg" />
+				<string name="code_2" value="jg" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_2">
-				<string name="code_1" value="sx" />
-				<string name="code_2" value="sn" />
-				<string name="code_3" value="in" />
+				<string name="code_1" value="jg" />
+				<string name="code_2" value="in" />
+				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="snx" />
-				<string name="code_2" value="sni" />
-				<string name="code_3" value="inf" />
+				<string name="code_1" value="jgr" />
+				<string name="code_2" value="inf" />
+				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_cover">
 				<string name="code_1" value="" />

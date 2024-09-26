@@ -21,10 +21,10 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="45" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="30" />
+			<float name="time_seconds" value="20" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
@@ -56,16 +56,19 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11073206" />
+				<locstring name="ui_name" value="1284" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\west_german\passive\any_structure_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\pioneer_stg44_sws_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_slot_item_size">
+			<template_reference name="required" value="requirements\required_in_territory">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11117660" />
-				<float name="required_free_slot_size" value="2" />
+				<locstring name="ui_name" value="1298" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="in_supply" value="True" />
+				<bool name="is_secured" value="False" />
+				<bool name="is_secured_by_checkpoint" value="False" />
+				<bool name="not_in_transition" value="False" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

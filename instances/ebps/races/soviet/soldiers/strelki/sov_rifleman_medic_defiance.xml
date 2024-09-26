@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="armies\common\base\commonhuman\commonhuman" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\soviet\soldiers\medic\medic" />
+			<file name="animator" value="armies\soviet\soldiers\medic\medic_drip" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -27,6 +27,26 @@
 					<string name="undo_action_state_name" value="" />
 					<bool name="retrigger" value="False" />
 					<uniqueid name="id" value="1073745806" />
+				</template_reference>
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="1" />
+					<instance_reference name="entity_blueprint" value="" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073749896" />
+					<template_reference name="spawn_attached_option" value="options\none">
+					</template_reference>
+					<list name="spawned_entity_actions">
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
 				</template_reference>
 			</list>
 		</template_reference>

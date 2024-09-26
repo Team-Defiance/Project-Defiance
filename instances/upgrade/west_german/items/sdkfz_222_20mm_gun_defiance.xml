@@ -66,13 +66,13 @@
 						<float name="z" value="-0.2" />
 					</group>
 					<enum name="type" value="squad" />
-					<instance_reference name="weapon" value="weapon\axis\small_arms\tank_gun\sdkfz_222_kwk38_20mm__mp" />
+					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<uniqueid name="id" value="1073747977" />
 			</template_reference>
 			<template_reference name="action" value="action\change_weapon">
 				<float name="hardpoint" value="1" />
-				<instance_reference name="weapon" value="weapon\axis\small_arms\tank_gun\sdkfz_222_kwk38_20mm__mp" />
+				<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073747978" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_crew_action">
@@ -151,6 +151,19 @@
 				</list>
 				<uniqueid name="id" value="1073747986" />
 				<bool name="can_prevent_refund" value="True" />
+			</template_reference>
+			<template_reference name="action" value="action\add_ability_action">
+				<uniqueid name="id" value="1073748249" />
+				<instance_reference name="ability_to_add" value="abilities\german\toggle_ability\wehr_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="action" value="action\animator_set_variable">
+				<string name="variable_name" value="acces_rear" />
+				<uniqueid name="id" value="1073748266" />
+				<template_reference name="set_variable_option" value="options\action\animator_set_variable\animator_set_variable">
+					<float name="variable_value" value="1" />
+					<float name="variable_increment_per_tick" value="0" />
+					<float name="variable_cap" value="0" />
+				</template_reference>
 			</template_reference>
 		</list>
 		<list name="requirements">
