@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0.5" />
+				<float name="radius" value="0.7" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
-				<float name="near" value="1" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
-				<float name="near" value="0.5" />
+				<float name="near" value="0.25" />
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.25" />
-				<float name="near" value="0.15" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.525" />
+				<float name="near" value="0.175" />
+				<float name="mid" value="0.35" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="70" />
-				<float name="mid" value="80" />
-				<float name="near" value="90" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="15" />
+				<float name="near" value="65" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -331,7 +331,7 @@
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="shell_heavy_heat" />
+		<string name="fx_munition_name" value="shell_medium_heat" />
 		<string name="fx_tracer_name" value="" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />

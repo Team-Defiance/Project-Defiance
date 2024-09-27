@@ -35,30 +35,30 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4" />
+				<float name="radius" value="5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.1" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.35" />
+				<float name="far" value="0.12" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="0.075" />
+				<float name="far" value="0.06" />
+				<float name="near" value="0.375" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="far" value="2.25" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="1.25" />
+				<float name="far" value="4.5" />
+				<float name="near" value="0.3" />
+				<float name="mid" value="0.8" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="15.19" />
-				<float name="mid" value="16.88" />
-				<float name="near" value="18.75" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="15" />
+				<float name="near" value="65" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1.0023" />
@@ -193,14 +193,14 @@
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.85" />
+				<float name="damage_multiplier" value="0.85" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
-				<float name="accuracy_multiplier" value="1.25" />
-				<float name="damage_multiplier" value="1.25" />
+				<float name="accuracy_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1.5" />
 			</group>
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="120" />
-			<float name="min" value="120" />
+			<float name="max" value="100" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -446,10 +446,10 @@
 		</group>
 		<list name="target_type_table">
 			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="infantry" />
+				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.333333" />
+					<float name="damage_multiplier" value="1.2" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
