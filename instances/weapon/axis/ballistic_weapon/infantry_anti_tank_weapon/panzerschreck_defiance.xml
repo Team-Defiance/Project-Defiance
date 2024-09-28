@@ -1,14 +1,14 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
+			<float name="near" value="0.06" />
 			<float name="far" value="0.01" />
-			<float name="mid" value="0.025" />
+			<float name="mid" value="0.035" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.625" />
+				<float name="min" value="0.625" />
 			</group>
 			<float name="post_firing_aim_time" value="1.25" />
 			<float name="post_firing_cooldown_interval" value="0" />

@@ -187,20 +187,20 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
-				<float name="penetration_multiplier" value="1" />
+				<float name="penetration_multiplier" value="0.75" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
-				<float name="penetration_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.85" />
+				<float name="damage_multiplier" value="0.85" />
+				<float name="penetration_multiplier" value="0.925" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1.25" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1.5" />
 			</group>
@@ -265,7 +265,7 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\mk2_frag_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="20" />
+			<float name="max" value="25" />
 			<float name="min" value="5" />
 			<group name="distance">
 				<float name="near" value="-1" />
@@ -364,14 +364,14 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="2" />
+			<float name="angle_scatter" value="0" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="2.75" />
+			<float name="distance_scatter_max" value="0" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_offset" value="0.2" />
+			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0" />
 			<float name="fow_angle_multiplier" value="1.5" />
 			<float name="fow_distance_multiplier" value="1.5" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="25" />
-			<float name="far" value="25" />
-			<float name="near" value="25" />
+			<float name="mid" value="30" />
+			<float name="far" value="30" />
+			<float name="near" value="30" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
