@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="5" />
+		<float name="recharge_time" value="180" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -97,7 +97,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="11053815" />
-			<locstring name="help_text" value="11053814" />
+			<locstring name="help_text" value="1713" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panther_command_tank" />
 			<string name="overlay_name" value="" />
@@ -119,7 +119,7 @@
 				<locstring name="ui_name" value="1378" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="12" />
+					<float name="command" value="10" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
@@ -172,6 +172,12 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
+			<template_reference name="required" value="requirements\required_squad">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_var2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />

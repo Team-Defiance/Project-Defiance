@@ -406,7 +406,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="2020" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="1458" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -436,7 +436,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073750741" />
+										<uniqueid name="id" value="1073750900" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -445,7 +445,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="4040" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="1459" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -486,18 +486,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073750742" />
+												<uniqueid name="id" value="1073750901" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073750743" />
+												<uniqueid name="id" value="1073750902" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073750744" />
+										<uniqueid name="id" value="1073750903" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -513,7 +513,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073750745" />
+										<uniqueid name="id" value="1073750904" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -522,7 +522,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="8080" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="1460" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -554,11 +554,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073750746" />
+												<uniqueid name="id" value="1073750905" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073750747" />
+										<uniqueid name="id" value="1073750906" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -574,7 +574,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073750748" />
+										<uniqueid name="id" value="1073750907" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -583,7 +583,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="10000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="1461" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -615,11 +615,11 @@
 														<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\smoke_sherman_mortar_barrage_mp" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073750749" />
+												<uniqueid name="id" value="1073750908" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="self" />
-										<uniqueid name="id" value="1073750750" />
+										<uniqueid name="id" value="1073750909" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -628,7 +628,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="12500" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="1462" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>

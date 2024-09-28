@@ -299,6 +299,15 @@
 									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
 								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.9" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073747942" />
 						</template_reference>
@@ -629,7 +638,16 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\panzerfusilier_grenade" />
+								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.67" />
+								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+								<enum name="application_type" value="apply_to_ability" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\fusilier_at_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.67" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -744,14 +762,23 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
-												<enum name="application_type" value="apply_to_squad" />
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.8" />
-												<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\fusilier_at_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073747069" />
@@ -806,24 +833,6 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\fusilier_at_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											</template_reference>
 											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />

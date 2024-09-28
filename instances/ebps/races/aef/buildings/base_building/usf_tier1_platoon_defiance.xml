@@ -115,7 +115,7 @@
 				<enum name="unit_type02" value="annihilation_condition" />
 				<enum name="unit_type03" value="aef_armored_rifle_command" />
 				<enum name="unit_type04" value="production_building" />
-				<enum name="unit_type05" value="" />
+				<enum name="unit_type05" value="hq" />
 				<enum name="unit_type06" value="" />
 				<enum name="unit_type07" value="" />
 				<enum name="unit_type08" value="" />
@@ -248,7 +248,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11051209" />
+			<locstring name="help_text" value="1701" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="E" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
@@ -298,7 +298,7 @@
 			<float name="minimap_icon_scale" value="0.25" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_lieutenant_building_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="11075577" />
+			<locstring name="extra_text" value="1700" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />

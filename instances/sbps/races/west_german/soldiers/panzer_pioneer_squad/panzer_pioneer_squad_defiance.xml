@@ -299,6 +299,15 @@
 									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
 								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.9" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073749937" />
 						</template_reference>
@@ -629,7 +638,7 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\pioneer_stun_grenade_mp" />
+								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.67" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -924,7 +933,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\panzer_elite_pioneer_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\pioneer_salvage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\pioneer_fuel_munitions_salvage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzer_pioneer_drop_medcrates_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\timed_ability\panzer_elite_combined_arms_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
