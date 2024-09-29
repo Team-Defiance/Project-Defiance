@@ -1,0 +1,2305 @@
+<instance description="entrench ability for hmg squad&#xA;Multiplayer Clone." template="abilities">
+	<group name="ability_bag">
+		<group name="action_list">
+			<list name="end_self_actions">
+			</list>
+			<list name="end_target_actions">
+			</list>
+			<list name="start_self_actions">
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="5" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_in_state">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="garrisoned" value="False" />
+													<bool name="healed" value="False" />
+													<float name="in_combat_since" value="5" />
+													<bool name="injured" value="False" />
+													<bool name="leader" value="False" />
+													<bool name="not_moving" value="False" />
+													<bool name="not_retreating" value="False" />
+													<bool name="pinned" value="False" />
+													<bool name="suppressed" value="False" />
+													<bool name="camouflaged" value="False" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\camouflage_enable">
+													<enum name="application_type" value="apply_to_entity" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="enable" />
+													<float name="value" value="1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
+												</template_reference>
+												<template_reference name="modifier" value="modifiers\auto_target_enable_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_02" />
+													<enum name="usage_type" value="enable" />
+													<float name="value" value="-1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\auto_target_enable_weapon_modifier" />
+												</template_reference>
+												<template_reference name="modifier" value="modifiers\auto_target_enable_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_03" />
+													<enum name="usage_type" value="enable" />
+													<float name="value" value="-1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\auto_target_enable_weapon_modifier" />
+												</template_reference>
+												<template_reference name="modifier" value="modifiers\auto_target_enable_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_04" />
+													<enum name="usage_type" value="enable" />
+													<float name="value" value="-1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\auto_target_enable_weapon_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073751125" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751126" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_in_state">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="garrisoned" value="False" />
+											<bool name="healed" value="False" />
+											<float name="in_combat_since" value="-1" />
+											<bool name="injured" value="False" />
+											<bool name="leader" value="False" />
+											<bool name="not_moving" value="False" />
+											<bool name="not_retreating" value="False" />
+											<bool name="pinned" value="False" />
+											<bool name="suppressed" value="False" />
+											<bool name="camouflaged" value="True" />
+										</template_reference>
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_terrain_material">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="not" value="False" />
+													<list name="materials">
+														<instance_reference name="material" value="material\crater_snow" />
+														<instance_reference name="material" value="material\snow" />
+														<instance_reference name="material" value="material\crater_ice" />
+														<instance_reference name="material" value="material\ice" />
+														<instance_reference name="material" value="material\icywater" />
+													</list>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751127" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.47" />
+												<float name="y" value="0.1" />
+												<float name="z" value="2.56" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\glo_bush_l_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751128" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.65" />
+												<float name="y" value="-0.52" />
+												<float name="z" value="2.13" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\glo_bush_l_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751129" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.67" />
+												<float name="y" value="-0.63" />
+												<float name="z" value="-1.43" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_05" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751130" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.84" />
+												<float name="y" value="-3.41" />
+												<float name="z" value="0.36" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751131" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.55" />
+												<float name="y" value="-0.42" />
+												<float name="z" value="1.8" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751132" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.83" />
+												<float name="y" value="-0.31" />
+												<float name="z" value="-0.76" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_05" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751133" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.18" />
+												<float name="y" value="-2.78" />
+												<float name="z" value="1.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_06" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751134" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.08" />
+												<float name="y" value="-3.57" />
+												<float name="z" value="1.79" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751135" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.63" />
+												<float name="y" value="-1" />
+												<float name="z" value="3.26" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\glo_bush_row_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751136" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.34" />
+												<float name="y" value="-0.1" />
+												<float name="z" value="2.96" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751137" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.31" />
+												<float name="y" value="-0.63" />
+												<float name="z" value="2.93" />
+											</group>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751138" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_in_state">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="garrisoned" value="False" />
+													<bool name="healed" value="False" />
+													<float name="in_combat_since" value="-1" />
+													<bool name="injured" value="False" />
+													<bool name="leader" value="False" />
+													<bool name="not_moving" value="False" />
+													<bool name="not_retreating" value="False" />
+													<bool name="pinned" value="False" />
+													<bool name="suppressed" value="False" />
+													<bool name="camouflaged" value="True" />
+												</template_reference>
+											</list>
+										</template_reference>
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage_and_display" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_terrain_material">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="not" value="False" />
+													<list name="materials">
+														<instance_reference name="material" value="material\crater_snow" />
+														<instance_reference name="material" value="material\snow" />
+														<instance_reference name="material" value="material\crater_ice" />
+														<instance_reference name="material" value="material\ice" />
+														<instance_reference name="material" value="material\icywater" />
+													</list>
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751139" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.47" />
+												<float name="y" value="0.1" />
+												<float name="z" value="2.56" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_l_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751140" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.65" />
+												<float name="y" value="-0.52" />
+												<float name="z" value="2.13" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_l_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751141" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.67" />
+												<float name="y" value="-0.63" />
+												<float name="z" value="-1.43" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_05" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751142" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.84" />
+												<float name="y" value="-3.41" />
+												<float name="z" value="0.36" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751143" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.55" />
+												<float name="y" value="-0.42" />
+												<float name="z" value="1.8" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751144" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.83" />
+												<float name="y" value="-0.31" />
+												<float name="z" value="-0.76" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_05" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751145" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.18" />
+												<float name="y" value="-2.78" />
+												<float name="z" value="1.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_06" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751146" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.08" />
+												<float name="y" value="-3.57" />
+												<float name="z" value="1.79" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751147" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.63" />
+												<float name="y" value="-1" />
+												<float name="z" value="3.26" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_summer" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751148" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.34" />
+												<float name="y" value="-0.1" />
+												<float name="z" value="2.96" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751149" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.31" />
+												<float name="y" value="-0.63" />
+												<float name="z" value="2.93" />
+											</group>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751150" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_in_state">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="garrisoned" value="False" />
+											<bool name="healed" value="False" />
+											<float name="in_combat_since" value="-1" />
+											<bool name="injured" value="False" />
+											<bool name="leader" value="False" />
+											<bool name="not_moving" value="False" />
+											<bool name="not_retreating" value="False" />
+											<bool name="pinned" value="False" />
+											<bool name="suppressed" value="False" />
+											<bool name="camouflaged" value="True" />
+										</template_reference>
+										<template_reference name="required" value="requirements\required_terrain_material">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="not" value="False" />
+											<list name="materials">
+												<instance_reference name="material" value="material\crater_snow" />
+												<instance_reference name="material" value="material\snow" />
+												<instance_reference name="material" value="material\crater_ice" />
+												<instance_reference name="material" value="material\ice" />
+												<instance_reference name="material" value="material\icywater" />
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_s_russia_02_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751151" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.63" />
+												<float name="y" value="-11.59" />
+												<float name="z" value="1.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_orchard_s_ardennes_01_fall_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751152" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.03" />
+												<float name="y" value="0.21" />
+												<float name="z" value="-0.85" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\glo_bush_row_03_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751153" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.25" />
+												<float name="y" value="0.84" />
+												<float name="z" value="-0.76" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751154" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.41" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="0.8" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_ardennes_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751155" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.52" />
+												<float name="y" value="-10.65" />
+												<float name="z" value="1.66" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751156" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-1.22" />
+												<float name="y" value="-13.64" />
+												<float name="z" value="3" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751157" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.6" />
+												<float name="y" value="-13.64" />
+												<float name="z" value="2.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_ardennes_02_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751158" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.12" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="2.87" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751159" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.01" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="1.73" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751160" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.84" />
+												<float name="y" value="-13.12" />
+												<float name="z" value="1.89" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_ardennes_06_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751161" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.15" />
+												<float name="y" value="-6.61" />
+												<float name="z" value="2.31" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_s_russia_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751162" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.45" />
+												<float name="y" value="-13.27" />
+												<float name="z" value="3.44" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\glo_pine_l_ardennes_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751163" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.73" />
+												<float name="y" value="-11.65" />
+												<float name="z" value="2.87" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\glo_bush_row_03_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751164" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.27" />
+												<float name="y" value="-0.26" />
+												<float name="z" value="3.03" />
+											</group>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751165" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_in_state">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="garrisoned" value="False" />
+													<bool name="healed" value="False" />
+													<float name="in_combat_since" value="-1" />
+													<bool name="injured" value="False" />
+													<bool name="leader" value="False" />
+													<bool name="not_moving" value="False" />
+													<bool name="not_retreating" value="False" />
+													<bool name="pinned" value="False" />
+													<bool name="suppressed" value="False" />
+													<bool name="camouflaged" value="True" />
+												</template_reference>
+											</list>
+										</template_reference>
+										<template_reference name="required" value="requirements\required_terrain_material">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="not" value="False" />
+											<list name="materials">
+												<instance_reference name="material" value="material\crater_snow" />
+												<instance_reference name="material" value="material\snow" />
+												<instance_reference name="material" value="material\crater_ice" />
+												<instance_reference name="material" value="material\ice" />
+												<instance_reference name="material" value="material\icywater" />
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_s_russia_02_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751166" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.63" />
+												<float name="y" value="-11.59" />
+												<float name="z" value="1.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_orchard_s_ardennes_01_fall_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751167" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.03" />
+												<float name="y" value="0.21" />
+												<float name="z" value="-0.85" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751168" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.25" />
+												<float name="y" value="0.84" />
+												<float name="z" value="-0.76" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751169" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.41" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="0.8" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751170" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.52" />
+												<float name="y" value="-10.65" />
+												<float name="z" value="1.66" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751171" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-1.22" />
+												<float name="y" value="-13.64" />
+												<float name="z" value="3" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751172" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.6" />
+												<float name="y" value="-13.64" />
+												<float name="z" value="2.93" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_02_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751173" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.12" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="2.87" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751174" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="1.01" />
+												<float name="y" value="-13.17" />
+												<float name="z" value="1.73" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751175" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.84" />
+												<float name="y" value="-13.12" />
+												<float name="z" value="1.89" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_06_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751176" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.15" />
+												<float name="y" value="-6.61" />
+												<float name="z" value="2.31" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_s_russia_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751177" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.45" />
+												<float name="y" value="-13.27" />
+												<float name="z" value="3.44" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_01_winter" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751178" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="-0.73" />
+												<float name="y" value="-11.65" />
+												<float name="z" value="2.87" />
+											</group>
+										</template_reference>
+										<template_reference name="action" value="action\spawn_entity">
+											<float name="duration" value="99999" />
+											<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_snow" />
+											<bool name="permanent" value="False" />
+											<bool name="player_owned" value="True" />
+											<group name="target_info">
+												<template_reference name="target_info" value="type_ability_target_type\all">
+												</template_reference>
+											</group>
+											<uniqueid name="id" value="1073751179" />
+											<template_reference name="spawn_attached_option" value="options\none">
+											</template_reference>
+											<list name="spawned_entity_actions">
+											</list>
+											<group name="offset">
+												<float name="x" value="0.27" />
+												<float name="y" value="-0.26" />
+												<float name="z" value="3.03" />
+											</group>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751180" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="entities" />
+							<uniqueid name="id" value="1073751181" />
+						</template_reference>
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="True" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11145615" />
+										<locstring name="help_text" value="11145544" />
+										<icon name="icon_name" value="Icons_abilities_tank_hunter_on" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073751182" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="squad" />
+							<uniqueid name="id" value="1073751183" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751184" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="assualt_guns" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\facing_only_enable">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="enable" />
+											<float name="value" value="1" />
+											<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.2" />
+											<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751185" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="entities" />
+							<uniqueid name="id" value="1073751186" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751187" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="assualt_guns" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\move_enable_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="enable" />
+											<float name="value" value="-1" />
+											<instance_reference name="tooltip" value="modifier_tooltip\move_enable_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751188" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="entities" />
+							<uniqueid name="id" value="1073751189" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751190" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="5" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_not">
+									<enum name="reason" value="usage_and_display" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_terrain_material">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="not" value="False" />
+											<list name="materials">
+												<instance_reference name="material" value="material\crater_snow" />
+												<instance_reference name="material" value="material\snow" />
+												<instance_reference name="material" value="material\crater_ice" />
+												<instance_reference name="material" value="material\ice" />
+												<instance_reference name="material" value="material\icywater" />
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\delay">
+									<float name="delay" value="1" />
+									<float name="delay_min" value="0" />
+									<bool name="progress_bar" value="False" />
+									<bool name="randomize" value="False" />
+									<list name="delayed_actions">
+										<template_reference name="action" value="action\change_target_action">
+											<list name="actions">
+												<template_reference name="action" value="action\spawn_entity">
+													<float name="duration" value="99999" />
+													<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+													<bool name="permanent" value="False" />
+													<bool name="player_owned" value="True" />
+													<group name="target_info">
+														<template_reference name="target_info" value="type_ability_target_type\all">
+														</template_reference>
+													</group>
+													<uniqueid name="id" value="1073751191" />
+													<template_reference name="spawn_attached_option" value="options\none">
+													</template_reference>
+													<list name="spawned_entity_actions">
+													</list>
+													<group name="offset">
+														<float name="x" value="0.47" />
+														<float name="y" value="0.1" />
+														<float name="z" value="2.56" />
+													</group>
+												</template_reference>
+												<template_reference name="action" value="action\spawn_entity">
+													<float name="duration" value="99999" />
+													<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_l_03_summer" />
+													<bool name="permanent" value="False" />
+													<bool name="player_owned" value="True" />
+													<group name="target_info">
+														<template_reference name="target_info" value="type_ability_target_type\all">
+														</template_reference>
+													</group>
+													<uniqueid name="id" value="1073751192" />
+													<template_reference name="spawn_attached_option" value="options\none">
+													</template_reference>
+													<list name="spawned_entity_actions">
+													</list>
+													<group name="offset">
+														<float name="x" value="0.65" />
+														<float name="y" value="-0.52" />
+														<float name="z" value="2.13" />
+													</group>
+												</template_reference>
+											</list>
+											<enum name="change_target_type" value="entities" />
+											<uniqueid name="id" value="1073751193" />
+										</template_reference>
+										<template_reference name="action" value="action\delay">
+											<float name="delay" value="1" />
+											<float name="delay_min" value="0" />
+											<bool name="progress_bar" value="False" />
+											<bool name="randomize" value="False" />
+											<list name="delayed_actions">
+												<template_reference name="action" value="action\change_target_action">
+													<list name="actions">
+														<template_reference name="action" value="action\spawn_entity">
+															<float name="duration" value="99999" />
+															<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_l_03_summer" />
+															<bool name="permanent" value="False" />
+															<bool name="player_owned" value="True" />
+															<group name="target_info">
+																<template_reference name="target_info" value="type_ability_target_type\all">
+																</template_reference>
+															</group>
+															<uniqueid name="id" value="1073751194" />
+															<template_reference name="spawn_attached_option" value="options\none">
+															</template_reference>
+															<list name="spawned_entity_actions">
+															</list>
+															<group name="offset">
+																<float name="x" value="0.67" />
+																<float name="y" value="-0.63" />
+																<float name="z" value="-1.43" />
+															</group>
+														</template_reference>
+														<template_reference name="action" value="action\spawn_entity">
+															<float name="duration" value="99999" />
+															<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_05" />
+															<bool name="permanent" value="False" />
+															<bool name="player_owned" value="True" />
+															<group name="target_info">
+																<template_reference name="target_info" value="type_ability_target_type\all">
+																</template_reference>
+															</group>
+															<uniqueid name="id" value="1073751195" />
+															<template_reference name="spawn_attached_option" value="options\none">
+															</template_reference>
+															<list name="spawned_entity_actions">
+															</list>
+															<group name="offset">
+																<float name="x" value="0.84" />
+																<float name="y" value="-3.41" />
+																<float name="z" value="0.36" />
+															</group>
+														</template_reference>
+													</list>
+													<enum name="change_target_type" value="entities" />
+													<uniqueid name="id" value="1073751196" />
+												</template_reference>
+												<template_reference name="action" value="action\delay">
+													<float name="delay" value="1" />
+													<float name="delay_min" value="0" />
+													<bool name="progress_bar" value="False" />
+													<bool name="randomize" value="False" />
+													<list name="delayed_actions">
+														<template_reference name="action" value="action\change_target_action">
+															<list name="actions">
+																<template_reference name="action" value="action\spawn_entity">
+																	<float name="duration" value="99999" />
+																	<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+																	<bool name="permanent" value="False" />
+																	<bool name="player_owned" value="True" />
+																	<group name="target_info">
+																		<template_reference name="target_info" value="type_ability_target_type\all">
+																		</template_reference>
+																	</group>
+																	<uniqueid name="id" value="1073751197" />
+																	<template_reference name="spawn_attached_option" value="options\none">
+																	</template_reference>
+																	<list name="spawned_entity_actions">
+																	</list>
+																	<group name="offset">
+																		<float name="x" value="-0.55" />
+																		<float name="y" value="-0.42" />
+																		<float name="z" value="1.8" />
+																	</group>
+																</template_reference>
+																<template_reference name="action" value="action\spawn_entity">
+																	<float name="duration" value="99999" />
+																	<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+																	<bool name="permanent" value="False" />
+																	<bool name="player_owned" value="True" />
+																	<group name="target_info">
+																		<template_reference name="target_info" value="type_ability_target_type\all">
+																		</template_reference>
+																	</group>
+																	<uniqueid name="id" value="1073751198" />
+																	<template_reference name="spawn_attached_option" value="options\none">
+																	</template_reference>
+																	<list name="spawned_entity_actions">
+																	</list>
+																	<group name="offset">
+																		<float name="x" value="0.83" />
+																		<float name="y" value="-0.31" />
+																		<float name="z" value="-0.76" />
+																	</group>
+																</template_reference>
+															</list>
+															<enum name="change_target_type" value="entities" />
+															<uniqueid name="id" value="1073751199" />
+														</template_reference>
+														<template_reference name="action" value="action\delay">
+															<float name="delay" value="1" />
+															<float name="delay_min" value="0" />
+															<bool name="progress_bar" value="False" />
+															<bool name="randomize" value="False" />
+															<list name="delayed_actions">
+																<template_reference name="action" value="action\change_target_action">
+																	<list name="actions">
+																		<template_reference name="action" value="action\spawn_entity">
+																			<float name="duration" value="99999" />
+																			<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_05" />
+																			<bool name="permanent" value="False" />
+																			<bool name="player_owned" value="True" />
+																			<group name="target_info">
+																				<template_reference name="target_info" value="type_ability_target_type\all">
+																				</template_reference>
+																			</group>
+																			<uniqueid name="id" value="1073751200" />
+																			<template_reference name="spawn_attached_option" value="options\none">
+																			</template_reference>
+																			<list name="spawned_entity_actions">
+																			</list>
+																			<group name="offset">
+																				<float name="x" value="-0.18" />
+																				<float name="y" value="-2.78" />
+																				<float name="z" value="1.93" />
+																			</group>
+																		</template_reference>
+																		<template_reference name="action" value="action\spawn_entity">
+																			<float name="duration" value="99999" />
+																			<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_06" />
+																			<bool name="permanent" value="False" />
+																			<bool name="player_owned" value="True" />
+																			<group name="target_info">
+																				<template_reference name="target_info" value="type_ability_target_type\all">
+																				</template_reference>
+																			</group>
+																			<uniqueid name="id" value="1073751201" />
+																			<template_reference name="spawn_attached_option" value="options\none">
+																			</template_reference>
+																			<list name="spawned_entity_actions">
+																			</list>
+																			<group name="offset">
+																				<float name="x" value="-0.08" />
+																				<float name="y" value="-3.57" />
+																				<float name="z" value="1.79" />
+																			</group>
+																		</template_reference>
+																	</list>
+																	<enum name="change_target_type" value="entities" />
+																	<uniqueid name="id" value="1073751202" />
+																</template_reference>
+																<template_reference name="action" value="action\delay">
+																	<float name="delay" value="1" />
+																	<float name="delay_min" value="0" />
+																	<bool name="progress_bar" value="False" />
+																	<bool name="randomize" value="False" />
+																	<list name="delayed_actions">
+																		<template_reference name="action" value="action\change_target_action">
+																			<list name="actions">
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751203" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="-0.63" />
+																						<float name="y" value="-1" />
+																						<float name="z" value="3.26" />
+																					</group>
+																				</template_reference>
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_summer" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751204" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="0.34" />
+																						<float name="y" value="-0.1" />
+																						<float name="z" value="2.96" />
+																					</group>
+																				</template_reference>
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_generic_07" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751205" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="1.31" />
+																						<float name="y" value="-0.63" />
+																						<float name="z" value="2.93" />
+																					</group>
+																				</template_reference>
+																			</list>
+																			<enum name="change_target_type" value="entities" />
+																			<uniqueid name="id" value="1073751206" />
+																		</template_reference>
+																	</list>
+																	<uniqueid name="id" value="1073751207" />
+																	<bool name="can_prevent_refund" value="True" />
+																</template_reference>
+															</list>
+															<uniqueid name="id" value="1073751208" />
+															<bool name="can_prevent_refund" value="True" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073751209" />
+													<bool name="can_prevent_refund" value="True" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073751210" />
+											<bool name="can_prevent_refund" value="True" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751211" />
+									<bool name="can_prevent_refund" value="True" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073751212" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_terrain_material">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="not" value="False" />
+									<list name="materials">
+										<instance_reference name="material" value="material\crater_snow" />
+										<instance_reference name="material" value="material\snow" />
+										<instance_reference name="material" value="material\crater_ice" />
+										<instance_reference name="material" value="material\ice" />
+										<instance_reference name="material" value="material\icywater" />
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\delay">
+									<float name="delay" value="1" />
+									<float name="delay_min" value="0" />
+									<bool name="progress_bar" value="False" />
+									<bool name="randomize" value="False" />
+									<list name="delayed_actions">
+										<template_reference name="action" value="action\change_target_action">
+											<list name="actions">
+												<template_reference name="action" value="action\spawn_entity">
+													<float name="duration" value="99999" />
+													<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_s_russia_02_winter" />
+													<bool name="permanent" value="False" />
+													<bool name="player_owned" value="True" />
+													<group name="target_info">
+														<template_reference name="target_info" value="type_ability_target_type\all">
+														</template_reference>
+													</group>
+													<uniqueid name="id" value="1073751213" />
+													<template_reference name="spawn_attached_option" value="options\none">
+													</template_reference>
+													<list name="spawned_entity_actions">
+													</list>
+													<group name="offset">
+														<float name="x" value="0.63" />
+														<float name="y" value="-11.59" />
+														<float name="z" value="1.93" />
+													</group>
+												</template_reference>
+												<template_reference name="action" value="action\spawn_entity">
+													<float name="duration" value="99999" />
+													<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_orchard_s_ardennes_01_fall_snow" />
+													<bool name="permanent" value="False" />
+													<bool name="player_owned" value="True" />
+													<group name="target_info">
+														<template_reference name="target_info" value="type_ability_target_type\all">
+														</template_reference>
+													</group>
+													<uniqueid name="id" value="1073751214" />
+													<template_reference name="spawn_attached_option" value="options\none">
+													</template_reference>
+													<list name="spawned_entity_actions">
+													</list>
+													<group name="offset">
+														<float name="x" value="-0.03" />
+														<float name="y" value="0.21" />
+														<float name="z" value="-0.85" />
+													</group>
+												</template_reference>
+											</list>
+											<enum name="change_target_type" value="entities" />
+											<uniqueid name="id" value="1073751215" />
+										</template_reference>
+										<template_reference name="action" value="action\delay">
+											<float name="delay" value="1" />
+											<float name="delay_min" value="0" />
+											<bool name="progress_bar" value="False" />
+											<bool name="randomize" value="False" />
+											<list name="delayed_actions">
+												<template_reference name="action" value="action\change_target_action">
+													<list name="actions">
+														<template_reference name="action" value="action\spawn_entity">
+															<float name="duration" value="99999" />
+															<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_snow" />
+															<bool name="permanent" value="False" />
+															<bool name="player_owned" value="True" />
+															<group name="target_info">
+																<template_reference name="target_info" value="type_ability_target_type\all">
+																</template_reference>
+															</group>
+															<uniqueid name="id" value="1073751216" />
+															<template_reference name="spawn_attached_option" value="options\none">
+															</template_reference>
+															<list name="spawned_entity_actions">
+															</list>
+															<group name="offset">
+																<float name="x" value="0.25" />
+																<float name="y" value="0.84" />
+																<float name="z" value="-0.76" />
+															</group>
+														</template_reference>
+														<template_reference name="action" value="action\spawn_entity">
+															<float name="duration" value="99999" />
+															<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+															<bool name="permanent" value="False" />
+															<bool name="player_owned" value="True" />
+															<group name="target_info">
+																<template_reference name="target_info" value="type_ability_target_type\all">
+																</template_reference>
+															</group>
+															<uniqueid name="id" value="1073751217" />
+															<template_reference name="spawn_attached_option" value="options\none">
+															</template_reference>
+															<list name="spawned_entity_actions">
+															</list>
+															<group name="offset">
+																<float name="x" value="1.41" />
+																<float name="y" value="-13.17" />
+																<float name="z" value="0.8" />
+															</group>
+														</template_reference>
+													</list>
+													<enum name="change_target_type" value="entities" />
+													<uniqueid name="id" value="1073751218" />
+												</template_reference>
+												<template_reference name="action" value="action\delay">
+													<float name="delay" value="1" />
+													<float name="delay_min" value="0" />
+													<bool name="progress_bar" value="False" />
+													<bool name="randomize" value="False" />
+													<list name="delayed_actions">
+														<template_reference name="action" value="action\change_target_action">
+															<list name="actions">
+																<template_reference name="action" value="action\spawn_entity">
+																	<float name="duration" value="99999" />
+																	<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_01_winter" />
+																	<bool name="permanent" value="False" />
+																	<bool name="player_owned" value="True" />
+																	<group name="target_info">
+																		<template_reference name="target_info" value="type_ability_target_type\all">
+																		</template_reference>
+																	</group>
+																	<uniqueid name="id" value="1073751219" />
+																	<template_reference name="spawn_attached_option" value="options\none">
+																	</template_reference>
+																	<list name="spawned_entity_actions">
+																	</list>
+																	<group name="offset">
+																		<float name="x" value="-0.52" />
+																		<float name="y" value="-10.65" />
+																		<float name="z" value="1.66" />
+																	</group>
+																</template_reference>
+																<template_reference name="action" value="action\spawn_entity">
+																	<float name="duration" value="99999" />
+																	<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+																	<bool name="permanent" value="False" />
+																	<bool name="player_owned" value="True" />
+																	<group name="target_info">
+																		<template_reference name="target_info" value="type_ability_target_type\all">
+																		</template_reference>
+																	</group>
+																	<uniqueid name="id" value="1073751220" />
+																	<template_reference name="spawn_attached_option" value="options\none">
+																	</template_reference>
+																	<list name="spawned_entity_actions">
+																	</list>
+																	<group name="offset">
+																		<float name="x" value="-1.22" />
+																		<float name="y" value="-13.64" />
+																		<float name="z" value="3" />
+																	</group>
+																</template_reference>
+															</list>
+															<enum name="change_target_type" value="entities" />
+															<uniqueid name="id" value="1073751221" />
+														</template_reference>
+														<template_reference name="action" value="action\delay">
+															<float name="delay" value="1" />
+															<float name="delay_min" value="0" />
+															<bool name="progress_bar" value="False" />
+															<bool name="randomize" value="False" />
+															<list name="delayed_actions">
+																<template_reference name="action" value="action\change_target_action">
+																	<list name="actions">
+																		<template_reference name="action" value="action\spawn_entity">
+																			<float name="duration" value="99999" />
+																			<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+																			<bool name="permanent" value="False" />
+																			<bool name="player_owned" value="True" />
+																			<group name="target_info">
+																				<template_reference name="target_info" value="type_ability_target_type\all">
+																				</template_reference>
+																			</group>
+																			<uniqueid name="id" value="1073751222" />
+																			<template_reference name="spawn_attached_option" value="options\none">
+																			</template_reference>
+																			<list name="spawned_entity_actions">
+																			</list>
+																			<group name="offset">
+																				<float name="x" value="1.6" />
+																				<float name="y" value="-13.64" />
+																				<float name="z" value="2.93" />
+																			</group>
+																		</template_reference>
+																		<template_reference name="action" value="action\spawn_entity">
+																			<float name="duration" value="99999" />
+																			<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_02_winter" />
+																			<bool name="permanent" value="False" />
+																			<bool name="player_owned" value="True" />
+																			<group name="target_info">
+																				<template_reference name="target_info" value="type_ability_target_type\all">
+																				</template_reference>
+																			</group>
+																			<uniqueid name="id" value="1073751223" />
+																			<template_reference name="spawn_attached_option" value="options\none">
+																			</template_reference>
+																			<list name="spawned_entity_actions">
+																			</list>
+																			<group name="offset">
+																				<float name="x" value="1.12" />
+																				<float name="y" value="-13.17" />
+																				<float name="z" value="2.87" />
+																			</group>
+																		</template_reference>
+																	</list>
+																	<enum name="change_target_type" value="entities" />
+																	<uniqueid name="id" value="1073751224" />
+																</template_reference>
+																<template_reference name="action" value="action\delay">
+																	<float name="delay" value="1" />
+																	<float name="delay_min" value="0" />
+																	<bool name="progress_bar" value="False" />
+																	<bool name="randomize" value="False" />
+																	<list name="delayed_actions">
+																		<template_reference name="action" value="action\change_target_action">
+																			<list name="actions">
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751225" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="1.01" />
+																						<float name="y" value="-13.17" />
+																						<float name="z" value="1.73" />
+																					</group>
+																				</template_reference>
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_03_winter" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751226" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="-0.84" />
+																						<float name="y" value="-13.12" />
+																						<float name="z" value="1.89" />
+																					</group>
+																				</template_reference>
+																				<template_reference name="action" value="action\spawn_entity">
+																					<float name="duration" value="99999" />
+																					<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_06_winter" />
+																					<bool name="permanent" value="False" />
+																					<bool name="player_owned" value="True" />
+																					<group name="target_info">
+																						<template_reference name="target_info" value="type_ability_target_type\all">
+																						</template_reference>
+																					</group>
+																					<uniqueid name="id" value="1073751227" />
+																					<template_reference name="spawn_attached_option" value="options\none">
+																					</template_reference>
+																					<list name="spawned_entity_actions">
+																					</list>
+																					<group name="offset">
+																						<float name="x" value="-0.15" />
+																						<float name="y" value="-6.61" />
+																						<float name="z" value="2.31" />
+																					</group>
+																				</template_reference>
+																			</list>
+																			<enum name="change_target_type" value="entities" />
+																			<uniqueid name="id" value="1073751228" />
+																		</template_reference>
+																		<template_reference name="action" value="action\delay">
+																			<float name="delay" value="1" />
+																			<float name="delay_min" value="0" />
+																			<bool name="progress_bar" value="False" />
+																			<bool name="randomize" value="False" />
+																			<list name="delayed_actions">
+																				<template_reference name="action" value="action\change_target_action">
+																					<list name="actions">
+																						<template_reference name="action" value="action\spawn_entity">
+																							<float name="duration" value="99999" />
+																							<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_s_russia_01_winter" />
+																							<bool name="permanent" value="False" />
+																							<bool name="player_owned" value="True" />
+																							<group name="target_info">
+																								<template_reference name="target_info" value="type_ability_target_type\all">
+																								</template_reference>
+																							</group>
+																							<uniqueid name="id" value="1073751229" />
+																							<template_reference name="spawn_attached_option" value="options\none">
+																							</template_reference>
+																							<list name="spawned_entity_actions">
+																							</list>
+																							<group name="offset">
+																								<float name="x" value="0.45" />
+																								<float name="y" value="-13.27" />
+																								<float name="z" value="3.44" />
+																							</group>
+																						</template_reference>
+																						<template_reference name="action" value="action\spawn_entity">
+																							<float name="duration" value="99999" />
+																							<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\trees\gloa_pine_l_ardennes_01_winter" />
+																							<bool name="permanent" value="False" />
+																							<bool name="player_owned" value="True" />
+																							<group name="target_info">
+																								<template_reference name="target_info" value="type_ability_target_type\all">
+																								</template_reference>
+																							</group>
+																							<uniqueid name="id" value="1073751230" />
+																							<template_reference name="spawn_attached_option" value="options\none">
+																							</template_reference>
+																							<list name="spawned_entity_actions">
+																							</list>
+																							<group name="offset">
+																								<float name="x" value="-0.73" />
+																								<float name="y" value="-11.65" />
+																								<float name="z" value="2.87" />
+																							</group>
+																						</template_reference>
+																						<template_reference name="action" value="action\spawn_entity">
+																							<float name="duration" value="99999" />
+																							<instance_reference name="entity_blueprint" value="ebps\races\soviet\camouflage\bushes\gloa_bush_row_03_snow" />
+																							<bool name="permanent" value="False" />
+																							<bool name="player_owned" value="True" />
+																							<group name="target_info">
+																								<template_reference name="target_info" value="type_ability_target_type\all">
+																								</template_reference>
+																							</group>
+																							<uniqueid name="id" value="1073751231" />
+																							<template_reference name="spawn_attached_option" value="options\none">
+																							</template_reference>
+																							<list name="spawned_entity_actions">
+																							</list>
+																							<group name="offset">
+																								<float name="x" value="0.27" />
+																								<float name="y" value="-0.26" />
+																								<float name="z" value="3.03" />
+																							</group>
+																						</template_reference>
+																					</list>
+																					<enum name="change_target_type" value="entities" />
+																					<uniqueid name="id" value="1073751232" />
+																				</template_reference>
+																			</list>
+																			<uniqueid name="id" value="1073751233" />
+																			<bool name="can_prevent_refund" value="True" />
+																		</template_reference>
+																	</list>
+																	<uniqueid name="id" value="1073751234" />
+																	<bool name="can_prevent_refund" value="True" />
+																</template_reference>
+															</list>
+															<uniqueid name="id" value="1073751235" />
+															<bool name="can_prevent_refund" value="True" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073751236" />
+													<bool name="can_prevent_refund" value="True" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073751237" />
+											<bool name="can_prevent_refund" value="True" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073751238" />
+									<bool name="can_prevent_refund" value="True" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073751239" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751240" />
+				</template_reference>
+			</list>
+			<list name="start_target_actions">
+			</list>
+		</group>
+		<enum name="activation" value="toggle" />
+		<bool name="can_interrupt" value="True" />
+		<bool name="can_target_in_fow" value="False" />
+		<float name="caster_close_in_distance" value="2" />
+		<bool name="casters_can_evacuate" value="False" />
+		<group name="cost">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="fuel" value="0" />
+			<float name="manpower" value="0" />
+			<float name="munition" value="0" />
+			<float name="popcap" value="0" />
+		</group>
+		<string name="cursor_ghost_blueprint" value="" />
+		<float name="cursor_ghost_blueprint_angle" value="0" />
+		<bool name="disable_combat" value="False" />
+		<bool name="disable_when_active" value="False" />
+		<float name="duration_time" value="-1" />
+		<bool name="enable_in_building" value="False" />
+		<bool name="enable_in_vehicle" value="False" />
+		<bool name="engage_combat" value="False" />
+		<float name="entity_busy_time" value="0" />
+		<float name="facing_angle" value="5" />
+		<bool name="facing_ignore" value="False" />
+		<float name="final_close_in_distance" value="0" />
+		<bool name="fire_and_forget" value="False" />
+		<bool name="garrison_target" value="False" />
+		<bool name="has_speech_code" value="True" />
+		<float name="initial_delay_time" value="0" />
+		<bool name="initial_recharge" value="False" />
+		<bool name="is_default_action" value="False" />
+		<bool name="move_back" value="False" />
+		<float name="move_back_distance" value="10" />
+		<float name="range" value="0" />
+		<bool name="range_ignore" value="True" />
+		<float name="recharge_time" value="0" />
+		<bool name="refundable" value="True" />
+		<bool name="require_no_shot_block" value="False" />
+		<enum name="shared_timer" value="" />
+		<bool name="shared_timer_player_wide" value="False" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<enum name="squad_caster" value="one_entity" />
+		<enum name="target" value="tp_any" />
+		<group name="target_special_validation">
+			<template_reference name="target_special_validation" value="type_ability_target_type\all">
+			</template_reference>
+		</group>
+		<float name="toggled_recharge_time_off" value="10" />
+		<float name="toggled_recharge_time_on" value="5" />
+		<group name="ui_cursor">
+			<string name="cursor_bad" value="modal_ability_cancel" />
+			<string name="cursor_good" value="modal_ability" />
+			<string name="cursor_nonmodal_good" value="" />
+		</group>
+		<group name="ui_info">
+			<locstring name="extra_text" value="11145741" />
+			<locstring name="help_text" value="11145709" />
+			<string name="hotkey_name" value="C" />
+			<icon name="icon_name" value="Icons_abilities_tank_hunter_on" />
+			<string name="overlay_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="11145706" />
+			<icon name="icon_alternate_name" value="Icons_abilities_tank_hunter_off" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="help_text_alternate" value="11145689" />
+			<locstring name="screen_name_alternate" value="11145551" />
+			<locstring name="screen_name_short" value="0" />
+		</group>
+		<locstring name="ui_usage_txt" value="0" />
+		<bool name="validate_actions" value="False" />
+		<list name="global_self_actions">
+		</list>
+		<list name="requirements">
+		</list>
+		<enum name="ability_super" value="tp_none" />
+		<int name="ui_position" value="32" />
+		<bool name="ui_mini_map_capture" value="False" />
+		<bool name="facing_ignore_during_active" value="False" />
+		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_reticule" value="" />
+		<float name="ui_reticule_radius_min" value="1" />
+		<float name="ui_reticule_radius_max" value="1" />
+		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
+		<enum name="ui_group" value="group_primary" />
+		<string name="ui_targetable_sm_key" value="" />
+		<string name="ui_targetable_on_key" value="" />
+		<string name="ui_targetable_off_key" value="" />
+		<enum name="ui_targetable_receiver" value="local" />
+		<enum name="ui_combine_type" value="intersection" />
+		<enum_table name="ui_modal_highlight">
+			<bool name="world_sector" value="False" />
+			<bool name="map_sector" value="False" />
+			<bool name="map_sector_hq_link_extender" value="False" />
+		</enum_table>
+		<enum name="ui_group_cast_type" value="multi" />
+		<list name="requirements_target">
+		</list>
+		<template_reference name="targeted_ability_option" value="options\none">
+		</template_reference>
+		<enum name="ui_direction_requirement" value="nondirectional" />
+		<instance_reference name="cursor_ghost_ebp" value="" />
+		<bool name="can_cast_whilst_constructing" value="False" />
+		<list name="requirements_self_recharge">
+		</list>
+		<bool name="can_cast_outside_active_battle_field" value="False" />
+		<bool name="ability_super_event_cue" value="False" />
+	</group>
+	<uniqueid name="pbgid" value="1073742133" />
+</instance>

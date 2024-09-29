@@ -63,14 +63,14 @@
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="True" />
 			<group name="suppression">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="far" value="0.2" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="suppression_friendly">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.25" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="8" />
-				<float name="min" value="8" />
+				<float name="max" value="7.5" />
+				<float name="min" value="7.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -395,8 +395,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="0.5" />
+			<float name="nearby_suppression_radius" value="8" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
