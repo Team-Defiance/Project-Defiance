@@ -303,7 +303,7 @@
 						<float name="min_distance" value="5" />
 					</group>
 				</group>
-				<float name="damage_frequency" value="1" />
+				<float name="damage_frequency" value="1.25" />
 				<instance_reference name="dot_weapon" value="weapon\soviet\flame_throwers\grenade\molotov_cocktail_dotdamage_mp" />
 				<float name="dots_max" value="4" />
 				<float name="dots_min" value="4" />
@@ -311,7 +311,7 @@
 				<float name="duration_min" value="20" />
 				<float name="radius_max" value="5" />
 				<float name="radius_min" value="5" />
-				<float name="radius_scatter" value="5" />
+				<float name="radius_scatter" value="6" />
 				<group name="target_info">
 					<template_reference name="target_info" value="type_ability_target_type\all">
 					</template_reference>
@@ -407,7 +407,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7.5" />
+			<float name="angle_scatter" value="8" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
