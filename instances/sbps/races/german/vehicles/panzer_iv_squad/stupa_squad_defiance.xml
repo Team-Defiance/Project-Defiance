@@ -890,6 +890,34 @@
 								<list name="squad_entity_actions">
 								</list>
 							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="999999" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="1787" mod="84428889d71d41a48e2eff09c2425d54" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="9999999" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="1788" mod="84428889d71d41a48e2eff09c2425d54" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
 						</list>
 						<enum name="shared_veterancy_type" value="no_sharing" />
 					</group>
