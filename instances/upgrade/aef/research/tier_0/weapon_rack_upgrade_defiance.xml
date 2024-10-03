@@ -11,7 +11,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="erf" />
+			<string name="code_1" value="rck" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -19,24 +19,24 @@
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="20" />
-				<float name="manpower" value="100" />
+				<float name="fuel" value="15" />
+				<float name="manpower" value="150" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="15" />
+			<float name="time_seconds" value="30" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="3" />
+		<int name="ui_position" value="2" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="1337" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1336" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="X" />
-			<icon name="icon_name" value="Icons_commander_cmdr_aef_elite_riflemen_training" />
+			<locstring name="extra_text" value="1818" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1817" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="U" />
+			<icon name="icon_name" value="Icons_upgrades_aef_weapon_rack" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="1335" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="brief_text" value="1363" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11096773" />
+			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
 		</group>
@@ -56,5 +56,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741908" />
+	<uniqueid name="pbgid" value="1073741927" />
 </instance>
