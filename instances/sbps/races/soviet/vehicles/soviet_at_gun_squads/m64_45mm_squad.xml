@@ -561,15 +561,6 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="False" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-												<enum name="application_type" value="apply_to_weapon" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.2" />
-												<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-											</template_reference>
 											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 												<enum name="application_type" value="apply_to_weapon" />
 												<bool name="exclusive" value="False" />
@@ -616,6 +607,15 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\m63_ap_clip" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073751397" />
 									</template_reference>
@@ -645,6 +645,15 @@
 												<enum name="usage_type" value="multiply_add" />
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\m63_ap_clip" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073751398" />
