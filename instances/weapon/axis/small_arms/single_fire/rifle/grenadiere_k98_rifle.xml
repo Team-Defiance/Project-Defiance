@@ -3,7 +3,7 @@
 		<group name="accuracy">
 			<float name="near" value="0.725" />
 			<float name="far" value="0.675" />
-			<float name="mid" value="0.713" />
+			<float name="mid" value="0.71" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -357,7 +357,7 @@
 				<float name="near" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="4" />
+				<float name="max" value="5" />
 				<float name="min" value="4" />
 			</group>
 			<list name="on_reload_actions">

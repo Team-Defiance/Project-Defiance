@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.75" />
-			<float name="far" value="0.425" />
-			<float name="mid" value="0.625" />
+			<float name="far" value="0.4" />
+			<float name="mid" value="0.65" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -158,7 +158,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="0.1" />
 				<float name="far" value="2.5" />
-				<float name="mid" value="0.9" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="cover_table">
