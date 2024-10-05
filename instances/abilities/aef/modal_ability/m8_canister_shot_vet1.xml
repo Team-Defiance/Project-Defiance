@@ -96,7 +96,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="40" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="30" />
+		<float name="recharge_time" value="20" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="True" />
 		<enum name="shared_timer" value="" />
@@ -189,8 +189,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_su76_barrage" />
-		<float name="ui_reticule_radius_min" value="5.5" />
-		<float name="ui_reticule_radius_max" value="11" />
+		<float name="ui_reticule_radius_min" value="3" />
+		<float name="ui_reticule_radius_max" value="10" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

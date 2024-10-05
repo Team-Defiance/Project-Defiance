@@ -43,7 +43,7 @@
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\aef\small_arms\m2hb_turret_mounted_m8_mp" />
+				<instance_reference name="slot_item" value="slot_item\aef\small_arms\pintle_m2hb_m8_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="False" />
 				<uniqueid name="id" value="1073750488" />
 			</template_reference>
