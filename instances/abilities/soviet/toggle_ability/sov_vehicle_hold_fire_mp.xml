@@ -472,6 +472,23 @@
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
 				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\045mm_1938_t70_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073751667" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="toggle" />
