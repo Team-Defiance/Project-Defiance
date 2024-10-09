@@ -391,11 +391,11 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="range">
-			<float name="max" value="45" />
+			<float name="max" value="40" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="10" />
-				<float name="far" value="45" />
+				<float name="near" value="15" />
+				<float name="far" value="40" />
 				<float name="mid" value="25" />
 			</group>
 		</group>

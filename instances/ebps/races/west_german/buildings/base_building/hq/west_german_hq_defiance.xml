@@ -530,6 +530,144 @@
 						<float name="z" value="-8.6" />
 					</group>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_all_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\west_german\passive\two_structures_unlocked" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073751742" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751741" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_all_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\west_german\passive\two_structures_unlocked" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073751743" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751744" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_all_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_structure">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<int name="required_structure_count" value="1" />
+									<bool name="check_team" value="False" />
+									<bool name="require_construction_complete" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\west_german\passive\two_structures_unlocked" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073751745" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751746" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_apply_ext">
