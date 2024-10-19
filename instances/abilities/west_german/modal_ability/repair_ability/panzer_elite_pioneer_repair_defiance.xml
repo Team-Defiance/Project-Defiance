@@ -172,7 +172,7 @@
 													<uniqueid name="id" value="1073748027" />
 												</template_reference>
 												<template_reference name="action" value="action\heal_action">
-													<float name="amount" value="2" />
+													<float name="amount" value="1.6" />
 													<group name="target_info">
 														<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
 															<list name="target_infos">
@@ -547,7 +547,7 @@
 													<locstring name="ui_name" value="0" />
 													<bool name="include_queued" value="False" />
 													<bool name="is_present" value="True" />
-													<instance_reference name="upgrade_name" value="upgrade\west_german\items\assault_pioneer_repair_upgrade" />
+													<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzer_pioneer_minesweeper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												</template_reference>
 											</list>
 											<list name="action_table">
