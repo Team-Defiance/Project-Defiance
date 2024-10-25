@@ -272,13 +272,13 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="40" />
-			<float name="min" value="40" />
+			<float name="max" value="50" />
+			<float name="min" value="50" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
+					<bool name="instant_requirement_check" value="True" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
@@ -298,18 +298,83 @@
 								</template_reference>
 							</list>
 						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_slot_item">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="check_item_on_entity" value="False" />
+									<bool name="display_requirement" value="True" />
+									<float name="max_owned" value="10" />
+									<float name="min_owned" value="1" />
+									<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+								</template_reference>
+							</list>
+						</template_reference>
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="80" />
+							<float name="damage" value="90" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073744083" />
+							<uniqueid name="id" value="1073751857" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073744084" />
+					<uniqueid name="id" value="1073751858" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="infantry" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="required" value="requirements\required_slot_item">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="check_item_on_entity" value="False" />
+							<bool name="display_requirement" value="True" />
+							<float name="max_owned" value="10" />
+							<float name="min_owned" value="1" />
+							<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="56" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="True" />
+							<enum name="crit_weapon_type" value="ballistic" />
+							<uniqueid name="id" value="1073751859" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751860" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -325,7 +390,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.25" />
+			<float name="deflection_damage_multiplier" value="0.2" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 				<template_reference name="action" value="action\requirement_action">
@@ -340,12 +405,27 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="infantry" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
 								<template_reference name="required" value="requirements\required_slot_item">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<bool name="check_item_on_entity" value="False" />
 									<bool name="display_requirement" value="True" />
-									<float name="max_owned" value="100" />
+									<float name="max_owned" value="10" />
 									<float name="min_owned" value="1" />
 									<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
 								</template_reference>
@@ -354,15 +434,65 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="20" />
+							<float name="damage" value="44" />
 							<bool name="percentage" value="False" />
-							<bool name="set" value="True" />
+							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
-							<enum name="crit_weapon_type" value="big_explosive" />
-							<uniqueid name="id" value="1073746653" />
+							<enum name="crit_weapon_type" value="ballistic" />
+							<uniqueid name="id" value="1073751861" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073746654" />
+					<uniqueid name="id" value="1073751862" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="infantry" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="required" value="requirements\required_slot_item">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="check_item_on_entity" value="False" />
+							<bool name="display_requirement" value="True" />
+							<float name="max_owned" value="10" />
+							<float name="min_owned" value="1" />
+							<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="33.2" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="True" />
+							<enum name="crit_weapon_type" value="ballistic" />
+							<uniqueid name="id" value="1073751863" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751864" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -420,10 +550,10 @@
 			<instance_reference name="projectile" value="ebps\projectile\panzerschreck_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="35" />
+			<float name="max" value="40" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="10" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -516,9 +646,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="180" />
-			<float name="far" value="180" />
-			<float name="mid" value="180" />
+			<float name="near" value="250" />
+			<float name="far" value="250" />
+			<float name="mid" value="250" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -527,15 +657,6 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
-			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="infantry" />
-				<group name="weapon_multipliers">
-					<float name="accuracy_multiplier" value="0.5" />
-					<float name="damage_multiplier" value="0.75" />
-					<float name="penetration_multiplier" value="1" />
-					<float name="suppression_multiplier" value="1" />
-				</group>
-			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073741892" />

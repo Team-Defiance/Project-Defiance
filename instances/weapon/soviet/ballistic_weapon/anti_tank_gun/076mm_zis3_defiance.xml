@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.06" />
+			<float name="near" value="0.07" />
 			<float name="far" value="0.04" />
-			<float name="mid" value="0.05" />
+			<float name="mid" value="0.055" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -377,7 +377,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\soviet_76mm_at_shell_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="60" />
+			<float name="max" value="65" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="10" />
@@ -387,8 +387,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.25" />
-				<float name="min" value="4.25" />
+				<float name="max" value="4.3" />
+				<float name="min" value="4.2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

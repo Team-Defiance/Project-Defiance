@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="120" />
-			<float name="min" value="120" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -377,17 +377,17 @@
 			<instance_reference name="projectile" value="ebps\projectile\aef_57mm_at_gun" />
 		</group>
 		<group name="range">
-			<float name="max" value="60" />
+			<float name="max" value="65" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="10" />
 				<float name="far" value="-1" />
-				<float name="mid" value="30" />
+				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2.4" />
+				<float name="max" value="2.3" />
 				<float name="min" value="2.1" />
 			</group>
 			<group name="duration_multiplier">
@@ -485,10 +485,10 @@
 		</group>
 		<list name="target_type_table">
 			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="infantry" />
+				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="0.25" />
+					<float name="damage_multiplier" value="1.5" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

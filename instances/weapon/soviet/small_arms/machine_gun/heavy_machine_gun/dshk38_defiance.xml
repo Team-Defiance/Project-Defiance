@@ -487,9 +487,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="near" value="8.5" />
-			<float name="far" value="6" />
-			<float name="mid" value="7.5" />
+			<float name="near" value="9" />
+			<float name="far" value="6.75" />
+			<float name="mid" value="8.1" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

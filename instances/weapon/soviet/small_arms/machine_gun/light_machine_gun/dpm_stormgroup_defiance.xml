@@ -17,8 +17,8 @@
 				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="2.5" />
-				<float name="far" value="3" />
+				<float name="near" value="1.75" />
+				<float name="far" value="3.5" />
 				<float name="mid" value="1" />
 			</group>
 		</group>
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="0.75" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.7" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.05" />

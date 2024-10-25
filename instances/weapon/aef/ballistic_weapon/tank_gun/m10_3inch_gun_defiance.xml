@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.06" />
-			<float name="far" value="0.03" />
-			<float name="mid" value="0.04" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.015" />
+			<float name="mid" value="0.0425" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="160" />
-			<float name="min" value="160" />
+			<float name="max" value="100" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -284,7 +284,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0" />
+			<float name="deflection_damage_multiplier" value="0.1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 				<template_reference name="action" value="action\requirement_action">
@@ -369,18 +369,18 @@
 			<instance_reference name="projectile" value="ebps\projectile\aef_75mm_tank_shell_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="50" />
+			<float name="max" value="55" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.5" />
-				<float name="min" value="4" />
+				<float name="max" value="5" />
+				<float name="min" value="4.8" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -402,8 +402,8 @@
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0.25" />
-			<float name="distance_scatter_ratio" value="1" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
@@ -452,7 +452,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="30" />
-				<float name="speed_horizontal" value="36" />
+				<float name="speed_horizontal" value="19" />
 				<float name="speed_vertical" value="45" />
 			</group>
 			<float name="pivot_end_time" value="0" />
@@ -465,9 +465,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="160" />
-			<float name="far" value="140" />
-			<float name="near" value="180" />
+			<float name="mid" value="205" />
+			<float name="far" value="180" />
+			<float name="near" value="225" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -476,6 +476,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.4" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742031" />

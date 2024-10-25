@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="16" />
+				<float name="radius" value="16.5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -56,7 +56,7 @@
 				<float name="mid" value="0.0625" />
 			</group>
 			<group name="distance">
-				<float name="far" value="12" />
+				<float name="far" value="14" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="6" />
 			</group>

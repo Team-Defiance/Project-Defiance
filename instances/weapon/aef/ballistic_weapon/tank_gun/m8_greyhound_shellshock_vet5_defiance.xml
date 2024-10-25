@@ -13,13 +13,13 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="0.75" />
+				<float name="max" value="0.875" />
+				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="2.5" />
+				<float name="mid" value="1.5" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -402,18 +402,18 @@
 			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_t70_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="40" />
+			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="8" />
-				<float name="far" value="30" />
-				<float name="mid" value="15" />
+				<float name="near" value="5" />
+				<float name="far" value="-1" />
+				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2" />
-				<float name="min" value="1.5" />
+				<float name="max" value="3.8" />
+				<float name="min" value="3.4" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -428,15 +428,15 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="6" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="4.2" />
+			<float name="distance_scatter_max" value="4.1" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0.15" />
-			<float name="distance_scatter_ratio" value="1" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
@@ -498,9 +498,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="100" />
-			<float name="far" value="100" />
-			<float name="near" value="100" />
+			<float name="mid" value="110" />
+			<float name="far" value="90" />
+			<float name="near" value="120" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
