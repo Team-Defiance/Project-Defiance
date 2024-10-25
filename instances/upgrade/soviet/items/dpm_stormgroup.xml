@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="75" />
+				<float name="munition" value="70" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="35" />
@@ -47,11 +47,6 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073745981" />
 			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dpm_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073751800" />
-			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
@@ -74,7 +69,7 @@
 				<locstring name="ui_name" value="955" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="2" />
+					<float name="command" value="3" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />

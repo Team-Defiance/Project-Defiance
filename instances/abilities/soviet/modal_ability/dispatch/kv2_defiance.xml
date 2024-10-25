@@ -41,7 +41,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="230" />
-			<float name="manpower" value="650" />
+			<float name="manpower" value="640" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -119,7 +119,7 @@
 				<locstring name="ui_name" value="308" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="13" />
+					<float name="command" value="12" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
@@ -139,14 +139,6 @@
 						<enum name="entity_type" value="" />
 					</template_reference>
 				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="643" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\research\tankograd" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_all_in_list">
 				<enum name="reason" value="usage" />

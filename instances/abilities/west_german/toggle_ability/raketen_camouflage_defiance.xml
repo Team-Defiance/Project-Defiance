@@ -121,8 +121,8 @@
 											<bool name="injured" value="False" />
 											<bool name="leader" value="False" />
 											<bool name="not_moving" value="True" />
-											<bool name="not_retreating" value="True" />
-											<bool name="pinned" value="True" />
+											<bool name="not_retreating" value="False" />
+											<bool name="pinned" value="False" />
 											<bool name="suppressed" value="False" />
 											<bool name="camouflaged" value="False" />
 										</template_reference>
@@ -140,7 +140,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.75" />
+											<float name="value" value="0.5" />
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>

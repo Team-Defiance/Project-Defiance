@@ -213,6 +213,24 @@
 					<instance_reference name="self_destruct_ability" value="" />
 				</group>
 			</group>
+			<group name="production_building">
+				<group name="builder">
+					<locstring name="screen_name" value="0" />
+					<icon name="symbol_icon_name" value="" />
+					<enum name="unit_type" value="" />
+					<icon name="icon_name" value="" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="dispatch_ability" value="" />
+				</group>
+				<group name="building">
+					<locstring name="screen_name" value="11007128" />
+					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
+					<enum name="unit_type" value="motor_pool_heavy" />
+					<icon name="icon_name" value="Icons_tooltips_tab_05_heavy_factory" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="self_destruct_ability" value="" />
+				</group>
+			</group>
 		</list>
 		<group name="ai_production_info">
 			<list name="base_building_list">
@@ -331,7 +349,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="tier4" />
-				<instance_reference name="building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" />
+				<instance_reference name="building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">
