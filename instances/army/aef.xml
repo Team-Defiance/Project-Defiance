@@ -100,7 +100,7 @@
 						<instance_reference name="tooltip" value="modifier_tooltip\income_munition_player_modifier" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073741984" />
+				<uniqueid name="id" value="1073751947" />
 			</template_reference>
 			<template_reference name="action" value="action\player_target_action">
 				<bool name="allies" value="False" />
@@ -112,10 +112,10 @@
 						<bool name="apply_to_entities_in_squad" value="False" />
 						<bool name="trigger_publish_event" value="False" />
 						<instance_reference name="upgrade" value="upgrade\army_items\infantry_discount_mp" />
-						<uniqueid name="id" value="1073741985" />
+						<uniqueid name="id" value="1073751948" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073741986" />
+				<uniqueid name="id" value="1073751949" />
 			</template_reference>
 		</list>
 		<list name="abilities">
@@ -123,7 +123,7 @@
 			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\m26_pershing_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\mixed_he_wp_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\operation_breakout_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p47_mg_rocket_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p45_nokota_ace_mg_rocket_loiter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
@@ -215,6 +215,9 @@
 		<group name="ai_production_info">
 			<list name="base_building_list">
 				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armored_rifle_command_mp" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armor_command_mp" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\company_weapons_pool_mp" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\rifle_command_mp" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
@@ -223,6 +226,7 @@
 					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_bazooka_mp" />
 					<list name="upgraded_squads">
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
+						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
@@ -233,6 +237,7 @@
 					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_browning_automatic_rifle_mp" />
 					<list name="upgraded_squads">
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
+						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
@@ -252,15 +257,16 @@
 					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_m1919_lmg" />
 					<list name="upgraded_squads">
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
+						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
 						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
 				</group>
 			</list>
 			<group name="builder_squads">
-				<instance_reference name="base_builder_squad" value="" />
-				<instance_reference name="obs_post_builder_squad" value="" />
-				<instance_reference name="defense_builder_squad" value="" />
+				<instance_reference name="base_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
+				<instance_reference name="obs_post_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">
