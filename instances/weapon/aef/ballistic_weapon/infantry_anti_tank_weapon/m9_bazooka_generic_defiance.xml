@@ -321,10 +321,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073751869" />
+							<uniqueid name="id" value="1073752243" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751870" />
+					<uniqueid name="id" value="1073752244" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -371,10 +371,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073751871" />
+							<uniqueid name="id" value="1073752245" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751872" />
+					<uniqueid name="id" value="1073752246" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -439,10 +439,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073751865" />
+							<uniqueid name="id" value="1073752247" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751866" />
+					<uniqueid name="id" value="1073752248" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -489,10 +489,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073751867" />
+							<uniqueid name="id" value="1073752249" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751868" />
+					<uniqueid name="id" value="1073752250" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -547,7 +547,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\aef_m9_bazooka_rocket" />
+			<instance_reference name="projectile" value="ebps\projectile\060mm_m9_bazooka_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="40" />

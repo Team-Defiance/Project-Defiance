@@ -346,7 +346,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.35" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -387,8 +387,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.2" />
-				<float name="min" value="4.3" />
+				<float name="max" value="5.9" />
+				<float name="min" value="5.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

@@ -651,11 +651,16 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="" />
 														<enum name="usage_type" value="addition" />
-														<float name="value" value="20" />
+														<float name="value" value="10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073747346" />
+											</template_reference>
+											<template_reference name="action" value="action\slot_item_add">
+												<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+												<bool name="permanent" value="True" />
+												<uniqueid name="id" value="1073752355" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />

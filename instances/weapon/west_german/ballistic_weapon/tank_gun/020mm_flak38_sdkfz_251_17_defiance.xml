@@ -314,7 +314,7 @@
 										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\vehicle_destroy" />
-											<uniqueid name="id" value="1073751840" />
+											<uniqueid name="id" value="1073752335" />
 										</template_reference>
 									</list>
 									<int name="weight" value="17" />
@@ -322,7 +322,7 @@
 								<group name="action_choice">
 									<list name="actions">
 										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073751841" />
+											<uniqueid name="id" value="1073752336" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
 										</template_reference>
@@ -330,10 +330,10 @@
 									<int name="weight" value="83" />
 								</group>
 							</list>
-							<uniqueid name="id" value="1073751842" />
+							<uniqueid name="id" value="1073752337" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751843" />
+					<uniqueid name="id" value="1073752338" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -518,5 +518,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742086" />
+	<uniqueid name="pbgid" value="1073742094" />
 </instance>

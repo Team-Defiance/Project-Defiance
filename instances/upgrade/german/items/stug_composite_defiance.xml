@@ -48,48 +48,12 @@
 				<list name="modifiers">
 					<template_reference name="modifier" value="modifiers\armor_modifier">
 						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="True" />
+						<bool name="exclusive" value="False" />
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="addition" />
-						<float name="value" value="40" />
+						<float name="value" value="10" />
 						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="-0.5" />
-						<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="multiplication" />
-						<float name="value" value="0.9" />
-						<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="2" />
-						<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\received_damage_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="multiplication" />
-						<float name="value" value="0.9" />
-						<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 					</template_reference>
 				</list>
 				<uniqueid name="id" value="1073743852" />
@@ -128,7 +92,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1932" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
