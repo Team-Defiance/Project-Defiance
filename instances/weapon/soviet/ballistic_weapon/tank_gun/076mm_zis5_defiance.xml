@@ -46,37 +46,37 @@
 				<float name="radius" value="2.625" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.09" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.35" />
+				<float name="mid" value="0.42" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0375" />
+				<float name="far" value="0.045" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.175" />
+				<float name="mid" value="0.21" />
 			</group>
 			<group name="distance">
 				<float name="far" value="2.5" />
-				<float name="near" value="0.25" />
+				<float name="near" value="0.1" />
 				<float name="mid" value="1.25" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="suppression">
-				<float name="far" value="0.35" />
-				<float name="near" value="0.75" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.1" />
+				<float name="near" value="0.2" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="suppression_friendly">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.2" />
 				<float name="mid" value="0.15" />
 			</group>
-			<bool name="damage_all_in_hold" value="True" />
+			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="28" />
-				<float name="near" value="80" />
+				<float name="mid" value="10" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -370,7 +370,7 @@
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="6.9" />
-			<float name="distance_scatter_obj_hit_min" value="5" />
+			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1.25" />
@@ -445,6 +445,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.6" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073741872" />
