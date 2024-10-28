@@ -95,6 +95,25 @@
 				</list>
 				<uniqueid name="id" value="1073751852" />
 			</template_reference>
+			<template_reference name="action" value="action\add_weapon">
+				<float name="hardpoint" value="1" />
+				<group name="weapon">
+					<group name="heading">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="1" />
+					</group>
+					<float name="length" value="0" />
+					<group name="origin">
+						<float name="x" value="0" />
+						<float name="y" value="0.5" />
+						<float name="z" value="0" />
+					</group>
+					<enum name="type" value="default" />
+					<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_kwk40_heat" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<uniqueid name="id" value="1073752003" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">

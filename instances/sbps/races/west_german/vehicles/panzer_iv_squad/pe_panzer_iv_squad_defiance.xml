@@ -303,7 +303,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\p4_blitz_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\p4_blitz_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
