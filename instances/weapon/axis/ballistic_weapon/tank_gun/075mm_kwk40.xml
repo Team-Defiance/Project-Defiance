@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.03" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -46,18 +46,18 @@
 				<float name="radius" value="2.625" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.09" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.35" />
+				<float name="mid" value="0.42" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0375" />
+				<float name="far" value="0.045" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.175" />
+				<float name="mid" value="0.21" />
 			</group>
 			<group name="distance">
 				<float name="far" value="2.5" />
-				<float name="near" value="0.25" />
+				<float name="near" value="0.1" />
 				<float name="mid" value="1.25" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="28" />
-				<float name="near" value="80" />
+				<float name="mid" value="10" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.4" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -335,7 +335,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\kwk_40_75mm_panzeriv_tank_gun_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\075mm_kwk40_ap_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="45" />

@@ -3,7 +3,7 @@
 		<group name="accuracy">
 			<float name="near" value="0.1" />
 			<float name="far" value="0.02" />
-			<float name="mid" value="0.05" />
+			<float name="mid" value="0.06" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -377,7 +377,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="45" />
+			<float name="max" value="50" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="10" />
@@ -387,8 +387,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.25" />
-				<float name="min" value="2.75" />
+				<float name="max" value="4.6" />
+				<float name="min" value="4.4" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -473,9 +473,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="near" value="25" />
-			<float name="far" value="18.75" />
-			<float name="mid" value="22.5" />
+			<float name="near" value="20" />
+			<float name="far" value="20" />
+			<float name="mid" value="20" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -489,7 +489,7 @@
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="4" />
-					<float name="penetration_multiplier" value="1" />
+					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

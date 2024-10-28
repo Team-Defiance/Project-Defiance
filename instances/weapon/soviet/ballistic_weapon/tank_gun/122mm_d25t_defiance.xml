@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.03" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="6" />
+				<float name="radius" value="6.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.08" />
+				<float name="far" value="0.075" />
 				<float name="near" value="0.8" />
 				<float name="mid" value="0.28" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.04" />
+				<float name="far" value="0.0375" />
 				<float name="near" value="0.4" />
 				<float name="mid" value="0.14" />
 			</group>
 			<group name="distance">
-				<float name="far" value="5.5" />
+				<float name="far" value="5.75" />
 				<float name="near" value="0.1" />
-				<float name="mid" value="0.9" />
+				<float name="mid" value="0.875" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -284,7 +284,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.375" />
+			<float name="deflection_damage_multiplier" value="0.25" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.4" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\122mm_d25t_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="40" />
+			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="9.6" />
-				<float name="min" value="9" />
+				<float name="max" value="12.5" />
+				<float name="min" value="12.2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="270" />
-			<float name="far" value="260" />
-			<float name="mid" value="265" />
+			<float name="near" value="340" />
+			<float name="far" value="300" />
+			<float name="mid" value="325" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -449,7 +449,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.2" />
+					<float name="damage_multiplier" value="1.25" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

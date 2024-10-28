@@ -355,7 +355,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\kt_kwk_panzeriv_defiance.xml</FileName>
-			<FileHash>38e8f63a416a5e6976818c91917f2c94</FileHash>
+			<FileHash>f230faa97a4397edd42edf1daf83ff77</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\p4_smoke_drop.xml</FileName>
@@ -630,6 +630,10 @@
 			<FileHash>18539b5c072bd1e355b09ffbc9a1b3e4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\timed_ability\p4_blitz_pe_defiance.xml</FileName>
+			<FileHash>686a53caea7e95ea35b1b8d2aa88ab01</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\timed_ability\pak36_37_rapid_maneuver.xml</FileName>
 			<FileHash>53904f102becd278b8bb5e222f041531</FileHash>
 		</BurnInfo>
@@ -791,7 +795,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\modal_ability\accessory_weapons\kv2_flame_shot.xml</FileName>
-			<FileHash>f9d33e3d94c02fe05019cfe649ab1128</FileHash>
+			<FileHash>96a10f0854a1c64b7f94185ca276cc58</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\modal_ability\accessory_weapons\su76_tagging_shell.xml</FileName>
@@ -1170,6 +1174,10 @@
 			<FileHash>b654fad3129b7c24e6081fbbef042fa5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\p4_smoke_drop_pe.xml</FileName>
+			<FileHash>41e6b001d81d3d11b00c67c9308afa8b</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\panzer_pioneer_drop_medcrates_defiance.xml</FileName>
 			<FileHash>14e6e913230b6fa5d0d8e675f02a0ba7</FileHash>
 		</BurnInfo>
@@ -1272,6 +1280,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\timed_ability\pe_apcr_generic_defiance.xml</FileName>
 			<FileHash>78e0a84c050f48a3d81d9865304a43e9</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\timed_ability\pe_heat_p4_defiance.xml</FileName>
+			<FileHash>cdaf1dfa6d609cf5826035a02be302ce</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\timed_ability\pe_hmg34_sustained_fire_defiance.xml</FileName>
@@ -1379,51 +1391,67 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\020mm_kwk38_shell.xml</FileName>
-			<FileHash>cd0e2edc6a2d76ebdcd8bac9f00859df</FileHash>
+			<FileHash>60efa8db0255613cb753a3955b0558f7</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\037mm_flak_shell_defiance.xml</FileName>
-			<FileHash>8563ce4ea7a0245ea308d97e5dbb89e6</FileHash>
+			<FileHash>a00db35b7d8bf8fd50abcdccfa2cbe04</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\050mm_rmn_shell.xml</FileName>
-			<FileHash>7b33e6e733bed18be3d4641293186263</FileHash>
+			<FileHash>f2b1554162dc8d8488637aeb97a6330a</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\075mm_kwk40_ap_shell_defiance.xml</FileName>
+			<FileHash>18e0729371378db4d4315d549d79d072</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\075mm_kwk40_heat_shell_defiance.xml</FileName>
+			<FileHash>6064412955ebc5fd1a832a38c1c3f6d3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\076mm_covering_shell.xml</FileName>
-			<FileHash>c18c43de1eb7db83826084228600525a</FileHash>
+			<FileHash>8215e9ecd65f043c19d1d347c55eb5e4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\081mm_grw42_mortar_mine_round.xml</FileName>
-			<FileHash>61e4d9b54445668dfc7bc6cdefb89425</FileHash>
+			<FileHash>8c98c4656d8b142511b044ef6bd98687</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\085mm_ap_shell.xml</FileName>
-			<FileHash>fc86157cacf4fdb7a063a24b37b107a4</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\085mm_zis_s53_ap_shell.xml</FileName>
+			<FileHash>6da75b6925cc9317a3962a59ec9502ec</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\088mm_pak43_ap_elefant.xml</FileName>
-			<FileHash>cc2ec7441f37abae029a56d596e77e56</FileHash>
+			<FileHash>d1c9842248f2e1e34208f8ba1b5ad2af</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\088mm_pak43_heat_elefant.xml</FileName>
-			<FileHash>aea6a70accea8fff25bfb6574591a08d</FileHash>
+			<FileHash>bf5389010ba01c33f99ebe0a8d4dd156</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_sherman_flame_shell.xml</FileName>
-			<FileHash>39aa91ec74419d7c9bff71e02b883195</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\088mm_rw43_heat_rocket.xml</FileName>
+			<FileHash>517b4035dc4592d334f202fb982c9f23</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_m1_flame_shell_sherman.xml</FileName>
+			<FileHash>66a58604b57be0dffcf6cd70c9459109</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_m1_he_shell_sherman.xml</FileName>
+			<FileHash>3d5f382ed944222ee8a1b891891d34ee</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_stuh42_heat.xml</FileName>
-			<FileHash>c3d9bfc64ace55efbfaa26e83c557c5e</FileHash>
+			<FileHash>d3d5952c27523c81c9ecb90797992735</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_stuh_shell.xml</FileName>
-			<FileHash>10fe5d6bd7ef61f25a4ba0290402f4bd</FileHash>
+			<FileHash>88a7a5a790cddb381807f95f94f30148</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\105mm_stuh_shell_smoke.xml</FileName>
-			<FileHash>8767294c2aaaaf7a9f167f2361392158</FileHash>
+			<FileHash>ee1124d491e40841f6c4bf58f2808bd2</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\122mm_d25t_shell.xml</FileName>
@@ -1438,12 +1466,20 @@
 			<FileHash>7fd41bddb06daadd63a65fb634dc810f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\150mm_stuh43_he_shell.xml</FileName>
+			<FileHash>0dab6cbacbd4e2e65fececf0f4cba03b</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\150mm_werfer_rocket.xml</FileName>
 			<FileHash>b6835e92411d0395fbc8401edbe30d72</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\152mm_kv2_flame_projectile.xml</FileName>
-			<FileHash>50ef18da8bc7c04b965bd5fe04d62f9e</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\152mm_m10t_flame_shell.xml</FileName>
+			<FileHash>56d4dea7793ea84ef790bf4c63b674b8</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\152mm_m10t_he_shell.xml</FileName>
+			<FileHash>6797143ec4b99e2cf539e703aee5cef1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\203mm_b4_shell_defiance.xml</FileName>
@@ -1507,11 +1543,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\leig_75_shell_high.xml</FileName>
-			<FileHash>3eba55c2154f2c7d69df32edb6fb2310</FileHash>
+			<FileHash>e42312ee7997ef6102cd2a8c7b15bf29</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\leig_75_shell_low.xml</FileName>
-			<FileHash>b2200942c56a31026ee3c0313e181e38</FileHash>
+			<FileHash>6e8bb6a4762ceb6c087449b6e1416f02</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\m43_bundle.xml</FileName>
@@ -1963,11 +1999,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m36_jackson_90mm_defiance.xml</FileName>
-			<FileHash>a9d37ab5bfa5f6ff392ceabd1fb503da</FileHash>
+			<FileHash>9975750b4f32439d8c9b6fb8bac40bb3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_105mm_defiance.xml</FileName>
-			<FileHash>b0a993a8f156f5adb38cd75626b90824</FileHash>
+			<FileHash>b38cca193232d7ac964cd1bdc5366a36</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_75mm_crocodile_defiance.xml</FileName>
@@ -1975,7 +2011,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_75mm_defiance.xml</FileName>
-			<FileHash>00fa084657810549c3e2028ceb353878</FileHash>
+			<FileHash>67385cc85705809d131a33ace336fb22</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_76mm_defiance.xml</FileName>
@@ -1987,7 +2023,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_jumbo_76mm_defiance.xml</FileName>
-			<FileHash>a251012851aca5ef3e2db4d08e35908c</FileHash>
+			<FileHash>549717e90b21f268b93441e57a43a246</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a2_sherman_whizbang_defiance.xml</FileName>
@@ -1995,15 +2031,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a3e8_sherman_76mm_command_defiance.xml</FileName>
-			<FileHash>580b6d2ba6ddb6facf6887f54ab10384</FileHash>
+			<FileHash>ad116ae2761e9e346ffad37b8c783caa</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m4a3e8_sherman_76mm_defiance.xml</FileName>
-			<FileHash>2a1253b5468300301c34d2dff46cefb1</FileHash>
+			<FileHash>e79a3b9931110151705e8c390916c04a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\medium_tanks\m7b1_priest_defiance.xml</FileName>
-			<FileHash>d65ce33fa3d2f1f75d357b99fc63460a</FileHash>
+			<FileHash>e7df6e8e9f855e3c272b614e329494a9</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\british\buildings\base_building\british_base_stamper.xml</FileName>
@@ -2179,11 +2215,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\elefant_sdkfz_184\elefant_sdkfz_184_defiance.xml</FileName>
-			<FileHash>b5d3512859c98a764c0bd8942f71c53f</FileHash>
+			<FileHash>f1001b09b59ce7ddaef1e850b993741c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\halftrack_sdkfz_251\halftrack_sdkfz_251_mp.xml</FileName>
-			<FileHash>eb433b665e6a545d0d34ec3912e08f91</FileHash>
+			<FileHash>334fcfb2e4d716b87c5c7d83beabbdbe</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\ostwind_flak_panzer\ostwind_flak_panzer_defiance.xml</FileName>
@@ -2191,7 +2227,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panther_sdkfz_171\panther_sdkfz_171_defiance.xml</FileName>
-			<FileHash>e12f345cf67be14ee83d20252d84c5ef</FileHash>
+			<FileHash>3834b07d4070ef5a017fc5c9ead2516b</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzerwerfer_sdkfz_4_1\panzerwerfer_sdkfz_4_1_mp.xml</FileName>
@@ -2199,11 +2235,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzer_ii_defiance\panzer_ii_luchs_sdkfz_123_defiance.xml</FileName>
-			<FileHash>5be544102b83daf39361905ebd37c4dd</FileHash>
+			<FileHash>d80e4ec69924e736233918ac0470584b</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzer_iv\ostwind_flak_panzer_iv_defiance.xml</FileName>
-			<FileHash>d5a72da31e0c1da09bb4db157f583165</FileHash>
+			<FileHash>9096ea0aebec809f1704ef05a2c30469</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzer_iv\panzer_iv_ace_defiance.xml</FileName>
@@ -2211,19 +2247,19 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzer_iv\panzer_iv_defiance.xml</FileName>
-			<FileHash>f2fb29e6fa0cee649546efd66b0a4c21</FileHash>
+			<FileHash>f43d03bdb116080b65ba9de7164a96ca</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\panzer_iv\sdkfz_166_stupa.xml</FileName>
-			<FileHash>989565baea3e10414f7580668e20a642</FileHash>
+			<FileHash>045b661cbee0d99583a1b5c31a61f303</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\sdkfz_142\sdkfz_142_2_stuh42_defiance.xml</FileName>
-			<FileHash>0a7ac14f10c191773cc50ef770b1fa8d</FileHash>
+			<FileHash>698688ebfdb1adf52ff27ad87443840e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\sdkfz_142\stug_iii_g_sdkfz_142_1_defiance.xml</FileName>
-			<FileHash>6025b97549b807a13b821c5188eafcad</FileHash>
+			<FileHash>071f196074797250b881f070c716d172</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\stuka_aircraft\stuka_smoke_bomb_defiance.xml</FileName>
@@ -2231,7 +2267,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\tiger_sdkfz_181\tiger_1_181_defiance.xml</FileName>
-			<FileHash>ced56c1a38c89934caae4f1c77b4e48e</FileHash>
+			<FileHash>e1b21e9f7a5cc330b4b01d930ca640f1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\barracks_mp.xml</FileName>
@@ -2351,7 +2387,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\aa_halftrack\m15a1_aa_halftrack_defiance.xml</FileName>
-			<FileHash>c9333a42b138bd0aef92e87751f92033</FileHash>
+			<FileHash>26c49989bed72529bb50de0b847fbd16</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\halftracks\m3_soviet_halftrack_defiance.xml</FileName>
@@ -2371,11 +2407,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\kv\kv1_defiance.xml</FileName>
-			<FileHash>2da7adc6bd941dc0893f78f46200eedf</FileHash>
+			<FileHash>b3ef793151703a0677af077aa7d5b470</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\kv\kv2_defiance.xml</FileName>
-			<FileHash>f924aa99aaf4beeb5753a266b2262d76</FileHash>
+			<FileHash>2e184a72dfd05d52cf8862dc242e8f93</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\m3a1_scout_car\m3a1_scoutcar_defiance.xml</FileName>
@@ -2383,27 +2419,27 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\stalin_tank\is2.xml</FileName>
-			<FileHash>b842fc407a6c6aa56bc1b9adb83c7479</FileHash>
+			<FileHash>31fa7979ada30585f170caf1a92f5671</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\t_34\su_100_defiance.xml</FileName>
-			<FileHash>cd03479846680d62a4208a67ede366ea</FileHash>
+			<FileHash>ced4660013544343d2ffb820684a8151</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\t_34\t_3476_defiance.xml</FileName>
-			<FileHash>cd85e2bac2a2f5594256e8537547f3c4</FileHash>
+			<FileHash>4c31d8f93c4e370f1341e8837f3af5c1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\t_34\t_3485_defiance.xml</FileName>
-			<FileHash>fb04eb3cc8be03682a59648884a19f6b</FileHash>
+			<FileHash>990678eb5b551ebff40ceba44634ba0e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\t_70\su_76m_defiance.xml</FileName>
-			<FileHash>649d127a4a02af0b9f40453524dc7aaa</FileHash>
+			<FileHash>29fab146ee78ee7e8256584ffca0688d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\t_70\t_70m_command_defiance.xml</FileName>
-			<FileHash>3644f10e753f98137af9d45fb7e0076a</FileHash>
+			<FileHash>6bce27763102d860d574f2d46e2c1e95</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance.xml</FileName>
@@ -2471,7 +2507,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\team_weapons\at_gun\raketenwerfer_defiance.xml</FileName>
-			<FileHash>3033dc47a0d83ff1c7f3bbf26dd01747</FileHash>
+			<FileHash>2babfca96dcbb20daf147bd618320b25</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\team_weapons\leig\leig_defiance.xml</FileName>
@@ -2499,7 +2535,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\sdkfz_251_flak_defiance.xml</FileName>
-			<FileHash>4976bd9e5b2d307997ee81b5639173cf</FileHash>
+			<FileHash>828af70f75349f24cd6fe1997b099734</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\sdkfz_251_ir_defiance.xml</FileName>
@@ -2523,7 +2559,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\panzer\panzer_iv_f_west_defiance.xml</FileName>
-			<FileHash>6e19b7dc1cd6148de6608ff43ffe3854</FileHash>
+			<FileHash>b17a5a508c51c19fad8c9be73242407e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\panzer\panzer_iv_j_defiance.xml</FileName>
@@ -2543,7 +2579,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\sdkfz_234\sdkfz_234_defiance.xml</FileName>
-			<FileHash>8cac420eea6338cfa8b4afb2d98398c2</FileHash>
+			<FileHash>6836880a5a8844bd7089d0cfd9f2f0ca</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\sws_halftracks\sws_halftrack_generic_defiance.xml</FileName>
@@ -2935,7 +2971,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_flak_squad_defiance.xml</FileName>
-			<FileHash>d8f941634665603bfa0a37f4ad2689ca</FileHash>
+			<FileHash>2a126caedc522d2ebf18569569652936</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_ir_squad_defiance.xml</FileName>
@@ -2975,7 +3011,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\panzer_iv_squad\pe_panzer_iv_squad_defiance.xml</FileName>
-			<FileHash>9354da1dd2957c6129914d452deda1e8</FileHash>
+			<FileHash>5f6a36e5edef1b1fb87d2c19baa8e56f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\sdkfz_221\sdkfz_221_squad_defiance.xml</FileName>
@@ -3647,7 +3683,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\upgrade\west_german\items\p4_pe_kwk_40_upgrade.xml</FileName>
-			<FileHash>c5114c20fe04dbcd141d4ac6b9c3ff72</FileHash>
+			<FileHash>546ae7b3617d1377102942dd3844104a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\upgrade\west_german\items\p4_skirts_shared_panzer_elite_defiance.xml</FileName>
@@ -3735,7 +3771,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\anti_tank_gun\57mm_at_gun_defiance.xml</FileName>
-			<FileHash>eaa945630d4c9435b5844e4557c78a66</FileHash>
+			<FileHash>8522adebee49d25210e6f52cd70d9307</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\infantry_anti_tank_weapon\m9_bazooka_generic_defiance.xml</FileName>
@@ -3751,23 +3787,23 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\105mm_sherman_barrage_defiance.xml</FileName>
-			<FileHash>9787f108e1b80bf05f3438a6254e3f75</FileHash>
+			<FileHash>fe0299f579308490aa3fd65fd669f844</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\105mm_sherman_barrage_flame_defiance.xml</FileName>
-			<FileHash>e952a2121f8e06d44e55fb85bd8c5f23</FileHash>
+			<FileHash>30de8197510949622fbdcb582f3d802e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\105mm_sherman_he_defiance.xml</FileName>
-			<FileHash>2f8c211b14ac2e2c509d81796b9088a5</FileHash>
+			<FileHash>9f8ed611fd186884a98aa64acd1a0530</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\m10_3inch_gun_defiance.xml</FileName>
-			<FileHash>3f69d6b2a1dc86e0f768a0adffe207d4</FileHash>
+			<FileHash>8d7ca8ab9beaa1b3f612ff2661e028c5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\m10_3inch_gun_hvap_defiance.xml</FileName>
-			<FileHash>1f245873403cf4d4fabe7b66501b0d97</FileHash>
+			<FileHash>ab6d9b4bba82529fe855bab72f1f9aec</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\m8_greyhound_37mm_defiance.xml</FileName>
@@ -3775,19 +3811,19 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\m8_greyhound_shellshock_vet0_defiance.xml</FileName>
-			<FileHash>760543959c81b0c273eb5e2ab4cef42b</FileHash>
+			<FileHash>804464e23eed6813d356428ffe040078</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\m8_greyhound_shellshock_vet5_defiance.xml</FileName>
-			<FileHash>2f177dc3099392301a5f091d2146a10d</FileHash>
+			<FileHash>b743ba6ebf3fbe646e73f6965807f102</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\sherman_75mm_ap_defiance.xml</FileName>
-			<FileHash>7ff3e2abcb55f6f823d7862160de992f</FileHash>
+			<FileHash>48292d1f6e21b92bdea5b3541e7a68c5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\ballistic_weapon\tank_gun\sherman_75mm_he_defiance.xml</FileName>
-			<FileHash>2a78d4b4d19b0b5a7f05ab315dc2adaf</FileHash>
+			<FileHash>34a5062c3f9f931b40a68a4da701a485</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\grenade\m7_thrown_at_mine_defiance.xml</FileName>
@@ -3807,7 +3843,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\heavy_artillery\105mm_m2a1_priest_defiance.xml</FileName>
-			<FileHash>b562907ae63953e2d06e4afb520fef42</FileHash>
+			<FileHash>ac8d3fcd57916ed6735bb46755a16e9a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\heavy_artillery\105mm_m2a1_priest_direct_defiance.xml</FileName>
@@ -3823,7 +3859,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\heavy_artillery\m7b1_priest_m2a1_105mm_creeping_defiance.xml</FileName>
-			<FileHash>82a6019d338c7f71c28f7a3e479c5a10</FileHash>
+			<FileHash>d7b9f0e447d8d53c98234c0f02a4cf9a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\heavy_artillery\m7b1_priest_m89_smoke_mp.xml</FileName>
@@ -3831,7 +3867,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\heavy_artillery\major_offmap_105mm_mp.xml</FileName>
-			<FileHash>232c59f2f52ddd77f5f047ed76320b04</FileHash>
+			<FileHash>33d14500e357a83a430571be47d6d2fc</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\light_artillery\075mm_m8a4_barrage.xml</FileName>
@@ -3863,11 +3899,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_barrage_defiance.xml</FileName>
-			<FileHash>131c3133594d60b0853d94dcecf05cd6</FileHash>
+			<FileHash>320e5d08af262f9c1ca96eff8704d089</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_defiance.xml</FileName>
-			<FileHash>2366bb617a008bde71e57d60fbbd771c</FileHash>
+			<FileHash>1574545c4579ae5724dc1e8483b835c7</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_smoke_defiance.xml</FileName>
@@ -3879,15 +3915,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\m21_halftrack_autofire_defiance.xml</FileName>
-			<FileHash>108265a5ad5d1c0cfaa8020606086b43</FileHash>
+			<FileHash>3bce7711a036bc72b20f3f79ed556156</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\m21_halftrack_df_barrage_defiance.xml</FileName>
-			<FileHash>0a5efa2c9afe7c37e3812bc941798950</FileHash>
+			<FileHash>6408a3ca9a336c76827dddae326cdb22</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\m21_halftrack_he_barrage_defiance.xml</FileName>
-			<FileHash>d92026f09b8d15d543a8afc25ff63284</FileHash>
+			<FileHash>b27608bff77ec3a186db0fa38cc461e3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\m21_halftrack_smoke_barrage_defiance.xml</FileName>
@@ -3895,7 +3931,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\explosive_weapons\mortar\m21_halftrack_wp_barrage_defiance.xml</FileName>
-			<FileHash>f1571ddc72515b6f041524d7c21b22d8</FileHash>
+			<FileHash>cab6cdb42523ecb5cf40f073d1581dd0</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\flamethrower\sherman_m4a3_hull_flamethrower_defiance.xml</FileName>
@@ -3903,15 +3939,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m5_quad_50_defiance.xml</FileName>
-			<FileHash>a3f4542fe3822d70b9da425b46518e21</FileHash>
+			<FileHash>b86a80a2f3b2571c0a19f06d3527174d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m8_greyhound_m2hb_50cal_defiance.xml</FileName>
-			<FileHash>2f41ed1970518eb8b0e0fd26babefdcd</FileHash>
+			<FileHash>ea585c54dccec7cef6a4c05e31b8e930</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\heavy_machine_gun\wc51_m2hb_defiance.xml</FileName>
-			<FileHash>e96549295bee61dfee15d9d97157b04f</FileHash>
+			<FileHash>d726752b8814c76193debb8ed6df41d7</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\heavy_machine_gun\wc51_m2hb_dummy_defiance.xml</FileName>
@@ -3919,11 +3955,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\light_machine_gun\m1918a2_bar_fastfire_defiance.xml</FileName>
-			<FileHash>91e6e7f55f286076ed95647eec56d3ff</FileHash>
+			<FileHash>0cee8a21181484b5fdfca804ef42de3f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\machine_gun\light_machine_gun\m1918a2_bar_generic_defiance.xml</FileName>
-			<FileHash>3f014add5846bb126e37d816c36c9fcf</FileHash>
+			<FileHash>f131b7dfcf1242f3a2a95f08f5743685</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\aef\small_arms\single_fire\rifle\m1c_sniper_rifle_defiance.xml</FileName>
@@ -3971,7 +4007,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\grenadiere_at_rifle_grenade.xml</FileName>
-			<FileHash>90daaed4787d4ed015556accb0bf2a0d</FileHash>
+			<FileHash>faa473aeeace0ad736534b001d9c9633</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\grenadiere_at_rifle_grenade_vet2.xml</FileName>
@@ -3983,11 +4019,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\panzerfaust_atw_defiance.xml</FileName>
-			<FileHash>203daa65c77212d32de983eaeb875507</FileHash>
+			<FileHash>a8cf3f43c6d001b941aad3d8da5a58dd</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\panzerschreck_defiance.xml</FileName>
-			<FileHash>d8ff739fccf6169fb99e285e05a8af4f</FileHash>
+			<FileHash>782e2708efcafd4d00ae2a5211070c44</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\pzb_39_defiance.xml</FileName>
@@ -3995,59 +4031,59 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\037mm_flak43_defiance.xml</FileName>
-			<FileHash>2657bd71538b182d36feff429056b788</FileHash>
+			<FileHash>8034fc7c32817e66ce6ba89eaab9ced2</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk37_panzer4_f_defiance.xml</FileName>
-			<FileHash>dce7d279acc4d8a7983c2c60824e365b</FileHash>
+			<FileHash>299a5b89030fcf80c21152c58610f3a5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk40.xml</FileName>
-			<FileHash>f46c9e69c7e487e3a04cb04139dbf489</FileHash>
+			<FileHash>1249e1b30249a7705e6d55892e7d0ac5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk40_heat.xml</FileName>
-			<FileHash>f5d80f78272e9132e5676e44187fb934</FileHash>
+			<FileHash>50ee59b93f60f44d2c539908e2194047</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk42_defiance.xml</FileName>
-			<FileHash>03e8a2c87a9332a66a7826d3c4c11883</FileHash>
+			<FileHash>285e806bb08504ed206dda19e842dc77</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\075mm_stuk40_defiance.xml</FileName>
-			<FileHash>154abf440c6c3bb92dcb535d2ab6b5f4</FileHash>
+			<FileHash>12b43dd23b703b0deab9a65f2ef2f712</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\088mm_kwk36_defiance.xml</FileName>
-			<FileHash>0707f023eb4fb862bc852b7b51d2c122</FileHash>
+			<FileHash>e92e46d906ac1d5bbb59cc1509dd18f5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\088mm_pak43_elefant.xml</FileName>
-			<FileHash>42ca87fcc0c4cefa2c4218995bd4144a</FileHash>
+			<FileHash>53ec9a479dbf1bf1ff1f52885ae74030</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\105mm_stuh42_barrage.xml</FileName>
-			<FileHash>ed6e1a73bf7e0c5e4d63dab33db3aa4c</FileHash>
+			<FileHash>b2bc1e3777168ed5b41c5ef7a4b6f633</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\105mm_stuh42_defiance.xml</FileName>
-			<FileHash>58134605f679e913196d3ce0b6f3fc7c</FileHash>
+			<FileHash>b371f69018c469b13ef33755b8993d4f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\105mm_stuh42_heat.xml</FileName>
-			<FileHash>7194adadbd3afeebb1d501b61b4ba2a2</FileHash>
+			<FileHash>49331889051a684e3d379492eb51d7c3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\105mm_stuh42_smoke.xml</FileName>
-			<FileHash>660eecafe044692b673b9c7633373419</FileHash>
+			<FileHash>e9615be394073db749b0814d5c5bda21</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\150mm_stuh43_barrage_defiance.xml</FileName>
-			<FileHash>4582dd320a3882d77d10b637af72c895</FileHash>
+			<FileHash>cd94fef14b3230e85880862a2168b26c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\150mm_stuh43_defiance.xml</FileName>
-			<FileHash>8ca0353af4c9097b643e71ed0af997b4</FileHash>
+			<FileHash>f6a2d9afd5f21bf21257dbebc15961b2</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\stug_75mm_short_commander_mp.xml</FileName>
@@ -4091,39 +4127,39 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_defiance.xml</FileName>
-			<FileHash>399401225115817f07629f0616d5d762</FileHash>
+			<FileHash>f5abb343c204055f8cab5cf90746f078</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_delay_airburst_actual_defiance.xml</FileName>
-			<FileHash>a6fed153ef28719a7b5a6b0f6ed9733d</FileHash>
+			<FileHash>f21e24b2914b20d909ac41be019ab254</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_delay_airburst_defiance.xml</FileName>
-			<FileHash>4bf34ae578a89740d3157dafc0032929</FileHash>
+			<FileHash>1b4d39d8b7d51c07531380d370030117</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_delay_buried_defiance.xml</FileName>
-			<FileHash>7f84b72c3d5f4d07f0fdb739f2b540e7</FileHash>
+			<FileHash>4e0454409b59121de5f21673932ca962</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\sector_105mm_gun.xml</FileName>
-			<FileHash>36f12a37e8db82acd2345082ecf16201</FileHash>
+			<FileHash>cae9d0b2475a6d3ee5e1fd082a602482</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\stuka_250_kg_bomb.xml</FileName>
-			<FileHash>54190d8bee0d1f72eac43262ca0aedef</FileHash>
+			<FileHash>ef92b8388d615ec1a9f437ce975ed5a4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\leig_18_75mm_barrage_defiance.xml</FileName>
-			<FileHash>4fbebfdd73ccf8fca5d3669b63802df7</FileHash>
+			<FileHash>81aad9a566535e7efd5f470ffaa8c083</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\leig_18_75mm_defiance.xml</FileName>
-			<FileHash>18de1be1b3b1810bbc05c14359b7bb9e</FileHash>
+			<FileHash>961b4351cc7e6369079db7f7022f547b</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\leig_18_75mm_smoke_defiance.xml</FileName>
-			<FileHash>1261c720fb2c18da17710b3467fdc63d</FileHash>
+			<FileHash>c0fd96f612090f16a401f779e3c5fda7</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\p4_smoke_drop.xml</FileName>
@@ -4135,15 +4171,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_flame_rockets.xml</FileName>
-			<FileHash>e679a6b993a71f63abd3bfa1d4fa516d</FileHash>
+			<FileHash>035bdfdf74f60d365e0fddc00c14ded1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_heat_rockets.xml</FileName>
-			<FileHash>a79cb8203ec095acfab5c0f989eb2627</FileHash>
+			<FileHash>a7c757381a976e929997a9b460994527</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_rockets_mp.xml</FileName>
-			<FileHash>52698aef1c4e5e7e8d7bac5b589b720f</FileHash>
+			<FileHash>7d24ae11c993e925eacfbf7962f27864</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\tiger_smoke_drop.xml</FileName>
@@ -4151,11 +4187,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_barrage_defiance.xml</FileName>
-			<FileHash>578cc45fbc445e22bb356c810e903800</FileHash>
+			<FileHash>5fdafc8a6f4983c48906db585b47ffda</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_defiance.xml</FileName>
-			<FileHash>ca1a8d4b4644b3d46378c75dae0550ec</FileHash>
+			<FileHash>c93819e375d0113fdad8626e6c59df9d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_mines.xml</FileName>
@@ -4179,7 +4215,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\machine_gun\light_machine_gun\coax_mg34_panzer_ii_defiance.xml</FileName>
-			<FileHash>1639e42949659fc7b0036f2ed22db54c</FileHash>
+			<FileHash>e82d1e0723cd8ea8de8df5a7f3ef508a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\machine_gun\light_machine_gun\grenadier_lmg34.xml</FileName>
@@ -4195,7 +4231,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\machine_gun\light_machine_gun\mg42_pintle_stug.xml</FileName>
-			<FileHash>4ba6d23ed2724a8fb1139b4b69d30eac</FileHash>
+			<FileHash>90e4a819b8949dd1d991c143285cefe8</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\machine_gun\light_machine_gun\mg42_turret_mounted_pziv_mp.xml</FileName>
@@ -4291,7 +4327,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38.xml</FileName>
-			<FileHash>ca5c63ba3b6d4d3f2026a3d2990e1a74</FileHash>
+			<FileHash>863b555320d312e23d3fe81124889216</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_flame.xml</FileName>
@@ -4299,11 +4335,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_vet2.xml</FileName>
-			<FileHash>0369c348ae586f65cd63168f178c0e19</FileHash>
+			<FileHash>567e68c1eb53d06386d853651071b429</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\global\ballistic_weapon\tank_gun\canister_shot.xml</FileName>
-			<FileHash>2362c9a53a9f5d5db34db14b3478f0c7</FileHash>
+			<FileHash>9a9f469830320c2a71a190bd80d34c5a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\global\dot_weapons\2cm_flame_dot_defiance.xml</FileName>
@@ -4359,67 +4395,67 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\anti_tank_gun\045mm_m63_defiance.xml</FileName>
-			<FileHash>a72f6ed09ab6df577c3f50a011f799ad</FileHash>
+			<FileHash>2bb31b54c311f68fd91be92cea2db931</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\anti_tank_gun\076mm_zis3_defiance.xml</FileName>
-			<FileHash>003c58102f1d3fb6fb5f09392f3445d0</FileHash>
+			<FileHash>6814901d2353720076a9c44337e5176e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\infantry_anti_tank_weapon\penal_ptrs_41_defiance.xml</FileName>
-			<FileHash>0ce2a308b994cfd1e8f87c5a0510de60</FileHash>
+			<FileHash>6e51132fabc3eec68ad44d4116720408</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\infantry_anti_tank_weapon\rpg45_guards.xml</FileName>
-			<FileHash>3a7c1e2aae1e8354a840795a25e1f2bb</FileHash>
+			<FileHash>130b1f7e07d91db5acdd166123b4c992</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\037mm_aa_halftrack.xml</FileName>
-			<FileHash>e0200298e3f5af9cf76bfa007ffa076d</FileHash>
+			<FileHash>c14618b255452e5c306fe4aeecac37b3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\045mm_1938_t70_defiance.xml</FileName>
-			<FileHash>9af8cfc24ecf1842adda5aee975735ed</FileHash>
+			<FileHash>13b0cfde02f14f0ba54b884d95207a16</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\076mm_f34_defiance.xml</FileName>
-			<FileHash>a74fe98d6bc6fa39ae4905097920c117</FileHash>
+			<FileHash>1c6362dfa682a15b5c5c5ac2155947f3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\076mm_f34_smoke_defiance.xml</FileName>
-			<FileHash>12a440cf2330dfc6ed0ca741dd4d9ca0</FileHash>
+			<FileHash>b45ef1c0f6208e76e0ad0b6d6975e6e0</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\076mm_zis3sh_ap_defiance.xml</FileName>
-			<FileHash>f38d6c8937f30322e670e809509c7d42</FileHash>
+			<FileHash>a8f02e8e5473836cca1aeac930f77834</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\076mm_zis3sh_mark_defiance.xml</FileName>
-			<FileHash>b12e02fbfe03436c685c530593b9375b</FileHash>
+			<FileHash>aab84e27711d230b6a4023a1eb4696ed</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\076mm_zis5_defiance.xml</FileName>
-			<FileHash>ec2475f49d68bdbc3e365e8a8e946ce3</FileHash>
+			<FileHash>f3710ac87e36ed894186c86ac83f015b</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\085mm_zis_s_53_defiance.xml</FileName>
-			<FileHash>6af2a2b399992b3a3f8df31be2d9ad8c</FileHash>
+			<FileHash>45b4c4da1796c0d8f2a3e4ebdae1a56e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\100mm_d_10s_defiance.xml</FileName>
-			<FileHash>4fdc9e1ff258606e863985a283a2a68a</FileHash>
+			<FileHash>aff91fc99b283a10fe237fd31607a49e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\122mm_d25t_defiance.xml</FileName>
-			<FileHash>c9c3ac056cdbf355017f62b0f86827eb</FileHash>
+			<FileHash>1d6585829547a1d0574f3585d9b777ba</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\152mm_m10t_defiance.xml</FileName>
-			<FileHash>632ba273a7dcc73187e2e9ff1e2d5202</FileHash>
+			<FileHash>d690333cd2822f92019de8ee144b336b</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\152mm_m10t_flame_defiance.xml</FileName>
-			<FileHash>3301a3456e6e4b257d364984cadfa557</FileHash>
+			<FileHash>ec111d00bb31a33a6d4b029f7053796e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\ballistic_weapon\tank_gun\t-34_ramming_self_dmg_weapon_mp.xml</FileName>
@@ -4463,15 +4499,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\grenade\rmn_50_hand_mortar.xml</FileName>
-			<FileHash>2d2380bba6ba84be8f473c05fdaff47f</FileHash>
+			<FileHash>8a1c153749d27f318f3401eb2bbc73de</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_accurate_defiance.xml</FileName>
-			<FileHash>0162f3e49e652b82ad7a6fe14ff3c9c1</FileHash>
+			<FileHash>c7a1df597bab21b1c693d5feb9db1e1c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_defiance.xml</FileName>
-			<FileHash>c42d2fb26ab536dec88c53889845a0d9</FileHash>
+			<FileHash>e3e7ca7dd5b7e00c652444cc84137b31</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\heavy_artillery\ml20_152mm_disabled.xml</FileName>
@@ -4479,15 +4515,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\heavy_artillery\ml_20_accurate_defiance.xml</FileName>
-			<FileHash>ec86bcadc60d34ecdff650680b912ead</FileHash>
+			<FileHash>918ce7fc830646187a3fa3229f6334a5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\heavy_artillery\ml_20_defiance.xml</FileName>
-			<FileHash>f8a95e86522d28f344e7ff65b45487ef</FileHash>
+			<FileHash>23d1e501fd319483382bb7abdc0a2c91</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\light_artillery\katyusha_bm13_16n_rocket.xml</FileName>
-			<FileHash>be95b71b5643e162687b8ca13f4e0750</FileHash>
+			<FileHash>59d8ece3ee955d94521b322771dc3d2a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\explosive_weapons\light_artillery\katyusha_bm13_16n_smoke_rocket.xml</FileName>
@@ -4563,15 +4599,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\small_arms\machine_gun\heavy_machine_gun\dshk38_defiance.xml</FileName>
-			<FileHash>debf19e89b8fb4fca1405d814d6857db</FileHash>
+			<FileHash>6ee53231bef501a15a42ed1e904beb28</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\small_arms\machine_gun\heavy_machine_gun\dshk_38_pintle_defiance.xml</FileName>
-			<FileHash>2b148485ee02c6a55228f887419c5ee2</FileHash>
+			<FileHash>05c36fccddf97b8c9b1fe485eb2a4bb8</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\small_arms\machine_gun\heavy_machine_gun\m2_50_m3a1.xml</FileName>
-			<FileHash>b604f793205d795041ca0c82dad3e2d6</FileHash>
+			<FileHash>f9056f6725d220109c5e6de7b4e675ca</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\soviet\small_arms\machine_gun\heavy_machine_gun\maxim_1910_defiance.xml</FileName>
@@ -4683,19 +4719,19 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\anti_tank_gun\088mm_raketenwerfer_43_defiance.xml</FileName>
-			<FileHash>42dd3331cce8191edb1ff43482458d08</FileHash>
+			<FileHash>59906429a86cb55abcc6dddae448a7ff</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\020mm_flak38_sdkfz_251_17_defiance.xml</FileName>
-			<FileHash>6cd2b8b394b05217efad4a20df9e2c0b</FileHash>
+			<FileHash>072e1c1676449dfeba741e29fef619ba</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\037mm_base_building_flak_defiance.xml</FileName>
-			<FileHash>570f1ffbc525a6fa99455c27c4b0a515</FileHash>
+			<FileHash>29b3c77b72a3c38fb71783b5310913d6</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\075mm_kwk42_command_defiance.xml</FileName>
-			<FileHash>2c5656b47a6da6874d74393390399b8c</FileHash>
+			<FileHash>b04d1e39eb74471175751bbc972e019f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\075mm_pak39_hetzer_defiance.xml</FileName>
@@ -4703,15 +4739,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance.xml</FileName>
-			<FileHash>a70a5d4c594844d9729426b51a66d916</FileHash>
+			<FileHash>a793bd6eb785faf9fdaaca6b1c034511</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\jagdpanzer_iv_pak_42_75mm_defiance.xml</FileName>
-			<FileHash>69ee598a09161f432b533a4ab6840b36</FileHash>
+			<FileHash>81fa0585f9197abd9e5178b7ad7346d8</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\ballistic_weapon\tank_gun\sdkfz_234_puma_50mm_defiance.xml</FileName>
-			<FileHash>a0935eda197c74f150754519f525b456</FileHash>
+			<FileHash>6956bb64d6bd842cab3fb2188b619764</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\explosive_weapons\light_artillery\150mm_raketenwerfer_weapon_defiance.xml</FileName>
@@ -4755,7 +4791,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>70f42e1d937948e83b2c4e611cb233c1</FileHash>
+			<FileHash>e36ad50be1a4ea9747248a6ae1ebc020</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>

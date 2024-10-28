@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.5" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -360,9 +360,9 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.375" />
-			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1" />
+			<float name="accuracy_multiplier" value="0.65" />
+			<float name="burst_multiplier" value="0.75" />
+			<float name="cooldown_multiplier" value="0.75" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -487,9 +487,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="4.5" />
-			<float name="far" value="3.75" />
-			<float name="near" value="5" />
+			<float name="mid" value="4.1" />
+			<float name="far" value="3.5" />
+			<float name="near" value="4.5" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

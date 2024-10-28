@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="6.375" />
+				<float name="radius" value="7.65" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
@@ -56,7 +56,7 @@
 				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
-				<float name="far" value="5.6" />
+				<float name="far" value="6.3" />
 				<float name="near" value="0.32" />
 				<float name="mid" value="0.9" />
 			</group>
@@ -75,7 +75,7 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="28" />
+				<float name="mid" value="15" />
 				<float name="near" value="80" />
 			</template_reference>
 			<group name="building_damage">
@@ -378,7 +378,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\105mm_sherman_flame_shell" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\105mm_m1_flame_shell_sherman" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="100" />
@@ -477,9 +477,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="240" />
-			<float name="far" value="240" />
-			<float name="near" value="240" />
+			<float name="mid" value="160" />
+			<float name="far" value="160" />
+			<float name="near" value="160" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

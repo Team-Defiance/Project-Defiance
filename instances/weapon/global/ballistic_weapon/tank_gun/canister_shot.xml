@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="2" />
+				<float name="min" value="2" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1" />
@@ -135,8 +135,8 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="25" />
-				<float name="min" value="25" />
+				<float name="max" value="30" />
+				<float name="min" value="30" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
@@ -145,8 +145,8 @@
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="0.9" />
+				<float name="mid" value="0.95" />
 			</group>
 			<bool name="focus_fire" value="False" />
 		</group>
@@ -284,8 +284,8 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.1" />
-			<bool name="has_deflection_damage" value="False" />
+			<float name="deflection_damage_multiplier" value="0.05" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
 		</group>
@@ -314,7 +314,7 @@
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
-		<string name="name" value="Canister Shot 37mm Cannon (M8 Greyhound)" />
+		<string name="name" value="Canister Shot (Universal Weapon)" />
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />
 			<float name="offhand_start_time" value="0" />

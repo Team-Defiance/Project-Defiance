@@ -2,7 +2,7 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.725" />
-			<float name="far" value="0.425" />
+			<float name="far" value="0.4" />
 			<float name="mid" value="0.625" />
 		</group>
 		<group name="aim">
@@ -141,7 +141,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="1.25" />
 				<float name="far" value="1" />
-				<float name="mid" value="1.125" />
+				<float name="mid" value="1.1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -348,7 +348,7 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.3" />
+				<float name="max" value="3.5" />
 				<float name="min" value="3.3" />
 			</group>
 			<group name="duration_multiplier">
@@ -358,7 +358,7 @@
 			</group>
 			<group name="frequency">
 				<float name="max" value="5" />
-				<float name="min" value="4" />
+				<float name="min" value="3" />
 			</group>
 			<list name="on_reload_actions">
 			</list>

@@ -83,7 +83,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="640" />
+			<float name="hitpoints" value="720" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -109,8 +109,8 @@
 					<uniqueid name="id" value="1073748986" />
 				</template_reference>
 			</list>
-			<float name="armor" value="160" />
-			<float name="rear_armor" value="80" />
+			<float name="armor" value="370" />
+			<float name="rear_armor" value="220" />
 			<float name="target_size" value="23" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

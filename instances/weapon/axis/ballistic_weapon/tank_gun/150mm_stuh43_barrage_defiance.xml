@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1.5" />
-				<float name="min" value="1.5" />
+				<float name="max" value="1" />
+				<float name="min" value="1" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="9.1" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
@@ -56,7 +56,7 @@
 				<float name="mid" value="0.1" />
 			</group>
 			<group name="distance">
-				<float name="far" value="6.4" />
+				<float name="far" value="7.2" />
 				<float name="near" value="0.6" />
 				<float name="mid" value="1.2" />
 			</group>
@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="20" />
-				<float name="near" value="100" />
+				<float name="near" value="170" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5" />
-				<float name="min" value="4.75" />
+				<float name="max" value="9" />
+				<float name="min" value="8.7" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1.25" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="570" />
-			<float name="far" value="570" />
-			<float name="mid" value="570" />
+			<float name="near" value="380" />
+			<float name="far" value="380" />
+			<float name="mid" value="380" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

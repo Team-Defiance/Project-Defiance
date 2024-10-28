@@ -75,7 +75,7 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="60" />
+				<float name="mid" value="30" />
 				<float name="near" value="1000" />
 			</template_reference>
 			<group name="building_damage">
@@ -321,7 +321,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.5" />
+			<float name="deflection_damage_multiplier" value="0.6" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 				<template_reference name="action" value="action\requirement_action">

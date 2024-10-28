@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.055" />
-			<float name="far" value="0.03" />
-			<float name="mid" value="0.045" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.035" />
+			<float name="mid" value="0.0525" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,12 +43,12 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1" />
+				<float name="radius" value="0.8" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.02" />
+				<float name="far" value="0.05" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.1" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.75" />
-				<float name="near" value="0.25" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.6" />
+				<float name="near" value="0.2" />
+				<float name="mid" value="0.4" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -406,10 +406,10 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.35" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
-			<bool name="disable_moving_firing" value="True" />
+			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
@@ -447,8 +447,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="7.15" />
-				<float name="min" value="7.15" />
+				<float name="max" value="6.7" />
+				<float name="min" value="6.4" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -533,9 +533,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="395" />
-			<float name="far" value="350" />
-			<float name="mid" value="380" />
+			<float name="near" value="390" />
+			<float name="far" value="320" />
+			<float name="mid" value="360" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

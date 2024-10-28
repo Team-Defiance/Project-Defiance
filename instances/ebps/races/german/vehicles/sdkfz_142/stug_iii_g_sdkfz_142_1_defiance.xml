@@ -327,7 +327,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.3" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -380,8 +380,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_stug_iii_g_sdkfz_141_1_gameplay" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="175" />
-			<float name="rear_armor" value="75" />
+			<float name="armor" value="155" />
+			<float name="rear_armor" value="85" />
 			<float name="target_size" value="17" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

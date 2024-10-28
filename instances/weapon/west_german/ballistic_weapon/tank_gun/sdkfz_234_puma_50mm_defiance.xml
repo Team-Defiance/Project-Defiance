@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.035" />
+			<float name="mid" value="0.0525" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -18,8 +18,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="2.5" />
+				<float name="mid" value="1.5" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="100" />
-			<float name="min" value="100" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -338,18 +338,18 @@
 			<instance_reference name="projectile" value="ebps\projectile\sdkfz_234_kwk39_5cm_shell_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="50" />
+			<float name="max" value="55" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="10" />
-				<float name="far" value="50" />
-				<float name="mid" value="30" />
+				<float name="near" value="5" />
+				<float name="far" value="-1" />
+				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">
 			<group name="duration">
 				<float name="max" value="4.1" />
-				<float name="min" value="3.6" />
+				<float name="min" value="3.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -434,8 +434,8 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="120" />
-			<float name="far" value="80" />
+			<float name="mid" value="145" />
+			<float name="far" value="125" />
 			<float name="near" value="160" />
 		</group>
 		<group name="ui_map_colour">

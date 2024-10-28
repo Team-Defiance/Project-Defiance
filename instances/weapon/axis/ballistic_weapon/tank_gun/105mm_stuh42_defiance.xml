@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="6.375" />
+				<float name="radius" value="7.65" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
@@ -56,7 +56,7 @@
 				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
-				<float name="far" value="5.6" />
+				<float name="far" value="6.3" />
 				<float name="near" value="0.32" />
 				<float name="mid" value="0.9" />
 			</group>
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="28" />
-				<float name="near" value="80" />
+				<float name="mid" value="15" />
+				<float name="near" value="70" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.5" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="7.25" />
-				<float name="min" value="6.75" />
+				<float name="max" value="8.8" />
+				<float name="min" value="8.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

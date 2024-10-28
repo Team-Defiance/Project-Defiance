@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.3" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_t70_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="40" />
+			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />

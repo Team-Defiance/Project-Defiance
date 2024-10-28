@@ -214,7 +214,7 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_homing">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="2.5" />
+			<float name="deathtimer" value="1" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="Marker_Tank_Barrel_End" />

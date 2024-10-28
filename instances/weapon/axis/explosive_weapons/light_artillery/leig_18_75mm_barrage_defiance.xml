@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="1" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -46,17 +46,17 @@
 				<float name="radius" value="3.25" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.125" />
-				<float name="near" value="0.85" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.1" />
+				<float name="near" value="0.68" />
+				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0625" />
-				<float name="near" value="0.425" />
-				<float name="mid" value="0.25" />
+				<float name="far" value="0.05" />
+				<float name="near" value="0.34" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="far" value="2.5" />
+				<float name="far" value="3" />
 				<float name="near" value="0.75" />
 				<float name="mid" value="1.5" />
 			</group>
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="20" />
-				<float name="near" value="34" />
+				<float name="mid" value="10" />
+				<float name="near" value="30" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
-			<float name="mid" value="90" />
-			<float name="far" value="90" />
-			<float name="near" value="90" />
+			<float name="mid" value="60" />
+			<float name="far" value="60" />
+			<float name="near" value="60" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

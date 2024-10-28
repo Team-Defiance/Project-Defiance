@@ -90,7 +90,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.5" />
+									<float name="value" value="1.8" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -160,8 +160,8 @@
 					<uniqueid name="id" value="1073748950" />
 				</template_reference>
 			</list>
-			<float name="armor" value="180" />
-			<float name="rear_armor" value="70" />
+			<float name="armor" value="190" />
+			<float name="rear_armor" value="80" />
 			<float name="target_size" value="21" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

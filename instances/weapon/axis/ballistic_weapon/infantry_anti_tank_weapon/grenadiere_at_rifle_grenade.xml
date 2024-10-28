@@ -322,9 +322,17 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.75" />
+			<float name="deflection_damage_multiplier" value="0.7" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
+				<template_reference name="action" value="action\damage">
+					<float name="damage" value="4" />
+					<bool name="percentage" value="False" />
+					<bool name="set" value="True" />
+					<bool name="cause_criticals" value="True" />
+					<enum name="crit_weapon_type" value="big_explosive" />
+					<uniqueid name="id" value="1073751881" />
+				</template_reference>
 			</list>
 		</group>
 		<group name="fire">

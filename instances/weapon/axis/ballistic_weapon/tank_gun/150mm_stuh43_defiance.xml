@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="20" />
-				<float name="near" value="100" />
+				<float name="near" value="170" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="10" />
-				<float name="min" value="9.5" />
+				<float name="max" value="12" />
+				<float name="min" value="11.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

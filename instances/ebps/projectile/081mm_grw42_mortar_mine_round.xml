@@ -204,7 +204,7 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_artillery">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="3" />
+			<float name="deathtimer" value="1" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="Marker_Barrel" />
