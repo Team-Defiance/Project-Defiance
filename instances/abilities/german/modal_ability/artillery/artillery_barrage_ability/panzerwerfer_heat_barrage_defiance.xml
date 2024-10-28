@@ -88,7 +88,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="60" />
+			<float name="munition" value="45" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -171,14 +171,6 @@
 				<locstring name="ui_name" value="0" />
 				<instance_reference name="critical_name" value="critical\vehicle_gunner_injured" />
 				<bool name="is_present" value="False" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

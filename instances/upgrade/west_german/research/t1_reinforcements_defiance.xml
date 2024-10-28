@@ -4,7 +4,7 @@
 		<float name="global_max_limit" value="1" />
 		<bool name="has_speech_code" value="True" />
 		<float name="local_max_limit" value="1" />
-		<enum name="owner_type" value="self" />
+		<enum name="owner_type" value="player" />
 		<group name="speech_code_2">
 			<string name="code_1" value="pk" />
 			<string name="code_2" value="" />

@@ -727,12 +727,6 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\soldiers\obersoldaten_squad\obersoldaten_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="14" />
-					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\west_german\soldiers\nachtjager_squad\nachtjager_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>

@@ -911,6 +911,12 @@
 				</group>
 			</list>
 		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_shared_veterancy_ext">
+			<float name="multiplier_pct_self" value="1" />
+			<float name="multiplier_pct_share" value="0.5" />
+			<float name="radius" value="35" />
+			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741903" />
 </instance>
