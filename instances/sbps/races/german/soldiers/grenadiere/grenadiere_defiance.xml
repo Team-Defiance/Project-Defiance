@@ -186,7 +186,7 @@
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\german\items\grenadier_veteran_squad_leader_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\german\items\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\doctrines\festung\items\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -1103,19 +1103,15 @@
 					<list name="construction_items">
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
-							<int name="ui_position" value="14" />
+							<int name="ui_position" value="33" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\slit_trench_german_mp" />
-							<int name="ui_position" value="22" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\barbed_wire_fence_cmd__construction__mp" />
+							<instance_reference name="ebp" value="ebps\races\german\doctrine\festung\field_defenses\barbed_wire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\german_sandbag_fence_cmd__construction__mp" />
-							<int name="ui_position" value="21" />
+							<instance_reference name="ebp" value="ebps\races\german\doctrine\festung\field_defenses\sandbag_wall_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="11" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_grenadier" />
