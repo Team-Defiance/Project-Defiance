@@ -46,15 +46,6 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\received_damage_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
@@ -91,14 +82,32 @@
 											<float name="value" value="5" />
 											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_05" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_06" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.15" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="0.05" />
+											<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
@@ -106,8 +115,80 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_03" />
 											<enum name="usage_type" value="addition" />
-											<float name="value" value="0.075" />
+											<float name="value" value="0.01" />
 											<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\armor_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="True" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="50" />
+											<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.75" />
+											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_02" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_03" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_04" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_05" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_06" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752164" />
@@ -365,7 +446,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -428,7 +509,7 @@
 			<locstring name="screen_name" value="2026" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="Icons_abilities_ability_german_hulldown_release" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="help_text_alternate" value="0" />
+			<locstring name="help_text_alternate" value="2049" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_alternate" value="2027" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 		</group>
