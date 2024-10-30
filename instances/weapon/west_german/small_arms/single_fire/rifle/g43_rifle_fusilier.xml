@@ -2,7 +2,7 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.75" />
-			<float name="far" value="0.4" />
+			<float name="far" value="0.425" />
 			<float name="mid" value="0.65" />
 		</group>
 		<group name="aim">
@@ -302,12 +302,12 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="fx_g34_sniperfire_tracer" />
-		<float name="fx_tracer_speed" value="160" />
+		<float name="fx_tracer_speed" value="200" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.75" />
+			<float name="accuracy_multiplier" value="0.7" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="1.15" />
-			<float name="far" value="1.05" />
-			<float name="near" value="1.25" />
+			<float name="mid" value="1.4" />
+			<float name="far" value="1.25" />
+			<float name="near" value="1.5" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

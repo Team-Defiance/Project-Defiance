@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.625" />
-			<float name="far" value="0.4" />
-			<float name="mid" value="0.57" />
+			<float name="near" value="0.65" />
+			<float name="far" value="0.375" />
+			<float name="mid" value="0.575" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="smg" />
 		<string name="fx_tracer_name" value="mp40_tracer" />
-		<float name="fx_tracer_speed" value="120" />
+		<float name="fx_tracer_speed" value="160" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="1" />
+			<float name="near" value="1.35" />
 			<float name="far" value="1" />
-			<float name="mid" value="1" />
+			<float name="mid" value="1.1" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

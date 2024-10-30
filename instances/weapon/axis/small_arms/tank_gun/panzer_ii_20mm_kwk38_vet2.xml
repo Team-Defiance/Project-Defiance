@@ -46,14 +46,14 @@
 				<float name="radius" value="1" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.15" />
+				<float name="far" value="0.05" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="0.25" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.025" />
 				<float name="near" value="0.375" />
-				<float name="mid" value="0.125" />
+				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
 				<float name="far" value="0.65" />
@@ -72,7 +72,7 @@
 				<float name="near" value="0.2" />
 				<float name="mid" value="0.15" />
 			</group>
-			<bool name="damage_all_in_hold" value="True" />
+			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="2" />
@@ -152,13 +152,13 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="0.1" />
-				<float name="min" value="0.1" />
+				<float name="max" value="0.125" />
+				<float name="min" value="0.125" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1" />
+				<float name="near" value="0.8" />
 				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="mid" value="0.9" />
 			</group>
 		</group>
 		<group name="cover_table">

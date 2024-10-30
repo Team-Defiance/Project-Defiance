@@ -2,6 +2,10 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
+				<template_reference name="action" value="action\force_reload_action">
+					<int name="hardpoint_index" value="1" />
+					<uniqueid name="id" value="1073752364" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -15,7 +19,7 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="3" />
+					<float name="num_salvo" value="4" />
 					<float name="use_hardpoint" value="5" />
 					<bool name="face_to_target" value="False" />
 					<uniqueid name="id" value="1073752206" />

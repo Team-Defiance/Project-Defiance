@@ -127,11 +127,11 @@
 				<float name="min" value="1.125" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.05" />
+				<float name="accuracy_multiplier" value="1.08" />
 				<group name="search_radius">
-					<float name="far" value="10" />
+					<float name="far" value="12" />
 					<float name="near" value="6" />
-					<float name="mid" value="8" />
+					<float name="mid" value="9" />
 				</group>
 			</group>
 			<group name="rate_of_fire">

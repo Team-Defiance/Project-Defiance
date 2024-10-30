@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.5" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4.95" />
+				<float name="radius" value="5.5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.12" />

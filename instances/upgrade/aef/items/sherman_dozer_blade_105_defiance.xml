@@ -125,6 +125,11 @@
 				<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\dozer_upgrade_item_mp" />
 				<uniqueid name="id" value="1073751088" />
 			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073752368" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">

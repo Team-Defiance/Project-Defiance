@@ -10,16 +10,16 @@
 				<float name="max" value="0.125" />
 				<float name="min" value="0.125" />
 			</group>
-			<float name="post_firing_aim_time" value="0" />
+			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.125" />
-				<float name="min" value="0.125" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="2.5" />
+				<float name="mid" value="1.5" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="100" />
-				<float name="mid" value="115" />
-				<float name="near" value="130" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="10" />
+				<float name="near" value="50" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="240" />
-			<float name="min" value="240" />
+			<float name="max" value="320" />
+			<float name="min" value="320" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -284,7 +284,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.5" />
+			<float name="deflection_damage_multiplier" value="0.3" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="11" />
-				<float name="min" value="9" />
+				<float name="max" value="14.5" />
+				<float name="min" value="14" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,17 +364,17 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="6.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="8.7" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0.5" />
-			<float name="distance_scatter_ratio" value="0.087" />
-			<float name="fow_angle_multiplier" value="2.5" />
-			<float name="fow_distance_multiplier" value="2.5" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.2" />
+			<float name="fow_angle_multiplier" value="1.25" />
+			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
