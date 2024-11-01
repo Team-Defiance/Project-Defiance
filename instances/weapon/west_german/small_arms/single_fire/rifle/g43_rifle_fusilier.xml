@@ -156,9 +156,9 @@
 				<float name="min" value="0.375" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.1" />
+				<float name="near" value="0.75" />
 				<float name="far" value="2.5" />
-				<float name="mid" value="1" />
+				<float name="mid" value="1.25" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="10" />
-			<float name="min" value="10" />
+			<float name="max" value="14" />
+			<float name="min" value="14" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
