@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="3" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\jaegers\gerbirgsjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\german\doctrine\overwatch\gerbirgsjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -187,7 +187,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\add_to_squad_loadout_action">
 					<uniqueid name="id" value="1073744527" />
-					<instance_reference name="unit_type" value="ebps\races\german\soldiers\jaegers\gerbirgsjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unit_type" value="ebps\races\german\doctrine\overwatch\gerbirgsjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<int name="count" value="2" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
