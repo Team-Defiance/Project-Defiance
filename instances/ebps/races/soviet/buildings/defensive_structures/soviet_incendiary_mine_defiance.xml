@@ -223,6 +223,17 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
+				<template_reference name="action" value="action\off_map_artillery">
+					<float name="num_salvo" value="1" />
+					<float name="radius" value="1" />
+					<float name="source_offset_x" value="0" />
+					<float name="source_offset_y" value="1" />
+					<float name="source_offset_z" value="0" />
+					<float name="time_range_between_shells_max" value="1" />
+					<float name="time_range_between_shells_min" value="1" />
+					<instance_reference name="weapon_name" value="weapon\soviet\flame_throwers\grenade\molotov_cocktail_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073752440" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -325,7 +336,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="1923" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="S" />
-			<icon name="icon_name" value="Icons_commander_cmdr_german_mine_pmd6" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_molotov_cocktail" />
 			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -337,7 +348,7 @@
 			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="2055" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="multi_entity_kind_select" />
