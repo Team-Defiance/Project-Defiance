@@ -311,7 +311,7 @@
 							<list name="requirement_table">
 								<template_reference name="required" value="requirements\required_health">
 									<float name="health_range_min_percentage" value="0" />
-									<float name="health_range_max_percentage" value="0.5" />
+									<float name="health_range_max_percentage" value="0.75" />
 									<locstring name="ui_name" value="0" />
 									<enum name="reason" value="usage" />
 								</template_reference>
