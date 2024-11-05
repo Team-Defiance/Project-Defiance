@@ -52,35 +52,12 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073741935" />
 			</template_reference>
-			<template_reference name="action" value="action\apply_modifiers_action">
-				<float name="duration" value="0" />
-				<bool name="permanent" value="True" />
-				<list name="modifiers">
-					<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
-						<enum name="application_type" value="apply_to_squad" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="multiplication" />
-						<float name="value" value="1.15" />
-						<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
-					</template_reference>
-				</list>
-				<uniqueid name="id" value="1073744356" />
-			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_slot_item_size">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11117660" />
 				<float name="required_free_slot_size" value="2" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="True" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\jaeger_k43_sniper_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_in_territory">
 				<enum name="reason" value="usage" />
@@ -92,11 +69,25 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="351" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\spearhead\grenadier_stg44_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2074" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="2" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
