@@ -807,146 +807,6 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="action" value="action\requirement_action">
-										<bool name="check_self" value="False" />
-										<bool name="global_fire_and_forget_on_success" value="False" />
-										<bool name="instant_requirement_check" value="False" />
-										<bool name="kill_action_on_failed_requirements" value="False" />
-										<bool name="no_retrigger" value="False" />
-										<bool name="validate_all_sub_actions" value="True" />
-										<list name="requirement_table">
-											<template_reference name="required" value="requirements\required_race">
-												<enum name="reason" value="usage" />
-												<locstring name="ui_name" value="0" />
-												<instance_reference name="race" value="racebps\west_german" />
-											</template_reference>
-										</list>
-										<list name="action_table">
-											<template_reference name="action" value="action\add_to_squad_loadout_action">
-												<uniqueid name="id" value="1073751414" />
-												<instance_reference name="unit_type" value="ebps\races\west_german\soldiers\weapon_crew\atgun_crew__defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<int name="count" value="1" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073751415" />
-										<bool name="fire_and_forget_non_global" value="False" />
-										<template_reference name="ui_help_text" value="tables\help_text_phrase">
-											<int name="phrase_order" value="0" />
-											<locstring name="phrase" value="0" />
-										</template_reference>
-									</template_reference>
-									<template_reference name="action" value="action\requirement_action">
-										<bool name="check_self" value="False" />
-										<bool name="global_fire_and_forget_on_success" value="False" />
-										<bool name="instant_requirement_check" value="False" />
-										<bool name="kill_action_on_failed_requirements" value="False" />
-										<bool name="no_retrigger" value="False" />
-										<bool name="validate_all_sub_actions" value="True" />
-										<list name="requirement_table">
-											<template_reference name="required" value="requirements\required_race">
-												<enum name="reason" value="usage" />
-												<locstring name="ui_name" value="0" />
-												<instance_reference name="race" value="racebps\german" />
-											</template_reference>
-										</list>
-										<list name="action_table">
-											<template_reference name="action" value="action\add_to_squad_loadout_action">
-												<uniqueid name="id" value="1073751416" />
-												<instance_reference name="unit_type" value="ebps\races\german\soldiers\weapon_crew\atgun_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<int name="count" value="1" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073751417" />
-										<bool name="fire_and_forget_non_global" value="False" />
-										<template_reference name="ui_help_text" value="tables\help_text_phrase">
-											<int name="phrase_order" value="0" />
-											<locstring name="phrase" value="0" />
-										</template_reference>
-									</template_reference>
-									<template_reference name="action" value="action\requirement_action">
-										<bool name="check_self" value="False" />
-										<bool name="global_fire_and_forget_on_success" value="False" />
-										<bool name="instant_requirement_check" value="False" />
-										<bool name="kill_action_on_failed_requirements" value="False" />
-										<bool name="no_retrigger" value="False" />
-										<bool name="validate_all_sub_actions" value="True" />
-										<list name="requirement_table">
-											<template_reference name="required" value="requirements\required_race">
-												<enum name="reason" value="usage" />
-												<locstring name="ui_name" value="0" />
-												<instance_reference name="race" value="racebps\aef" />
-											</template_reference>
-										</list>
-										<list name="action_table">
-											<template_reference name="action" value="action\add_to_squad_loadout_action">
-												<uniqueid name="id" value="1073751418" />
-												<instance_reference name="unit_type" value="ebps\races\aef\soldiers\weapon_crew\usf_atgun_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<int name="count" value="1" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073751419" />
-										<bool name="fire_and_forget_non_global" value="False" />
-										<template_reference name="ui_help_text" value="tables\help_text_phrase">
-											<int name="phrase_order" value="0" />
-											<locstring name="phrase" value="0" />
-										</template_reference>
-									</template_reference>
-									<template_reference name="action" value="action\requirement_action">
-										<bool name="check_self" value="False" />
-										<bool name="global_fire_and_forget_on_success" value="False" />
-										<bool name="instant_requirement_check" value="False" />
-										<bool name="kill_action_on_failed_requirements" value="False" />
-										<bool name="no_retrigger" value="False" />
-										<bool name="validate_all_sub_actions" value="True" />
-										<list name="requirement_table">
-											<template_reference name="required" value="requirements\required_race">
-												<enum name="reason" value="usage" />
-												<locstring name="ui_name" value="0" />
-												<instance_reference name="race" value="racebps\soviet" />
-											</template_reference>
-										</list>
-										<list name="action_table">
-											<template_reference name="action" value="action\add_to_squad_loadout_action">
-												<uniqueid name="id" value="1073751420" />
-												<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\weapon_crew\pm41_mortarcrew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<int name="count" value="1" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073751421" />
-										<bool name="fire_and_forget_non_global" value="False" />
-										<template_reference name="ui_help_text" value="tables\help_text_phrase">
-											<int name="phrase_order" value="0" />
-											<locstring name="phrase" value="0" />
-										</template_reference>
-									</template_reference>
-									<template_reference name="action" value="action\requirement_action">
-										<bool name="check_self" value="False" />
-										<bool name="global_fire_and_forget_on_success" value="False" />
-										<bool name="instant_requirement_check" value="False" />
-										<bool name="kill_action_on_failed_requirements" value="False" />
-										<bool name="no_retrigger" value="False" />
-										<bool name="validate_all_sub_actions" value="True" />
-										<list name="requirement_table">
-											<template_reference name="required" value="requirements\required_race">
-												<enum name="reason" value="usage" />
-												<locstring name="ui_name" value="0" />
-												<instance_reference name="race" value="racebps\british" />
-											</template_reference>
-										</list>
-										<list name="action_table">
-											<template_reference name="action" value="action\add_to_squad_loadout_action">
-												<uniqueid name="id" value="1073751422" />
-												<instance_reference name="unit_type" value="ebps\races\british\soldiers\sapper\sapper_mp" />
-												<int name="count" value="1" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073751423" />
-										<bool name="fire_and_forget_non_global" value="False" />
-										<template_reference name="ui_help_text" value="tables\help_text_phrase">
-											<int name="phrase_order" value="0" />
-											<locstring name="phrase" value="0" />
-										</template_reference>
-									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
@@ -1027,15 +887,6 @@
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
-													<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-														<enum name="application_type" value="apply_to_weapon" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_01" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="1.25" />
-														<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073747125" />
 											</template_reference>
@@ -1077,6 +928,22 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.25" />
+												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073752679" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">

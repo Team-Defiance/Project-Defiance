@@ -456,7 +456,7 @@
 						<float name="drop_drift" value="0" />
 						<float name="drop_height" value="30" />
 						<float name="drop_zone_centre_scatter" value="15" />
-						<instance_reference name="entity_to_spawn" value="ebps\races\german\team_weapons\granatwerfer_42_81mm_mortar_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_to_spawn" value="ebps\races\german\paradrop_crates\airdrop_grw_34_81mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_squad_entity_count" value="0" />
 						<instance_reference name="squad_to_spawn" value="" />
 						<int name="number_of_entities_to_spawn" value="1" />
@@ -485,7 +485,7 @@
 						<float name="drop_drift" value="0" />
 						<float name="drop_height" value="30" />
 						<float name="drop_zone_centre_scatter" value="15" />
-						<instance_reference name="entity_to_spawn" value="ebps\races\german\team_weapons\german_at_guns\pak40_75mm" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_to_spawn" value="ebps\races\german\paradrop_crates\airdrop_pak_40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_squad_entity_count" value="0" />
 						<instance_reference name="squad_to_spawn" value="" />
 						<int name="number_of_entities_to_spawn" value="1" />
@@ -514,7 +514,7 @@
 						<float name="drop_drift" value="0" />
 						<float name="drop_height" value="30" />
 						<float name="drop_zone_centre_scatter" value="15" />
-						<instance_reference name="entity_to_spawn" value="ebps\props\pioniere_medical_supplies_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_to_spawn" value="ebps\races\german\paradrop_crates\airdrop_german_med_crates_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_squad_entity_count" value="0" />
 						<instance_reference name="squad_to_spawn" value="" />
 						<int name="number_of_entities_to_spawn" value="1" />

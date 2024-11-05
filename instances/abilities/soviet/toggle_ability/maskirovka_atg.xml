@@ -329,15 +329,18 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="157" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_race">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<instance_reference name="race" value="racebps\soviet" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_structure">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2081" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<int name="required_structure_count" value="1" />
+				<bool name="check_team" value="False" />
+				<bool name="require_construction_complete" value="True" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

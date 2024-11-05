@@ -603,8 +603,8 @@
 					<list name="requirement_table">
 						<template_reference name="required" value="requirements\required_squad_veterancy">
 							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<float name="veterancy_rank" value="3" />
+							<locstring name="ui_name" value="2085" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="veterancy_rank" value="1" />
 						</template_reference>
 						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
@@ -638,17 +638,17 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="addition" />
-									<float name="value" value="100000" />
+									<float name="value" value="50" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 								</template_reference>
-								<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.25" />
-									<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
+									<float name="value" value="1.5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073747479" />
