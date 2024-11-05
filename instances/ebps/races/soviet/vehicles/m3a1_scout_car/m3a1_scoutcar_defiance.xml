@@ -18,7 +18,6 @@
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_disable" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\handbrake_mode_new_mp" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\m3a1_focused" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -68,8 +67,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_m3a1_scout_car_mp" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="4.25" />
-			<float name="rear_armor" value="2" />
+			<float name="armor" value="5.4" />
+			<float name="rear_armor" value="4.2" />
 			<float name="target_size" value="17" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

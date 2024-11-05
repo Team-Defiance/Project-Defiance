@@ -93,7 +93,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="50" />
+			<float name="munition" value="45" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -168,7 +168,7 @@
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="1667" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="4" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

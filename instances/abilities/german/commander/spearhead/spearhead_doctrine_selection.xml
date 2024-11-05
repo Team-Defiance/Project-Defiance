@@ -12,6 +12,18 @@
 					<instance_reference name="upgrade" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073752000" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\doctrines\spearhead\panzer_commander_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073752520" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\doctrines\spearhead\grenadier_stg44_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073752521" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
@@ -80,7 +92,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2017" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="2086" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2016" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_portrait_west_german_commander_05_small" />
