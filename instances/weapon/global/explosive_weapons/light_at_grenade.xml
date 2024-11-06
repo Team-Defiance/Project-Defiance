@@ -305,7 +305,7 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073752520" />
+							<uniqueid name="id" value="1073752699" />
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="False" />
@@ -326,10 +326,10 @@
 								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="0.8" />
 									<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-									<uniqueid name="id" value="1073752521" />
+									<uniqueid name="id" value="1073752700" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073752522" />
+							<uniqueid name="id" value="1073752701" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -337,7 +337,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752523" />
+					<uniqueid name="id" value="1073752702" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
