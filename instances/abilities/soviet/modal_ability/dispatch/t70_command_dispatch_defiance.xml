@@ -16,7 +16,7 @@
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\soviet\vehicles\t_70\t_70m_command_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\soviet\tier_3\t70_light_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
 					<uniqueid name="id" value="1073751669" />
@@ -176,7 +176,7 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\soviet\vehicles\t_70\t_70m_command_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="squad_name" value="sbps\races\soviet\tier_3\t70_light_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />

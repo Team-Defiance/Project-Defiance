@@ -18,9 +18,8 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sov_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\vehicle_recon_toggle_t70command" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\t70_zis_he" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\t70_zis_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\toggle_ability\t70_light_tank_recon_toggle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\toggle_ability\t70_vet_point_capture_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -107,12 +106,12 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="80" />
-					<float name="manpower" value="290" />
+					<float name="fuel" value="50" />
+					<float name="manpower" value="260" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="40" />
+				<float name="time_seconds" value="60" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -122,7 +121,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="400" />
+			<float name="hitpoints" value="360" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -140,7 +139,7 @@
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="90" />
-			<float name="rear_armor" value="55" />
+			<float name="rear_armor" value="50" />
 			<float name="target_size" value="15" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
