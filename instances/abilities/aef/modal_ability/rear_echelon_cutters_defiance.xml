@@ -93,7 +93,7 @@
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
-		<bool name="can_interrupt" value="False" />
+		<bool name="can_interrupt" value="True" />
 		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="1" />
 		<bool name="casters_can_evacuate" value="True" />

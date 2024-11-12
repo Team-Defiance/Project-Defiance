@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="15" />
-			<float name="min" value="15" />
+			<float name="max" value="10" />
+			<float name="min" value="10" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -405,8 +405,8 @@
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.1" />
-			<float name="fow_angle_multiplier" value="1.25" />
-			<float name="fow_distance_multiplier" value="1.25" />
+			<float name="fow_angle_multiplier" value="1.4" />
+			<float name="fow_distance_multiplier" value="1.4" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />

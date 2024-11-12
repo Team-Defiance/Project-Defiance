@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.75" />
-			<float name="far" value="0.1875" />
-			<float name="mid" value="0.375" />
+			<float name="far" value="0.25" />
+			<float name="mid" value="0.45" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -140,8 +140,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="0.125" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.25" />
+				<float name="mid" value="0.75" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -307,9 +307,9 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.85" />
-			<float name="burst_multiplier" value="0.5" />
-			<float name="cooldown_multiplier" value="0.25" />
+			<float name="accuracy_multiplier" value="0.9" />
+			<float name="burst_multiplier" value="0.9" />
+			<float name="cooldown_multiplier" value="0.9" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -358,18 +358,18 @@
 			</group>
 			<group name="frequency">
 				<float name="max" value="8" />
-				<float name="min" value="6" />
+				<float name="min" value="7" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8.75" />
+			<float name="angle_scatter" value="7.5" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.4" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="15" />
-			<float name="distance_scatter_max" value="8.75" />
+			<float name="distance_scatter_max" value="7.5" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.25" />
@@ -395,8 +395,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="0.25" />
+			<float name="nearby_suppression_radius" value="5" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="1" />
