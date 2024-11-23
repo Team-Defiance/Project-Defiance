@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.725" />
-			<float name="far" value="0.675" />
-			<float name="mid" value="0.7" />
+			<float name="far" value="0.625" />
+			<float name="mid" value="0.675" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="12" />
-			<float name="min" value="12" />
+			<float name="max" value="14" />
+			<float name="min" value="14" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">

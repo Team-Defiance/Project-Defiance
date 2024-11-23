@@ -363,7 +363,7 @@
 			<float name="accuracy_multiplier" value="0.4" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1.5" />
-			<bool name="disable_moving_firing" value="False" />
+			<bool name="disable_moving_firing" value="True" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
@@ -474,8 +474,8 @@
 				<float name="max_left" value="-10" />
 				<float name="max_right" value="10" />
 				<float name="max_up" value="90" />
-				<float name="speed_horizontal" value="100" />
-				<float name="speed_vertical" value="100" />
+				<float name="speed_horizontal" value="60" />
+				<float name="speed_vertical" value="60" />
 			</group>
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />

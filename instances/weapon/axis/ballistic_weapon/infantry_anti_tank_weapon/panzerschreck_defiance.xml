@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0.5" />
+				<float name="radius" value="0.8" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
-				<float name="near" value="1" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
-				<float name="near" value="0.5" />
+				<float name="near" value="0.25" />
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.25" />
-				<float name="near" value="0.15" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.6" />
+				<float name="near" value="0.2" />
+				<float name="mid" value="0.4" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="80" />
-				<float name="mid" value="85" />
-				<float name="near" value="90" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="5" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -550,7 +550,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\088mm_rpzb54_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="40" />
+			<float name="max" value="37.5" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />

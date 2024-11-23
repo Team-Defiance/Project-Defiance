@@ -107,7 +107,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="30" />
+		<float name="range" value="25" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
@@ -218,8 +218,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_dispatch" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_positive" />
-		<float name="ui_reticule_radius_min" value="9" />
-		<float name="ui_reticule_radius_max" value="9" />
+		<float name="ui_reticule_radius_min" value="5" />
+		<float name="ui_reticule_radius_max" value="5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

@@ -674,7 +674,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\coax_mg34_panzer_ii_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_panzer_ii_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -1162,6 +1162,275 @@
 			<list name="camouflage_actions">
 			</list>
 			<list name="first_strike_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="1" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="5" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="5" />
+							<bool name="fire_and_forget" value="True" />
+							<list name="subactions">
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\requirement_action">
+											<bool name="check_self" value="False" />
+											<bool name="global_fire_and_forget_on_success" value="False" />
+											<bool name="instant_requirement_check" value="True" />
+											<bool name="kill_action_on_failed_requirements" value="False" />
+											<bool name="no_retrigger" value="False" />
+											<bool name="validate_all_sub_actions" value="True" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_not">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirement_table">
+														<template_reference name="required" value="requirements\required_in_state">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<bool name="garrisoned" value="False" />
+															<bool name="healed" value="False" />
+															<float name="in_combat_since" value="10" />
+															<bool name="injured" value="False" />
+															<bool name="leader" value="False" />
+															<bool name="not_moving" value="False" />
+															<bool name="not_retreating" value="False" />
+															<bool name="pinned" value="False" />
+															<bool name="suppressed" value="False" />
+															<bool name="camouflaged" value="False" />
+														</template_reference>
+													</list>
+												</template_reference>
+											</list>
+											<list name="action_table">
+												<template_reference name="action" value="action\change_target_action">
+													<list name="actions">
+														<template_reference name="action" value="action\apply_modifiers_action">
+															<float name="duration" value="5" />
+															<bool name="permanent" value="False" />
+															<list name="modifiers">
+																<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="ambush_camou_firststrike_acc" />
+																	<string name="target_type_name" value="hardpoint_01" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+																</template_reference>
+																<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="hardpoint_02" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+																</template_reference>
+																<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="hardpoint_01" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+																</template_reference>
+															</list>
+															<uniqueid name="id" value="1073752922" />
+														</template_reference>
+													</list>
+													<enum name="change_target_type" value="entities" />
+													<uniqueid name="id" value="1073752923" />
+												</template_reference>
+												<template_reference name="action" value="action\timed_action">
+													<float name="duration" value="5" />
+													<bool name="fire_and_forget" value="True" />
+													<list name="subactions">
+														<template_reference name="action" value="action\animator_set_state">
+															<bool name="apply_to_leader_only" value="True" />
+															<string name="do_action_state_name" value="on" />
+															<bool name="retrigger" value="False" />
+															<string name="state_machine_name" value="ability_attack_buff_state" />
+															<string name="undo_action_state_name" value="off" />
+															<uniqueid name="id" value="1073752924" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073752925" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073752926" />
+											<bool name="fire_and_forget_non_global" value="False" />
+											<template_reference name="ui_help_text" value="tables\help_text_phrase">
+												<int name="phrase_order" value="0" />
+												<locstring name="phrase" value="0" />
+											</template_reference>
+										</template_reference>
+									</list>
+									<enum name="change_target_type" value="squad" />
+									<uniqueid name="id" value="1073752927" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073752928" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073752921" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="5" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="10" />
+							<bool name="fire_and_forget" value="True" />
+							<list name="subactions">
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\requirement_action">
+											<bool name="check_self" value="False" />
+											<bool name="global_fire_and_forget_on_success" value="False" />
+											<bool name="instant_requirement_check" value="True" />
+											<bool name="kill_action_on_failed_requirements" value="False" />
+											<bool name="no_retrigger" value="False" />
+											<bool name="validate_all_sub_actions" value="True" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_not">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<list name="requirement_table">
+														<template_reference name="required" value="requirements\required_in_state">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<bool name="garrisoned" value="False" />
+															<bool name="healed" value="False" />
+															<float name="in_combat_since" value="10" />
+															<bool name="injured" value="False" />
+															<bool name="leader" value="False" />
+															<bool name="not_moving" value="False" />
+															<bool name="not_retreating" value="False" />
+															<bool name="pinned" value="False" />
+															<bool name="suppressed" value="False" />
+															<bool name="camouflaged" value="False" />
+														</template_reference>
+													</list>
+												</template_reference>
+											</list>
+											<list name="action_table">
+												<template_reference name="action" value="action\change_target_action">
+													<list name="actions">
+														<template_reference name="action" value="action\apply_modifiers_action">
+															<float name="duration" value="10" />
+															<bool name="permanent" value="False" />
+															<list name="modifiers">
+																<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="ambush_camou_firststrike_acc" />
+																	<string name="target_type_name" value="hardpoint_01" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+																</template_reference>
+																<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="hardpoint_02" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+																</template_reference>
+																<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="hardpoint_01" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.35" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+																</template_reference>
+															</list>
+															<uniqueid name="id" value="1073752929" />
+														</template_reference>
+													</list>
+													<enum name="change_target_type" value="entities" />
+													<uniqueid name="id" value="1073752930" />
+												</template_reference>
+												<template_reference name="action" value="action\timed_action">
+													<float name="duration" value="10" />
+													<bool name="fire_and_forget" value="True" />
+													<list name="subactions">
+														<template_reference name="action" value="action\animator_set_state">
+															<bool name="apply_to_leader_only" value="True" />
+															<string name="do_action_state_name" value="on" />
+															<bool name="retrigger" value="False" />
+															<string name="state_machine_name" value="ability_attack_buff_state" />
+															<string name="undo_action_state_name" value="off" />
+															<uniqueid name="id" value="1073752931" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073752932" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073752933" />
+											<bool name="fire_and_forget_non_global" value="False" />
+											<template_reference name="ui_help_text" value="tables\help_text_phrase">
+												<int name="phrase_order" value="0" />
+												<locstring name="phrase" value="0" />
+											</template_reference>
+										</template_reference>
+									</list>
+									<enum name="change_target_type" value="squad" />
+									<uniqueid name="id" value="1073752934" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073752935" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073752936" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 	</list>

@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.06" />
+			<float name="far" value="0.01" />
+			<float name="mid" value="0.035" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -1352,13 +1352,13 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\152mm_m10t_he_shell" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\152mm_m10t_flame_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="70" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -1381,12 +1381,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="2.5" />
+			<float name="angle_scatter" value="1.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="2.5" />
+			<float name="distance_scatter_max" value="1.875" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.1" />
 			<float name="distance_scatter_ratio" value="0.25" />

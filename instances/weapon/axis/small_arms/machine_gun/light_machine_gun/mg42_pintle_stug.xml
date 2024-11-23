@@ -124,10 +124,10 @@
 			<bool name="can_burst" value="True" />
 			<group name="duration">
 				<float name="max" value="0.75" />
-				<float name="min" value="0.25" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.15" />
+				<float name="accuracy_multiplier" value="1.12" />
 				<group name="search_radius">
 					<float name="far" value="10" />
 					<float name="near" value="6" />
@@ -342,8 +342,8 @@
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
-				<float name="far" value="40" />
-				<float name="mid" value="20" />
+				<float name="far" value="-1" />
+				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">

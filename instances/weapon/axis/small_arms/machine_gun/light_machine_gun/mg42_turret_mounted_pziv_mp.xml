@@ -395,8 +395,8 @@
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
-				<float name="far" value="35" />
-				<float name="mid" value="20" />
+				<float name="far" value="-1" />
+				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">

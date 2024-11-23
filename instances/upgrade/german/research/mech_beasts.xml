@@ -19,8 +19,8 @@
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="0" />
-				<float name="manpower" value="0" />
+				<float name="fuel" value="10" />
+				<float name="manpower" value="100" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
@@ -33,9 +33,9 @@
 			<locstring name="extra_text" value="613" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="C" />
-			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_west_german_armored_skirts_panther_iv" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_defensive_smoke" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="568" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2116" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
@@ -44,22 +44,6 @@
 		<list name="actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\theatre_of_war\theatre_of_war_1941" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" />
-			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
 		<locstring name="ui_squad_name_override" value="0" />
