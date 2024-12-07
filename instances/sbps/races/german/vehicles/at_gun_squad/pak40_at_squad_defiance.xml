@@ -923,14 +923,14 @@
 												<float name="duration" value="0" />
 												<bool name="permanent" value="False" />
 												<list name="modifiers">
-													<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+													<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 														<enum name="application_type" value="apply_to_weapon" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_01" />
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="1.3" />
-														<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+														<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 														<enum name="application_type" value="apply_to_weapon" />
@@ -974,6 +974,15 @@
 												<enum name="usage_type" value="multiply_add" />
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.25" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\german\timed_ability\pak40_target_weak_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073746522" />

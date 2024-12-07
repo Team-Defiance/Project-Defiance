@@ -89,11 +89,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.001" />
+					<float name="vertical_scale" value="0.00057" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1" />
-				<float name="radius_min" value="0.75" />
+				<float name="radius_max" value="0.125" />
+				<float name="radius_min" value="0.1" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="25" />
+			<float name="acceleration" value="60" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="False" />

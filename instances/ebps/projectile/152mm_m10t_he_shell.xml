@@ -89,7 +89,7 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.002" />
+					<float name="vertical_scale" value="0.00152" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
 				<float name="radius_max" value="3" />
@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="10" />
+			<float name="acceleration" value="60" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="False" />
 				<bool name="is_artillery" value="False" />

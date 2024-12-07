@@ -384,9 +384,9 @@
 				<float name="min" value="0.1" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="far" value="1.2" />
+				<float name="far" value="1" />
 				<float name="near" value="1" />
-				<float name="mid" value="1.1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
 				<float name="max" value="0" />
@@ -405,8 +405,8 @@
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.1" />
-			<float name="fow_angle_multiplier" value="1.4" />
-			<float name="fow_distance_multiplier" value="1.4" />
+			<float name="fow_angle_multiplier" value="1.5" />
+			<float name="fow_distance_multiplier" value="1.5" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />

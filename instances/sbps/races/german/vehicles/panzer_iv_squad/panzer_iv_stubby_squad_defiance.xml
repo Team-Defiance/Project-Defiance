@@ -363,7 +363,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="3840" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11050274" />
+								<locstring name="screen_name" value="2154" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -384,6 +384,15 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="1.4" />
 														<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_01" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.8" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073751907" />
@@ -419,7 +428,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="7680" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11050276" />
+								<locstring name="screen_name" value="590" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -438,7 +447,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_01" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.7" />
+														<float name="value" value="0.85" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
@@ -448,6 +457,15 @@
 														<string name="target_type_name" value="" />
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="1.2" />
+														<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+														<enum name="application_type" value="apply_to_entity" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="1.1" />
 														<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 													</template_reference>
 												</list>
@@ -497,13 +515,83 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="0" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="591" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\p4_blitz_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\timed_ability\heat_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\p4_blitz_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\german\timed_ability\heat_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\kt_kwk_panzeriv_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\kt_kwk_panzeriv_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073753119" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>
@@ -511,15 +599,47 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="0" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="2155" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073753120" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_03" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1" />
+												<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073753121" />
+									</template_reference>
 								</list>
 							</group>
 						</list>

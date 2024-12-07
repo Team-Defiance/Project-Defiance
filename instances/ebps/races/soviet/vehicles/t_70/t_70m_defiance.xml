@@ -397,7 +397,7 @@
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
 				<float name="outer_height" value="-3" />
-				<float name="outer_radius" value="25" />
+				<float name="outer_radius" value="30" />
 				<float name="cone_angle" value="360" />
 				<float name="cone_start_radius" value="0" />
 			</group>
@@ -822,7 +822,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="acceleration" value="2.4" />
+			<float name="acceleration" value="2.5" />
 			<float name="deceleration" value="4.5" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
@@ -832,7 +832,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="6.7" />
+			<float name="speed_max" value="6.9" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.15" />
 			<float name="on_land_overturn_scale" value="0.3" />

@@ -8,6 +8,31 @@
 					<instance_reference name="slot_item" value="slot_item\german\hulldown_slot_item" />
 					<uniqueid name="id" value="1073752829" />
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="4" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.6" />
+							<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.8" />
+							<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073753016" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -124,7 +149,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
+											<float name="value" value="0.85" />
 											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
@@ -133,7 +158,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
+											<float name="value" value="0.85" />
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -423,7 +448,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2029" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="2169" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2028" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_hulldown" />
@@ -443,7 +468,7 @@
 		<list name="requirements">
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="24" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

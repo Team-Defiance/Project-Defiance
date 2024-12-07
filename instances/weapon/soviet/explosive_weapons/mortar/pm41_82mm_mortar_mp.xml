@@ -352,9 +352,9 @@
 				<float name="min" value="7.25" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="far" value="1.2" />
+				<float name="far" value="1" />
 				<float name="near" value="1" />
-				<float name="mid" value="1.1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
 				<float name="max" value="0" />
@@ -364,12 +364,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8" />
+			<float name="angle_scatter" value="9" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="6" />
+			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.08" />

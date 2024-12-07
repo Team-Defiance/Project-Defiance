@@ -173,13 +173,6 @@
 							</list>
 							<uniqueid name="id" value="1073744428" />
 						</template_reference>
-						<template_reference name="action" value="action\change_move_data_action">
-							<float name="acceleration_multiplier" value="1.2" />
-							<float name="deceleration_multiplier" value="1.2" />
-							<float name="pathfinding_size_x" value="0" />
-							<float name="pathfinding_size_y" value="0" />
-							<uniqueid name="id" value="1073744429" />
-						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="True" />
 							<bool name="global_fire_and_forget_on_success" value="False" />
@@ -263,7 +256,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="15" />
+		<float name="duration_time" value="20" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />

@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -46,14 +46,14 @@
 				<float name="radius" value="0" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.15" />
-				<float name="near" value="0.85" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.12" />
+				<float name="near" value="0.68" />
+				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0625" />
-				<float name="near" value="0.425" />
-				<float name="mid" value="0.25" />
+				<float name="far" value="0.06" />
+				<float name="near" value="0.34" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
 				<float name="far" value="5" />
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="20" />
-				<float name="near" value="34" />
+				<float name="mid" value="10" />
+				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -391,9 +391,9 @@
 				<float name="min" value="3.1" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="far" value="1.2" />
+				<float name="far" value="1" />
 				<float name="near" value="1" />
-				<float name="mid" value="1.1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
 				<float name="max" value="0" />

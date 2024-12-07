@@ -129,7 +129,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="700" />
+			<float name="hitpoints" value="640" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -389,7 +389,7 @@
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
 				<float name="outer_height" value="-3" />
-				<float name="outer_radius" value="35" />
+				<float name="outer_radius" value="30" />
 				<float name="cone_angle" value="360" />
 				<float name="cone_start_radius" value="0" />
 			</group>

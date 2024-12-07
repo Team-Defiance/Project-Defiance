@@ -430,6 +430,33 @@
 														<float name="value" value="10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_03" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.9" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_04" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.9" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_05" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.9" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073746786" />
 											</template_reference>
@@ -479,7 +506,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_01" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.75" />
+														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
@@ -506,7 +533,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_03" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.75" />
+														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -515,7 +542,16 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_04" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.75" />
+														<float name="value" value="0.8" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_05" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
