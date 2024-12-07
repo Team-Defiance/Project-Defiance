@@ -61,7 +61,7 @@
 				<float name="mid" value="1.25" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
-			<bool name="can_harm_shooter" value="False" />
+			<bool name="can_harm_shooter" value="True" />
 			<group name="suppression">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.2" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4" />
-				<float name="min" value="3.7" />
+				<float name="max" value="3.9" />
+				<float name="min" value="3.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8" />
+			<float name="angle_scatter" value="14.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />

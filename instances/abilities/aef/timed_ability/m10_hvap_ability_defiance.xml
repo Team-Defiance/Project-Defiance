@@ -8,7 +8,7 @@
 					<uniqueid name="id" value="1073750536" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="4.5" />
 					<bool name="fire_and_forget" value="True" />
 					<list name="subactions">
 						<template_reference name="action" value="action\apply_modifiers_action">
@@ -53,7 +53,7 @@
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11055228" />
-								<locstring name="help_text" value="11055229" />
+								<locstring name="help_text" value="2167" mod="84428889d71d41a48e2eff09c2425d54" />
 								<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
@@ -64,7 +64,7 @@
 					<uniqueid name="id" value="1073750542" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="4.5" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -85,7 +85,7 @@
 		</group>
 		<enum name="activation" value="timed" />
 		<bool name="can_interrupt" value="False" />
-		<bool name="can_target_in_fow" value="False" />
+		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />
 		<group name="cost">
@@ -93,14 +93,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="30" />
+			<float name="munition" value="20" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="24" />
+		<float name="duration_time" value="25" />
 		<bool name="enable_in_building" value="True" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -147,7 +147,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11055230" />
+			<locstring name="extra_text" value="2144" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11055229" />
 			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />

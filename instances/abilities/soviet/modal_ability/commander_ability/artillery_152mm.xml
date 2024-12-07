@@ -8,40 +8,19 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="1" />
-					<bool name="fire_and_forget" value="True" />
-					<list name="subactions">
-						<template_reference name="action" value="action\game_event_action">
-							<float name="event_extra_param" value="0" />
-							<float name="event_param_begin" value="-1" />
-							<float name="event_param_end" value="-1" />
-							<enum name="event_type" value="artillery_set" />
-							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073744455" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073744456" />
-				</template_reference>
-				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\Airstrike_Warning_Smoke" />
-					<float name="duration" value="10" />
-					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073744453" />
-				</template_reference>
 				<template_reference name="action" value="action\off_map_artillery">
 					<float name="num_salvo" value="1" />
 					<float name="radius" value="5" />
 					<float name="source_offset_x" value="90" />
 					<float name="source_offset_y" value="200" />
-					<float name="source_offset_z" value="1" />
+					<float name="source_offset_z" value="50" />
 					<float name="time_range_between_shells_max" value="0.75" />
 					<float name="time_range_between_shells_min" value="0.5" />
-					<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073744447" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="4" />
+					<float name="delay" value="2" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -51,49 +30,50 @@
 							<float name="radius" value="15" />
 							<float name="source_offset_x" value="90" />
 							<float name="source_offset_y" value="250" />
-							<float name="source_offset_z" value="1" />
+							<float name="source_offset_z" value="50" />
 							<float name="time_range_between_shells_max" value="0.5" />
 							<float name="time_range_between_shells_min" value="0.25" />
-							<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073744448" />
+						</template_reference>
+						<template_reference name="action" value="action\game_event_action">
+							<float name="event_extra_param" value="0" />
+							<float name="event_param_begin" value="-1" />
+							<float name="event_param_end" value="-1" />
+							<enum name="event_type" value="artillery_set" />
+							<bool name="event_send_to_target_player" value="False" />
+							<uniqueid name="id" value="1073753208" />
+						</template_reference>
+						<template_reference name="action" value="action\trigger_dca_action">
+							<string name="dca_action_name" value="UI\Airstrike_Warning_Smoke" />
+							<float name="duration" value="10" />
+							<bool name="is_terrain_only" value="True" />
+							<uniqueid name="id" value="1073753209" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073744449" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="8" />
+					<float name="delay" value="6" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="7" />
+							<float name="num_salvo" value="8" />
 							<float name="radius" value="20" />
 							<float name="source_offset_x" value="90" />
 							<float name="source_offset_y" value="300" />
-							<float name="source_offset_z" value="1" />
+							<float name="source_offset_z" value="50" />
 							<float name="time_range_between_shells_max" value="1.25" />
 							<float name="time_range_between_shells_min" value="1" />
-							<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073744450" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073744451" />
 					<bool name="can_prevent_refund" value="True" />
-				</template_reference>
-				<template_reference name="action" value="action\game_event_action">
-					<float name="event_extra_param" value="0" />
-					<float name="event_param_begin" value="-1" />
-					<float name="event_param_end" value="-1" />
-					<enum name="event_type" value="artillery_set" />
-					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073744452" />
-				</template_reference>
-				<template_reference name="action" value="action\sound_action">
-					<bool name="fire_and_forget" value="True" />
-					<string name="sound_container" value="weapons\artillery\artillery_offmap_incendiary_fire" />
-					<uniqueid name="id" value="1073744457" />
 				</template_reference>
 			</list>
 		</group>
@@ -205,6 +185,14 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\blizzard_active" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\ability\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
 		<int name="ui_position" value="80" />
@@ -233,7 +221,7 @@
 		</template_reference>
 		<enum name="ui_direction_requirement" value="nondirectional" />
 		<instance_reference name="cursor_ghost_ebp" value="" />
-		<bool name="can_cast_whilst_constructing" value="False" />
+		<bool name="can_cast_whilst_constructing" value="True" />
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />

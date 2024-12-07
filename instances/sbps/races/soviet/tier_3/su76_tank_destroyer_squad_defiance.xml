@@ -659,6 +659,33 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\accessory_weapons\su76_tagging_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
+													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+														<enum name="application_type" value="apply_to_ability" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.75" />
+														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\su76_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+														<enum name="application_type" value="apply_to_ability" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.75" />
+														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\su76_flame_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+														<enum name="application_type" value="apply_to_ability" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.75" />
+														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\su76_flame_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073743333" />
 											</template_reference>

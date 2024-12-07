@@ -759,7 +759,7 @@
 				<float name="duration_min" value="15" />
 				<float name="radius_max" value="4" />
 				<float name="radius_min" value="4" />
-				<float name="radius_scatter" value="0" />
+				<float name="radius_scatter" value="1" />
 				<group name="target_info">
 					<template_reference name="target_info" value="type_ability_target_type\all">
 					</template_reference>

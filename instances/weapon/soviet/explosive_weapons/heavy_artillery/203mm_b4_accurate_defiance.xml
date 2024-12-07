@@ -294,33 +294,10 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="True" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="True" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_squad_veterancy">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="5" />
-								</template_reference>
-							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\trigger_critical_action">
-									<float name="remove_at_health" value="1" />
-									<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
-									<uniqueid name="id" value="1073745285" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073745284" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
+							<uniqueid name="id" value="1073753073" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073745283" />
@@ -351,33 +328,10 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="True" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="True" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_squad_veterancy">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="5" />
-								</template_reference>
-							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\trigger_critical_action">
-									<float name="remove_at_health" value="1" />
-									<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-									<uniqueid name="id" value="1073745286" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073745287" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073753074" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073745288" />
@@ -572,7 +526,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.75" />
 					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

@@ -371,8 +371,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="90" />
-					<float name="manpower" value="320" />
+					<float name="fuel" value="85" />
+					<float name="manpower" value="310" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -403,8 +403,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panzer_iv_sdkfz_161_west_german" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="125" />
-			<float name="rear_armor" value="50" />
+			<float name="armor" value="135" />
+			<float name="rear_armor" value="60" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -824,7 +824,7 @@
 								<float name="z" value="0.85" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_coax_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -845,7 +845,7 @@
 								<float name="z" value="1.652" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_hull_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

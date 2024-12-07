@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.06" />
-			<float name="far" value="0.015" />
-			<float name="mid" value="0.0375" />
+			<float name="far" value="0.02" />
+			<float name="mid" value="0.04" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4" />
-				<float name="min" value="3.7" />
+				<float name="max" value="3.9" />
+				<float name="min" value="3.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8" />
+			<float name="angle_scatter" value="12.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />

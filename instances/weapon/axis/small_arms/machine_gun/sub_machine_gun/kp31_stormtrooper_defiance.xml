@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.9" />
+			<float name="accuracy_multiplier" value="0.95" />
 			<float name="burst_multiplier" value="0.9" />
 			<float name="cooldown_multiplier" value="0.9" />
 			<bool name="disable_moving_firing" value="False" />

@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -72,7 +72,7 @@
 				<float name="near" value="0.2" />
 				<float name="mid" value="0.15" />
 			</group>
-			<bool name="damage_all_in_hold" value="True" />
+			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="10" />
@@ -403,7 +403,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7" />
+			<float name="angle_scatter" value="9" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -411,7 +411,7 @@
 			<float name="distance_scatter_max" value="10" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
-			<float name="distance_scatter_ratio" value="0.25" />
+			<float name="distance_scatter_ratio" value="0.2" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
@@ -473,9 +473,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="near" value="135" />
-			<float name="far" value="105" />
-			<float name="mid" value="125" />
+			<float name="near" value="145" />
+			<float name="far" value="115" />
+			<float name="mid" value="135" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

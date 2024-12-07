@@ -141,7 +141,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="0.4" />
-				<float name="mid" value="0.8" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -152,13 +152,13 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.5" />
-				<float name="min" value="1.25" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.7" />
-				<float name="far" value="1.55" />
-				<float name="mid" value="0.9" />
+				<float name="near" value="1" />
+				<float name="far" value="1.45" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="cover_table">

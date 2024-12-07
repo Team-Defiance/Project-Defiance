@@ -43,17 +43,17 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="3.75" />
+				<float name="radius" value="4" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.625" />
-				<float name="mid" value="0.25" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="0.325" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.3125" />
-				<float name="mid" value="0.125" />
+				<float name="near" value="0.375" />
+				<float name="mid" value="0.1625" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3.25" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="200" />
-			<float name="min" value="200" />
+			<float name="max" value="160" />
+			<float name="min" value="160" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="7.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -445,6 +445,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.25" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073741896" />

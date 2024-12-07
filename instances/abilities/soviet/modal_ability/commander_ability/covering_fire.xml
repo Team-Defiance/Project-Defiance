@@ -29,13 +29,13 @@
 										<float name="angle_left" value="0" />
 										<float name="angle_right" value="0" />
 										<enum name="area_type" value="circle" />
-										<float name="radius" value="37.5" />
+										<float name="radius" value="35" />
 									</group>
-									<float name="duration" value="50" />
-									<float name="interval" value="6" />
-									<float name="interval_min" value="1.5" />
-									<float name="interval_multiplier" value="0.85" />
-									<float name="interval_reset_delay" value="3" />
+									<float name="duration" value="45" />
+									<float name="interval" value="10" />
+									<float name="interval_min" value="7.5" />
+									<float name="interval_multiplier" value="0.925" />
+									<float name="interval_reset_delay" value="3.75" />
 									<group name="target_info">
 										<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
 											<list name="target_infos">
@@ -67,16 +67,47 @@
 										</template_reference>
 									</group>
 									<list name="trigger_actions">
-										<template_reference name="action" value="action\off_map_artillery">
-											<float name="num_salvo" value="3" />
-											<float name="radius" value="10" />
-											<float name="source_offset_x" value="10" />
-											<float name="source_offset_y" value="200" />
-											<float name="source_offset_z" value="10" />
-											<float name="time_range_between_shells_max" value="1.5" />
-											<float name="time_range_between_shells_min" value="0.75" />
-											<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\zis3_barrage_covering_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											<uniqueid name="id" value="1073745961" />
+										<template_reference name="action" value="action\delay">
+											<float name="delay" value="0.5" />
+											<float name="delay_min" value="0" />
+											<bool name="progress_bar" value="False" />
+											<bool name="randomize" value="False" />
+											<list name="delayed_actions">
+												<template_reference name="action" value="action\off_map_artillery">
+													<float name="num_salvo" value="1" />
+													<float name="radius" value="5" />
+													<float name="source_offset_x" value="10" />
+													<float name="source_offset_y" value="350" />
+													<float name="source_offset_z" value="10" />
+													<float name="time_range_between_shells_max" value="1.5" />
+													<float name="time_range_between_shells_min" value="1.25" />
+													<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\zis3_barrage_covering_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+													<uniqueid name="id" value="1073753201" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073753200" />
+											<bool name="can_prevent_refund" value="True" />
+										</template_reference>
+										<template_reference name="action" value="action\delay">
+											<float name="delay" value="4.25" />
+											<float name="delay_min" value="0" />
+											<bool name="progress_bar" value="False" />
+											<bool name="randomize" value="False" />
+											<list name="delayed_actions">
+												<template_reference name="action" value="action\off_map_artillery">
+													<float name="num_salvo" value="4" />
+													<float name="radius" value="12.5" />
+													<float name="source_offset_x" value="10" />
+													<float name="source_offset_y" value="350" />
+													<float name="source_offset_z" value="10" />
+													<float name="time_range_between_shells_max" value="1.2" />
+													<float name="time_range_between_shells_min" value="0.8" />
+													<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\zis3_barrage_covering_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+													<uniqueid name="id" value="1073753199" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073753198" />
+											<bool name="can_prevent_refund" value="True" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073745962" />

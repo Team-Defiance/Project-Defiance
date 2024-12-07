@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.5" />
-				<float name="min" value="0.5" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.8" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -412,8 +412,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.6" />
-				<float name="min" value="6.4" />
+				<float name="max" value="6.16" />
+				<float name="min" value="5.95" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -428,12 +428,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="2" />
+			<float name="angle_scatter" value="1.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="2.5" />
+			<float name="distance_scatter_max" value="1.25" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />

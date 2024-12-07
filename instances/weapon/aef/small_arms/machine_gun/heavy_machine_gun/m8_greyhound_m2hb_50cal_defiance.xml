@@ -2,19 +2,19 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.65" />
-			<float name="far" value="0.5" />
+			<float name="far" value="0.45" />
 			<float name="mid" value="0.55" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
-				<float name="max" value="0.75" />
+				<float name="max" value="0.375" />
 				<float name="min" value="0.125" />
 			</group>
-			<float name="post_firing_aim_time" value="1" />
+			<float name="post_firing_aim_time" value="0.5" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.125" />
-				<float name="min" value="0.125" />
+				<float name="max" value="0.875" />
+				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.5" />
@@ -223,8 +223,8 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1.5" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>

@@ -89,11 +89,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.0025" />
+					<float name="vertical_scale" value="0.00075" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="2" />
-				<float name="radius_min" value="1.5" />
+				<float name="radius_max" value="0.7" />
+				<float name="radius_min" value="0.25" />
 				<float name="splat_only_splat_seconds" value="45" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -196,7 +196,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="25" />
+			<float name="acceleration" value="60" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="False" />
@@ -228,7 +228,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="tank_gun" />
+					<string name="do_action_state_name" value="artillery" />
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
