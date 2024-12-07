@@ -54,8 +54,8 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="340" />
-			<float name="munition" value="0" />
+			<float name="manpower" value="420" />
+			<float name="munition" value="25" />
 			<float name="popcap" value="0" />
 		</group>
 		<list name="start_actions">
@@ -120,12 +120,6 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\brit_hq_engineer_call_in" />
-			<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\reinforced_structures_cmd_mp" />
-			<instance_reference name="ability" value="abilities\british\timed_ability\commander_ability\crew_repair_operation_cmd_mp" />
-			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\m5_quad_halftrack_british_dispatch" />
-			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\m10_deploy_british" />
-			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\m1_81mm_mortar_dispatch_brits_mp" />
-			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\assault_sections" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
@@ -169,9 +163,27 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
+					<locstring name="screen_name" value="11084844" />
+					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_british_forward_assembly" />
+					<enum name="unit_type" value="barracks" />
+					<icon name="icon_name" value="Icons_tooltips_tab_04_british_forward_assembly" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="self_destruct_ability" value="" />
+				</group>
+			</group>
+			<group name="production_building">
+				<group name="builder">
+					<locstring name="screen_name" value="0" />
+					<icon name="symbol_icon_name" value="" />
+					<enum name="unit_type" value="" />
+					<icon name="icon_name" value="" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="dispatch_ability" value="" />
+				</group>
+				<group name="building">
 					<locstring name="screen_name" value="11077676" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_british_platoon_command_post" />
-					<enum name="unit_type" value="barracks" />
+					<enum name="unit_type" value="armory" />
 					<icon name="icon_name" value="Icons_tooltips_tab_02_british_platoon_command_post" />
 					<locstring name="help_text" value="0" />
 					<instance_reference name="self_destruct_ability" value="" />
@@ -189,26 +201,8 @@
 				<group name="building">
 					<locstring name="screen_name" value="11077677" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_british_company_command_post" />
-					<enum name="unit_type" value="armory" />
-					<icon name="icon_name" value="Icons_tooltips_tab_03_british_company_command_post" />
-					<locstring name="help_text" value="0" />
-					<instance_reference name="self_destruct_ability" value="" />
-				</group>
-			</group>
-			<group name="production_building">
-				<group name="builder">
-					<locstring name="screen_name" value="0" />
-					<icon name="symbol_icon_name" value="" />
-					<enum name="unit_type" value="" />
-					<icon name="icon_name" value="" />
-					<locstring name="help_text" value="0" />
-					<instance_reference name="dispatch_ability" value="" />
-				</group>
-				<group name="building">
-					<locstring name="screen_name" value="11084844" />
-					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_british_forward_assembly" />
 					<enum name="unit_type" value="motor_pool_light" />
-					<icon name="icon_name" value="Icons_tooltips_tab_04_british_forward_assembly" />
+					<icon name="icon_name" value="Icons_tooltips_tab_03_british_company_command_post" />
 					<locstring name="help_text" value="0" />
 					<instance_reference name="self_destruct_ability" value="" />
 				</group>
@@ -242,14 +236,14 @@
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tech_structure_1_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tech_structure_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tech_structure_2_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tech_structure_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="ebps\races\british\buildings\base_building\british_building_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
@@ -358,10 +352,6 @@
 				<string name="key" value="default" />
 				<instance_reference name="building" value="ebps\races\british\buildings\base_building\british_base_stamper" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
-					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-						<bool name="check_requirements" value="False" />
-					</group>
 				</list>
 				<list name="player_upgrades">
 				</list>
@@ -370,17 +360,13 @@
 				<string name="key" value="default_mp" />
 				<instance_reference name="building" value="ebps\races\british\buildings\base_building\british_base_stamper" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
-					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-						<bool name="check_requirements" value="False" />
-					</group>
 				</list>
 				<list name="player_upgrades">
 				</list>
 			</group>
 			<group name="starting_building">
 				<string name="key" value="bunker" />
-				<instance_reference name="building" value="ebps\races\british\buildings\defensive_structures\british_bunker_starting_position_mp" />
+				<instance_reference name="building" value="ebps\races\british\buildings\defensive_structures\british_bunker_starting_position_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">

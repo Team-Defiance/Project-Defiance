@@ -15,37 +15,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_race">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="race" value="racebps\aef" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\make_dead">
-							<enum name="death_intensity" value="death_intensity_low" />
-							<bool name="ignore_invulnerability" value="True" />
-							<bool name="destroy" value="True" />
-							<list name="death_reaction_table">
-							</list>
-							<uniqueid name="id" value="1073749894" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073749895" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext">
@@ -149,7 +118,7 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\british\items\weapon_rack_unlock_mp" />
+					<instance_reference name="upgrade_name" value="upgrade\british\research\tier_0\weapon_racks_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 			<template_reference name="unlimited_option" value="options\ebpextensions\slotitem_ext\unlimited_option">
@@ -385,7 +354,7 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\british\items\weapon_rack_unlock_mp" />
+					<instance_reference name="upgrade_name" value="upgrade\british\research\tier_0\weapon_racks_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>

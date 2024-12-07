@@ -49,7 +49,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\cancel_upgrade_action">
 							<uniqueid name="id" value="1073749811" />
-							<instance_reference name="upgrade" value="upgrade\british\research\tech_structure_1_mp" />
+							<instance_reference name="upgrade" value="upgrade\british\research\tech_structure_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="do_refund" value="False" />
 						</template_reference>
 					</list>
@@ -113,7 +113,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\cancel_upgrade_action">
 							<uniqueid name="id" value="1073749813" />
-							<instance_reference name="upgrade" value="upgrade\british\research\tech_structure_1_mp" />
+							<instance_reference name="upgrade" value="upgrade\british\research\tech_structure_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="do_refund" value="True" />
 						</template_reference>
 					</list>
@@ -177,7 +177,7 @@
 				<enum name="unit_type00" value="building" />
 				<enum name="unit_type01" value="brit_building_1_built" />
 				<enum name="unit_type02" value="annihilation_condition" />
-				<enum name="unit_type03" value="barracks" />
+				<enum name="unit_type03" value="armory" />
 				<enum name="unit_type04" value="production_building" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="alternate_retreat_point" />
@@ -440,36 +440,6 @@
 			<bool name="must_be_in_supply" value="True" />
 			<float name="reinforce_radius" value="20" />
 			<list name="spawn_items">
-				<group name="spawn_item">
-					<int name="ui_position" value="11" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\soldiers\sapper_squad\sapper_squad_mp" />
-					<bool name="spawn_at_map_entry_point" value="False" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="12" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\soldiers\sniper_squad\sniper_british_squad_mp" />
-					<bool name="spawn_at_map_entry_point" value="False" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="14" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\team_weapons\at_gun_6_pounder\brit_6_pounder_at_gun_squad_mp" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="13" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\soldiers\brit_officer_squad\air_support_officer_squad_mp" />
-					<bool name="spawn_at_map_entry_point" value="False" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="31" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\vehicles\aec_armoured_car\aec_armoured_car_squad_mp" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
 			</list>
 			<list name="bonus_xp_from_hold_list">
 			</list>
@@ -481,8 +451,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\research\platoon_aec_research_building_mp" />
-				<instance_reference name="upgrade" value="upgrade\british\research\platoon_bofors_research_building_mp" />
+				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\hammer_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\artillery_pyrotechnics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -594,104 +564,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073749829" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\company_anvil_mp" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="False" />
-							<string name="do_action_state_name" value="anvil" />
-							<bool name="retrigger" value="False" />
-							<string name="state_machine_name" value="upgrade_state" />
-							<string name="undo_action_state_name" value="" />
-							<uniqueid name="id" value="1073749830" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073749831" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\platoon_bofors_research_mp" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\upgrade_add">
-							<bool name="apply_to_entities_in_squad" value="False" />
-							<bool name="trigger_publish_event" value="False" />
-							<instance_reference name="upgrade" value="upgrade\british\research\platoon_bofors_research_building_mp" />
-							<uniqueid name="id" value="1073749832" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073749833" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\platoon_aec_research_mp" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\upgrade_add">
-							<bool name="apply_to_entities_in_squad" value="False" />
-							<bool name="trigger_publish_event" value="False" />
-							<instance_reference name="upgrade" value="upgrade\british\research\platoon_aec_research_building_mp" />
-							<uniqueid name="id" value="1073749834" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073749835" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -945,14 +817,9 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_coordinated_fire_base_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_direct_barrage_base_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_smoke_screen_base_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_overwatch_base_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\passive_bofors_emplacement_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\passive_mortar_emplacement_mp" />
-				<instance_reference name="ability" value="abilities\british\always_on_ability\brit_base_braced_static_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\howitzer_counter_barrage_commander_mp" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\6_pounder_at_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\valentine_infantry_support_tank_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\cromwell_a27_cruiser_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
