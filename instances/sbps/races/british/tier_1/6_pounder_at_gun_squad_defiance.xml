@@ -7,9 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083411" />
+						<locstring name="extra_text" value="2278" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083410" />
+						<locstring name="help_text" value="2277" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="T" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_british_6_pounder_at_gun" />
 						<bool name="minimap_team_only" value="False" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_6_pounder_at_gun_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="0" />
+						<locstring name="brief_text" value="2279" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
@@ -671,8 +671,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\brit_6_pounder_rapid_maneuver_mp" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\commander_ability\at_gun_ambush_tactics" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\6_pounder_take_aim_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -929,11 +928,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753005" />
+										<uniqueid name="id" value="1073753682" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073753006" />
+										<uniqueid name="id" value="1073753683" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -974,7 +973,7 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753007" />
+												<uniqueid name="id" value="1073753684" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />

@@ -541,7 +541,7 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753113" />
+							<uniqueid name="id" value="1073753694" />
 						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
@@ -553,14 +553,14 @@
 										<icon name="icon_name" value="Icons_abilities_ability_common_focussed_sight_on" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="1073753116" />
+									<uniqueid name="id" value="1073753695" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073753117" />
+							<uniqueid name="id" value="1073753696" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753118" />
+					<uniqueid name="id" value="1073753697" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

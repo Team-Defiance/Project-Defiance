@@ -577,7 +577,7 @@
 				<template_reference name="action" value="action\slot_item_add">
 					<instance_reference name="slot_item" value="slot_item\british\brit_croc_dummy_slot_item" />
 					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073753127" />
+					<uniqueid name="id" value="1073753597" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -605,10 +605,10 @@
 								<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_track_vehicle" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073753128" />
+							<uniqueid name="id" value="1073753598" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753129" />
+					<uniqueid name="id" value="1073753599" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -629,7 +629,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753130" />
+					<uniqueid name="id" value="1073753600" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -669,11 +669,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753131" />
+												<uniqueid name="id" value="1073753601" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753132" />
+										<uniqueid name="id" value="1073753602" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -689,7 +689,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753133" />
+										<uniqueid name="id" value="1073753603" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -730,11 +730,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753134" />
+												<uniqueid name="id" value="1073753604" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753135" />
+										<uniqueid name="id" value="1073753605" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -791,11 +791,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753137" />
+												<uniqueid name="id" value="1073753606" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753138" />
+										<uniqueid name="id" value="1073753607" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -811,7 +811,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753139" />
+										<uniqueid name="id" value="1073753608" />
 									</template_reference>
 									<template_reference name="action" value="action\ui_unit_modifier_action">
 										<bool name="die_with_creator" value="False" />
@@ -821,13 +821,13 @@
 											<icon name="icon_name" value="Icons_abilities_ability_british_engine_critical_self_repair" />
 											<string name="hotkey_name" value="" />
 										</template_reference>
-										<uniqueid name="id" value="1073753140" />
+										<uniqueid name="id" value="1073753609" />
 									</template_reference>
 									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073753141" />
+										<uniqueid name="id" value="1073753610" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

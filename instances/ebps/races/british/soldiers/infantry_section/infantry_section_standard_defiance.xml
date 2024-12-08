@@ -115,7 +115,7 @@
 			</list>
 			<float name="armor" value="1" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="0.9" />
+			<float name="target_size" value="0.85" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -471,22 +471,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\single_fire\rifle\tommy_lee_enfield_rifle_mp" />
-						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0.25" />
-								<float name="y" value="1.5" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\sub_machine_gun\tommy_9mm_sten_gun_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\single_fire\rifle\infantry_section_lee_enfield_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -816,7 +801,7 @@
 							<float name="deceleration_multiplier" value="0.3" />
 							<float name="pathfinding_size_x" value="0" />
 							<float name="pathfinding_size_y" value="0" />
-							<uniqueid name="id" value="1073753185" />
+							<uniqueid name="id" value="1073753544" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="1" />
@@ -835,7 +820,7 @@
 							<uniqueid name="id" value="1073753186" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753187" />
+					<uniqueid name="id" value="1073753545" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -868,7 +853,7 @@
 						<icon name="icon_name" value="Icons_abilities_ability_german_ambush_camo_on" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
-					<uniqueid name="id" value="1073753188" />
+					<uniqueid name="id" value="1073753546" />
 				</template_reference>
 			</list>
 			<list name="first_strike_actions">
@@ -885,5 +870,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742175" />
+	<uniqueid name="pbgid" value="1073742205" />
 </instance>

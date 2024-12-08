@@ -199,7 +199,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753143" />
+					<uniqueid name="id" value="1073753729" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="True" />
@@ -279,10 +279,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753144" />
+							<uniqueid name="id" value="1073753730" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753145" />
+					<uniqueid name="id" value="1073753731" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -340,10 +340,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753146" />
+							<uniqueid name="id" value="1073753732" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753147" />
+					<uniqueid name="id" value="1073753733" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -496,11 +496,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753170" />
+										<uniqueid name="id" value="1073753734" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073753171" />
+										<uniqueid name="id" value="1073753735" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -518,7 +518,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753172" />
+										<uniqueid name="id" value="1073753736" />
 									</template_reference>
 								</list>
 							</group>
@@ -566,11 +566,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753173" />
+												<uniqueid name="id" value="1073753737" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753174" />
+										<uniqueid name="id" value="1073753738" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -586,11 +586,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753175" />
+										<uniqueid name="id" value="1073753739" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073753176" />
+										<uniqueid name="id" value="1073753740" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -649,18 +649,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753177" />
+												<uniqueid name="id" value="1073753741" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073753178" />
+												<uniqueid name="id" value="1073753742" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753179" />
+										<uniqueid name="id" value="1073753743" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -676,11 +676,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753180" />
+										<uniqueid name="id" value="1073753744" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
-										<uniqueid name="id" value="1073753181" />
+										<uniqueid name="id" value="1073753745" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -755,7 +755,7 @@
 												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\pe_tiger_blitz_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753182" />
+										<uniqueid name="id" value="1073753746" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -785,7 +785,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753183" />
+										<uniqueid name="id" value="1073753747" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -803,7 +803,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753184" />
+										<uniqueid name="id" value="1073753748" />
 									</template_reference>
 								</list>
 							</group>
@@ -845,5 +845,5 @@
 			<float name="revert_rate_multiplier" value="4" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741948" />
+	<uniqueid name="pbgid" value="1073741962" />
 </instance>

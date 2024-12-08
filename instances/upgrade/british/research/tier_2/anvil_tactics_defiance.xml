@@ -28,15 +28,15 @@
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="2" />
+		<int name="ui_position" value="1" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="11094957" />
-			<locstring name="help_text" value="11090830" />
-			<string name="hotkey_name" value="N" />
+			<locstring name="extra_text" value="2362" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2360" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="T" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_hq_spec_b" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11084805" />
-			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name" value="2361" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="2363" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
 		</group>
@@ -65,22 +65,22 @@
 		<locstring name="ui_squad_extra_text_override" value="0" />
 		<list name="ui_preview">
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090709" />
+				<locstring name="brief_text" value="2365" mod="84428889d71d41a48e2eff09c2425d54" />
 				<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill" />
-				<locstring name="screen_name" value="11090713" />
+				<locstring name="screen_name" value="2364" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090831" />
-				<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_heavy_engineers" />
-				<locstring name="screen_name" value="11090714" />
+				<locstring name="brief_text" value="2380" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_vehicles_vehicle_british_comet" />
+				<locstring name="screen_name" value="2381" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090711" />
-				<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_airburst_shells" />
-				<locstring name="screen_name" value="11090715" />
+				<locstring name="brief_text" value="2367" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_buildings_building_british_25_pounder" />
+				<locstring name="screen_name" value="2366" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090712" />
+				<locstring name="brief_text" value="2368" mod="84428889d71d41a48e2eff09c2425d54" />
 				<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_advanced_warning" />
 				<locstring name="screen_name" value="11090832" />
 			</group>

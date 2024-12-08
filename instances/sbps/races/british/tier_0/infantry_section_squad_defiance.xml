@@ -7,9 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083367" />
+						<locstring name="extra_text" value="2267" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083368" />
+						<locstring name="help_text" value="2266" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="T" />
 						<icon name="icon_name" value="Icons_units_unit_british_tommy_with_tommy" />
 						<bool name="minimap_team_only" value="False" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_british_tommy_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="0" />
+						<locstring name="brief_text" value="2268" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
@@ -176,7 +176,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\tommy_medical_supplies" />
+				<instance_reference name="upgrade" value="upgrade\british\items\infantry_section_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -311,7 +311,7 @@
 								<uniqueid name="id" value="1073752964" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073752965" />
+						<uniqueid name="id" value="1073753653" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
 					<template_reference name="action" value="action\animator_set_state">
@@ -320,7 +320,7 @@
 						<bool name="retrigger" value="False" />
 						<string name="state_machine_name" value="suppression" />
 						<string name="undo_action_state_name" value="normal" />
-						<uniqueid name="id" value="1073752966" />
+						<uniqueid name="id" value="1073753654" />
 					</template_reference>
 				</list>
 				<list name="suppressed_activate_actions">
@@ -401,7 +401,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073752967" />
+						<uniqueid name="id" value="1073753655" />
 					</template_reference>
 				</list>
 			</group>
@@ -462,15 +462,15 @@
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="-2" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.93" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753548" />
+							<uniqueid name="id" value="1073753656" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753549" />
+					<uniqueid name="id" value="1073753657" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -560,7 +560,7 @@
 							<uniqueid name="id" value="1073752968" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752969" />
+					<uniqueid name="id" value="1073753658" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -593,10 +593,10 @@
 						<template_reference name="action" value="action\change_weapon">
 							<float name="hardpoint" value="1" />
 							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\sub_machine_gun\tommy_9mm_sten_gun_mp" />
-							<uniqueid name="id" value="1073752970" />
+							<uniqueid name="id" value="1073753659" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752971" />
+					<uniqueid name="id" value="1073753660" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -658,10 +658,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073752972" />
+							<uniqueid name="id" value="1073753661" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752973" />
+					<uniqueid name="id" value="1073753662" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -680,9 +680,10 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\brit_medic_tommy_timed_area_heal_mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\infantry_section_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\always_on_ability\tommy_cover_combat_bonus" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -702,7 +703,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
-					<uniqueid name="id" value="1073752974" />
+					<uniqueid name="id" value="1073753663" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>
@@ -820,7 +821,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752975" />
+					<uniqueid name="id" value="1073753664" />
 				</template_reference>
 			</list>
 			<list name="construction_groups">
@@ -872,7 +873,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752976" />
+										<uniqueid name="id" value="1073753665" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -902,7 +903,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752977" />
+										<uniqueid name="id" value="1073753666" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -918,7 +919,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752978" />
+										<uniqueid name="id" value="1073753667" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -938,7 +939,7 @@
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073752979" />
+										<uniqueid name="id" value="1073753668" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -954,7 +955,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752980" />
+										<uniqueid name="id" value="1073753669" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -981,7 +982,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752981" />
+										<uniqueid name="id" value="1073753670" />
 									</template_reference>
 								</list>
 							</group>

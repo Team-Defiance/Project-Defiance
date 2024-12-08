@@ -16,7 +16,6 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\destroy_cover_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -86,7 +85,7 @@
 			</list>
 			<float name="armor" value="1" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="0.9" />
+			<float name="target_size" value="0.85" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -435,7 +434,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\sub_machine_gun\engineer_sten_9mm_smg_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\sub_machine_gun\royal_engineer_sten_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -536,7 +535,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753163" />
+						<uniqueid name="id" value="1073753547" />
 					</template_reference>
 				</list>
 			</group>
@@ -554,7 +553,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753164" />
+						<uniqueid name="id" value="1073753548" />
 					</template_reference>
 				</list>
 			</group>
@@ -572,7 +571,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753165" />
+						<uniqueid name="id" value="1073753549" />
 					</template_reference>
 				</list>
 			</group>
@@ -600,7 +599,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753166" />
+						<uniqueid name="id" value="1073753550" />
 					</template_reference>
 				</list>
 			</group>
@@ -632,7 +631,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753167" />
+						<uniqueid name="id" value="1073753551" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -650,7 +649,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753168" />
+						<uniqueid name="id" value="1073753552" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -727,7 +726,7 @@
 							<float name="deceleration_multiplier" value="0.3" />
 							<float name="pathfinding_size_x" value="0" />
 							<float name="pathfinding_size_y" value="0" />
-							<uniqueid name="id" value="1073753169" />
+							<uniqueid name="id" value="1073753553" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="1" />
@@ -798,5 +797,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742174" />
+	<uniqueid name="pbgid" value="1073742206" />
 </instance>

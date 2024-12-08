@@ -67,15 +67,15 @@
 					<float name="offset_scale_x" value="1.5" />
 					<float name="offset_scale_y" value="1.5" />
 					<float name="offset_scale_z" value="1.5" />
-					<uniqueid name="id" value="1073753189" />
+					<uniqueid name="id" value="1073753572" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_Armor_Command_DeSpawn_LMG_Rack" />
-					<uniqueid name="id" value="1073753190" />
+					<uniqueid name="id" value="1073753573" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_Armor_Command_DeSpawn_AT_Rack" />
-					<uniqueid name="id" value="1073753191" />
+					<uniqueid name="id" value="1073753574" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
 					<float name="duration" value="1" />
@@ -107,13 +107,13 @@
 										<template_reference name="action" value="action\upgrade_remove">
 											<bool name="apply_to_entities_in_squad" value="False" />
 											<instance_reference name="upgrade" value="upgrade\british\commander\passive\command_vehicle_active_player" />
-											<uniqueid name="id" value="1073753192" />
+											<uniqueid name="id" value="1073753575" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073753193" />
+									<uniqueid name="id" value="1073753576" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753194" />
+							<uniqueid name="id" value="1073753577" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -121,7 +121,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753195" />
+					<uniqueid name="id" value="1073753578" />
 				</template_reference>
 			</list>
 			<float name="armor" value="5.8" />
@@ -130,100 +130,10 @@
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
-					<float name="max_health_percentage" value="1" />
-					<list name="critical_info">
-						<group name="info">
-							<float name="weight" value="100" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="False" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="100" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="False" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-					</list>
-				</group>
-				<group name="critical_group">
-					<float name="max_health_percentage" value="0.5" />
-					<list name="critical_info">
-						<group name="info">
-							<float name="weight" value="98" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="False" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="98" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\_no_critical_rear" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="False" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="20" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_kill_top_gunner_hardpoint_4" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-					</list>
-				</group>
-				<group name="critical_group">
 					<float name="max_health_percentage" value="0" />
 					<list name="critical_info">
 						<group name="info">
-							<float name="weight" value="55" />
+							<float name="weight" value="65" />
 							<enum_table name="applicable_weapons">
 								<bool name="small_arms" value="True" />
 								<bool name="flame" value="True" />
@@ -248,38 +158,6 @@
 								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="5" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_abandon" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="10" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_universal_carrier_flamethrower_explode" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
@@ -483,7 +361,7 @@
 								<float name="z" value="1.11" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\heavy_machine_gun\universal_carrier_bren_lmg_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\universal_carrier_bren_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="True" />
@@ -601,7 +479,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753196" />
+						<uniqueid name="id" value="1073753579" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.8" />
@@ -619,7 +497,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753197" />
+						<uniqueid name="id" value="1073753580" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.9" />
@@ -638,7 +516,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753198" />
+						<uniqueid name="id" value="1073753581" />
 					</template_reference>
 				</list>
 			</group>
@@ -656,7 +534,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753199" />
+						<uniqueid name="id" value="1073753582" />
 					</template_reference>
 				</list>
 			</group>
@@ -674,7 +552,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753200" />
+						<uniqueid name="id" value="1073753583" />
 					</template_reference>
 				</list>
 			</group>
@@ -702,7 +580,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753201" />
+						<uniqueid name="id" value="1073753584" />
 					</template_reference>
 				</list>
 			</group>
@@ -1324,10 +1202,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753204" />
+							<uniqueid name="id" value="1073753585" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753205" />
+					<uniqueid name="id" value="1073753586" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -1354,10 +1232,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753206" />
+							<uniqueid name="id" value="1073753587" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753207" />
+					<uniqueid name="id" value="1073753588" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -1428,8 +1306,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\universal_carrier_vickers_k_package_upgrade_mp" />
-				<instance_reference name="upgrade" value="upgrade\british\items\universal_carrier_wasp_package_upgrade_mp" />
+				<instance_reference name="upgrade" value="upgrade\british\items\universal_carrier\vickers_k_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\universal_carrier\wasp_flamethrower_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
@@ -1480,7 +1358,7 @@
 					<string name="state_machine_name" value="garrison_state" />
 					<string name="undo_action_state_name" value="Unloaded" />
 					<bool name="retrigger" value="False" />
-					<uniqueid name="id" value="1073753208" />
+					<uniqueid name="id" value="1073753589" />
 				</template_reference>
 			</list>
 			<list name="on_loading_modifiers">
@@ -1505,7 +1383,7 @@
 			</list>
 			<list name="on_loaded_squad_actions">
 				<template_reference name="action" value="action\additional_crew_action">
-					<uniqueid name="id" value="1073753209" />
+					<uniqueid name="id" value="1073753590" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -1517,16 +1395,16 @@
 				<template_reference name="action" value="action\remove_crew_action">
 					<string name="crew_name" value="Gunner" />
 					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073753210" />
+					<uniqueid name="id" value="1073753591" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="True" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\handbrake_available_upgrade_mp" />
-					<uniqueid name="id" value="1073753211" />
+					<uniqueid name="id" value="1073753592" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742176" />
+	<uniqueid name="pbgid" value="1073742215" />
 </instance>

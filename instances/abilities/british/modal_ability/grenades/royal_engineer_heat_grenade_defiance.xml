@@ -99,13 +99,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2185" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2184" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="2254" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2253" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_heat_grenade" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2186" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2400" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -139,7 +139,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="2386" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />

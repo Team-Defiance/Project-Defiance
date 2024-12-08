@@ -30,13 +30,13 @@
 		<enum name="ui_group" value="command_panel" />
 		<int name="ui_position" value="31" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="11084775" />
-			<locstring name="help_text" value="11083388" />
+			<locstring name="extra_text" value="2370" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2369" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="C" />
 			<icon name="icon_name" value="Icons_buildings_building_british_building_1" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11083894" />
-			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name" value="2372" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="2371" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
 		</group>
@@ -79,24 +79,24 @@
 		<locstring name="ui_squad_extra_text_override" value="0" />
 		<list name="ui_preview">
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090896" />
+				<locstring name="brief_text" value="2377" mod="84428889d71d41a48e2eff09c2425d54" />
 				<icon name="icon_name" value="Icons_units_unit_british_engineer" />
 				<locstring name="screen_name" value="11077201" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090897" />
+				<locstring name="brief_text" value="2378" mod="84428889d71d41a48e2eff09c2425d54" />
 				<icon name="icon_name" value="Icons_units_unit_british_sniper" />
 				<locstring name="screen_name" value="11077202" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090898" />
-				<icon name="icon_name" value="Icons_vehicles_vehicle_british_6_pounder_at_gun" />
-				<locstring name="screen_name" value="11077879" />
+				<locstring name="brief_text" value="2357" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_vehicles_vehicle_british_cromwell" />
+				<locstring name="screen_name" value="2358" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 			<group name="ui_preview">
-				<locstring name="brief_text" value="11090978" />
-				<icon name="icon_name" value="Icons_abilities_ability_british_3_inch_mortar_emplacement" />
-				<locstring name="screen_name" value="11090974" />
+				<locstring name="brief_text" value="2383" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_abilities_ability_british_coordinated_fire" />
+				<locstring name="screen_name" value="2382" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 		</list>
 		<list name="on_cancel_actions">

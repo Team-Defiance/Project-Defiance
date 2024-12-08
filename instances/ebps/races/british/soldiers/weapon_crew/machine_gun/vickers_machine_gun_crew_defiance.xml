@@ -28,7 +28,7 @@
 					<string name="state_machine_name" value="RoleVariation" />
 					<string name="undo_action_state_name" value="" />
 					<bool name="retrigger" value="False" />
-					<uniqueid name="id" value="1073753225" />
+					<uniqueid name="id" value="1073753554" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -469,7 +469,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753226" />
+						<uniqueid name="id" value="1073753555" />
 					</template_reference>
 				</list>
 			</group>
@@ -487,7 +487,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753227" />
+						<uniqueid name="id" value="1073753556" />
 					</template_reference>
 				</list>
 			</group>
@@ -505,7 +505,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753228" />
+						<uniqueid name="id" value="1073753557" />
 					</template_reference>
 				</list>
 			</group>
@@ -523,7 +523,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753229" />
+						<uniqueid name="id" value="1073753558" />
 					</template_reference>
 				</list>
 			</group>
@@ -541,7 +541,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753230" />
+						<uniqueid name="id" value="1073753559" />
 					</template_reference>
 				</list>
 			</group>
@@ -569,7 +569,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753231" />
+						<uniqueid name="id" value="1073753560" />
 					</template_reference>
 				</list>
 			</group>
@@ -601,7 +601,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753232" />
+						<uniqueid name="id" value="1073753561" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -619,7 +619,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753233" />
+						<uniqueid name="id" value="1073753562" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -692,7 +692,7 @@
 							<float name="deceleration_multiplier" value="0.3" />
 							<float name="pathfinding_size_x" value="0" />
 							<float name="pathfinding_size_y" value="0" />
-							<uniqueid name="id" value="1073753234" />
+							<uniqueid name="id" value="1073753563" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="1" />
@@ -708,10 +708,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753235" />
+							<uniqueid name="id" value="1073753564" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753236" />
+					<uniqueid name="id" value="1073753565" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -741,5 +741,5 @@
 		<template_reference name="exts" value="ebpextensions\cold_system_ext">
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742178" />
+	<uniqueid name="pbgid" value="1073742209" />
 </instance>

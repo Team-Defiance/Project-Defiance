@@ -341,7 +341,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752993" />
+										<uniqueid name="id" value="1073753709" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -382,11 +382,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073752994" />
+												<uniqueid name="id" value="1073753710" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073752995" />
+										<uniqueid name="id" value="1073753711" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -402,7 +402,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073752996" />
+										<uniqueid name="id" value="1073753712" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -452,18 +452,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073752997" />
+												<uniqueid name="id" value="1073753713" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073752998" />
+												<uniqueid name="id" value="1073753714" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073752999" />
+										<uniqueid name="id" value="1073753715" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -479,7 +479,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753001" />
+										<uniqueid name="id" value="1073753716" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -509,7 +509,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753002" />
+										<uniqueid name="id" value="1073753717" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -536,7 +536,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753004" />
+										<uniqueid name="id" value="1073753718" />
 									</template_reference>
 								</list>
 							</group>
@@ -564,7 +564,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753003" />
+										<uniqueid name="id" value="1073753719" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -610,5 +610,5 @@
 			<float name="revert_rate_multiplier" value="0" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741947" />
+	<uniqueid name="pbgid" value="1073741961" />
 </instance>

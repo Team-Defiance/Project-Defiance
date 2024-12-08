@@ -7,16 +7,16 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083378" />
+						<locstring name="extra_text" value="2258" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083377" />
+						<locstring name="help_text" value="2257" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="S" />
 						<icon name="icon_name" value="Icons_units_unit_british_sniper" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="Icons_minimap_unit_sniper" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077202" />
+						<locstring name="screen_name" value="2269" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="sniper" />
 						<group name="speaker_generic">
 							<string name="code_1" value="sn" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_british_sniper_s_portrait" />
 						<float name="minimap_texture_scale" value="0.75" />
-						<locstring name="brief_text" value="0" />
+						<locstring name="brief_text" value="2259" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
@@ -338,10 +338,10 @@
 										<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="1073753039" />
+								<uniqueid name="id" value="1073753611" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073753040" />
+						<uniqueid name="id" value="1073753612" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
 					<template_reference name="action" value="action\animator_set_state">
@@ -350,7 +350,7 @@
 						<bool name="retrigger" value="False" />
 						<string name="state_machine_name" value="suppression" />
 						<string name="undo_action_state_name" value="normal" />
-						<uniqueid name="id" value="1073753041" />
+						<uniqueid name="id" value="1073753613" />
 					</template_reference>
 				</list>
 				<list name="suppressed_activate_actions">
@@ -395,7 +395,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073753042" />
+						<uniqueid name="id" value="1073753614" />
 					</template_reference>
 				</list>
 			</group>
@@ -455,7 +455,8 @@
 				<instance_reference name="ability" value="abilities\british\always_on_ability\brit_sniper_delayed_cover_auto_camouflage_mp" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_coordinated_fire_order_sniper_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_engineer_defiance_test" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -492,7 +493,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
-					<uniqueid name="id" value="1073753043" />
+					<uniqueid name="id" value="1073753615" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>
@@ -627,7 +628,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753044" />
+										<uniqueid name="id" value="1073753616" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -666,7 +667,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753045" />
+										<uniqueid name="id" value="1073753617" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -682,7 +683,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753046" />
+										<uniqueid name="id" value="1073753618" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -702,7 +703,7 @@
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073753047" />
+										<uniqueid name="id" value="1073753619" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -718,7 +719,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753048" />
+										<uniqueid name="id" value="1073753620" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -754,7 +755,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753049" />
+										<uniqueid name="id" value="1073753621" />
 									</template_reference>
 								</list>
 							</group>

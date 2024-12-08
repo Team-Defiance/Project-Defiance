@@ -97,7 +97,7 @@
 			<float name="pickup_radius" value="1" />
 			<list name="on_pickup_actions">
 				<template_reference name="action" value="action\slot_item_add">
-					<instance_reference name="slot_item" value="slot_item\british\ballistic_weapon\infantry_at_weapon\piat_spigot_mortar_mp" />
+					<instance_reference name="slot_item" value="slot_item\british\ballistic_weapon\infantry_at_weapon\piat_at_weapon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="permanent" value="True" />
 					<uniqueid name="id" value="1073749890" />
 				</template_reference>

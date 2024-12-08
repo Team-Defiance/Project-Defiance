@@ -644,7 +644,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753099" />
+										<uniqueid name="id" value="1073753721" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -662,7 +662,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753100" />
+										<uniqueid name="id" value="1073753722" />
 									</template_reference>
 								</list>
 							</group>
@@ -771,7 +771,7 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753102" />
+							<uniqueid name="id" value="1073753723" />
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="False" />
@@ -802,10 +802,10 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073753103" />
+									<uniqueid name="id" value="1073753724" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753104" />
+							<uniqueid name="id" value="1073753725" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -822,14 +822,14 @@
 										<icon name="icon_name" value="Icons_abilities_ability_common_focussed_sight_on" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="1073753107" />
+									<uniqueid name="id" value="1073753726" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073753106" />
+							<uniqueid name="id" value="1073753727" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753105" />
+					<uniqueid name="id" value="1073753728" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

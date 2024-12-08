@@ -290,7 +290,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\anti_tank_gun\brit_6_pounder_at_gun_mp" />
+							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\anti_tank_gun\057mm_6_pounder_at_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -877,5 +877,5 @@
 			<bool name="use_simbox_range_plus_spots" value="False" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742190" />
+	<uniqueid name="pbgid" value="1073742213" />
 </instance>

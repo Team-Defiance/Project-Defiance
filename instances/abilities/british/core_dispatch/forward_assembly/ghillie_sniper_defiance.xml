@@ -96,15 +96,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2143" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2131" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="D" />
+			<locstring name="extra_text" value="2220" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2219" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="E" />
 			<icon name="icon_name" value="Icons_units_unit_british_sniper" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2119" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2201" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="2155" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="2221" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -116,7 +116,7 @@
 		<list name="requirements">
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="23" />
+		<int name="ui_position" value="13" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />

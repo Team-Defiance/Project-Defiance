@@ -232,7 +232,7 @@
 					<float name="time_range_between_shells_max" value="1" />
 					<float name="time_range_between_shells_min" value="1" />
 					<instance_reference name="weapon_name" value="weapon\soviet\flame_throwers\grenade\molotov_cocktail_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073753212" />
+					<uniqueid name="id" value="1073753593" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -260,7 +260,7 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 				<template_reference name="action" value="action\detonate">
-					<uniqueid name="id" value="1073753213" />
+					<uniqueid name="id" value="1073753594" />
 				</template_reference>
 			</list>
 			<float name="armor" value="35" />
@@ -522,5 +522,5 @@
 			<bool name="must_not_be_in_command_territory" value="False" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742190" />
+	<uniqueid name="pbgid" value="1073742216" />
 </instance>

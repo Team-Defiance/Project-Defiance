@@ -7,9 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083365" />
+						<locstring name="extra_text" value="2272" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083366" />
+						<locstring name="help_text" value="2271" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="E" />
 						<icon name="icon_name" value="Icons_units_unit_british_engineer" />
 						<bool name="minimap_team_only" value="False" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_british_engineer_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11083366" />
+						<locstring name="brief_text" value="2273" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
@@ -176,7 +176,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\sappers_minesweeper_upgrade_mp" />
+				<instance_reference name="upgrade" value="upgrade\british\items\royal_engineer_hazard_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -286,7 +286,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\move_enable_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073752944" />
+						<uniqueid name="id" value="1073753671" />
 					</template_reference>
 					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
@@ -531,15 +531,15 @@
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="-2" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.93" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753546" />
+							<uniqueid name="id" value="1073753955" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753547" />
+					<uniqueid name="id" value="1073753673" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -646,9 +646,11 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\repair_ability\brit_repair_ability_sappers_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\modal_ability\royal_engineer_standard_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\always_on_ability\engineer_cover_combat_bonus" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\royal_engineer_heat_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\destroy_cover_defiance_placeholder" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_engineer_defiance_test" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -780,7 +782,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752956" />
+					<uniqueid name="id" value="1073753674" />
 				</template_reference>
 			</list>
 			<list name="construction_groups">

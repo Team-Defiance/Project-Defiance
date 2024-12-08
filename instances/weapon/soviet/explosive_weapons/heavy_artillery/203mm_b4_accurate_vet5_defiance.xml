@@ -297,10 +297,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
-							<uniqueid name="id" value="1073753079" />
+							<uniqueid name="id" value="1073753763" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753080" />
+					<uniqueid name="id" value="1073753764" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -331,10 +331,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073753081" />
+							<uniqueid name="id" value="1073753765" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753082" />
+					<uniqueid name="id" value="1073753766" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -365,10 +365,10 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="artillery_state" />
 							<string name="undo_action_state_name" value="ready" />
-							<uniqueid name="id" value="1073753083" />
+							<uniqueid name="id" value="1073753767" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753084" />
+					<uniqueid name="id" value="1073753768" />
 				</template_reference>
 			</list>
 		</group>

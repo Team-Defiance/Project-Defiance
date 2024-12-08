@@ -7,9 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083376" />
+						<locstring name="extra_text" value="2264" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083375" />
+						<locstring name="help_text" value="2263" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_units_unit_british_vickers_hmg" />
 						<bool name="minimap_team_only" value="False" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_british_tommy_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="0" />
+						<locstring name="brief_text" value="2265" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
@@ -540,10 +540,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753015" />
+							<uniqueid name="id" value="1073753644" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753016" />
+					<uniqueid name="id" value="1073753645" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -652,7 +652,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073753017" />
+						<uniqueid name="id" value="1073753646" />
 					</template_reference>
 					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
@@ -674,10 +674,10 @@
 										<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="1073753018" />
+								<uniqueid name="id" value="1073753647" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073753019" />
+						<uniqueid name="id" value="1073753648" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
 					<template_reference name="action" value="action\animator_set_state">
@@ -686,7 +686,7 @@
 						<bool name="retrigger" value="False" />
 						<string name="state_machine_name" value="suppression" />
 						<string name="undo_action_state_name" value="normal" />
-						<uniqueid name="id" value="1073753020" />
+						<uniqueid name="id" value="1073753649" />
 					</template_reference>
 					<template_reference name="action" value="action\change_target_action">
 						<list name="actions">
@@ -765,7 +765,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753021" />
+										<uniqueid name="id" value="1073753650" />
 									</template_reference>
 								</list>
 								<uniqueid name="id" value="1073753022" />
@@ -1131,7 +1131,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753028" />
+										<uniqueid name="id" value="1073753651" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
@@ -1173,7 +1173,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753031" />
+										<uniqueid name="id" value="1073753652" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
