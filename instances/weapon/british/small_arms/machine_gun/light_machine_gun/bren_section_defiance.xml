@@ -358,22 +358,22 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="5" />
-				<float name="min" value="4" />
+				<float name="max" value="3" />
+				<float name="min" value="3" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="3" />
+			<float name="angle_scatter" value="8.5" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.3" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="4" />
-			<float name="distance_scatter_max" value="8" />
+			<float name="distance_scatter_max" value="8.5" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
-			<float name="distance_scatter_offset" value="0.2" />
-			<float name="distance_scatter_ratio" value="0.8" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 			<float name="max_tilt_angle" value="5" />

@@ -21,10 +21,10 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="80" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="25" />
+			<float name="time_seconds" value="5" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
@@ -66,13 +66,13 @@
 						<float name="z" value="-0.2" />
 					</group>
 					<enum name="type" value="squad" />
-					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\sdkfz_222_kwk38_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<uniqueid name="id" value="1073747977" />
 			</template_reference>
 			<template_reference name="action" value="action\change_weapon">
 				<float name="hardpoint" value="1" />
-				<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\sdkfz_222_kwk38_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073747978" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_crew_action">
@@ -123,13 +123,13 @@
 								<float name="z" value="-0.203" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\scout_car_mg34_coaxial_generic_mp" />
+							<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\222_scoutcar_mg34_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 						<uniqueid name="id" value="1073747983" />
 					</template_reference>
 					<template_reference name="action" value="action\change_weapon">
 						<float name="hardpoint" value="2" />
-						<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\scout_car_mg34_coaxial_generic_mp" />
+						<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\222_scoutcar_mg34_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<uniqueid name="id" value="1073747984" />
 					</template_reference>
 					<template_reference name="action" value="action\apply_modifiers_action">
@@ -174,6 +174,48 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t2_sidetech_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="40" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

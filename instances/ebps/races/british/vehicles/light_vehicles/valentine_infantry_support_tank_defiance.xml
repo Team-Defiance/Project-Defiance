@@ -97,7 +97,7 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
 			<float name="hitpoints" value="480" />
@@ -163,8 +163,8 @@
 					<uniqueid name="id" value="1073753357" />
 				</template_reference>
 			</list>
-			<float name="armor" value="120" />
-			<float name="rear_armor" value="80" />
+			<float name="armor" value="125" />
+			<float name="rear_armor" value="110" />
 			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -908,7 +908,7 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="4.4" />
+			<float name="deceleration" value="4.2" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
@@ -917,9 +917,9 @@
 			<float name="rotation_rate_stand" value="270" />
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
-			<float name="acceleration" value="2.6" />
-			<float name="rotation_rate" value="38" />
-			<float name="speed_max" value="7" />
+			<float name="acceleration" value="2.1" />
+			<float name="rotation_rate" value="34" />
+			<float name="speed_max" value="6.3" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.2" />
 			<float name="on_ice_overturn_scale" value="2" />

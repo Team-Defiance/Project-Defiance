@@ -140,8 +140,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="0.5" />
-				<float name="mid" value="0.525" />
+				<float name="far" value="0.55" />
+				<float name="mid" value="0.55" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -157,7 +157,7 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.75" />
-				<float name="far" value="1.25" />
+				<float name="far" value="1.1" />
 				<float name="mid" value="1" />
 			</group>
 		</group>
@@ -395,8 +395,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.8" />
-			<float name="nearby_suppression_radius" value="13" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
+			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />

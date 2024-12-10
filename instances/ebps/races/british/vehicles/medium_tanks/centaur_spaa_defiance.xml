@@ -97,7 +97,7 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
 			<float name="hitpoints" value="560" />
@@ -163,8 +163,8 @@
 					<uniqueid name="id" value="1073753393" />
 				</template_reference>
 			</list>
-			<float name="armor" value="160" />
-			<float name="rear_armor" value="110" />
+			<float name="armor" value="120" />
+			<float name="rear_armor" value="75" />
 			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">

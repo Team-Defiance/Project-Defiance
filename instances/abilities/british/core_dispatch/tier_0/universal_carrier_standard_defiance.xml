@@ -40,8 +40,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="15" />
-			<float name="manpower" value="200" />
+			<float name="fuel" value="10" />
+			<float name="manpower" value="230" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -61,7 +61,7 @@
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
-		<bool name="initial_recharge" value="False" />
+		<bool name="initial_recharge" value="True" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
@@ -70,8 +70,8 @@
 		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="" />
-		<bool name="shared_timer_player_wide" value="True" />
+		<enum name="shared_timer" value="generic_unit_shared" />
+		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
 			<string name="code_2" value="" />
