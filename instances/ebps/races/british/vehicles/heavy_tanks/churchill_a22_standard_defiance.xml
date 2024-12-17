@@ -64,7 +64,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -118,8 +118,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="165" />
-					<float name="manpower" value="490" />
+					<float name="fuel" value="150" />
+					<float name="manpower" value="440" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -1008,7 +1008,7 @@
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="acceleration" value="3.5" />
-			<float name="rotation_rate" value="32" />
+			<float name="rotation_rate" value="30" />
 			<float name="speed_max" value="4" />
 			<float name="on_ice_accel_decel_multiplier" value="0.3" />
 			<float name="on_land_overturn_scale" value="0.1" />

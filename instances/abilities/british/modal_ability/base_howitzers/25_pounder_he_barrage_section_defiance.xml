@@ -27,7 +27,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\british\grenades\tommy_officer_smoke_marker_grenade_mp" />
+					<instance_reference name="accessory_weapon_item" value="slot_item\british\grenades\british_arty_marker_grenade_item" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="decrement_accessory_item" value="" />
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
@@ -93,7 +93,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="30" />
+		<float name="range" value="27" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="True" />
@@ -134,7 +134,7 @@
 			<string name="cursor_nonmodal_good" value="nonmodal_ability" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11083970" />
+			<locstring name="extra_text" value="2406" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11083971" />
 			<string name="hotkey_name" value="C" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_coordinated_fire" />
@@ -206,13 +206,13 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_howitzer_barrage" />
-		<float name="ui_reticule_radius_min" value="13.25" />
-		<float name="ui_reticule_radius_max" value="13.25" />
+		<float name="ui_reticule_radius_min" value="15" />
+		<float name="ui_reticule_radius_max" value="15" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

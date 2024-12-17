@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1" />
 				<float name="mid" value="5" />
-				<float name="near" value="30" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -175,8 +175,8 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.4" />
-				<float name="damage_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.4" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
@@ -187,16 +187,16 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.75" />
+				<float name="damage_multiplier" value="0.75" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="0.1" />
+				<float name="suppression_multiplier" value="0.25" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.9" />
-				<float name="damage_multiplier" value="0.9" />
+				<float name="accuracy_multiplier" value="0.95" />
+				<float name="damage_multiplier" value="0.95" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="0.5" />
+				<float name="suppression_multiplier" value="0.75" />
 			</group>
 			<group name="tp_negative">
 				<float name="accuracy_multiplier" value="1" />
@@ -205,28 +205,28 @@
 				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_open">
-				<float name="accuracy_multiplier" value="1.25" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_smoke">
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_trench">
-				<float name="accuracy_multiplier" value="0.9" />
-				<float name="damage_multiplier" value="0.9" />
+				<float name="accuracy_multiplier" value="0.95" />
+				<float name="damage_multiplier" value="0.95" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="0.5" />
+				<float name="suppression_multiplier" value="0.75" />
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.15" />
@@ -265,7 +265,7 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
@@ -412,8 +412,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2.75" />
-				<float name="min" value="2.75" />
+				<float name="max" value="3" />
+				<float name="min" value="3" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -498,9 +498,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
-			<float name="near" value="30" />
-			<float name="far" value="30" />
-			<float name="mid" value="30" />
+			<float name="near" value="20" />
+			<float name="far" value="20" />
+			<float name="mid" value="20" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

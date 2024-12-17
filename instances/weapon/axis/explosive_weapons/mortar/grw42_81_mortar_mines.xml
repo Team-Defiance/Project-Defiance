@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -46,14 +46,14 @@
 				<float name="radius" value="4" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.125" />
-				<float name="near" value="0.875" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.1" />
+				<float name="near" value="0.7" />
+				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0625" />
-				<float name="near" value="0.4375" />
-				<float name="mid" value="0.25" />
+				<float name="far" value="0.05" />
+				<float name="near" value="0.35" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="20" />
-				<float name="near" value="35" />
+				<float name="mid" value="5" />
+				<float name="near" value="40" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="4" />
-			<float name="min" value="4" />
+			<float name="max" value="5" />
+			<float name="min" value="5" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">

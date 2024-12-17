@@ -63,7 +63,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -84,8 +84,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="110" />
-					<float name="manpower" value="340" />
+					<float name="fuel" value="100" />
+					<float name="manpower" value="350" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>

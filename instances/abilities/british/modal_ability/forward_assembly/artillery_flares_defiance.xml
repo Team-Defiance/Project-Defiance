@@ -209,7 +209,7 @@
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="True" />
-		<enum name="shared_timer" value="generic_unit_shared" />
+		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="True" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
