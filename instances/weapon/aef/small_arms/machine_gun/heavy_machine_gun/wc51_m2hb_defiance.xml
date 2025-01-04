@@ -1,9 +1,9 @@
 <instance description="50 cal mounted on the dodge wc51" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.7" />
+			<float name="near" value="0.6" />
 			<float name="far" value="0.3" />
-			<float name="mid" value="0.5" />
+			<float name="mid" value="0.45" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -139,8 +139,8 @@
 				<float name="min" value="8" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.25" />
-				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="far" value="1.2" />
 				<float name="mid" value="1.1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
