@@ -113,7 +113,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="320" />
+			<float name="hitpoints" value="300" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -130,8 +130,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_m5_halftrack_mp" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="15" />
-			<float name="rear_armor" value="12" />
+			<float name="armor" value="14" />
+			<float name="rear_armor" value="9" />
 			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -799,7 +799,7 @@
 			<float name="min_hold_seconds" value="1" />
 			<float name="num_slots" value="14" />
 			<float name="num_squad_slots" value="2" />
-			<float name="percent_unload_on_death" value="0" />
+			<float name="percent_unload_on_death" value="1" />
 			<bool name="revert_ownership" value="False" />
 			<bool name="scavenge_enabled" value="False" />
 			<group name="scavenge_resource">

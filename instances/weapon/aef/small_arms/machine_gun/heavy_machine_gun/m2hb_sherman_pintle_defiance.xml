@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.6" />
-			<float name="far" value="0.4" />
-			<float name="mid" value="0.5" />
+			<float name="near" value="0.54" />
+			<float name="far" value="0.36" />
+			<float name="mid" value="0.45" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -139,9 +139,9 @@
 				<float name="min" value="9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.1" />
-				<float name="far" value="0.9" />
-				<float name="mid" value="1" />
+				<float name="near" value="1" />
+				<float name="far" value="1.2" />
+				<float name="mid" value="1.1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -355,7 +355,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg_large" />
 		<string name="fx_tracer_name" value="m2hb50cal_tracer" />
-		<float name="fx_tracer_speed" value="120" />
+		<float name="fx_tracer_speed" value="220" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -410,8 +410,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="12" />
-				<float name="min" value="12" />
+				<float name="max" value="8" />
+				<float name="min" value="8" />
 			</group>
 			<list name="on_reload_actions">
 			</list>

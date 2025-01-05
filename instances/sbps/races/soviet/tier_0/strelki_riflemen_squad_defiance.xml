@@ -391,7 +391,7 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\light_at_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\rpg42_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -920,6 +920,7 @@
 				<instance_reference name="ability" value="abilities\soviet\passives_ui\to_the_last_man_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\strelki_urah_vet3_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\strelki_urah_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\grenades\rpg42_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

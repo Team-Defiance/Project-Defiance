@@ -419,7 +419,7 @@
 								<float name="z" value="1" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\sherman_m4a3_coaxial_vehicle_turret_mp" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\1919_coax_sherman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -440,7 +440,7 @@
 								<float name="z" value="2.45" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\sherman_m4a3_vehicle_hull_mp" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\1919_hull_sherman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
