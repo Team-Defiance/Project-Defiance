@@ -1,8 +1,8 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.065" />
-			<float name="far" value="0.015" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.01" />
 			<float name="mid" value="0.04" />
 		</group>
 		<group name="aim">
@@ -377,10 +377,10 @@
 			<instance_reference name="projectile" value="ebps\projectile\088mm_rw43_heat_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="55" />
+			<float name="max" value="60" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="5" />
+				<float name="near" value="10" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -392,8 +392,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.95" />
 			</group>
 			<group name="frequency">
 				<float name="max" value="0" />
