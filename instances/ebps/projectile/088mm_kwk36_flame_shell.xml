@@ -89,10 +89,10 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.00088" />
+					<float name="vertical_scale" value="0.0015" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="2" />
+				<float name="radius_max" value="4" />
 				<float name="radius_min" value="1" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">

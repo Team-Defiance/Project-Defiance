@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
-				<float name="near" value="0.875" />
+				<float name="near" value="0.75" />
 				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.0375" />
-				<float name="near" value="0.4375" />
+				<float name="near" value="0.375" />
 				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
@@ -449,7 +449,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.25" />
 					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

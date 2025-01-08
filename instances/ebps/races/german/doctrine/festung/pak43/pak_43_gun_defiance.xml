@@ -15,11 +15,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\timed_ability\pak43_target_weak_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\pak43_target_weak_point_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\scuttle_pak43_timed" />
-				<instance_reference name="ability" value="abilities\german\toggle_ability\wehr_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -63,7 +62,7 @@
 			<float name="death_seconds" value="0" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="480" />
+			<float name="hitpoints" value="470" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -80,7 +79,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_atgun_pak43" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="80" />
+			<float name="armor" value="70" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -301,7 +300,43 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\anti_tank_gun\088mm_pak43_atgun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\anti_tank_gun\pak43_88mm_atg_mp" />
+						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="5" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.82" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="squad" />
+							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\anti_tank_gun\pak43_88mm_atg_ap_mp" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="5" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.82" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="squad" />
+							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\pak43_critical_shot_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

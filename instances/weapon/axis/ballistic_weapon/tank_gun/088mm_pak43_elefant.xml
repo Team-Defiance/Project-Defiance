@@ -74,8 +74,8 @@
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="1.5" />
-				<float name="mid" value="10" />
+				<float name="far" value="1" />
+				<float name="mid" value="3" />
 				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
@@ -447,8 +447,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.5" />
-				<float name="min" value="6.2" />
+				<float name="max" value="6.7" />
+				<float name="min" value="6.4" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

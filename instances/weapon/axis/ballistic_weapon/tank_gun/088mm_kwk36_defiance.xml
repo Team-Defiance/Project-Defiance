@@ -48,12 +48,12 @@
 			<group name="damage">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="0.3" />
+				<float name="mid" value="0.325" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.375" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.1625" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3.25" />
@@ -335,7 +335,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\088mm_kwk36_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\pak_88mm_shell_mp" />
 		</group>
 		<group name="range">
 			<float name="max" value="50" />

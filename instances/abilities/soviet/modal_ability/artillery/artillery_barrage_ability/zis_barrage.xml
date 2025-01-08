@@ -22,7 +22,7 @@
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
 					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="4" />
+					<float name="number_of_shots" value="3" />
 					<group name="target_info">
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
@@ -77,7 +77,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="80" />
+		<float name="range" value="100" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />

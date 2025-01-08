@@ -319,15 +319,6 @@
 											<float name="value" value="0.65" />
 											<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.1" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073743436" />
 								</template_reference>
@@ -394,15 +385,6 @@
 											<enum name="usage_type" value="multiplication" />
 											<float name="value" value="0.75" />
 											<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.1" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752419" />
@@ -573,9 +555,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="245" />
-			<float name="far" value="215" />
-			<float name="mid" value="235" />
+			<float name="near" value="235" />
+			<float name="far" value="205" />
+			<float name="mid" value="225" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

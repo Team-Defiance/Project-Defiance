@@ -19,10 +19,6 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\smoke_sherman_mortar_barrage_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\priority_vehicles_usf" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\timed_ability\sherman_76mm_jumbo_ammo_switch_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\timed_ability\sherman_76mm_jumbo_ammo_switch_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\accessory_weapons\jumbo_76_stunshot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_medium_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -65,121 +61,6 @@
 					<bool name="kill" value="False" />
 					<uniqueid name="id" value="1073748985" />
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="True" />
-									<bool name="not_retreating" value="False" />
-									<bool name="pinned" value="False" />
-									<bool name="suppressed" value="False" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\weapon_scatter">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.6" />
-									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073754377" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073754378" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_squad_veterancy">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<float name="veterancy_rank" value="1" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_in_state">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="garrisoned" value="False" />
-							<bool name="healed" value="False" />
-							<float name="in_combat_since" value="-1" />
-							<bool name="injured" value="False" />
-							<bool name="leader" value="False" />
-							<bool name="not_moving" value="True" />
-							<bool name="not_retreating" value="False" />
-							<bool name="pinned" value="False" />
-							<bool name="suppressed" value="False" />
-							<bool name="camouflaged" value="False" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\sight_radius_modifier">
-									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073754436" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073754437" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="true" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="sandbags" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073754438" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -187,8 +68,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="175" />
-					<float name="manpower" value="400" />
+					<float name="fuel" value="135" />
+					<float name="manpower" value="380" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -230,7 +111,7 @@
 			</list>
 			<float name="armor" value="370" />
 			<float name="rear_armor" value="220" />
-			<float name="target_size" value="21" />
+			<float name="target_size" value="23" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -312,7 +193,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="16" />
+			<float name="personnel_pop" value="14" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -469,43 +350,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\076mm_m1_m4a3e2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="4.752" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.6" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\076mm_m1_m4a3e2_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.6" />
-								<float name="z" value="1" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\1919_coax_sherman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\sherman_m1_76mm" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -526,7 +371,7 @@
 								<float name="z" value="2.45" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\1919_hull_sherman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\light_machine_gun\sherman_m4a3_vehicle_hull_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -554,27 +399,6 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\sherman_m3_2inch_mortar_smoke_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="4.752" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.6" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\076mm_m1_m4a3e2_stunshot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -1051,20 +875,20 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="3.6" />
+			<float name="deceleration" value="4.4" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
-			<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
+			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
-			<float name="acceleration" value="1.7" />
-			<float name="rotation_rate" value="27" />
-			<float name="speed_max" value="5.5" />
-			<float name="on_ice_accel_decel_multiplier" value="0.6" />
-			<float name="on_land_overturn_scale" value="0.12" />
+			<float name="acceleration" value="2.3" />
+			<float name="rotation_rate" value="35" />
+			<float name="speed_max" value="6.5" />
+			<float name="on_ice_accel_decel_multiplier" value="0.8" />
+			<float name="on_land_overturn_scale" value="0.3" />
 			<float name="on_ice_overturn_scale" value="2" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
@@ -1108,7 +932,6 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\aef\items\sherman_top_gunner_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
