@@ -15,9 +15,8 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_75mm_barrage_ability_heat_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_white_phosphorous_barrage_ability_mp" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -30,7 +29,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="140" />
+					<float name="manpower" value="30" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -115,7 +114,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="3" />
+			<float name="personnel_pop" value="2" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -255,7 +254,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_auto_attack_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\075mm_pack_howitzer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -276,7 +275,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\075mm_pack_howitzer_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -297,49 +296,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_white_phosphorous_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="1.5" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_victor_target_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="1.5" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\pack_howitzer_75mm_barrage_heat_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\075mm_pack_howitzer_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -425,13 +382,13 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="" />
-						<float name="max_capture_crew_size" value="2" />
-						<float name="min_capture_crew_size" value="2" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\aef\doctrine\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="max_capture_crew_size" value="3" />
+						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">
 						</list>
 						<float name="abandon_animation_seconds" value="0" />
-						<int name="recrew_max_squad_size" value="5" />
+						<int name="recrew_max_squad_size" value="6" />
 						<bool name="abandoned_allows_pass_through" value="False" />
 						<list name="apply_to_driver_action">
 						</list>

@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.065" />
-			<float name="far" value="0.0325" />
-			<float name="mid" value="0.04875" />
+			<float name="far" value="0.035" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.25" />
+			<float name="accuracy_multiplier" value="0.6" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />

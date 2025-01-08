@@ -15,8 +15,8 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="7" />
-					<float name="use_hardpoint" value="5" />
+					<float name="num_salvo" value="6" />
+					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073742245" />
 					<bool name="target_override_direction_times_max_range" value="False" />
@@ -45,7 +45,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="40" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -70,7 +70,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="180" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="130" />
+		<float name="recharge_time" value="140" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
@@ -123,20 +123,34 @@
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_veterancy">
+			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="59" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
+				<locstring name="ui_name" value="1598" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_2\gunnery_refit_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<float name="veterancy_rank" value="4" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
-		<float name="ui_reticule_radius_min" value="3" />
-		<float name="ui_reticule_radius_max" value="15" />
+		<float name="ui_reticule_radius_min" value="11" />
+		<float name="ui_reticule_radius_max" value="16" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
