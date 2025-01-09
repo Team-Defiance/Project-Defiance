@@ -215,59 +215,87 @@
 		</list>
 		<group name="ai_production_info">
 			<list name="base_building_list">
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armored_rifle_command_mp" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\armor_command_mp" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\company_weapons_pool_mp" />
-				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\rifle_command_mp" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\usf_tier0_barracks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\usf_tier1_platoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\usf_tier2_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\aef\buildings\base_building\usf_tier3_battalion_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\weapon_rack_upgrade_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_0\explosives_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_bazooka_mp" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier0_barracks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\weapon_rack_upgrade_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_browning_automatic_rifle_mp" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier0_barracks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\rifle_command_grenade_mp" />
-					<instance_reference name="unlocked_ability" value="abilities\aef\modal_ability\grenades\mk2_fragmentation_grenade_mp" />
-					<instance_reference name="unlocked_building" value="" />
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\aef_tech_up\tier_1_platoon_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier1_platoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\lieutenant_squad\lieutenant_squad_mp" />
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\aef\commander\passive\riflemen_30_caliber_lmg" />
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\aef_tech_up\tier_2_company_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\weapon_racks\aef_weapon_rack_m1919_lmg" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier2_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\riflemen_squad\riflemen_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\paratrooper_squad\paratrooper_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\aef_tech_up\tier_3_battalion_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier3_battalion_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_1\combat_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier1_platoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_1\vehicle_self_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier1_platoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_2\assault_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier2_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_2\gunnery_refit_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier2_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\aef\research\tier_3\armored_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\aef\buildings\base_building\usf_tier3_battalion_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
 					</list>
 				</group>
 			</list>
 			<group name="builder_squads">
-				<instance_reference name="base_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
-				<instance_reference name="obs_post_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
-				<instance_reference name="defense_builder_squad" value="sbps\races\aef\soldiers\rear_echelon_squad\rear_echelon_squad_mp" />
+				<instance_reference name="base_builder_squad" value="sbps\races\aef\tier_0\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="obs_post_builder_squad" value="sbps\races\aef\tier_0\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\aef\tier_0\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">
