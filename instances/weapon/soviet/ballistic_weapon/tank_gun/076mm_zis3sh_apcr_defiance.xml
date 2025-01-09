@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.065" />
-			<float name="far" value="0.0375" />
-			<float name="mid" value="0.04125" />
+			<float name="far" value="0.04" />
+			<float name="mid" value="0.0525" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -75,7 +75,7 @@
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="10" />
+				<float name="mid" value="5" />
 				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.25" />
+			<float name="accuracy_multiplier" value="0.6" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.1" />
-				<float name="min" value="4.8" />
+				<float name="max" value="4.8" />
+				<float name="min" value="4.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

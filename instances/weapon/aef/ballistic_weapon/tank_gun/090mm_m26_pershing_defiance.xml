@@ -48,12 +48,12 @@
 			<group name="damage">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="0.325" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.375" />
-				<float name="mid" value="0.1625" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3.25" />
@@ -290,7 +290,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="1" />
+			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 			<list name="on_fire_actions">
 			</list>
@@ -335,7 +335,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\aef_m26_90mm_m82_apc_round" />
+			<instance_reference name="projectile" value="ebps\projectile\090mm_m26_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="50" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.7" />
-				<float name="min" value="6.4" />
+				<float name="max" value="6.8" />
+				<float name="min" value="6.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

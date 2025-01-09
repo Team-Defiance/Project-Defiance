@@ -459,7 +459,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\timed_ability\panther_tiger_blitzkrieg_mp" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\ost_tiger_blitz_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
