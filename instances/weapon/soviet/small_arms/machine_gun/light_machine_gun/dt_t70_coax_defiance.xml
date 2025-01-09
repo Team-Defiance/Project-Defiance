@@ -127,7 +127,7 @@
 				<float name="min" value="1.125" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.04" />
+				<float name="accuracy_multiplier" value="1.05" />
 				<group name="search_radius">
 					<float name="far" value="10" />
 					<float name="near" value="6" />
@@ -139,8 +139,8 @@
 				<float name="min" value="10" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.5" />
-				<float name="far" value="1" />
+				<float name="near" value="1" />
+				<float name="far" value="1.5" />
 				<float name="mid" value="1.2" />
 			</group>
 			<group name="rate_of_fire_multiplier">
@@ -156,9 +156,9 @@
 				<float name="min" value="1.5" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.8" />
+				<float name="near" value="0.75" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.9" />
+				<float name="mid" value="0.875" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -308,8 +308,8 @@
 		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.3" />
-			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1" />
+			<float name="burst_multiplier" value="0.75" />
+			<float name="cooldown_multiplier" value="0.75" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
