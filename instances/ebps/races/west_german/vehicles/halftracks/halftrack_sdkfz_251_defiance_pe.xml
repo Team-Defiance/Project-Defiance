@@ -15,12 +15,11 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\timed_ability\251_defensive_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\251_defensive_smoke_defiance_pe" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\halftrack_infantry_awareness_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\handbrake_mode_new_mp" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\lay_schu_mine" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\healing_251" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\stuka_air_recon_halftrack" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -31,7 +30,7 @@
 					<bool name="retrigger" value="True" />
 					<string name="state_machine_name" value="mg42_front_upgrade" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073742195" />
+					<uniqueid name="id" value="1073754507" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
@@ -39,13 +38,13 @@
 					<bool name="retrigger" value="True" />
 					<string name="state_machine_name" value="mg42_rear_upgrade" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073742196" />
+					<uniqueid name="id" value="1073754508" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="True" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\handbrake_available_upgrade_mp" />
-					<uniqueid name="id" value="1073742197" />
+					<uniqueid name="id" value="1073754509" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -104,14 +103,14 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073742198" />
+									<uniqueid name="id" value="1073754510" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742199" />
+							<uniqueid name="id" value="1073754511" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742200" />
+					<uniqueid name="id" value="1073754512" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -181,7 +180,7 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\health_regeneration_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754573" />
+							<uniqueid name="id" value="1073754576" />
 						</template_reference>
 						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="False" />
@@ -189,10 +188,10 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="ability_repair_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073754574" />
+							<uniqueid name="id" value="1073754577" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754575" />
+					<uniqueid name="id" value="1073754578" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -526,7 +525,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11038250" />
+			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
 			<enum name="kill_type" value="light_armour" />
@@ -540,7 +539,7 @@
 			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11038252" />
+			<locstring name="screen_name" value="2447" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="vehicle" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="squad_select" />
@@ -566,7 +565,7 @@
 				<string name="code_3" value="" />
 			</group>
 			<bool name="tacmap_team_only" value="False" />
-			<locstring name="tooltip_txt" value="11049258" />
+			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="0" />
 			<icon name="minimap_icon" value="" />
 			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
@@ -578,13 +577,13 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="11049095" />
-			<locstring name="screen_name_short" value="0" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="screen_name_short" value="2448" mod="84428889d71d41a48e2eff09c2425d54" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
-			<locstring name="screen_name_world" value="11047943" />
+			<locstring name="screen_name_world" value="2449" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text_world" value="0" />
-			<locstring name="extra_text_world" value="11049331" />
+			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
@@ -1242,7 +1241,7 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\health_regeneration_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742201" />
+							<uniqueid name="id" value="1073754513" />
 						</template_reference>
 						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="False" />
@@ -1250,20 +1249,20 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_heal_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073742202" />
+							<uniqueid name="id" value="1073754514" />
 						</template_reference>
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="11069235" />
-								<locstring name="help_text" value="11069236" />
+								<locstring name="screen_name" value="0" />
+								<locstring name="help_text" value="0" />
 								<icon name="icon_name" value="Icons_abilities_ability_west_german_medical_field_kit" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073742203" />
+							<uniqueid name="id" value="1073754515" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742204" />
+					<uniqueid name="id" value="1073754516" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -1355,5 +1354,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1570" />
+	<uniqueid name="pbgid" value="1073742240" />
 </instance>
