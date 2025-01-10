@@ -15,7 +15,7 @@
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
 					</group>
-					<uniqueid name="id" value="1073754517" />
+					<uniqueid name="id" value="1073754522" />
 					<template_reference name="spawn_attached_option" value="options\none">
 					</template_reference>
 					<list name="spawned_entity_actions">
@@ -32,7 +32,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="ability_defensivesmoke_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073754518" />
+					<uniqueid name="id" value="1073754523" />
 				</template_reference>
 				<template_reference name="action" value="action\spawn_entity">
 					<float name="duration" value="25" />
@@ -43,7 +43,7 @@
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
 					</group>
-					<uniqueid name="id" value="1073754519" />
+					<uniqueid name="id" value="1073754524" />
 					<template_reference name="spawn_attached_option" value="options\none">
 					</template_reference>
 					<list name="spawned_entity_actions">
@@ -69,7 +69,7 @@
 								<template_reference name="target_info" value="type_ability_target_type\all">
 								</template_reference>
 							</group>
-							<uniqueid name="id" value="1073754520" />
+							<uniqueid name="id" value="1073754525" />
 							<template_reference name="spawn_attached_option" value="options\none">
 							</template_reference>
 							<list name="spawned_entity_actions">
@@ -81,7 +81,7 @@
 							</group>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754521" />
+					<uniqueid name="id" value="1073754526" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -212,5 +212,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742316" />
+	<uniqueid name="pbgid" value="1073742318" />
 </instance>

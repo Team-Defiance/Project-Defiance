@@ -44,7 +44,7 @@
 		<list name="actions">
 			<template_reference name="action" value="action\enable_hold_action">
 				<bool name="switch_on" value="False" />
-				<uniqueid name="id" value="1073754522" />
+				<uniqueid name="id" value="1073754632" />
 			</template_reference>
 			<template_reference name="action" value="action\animator_set_state">
 				<bool name="apply_to_leader_only" value="False" />
@@ -52,7 +52,7 @@
 				<bool name="retrigger" value="True" />
 				<string name="state_machine_name" value="mg42_front_upgrade" />
 				<string name="undo_action_state_name" value="" />
-				<uniqueid name="id" value="1073754523" />
+				<uniqueid name="id" value="1073754633" />
 			</template_reference>
 			<template_reference name="action" value="action\animator_set_state">
 				<bool name="apply_to_leader_only" value="False" />
@@ -60,7 +60,7 @@
 				<bool name="retrigger" value="True" />
 				<string name="state_machine_name" value="mg42_rear_upgrade" />
 				<string name="undo_action_state_name" value="" />
-				<uniqueid name="id" value="1073754524" />
+				<uniqueid name="id" value="1073754634" />
 			</template_reference>
 			<template_reference name="action" value="action\animator_set_state">
 				<bool name="apply_to_leader_only" value="False" />
@@ -68,13 +68,13 @@
 				<bool name="retrigger" value="False" />
 				<string name="state_machine_name" value="flammpanzerwagen_upgrade" />
 				<string name="undo_action_state_name" value="" />
-				<uniqueid name="id" value="1073754525" />
+				<uniqueid name="id" value="1073754635" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_crew_action">
 				<bool name="apply_removal" value="True" />
 				<string name="crew_name" value="Gunner" />
 				<bool name="kill" value="False" />
-				<uniqueid name="id" value="1073754526" />
+				<uniqueid name="id" value="1073754636" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_crew_action">
 				<bool name="apply_removal" value="True" />

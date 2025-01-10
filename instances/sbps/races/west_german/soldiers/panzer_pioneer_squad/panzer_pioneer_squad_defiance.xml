@@ -476,7 +476,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
 							<float name="number_of_experience_points" value="-480" />
-							<uniqueid name="id" value="1073754592" />
+							<uniqueid name="id" value="1073754606" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
 							<float name="delay" value="5" />
@@ -486,14 +486,14 @@
 							<list name="delayed_actions">
 								<template_reference name="action" value="action\veterancy_action">
 									<float name="number_of_experience_points" value="480" />
-									<uniqueid name="id" value="1073754593" />
+									<uniqueid name="id" value="1073754607" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754594" />
+							<uniqueid name="id" value="1073754608" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754595" />
+					<uniqueid name="id" value="1073754609" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
