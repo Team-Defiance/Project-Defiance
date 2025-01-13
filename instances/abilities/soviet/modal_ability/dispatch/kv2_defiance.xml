@@ -10,7 +10,7 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="20" />
+					<float name="minimum_pop_used" value="18" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
@@ -40,8 +40,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="230" />
-			<float name="manpower" value="650" />
+			<float name="fuel" value="200" />
+			<float name="manpower" value="600" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="100" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="180" />
+		<float name="recharge_time" value="100" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -119,7 +119,7 @@
 				<locstring name="ui_name" value="308" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="13" />
+					<float name="command" value="12" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
@@ -139,14 +139,6 @@
 						<enum name="entity_type" value="" />
 					</template_reference>
 				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="643" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\research\tankograd" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_all_in_list">
 				<enum name="reason" value="usage" />

@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
-				<float name="near" value="0.75" />
+				<float name="near" value="0.875" />
 				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.0375" />
-				<float name="near" value="0.375" />
+				<float name="near" value="0.4375" />
 				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="22.5" />
-				<float name="near" value="67.5" />
+				<float name="mid" value="20" />
+				<float name="near" value="45" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -224,7 +224,7 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
@@ -327,7 +327,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.25" />
+			<float name="deflection_damage_multiplier" value="0.6" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>

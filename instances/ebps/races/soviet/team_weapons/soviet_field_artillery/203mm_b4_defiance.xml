@@ -18,7 +18,8 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\b4_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\passives_ui\b4_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -309,6 +310,27 @@
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="3" />
+							<group name="origin">
+								<float name="x" value="-0.00511" />
+								<float name="y" value="2" />
+								<float name="z" value="-0.31433" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_accurate_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
 			<list name="kill_actions">
@@ -402,15 +424,32 @@
 		<template_reference name="exts" value="ebpextensions\recrewable_ext">
 			<list name="race_list">
 				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\soviet" />
+					<group name="info">
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\vehicles\heavy_artillery\b4_203mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="max_capture_crew_size" value="3" />
+						<float name="min_capture_crew_size" value="3" />
+						<list name="recrew_penalties_list">
+						</list>
+						<float name="abandon_animation_seconds" value="0" />
+						<int name="recrew_max_squad_size" value="4" />
+						<bool name="abandoned_allows_pass_through" value="False" />
+						<list name="apply_to_driver_action">
+						</list>
+						<float name="driver_death_chance_on_entity_death" value="1" />
+						<instance_reference name="driver_squad_blueprint" value="" />
+					</group>
+				</group>
+				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\vehicles\heavy_artillery\b4_203mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_capture_crew_size" value="3" />
-						<float name="min_capture_crew_size" value="2" />
+						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">
 						</list>
 						<float name="abandon_animation_seconds" value="0" />
-						<int name="recrew_max_squad_size" value="5" />
+						<int name="recrew_max_squad_size" value="4" />
 						<bool name="abandoned_allows_pass_through" value="False" />
 						<list name="apply_to_driver_action">
 						</list>
@@ -526,7 +565,7 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\howtizer_203mm" />
+					<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\counterattack_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>

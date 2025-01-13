@@ -7,7 +7,7 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007826" />
+						<locstring name="extra_text" value="864" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="243" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="R" />
@@ -41,15 +41,15 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="38" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mortar_crew_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_pioneer_w_portrait" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mortar_crew_s_portrait" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_pioneer_s_portrait" />
 						<float name="minimap_texture_scale" value="0.75" />
-						<locstring name="brief_text" value="11038980" />
+						<locstring name="brief_text" value="865" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
@@ -451,7 +451,7 @@
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="4" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\weapon_crew\mortar_crew_mp" />
+					<instance_reference name="type" value="ebps\races\german\soldiers\weapon_crew\mortar_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -977,7 +977,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2400" />
+								<float name="experience_value" value="2880" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="730" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -1007,7 +1007,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="3120" />
+								<float name="experience_value" value="3840" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="731" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />

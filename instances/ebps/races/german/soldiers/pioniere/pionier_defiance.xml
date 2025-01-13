@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="armies\common\base\commonhuman\commonhuman" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\soldiers\pioneer\pioneer" />
+			<file name="animator" value="armies\german\soldiers\mortar\mortar" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -384,7 +384,7 @@
 					<string name="modifier_id" value="" />
 					<string name="target_type_name" value="" />
 					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="0.5" />
+					<float name="value" value="0.1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 				</template_reference>
 			</list>

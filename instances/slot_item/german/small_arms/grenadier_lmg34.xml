@@ -52,7 +52,7 @@
 		<list name="on_drop_actions">
 			<template_reference name="action" value="action\upgrade_remove">
 				<bool name="apply_to_entities_in_squad" value="False" />
-				<instance_reference name="upgrade" value="upgrade\german\items\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\doctrines\festung\items\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073741859" />
 			</template_reference>
 		</list>

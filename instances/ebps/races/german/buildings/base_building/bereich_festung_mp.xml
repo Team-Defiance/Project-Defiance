@@ -185,6 +185,12 @@
 					</list>
 					<uniqueid name="id" value="1073742022" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\research\german_equipment_dummy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073747038" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -260,7 +266,7 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Orders in support teams and provides acces to healing, infantry and support weapon upgrades." />
+			<string name="extra_text_deprecated" value="Allows for the production of the Pak 40, GrW 34 Mortar, Sniper and 251 Halftrack" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="32" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -499,13 +505,17 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_player_upgrade">
+				<template_reference name="required" value="requirements\required_not">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="24" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
-					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="830" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\bereich_festung_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
 				</template_reference>
 			</list>
 		</template_reference>
@@ -536,7 +546,13 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\doctrine\festung\ostruppen_squad\ostruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="14" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\german\doctrine\spearhead\sdkfz_250_halftrack\sdkfz_250_halftrack_transport_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -550,7 +566,6 @@
 			<bool name="must_be_in_supply" value="True" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>

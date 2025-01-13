@@ -372,7 +372,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="150" />
-					<float name="manpower" value="410" />
+					<float name="manpower" value="400" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -383,7 +383,7 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
 			<float name="hitpoints" value="640" />
@@ -404,8 +404,8 @@
 			<list name="death_actions">
 			</list>
 			<float name="armor" value="260" />
-			<float name="rear_armor" value="70" />
-			<float name="target_size" value="22" />
+			<float name="rear_armor" value="65" />
+			<float name="target_size" value="21" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">

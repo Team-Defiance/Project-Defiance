@@ -53,7 +53,7 @@
 		<group name="starting_resources">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="30" />
+			<float name="fuel" value="20" />
 			<float name="manpower" value="400" />
 			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
@@ -105,21 +105,33 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\soviet\always_on_ability\soviet_hq_engineer_call_in" />
-			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\artillery_152mm" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\fear_propaganda_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\partisan_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\storm_group_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\covering_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\artillery_152mm" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\02_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\06_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\reserve_infantry" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\shock_rifle" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\counterattack_artillery" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\01_scorched_earth" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\02_mediums_su100" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\02_mediums_t34_85" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\03_ppsh_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\04_for_mother_russia" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\05_b4_howitzer_passive" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_ptab_strike" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_recon_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="32" />
-				<float name="fuel" value="-1" />
-				<float name="manpower" value="-1" />
-				<float name="munition" value="-1" />
-				<float name="soviet_progression" value="100" />
-				<float name="soviet_227" value="100" />
+				<float name="command" value="20" />
+				<float name="fuel" value="450" />
+				<float name="manpower" value="1750" />
+				<float name="munition" value="800" />
+				<float name="soviet_progression" value="-1" />
+				<float name="soviet_227" value="-1" />
 				<float name="popcap" value="-1" />
 			</template_reference>
 		</group>
@@ -197,14 +209,32 @@
 					<instance_reference name="self_destruct_ability" value="" />
 				</group>
 			</group>
+			<group name="production_building">
+				<group name="builder">
+					<locstring name="screen_name" value="0" />
+					<icon name="symbol_icon_name" value="" />
+					<enum name="unit_type" value="" />
+					<icon name="icon_name" value="" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="dispatch_ability" value="" />
+				</group>
+				<group name="building">
+					<locstring name="screen_name" value="2102051" />
+					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
+					<enum name="unit_type" value="motor_pool_heavy" />
+					<icon name="icon_name" value="Icons_tooltips_tab_05_heavy_factory" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="self_destruct_ability" value="" />
+				</group>
+			</group>
 		</list>
 		<group name="ai_production_info">
 			<list name="base_building_list">
-				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\barracks" />
-				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\motorpool" />
-				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\tank_depot" />
-				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\weapon_support_center" />
-				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\hq\hq" />
+				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\hq\hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\barracks_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\motorpool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
@@ -232,9 +262,9 @@
 				</group>
 			</list>
 			<group name="builder_squads">
-				<instance_reference name="base_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
-				<instance_reference name="obs_post_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
-				<instance_reference name="defense_builder_squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
+				<instance_reference name="base_builder_squad" value="sbps\races\soviet\tier_0\field_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="obs_post_builder_squad" value="sbps\races\soviet\tier_0\field_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\soviet\tier_0\field_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">
@@ -285,7 +315,7 @@
 				<instance_reference name="building" value="ebps\races\soviet\buildings\base_building\hq\hq" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\soviet\tier_0\soviet_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>
@@ -297,7 +327,7 @@
 				<instance_reference name="building" value="ebps\races\soviet\buildings\base_building\hq\hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\soviet\tier_0\soviet_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>
@@ -338,7 +368,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="tier4" />
-				<instance_reference name="building" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" />
+				<instance_reference name="building" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">
@@ -349,7 +379,7 @@
 				<instance_reference name="building" value="ebps\races\soviet\buildings\base_building\soviet_base_stamper" />
 				<list name="starting_squads">
 					<group name="starting_squad">
-						<instance_reference name="squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\soviet\tier_0\soviet_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="check_requirements" value="False" />
 					</group>
 				</list>

@@ -148,7 +148,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="229" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11007163" />
+			<locstring name="help_text" value="882" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_panzerfaust" />
 			<string name="overlay_name" value="" />
@@ -192,6 +192,43 @@
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\german\items\pkrieger_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\bereich_festung_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="False" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\german\items\pgren_infra_stg" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="32" />
@@ -199,8 +236,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_vehicle" />
-		<float name="ui_reticule_radius_min" value="1" />
-		<float name="ui_reticule_radius_max" value="1" />
+		<float name="ui_reticule_radius_min" value="1.5" />
+		<float name="ui_reticule_radius_max" value="1.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

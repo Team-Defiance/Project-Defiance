@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="20" />
+			<float name="acceleration" value="60" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="False" />
@@ -184,14 +184,14 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_homing">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="2" />
+			<float name="deathtimer" value="1" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="Marker_Tank_Barrel_End" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="75" />
+			<float name="speed" value="80" />
 			<bool name="collision_land_ignore" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

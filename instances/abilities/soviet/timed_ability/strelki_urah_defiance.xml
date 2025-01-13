@@ -31,15 +31,6 @@
 							<float name="value" value="1" />
 							<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 						</template_reference>
-						<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.85" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
-						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073746842" />
 				</template_reference>
@@ -113,14 +104,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="15" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="10" />
+		<float name="duration_time" value="7.5" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -141,7 +132,7 @@
 		<float name="recharge_time" value="45" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="" />
+		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -167,7 +158,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11039281" />
+			<locstring name="extra_text" value="841" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="795" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="H" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_oorah" />
@@ -185,10 +176,43 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad_veterancy">
+			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<float name="veterancy_rank" value="5" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="840" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="veterancy_rank" value="1" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\barracks_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="855" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="veterancy_rank" value="3" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />

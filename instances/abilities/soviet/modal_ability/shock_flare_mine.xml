@@ -199,16 +199,9 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\dpm_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_merge" />

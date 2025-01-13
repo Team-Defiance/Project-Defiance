@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="360" />
+			<float name="manpower" value="380" />
 			<float name="munition" value="50" />
 			<float name="popcap" value="0" />
 		</group>
@@ -120,20 +120,56 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\german\always_on_ability\german_hq_pioneer_call_in" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\artillery_105mm" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\stuka_smoke_bombs_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\dispatch\mountain_jaegers" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\stuka_bombing_strike_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\dispatch\stormtrooper_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\stuka_loiter_suppression" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\festung_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\firestorm_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\mechanized_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\overwatch_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\spearhead_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\vanguard_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\ability_1_osttruppen" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\ability_2_opel_supply_truck" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\ability_3_stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\ability_4_heavy_emplacements" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\ability_5_for_the_fatherland" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\passive_defensive_preparation" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_1_paradrop_med_supplies" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_2_mortar_halftrack" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_3_walking_stuka" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_4_sturmpanzer_brummbar" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_5_strategic_bombing" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\firestorm\passive_urban_assault" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_1_armored_vehicle_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_2_wacht_am_rhein" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_3_break_supply_line" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_4_emergency_repair" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_5_close_the_pocket" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\mechanized\passive_blitzkrieg" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\ability_1_gebirgsjagers_infiltration" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\ability_2_stuka_air_superiority" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\ability_3_elefant_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\ability_4_field_fortifications" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\ability_5_early_warning" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\passive_ambush_camouflage" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\ability_1_stormtrooper_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\ability_2_emergency_airdrop" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\ability_3_tiger_1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\ability_4_halftrack_250" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\ability_5_stuka_bombing_strike" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\passive_stg_commander" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_1_panzerjager" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_2_forward_repair_station" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_3_stuka_ace" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_4_command_panzer_iv" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_5_lefh_howitzer" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\passive_sentinel_packages" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="32" />
-				<float name="fuel" value="-1" />
-				<float name="manpower" value="-1" />
-				<float name="munition" value="-1" />
+				<float name="command" value="20" />
+				<float name="fuel" value="450" />
+				<float name="manpower" value="1750" />
+				<float name="munition" value="800" />
 				<float name="soviet_progression" value="-1" />
 				<float name="soviet_227" value="-1" />
 				<float name="popcap" value="-1" />
@@ -213,21 +249,67 @@
 					<instance_reference name="self_destruct_ability" value="" />
 				</group>
 			</group>
+			<group name="production_building">
+				<group name="builder">
+					<locstring name="screen_name" value="0" />
+					<icon name="symbol_icon_name" value="" />
+					<enum name="unit_type" value="" />
+					<icon name="icon_name" value="" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="dispatch_ability" value="" />
+				</group>
+				<group name="building">
+					<locstring name="screen_name" value="11007128" />
+					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_01_sc_icon_05" />
+					<enum name="unit_type" value="motor_pool_heavy" />
+					<icon name="icon_name" value="Icons_tooltips_tab_05_heavy_factory" />
+					<locstring name="help_text" value="0" />
+					<instance_reference name="self_destruct_ability" value="" />
+				</group>
+			</group>
 		</list>
 		<group name="ai_production_info">
 			<list name="base_building_list">
-				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hq\german_hq" />
-				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\bereich_festung" />
-				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\dolch_aktionen" />
-				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hintere_panzerwerk" />
-				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk" />
+				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\bereich_festung_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="ebps\races\german\buildings\base_building\hq\german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
 			</list>
 			<group name="builder_squads">
-				<instance_reference name="base_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
-				<instance_reference name="obs_post_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
-				<instance_reference name="defense_builder_squad" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
+				<instance_reference name="base_builder_squad" value="sbps\races\german\soldiers\pioniere\pioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="obs_post_builder_squad" value="sbps\races\german\soldiers\pioniere\pioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="defense_builder_squad" value="sbps\races\german\soldiers\pioniere\pioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 		</group>
 		<list name="team_size_point_resource_multiplier">
@@ -299,7 +381,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="bunker" />
-				<instance_reference name="building" value="ebps\races\german\buildings\defensive_structure\bunker\axis_bunker_starting_position_mp" />
+				<instance_reference name="building" value="ebps\races\german\buildings\defensive_structure\bunker\axis_bunker_starting_position_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">
@@ -331,7 +413,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="tier4" />
-				<instance_reference name="building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" />
+				<instance_reference name="building" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 				</list>
 				<list name="player_upgrades">

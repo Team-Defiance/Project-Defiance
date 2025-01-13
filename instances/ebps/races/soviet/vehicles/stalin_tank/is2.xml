@@ -19,6 +19,7 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sov_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\accessory_weapons\is2_he_shot" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -84,7 +85,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -144,7 +145,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="250" />
+					<float name="fuel" value="255" />
 					<float name="manpower" value="670" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -156,10 +157,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="900" />
+			<float name="hitpoints" value="990" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -176,8 +177,8 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_is-2_heavy_tank" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="380" />
-			<float name="rear_armor" value="140" />
+			<float name="armor" value="345" />
+			<float name="rear_armor" value="190" />
 			<float name="target_size" value="24" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -582,7 +583,7 @@
 								<float name="z" value="1.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\light_machine_gun\dt_heavy_turret_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\light_machine_gun\dt_is2_turret_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -625,6 +626,27 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.512" />
+								<float name="z" value="0.833" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\122mm_d25t_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

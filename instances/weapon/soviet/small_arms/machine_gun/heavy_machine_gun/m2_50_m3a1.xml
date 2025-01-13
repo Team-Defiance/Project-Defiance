@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="1" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.875" />
+				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.5" />
@@ -97,7 +97,7 @@
 			<float name="combat_slot_offset" value="0" />
 			<bool name="enable_auto_target_search" value="True" />
 			<bool name="fire_at_building_combat_slot" value="False" />
-			<float name="ground_hit_rate" value="0.75" />
+			<float name="ground_hit_rate" value="1" />
 			<bool name="ignore_shot_blocking" value="False" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="point_blank" value="True" />
@@ -307,9 +307,9 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
-			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1" />
+			<float name="accuracy_multiplier" value="0.45" />
+			<float name="burst_multiplier" value="0.7" />
+			<float name="cooldown_multiplier" value="0.7" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -353,26 +353,26 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="0.75" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="9" />
-				<float name="min" value="8" />
+				<float name="max" value="7" />
+				<float name="min" value="7" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="9" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.3" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="20" />
-			<float name="distance_scatter_max" value="15" />
+			<float name="distance_scatter_max" value="9" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_offset" value="0.8" />
-			<float name="distance_scatter_ratio" value="0.8" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 			<float name="max_tilt_angle" value="5" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="2.125" />
-			<float name="far" value="1.5" />
-			<float name="mid" value="1.875" />
+			<float name="near" value="9" />
+			<float name="far" value="7" />
+			<float name="mid" value="8.2" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

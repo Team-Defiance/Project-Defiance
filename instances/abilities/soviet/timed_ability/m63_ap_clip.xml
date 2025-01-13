@@ -28,7 +28,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="3" />
+							<float name="value" value="4" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 					</list>
@@ -51,9 +51,9 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="0" />
-								<locstring name="help_text" value="0" />
-								<icon name="icon_name" value="Icons_abilities_ability_german_phospherous_rounds" />
+								<locstring name="screen_name" value="1812" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="1813" mod="84428889d71d41a48e2eff09c2425d54" />
+								<icon name="icon_name" value="Icons_abilities_ability_aef_m2hb_hmg_armor_piercing_shells" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="1073746333" />
@@ -84,7 +84,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="20" />
+			<float name="munition" value="40" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />

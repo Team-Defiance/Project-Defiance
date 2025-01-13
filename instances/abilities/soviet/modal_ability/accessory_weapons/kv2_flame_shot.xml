@@ -12,18 +12,17 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\soviet\ballistic_weapon\kv2_flame_shot_item" mod="84428889d71d41a48e2eff09c2425d54" />
-					<instance_reference name="decrement_accessory_item" value="" />
-					<bool name="entity_target_only" value="False" />
-					<bool name="force_squad_to_target" value="False" />
-					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="1" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\all">
-						</template_reference>
+				<template_reference name="action" value="action\artillery_attack">
+					<bool name="disable_parent_hardpoint" value="True" />
+					<group name="filter_weapons">
+						<instance_reference name="weapon_01" value="" />
+						<instance_reference name="weapon_02" value="" />
+						<instance_reference name="weapon_03" value="" />
 					</group>
-					<uniqueid name="id" value="1073744191" />
+					<float name="num_salvo" value="1" />
+					<float name="use_hardpoint" value="4" />
+					<bool name="face_to_target" value="False" />
+					<uniqueid name="id" value="1073751976" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 			</list>
@@ -38,7 +37,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="40" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -61,7 +60,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="40" />
+		<float name="range" value="45" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />

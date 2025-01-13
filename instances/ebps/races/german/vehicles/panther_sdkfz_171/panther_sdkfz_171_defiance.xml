@@ -20,7 +20,8 @@
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\panther_s_mine_launcher" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\panther_smoke_drop" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\timed_ability\panther_range_ui" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\passives_ui\panther_range_ui" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\toggle_ability\hull_down_generic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -381,7 +382,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="170" />
-					<float name="manpower" value="390" />
+					<float name="manpower" value="400" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -392,10 +393,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="800" />
+			<float name="hitpoints" value="960" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -412,9 +413,9 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_panther_sdkfz_171" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="260" />
-			<float name="rear_armor" value="70" />
-			<float name="target_size" value="24" />
+			<float name="armor" value="285" />
+			<float name="rear_armor" value="90" />
+			<float name="target_size" value="23" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -1324,7 +1325,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="5.5" />
+			<float name="speed_max" value="5.6" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.15" />
 			<float name="on_land_overturn_scale" value="0.03" />

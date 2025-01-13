@@ -1,0 +1,21 @@
+model =
+{
+	"..\\..\\..\\common\\NewMotionTree.abp",
+	"..\\..\\..\\common\\engineer.abp",
+
+	-- Common AEF Gear
+    "..\\..\\aefcommongear.abp",
+    "..\\..\\weapons\\m7_light_antitank_mine\\m7_light_antitank_mine",
+	"..\\..\\weapons\\m3_grease_gun\\m3_grease_gun",
+	"..\\..\\weapons\\smg_m1_thompson\\smg_m1_thompson",
+	"..\\..\\..\\british\\weapons\\1lb_field_charge\\1lb_field_charge",
+    
+	-- Main Mesh
+	"assault_engineer",
+}
+
+simvis_attributes =
+{
+	model_scale = 1.0,
+	SingleBoneSkinningDistance = 0, -- engineer's backpack stretches in single bone mode
+}

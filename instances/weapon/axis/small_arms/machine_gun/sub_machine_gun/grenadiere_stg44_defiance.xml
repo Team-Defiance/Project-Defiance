@@ -2,7 +2,7 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.6" />
-			<float name="far" value="0.275" />
+			<float name="far" value="0.3" />
 			<float name="mid" value="0.5" />
 		</group>
 		<group name="aim">
@@ -141,7 +141,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="0.4" />
-				<float name="mid" value="0.8" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -152,13 +152,13 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.5" />
-				<float name="min" value="1.25" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.75" />
-				<float name="far" value="1.55" />
-				<float name="mid" value="0.9" />
+				<float name="near" value="1" />
+				<float name="far" value="1.45" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -364,15 +364,15 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="10" />
+			<float name="angle_scatter" value="5" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.3" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="20" />
-			<float name="distance_scatter_max" value="15" />
+			<float name="distance_scatter_max" value="5" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_offset" value="0.8" />
-			<float name="distance_scatter_ratio" value="0.8" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 			<float name="max_tilt_angle" value="5" />

@@ -1,0 +1,21 @@
+model =
+{
+	"..\\..\\..\\Common\\CompleteMotionTree.abp",
+	"..\\..\\..\\common\\engineer.abp",
+	"..\\..\\..\\common\\props\\medic_kit\\medic_kit",
+    
+	-- Weapons in Use
+
+        "..\\..\\..\\soviet\\weapons\\satchel_charge\\satchel_charge",
+        "..\\..\\..\\british\\weapons\\1lb_field_charge\\1lb_field_charge",
+	"..\\..\\weapons\\smg_mp40\\smg_mp40",
+	"..\\..\\weapons\\rifle_kar98\\rifle_kar98",
+
+	
+
+	-- Accessories
+    "..\\..\\weapons\\tellermine\\tellermine",
+
+	-- Main Mesh
+	"pioneer",
+}

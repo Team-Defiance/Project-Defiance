@@ -294,8 +294,10 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\transfer_orders_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\commander\shock_army" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\commander\reserve_army" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\choice_1_mobile_support" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\choice_2_at_support" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\choice_1_infantry_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\choice_2_apcr_shells" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -754,25 +756,25 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_0\soviet_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\strelki\sov_rifle_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_0\strelki_riflemen_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\mortar_squad\pm41_82_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_0\penal_battalion_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
-					<int name="ui_position" value="14" />
+					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\soviet_hmg_squad\m1910_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\soldiers\soviet_hmg_squad\dshk38_hmgsquad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -789,7 +791,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\soviet\research\hq_healing_aura_mp" />
+				<instance_reference name="upgrade" value="upgrade\soviet\research\hq_medics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\repair_station_ext">

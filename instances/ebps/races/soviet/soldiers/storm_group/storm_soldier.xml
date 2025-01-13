@@ -85,11 +85,11 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="82" />
+					<float name="manpower" value="74" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="5.5" />
+				<float name="time_seconds" value="7" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -99,7 +99,7 @@
 			<float name="death_seconds" value="30" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="90" />
+			<float name="hitpoints" value="80" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -116,7 +116,7 @@
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="1.8" />
+			<float name="armor" value="1.75" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="1" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -448,7 +448,7 @@
 					<string name="modifier_id" value="" />
 					<string name="target_type_name" value="" />
 					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="0.5" />
+					<float name="value" value="0.1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 				</template_reference>
 			</list>

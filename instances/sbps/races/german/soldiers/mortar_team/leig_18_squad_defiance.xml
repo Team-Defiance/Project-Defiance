@@ -450,7 +450,7 @@
 					<instance_reference name="type" value="ebps\races\german\team_weapons\leig_18_supportgun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<group name="loadout_data">
-					<float name="num" value="5" />
+					<float name="num" value="4" />
 					<instance_reference name="type" value="ebps\races\west_german\soldiers\weapon_crew\anti_tank_gun_crew_mp" />
 				</group>
 			</list>
@@ -466,7 +466,7 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\commander\ability\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\german\commander\outdated\spearhead_doctrine_defiance_outdated" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 				<template_reference name="required" value="requirements\required_resource">
 					<enum name="reason" value="usage" />

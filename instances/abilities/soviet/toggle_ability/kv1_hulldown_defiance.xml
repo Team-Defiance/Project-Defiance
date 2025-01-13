@@ -8,6 +8,31 @@
 					<instance_reference name="slot_item" value="slot_item\german\hulldown_slot_item" />
 					<uniqueid name="id" value="1073743498" />
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="4" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.6" />
+							<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.8" />
+							<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073753017" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -52,7 +77,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
+											<float name="value" value="0.85" />
 											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
@@ -91,15 +116,6 @@
 											<float name="value" value="5" />
 											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.15" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
@@ -117,6 +133,51 @@
 											<enum name="usage_type" value="addition" />
 											<float name="value" value="0.02" />
 											<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.85" />
+											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_02" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_03" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_04" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073743501" />
@@ -291,7 +352,7 @@
 								<template_reference name="required" value="requirements\required_squad_veterancy">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="5" />
+									<float name="veterancy_rank" value="4" />
 								</template_reference>
 								<template_reference name="required" value="requirements\required_not">
 									<enum name="reason" value="usage" />

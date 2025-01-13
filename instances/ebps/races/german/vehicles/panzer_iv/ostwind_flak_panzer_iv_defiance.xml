@@ -19,6 +19,7 @@
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\ostwind_button_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\wehr_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\toggle_ability\hull_down_generic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -234,7 +235,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -338,10 +339,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="560" />
+			<float name="hitpoints" value="480" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -358,9 +359,9 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_ostwind_flak_panzer" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="110" />
-			<float name="rear_armor" value="55" />
-			<float name="target_size" value="22" />
+			<float name="armor" value="100" />
+			<float name="rear_armor" value="50" />
+			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -744,6 +745,27 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\037mm_flak43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0.05" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0.781" />
+								<float name="y" value="1.615" />
+								<float name="z" value="1.652" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

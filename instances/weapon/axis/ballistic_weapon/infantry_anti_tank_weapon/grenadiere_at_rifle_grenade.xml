@@ -46,14 +46,14 @@
 				<float name="radius" value="1" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.15" />
+				<float name="far" value="0.25" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
+				<float name="mid" value="0.75" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.15" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
+				<float name="far" value="0.125" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.375" />
 			</group>
 			<group name="distance">
 				<float name="far" value="0.75" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="30" />
-				<float name="mid" value="50" />
-				<float name="near" value="70" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="5" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -303,9 +303,38 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="0.8" />
+							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073745309" />
+							<uniqueid name="id" value="1073752690" />
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_health">
+									<float name="health_range_min_percentage" value="0" />
+									<float name="health_range_max_percentage" value="0.5" />
+									<locstring name="ui_name" value="0" />
+									<enum name="reason" value="usage" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\trigger_critical_action">
+									<float name="remove_at_health" value="0.8" />
+									<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
+									<uniqueid name="id" value="1073752691" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073752692" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073745308" />
@@ -322,9 +351,17 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.75" />
+			<float name="deflection_damage_multiplier" value="0.7" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
+				<template_reference name="action" value="action\damage">
+					<float name="damage" value="4" />
+					<bool name="percentage" value="False" />
+					<bool name="set" value="True" />
+					<bool name="cause_criticals" value="True" />
+					<enum name="crit_weapon_type" value="big_explosive" />
+					<uniqueid name="id" value="1073752259" />
+				</template_reference>
 			</list>
 		</group>
 		<group name="fire">
@@ -409,8 +446,8 @@
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="3" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0.2" />
-			<float name="distance_scatter_ratio" value="1" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.2" />
 			<float name="fow_angle_multiplier" value="1.5" />
 			<float name="fow_distance_multiplier" value="1.5" />
 			<float name="max_tilt_angle" value="0" />
@@ -472,9 +509,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="80" />
-			<float name="far" value="80" />
-			<float name="mid" value="80" />
+			<float name="near" value="125" />
+			<float name="far" value="125" />
+			<float name="mid" value="125" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

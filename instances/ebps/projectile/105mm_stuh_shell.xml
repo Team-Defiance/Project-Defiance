@@ -171,7 +171,7 @@
 				<bool name="can_counter_barrage" value="False" />
 				<bool name="is_artillery" value="True" />
 				<bool name="is_target_only" value="False" />
-				<float name="speed_distance_multiplier" value="0.2" />
+				<float name="speed_distance_multiplier" value="0.225" />
 				<float name="speed_increment" value="0.5" />
 				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
@@ -191,7 +191,7 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="29" />
+			<float name="speed" value="45" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

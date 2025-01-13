@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\soviet\vehicles\t_34\t_3485_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\soviet\vehicles\t_34\t_3485_counterattack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0.5" />
@@ -171,14 +171,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_player_upgrade">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="309" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
-					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\soviet\research\tankograd" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
 				<template_reference name="required" value="requirements\required_player_upgrade">
 					<enum name="reason" value="usage_and_display" />
 					<locstring name="ui_name" value="0" />
@@ -422,73 +414,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_in_state">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="garrisoned" value="False" />
-							<bool name="healed" value="False" />
-							<float name="in_combat_since" value="-1" />
-							<bool name="injured" value="False" />
-							<bool name="leader" value="False" />
-							<bool name="not_moving" value="True" />
-							<bool name="not_retreating" value="False" />
-							<bool name="pinned" value="False" />
-							<bool name="suppressed" value="False" />
-							<bool name="camouflaged" value="False" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\ui_unit_modifier_action">
-							<bool name="die_with_creator" value="False" />
-							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="550" mod="84428889d71d41a48e2eff09c2425d54" />
-								<locstring name="help_text" value="552" mod="84428889d71d41a48e2eff09c2425d54" />
-								<icon name="icon_name" value="Icons_abilities_ability_common_focussed_sight_on" />
-								<string name="hotkey_name" value="" />
-							</template_reference>
-							<uniqueid name="id" value="1073745621" />
-						</template_reference>
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.9" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\range_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073745622" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073745624" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>
@@ -675,6 +600,66 @@
 								<list name="squad_entity_actions">
 								</list>
 							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="12120" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="1805" mod="84428889d71d41a48e2eff09c2425d54" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073751399" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="16160" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="1806" mod="84428889d71d41a48e2eff09c2425d54" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073751400" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
 						</list>
 						<enum name="shared_veterancy_type" value="no_sharing" />
 					</group>
@@ -684,7 +669,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\t_3485_combined_ui" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\passives_ui\t_3485_combined_ui" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

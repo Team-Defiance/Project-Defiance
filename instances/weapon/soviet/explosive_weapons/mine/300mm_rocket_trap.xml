@@ -338,8 +338,8 @@
 			<instance_reference name="projectile" value="ebps\projectile\300mm_andryusha_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="45" />
-			<float name="min" value="35" />
+			<float name="max" value="40" />
+			<float name="min" value="30" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
-			<float name="mid" value="140" />
-			<float name="far" value="140" />
-			<float name="near" value="140" />
+			<float name="mid" value="160" />
+			<float name="far" value="160" />
+			<float name="near" value="160" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -469,6 +469,15 @@
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="1.25" />
 					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.25" />
+					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

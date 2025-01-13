@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="30" />
+				<float name="munition" value="40" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="10" />
@@ -59,6 +59,15 @@
 						<enum name="usage_type" value="addition" />
 						<float name="value" value="25" />
 						<instance_reference name="tooltip" value="modifier_tooltip\detect_specific_camouflage_radius" />
+					</template_reference>
+					<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="addition" />
+						<float name="value" value="0.25" />
+						<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
 					</template_reference>
 				</list>
 				<uniqueid name="id" value="1073745931" />

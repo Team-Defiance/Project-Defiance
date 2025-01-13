@@ -370,7 +370,7 @@
 					<string name="modifier_id" value="" />
 					<string name="target_type_name" value="" />
 					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="0.5" />
+					<float name="value" value="0.1" />
 					<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 				</template_reference>
 			</list>
@@ -396,7 +396,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\weapon_crew_&amp;_pioneer_mp40_smg_mp" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\sub_machine_gun\hmg_crew_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

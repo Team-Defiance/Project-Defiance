@@ -185,6 +185,12 @@
 					</list>
 					<uniqueid name="id" value="1073742026" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\research\german_equipment_dummy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073747040" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -208,8 +214,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="10" />
-					<float name="manpower" value="75" />
+					<float name="fuel" value="20" />
+					<float name="manpower" value="100" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -260,7 +266,7 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Orders in  251 Halftrack, &quot;Luchs&quot; Light Scout Tank, Panzergrenadiere." />
+			<string name="extra_text_deprecated" value="Allows production of the Panzer II Luchs, Panzer IV Medium Tank, Flakpanzer IV Ostwind and StuG III" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="33" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -509,7 +515,19 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="830" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
 				</template_reference>
 			</list>
 		</template_reference>
@@ -528,25 +546,13 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_ii_squad\panzer_ii_luchs_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\ostwind_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="14" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_142_1_squad" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="24" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stuh_42_142_2_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_ii_squad\panzer_ii_luchs_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -560,6 +566,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\german\research\mech_beasts" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>

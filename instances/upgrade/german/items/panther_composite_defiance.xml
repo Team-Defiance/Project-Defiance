@@ -21,10 +21,10 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="20" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="30" />
+			<float name="time_seconds" value="20" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
@@ -46,23 +46,14 @@
 				<float name="duration" value="0" />
 				<bool name="permanent" value="True" />
 				<list name="modifiers">
-					<template_reference name="modifier" value="modifiers\received_damage_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="multiplication" />
-						<float name="value" value="0.85" />
-						<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+					<template_reference name="modifier" value="modifiers\armor_modifier">
 						<enum name="application_type" value="apply_to_entity" />
 						<bool name="exclusive" value="False" />
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="addition" />
-						<float name="value" value="2" />
-						<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+						<float name="value" value="10" />
+						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 					</template_reference>
 				</list>
 				<uniqueid name="id" value="1073743929" />

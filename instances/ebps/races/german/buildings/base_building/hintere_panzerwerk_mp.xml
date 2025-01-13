@@ -131,8 +131,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\modal_ability\dispatch\tiger_1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\dispatch\elefant_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -187,6 +185,12 @@
 					</list>
 					<uniqueid name="id" value="1073742031" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\research\german_equipment_dummy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073747041" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -211,7 +215,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="20" />
-					<float name="manpower" value="175" />
+					<float name="manpower" value="100" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -262,10 +266,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Orders in Stug III, Flakpanzer IV Ostwind, Panzer V &quot;Panther&quot; Medium Tank, Panzerwerfer 42 Rocket Halftrack." />
+			<string name="extra_text_deprecated" value="Provides access to advanced vehicle augmentation as well as production of the Panther and Panzerwerfer 42" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11007127" />
+			<locstring name="help_text" value="825" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="S" />
 			<icon name="icon_name" value="Icons_buildings_building_german_hintere_panzerwerk" />
 			<enum name="kill_type" value="building" />
@@ -325,7 +329,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hintere_panzerwerk_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_german_schweres_kriegswerk_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -490,7 +494,19 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="830" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
 				</template_reference>
 			</list>
 		</template_reference>
@@ -503,19 +519,25 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_stubby_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panther_squad\panther_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_142_1_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\ostwind_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="21" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\german\doctrine\festung\stuh_42_assault_gun\stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -529,7 +551,6 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\research\mech_beasts" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>

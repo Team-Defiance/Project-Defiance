@@ -204,12 +204,12 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="60" />
+					<float name="fuel" value="20" />
 					<float name="manpower" value="160" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="80" />
+				<float name="time_seconds" value="60" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
@@ -318,6 +318,20 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">
 			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_not">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="853" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
+						</template_reference>
+					</list>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext">
@@ -329,19 +343,19 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\troops\guards_rifle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_2\pm41_82mm_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\vehicles\soviet_at_gun_squads\zis3_fieldgun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_2\zis3_76mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\vehicles\aa_halftrack_squad\m15a1_aa_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_2\m3_halftrack_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
@@ -367,8 +381,6 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="8" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\soviet\research\reserve_120_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\soviet\research\reserve_45_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

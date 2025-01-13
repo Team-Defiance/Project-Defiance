@@ -132,8 +132,6 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\transfer_orders_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\commander\spearhead_doctrine" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\commander\jagdpanzer_doctrine" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -163,6 +161,18 @@
 			<float name="spacing_distance" value="0" />
 			<bool name="self_construct" value="False" />
 			<list name="on_construction_actions">
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747013" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\mech_beasts_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747014" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_equipment_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="action" value="action\add_ability_action">
+					<uniqueid name="id" value="1073747015" />
+					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_infantry_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -227,10 +237,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Grants Manpower and can upgrade to escalate Battle Phases." />
+			<string name="extra_text_deprecated" value="Allows production of Pioneers, Grenadiers and Panzergrenadiers. Research Battle Phases to unlock additional equipment, units and construction options." />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="2099300" />
+			<locstring name="help_text" value="823" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="axis_foundation_hq" />
 			<icon name="icon_name" value="Icons_buildings_building_german_hq" />
 			<enum name="kill_type" value="building" />
@@ -244,7 +254,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="2099301" />
+			<locstring name="screen_name" value="822" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -282,7 +292,7 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_german_headquarters_s_portrait" />
 			<locstring name="brief_text" value="38" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="extra_text" value="11041840" />
+			<locstring name="extra_text" value="824" mod="84428889d71d41a48e2eff09c2425d54" />
 			<bool name="show_in_build_log" value="True" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_entity_appearance" value="True" />
@@ -290,7 +300,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hq_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_german_hintere_panzerwerk_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -681,6 +691,7 @@
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\research\battle_phase_4_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\demolishable_ext">

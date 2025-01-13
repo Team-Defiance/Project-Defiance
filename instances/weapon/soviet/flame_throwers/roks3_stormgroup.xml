@@ -284,8 +284,8 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.5" />
-			<bool name="has_deflection_damage" value="False" />
+			<float name="deflection_damage_multiplier" value="0.25" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
 		</group>
@@ -341,7 +341,7 @@
 			<float name="max" value="20" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -371,8 +371,8 @@
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="6.2" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0.3" />
-			<float name="distance_scatter_ratio" value="0.5" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />

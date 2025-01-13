@@ -18,6 +18,8 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sov_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\soviet\timed_ability\kv1_apcr_shock_rifle" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\accessory_weapons\kv1_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -47,6 +49,60 @@
 					</list>
 					<uniqueid name="id" value="1073743451" />
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_in_state">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="garrisoned" value="False" />
+									<bool name="healed" value="False" />
+									<float name="in_combat_since" value="-1" />
+									<bool name="injured" value="False" />
+									<bool name="leader" value="False" />
+									<bool name="not_moving" value="True" />
+									<bool name="not_retreating" value="False" />
+									<bool name="pinned" value="False" />
+									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\weapon_scatter">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="2.3" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073752224" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073751978" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -66,10 +122,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="960" />
+			<float name="hitpoints" value="880" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -86,9 +142,9 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_kv-1" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="270" />
-			<float name="rear_armor" value="130" />
-			<float name="target_size" value="24" />
+			<float name="armor" value="200" />
+			<float name="rear_armor" value="155" />
+			<float name="target_size" value="22" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -473,6 +529,21 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_zis5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.68" />
+								<float name="z" value="0.53" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_zis5_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
@@ -492,7 +563,7 @@
 								<float name="z" value="2.07" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\light_machine_gun\dt_heavy_turret_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\light_machine_gun\dt_kv1_turret_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -779,12 +850,12 @@
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
-			<float name="rotation_rate" value="25" />
+			<float name="rotation_rate" value="27" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="5.2" />
+			<float name="speed_max" value="5.4" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.12" />

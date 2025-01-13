@@ -18,7 +18,7 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_ability_victortarget_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\ml20_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\passives_ui\ml20_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
@@ -446,10 +446,27 @@
 		<template_reference name="exts" value="ebpextensions\recrewable_ext">
 			<list name="race_list">
 				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\soviet" />
+					<group name="info">
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\vehicles\heavy_artillery\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+						<float name="max_capture_crew_size" value="2" />
+						<float name="min_capture_crew_size" value="2" />
+						<list name="recrew_penalties_list">
+						</list>
+						<float name="abandon_animation_seconds" value="0" />
+						<int name="recrew_max_squad_size" value="4" />
+						<bool name="abandoned_allows_pass_through" value="False" />
+						<list name="apply_to_driver_action">
+						</list>
+						<float name="driver_death_chance_on_entity_death" value="1" />
+						<instance_reference name="driver_squad_blueprint" value="" />
+					</group>
+				</group>
+				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\vehicles\heavy_artillery\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="3" />
+						<float name="max_capture_crew_size" value="2" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>
