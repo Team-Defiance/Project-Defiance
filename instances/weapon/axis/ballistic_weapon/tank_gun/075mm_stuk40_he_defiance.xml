@@ -293,10 +293,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_vision" />
-							<uniqueid name="id" value="1073754524" />
+							<uniqueid name="id" value="1073754644" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754525" />
+					<uniqueid name="id" value="1073754645" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -344,14 +344,14 @@
 									<bool name="apply_to_entities_in_squad" value="False" />
 									<bool name="trigger_publish_event" value="False" />
 									<instance_reference name="upgrade" value="upgrade\german\ability_lock_out\ability_lock_out_stug_pak_twp_on_air_mp" />
-									<uniqueid name="id" value="1073754526" />
+									<uniqueid name="id" value="1073754646" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073754527" />
+							<uniqueid name="id" value="1073754647" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754528" />
+					<uniqueid name="id" value="1073754648" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -413,7 +413,7 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.9" />
+				<float name="max" value="5" />
 				<float name="min" value="4.8" />
 			</group>
 			<group name="duration_multiplier">
@@ -434,7 +434,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="5.5" />
+			<float name="distance_scatter_max" value="6" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
