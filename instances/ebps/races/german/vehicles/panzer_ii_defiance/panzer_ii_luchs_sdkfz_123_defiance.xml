@@ -111,12 +111,13 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_squad_upgrade">
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<bool name="include_queued" value="False" />
 									<bool name="is_present" value="True" />
-									<instance_reference name="upgrade_name" value="upgrade\german\items\spotting_scopes_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<float name="max_completed" value="100" />
+									<float name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\german\research\mech_beasts" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
 								<template_reference name="requirement" value="requirements\required_in_state">
 									<enum name="reason" value="usage" />
@@ -137,8 +138,8 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="1.5" />
-							<float name="delay_min" value="1.5" />
+							<float name="delay" value="0.1" />
+							<float name="delay_min" value="0.1" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
@@ -152,7 +153,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="addition" />
-											<float name="value" value="20" />
+											<float name="value" value="7.5" />
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>
