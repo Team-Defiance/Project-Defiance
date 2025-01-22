@@ -7,16 +7,16 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="816" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="extra_text" value="2452" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="815" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="2453" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="79" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="screen_name" value="2450" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="sdkfz251halftrack" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -49,292 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="817" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11010405" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007018" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007036" />
-						<string name="selection_group" value="sdkfz251halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="ve" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038777" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\soviet" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11010405" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007018" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007036" />
-						<string name="selection_group" value="sdkfz251halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="251" />
-							<string name="code_2" value="hft" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038776" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\west_german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11010405" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007018" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007036" />
-						<string name="selection_group" value="sdkfz251halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="251" />
-							<string name="code_2" value="hft" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038776" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\aef" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11010405" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007018" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007036" />
-						<string name="selection_group" value="sdkfz251halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="ltk" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038777" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_251_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\british" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11010405" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007018" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_251_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007036" />
-						<string name="selection_group" value="sdkfz251halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="hf" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_german_251_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_251_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038777" />
+						<locstring name="brief_text" value="2451" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
@@ -447,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\german\vehicles\halftrack_sdkfz_251\halftrack_sdkfz_251_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\west_german\vehicles\halftracks\halftrack_sdkfz_251_defiance_pe" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -465,7 +180,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\vehicles_optics" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\251_halftrack_flamethrower_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -484,7 +199,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742180" />
+					<uniqueid name="id" value="1073754536" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -517,10 +232,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742181" />
+							<uniqueid name="id" value="1073754537" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742182" />
+					<uniqueid name="id" value="1073754538" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -605,10 +320,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073745343" />
+							<uniqueid name="id" value="1073754539" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073745344" />
+					<uniqueid name="id" value="1073754540" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -727,7 +442,6 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\german\toggle_ability\radio_setup_251_correct_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -742,7 +456,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="540" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="2455" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="screen_name" value="2465" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -763,11 +477,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742183" />
+										<uniqueid name="id" value="1073754554" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073742184" />
+										<uniqueid name="id" value="1073754555" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -817,18 +531,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073742185" />
+												<uniqueid name="id" value="1073754556" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073742186" />
+												<uniqueid name="id" value="1073754557" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073742187" />
+										<uniqueid name="id" value="1073754558" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -844,11 +558,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742188" />
+										<uniqueid name="id" value="1073754559" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073742189" />
+										<uniqueid name="id" value="1073754560" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -916,17 +630,17 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073742190" />
+												<uniqueid name="id" value="1073754561" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073742191" />
+										<uniqueid name="id" value="1073754562" />
 									</template_reference>
 									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073742192" />
+										<uniqueid name="id" value="1073754563" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -942,11 +656,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742193" />
+										<uniqueid name="id" value="1073754564" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
-										<uniqueid name="id" value="1073742194" />
+										<uniqueid name="id" value="1073754565" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -994,7 +708,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073754553" />
+										<uniqueid name="id" value="1073754566" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -1047,5 +761,5 @@
 			<float name="revert_rate_multiplier" value="4" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="42" />
+	<uniqueid name="pbgid" value="1073741966" />
 </instance>
