@@ -47,13 +47,13 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
+				<float name="near" value="0.8" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="0.25" />
+				<float name="near" value="0.4" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="distance">
 				<float name="far" value="2.25" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="50" />
-			<float name="min" value="50" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.2" />
-				<float name="min" value="3.8" />
+				<float name="max" value="4.4" />
+				<float name="min" value="4.1" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="4.8" />
+			<float name="distance_scatter_max" value="3.6" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
@@ -449,7 +449,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.6" />
+					<float name="damage_multiplier" value="1.25" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

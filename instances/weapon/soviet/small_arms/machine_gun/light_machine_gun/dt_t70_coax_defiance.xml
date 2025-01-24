@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1.375" />
-				<float name="min" value="1.125" />
+				<float name="max" value="1.5" />
+				<float name="min" value="1.25" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.05" />
@@ -152,13 +152,13 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.75" />
-				<float name="min" value="1.25" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.6" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.75" />
+				<float name="near" value="0.7" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.875" />
+				<float name="mid" value="0.85" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="5" />
-			<float name="min" value="5" />
+			<float name="max" value="6" />
+			<float name="min" value="6" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">

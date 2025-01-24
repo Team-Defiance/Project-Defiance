@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="30" />
-			<float name="min" value="30" />
+			<float name="max" value="36" />
+			<float name="min" value="36" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -481,7 +481,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.5" />
+					<float name="damage_multiplier" value="1.25" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
