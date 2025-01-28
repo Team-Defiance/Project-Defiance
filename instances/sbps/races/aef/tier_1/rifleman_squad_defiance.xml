@@ -508,7 +508,7 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_0\veteran_infantry_training_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_3\armored_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -522,7 +522,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.935" />
+									<float name="value" value="0.965" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>
@@ -935,7 +935,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="0.576923" />
+				<float name="cost_percentage" value="0.5" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">

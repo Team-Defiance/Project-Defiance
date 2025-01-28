@@ -1,8 +1,8 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
-			<float name="far" value="0.02" />
+			<float name="near" value="0.065" />
+			<float name="far" value="0.025" />
 			<float name="mid" value="0.045" />
 		</group>
 		<group name="aim">
@@ -369,7 +369,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\076mm_3inch_m10_apcr_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="55" />
+			<float name="max" value="60" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />

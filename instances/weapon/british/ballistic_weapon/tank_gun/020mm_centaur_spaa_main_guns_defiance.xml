@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.085" />
-			<float name="far" value="0.035" />
-			<float name="mid" value="0.06" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.03" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
-				<float name="near" value="1" />
+				<float name="near" value="0.9" />
 				<float name="mid" value="0.375" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.5" />
+				<float name="near" value="0.45" />
 				<float name="mid" value="0.1875" />
 			</group>
 			<group name="distance">
@@ -135,13 +135,13 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="11.25" />
-				<float name="min" value="11.25" />
+				<float name="max" value="12" />
+				<float name="min" value="12" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1.2" />
-				<float name="mid" value="1.1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -416,8 +416,8 @@
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="flak_dense_small" />
-		<string name="fx_tracer_name" value="fx_tracer_20mm" />
-		<float name="fx_tracer_speed" value="120" />
+		<string name="fx_tracer_name" value="" />
+		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -484,7 +484,7 @@
 			<float name="delay_bracket_change_chance" value="0.5" />
 			<float name="distance_bracket_count_air" value="2" />
 			<float name="distance_bracket_count_ground" value="5" />
-			<float name="distance_scatter_max" value="4.4" />
+			<float name="distance_scatter_max" value="4.8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
@@ -536,7 +536,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="90" />
-				<float name="speed_horizontal" value="100" />
+				<float name="speed_horizontal" value="80" />
 				<float name="speed_vertical" value="100" />
 			</group>
 			<float name="pivot_end_time" value="0" />
@@ -549,9 +549,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="20" />
-			<float name="far" value="20" />
-			<float name="mid" value="20" />
+			<float name="near" value="16" />
+			<float name="far" value="16" />
+			<float name="mid" value="16" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

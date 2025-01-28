@@ -979,14 +979,6 @@
 										<enum name="change_target_type" value="entities" />
 										<uniqueid name="id" value="1073753008" />
 									</template_reference>
-									<template_reference name="action" value="action\override_weapon_attributes">
-										<float name="hardpoint" value="1" />
-										<string name="munition_name" value="shell_medium_heat" />
-										<instance_reference name="projectile" value="ebps\projectile\pak40_75mm_vet_mp" />
-										<string name="target_name" value="" />
-										<string name="tracer_name" value="" />
-										<uniqueid name="id" value="1073753009" />
-									</template_reference>
 									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
