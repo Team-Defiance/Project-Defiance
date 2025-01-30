@@ -3,8 +3,8 @@
 		<group name="action_list">
 			<list name="end_self_actions">
 				<template_reference name="action" value="action\force_reload_action">
-					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073754775" />
+					<int name="hardpoint_index" value="3" />
+					<uniqueid name="id" value="1073754815" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="105" />
@@ -18,7 +18,7 @@
 							<float name="duration" value="0" />
 							<bool name="fire_and_forget" value="True" />
 							<bool name="is_terrain_only" value="False" />
-							<uniqueid name="id" value="1073754776" />
+							<uniqueid name="id" value="1073754816" />
 						</template_reference>
 						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="False" />
@@ -26,10 +26,10 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="main_gun_fire_order_regular" />
 							<string name="undo_action_state_name" value="" />
-							<uniqueid name="id" value="1073754777" />
+							<uniqueid name="id" value="1073754817" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754778" />
+					<uniqueid name="id" value="1073754818" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -42,7 +42,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="ability_barrage_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073754779" />
+					<uniqueid name="id" value="1073754819" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -54,9 +54,9 @@
 						<instance_reference name="weapon_03" value="" />
 					</group>
 					<float name="num_salvo" value="30" />
-					<float name="use_hardpoint" value="2" />
+					<float name="use_hardpoint" value="3" />
 					<bool name="face_to_target" value="True" />
-					<uniqueid name="id" value="1073754793" />
+					<uniqueid name="id" value="1073754824" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -65,11 +65,11 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073754794" />
+					<uniqueid name="id" value="1073754821" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073754795" />
+					<uniqueid name="id" value="1073754822" />
 				</template_reference>
 			</list>
 		</group>
@@ -83,7 +83,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -137,13 +137,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11085960" />
-			<locstring name="help_text" value="2489" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="B" />
+			<locstring name="extra_text" value="2490" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="11085959" />
+			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_rp3_he_rocket_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11085958" />
+			<locstring name="screen_name" value="2488" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -157,13 +157,13 @@
 		<list name="requirements">
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_howitzer_barrage" />
 		<float name="ui_reticule_radius_min" value="5.4375" />
-		<float name="ui_reticule_radius_max" value="15" />
+		<float name="ui_reticule_radius_max" value="17.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -189,5 +189,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742327" />
+	<uniqueid name="pbgid" value="1073742330" />
 </instance>
