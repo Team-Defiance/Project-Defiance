@@ -382,7 +382,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="1188" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11051195" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -731,7 +731,7 @@
 						<template_reference name="required" value="requirements\required_structure">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="required_structure_count" value="1" />
 							<bool name="check_team" value="False" />
 							<bool name="require_construction_complete" value="True" />

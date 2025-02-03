@@ -43,7 +43,7 @@
 						<list name="actions">
 							<template_reference name="action" value="action\construct_action">
 								<uniqueid name="id" value="1073747773" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="query_only" value="False" />
 								<bool name="check_visible" value="False" />
 								<bool name="use_target_entity_facing" value="False" />
@@ -161,7 +161,7 @@
 					<template_reference name="required" value="requirements\required_structure">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<int name="required_structure_count" value="1" />
 						<bool name="check_team" value="False" />
 						<bool name="require_construction_complete" value="True" />
@@ -179,13 +179,13 @@
 					<template_reference name="requirement" value="requirements\required_entity">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="1207" mod="84428889d71d41a48e2eff09c2425d54" />
-						<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="entity_type" value="" />
 					</template_reference>
 					<template_reference name="requirement" value="requirements\required_entity">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="1208" mod="84428889d71d41a48e2eff09c2425d54" />
-						<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="entity_type" value="" />
 					</template_reference>
 				</list>
@@ -235,7 +235,7 @@
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="optionally_directional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
