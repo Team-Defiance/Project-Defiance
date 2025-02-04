@@ -22,7 +22,7 @@
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
 					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="6" />
+					<float name="number_of_shots" value="7" />
 					<group name="target_info">
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
@@ -77,12 +77,12 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="80" />
+		<float name="range" value="90" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="free_fire" />
+		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -132,16 +132,32 @@
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
+			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_squad_veterancy">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<float name="veterancy_rank" value="4" />
-					</template_reference>
-				</list>
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\ability\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2536" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="3" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<float name="veterancy_rank" value="4" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

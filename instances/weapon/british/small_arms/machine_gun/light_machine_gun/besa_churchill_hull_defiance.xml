@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="1" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.125" />
+				<float name="min" value="0.125" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.5" />
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="0.75" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.04" />
@@ -199,10 +199,10 @@
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
-				<float name="accuracy_multiplier" value="1.25" />
-				<float name="damage_multiplier" value="1.25" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.5" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -223,10 +223,10 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1.5" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.35" />
@@ -307,9 +307,9 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
-			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1" />
+			<float name="accuracy_multiplier" value="0.45" />
+			<float name="burst_multiplier" value="0.75" />
+			<float name="cooldown_multiplier" value="0.75" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6" />
-				<float name="min" value="4" />
+				<float name="max" value="5.5" />
+				<float name="min" value="4.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
