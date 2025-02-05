@@ -126,14 +126,14 @@
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\items\riflemen_flamethrower" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\items\rear_echelon_rifle_nades_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\items\rear_echelon_rifle_nades_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\commander\items\rear_echelon_smg_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="Icons_weapons_weapon_minesweeper" />
