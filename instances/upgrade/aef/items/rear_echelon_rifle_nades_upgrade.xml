@@ -45,7 +45,7 @@
 			<template_reference name="action" value="action\slot_item_add">
 				<instance_reference name="slot_item" value="slot_item\aef\grenades\m17_rifle_grenade_slot_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073754999" />
+				<uniqueid name="id" value="1073755010" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -63,7 +63,7 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\passive\urban_assault_kits" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\infantry_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -84,5 +84,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741984" />
+	<uniqueid name="pbgid" value="1073741985" />
 </instance>

@@ -45,7 +45,7 @@
 			<template_reference name="action" value="action\slot_item_add">
 				<instance_reference name="slot_item" value="slot_item\minesweeper\minesweeper" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073755000" />
+				<uniqueid name="id" value="1073755011" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_modifiers_action">
 				<float name="duration" value="0" />
@@ -61,7 +61,7 @@
 						<instance_reference name="tooltip" value="modifier_tooltip\detect_specific_camouflage_radius" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073755001" />
+				<uniqueid name="id" value="1073755012" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -147,5 +147,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741985" />
+	<uniqueid name="pbgid" value="1073741986" />
 </instance>
