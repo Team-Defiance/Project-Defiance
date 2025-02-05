@@ -396,6 +396,15 @@
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
+							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+								<enum name="application_type" value="apply_to_ability" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\riflemen_molotov_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.65" />
+								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+							</template_reference>
 						</list>
 						<uniqueid name="id" value="1073749372" />
 					</template_reference>
@@ -661,6 +670,15 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\riflemen_sticky_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.67" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\riflemen_molotov_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749380" />
 									</template_reference>
@@ -878,6 +896,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\mk2_frag_grenade_rifleman_cooked_vet4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\mk2_frag_grenade_rifleman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\riflemen_sticky_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\riflemen_molotov_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -1031,7 +1050,7 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_sandbagwall_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_sandbag_wall_riflemen_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">
