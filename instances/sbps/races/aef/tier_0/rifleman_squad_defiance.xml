@@ -1023,20 +1023,16 @@
 					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
 					<list name="construction_items">
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\fighting_position\fighting_position_riflemen_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\emplacements\riflemen_fighting_position_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\aef_mine_riflemen_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_m5_riflemen_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="12" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_sandbagwall_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="11" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\pm\buildings\defensive_structures\aef_sandbagwall_cover_specialization__construction__" />
-							<int name="ui_position" value="23" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\wg_sandbag_fence__construction__mp" />
-							<int name="ui_position" value="0" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
