@@ -1176,6 +1176,16 @@
 								<string name="abandon_event_name" value="abandon_turret" />
 								<string name="animator_bp_female" value="" />
 							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
+								<string name="animator_bp_female" value="" />
+							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
 						</template_reference>
