@@ -158,7 +158,7 @@
 			<list name="on_construction_actions">
 				<template_reference name="action" value="action\change_ownership">
 					<enum name="change_type" value="neutral" />
-					<uniqueid name="id" value="1073755063" />
+					<uniqueid name="id" value="1073755087" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -174,7 +174,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073755064" />
+					<uniqueid name="id" value="1073755088" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -321,28 +321,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_resource">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="2553" mod="84428889d71d41a48e2eff09c2425d54" />
-					<template_reference name="resource" value="tables\resource_table">
-						<float name="action" value="0" />
-						<float name="command" value="1" />
-						<float name="fuel" value="0" />
-						<float name="manpower" value="0" />
-						<float name="munition" value="0" />
-						<float name="soviet_progression" value="0" />
-						<float name="soviet_227" value="0" />
-						<float name="popcap" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_player_upgrade">
-					<enum name="reason" value="usage_and_display" />
-					<locstring name="ui_name" value="0" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
-					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\infantry_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -419,14 +397,14 @@
 											<bool name="destroy" value="True" />
 											<list name="death_reaction_table">
 											</list>
-											<uniqueid name="id" value="1073755065" />
+											<uniqueid name="id" value="1073755089" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755066" />
+									<uniqueid name="id" value="1073755090" />
 									<bool name="can_prevent_refund" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073755067" />
+							<uniqueid name="id" value="1073755091" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -434,7 +412,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073755068" />
+					<uniqueid name="id" value="1073755092" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -444,5 +422,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742251" />
+	<uniqueid name="pbgid" value="1073742252" />
 </instance>

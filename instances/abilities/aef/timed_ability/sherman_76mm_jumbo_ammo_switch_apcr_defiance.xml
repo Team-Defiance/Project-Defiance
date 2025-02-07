@@ -38,7 +38,7 @@
 			</list>
 		</group>
 		<enum name="activation" value="timed" />
-		<bool name="can_interrupt" value="False" />
+		<bool name="can_interrupt" value="True" />
 		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />

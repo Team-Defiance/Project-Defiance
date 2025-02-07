@@ -118,13 +118,13 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="2178" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_structure">
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\west_german\passive\tier_1_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
 					</template_reference>
 					<template_reference name="requirement" value="requirements\required_player_upgrade">
 						<enum name="reason" value="usage" />
@@ -132,7 +132,7 @@
 						<bool name="is_present" value="True" />
 						<float name="max_completed" value="100" />
 						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\west_german\research\t2_sidetech_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="upgrade_name" value="upgrade\west_german\passive\tier_2_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
 					</template_reference>
 					<template_reference name="requirement" value="requirements\required_player_upgrade">
 						<enum name="reason" value="usage" />
@@ -178,7 +178,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

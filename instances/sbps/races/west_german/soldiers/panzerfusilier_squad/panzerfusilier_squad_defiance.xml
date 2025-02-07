@@ -9,14 +9,14 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="1050" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="1048" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="1049" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="Q" />
 						<icon name="icon_name" value="Icons_units_unit_west_german_panzerfusilier" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051451" />
+						<locstring name="screen_name" value="2567" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="panzerfuzilier" />
 						<group name="speaker_generic">
 							<string name="code_1" value="pf" />
@@ -272,15 +272,6 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
@@ -399,15 +390,6 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
@@ -425,6 +407,15 @@
 									<enum name="usage_type" value="multiplication" />
 									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.9" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073749933" />
@@ -1109,8 +1100,9 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\fusilier_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\panzer_elite_combined_arms_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\panzer_elite_fusilier_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzerfusiliers_flare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -1237,7 +1229,7 @@
 							<int name="ui_position" value="33" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\german_sandbag_fence__construction__" />
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\field_defenses\sandbag_wall_fuesiliere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="11" />
 						</group>
 					</list>

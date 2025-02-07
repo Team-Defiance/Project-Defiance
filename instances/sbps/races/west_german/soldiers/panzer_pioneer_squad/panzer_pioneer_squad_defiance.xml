@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="1052" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="1051" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="1053" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="S" />
 						<icon name="icon_name" value="Icons_units_unit_west_german_sturmpioneers" />
 						<bool name="minimap_team_only" value="False" />
@@ -298,15 +298,6 @@
 									<enum name="usage_type" value="multiplication" />
 									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.9" />
-									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073749937" />
@@ -964,15 +955,6 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\construction_rate">
-												<enum name="application_type" value="apply_to_squad" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.118034" />
-												<instance_reference name="tooltip" value="modifier_tooltip\construction_rate" />
-											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
@@ -981,6 +963,15 @@
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\m44_incendiary_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="3" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073747058" />
@@ -1012,6 +1003,15 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\construction_rate">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\construction_rate" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073751404" />
 									</template_reference>
@@ -1032,7 +1032,7 @@
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\pioneer_fuel_munitions_salvage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m44_incendiary_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzer_pioneer_drop_medcrates_aoe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\panzer_elite_combined_arms_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_pioneer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzer_pioneer_wirecutter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
@@ -1187,10 +1187,6 @@
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\german\buildings\observation_post\fuel_post_german_mp" />
 							<int name="ui_position" value="32" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\2cm_flak_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\german\buildings\observation_post\munition_post_german_mp" />
