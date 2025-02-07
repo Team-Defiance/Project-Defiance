@@ -493,7 +493,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="ballistic" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="mid" value="145" />

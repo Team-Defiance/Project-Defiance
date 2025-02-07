@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.25" />
-			<float name="far" value="0.05" />
-			<float name="mid" value="0.15" />
+			<float name="near" value="0.16" />
+			<float name="far" value="0.04" />
+			<float name="mid" value="0.1" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,20 +43,20 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.5" />
+				<float name="radius" value="2" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.15" />
+				<float name="far" value="0.1" />
 				<float name="near" value="1" />
 				<float name="mid" value="0.375" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.05" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.1875" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1.4" />
+				<float name="far" value="1.5" />
 				<float name="near" value="0.2" />
 				<float name="mid" value="0.7" />
 			</group>
@@ -152,13 +152,13 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="0.1" />
-				<float name="min" value="0.1" />
+				<float name="max" value="0.125" />
+				<float name="min" value="0.125" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.1" />
+				<float name="near" value="1" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.55" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -355,7 +355,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="flak_dense_small" />
 		<string name="fx_tracer_name" value="" />
-		<float name="fx_tracer_speed" value="120" />
+		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -388,7 +388,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\flak_shell_20mm_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\020mm_flak38_shell_he" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="47.5" />
@@ -401,17 +401,17 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4" />
-				<float name="min" value="3.75" />
+				<float name="max" value="3.5" />
+				<float name="min" value="3.3" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
+				<float name="near" value="0.8" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="9" />
-				<float name="min" value="9" />
+				<float name="max" value="7" />
+				<float name="min" value="7" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
@@ -448,8 +448,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.8" />
-			<float name="nearby_suppression_radius" value="15" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
+			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
@@ -462,7 +462,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.004" />
+			<float name="amount" value="0.0025" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -474,7 +474,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="90" />
-				<float name="speed_horizontal" value="90" />
+				<float name="speed_horizontal" value="75" />
 				<float name="speed_vertical" value="60" />
 			</group>
 			<float name="pivot_end_time" value="0" />

@@ -41,11 +41,6 @@
 					<instance_reference name="upgrade" value="upgrade\west_german\ability_lock_out\ability_lock_out_sws_truck" />
 					<uniqueid name="id" value="1073747807" />
 				</template_reference>
-				<template_reference name="action" value="action\upgrade_remove">
-					<bool name="apply_to_entities_in_squad" value="False" />
-					<instance_reference name="upgrade" value="upgrade\west_german\research\panzer_authorization_upgrade_mp" />
-					<uniqueid name="id" value="1073747808" />
-				</template_reference>
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
