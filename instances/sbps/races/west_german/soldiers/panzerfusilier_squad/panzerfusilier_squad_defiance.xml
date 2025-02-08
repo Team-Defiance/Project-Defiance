@@ -1228,10 +1228,6 @@
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
 							<int name="ui_position" value="33" />
 						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\field_defenses\sandbag_wall_fuesiliere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="11" />
-						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_grenadier" />
 				</group>

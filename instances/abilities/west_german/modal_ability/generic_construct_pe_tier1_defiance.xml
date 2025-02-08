@@ -9,7 +9,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\sequence_action">
-					<uniqueid name="id" value="1073747695" />
+					<uniqueid name="id" value="1073747759" />
 					<list name="action_list_sequences">
 						<list name="actions">
 							<template_reference name="action" value="action\move_action">
@@ -17,7 +17,7 @@
 								<float name="offset_angle" value="-1" />
 								<float name="offset_distance" value="5" />
 								<float name="radius" value="0.5" />
-								<uniqueid name="id" value="1073747696" />
+								<uniqueid name="id" value="1073747760" />
 								<bool name="stop_on_arrival" value="True" />
 								<float name="min_range" value="0" />
 								<enum name="progress_write_name" value="" />
@@ -29,8 +29,8 @@
 						</list>
 						<list name="actions">
 							<template_reference name="action" value="action\construct_action">
-								<uniqueid name="id" value="1073747697" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\reserve_tier1_hq_defiance_unused" mod="84428889d71d41a48e2eff09c2425d54" />
+								<uniqueid name="id" value="1073747761" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="query_only" value="False" />
 								<bool name="check_visible" value="False" />
 								<bool name="use_target_entity_facing" value="False" />
@@ -43,11 +43,11 @@
 										<bool name="destroy" value="True" />
 										<list name="death_reaction_table">
 										</list>
-										<uniqueid name="id" value="1073747698" />
+										<uniqueid name="id" value="1073747762" />
 									</template_reference>
 								</list>
 								<enum name="change_target_type" value="self" />
-								<uniqueid name="id" value="1073747699" />
+								<uniqueid name="id" value="1073747763" />
 							</template_reference>
 						</list>
 					</list>
@@ -123,15 +123,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="1032" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1031" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="1184" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1018" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_buildings_building_west_german_mechanized_regiment_hq" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1028" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="1019" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="1033" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="1031" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -141,8 +141,22 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+				</list>
+			</template_reference>
 			<template_reference name="required" value="requirements\required_interactive_stage">
-				<locstring name="ui_name" value="11071180" />
+				<locstring name="ui_name" value="0" />
 				<enum name="reason" value="usage" />
 			</template_reference>
 		</list>
@@ -178,7 +192,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11071374" />
+				<locstring name="ui_name" value="0" />
 				<list name="requirement_table">
 					<template_reference name="required" value="requirements\required_sector_type">
 						<enum name="reason" value="usage" />
@@ -190,12 +204,12 @@
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="optionally_directional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\reserve_tier1_hq_defiance_unused" mod="84428889d71d41a48e2eff09c2425d54" />
+		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742028" />
+	<uniqueid name="pbgid" value="1073742031" />
 </instance>
