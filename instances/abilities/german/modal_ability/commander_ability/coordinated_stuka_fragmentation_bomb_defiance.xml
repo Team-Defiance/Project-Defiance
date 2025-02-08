@@ -38,14 +38,14 @@
 								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
-								<float name="target_lead_out_distance" value="10" />
-								<float name="target_lead_in_distance" value="8" />
+								<float name="target_lead_out_distance" value="15" />
+								<float name="target_lead_in_distance" value="15" />
 								<int name="attacks_per_aircraft" value="1" />
-								<float name="delay_between_attack" value="30" />
-								<float name="attack_sway_width" value="2" />
+								<float name="delay_between_attack" value="1" />
+								<float name="attack_sway_width" value="1" />
 								<float name="attack_sway_frequency" value="1" />
-								<float name="target_attack_distance" value="200" />
-								<float name="target_attack_time_sec" value="3" />
+								<float name="target_attack_distance" value="150" />
+								<float name="target_attack_time_sec" value="2.125" />
 								<float name="initial_attack_delay" value="0" />
 							</group>
 							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
@@ -96,7 +96,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="80" />
+			<float name="munition" value="100" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -121,7 +121,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="40" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="100" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -154,7 +154,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11039124" />
+			<locstring name="extra_text" value="2573" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2570" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="Z" />
 			<icon name="icon_name" value="Icons_commander_cmdr_german_fragmentation_bomb" />
@@ -208,8 +208,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_sweep_attack" />
-		<float name="ui_reticule_radius_min" value="6" />
-		<float name="ui_reticule_radius_max" value="12" />
+		<float name="ui_reticule_radius_min" value="7" />
+		<float name="ui_reticule_radius_max" value="13" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
