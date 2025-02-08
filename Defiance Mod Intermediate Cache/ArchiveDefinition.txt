@@ -187,6 +187,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\ability_5_early_warning.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\overwatch_doctrine_selection.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\passive_ambush_camouflage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\05_stuka_smoke_bombs_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\ability_1_stormtrooper_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\ability_2_emergency_airdrop.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\ability_3_tiger_1_defiance.rgd
@@ -248,7 +249,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\artillery_105mm.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_smoke_bombs_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\coordinated_stuka_strafe_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_at_rifle_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_at_rifle_grenade_vet2.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_at_rifle_grenade_vet4.rgd
@@ -887,6 +888,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\sdkfz_142\sdkfz_142_2_stuh42_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\sdkfz_142\stug_iii_g_sdkfz_142_1_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\stuka_aircraft\cargo_plane_emergency_airdrop_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\stuka_aircraft\stuka_fragementation_bomb_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\stuka_aircraft\stuka_smoke_bomb_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\vehicles\tiger_sdkfz_181\tiger_1_181_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\buildings\base_building\barracks_mp.rgd
@@ -1073,6 +1075,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\panzer_iv_squad\stupa_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\stug_iii_squad\stug_iii_142_1_squad.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\stuka\cargo_plane_emergency_airdrop_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\stuka\stuka_ground_fragmentation_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\stuka\stuka_smoke_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\tiger_squad\tiger_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\soviet\commander\counterattack\su_100_squad_defiance.rgd
@@ -1517,6 +1520,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_flame_rockets.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_heat_rockets.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_rockets_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\light_artillery\stuka_ab23_fragmentation_bomb_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\light_artillery\tiger_smoke_drop.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_barrage_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_defiance.rgd
