@@ -49,12 +49,12 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="40" />
+		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="20" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="brit_officer_arty" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="True" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
