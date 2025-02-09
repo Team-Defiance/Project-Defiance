@@ -14,13 +14,13 @@
 							<enum name="application_type" value="apply_to_weapon" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_05" />
+							<string name="target_type_name" value="hardpoint_03" />
 							<enum name="usage_type" value="enable" />
 							<float name="value" value="1" />
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753185" />
+					<uniqueid name="id" value="1073755240" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -110,12 +110,12 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2605" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="2" />
+				<locstring name="ui_name" value="2588" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
@@ -147,5 +147,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742248" />
+	<uniqueid name="pbgid" value="1073742362" />
 </instance>
