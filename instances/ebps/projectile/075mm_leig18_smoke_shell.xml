@@ -17,9 +17,9 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="tp_light" />
+				<enum name="cover_type" value="" />
 				<group name="deformation">
-					<string name="deform_decal_file" value="offmap_artillery_crater" />
+					<string name="deform_decal_file" value="" />
 					<bool name="limited" value="True" />
 					<bool name="random_rotation" value="True" />
 					<float name="rotation" value="0" />
@@ -89,11 +89,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.00075" />
+					<float name="vertical_scale" value="0.0015" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="2" />
-				<float name="radius_min" value="1" />
+				<float name="radius_max" value="0" />
+				<float name="radius_min" value="0" />
 				<float name="splat_only_splat_seconds" value="180" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -163,6 +163,66 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="45" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_cloud_mortar" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073755168" />
+					<template_reference name="spawn_attached_option" value="options\none">
+					</template_reference>
+					<list name="spawned_entity_actions">
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="12" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_shot_block" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073755169" />
+					<template_reference name="spawn_attached_option" value="options\none">
+					</template_reference>
+					<list name="spawned_entity_actions">
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="20" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_mortar_los_block" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073755170" />
+					<template_reference name="spawn_attached_option" value="options\none">
+					</template_reference>
+					<list name="spawned_entity_actions">
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
@@ -191,7 +251,7 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="1000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="35" />
+			<float name="speed" value="25" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -202,10 +262,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073743760" />
+					<uniqueid name="id" value="1073755171" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741863" />
+	<uniqueid name="pbgid" value="1073742255" />
 </instance>
