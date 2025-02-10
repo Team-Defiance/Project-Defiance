@@ -32,6 +32,25 @@
 					</list>
 					<uniqueid name="id" value="1073750562" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="6" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\kicker_message_action">
+							<float name="loop_interval" value="0.3" />
+							<locstring name="message" value="2612" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="message_colour_a" value="255" />
+							<float name="message_colour_b" value="255" />
+							<float name="message_colour_g" value="255" />
+							<float name="message_colour_r" value="255" />
+							<float name="message_duration" value="1" />
+							<bool name="team_only" value="False" />
+							<bool name="check_fow" value="True" />
+							<uniqueid name="id" value="1073755269" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073755270" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>

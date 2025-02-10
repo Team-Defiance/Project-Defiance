@@ -2,7 +2,7 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.8" />
-			<float name="far" value="0.65" />
+			<float name="far" value="0.75" />
 			<float name="mid" value="0.725" />
 		</group>
 		<group name="aim">
@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.125" />
-				<float name="min" value="0.875" />
+				<float name="max" value="1" />
+				<float name="min" value="0.75" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.1" />
