@@ -554,7 +554,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -1014,7 +1014,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="5.2" />
+			<float name="speed_max" value="5.3" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0" />
@@ -1063,6 +1063,16 @@
 								<string name="sync_action_name" value="Attach_Gunner" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_turret" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>

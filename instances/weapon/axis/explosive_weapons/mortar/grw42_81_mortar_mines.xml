@@ -424,9 +424,9 @@
 				<float name="speed_horizontal" value="180" />
 				<float name="speed_vertical" value="180" />
 			</group>
-			<float name="pivot_end_time" value="2" />
-			<bool name="pivot_only" value="True" />
-			<float name="pivot_start_time" value="2" />
+			<float name="pivot_end_time" value="0" />
+			<bool name="pivot_only" value="False" />
+			<float name="pivot_start_time" value="0" />
 			<float name="fire_cone_angle_vert" value="2" />
 		</group>
 		<locstring name="ui_name" value="0" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="35" />
-			<float name="far" value="35" />
-			<float name="mid" value="35" />
+			<float name="near" value="60" />
+			<float name="far" value="60" />
+			<float name="mid" value="60" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -445,6 +445,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="0.5" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073741884" />

@@ -266,10 +266,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Allows for the production of the Pak 40, GrW 34 Mortar, Sniper and 251 Halftrack" />
+			<string name="extra_text_deprecated" value="Allows for the production of the MG42 HMG, Sniper, and GrW 42 Mortar" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="32" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2585" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_buildings_building_german_bereich_festung" />
 			<enum name="kill_type" value="building" />
@@ -529,7 +529,7 @@
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
@@ -541,13 +541,13 @@
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\ger_sniper\ger_sniper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\doctrine\festung\ostruppen_squad\ostruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />

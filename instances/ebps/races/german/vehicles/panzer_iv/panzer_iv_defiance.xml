@@ -650,7 +650,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -833,7 +833,7 @@
 								<float name="z" value="0.85" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_coax_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -854,7 +854,7 @@
 								<float name="z" value="1.652" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\light_machine_gun\mg34_hull_f1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -1176,6 +1176,16 @@
 								<string name="abandon_event_name" value="abandon_turret" />
 								<string name="animator_bp_female" value="" />
 							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
+								<string name="animator_bp_female" value="" />
+							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
 						</template_reference>
@@ -1302,7 +1312,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\panzer_top_gunner_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\p4_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\items\p4_skirts_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>

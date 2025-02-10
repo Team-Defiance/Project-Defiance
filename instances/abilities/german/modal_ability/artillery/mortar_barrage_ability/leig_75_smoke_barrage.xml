@@ -125,14 +125,25 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<float name="veterancy_rank" value="4" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
-		<float name="ui_reticule_radius_min" value="3" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
+		<float name="ui_reticule_radius_min" value="4.5" />
 		<float name="ui_reticule_radius_max" value="9" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />

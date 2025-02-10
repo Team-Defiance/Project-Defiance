@@ -164,7 +164,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="600" />
+			<float name="hitpoints" value="560" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -444,7 +444,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />

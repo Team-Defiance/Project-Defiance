@@ -446,7 +446,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="" />
 														<enum name="usage_type" value="addition" />
-														<float name="value" value="10" />
+														<float name="value" value="5" />
 														<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 													</template_reference>
 												</list>
@@ -471,6 +471,22 @@
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749472" />
+									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\vehicle_repair_rate_modifier">
+												<enum name="application_type" value="apply_to_entity_type" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+												<instance_reference name="tooltip" value="modifier_tooltip\vehicle_repair_rate_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073754833" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -589,6 +605,15 @@
 														<float name="value" value="1.2" />
 														<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 													</template_reference>
+													<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_01" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="0.9" />
+														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073749476" />
 											</template_reference>
@@ -664,7 +689,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_m20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_m20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -673,7 +698,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\modal_ability\m8_greyhound_damage_engine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\greyhound_infantry_awareness_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -688,7 +713,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\aef\modal_ability\m8_greyhound_damage_engine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\greyhound_infantry_awareness_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="-10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
@@ -702,21 +727,28 @@
 														<float name="value" value="-10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 													</template_reference>
-													<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
-														<enum name="application_type" value="apply_to_ability" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_m20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-														<enum name="usage_type" value="addition" />
-														<float name="value" value="-10" />
-														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
-													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073750695" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="self" />
 										<uniqueid name="id" value="1073750694" />
+									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073754907" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -732,6 +764,31 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\greyhound_infantry_awareness_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073754908" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>

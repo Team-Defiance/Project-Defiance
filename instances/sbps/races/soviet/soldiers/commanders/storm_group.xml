@@ -161,7 +161,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<float name="num" value="5" />
+					<float name="num" value="4" />
 					<instance_reference name="type" value="ebps\races\soviet\soldiers\storm_group\storm_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
@@ -196,6 +196,7 @@
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\soviet\items\ppsh_41_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\soviet\items\dpm_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -596,6 +597,36 @@
 					<instance_reference name="slot_item" value="slot_item\soviet\small_arms\as_46_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="permanent" value="True" />
 					<uniqueid name="id" value="1073752849" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\items\ppsh_41_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\add_to_squad_loadout_action">
+							<uniqueid name="id" value="1073754825" />
+							<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\storm_group\storm_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="count" value="1" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073754826" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -1127,15 +1158,11 @@
 					<list name="construction_items">
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
-							<int name="ui_position" value="21" />
+							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\rocket_trap" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="14" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\tanktrap_shock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\reinforced_barbed_wire_fence_mp" />
@@ -1143,7 +1170,7 @@
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\soviet_incendiary_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="13" />
+							<int name="ui_position" value="12" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_commander" />

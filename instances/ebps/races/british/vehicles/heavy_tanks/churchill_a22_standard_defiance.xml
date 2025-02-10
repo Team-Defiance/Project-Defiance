@@ -290,7 +290,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -458,7 +458,7 @@
 								<float name="z" value="0.1" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_mk7_coaxial_vehicle_turret_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_churchill_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -479,7 +479,7 @@
 								<float name="z" value="2.45" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_mk7_vehicle_hull_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_churchill_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

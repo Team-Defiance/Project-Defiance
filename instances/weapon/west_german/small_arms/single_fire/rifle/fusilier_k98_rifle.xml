@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.75" />
-			<float name="far" value="0.55" />
-			<float name="mid" value="0.65" />
+			<float name="far" value="0.6" />
+			<float name="mid" value="0.675" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -152,12 +152,12 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.375" />
-				<float name="min" value="1.125" />
+				<float name="max" value="1" />
+				<float name="min" value="0.75" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.2" />
-				<float name="far" value="2" />
+				<float name="far" value="1.5" />
 				<float name="mid" value="1" />
 			</group>
 		</group>
@@ -302,14 +302,14 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="kar98_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.6" />
 			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1.5" />
+			<float name="cooldown_multiplier" value="1.25" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -357,7 +357,7 @@
 				<float name="near" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="4" />
+				<float name="max" value="5" />
 				<float name="min" value="4" />
 			</group>
 			<list name="on_reload_actions">

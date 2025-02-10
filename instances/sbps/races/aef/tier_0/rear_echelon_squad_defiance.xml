@@ -156,7 +156,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
-			<float name="num_slots" value="2" />
+			<float name="num_slots" value="5" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
@@ -180,10 +180,11 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\aef\items\re_minesweeper_upgrade_mp" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\re_minesweeper_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\pm\american\specializations\troop_support\troop_support_medics_upg" />
 				<instance_reference name="upgrade" value="upgrade\aef\items\riflemen_flamethrower" />
-				<instance_reference name="upgrade" value="upgrade\aef\items\rear_echelon_grenade_launcher_commander_mp" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\rear_echelon_rifle_nades_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\commander\items\rear_echelon_smg_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -848,6 +849,22 @@
 										</list>
 										<uniqueid name="id" value="1073751272" />
 									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755123" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>
@@ -878,6 +895,22 @@
 										</list>
 										<uniqueid name="id" value="1073750673" />
 									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755124" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>
@@ -895,6 +928,8 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\rear_echelon\m23_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\rear_echelon\m7_throw_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\rear_echelon_cutters_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\critical_repair_re_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\m16_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

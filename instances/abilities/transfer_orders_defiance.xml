@@ -6,6 +6,29 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="60" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="60" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\income_manpower_player_modifier">
+									<enum name="application_type" value="apply_to_player" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="0.104125" />
+									<instance_reference name="tooltip" value="modifier_tooltip\income_manpower_player_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073754968" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073754967" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\change_target_action">
@@ -217,7 +240,7 @@
 		<float name="move_back_distance" value="5" />
 		<float name="range" value="9999" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="5" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -257,10 +280,10 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="1740" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1739" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="2523" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2524" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_buildings_building_common_enemy_intel" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_transfer_orders" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="11071454" />

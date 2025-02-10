@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\105mm_stuh_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="50" />
+			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="8.8" />
-				<float name="min" value="8.5" />
+				<float name="max" value="8.9" />
+				<float name="min" value="8.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="6.5" />
+			<float name="angle_scatter" value="13" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -431,7 +431,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="big_explosive" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="near" value="70" />

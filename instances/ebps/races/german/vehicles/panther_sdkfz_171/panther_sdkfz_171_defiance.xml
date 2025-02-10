@@ -641,7 +641,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="16" />
+			<float name="personnel_pop" value="17" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -651,7 +651,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -1181,6 +1181,16 @@
 								<string name="sync_action_name" value="Attach_Gunner" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_turret" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>

@@ -110,7 +110,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="145" />
+					<float name="fuel" value="130" />
 					<float name="manpower" value="400" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -142,7 +142,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_kv-1" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="200" />
+			<float name="armor" value="205" />
 			<float name="rear_armor" value="155" />
 			<float name="target_size" value="22" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -380,7 +380,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />

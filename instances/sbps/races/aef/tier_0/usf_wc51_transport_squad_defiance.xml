@@ -10,7 +10,7 @@
 						<locstring name="extra_text" value="1625" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="1624" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="R" />
+						<string name="hotkey_name" value="J" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_aef_wc51_50cal" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
@@ -575,7 +575,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.7" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_wc51_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_wc51_defiance_unused" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -608,6 +608,22 @@
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749367" />
+									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\vehicle_repair_rate_modifier">
+												<enum name="application_type" value="apply_to_entity_type" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.33" />
+												<instance_reference name="tooltip" value="modifier_tooltip\vehicle_repair_rate_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073754827" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -650,6 +666,22 @@
 										</list>
 										<uniqueid name="id" value="1073750680" />
 									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755125" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
@@ -686,6 +718,22 @@
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073750681" />
+									</template_reference>
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755126" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

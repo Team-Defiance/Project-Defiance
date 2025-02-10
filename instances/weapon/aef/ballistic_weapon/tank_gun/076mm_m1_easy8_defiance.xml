@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.5" />
+				<float name="radius" value="1.75" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -431,7 +431,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="ballistic" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="mid" value="215" />

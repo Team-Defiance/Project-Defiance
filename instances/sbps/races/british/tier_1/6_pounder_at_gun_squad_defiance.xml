@@ -833,7 +833,7 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1280" />
+								<float name="experience_value" value="1080" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11090138" />
 								<bool name="single_player_only" value="False" />
@@ -867,7 +867,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2560" />
+								<float name="experience_value" value="2160" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11047289" />
 								<bool name="single_player_only" value="False" />
@@ -939,7 +939,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="5120" />
+								<float name="experience_value" value="4320" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11090143" />
 								<bool name="single_player_only" value="False" />
@@ -979,14 +979,6 @@
 										<enum name="change_target_type" value="entities" />
 										<uniqueid name="id" value="1073753008" />
 									</template_reference>
-									<template_reference name="action" value="action\override_weapon_attributes">
-										<float name="hardpoint" value="1" />
-										<string name="munition_name" value="shell_medium_heat" />
-										<instance_reference name="projectile" value="ebps\projectile\pak40_75mm_vet_mp" />
-										<string name="target_name" value="" />
-										<string name="tracer_name" value="" />
-										<uniqueid name="id" value="1073753009" />
-									</template_reference>
 									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
@@ -1012,6 +1004,66 @@
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
 										<uniqueid name="id" value="1073753012" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="6480" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755148" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="8640" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073755149" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

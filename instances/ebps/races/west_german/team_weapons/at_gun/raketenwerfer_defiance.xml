@@ -30,7 +30,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="60" />
+					<float name="manpower" value="90" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -63,7 +63,7 @@
 			</list>
 			<float name="armor" value="70" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="10" />
+			<float name="target_size" value="16" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -632,22 +632,13 @@
 							<float name="duration" value="0.125" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="50" />
-									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.5" />
+									<float name="value" value="1.25" />
 									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 							</list>
@@ -795,7 +786,7 @@
 						<list name="recrew_penalties_list">
 						</list>
 						<float name="abandon_animation_seconds" value="0" />
-						<int name="recrew_max_squad_size" value="4" />
+						<int name="recrew_max_squad_size" value="5" />
 						<bool name="abandoned_allows_pass_through" value="False" />
 						<list name="apply_to_driver_action">
 						</list>

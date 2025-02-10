@@ -127,7 +127,7 @@
 				<float name="min" value="0.75" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.02" />
+				<float name="accuracy_multiplier" value="1.04" />
 				<group name="search_radius">
 					<float name="far" value="10" />
 					<float name="near" value="6" />
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="pintle_mg42_tracer" />
-		<float name="fx_tracer_speed" value="220" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />

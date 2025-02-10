@@ -20,6 +20,7 @@
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\accessory_weapons\stug_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\stug_vehicle_tracking_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\stug_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -380,7 +381,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_stug_iii_g_sdkfz_141_1_gameplay" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="155" />
+			<float name="armor" value="150" />
 			<float name="rear_armor" value="85" />
 			<float name="target_size" value="17" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -618,7 +619,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -773,6 +774,27 @@
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="-1" />
 					<list name="weapon_table">
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="4" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0.212" />
+								<float name="y" value="1.867" />
+								<float name="z" value="0.296" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_stuk40_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>

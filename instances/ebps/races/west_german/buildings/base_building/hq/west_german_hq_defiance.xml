@@ -132,6 +132,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\transfer_orders_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\tiger_pe_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -243,7 +244,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="1191" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11051192" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -545,7 +546,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -553,7 +554,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -591,7 +592,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -599,7 +600,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -637,7 +638,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -645,7 +646,7 @@
 								<template_reference name="requirement" value="requirements\required_structure">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<int name="required_structure_count" value="1" />
 									<bool name="check_team" value="False" />
 									<bool name="require_construction_complete" value="True" />
@@ -716,19 +717,19 @@
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\west_german\soldiers\panzer_pioneer_squad\panzer_pioneer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\west_german\soldiers\panzerfusilier_squad\panzerfusilier_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\mg34_hmg_squad\mg34_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
@@ -740,6 +741,12 @@
 					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\west_german\vehicles\sws_halftrack_squad\sws_halftrack_generic_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
+				<group name="spawn_item">
+					<int name="ui_position" value="22" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_ir_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>

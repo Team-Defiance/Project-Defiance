@@ -1,9 +1,9 @@
 <instance description="rifle for ostruppen.&#xA;Multiplayer Clone." template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.775" />
-			<float name="far" value="0.545" />
-			<float name="mid" value="0.7" />
+			<float name="near" value="0.8" />
+			<float name="far" value="0.675" />
+			<float name="mid" value="0.725" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -152,11 +152,11 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.125" />
-				<float name="min" value="0.875" />
+				<float name="max" value="1" />
+				<float name="min" value="0.75" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.125" />
+				<float name="near" value="0.1" />
 				<float name="far" value="1.5" />
 				<float name="mid" value="1" />
 			</group>
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="kar98_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
