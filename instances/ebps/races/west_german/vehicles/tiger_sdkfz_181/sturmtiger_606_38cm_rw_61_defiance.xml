@@ -141,22 +141,6 @@
 							</enum_table>
 							<enum name="apply_on" value="penetrate" />
 						</group>
-						<group name="info">
-							<float name="weight" value="25" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="False" />
-								<bool name="small_explosive" value="False" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_abandon_sturmtiger" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
 					</list>
 				</group>
 				<group name="critical_group">
@@ -194,22 +178,6 @@
 							</enum_table>
 							<enum name="apply_on" value="penetrate" />
 						</group>
-						<group name="info">
-							<float name="weight" value="25" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="False" />
-								<bool name="small_explosive" value="False" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_abandon_sturmtiger" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
 					</list>
 				</group>
 				<group name="critical_group">
@@ -243,22 +211,6 @@
 							<instance_reference name="critical" value="critical\_no_critical_rear" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="False" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="4" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_kill_top_gunner_hardpoint_2" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
 							</enum_table>
 							<enum name="apply_on" value="penetrate" />
@@ -534,7 +486,7 @@
 								<float name="z" value="1.85" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\mg42_hull_mounted_sturmtiger_mp" />
+							<instance_reference name="weapon" value="weapon\west_german\small_arms\machine_gun\light_machine_gun\mg34_sturmtiger" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="True" />
