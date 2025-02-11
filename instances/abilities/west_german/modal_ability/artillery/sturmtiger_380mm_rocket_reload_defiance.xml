@@ -151,7 +151,7 @@
 							<uniqueid name="id" value="1073755211" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="49" />
+							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
 								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
@@ -201,7 +201,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="39" />
+									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
 										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
