@@ -673,11 +673,11 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="11049314" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_tiger_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_tiger_okw" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
-			<bool name="skin_pack_override" value="False" />
+			<bool name="skin_pack_override" value="True" />
 			<string name="skin_summer" value="german_0012_summer" />
 			<string name="skin_winter" value="german_0012_winter" />
 		</template_reference>
