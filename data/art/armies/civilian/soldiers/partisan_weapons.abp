@@ -1,0 +1,22 @@
+model =
+{
+	--"..\\..\\german\\weapons\\granatwerfer_34_sync\\granatwerfer_34_sync",
+	"..\\..\\soviet\\weapons\\mortar_82mm_pm41_sync\\mortar_82mm_pm41_sync",
+	"..\\..\\german\\weapons\\rifle_kar98\\rifle_kar98",
+	"..\\..\\german\\weapons\\smg_mp40\\smg_mp40",
+	"..\\..\\soviet\\weapons\\rifle_mosin_nagant\\rifle_mosin_nagant",
+	"..\\..\\soviet\\weapons\\rifle_mosin_nagant_sniper\\rifle_mosin_nagant_sniper",
+	"..\\..\\soviet\\weapons\\lmg_dp28\\lmg_dp28",
+	"..\\..\\soviet\\weapons\\rifle_ptrs41\\rifle_ptrs41",
+	"..\\..\\soviet\\weapons\\smg_ppsh41\\smg_ppsh41",
+	"..\\..\\soviet\\weapons\\rifle_svt40\\rifle_svt40",
+	"..\\..\\british\\weapons\\smg_mk2_sten\\smg_mk2_sten",
+	"..\\..\\soviet\\props\\demolitions\\demolitions",
+		
+}
+
+-- Intermediate ABP
+simvis_attributes =
+{
+	Intermediate_Model = 1
+}
