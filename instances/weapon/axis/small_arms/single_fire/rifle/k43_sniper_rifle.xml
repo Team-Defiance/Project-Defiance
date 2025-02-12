@@ -18,7 +18,7 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.125" />
-				<float name="far" value="2" />
+				<float name="far" value="1" />
 				<float name="mid" value="1" />
 			</group>
 		</group>
@@ -156,7 +156,7 @@
 				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.25" />
+				<float name="near" value="0.125" />
 				<float name="far" value="1" />
 				<float name="mid" value="1" />
 			</group>

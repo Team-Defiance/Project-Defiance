@@ -927,6 +927,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\commissar\commissar_officer_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\guards\guards_rifle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\partisans\partisans_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\partisans\partisans_mosin_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\saperi\sapper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\shtrafniki\penal_soldier.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\sniper\sov_sniper_defiance.rgd
@@ -1236,11 +1237,13 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\dpm_stormgroup_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\dshk38_pintle_is2_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\dshk38_pintle_isu_152_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\mp40_partisan_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\ppsh41_partisan_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\ppsh41_sapper_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\ppsh41_stormgroup_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\ppsh41_strelki_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\ppsh41_strelki_reserve_item.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\sten_partisan_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\svs39_guards_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\svs39_strelki_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\ballistic_weapons\p4_rocket_icon_dummy.rgd
@@ -1366,12 +1369,12 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\mobilize_reserves_strelki.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\penal_arsonist_package.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\penal_at_package.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\ppsh_41_partisans.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\ppsh_41_sappers.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\ppsh_41_stormgroup.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\ppsh_41_strelki.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\shockarmy_50_sappers.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\shockarmy_svs39_strelki.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\smg_package_partisans.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\sniper_ptrs_pu.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\items\t34_add_on_armor.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\soviet\research\commander_choice_1.rgd
@@ -1722,11 +1725,14 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\light_machine_gun\m1919_30_m3a1.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\as_46_guards_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\as_46_stormgroup_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\mp40_partisans_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_partisan_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_sapper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_stormgroup_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_strelki_counterattack_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_strelki_reserve_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\machine_gun\sub_machine_gun\sten_partisans_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\single_fire\rifle\k98_partisans_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\single_fire\rifle\mosin_conscripts_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\single_fire\rifle\mosin_crew_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\soviet\small_arms\single_fire\rifle\mosin_guards_defiance.rgd
