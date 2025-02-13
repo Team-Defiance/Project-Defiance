@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.75" />
-				<float name="min" value="1.5" />
+				<float name="max" value="1.625" />
+				<float name="min" value="1.375" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.75" />
@@ -357,8 +357,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="8" />
-				<float name="min" value="7" />
+				<float name="max" value="10" />
+				<float name="min" value="8" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
