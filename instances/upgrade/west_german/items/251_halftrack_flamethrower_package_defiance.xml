@@ -178,6 +178,13 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t2_sidetech_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\251_halftrack_ambulance_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="False" />
+			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="Icons_weapons_tank_flamethrower" />
 		<locstring name="ui_squad_name_override" value="0" />

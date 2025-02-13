@@ -88,7 +88,7 @@
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="False" />
+		<bool name="disable_combat" value="True" />
 		<bool name="disable_when_active" value="True" />
 		<float name="duration_time" value="10" />
 		<bool name="enable_in_building" value="False" />
@@ -159,6 +159,13 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="2463" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="veterancy_rank" value="1" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\251_halftrack_ambulance_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="False" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

@@ -20,6 +20,7 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\handbrake_mode_new_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\healing_251" />
+				<instance_reference name="ability" value="abilities\west_german\toggle_ability\pe_ambulance_heal_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -1351,6 +1352,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\west_german\items\251_halftrack_ambulance_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>
