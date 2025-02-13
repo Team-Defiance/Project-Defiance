@@ -7,7 +7,7 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11002219" />
+						<locstring name="extra_text" value="2685" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="460" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="T" />
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_soviet_shock_troop_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038722" />
+						<locstring name="brief_text" value="2684" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
@@ -697,6 +697,7 @@
 				<instance_reference name="ability" value="abilities\repair_ability\repair_shocks" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\grenades\rg_42_shocks" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\shock_flare_mine" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\grenades\rgd_33_bundle" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
