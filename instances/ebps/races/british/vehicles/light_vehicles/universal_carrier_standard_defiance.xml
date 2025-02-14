@@ -1405,6 +1405,24 @@
 				</template_reference>
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext">
+			<bool name="animated_spawning" value="False" />
+			<float name="animated_spawning_seconds" value="0" />
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="15" />
+			<list name="spawn_items">
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+				<template_reference name="required" value="requirements\required_squad_veterancy">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<float name="veterancy_rank" value="4" />
+				</template_reference>
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073742215" />
 </instance>
