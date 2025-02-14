@@ -356,7 +356,6 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\tune_up_bonus_mp" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -400,7 +399,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="1820" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11141505" />
+								<locstring name="screen_name" value="2706" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -452,7 +451,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="3640" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11072114" />
+								<locstring name="screen_name" value="2707" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -480,7 +479,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_01" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.7" />
+														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
@@ -513,7 +512,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="7280" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11072115" />
+								<locstring name="screen_name" value="2708" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -541,7 +540,7 @@
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="hardpoint_01" />
 														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.8" />
+														<float name="value" value="0.9" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
@@ -552,6 +551,24 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="1.2" />
 														<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_02" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="1.2" />
+														<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
+													</template_reference>
+													<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
+														<enum name="application_type" value="apply_to_weapon" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="hardpoint_03" />
+														<enum name="usage_type" value="multiplication" />
+														<float name="value" value="1.2" />
+														<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073753094" />
