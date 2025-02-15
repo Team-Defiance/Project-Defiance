@@ -23,7 +23,7 @@
 					<uniqueid name="id" value="1073753185" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="1" />
+					<float name="duration" value="5" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\kicker_message_action">
@@ -33,7 +33,7 @@
 							<float name="message_colour_b" value="255" />
 							<float name="message_colour_g" value="255" />
 							<float name="message_colour_r" value="255" />
-							<float name="message_duration" value="1" />
+							<float name="message_duration" value="5" />
 							<bool name="team_only" value="False" />
 							<bool name="check_fow" value="True" />
 							<uniqueid name="id" value="1073755374" />
