@@ -9,8 +9,8 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
-					<bool name="allow_building_spawn" value="True" />
-					<float name="minimum_pop_used" value="5" />
+					<bool name="allow_building_spawn" value="False" />
+					<float name="minimum_pop_used" value="9" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
@@ -41,7 +41,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
-			<float name="manpower" value="270" />
+			<float name="manpower" value="400" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
