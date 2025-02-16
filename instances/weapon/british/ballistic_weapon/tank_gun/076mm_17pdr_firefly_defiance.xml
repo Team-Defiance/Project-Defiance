@@ -368,7 +368,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\damage">
-									<float name="damage" value="40" />
+									<float name="damage" value="20" />
 									<bool name="percentage" value="False" />
 									<bool name="set" value="False" />
 									<bool name="cause_criticals" value="True" />
@@ -426,7 +426,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\damage">
-									<float name="damage" value="60" />
+									<float name="damage" value="20" />
 									<bool name="percentage" value="False" />
 									<bool name="set" value="False" />
 									<bool name="cause_criticals" value="True" />
