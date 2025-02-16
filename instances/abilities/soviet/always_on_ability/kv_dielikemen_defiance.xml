@@ -34,6 +34,16 @@
 							<bool name="check_fow" value="True" />
 							<uniqueid name="id" value="1073755833" />
 						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="True" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="2737" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="207" mod="84428889d71d41a48e2eff09c2425d54" />
+								<icon name="icon_name" value="Icons_tooltips_vehiclearmor_1" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="1073755923" />
+						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
@@ -44,7 +54,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.9" />
+									<float name="value" value="0.85" />
 									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -103,7 +113,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
+											<float name="value" value="0.85" />
 											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
 										<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -162,7 +172,7 @@
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="hardpoint_01" />
 													<enum name="usage_type" value="multiplication" />
-													<float name="value" value="0.9" />
+													<float name="value" value="0.85" />
 													<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 												</template_reference>
 												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -221,7 +231,7 @@
 															<string name="modifier_id" value="" />
 															<string name="target_type_name" value="hardpoint_01" />
 															<enum name="usage_type" value="multiplication" />
-															<float name="value" value="0.9" />
+															<float name="value" value="0.85" />
 															<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 														</template_reference>
 														<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -285,16 +295,6 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\ui_unit_modifier_action">
-					<bool name="die_with_creator" value="True" />
-					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="2737" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="help_text" value="207" mod="84428889d71d41a48e2eff09c2425d54" />
-						<icon name="icon_name" value="Icons_tooltips_vehiclearmor_1" />
-						<string name="hotkey_name" value="" />
-					</template_reference>
-					<uniqueid name="id" value="1073755832" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
