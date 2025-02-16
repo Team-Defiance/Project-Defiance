@@ -161,8 +161,12 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<float name="num" value="5" />
+					<float name="num" value="4" />
 					<instance_reference name="type" value="ebps\races\soviet\soldiers\shtrafniki\penal_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<group name="loadout_data">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\races\soviet\soldiers\shtrafniki\commissar_officer" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
