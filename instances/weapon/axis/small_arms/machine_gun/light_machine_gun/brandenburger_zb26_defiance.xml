@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.6" />
-			<float name="far" value="0.45" />
-			<float name="mid" value="0.54" />
+			<float name="near" value="0.75" />
+			<float name="far" value="0.5625" />
+			<float name="mid" value="0.675" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -17,7 +17,7 @@
 				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="1" />
+				<float name="near" value="0.8" />
 				<float name="far" value="2" />
 				<float name="mid" value="1" />
 			</group>
@@ -115,8 +115,7 @@
 			<bool name="can_abort_winddown" value="False" />
 			<enum name="reaction_type" value="normal" />
 			<bool name="ignore_relations" value="False" />
-			<template_reference name="wants_prone_firing_option" value="options\weapon\wants_prone_firing">
-				<float name="time_to_stay_prone_after_combat" value="13" />
+			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
 			<enum name="attack_ground_type" value="not_allowed" />
 			<bool name="non_moving_setup_requires_facing" value="False" />
@@ -136,13 +135,13 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="8.5" />
-				<float name="min" value="8.5" />
+				<float name="max" value="9" />
+				<float name="min" value="9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.8" />
+				<float name="near" value="1" />
 				<float name="far" value="1.2" />
-				<float name="mid" value="1" />
+				<float name="mid" value="1.1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -157,9 +156,9 @@
 				<float name="min" value="0.9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.8" />
+				<float name="near" value="0.5" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.9" />
+				<float name="mid" value="0.75" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -308,10 +307,10 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
-			<float name="burst_multiplier" value="0.5" />
-			<float name="cooldown_multiplier" value="0.125" />
-			<bool name="disable_moving_firing" value="True" />
+			<float name="accuracy_multiplier" value="0.75" />
+			<float name="burst_multiplier" value="0.9" />
+			<float name="cooldown_multiplier" value="0.875" />
+			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
@@ -349,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.5" />
-				<float name="min" value="5" />
+				<float name="max" value="4" />
+				<float name="min" value="3.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -358,19 +357,19 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="3" />
-				<float name="min" value="3" />
+				<float name="max" value="2" />
+				<float name="min" value="1" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8.5" />
+			<float name="angle_scatter" value="9" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.3" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="4" />
-			<float name="distance_scatter_max" value="8.5" />
+			<float name="distance_scatter_max" value="9" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.25" />
