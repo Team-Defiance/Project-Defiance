@@ -24,7 +24,7 @@
 					<uniqueid name="id" value="1073750180" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="60" />
+					<float name="duration" value="30" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\off_map_artillery">
