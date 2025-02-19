@@ -443,13 +443,6 @@
 										</list>
 										<uniqueid name="id" value="1073744160" />
 									</template_reference>
-									<template_reference name="action" value="action\change_move_data_action">
-										<float name="acceleration_multiplier" value="1.15" />
-										<float name="deceleration_multiplier" value="1.15" />
-										<float name="pathfinding_size_x" value="0" />
-										<float name="pathfinding_size_y" value="0" />
-										<uniqueid name="id" value="1073744161" />
-									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
@@ -485,6 +478,13 @@
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744163" />
+									</template_reference>
+									<template_reference name="action" value="action\change_move_data_action">
+										<float name="acceleration_multiplier" value="1.15" />
+										<float name="deceleration_multiplier" value="1.15" />
+										<float name="pathfinding_size_x" value="0" />
+										<float name="pathfinding_size_y" value="0" />
+										<uniqueid name="id" value="1073756142" />
 									</template_reference>
 								</list>
 							</group>
@@ -584,7 +584,6 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\vehicle_crew_repair_toggle_mp" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
