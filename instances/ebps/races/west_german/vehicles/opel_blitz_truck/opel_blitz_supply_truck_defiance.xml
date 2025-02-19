@@ -36,6 +36,14 @@
 					<string name="undo_action_state_name" value="" />
 					<uniqueid name="id" value="1073747952" />
 				</template_reference>
+				<template_reference name="action" value="action\garrison_squad_action">
+					<instance_reference name="squad_blueprint" value="sbps\races\west_german\team_weapons\at_gun_squad\raketenwerfer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073756297" />
+				</template_reference>
+				<template_reference name="action" value="action\garrison_squad_action">
+					<instance_reference name="squad_blueprint" value="sbps\races\german\soldiers\mortar_team\leig_18_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073756298" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -775,7 +783,7 @@
 			<group name="acceptable_types">
 				<enum name="acceptable_type_01" value="hold_infantry" />
 				<enum name="acceptable_type_02" value="hold_sniper" />
-				<enum name="acceptable_type_03" value="" />
+				<enum name="acceptable_type_03" value="hold_large_gun" />
 				<enum name="acceptable_type_04" value="hold_mortar" />
 				<enum name="acceptable_type_05" value="" />
 			</group>

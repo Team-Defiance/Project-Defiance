@@ -240,7 +240,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="60" />
+		<float name="duration_time" value="30" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="True" />
@@ -337,7 +337,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="10" />
+		<int name="ui_position" value="30" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
