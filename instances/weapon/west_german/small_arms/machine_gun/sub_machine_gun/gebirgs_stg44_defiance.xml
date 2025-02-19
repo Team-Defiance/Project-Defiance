@@ -3,7 +3,7 @@
 		<group name="accuracy">
 			<float name="near" value="0.775" />
 			<float name="far" value="0.35" />
-			<float name="mid" value="0.6125" />
+			<float name="mid" value="0.625" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -17,7 +17,7 @@
 				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.25" />
+				<float name="near" value="0.125" />
 				<float name="far" value="1.5" />
 				<float name="mid" value="1" />
 			</group>
@@ -141,7 +141,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="0.45" />
-				<float name="mid" value="0.7" />
+				<float name="mid" value="0.85" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -156,9 +156,9 @@
 				<float name="min" value="1.25" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.4" />
+				<float name="near" value="0.25" />
 				<float name="far" value="1.25" />
-				<float name="mid" value="0.85" />
+				<float name="mid" value="0.8" />
 			</group>
 		</group>
 		<group name="cover_table">
