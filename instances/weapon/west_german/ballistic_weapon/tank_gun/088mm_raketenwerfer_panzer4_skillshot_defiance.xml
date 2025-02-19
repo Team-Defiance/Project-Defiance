@@ -98,7 +98,7 @@
 			<bool name="enable_auto_target_search" value="False" />
 			<bool name="fire_at_building_combat_slot" value="False" />
 			<float name="ground_hit_rate" value="1" />
-			<bool name="ignore_shot_blocking" value="False" />
+			<bool name="ignore_shot_blocking" value="True" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="point_blank" value="False" />
 			<bool name="prevents_prone" value="False" />
@@ -108,7 +108,7 @@
 			<bool name="substitute_weapon" value="False" />
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
-			<bool name="piercing" value="False" />
+			<bool name="piercing" value="True" />
 			<float name="reaction_radius" value="2.5" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
