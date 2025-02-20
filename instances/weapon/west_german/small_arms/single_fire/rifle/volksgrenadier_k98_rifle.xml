@@ -1,9 +1,9 @@
 <instance description="rifle for ostruppen.&#xA;Multiplayer Clone." template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.75" />
-			<float name="far" value="0.525" />
-			<float name="mid" value="0.65" />
+			<float name="near" value="0.725" />
+			<float name="far" value="0.5" />
+			<float name="mid" value="0.625" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">

@@ -683,7 +683,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
 				<float name="cost_percentage" value="0.5" />
-				<float name="time_percentage" value="1" />
+				<float name="time_percentage" value="0.7" />
 			</group>
 			<group name="ui_info">
 				<locstring name="extra_text" value="0" />

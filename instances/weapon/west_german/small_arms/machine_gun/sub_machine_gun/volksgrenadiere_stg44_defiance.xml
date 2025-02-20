@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.6" />
-			<float name="far" value="0.3" />
-			<float name="mid" value="0.55" />
+			<float name="far" value="0.275" />
+			<float name="mid" value="0.525" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -141,7 +141,7 @@
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
 				<float name="far" value="0.35" />
-				<float name="mid" value="1" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -223,10 +223,10 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1.5" />
-				<float name="damage_multiplier" value="1.5" />
-				<float name="penetration_multiplier" value="0.5" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
+				<float name="penetration_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.35" />
