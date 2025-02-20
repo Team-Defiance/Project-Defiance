@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.8" />
+				<float name="near" value="0.75" />
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.4" />
+				<float name="near" value="0.375" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="distance">
@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_kv8_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="40" />
+			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="-1" />

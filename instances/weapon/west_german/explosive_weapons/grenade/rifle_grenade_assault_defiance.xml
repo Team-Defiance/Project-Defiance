@@ -17,9 +17,9 @@
 				<float name="min" value="0.125" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0" />
-				<float name="far" value="0" />
-				<float name="mid" value="0" />
+				<float name="near" value="1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="anim_table">
