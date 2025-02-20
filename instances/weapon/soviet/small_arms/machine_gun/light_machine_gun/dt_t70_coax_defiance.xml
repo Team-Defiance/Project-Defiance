@@ -175,8 +175,8 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.55" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.7" />
+				<float name="damage_multiplier" value="0.65" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
@@ -187,13 +187,13 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.65" />
+				<float name="damage_multiplier" value="0.65" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.65" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
@@ -418,8 +418,8 @@
 			<float name="fire_cone_angle" value="10" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
-				<float name="max_left" value="0" />
-				<float name="max_right" value="0" />
+				<float name="max_left" value="-2.5" />
+				<float name="max_right" value="2.5" />
 				<float name="max_up" value="0" />
 				<float name="speed_horizontal" value="120" />
 				<float name="speed_vertical" value="60" />
