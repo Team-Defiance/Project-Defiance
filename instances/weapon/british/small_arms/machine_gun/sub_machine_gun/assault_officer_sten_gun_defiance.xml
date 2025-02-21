@@ -1,14 +1,14 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.65" />
-			<float name="far" value="0.104" />
-			<float name="mid" value="0.26" />
+			<float name="near" value="0.7" />
+			<float name="far" value="0.112" />
+			<float name="mid" value="0.28" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
-				<float name="max" value="0.5" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.125" />
 			</group>
 			<float name="post_firing_aim_time" value="0.125" />
 			<float name="post_firing_cooldown_interval" value="0" />
@@ -17,7 +17,7 @@
 				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.375" />
+				<float name="near" value="0.25" />
 				<float name="far" value="2" />
 				<float name="mid" value="1" />
 			</group>
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="0.85" />
+				<float name="max" value="1.1" />
+				<float name="min" value="0.9" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.05" />
@@ -152,11 +152,11 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.25" />
-				<float name="min" value="1" />
+				<float name="max" value="1.125" />
+				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.5" />
+				<float name="near" value="0.25" />
 				<float name="far" value="1.5" />
 				<float name="mid" value="1" />
 			</group>
@@ -308,8 +308,8 @@
 		<icon name="icon_name" value="" />
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.75" />
-			<float name="burst_multiplier" value="0.25" />
-			<float name="cooldown_multiplier" value="0.25" />
+			<float name="burst_multiplier" value="0.3" />
+			<float name="cooldown_multiplier" value="0.3" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -343,7 +343,7 @@
 			<group name="distance">
 				<float name="near" value="10" />
 				<float name="far" value="30" />
-				<float name="mid" value="17.5" />
+				<float name="mid" value="20" />
 			</group>
 		</group>
 		<group name="reload">

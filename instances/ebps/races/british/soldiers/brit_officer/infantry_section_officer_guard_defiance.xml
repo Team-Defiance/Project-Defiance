@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="armies\common\base\commonhuman\commonhuman" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\british\soldiers\tommy\tommy" />
+			<file name="animator" value="armies\british\soldiers\sniper\raid" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -423,9 +423,9 @@
 			<icon name="symbol_icon_name" value="Icons_symbols_unit_british_tommy_with_tommy_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
-			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="" />
-			<string name="skin_winter" value="" />
+			<bool name="skin_pack_override" value="True" />
+			<string name="skin_summer" value="raid_summer" />
+			<string name="skin_winter" value="raid_winter" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_ext">
 			<bool name="should_face_target" value="True" />

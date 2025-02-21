@@ -115,8 +115,7 @@
 			<bool name="can_abort_winddown" value="False" />
 			<enum name="reaction_type" value="normal" />
 			<bool name="ignore_relations" value="False" />
-			<template_reference name="wants_prone_firing_option" value="options\weapon\wants_prone_firing">
-				<float name="time_to_stay_prone_after_combat" value="13" />
+			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
 			<enum name="attack_ground_type" value="not_allowed" />
 			<bool name="non_moving_setup_requires_facing" value="False" />
