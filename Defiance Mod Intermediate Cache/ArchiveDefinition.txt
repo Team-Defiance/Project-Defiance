@@ -110,7 +110,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\vehicle_crew_repair_toggle_m20_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\vehicle_crew_repair_toggle_medium_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\vehicle_crew_repair_toggle_wc51_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\forward_assembly\ghillie_sniper_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\forward_assembly\lovat_marksman_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\forward_assembly\ml_3_inch_mortar_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\forward_assembly\vickers_machine_gun_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\tier_0\assault_officer_standard_defiance.rgd
@@ -1230,6 +1230,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\vehicles\sws_halftrack_squad\sws_halftrack_tier_3_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\west_german\vehicles\tiger_squad\tiger_squad_pe_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\ballistic_weapon\rifleman_bazooka_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\ballistic_weapon\sherman_76e8_wp_shot_weapon_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\grenades\m17_rifle_grenade_slot_item_defiance.rgd
@@ -1519,6 +1520,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\west_german\research\t3_gun_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\west_german\research\t3_tank_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\ballistic_weapon\anti_tank_gun\057mm_m1_at_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\ballistic_weapon\infantry_anti_tank_weapon\m9_bazooka_elite_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\ballistic_weapon\infantry_anti_tank_weapon\m9_bazooka_generic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\ballistic_weapon\tank_gun\037mm_m8_greyhound_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\ballistic_weapon\tank_gun\075mm_m3_sherman_ap_defiance.rgd
@@ -1935,6 +1937,9 @@ TOCStart name="data" alias="data" path="" relativeroot="data"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\assault_engineer\drip_assault_engineer.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\mg_crew\mg_crew.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\mortar_crew\mortar_crew.abp
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\paratrooper\paratrooper.abp
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\pathfinder\pathfinder.abp
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\pathfinder\sniper_drip.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\ranger\ranger.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\rear_echelon_troop\rear_echelon_troop.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\rifleman\drip_rifleman.abp
@@ -1944,6 +1949,7 @@ TOCStart name="data" alias="data" path="" relativeroot="data"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\commando\aef_mech_crew.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\commando\aef_scout_drip.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\commando\commando.abp
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\officer\officer.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\sniper\aef_sniper.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\sniper\raid.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\sniper\raid_drip.abp

@@ -31,7 +31,7 @@
 		<int name="ui_position" value="1" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="2878" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="2899" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="G" />
 			<icon name="icon_name" value="Icons_bob_upgrades_bazookas" />
 			<bool name="reveal_for_decryption" value="True" />
@@ -43,17 +43,17 @@
 		<bool name="validate_actions" value="False" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\rifleman_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073756357" />
 			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\rifleman_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073756358" />
 			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\rifleman_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073756359" />
 			</template_reference>
