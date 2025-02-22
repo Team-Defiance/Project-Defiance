@@ -58,6 +58,16 @@
 									<string name="undo_action_state_name" value="off" />
 									<uniqueid name="id" value="1073756437" />
 								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="2912" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="2915" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_british_heroic_charge" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073756491" />
+								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
 							<uniqueid name="id" value="1073756438" />
@@ -131,8 +141,8 @@
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
 									<template_reference name="ui_info" value="tables\ui_info">
-										<locstring name="screen_name" value="11183593" />
-										<locstring name="help_text" value="11183594" />
+										<locstring name="screen_name" value="2912" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="2914" mod="84428889d71d41a48e2eff09c2425d54" />
 										<icon name="icon_name" value="Icons_abilities_ability_british_heroic_charge" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
@@ -232,7 +242,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="2893" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="2913" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="C" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_heroic_charge" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
