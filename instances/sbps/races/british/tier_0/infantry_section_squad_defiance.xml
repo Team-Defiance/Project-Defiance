@@ -457,14 +457,14 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
+								<template_reference name="modifier" value="modifiers\received_experience_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.93" />
-									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
+									<float name="value" value="1.1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073756452" />
