@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.7" />
-			<float name="far" value="0.3" />
-			<float name="mid" value="0.5" />
+			<float name="far" value="0.4" />
+			<float name="mid" value="0.55" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -157,8 +157,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="2.5" />
-				<float name="mid" value="1.75" />
+				<float name="far" value="2" />
+				<float name="mid" value="1.5" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -395,8 +395,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
+			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
