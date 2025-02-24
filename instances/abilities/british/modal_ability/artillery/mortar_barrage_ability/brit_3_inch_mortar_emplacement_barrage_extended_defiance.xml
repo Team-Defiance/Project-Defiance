@@ -5,23 +5,23 @@
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<instance_reference name="upgrade" value="upgrade\british\ability_lock_out\ability_lock_out_mortar_emplacement_barrage_active" />
-					<uniqueid name="id" value="1073756552" />
+					<uniqueid name="id" value="1073756669" />
 				</template_reference>
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="1" />
-					<uniqueid name="id" value="1073756553" />
+					<uniqueid name="id" value="1073756670" />
 				</template_reference>
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073756554" />
+					<uniqueid name="id" value="1073756671" />
 				</template_reference>
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="3" />
-					<uniqueid name="id" value="1073756555" />
+					<uniqueid name="id" value="1073756672" />
 				</template_reference>
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="4" />
-					<uniqueid name="id" value="1073756556" />
+					<uniqueid name="id" value="1073756673" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -33,7 +33,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="mortar_state" />
 					<string name="undo_action_state_name" value="idle" />
-					<uniqueid name="id" value="1073756557" />
+					<uniqueid name="id" value="1073756674" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
@@ -41,13 +41,13 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="mortar_state02" />
 					<string name="undo_action_state_name" value="idle" />
-					<uniqueid name="id" value="1073756558" />
+					<uniqueid name="id" value="1073756675" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\british\ability_lock_out\ability_lock_out_mortar_emplacement_barrage_active" />
-					<uniqueid name="id" value="1073756559" />
+					<uniqueid name="id" value="1073756676" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -58,10 +58,10 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="3" />
-					<float name="use_hardpoint" value="3" />
+					<float name="num_salvo" value="6" />
+					<float name="use_hardpoint" value="7" />
 					<bool name="face_to_target" value="False" />
-					<uniqueid name="id" value="1073756560" />
+					<uniqueid name="id" value="1073756677" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
@@ -71,15 +71,15 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="3" />
-					<float name="use_hardpoint" value="4" />
+					<float name="num_salvo" value="6" />
+					<float name="use_hardpoint" value="8" />
 					<bool name="face_to_target" value="False" />
-					<uniqueid name="id" value="1073756561" />
+					<uniqueid name="id" value="1073756678" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073756562" />
+					<uniqueid name="id" value="1073756679" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
@@ -87,7 +87,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073756563" />
+					<uniqueid name="id" value="1073756680" />
 				</template_reference>
 			</list>
 		</group>
@@ -124,12 +124,12 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="110" />
+		<float name="range" value="160" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="30" />
+		<float name="recharge_time" value="50" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="squad_ability_1" />
+		<enum name="shared_timer" value="axis_mortar_barrage" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -155,13 +155,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11084040" />
-			<locstring name="help_text" value="11084042" />
-			<string name="hotkey_name" value="B" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="E" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_mortar_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11084039" />
+			<locstring name="screen_name" value="2937" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -175,7 +175,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11085939" />
+				<locstring name="ui_name" value="0" />
 				<list name="requirement_table">
 					<template_reference name="required" value="requirements\required_slot_item">
 						<enum name="reason" value="usage" />
@@ -190,27 +190,27 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11090935" />
+				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="False" />
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\british\ability_lock_out\emplacement_deactivate_brace_delay" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11106661" />
+				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\british\commander\counter_battery_mp" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
-		<float name="ui_reticule_radius_min" value="4.5" />
-		<float name="ui_reticule_radius_max" value="9" />
+		<float name="ui_reticule_radius_min" value="4.75" />
+		<float name="ui_reticule_radius_max" value="11.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -236,5 +236,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742420" />
+	<uniqueid name="pbgid" value="1073742427" />
 </instance>

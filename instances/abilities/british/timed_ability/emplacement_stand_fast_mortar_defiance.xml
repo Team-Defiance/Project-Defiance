@@ -108,14 +108,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="40" />
+			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="90" />
+		<float name="duration_time" value="45" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -133,7 +133,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="120" />
+		<float name="recharge_time" value="75" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -169,7 +169,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11145635" />
+			<locstring name="extra_text" value="2938" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11145694" />
 			<string name="hotkey_name" value="V" />
 			<icon name="icon_name" value="Icons_commander_cmdr_british_stand_fast_operation" />
@@ -208,7 +208,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />

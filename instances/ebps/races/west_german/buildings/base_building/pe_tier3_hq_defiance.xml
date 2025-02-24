@@ -302,7 +302,7 @@
 			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
 			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
 			<instance_reference name="ui_range" value="ui_reticule\construction_range_hq" />
-			<float name="ui_range_radius" value="50" />
+			<float name="ui_range_radius" value="55" />
 			<instance_reference name="ui_setfacing" value="ui_setfacing\construction_base_building" />
 			<bool name="query_weapon_for_range_ui" value="True" />
 			<bool name="squad_ignore_pathfinding" value="False" />
