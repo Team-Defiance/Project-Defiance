@@ -448,7 +448,8 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\officer_recon_sweep_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\officer_gammon_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\heroic_charge_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -767,7 +768,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\british\modal_ability\base_howitzers\25_pounder_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />

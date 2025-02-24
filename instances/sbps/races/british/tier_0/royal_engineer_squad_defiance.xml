@@ -176,7 +176,8 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\royal_engineer_hazard_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\sapper_hazard_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\sapper_flamethrower" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -836,6 +837,10 @@
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\german\buildings\observation_post\munition_post_german_mp" />
 							<int name="ui_position" value="32" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\british\buildings\emplacements\brit_3_inch_mortar_emplacement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="21" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />

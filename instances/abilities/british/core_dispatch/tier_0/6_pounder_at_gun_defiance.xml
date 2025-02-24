@@ -10,16 +10,16 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="7" />
+					<float name="minimum_pop_used" value="6" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\british\tier_0\assault_officer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\british\tier_0\6_pounder_at_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073756417" />
+					<uniqueid name="id" value="1073753486" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073756418" />
+					<uniqueid name="id" value="1073753487" />
 				</template_reference>
 			</list>
 		</group>
@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="40" />
+		<float name="recharge_time" value="28" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="generic_unit_shared" />
@@ -78,7 +78,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="ath" />
+			<string name="code_1" value="eng" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -96,15 +96,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2889" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2886" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="W" />
-			<icon name="icon_name" value="Icons_units_unit_british_officer" />
+			<locstring name="extra_text" value="2232" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2231" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="Q" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_british_6_pounder_at_gun" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="2887" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2207" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="2888" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="2233" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -114,33 +114,13 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2881" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\british\tier_0\assault_officer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_structure">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-				</list>
+				<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" />
+				<int name="required_structure_count" value="1" />
+				<bool name="check_team" value="False" />
+				<bool name="require_construction_complete" value="True" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -158,12 +138,12 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
+		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
-		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -176,5 +156,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="1073742413" />
+	<uniqueid name="pbgid" value="1073742229" />
 </instance>
