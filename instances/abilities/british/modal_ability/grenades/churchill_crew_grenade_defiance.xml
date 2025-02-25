@@ -25,14 +25,6 @@
 					</list>
 					<uniqueid name="id" value="1073753890" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="on" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="ability_crew_grenade" />
-					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073753891" />
-				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\artillery_attack">
@@ -144,8 +136,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="3" />
-		<float name="ui_reticule_radius_max" value="3" />
+		<float name="ui_reticule_radius_min" value="6" />
+		<float name="ui_reticule_radius_max" value="6" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
