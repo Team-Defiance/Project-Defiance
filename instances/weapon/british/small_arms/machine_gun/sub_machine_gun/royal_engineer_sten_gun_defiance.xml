@@ -156,7 +156,7 @@
 				<float name="min" value="1" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.5" />
+				<float name="near" value="0.4" />
 				<float name="far" value="1.5" />
 				<float name="mid" value="1" />
 			</group>
@@ -343,7 +343,7 @@
 			<group name="distance">
 				<float name="near" value="10" />
 				<float name="far" value="30" />
-				<float name="mid" value="17.5" />
+				<float name="mid" value="20" />
 			</group>
 		</group>
 		<group name="reload">

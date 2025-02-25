@@ -126,7 +126,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="160" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="75" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_mortar_barrage" />
@@ -202,9 +202,31 @@
 				<instance_reference name="upgrade_name" value="upgrade\british\commander\counter_battery_mp" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2948" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\hammer_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
