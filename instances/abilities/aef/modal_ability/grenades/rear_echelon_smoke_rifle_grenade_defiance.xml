@@ -2,14 +2,6 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="ready" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="rifle_state" />
-					<string name="undo_action_state_name" value="on" />
-					<uniqueid name="id" value="1073756687" />
-				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -28,10 +20,10 @@
 							<float name="event_param_end" value="-1" />
 							<enum name="event_type" value="grenade" />
 							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073756688" />
+							<uniqueid name="id" value="1073756695" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756689" />
+					<uniqueid name="id" value="1073756696" />
 					<bool name="can_prevent_refund" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\use_accessory_weapon">
@@ -45,7 +37,7 @@
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
 					</group>
-					<uniqueid name="id" value="1073756690" />
+					<uniqueid name="id" value="1073756697" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
@@ -64,7 +56,7 @@
 									<bool name="retrigger" value="True" />
 									<string name="state_machine_name" value="ability_attack_debuff_state" />
 									<string name="undo_action_state_name" value="off" />
-									<uniqueid name="id" value="1073756691" />
+									<uniqueid name="id" value="1073756698" />
 								</template_reference>
 								<template_reference name="action" value="action\apply_modifiers_action">
 									<float name="duration" value="8" />
@@ -80,13 +72,13 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073756692" />
+									<uniqueid name="id" value="1073756699" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073756693" />
+							<uniqueid name="id" value="1073756700" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756694" />
+					<uniqueid name="id" value="1073756701" />
 					<bool name="can_prevent_refund" value="False" />
 				</template_reference>
 			</list>
