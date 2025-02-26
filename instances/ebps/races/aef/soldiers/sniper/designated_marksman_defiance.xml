@@ -36,13 +36,22 @@
 					</list>
 					<uniqueid name="id" value="1073748796" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="unarmed" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="flamethrower_state" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073756478" />
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="infantry" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="" />
+					<uniqueid name="id" value="1073756718" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
 				</template_reference>
 			</list>
 		</template_reference>
