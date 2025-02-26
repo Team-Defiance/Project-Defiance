@@ -20,6 +20,7 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\churchill_crew_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\churchill_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -64,7 +65,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2.1" />
+									<float name="value" value="1.9" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -85,31 +86,6 @@
 					<string name="state_machine_name" value="variant" />
 					<string name="undo_action_state_name" value="" />
 					<uniqueid name="id" value="1073753421" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_05" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_06" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073753422" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -195,10 +171,61 @@
 					</list>
 					<uniqueid name="id" value="1073753426" />
 				</template_reference>
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="True" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\no_action">
+									<uniqueid name="id" value="1073755656" />
+									<template_reference name="ui_help_text" value="options\none">
+									</template_reference>
+								</template_reference>
+							</list>
+							<int name="weight" value="90" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="10" />
+									<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="False" />
+									<bool name="player_owned" value="False" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073755657" />
+									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+										<string name="attach_target_marker_name" value="" />
+										<string name="attach_action_name" value="" />
+										<string name="detach_action_name" value="" />
+										<bool name="destroy_on_cancel" value="True" />
+										<list name="detach_entity_actions">
+										</list>
+									</template_reference>
+									<list name="spawned_entity_actions">
+										<template_reference name="actions" value="action\self_destruction_action">
+											<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\mortarincendiary_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+											<uniqueid name="id" value="1073755658" />
+										</template_reference>
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073755475" />
+				</template_reference>
 			</list>
 			<float name="armor" value="290" />
 			<float name="rear_armor" value="165" />
-			<float name="target_size" value="24" />
+			<float name="target_size" value="23" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -290,7 +317,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -458,7 +485,7 @@
 								<float name="z" value="0.1" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_mk7_coaxial_vehicle_turret_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_churchill_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -479,7 +506,7 @@
 								<float name="z" value="2.45" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_mk7_vehicle_hull_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_churchill_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -500,7 +527,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\light_artillery\churchill_crew_grenades" />
+							<instance_reference name="weapon" value="weapon\british\explosive_weapons\light_artillery\churchill_crew_grenades_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -521,7 +548,7 @@
 								<float name="z" value="1.3" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_hull_defense_right_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_besa_hull_right_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -542,7 +569,28 @@
 								<float name="z" value="1.3" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_hull_defense_left_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_besa_hull_left_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0.05" />
+								<float name="y" value="0.6" />
+								<float name="z" value="-0.1" />
+							</group>
+							<enum name="type" value="squad" />
+							<instance_reference name="weapon" value="" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

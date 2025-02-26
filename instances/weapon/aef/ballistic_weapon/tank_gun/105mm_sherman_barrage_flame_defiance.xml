@@ -382,7 +382,7 @@
 		</group>
 		<group name="range">
 			<float name="max" value="100" />
-			<float name="min" value="25" />
+			<float name="min" value="20" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -391,8 +391,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.7" />
-				<float name="min" value="6.45" />
+				<float name="max" value="6.1" />
+				<float name="min" value="5.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -407,12 +407,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8" />
+			<float name="angle_scatter" value="7" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="9" />
+			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.125" />

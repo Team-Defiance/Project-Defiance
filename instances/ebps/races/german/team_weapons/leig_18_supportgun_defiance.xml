@@ -18,6 +18,10 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_incendiary_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_incendiary_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -88,7 +92,7 @@
 						<template_reference name="required" value="requirements\required_squad_veterancy">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<float name="veterancy_rank" value="4" />
+							<float name="veterancy_rank" value="3" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -96,32 +100,14 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+								<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_02" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_03" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073752681" />
@@ -142,7 +128,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="80" />
+					<float name="manpower" value="60" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -437,6 +423,27 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\leig_18_75mm_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\leig_18_75mm_incendiary_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -833,7 +840,7 @@
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\west_german\team_weapons\leig_squad\leig_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
+						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>
@@ -850,7 +857,7 @@
 					<instance_reference name="ext_key" value="racebps\soviet" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\west_german\team_weapons\leig_squad\leig_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
+						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>

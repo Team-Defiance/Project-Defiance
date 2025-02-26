@@ -214,7 +214,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="20" />
+					<float name="fuel" value="30" />
 					<float name="manpower" value="100" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -266,10 +266,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Allows production of the Panzer II Luchs, Panzer IV Medium Tank, Flakpanzer IV Ostwind and StuG III" />
+			<string name="extra_text_deprecated" value="Allows production of the Pak 40 AT Gun, Sd.Kfz. 251 Halftrack, and Panzer II Luchs" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="33" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="11007426" />
 			<string name="hotkey_name" value="D" />
 			<icon name="icon_name" value="Icons_buildings_building_german_dolch_aktionen" />
 			<enum name="kill_type" value="building" />
@@ -283,7 +283,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="26" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2586" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -566,7 +566,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\research\mech_beasts" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\research\utility_refit" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>

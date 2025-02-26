@@ -392,6 +392,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\m2hb_ap_rounds_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_mgs_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -413,7 +414,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_mp" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_hmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -779,8 +780,8 @@
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\aef\tier_1\m2hb_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
-						<float name="min_capture_crew_size" value="1" />
+						<float name="max_capture_crew_size" value="3" />
+						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>
 						<float name="abandon_animation_seconds" value="0" />
@@ -796,8 +797,8 @@
 					<instance_reference name="ext_key" value="racebps\soviet" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\aef\tier_1\m2hb_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
-						<float name="min_capture_crew_size" value="1" />
+						<float name="max_capture_crew_size" value="3" />
+						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>
 						<float name="abandon_animation_seconds" value="0" />

@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.54" />
-			<float name="far" value="0.135" />
-			<float name="mid" value="0.27" />
+			<float name="far" value="0.18" />
+			<float name="mid" value="0.36" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="fx_hmg_turret_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />

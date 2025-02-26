@@ -19,8 +19,8 @@
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="15" />
-				<float name="manpower" value="100" />
+				<float name="fuel" value="25" />
+				<float name="manpower" value="125" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
@@ -31,7 +31,7 @@
 		<int name="ui_position" value="2" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="1874" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1873" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1871" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="R" />
 			<icon name="icon_name" value="Icons_buildings_building_common_radio_tower" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -101,6 +101,21 @@
 					<int name="phrase_order" value="0" />
 					<locstring name="phrase" value="0" />
 				</template_reference>
+			</template_reference>
+			<template_reference name="action" value="action\player_target_action">
+				<bool name="allies" value="False" />
+				<bool name="enemies" value="False" />
+				<bool name="neutral" value="False" />
+				<bool name="self" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\upgrade_add">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<bool name="trigger_publish_event" value="False" />
+						<instance_reference name="upgrade" value="upgrade\west_german\passive\tiger_unlock_1" mod="84428889d71d41a48e2eff09c2425d54" />
+						<uniqueid name="id" value="1073755095" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073755094" />
 			</template_reference>
 		</list>
 		<list name="requirements">

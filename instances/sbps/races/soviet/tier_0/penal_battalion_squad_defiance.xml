@@ -9,14 +9,14 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="608" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007196" />
+						<locstring name="help_text" value="2510" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="B" />
 						<icon name="icon_name" value="Icons_units_unit_soviet_penal_battalion" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007195" />
+						<locstring name="screen_name" value="2652" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="Penal" />
 						<group name="speaker_generic">
 							<string name="code_1" value="gs" />
@@ -161,8 +161,12 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<float name="num" value="5" />
+					<float name="num" value="4" />
 					<instance_reference name="type" value="ebps\races\soviet\soldiers\shtrafniki\penal_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<group name="loadout_data">
+					<float name="num" value="1" />
+					<instance_reference name="type" value="ebps\races\soviet\soldiers\shtrafniki\commissar_officer" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -478,7 +482,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.935" />
+									<float name="value" value="0.931035" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>

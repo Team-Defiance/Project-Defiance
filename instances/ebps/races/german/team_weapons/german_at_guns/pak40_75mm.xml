@@ -16,9 +16,10 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
-				<instance_reference name="ability" value="abilities\german\toggle_ability\priority_vehicles" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\toggle_ability\vehicle_free_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\pak40_target_weak_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\timed_ability\atg_free_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -765,7 +766,7 @@
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\german\vehicles\at_gun_squad\pak40_at_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
+						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>
@@ -782,7 +783,7 @@
 					<instance_reference name="ext_key" value="racebps\soviet" />
 					<group name="info">
 						<instance_reference name="capture_squad_blueprint" value="sbps\races\german\vehicles\at_gun_squad\pak40_at_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_capture_crew_size" value="2" />
+						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
 						</list>

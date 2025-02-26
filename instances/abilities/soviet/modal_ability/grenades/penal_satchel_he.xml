@@ -41,7 +41,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\soviet\grenades\penal_troop_satchel_charge_item_at_skillshot_mp" />
+					<instance_reference name="accessory_weapon_item" value="slot_item\soviet\grenades\penals_satchel_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="decrement_accessory_item" value="" />
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
@@ -112,7 +112,7 @@
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="" />
+		<enum name="shared_timer" value="squad_ability_2" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -197,8 +197,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="5.5" />
-		<float name="ui_reticule_radius_max" value="5.5" />
+		<float name="ui_reticule_radius_min" value="6" />
+		<float name="ui_reticule_radius_max" value="6" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

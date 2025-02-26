@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="armies\common\base\commonhuman\commonhuman" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\british\soldiers\sniper\aef_sniper" />
+			<file name="animator" value="armies\aef\soldiers\rifleman\drip_rifleman" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -35,6 +35,23 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073748796" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="infantry" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="" />
+					<uniqueid name="id" value="1073756718" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -363,8 +380,8 @@
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="raid_summer" />
-			<string name="skin_winter" value="raid_winter" />
+			<string name="skin_summer" value="cavalry_summer" />
+			<string name="skin_winter" value="cavalry_summer" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_ext">
 			<bool name="should_face_target" value="True" />
@@ -410,7 +427,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\single_fire\rifle\m1c_sniper_rifle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\single_fire\rifle\m1903_sniper_rifle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

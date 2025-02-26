@@ -137,13 +137,27 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
+			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2386" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_0\bomb_boxes_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="2505" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -152,8 +166,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_vehicle" />
-		<float name="ui_reticule_radius_min" value="1.5" />
-		<float name="ui_reticule_radius_max" value="1.5" />
+		<float name="ui_reticule_radius_min" value="1" />
+		<float name="ui_reticule_radius_max" value="1" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

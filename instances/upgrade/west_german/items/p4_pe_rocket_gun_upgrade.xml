@@ -1,0 +1,158 @@
+<instance description="temporary skirt upgrade for shared ostheer P4" template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="True" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
+		<float name="local_max_limit" value="1" />
+		<enum name="owner_type" value="self" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="skt" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="10" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="60" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="15" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_group" value="unit_upgrade_panel" />
+		<int name="ui_position" value="2" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="2594" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2597" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="F" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_raketenwerfer_43_at_gun" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="2532" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="True" />
+		<list name="actions">
+			<template_reference name="action" value="action\remove_weapon">
+				<bool name="fire_and_forget" value="False" />
+				<float name="hardpoint" value="1" />
+				<uniqueid name="id" value="1073754985" />
+			</template_reference>
+			<template_reference name="action" value="action\add_weapon">
+				<float name="hardpoint" value="1" />
+				<group name="weapon">
+					<group name="heading">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="1" />
+					</group>
+					<float name="length" value="0" />
+					<group name="origin">
+						<float name="x" value="0" />
+						<float name="y" value="0.5" />
+						<float name="z" value="0" />
+					</group>
+					<enum name="type" value="default" />
+					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\088mm_raketenwerfer_panzer4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<uniqueid name="id" value="1073754986" />
+			</template_reference>
+			<template_reference name="action" value="action\change_weapon">
+				<float name="hardpoint" value="1" />
+				<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\088mm_raketenwerfer_panzer4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073754987" />
+			</template_reference>
+			<template_reference name="action" value="action\ui_decorator_action">
+				<icon name="symbol_icon" value="ModIcons_84428889d71d41a48e2eff09c2425d54_west_german_symbols_vehicles_panzer_iv_raketen59" />
+				<uniqueid name="id" value="1073754996" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2591" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="40" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_pe_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\commander\unlock\spec_ops_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+		</list>
+		<icon name="ui_kicker_icon_name" value="" />
+		<locstring name="ui_squad_name_override" value="0" />
+		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_extra_text_override" value="0" />
+		<list name="ui_preview">
+		</list>
+		<list name="on_cancel_actions">
+		</list>
+		<list name="on_begin_actions">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073741983" />
+</instance>

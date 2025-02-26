@@ -22,6 +22,25 @@
 					</list>
 					<uniqueid name="id" value="1073753185" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="5" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\kicker_message_action">
+							<float name="loop_interval" value="0" />
+							<locstring name="message" value="2644" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="message_colour_a" value="255" />
+							<float name="message_colour_b" value="255" />
+							<float name="message_colour_g" value="255" />
+							<float name="message_colour_r" value="255" />
+							<float name="message_duration" value="5" />
+							<bool name="team_only" value="False" />
+							<bool name="check_fow" value="True" />
+							<uniqueid name="id" value="1073755374" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073755375" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
@@ -43,7 +62,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="30" />
+		<float name="duration_time" value="20" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="True" />
@@ -110,7 +129,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="2605" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="veterancy_rank" value="2" />
 			</template_reference>
 		</list>

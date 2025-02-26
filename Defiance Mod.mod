@@ -10,7 +10,7 @@
 							<RelativeName>defiance_attribute</RelativeName>
 						</d2p1:anyType>
 					</Children>
-					<IsExpanded>false</IsExpanded>
+					<IsExpanded>true</IsExpanded>
 					<Name>attrib</Name>
 				</d2p1:anyType>
 			</Children>
@@ -57,6 +57,16 @@
 					</Children>
 					<IsExpanded>true</IsExpanded>
 					<Name>art</Name>
+				</d2p1:anyType>
+				<d2p1:anyType i:type="Folder">
+					<Children>
+						<d2p1:anyType i:type="BurnIcons">
+							<PackSize>1024</PackSize>
+							<RelativeName>data\ui</RelativeName>
+						</d2p1:anyType>
+					</Children>
+					<IsExpanded>true</IsExpanded>
+					<Name>ui</Name>
 				</d2p1:anyType>
 			</Children>
 			<IsExpanded>true</IsExpanded>

@@ -153,7 +153,7 @@
 		<group name="cooldown">
 			<group name="duration">
 				<float name="max" value="1.25" />
-				<float name="min" value="0.75" />
+				<float name="min" value="1" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1.5" />
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="smg" />
 		<string name="fx_tracer_name" value="smg_ppsh41_tracer" />
-		<float name="fx_tracer_speed" value="120" />
+		<float name="fx_tracer_speed" value="100" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="1.15" />
+			<float name="near" value="1.25" />
 			<float name="far" value="1" />
-			<float name="mid" value="1.05" />
+			<float name="mid" value="1.1" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

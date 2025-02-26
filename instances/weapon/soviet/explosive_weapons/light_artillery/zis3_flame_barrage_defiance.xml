@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.12" />
-				<float name="near" value="0.75" />
+				<float name="near" value="0.72" />
 				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.06" />
-				<float name="near" value="0.375" />
+				<float name="near" value="0.36" />
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="20" />
-				<float name="near" value="34" />
+				<float name="mid" value="10" />
+				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />

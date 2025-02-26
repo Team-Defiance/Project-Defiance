@@ -24,14 +24,14 @@
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="5" />
+			<float name="time_seconds" value="15" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="2" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="2592" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2593" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="K" />
 			<icon name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -98,6 +98,10 @@
 				</group>
 				<uniqueid name="id" value="1073752238" />
 			</template_reference>
+			<template_reference name="action" value="action\ui_decorator_action">
+				<icon name="symbol_icon" value="Icons_symbols_vehicle_german_panzer_iv_symbol" />
+				<uniqueid name="id" value="1073754995" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
@@ -110,7 +114,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="2591" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="requirements">
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
@@ -124,7 +128,7 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
@@ -133,7 +137,7 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
@@ -142,13 +146,20 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
 						</list>
 					</template_reference>
 				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_pe_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="True" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

@@ -478,7 +478,7 @@
 									<locstring name="ui_name" value="0" />
 									<bool name="garrisoned" value="False" />
 									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="10" />
+									<float name="in_combat_since" value="20" />
 									<bool name="injured" value="False" />
 									<bool name="leader" value="False" />
 									<bool name="not_moving" value="False" />
@@ -536,7 +536,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="addition" />
-									<float name="value" value="0.5" />
+									<float name="value" value="0.35" />
 									<instance_reference name="tooltip" value="modifier_tooltip\health_regeneration_modifier" />
 								</template_reference>
 							</list>

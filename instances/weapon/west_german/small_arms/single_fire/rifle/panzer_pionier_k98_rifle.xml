@@ -1,9 +1,9 @@
 <instance description="rifle for ostruppen.&#xA;Multiplayer Clone." template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.9" />
-			<float name="far" value="0.775" />
-			<float name="mid" value="0.825" />
+			<float name="near" value="0.8" />
+			<float name="far" value="0.45" />
+			<float name="mid" value="0.725" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -17,9 +17,9 @@
 				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.25" />
+				<float name="near" value="0.1" />
 				<float name="far" value="2.5" />
-				<float name="mid" value="1.25" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -156,9 +156,9 @@
 				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.25" />
-				<float name="far" value="1.5" />
-				<float name="mid" value="1" />
+				<float name="near" value="0.05" />
+				<float name="far" value="1.75" />
+				<float name="mid" value="0.75" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="10" />
-			<float name="min" value="10" />
+			<float name="max" value="12" />
+			<float name="min" value="12" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -302,14 +302,14 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="kar98_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.6" />
 			<float name="burst_multiplier" value="1" />
-			<float name="cooldown_multiplier" value="1.5" />
+			<float name="cooldown_multiplier" value="1.25" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />

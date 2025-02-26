@@ -315,6 +315,57 @@
 			<bool name="ui_can_scuttle" value="False" />
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_tiger_sdkfz_181" />
 			<list name="death_actions">
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="True" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\no_action">
+									<uniqueid name="id" value="1073755548" />
+									<template_reference name="ui_help_text" value="options\none">
+									</template_reference>
+								</template_reference>
+							</list>
+							<int name="weight" value="90" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="10" />
+									<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="False" />
+									<bool name="player_owned" value="False" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073755549" />
+									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+										<string name="attach_target_marker_name" value="" />
+										<string name="attach_action_name" value="" />
+										<string name="detach_action_name" value="" />
+										<bool name="destroy_on_cancel" value="True" />
+										<list name="detach_entity_actions">
+										</list>
+									</template_reference>
+									<list name="spawned_entity_actions">
+										<template_reference name="actions" value="action\self_destruction_action">
+											<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\mortarincendiary_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+											<uniqueid name="id" value="1073755550" />
+										</template_reference>
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073755415" />
+				</template_reference>
 			</list>
 			<float name="armor" value="230" />
 			<float name="rear_armor" value="170" />
@@ -554,7 +605,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -1014,7 +1065,7 @@
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="5.2" />
+			<float name="speed_max" value="5.3" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0" />
@@ -1063,6 +1114,16 @@
 								<string name="sync_action_name" value="Attach_Gunner" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_turret" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>

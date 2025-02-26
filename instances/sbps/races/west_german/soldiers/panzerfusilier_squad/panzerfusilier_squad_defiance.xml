@@ -9,14 +9,14 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="1050" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="1048" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="1049" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="Q" />
 						<icon name="icon_name" value="Icons_units_unit_west_german_panzerfusilier" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051451" />
+						<locstring name="screen_name" value="2567" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="panzerfuzilier" />
 						<group name="speaker_generic">
 							<string name="code_1" value="pf" />
@@ -182,6 +182,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\west_german\items\panzerfusilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\panzerfusilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -258,29 +259,59 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\ui_unit_modifier_action">
-							<bool name="die_with_creator" value="False" />
-							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="11159008" />
-								<locstring name="help_text" value="1847" mod="84428889d71d41a48e2eff09c2425d54" />
-								<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
-								<string name="hotkey_name" value="" />
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="1847" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755299" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755298" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
 							</template_reference>
-							<uniqueid name="id" value="1073747941" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
@@ -318,6 +349,159 @@
 							<string name="state_machine_name" value="ability_movement_buff_state" />
 							<string name="undo_action_state_name" value="off" />
 							<uniqueid name="id" value="1073747943" />
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+											<enum name="application_type" value="apply_to_squad" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.2" />
+											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755293" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2626" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755296" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755292" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755294" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2656" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755297" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755295" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\received_damage_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755632" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2627" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755633" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755634" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073747944" />
@@ -385,29 +569,59 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\ui_unit_modifier_action">
-							<bool name="die_with_creator" value="False" />
-							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="11159008" />
-								<locstring name="help_text" value="96" mod="84428889d71d41a48e2eff09c2425d54" />
-								<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
-								<string name="hotkey_name" value="" />
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="False" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="1847" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755300" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755301" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
 							</template_reference>
-							<uniqueid name="id" value="1073749932" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
@@ -426,8 +640,17 @@
 									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
 								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.9" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073749933" />
+							<uniqueid name="id" value="1073755302" />
 						</template_reference>
 						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="True" />
@@ -435,7 +658,160 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_movement_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073749934" />
+							<uniqueid name="id" value="1073755303" />
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+											<enum name="application_type" value="apply_to_squad" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.2" />
+											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755304" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2626" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755305" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755306" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\panzerfusilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755307" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2627" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755308" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755309" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="include_queued" value="False" />
+									<bool name="is_present" value="True" />
+									<instance_reference name="upgrade_name" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\received_damage_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.9" />
+											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073755635" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="11159008" />
+										<locstring name="help_text" value="2627" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073755636" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073755637" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073749935" />
@@ -752,7 +1128,7 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\fusilier_at_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -893,6 +1269,15 @@
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\fusilier_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073747069" />
@@ -1061,6 +1446,15 @@
 												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="3" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073747076" />
 									</template_reference>
@@ -1109,8 +1503,14 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\fusilier_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\panzer_elite_combined_arms_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\panzer_elite_fusilier_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzerfusiliers_flare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_rpzb54_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\fusilier_at_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -1235,10 +1635,6 @@
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
 							<int name="ui_position" value="33" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\german_sandbag_fence__construction__" />
-							<int name="ui_position" value="11" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_grenadier" />

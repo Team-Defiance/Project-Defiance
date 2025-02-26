@@ -19,7 +19,6 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\uec_self_repair" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\uec_self_repair_improved" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\universal_carrier_vickers_suppression_mp" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\handbrake_mode_new_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\universal_carrier_vickers_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -125,7 +124,7 @@
 					<uniqueid name="id" value="1073753578" />
 				</template_reference>
 			</list>
-			<float name="armor" value="6" />
+			<float name="armor" value="6.5" />
 			<float name="rear_armor" value="4.1" />
 			<float name="target_size" value="15" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -215,7 +214,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -1405,6 +1404,24 @@
 					<uniqueid name="id" value="1073753592" />
 				</template_reference>
 			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext">
+			<bool name="animated_spawning" value="False" />
+			<float name="animated_spawning_seconds" value="0" />
+			<bool name="must_be_in_supply" value="False" />
+			<float name="reinforce_radius" value="15" />
+			<list name="spawn_items">
+			</list>
+			<list name="bonus_xp_from_hold_list">
+			</list>
+			<list name="reinforce_requirements">
+				<template_reference name="required" value="requirements\required_squad_veterancy">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<float name="veterancy_rank" value="4" />
+				</template_reference>
+			</list>
+			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073742215" />

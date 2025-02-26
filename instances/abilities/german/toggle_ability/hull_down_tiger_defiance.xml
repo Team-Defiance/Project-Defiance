@@ -37,6 +37,18 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="2617" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="True" />
+					<uniqueid name="id" value="1073755831" />
+				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
 						<template_reference name="action" value="action\apply_modifiers_action">
@@ -252,9 +264,9 @@
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="True" />
 									<template_reference name="ui_info" value="tables\ui_info">
-										<locstring name="screen_name" value="0" />
-										<locstring name="help_text" value="0" />
-										<icon name="icon_name" value="Icons_abilities_kv_hull_down" />
+										<locstring name="screen_name" value="2745" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="2744" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_hulldown" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="1073752836" />
@@ -449,7 +461,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="2169" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2028" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2733" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_hulldown" />
 			<string name="overlay_name" value="" />

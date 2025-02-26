@@ -61,14 +61,6 @@
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073747446" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="unarmed" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="flamethrower_state" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073747962" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
