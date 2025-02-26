@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\sniper_boys_anti_tank_critical_shot_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\sniper_boys_anti_tank_critical_shot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -411,7 +411,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\infantry_anti_tank_weapon\boys_at_rifle_sniper_mp" />
+							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\infantry_anti_tank_weapon\boys_at_rifle_sniper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
