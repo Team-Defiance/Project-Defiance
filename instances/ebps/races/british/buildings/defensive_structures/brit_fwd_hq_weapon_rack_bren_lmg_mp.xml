@@ -123,6 +123,11 @@
 					<locstring name="ui_name" value="11140655" />
 					<float name="required_free_slot_size" value="1" />
 				</template_reference>
+				<template_reference name="required" value="requirements\required_race">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<instance_reference name="race" value="racebps\british" />
+				</template_reference>
 			</list>
 			<template_reference name="unlimited_option" value="options\ebpextensions\slotitem_ext\unlimited_option">
 				<group name="item_cost">
@@ -130,7 +135,7 @@
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
-					<float name="munition" value="60" />
+					<float name="munition" value="55" />
 					<float name="popcap" value="0" />
 				</group>
 				<list name="slot_item_actions">

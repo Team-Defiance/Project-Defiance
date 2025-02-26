@@ -1,9 +1,9 @@
 <instance description="37mm cannon used by m8 greyhound" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.05" />
-			<float name="far" value="0.025" />
-			<float name="mid" value="0.0375" />
+			<float name="near" value="0.07" />
+			<float name="far" value="0.02" />
+			<float name="mid" value="0.045" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">

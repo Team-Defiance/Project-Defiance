@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.06" />
+			<float name="near" value="0.065" />
 			<float name="far" value="0.025" />
-			<float name="mid" value="0.0425" />
+			<float name="mid" value="0.045" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -431,12 +431,12 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="ballistic" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="near" value="190" />
-			<float name="far" value="135" />
-			<float name="mid" value="165" />
+			<float name="far" value="150" />
+			<float name="mid" value="175" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

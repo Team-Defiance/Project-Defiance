@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="1" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -156,9 +156,9 @@
 				<float name="min" value="2.5" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.3" />
+				<float name="near" value="0.2" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.5" />
+				<float name="mid" value="0.6" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="mg42_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -395,7 +395,7 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.8" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
 			<float name="nearby_suppression_radius" value="13" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
@@ -409,7 +409,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.00015" />
+			<float name="amount" value="0.000125" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="2.5" />

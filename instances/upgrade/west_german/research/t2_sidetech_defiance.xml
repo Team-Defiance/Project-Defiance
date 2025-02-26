@@ -20,7 +20,7 @@
 				<float name="action" value="0" />
 				<float name="command" value="0" />
 				<float name="fuel" value="25" />
-				<float name="manpower" value="100" />
+				<float name="manpower" value="125" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
@@ -42,6 +42,21 @@
 		</group>
 		<bool name="validate_actions" value="False" />
 		<list name="actions">
+			<template_reference name="action" value="action\player_target_action">
+				<bool name="allies" value="False" />
+				<bool name="enemies" value="False" />
+				<bool name="neutral" value="False" />
+				<bool name="self" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\upgrade_add">
+						<bool name="apply_to_entities_in_squad" value="False" />
+						<bool name="trigger_publish_event" value="False" />
+						<instance_reference name="upgrade" value="upgrade\west_german\passive\tiger_unlock_2" mod="84428889d71d41a48e2eff09c2425d54" />
+						<uniqueid name="id" value="1073755096" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073755097" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 		</list>

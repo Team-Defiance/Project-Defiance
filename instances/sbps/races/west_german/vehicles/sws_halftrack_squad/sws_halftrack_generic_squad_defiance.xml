@@ -186,19 +186,19 @@
 										<template_reference name="requirement" value="requirements\required_entity">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											<enum name="entity_type" value="" />
 										</template_reference>
 										<template_reference name="requirement" value="requirements\required_entity">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											<enum name="entity_type" value="" />
 										</template_reference>
 										<template_reference name="requirement" value="requirements\required_entity">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											<enum name="entity_type" value="" />
 										</template_reference>
 									</list>
@@ -349,9 +349,9 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_reserve_tier1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_kombat_tier2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_panzer_tier3_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_pe_tier1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_pe_tier2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_pe_tier3_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

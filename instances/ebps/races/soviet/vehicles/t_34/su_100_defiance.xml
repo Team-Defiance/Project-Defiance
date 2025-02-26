@@ -16,9 +16,10 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sov_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\toggle_ability\vehicle_free_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\su_100_ambush_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\timed_ability\atg_free_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -110,12 +111,12 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="140" />
-					<float name="manpower" value="390" />
+					<float name="fuel" value="150" />
+					<float name="manpower" value="400" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="50" />
+				<float name="time_seconds" value="60" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -139,8 +140,59 @@
 			<bool name="remove_from_pathfinding_on_death" value="True" />
 			<bool name="reveal_to_all_on_death" value="False" />
 			<bool name="ui_can_scuttle" value="False" />
-			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_t_34_85_red_banner_mp" />
+			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_su_85" />
 			<list name="death_actions">
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="True" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\no_action">
+									<uniqueid name="id" value="1073755587" />
+									<template_reference name="ui_help_text" value="options\none">
+									</template_reference>
+								</template_reference>
+							</list>
+							<int name="weight" value="90" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="10" />
+									<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="False" />
+									<bool name="player_owned" value="False" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073755588" />
+									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+										<string name="attach_target_marker_name" value="" />
+										<string name="attach_action_name" value="" />
+										<string name="detach_action_name" value="" />
+										<bool name="destroy_on_cancel" value="True" />
+										<list name="detach_entity_actions">
+										</list>
+									</template_reference>
+									<list name="spawned_entity_actions">
+										<template_reference name="actions" value="action\self_destruction_action">
+											<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\mortarincendiary_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+											<uniqueid name="id" value="1073755589" />
+										</template_reference>
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073755479" />
+				</template_reference>
 			</list>
 			<float name="armor" value="180" />
 			<float name="rear_armor" value="140" />
@@ -380,7 +432,7 @@
 			</group>
 			<bool name="extended_sight" value="True" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -949,12 +1001,12 @@
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate" value="27" />
+			<float name="rotation_rate" value="25" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<float name="speed_max" value="6.2" />
+			<float name="speed_max" value="5.6" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0" />

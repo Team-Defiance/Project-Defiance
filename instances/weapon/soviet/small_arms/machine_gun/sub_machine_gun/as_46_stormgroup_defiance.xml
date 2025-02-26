@@ -223,10 +223,10 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1.5" />
-				<float name="damage_multiplier" value="1.5" />
-				<float name="penetration_multiplier" value="0.5" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
+				<float name="penetration_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.35" />
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="smg" />
 		<string name="fx_tracer_name" value="mp40_tracer" />
-		<float name="fx_tracer_speed" value="160" />
+		<float name="fx_tracer_speed" value="120" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />

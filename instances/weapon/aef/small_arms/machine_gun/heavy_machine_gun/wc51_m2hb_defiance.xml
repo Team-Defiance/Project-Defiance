@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="0.75" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.7" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.04" />
@@ -135,13 +135,13 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="8" />
-				<float name="min" value="8" />
+				<float name="max" value="9" />
+				<float name="min" value="9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1.2" />
-				<float name="mid" value="1.1" />
+				<float name="far" value="1.5" />
+				<float name="mid" value="1.2" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -355,7 +355,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg_large" />
 		<string name="fx_tracer_name" value="m2hb50cal_tracer" />
-		<float name="fx_tracer_speed" value="220" />
+		<float name="fx_tracer_speed" value="160" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />

@@ -54,8 +54,8 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="5" />
-			<float name="manpower" value="360" />
-			<float name="munition" value="15" />
+			<float name="manpower" value="450" />
+			<float name="munition" value="5" />
 			<float name="popcap" value="0" />
 		</group>
 		<list name="start_actions">
@@ -111,7 +111,7 @@
 					<template_reference name="action" value="action\upgrade_add">
 						<bool name="apply_to_entities_in_squad" value="False" />
 						<bool name="trigger_publish_event" value="False" />
-						<instance_reference name="upgrade" value="upgrade\army_items\infantry_discount_mp" />
+						<instance_reference name="upgrade" value="upgrade\army_items\infantry_discount_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<uniqueid name="id" value="1073747043" />
 					</template_reference>
 				</list>
@@ -120,18 +120,28 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\wg_hq_pioneer_call_in" />
-			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\37mm_at_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\command_panther_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\operation_magnitude_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\modal_ability\commander_ability\pe_stuka_bombing_strike_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\01_rocket_p4" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\02_gebirgs_stg" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\03_operation_griffin_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\04_stuka_smoke_bomb" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\05_37mm_at_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\06_command_panther_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\spec_ops_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\01_volksgrenadiere" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\02_leig_pyro" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\03_ostwind" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\04_radio_silence_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\06_sturmtiger_pe_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\05_artillery_105mm" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\urban_assault_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
 				<float name="command" value="20" />
-				<float name="fuel" value="450" />
-				<float name="manpower" value="1750" />
-				<float name="munition" value="800" />
+				<float name="fuel" value="500" />
+				<float name="manpower" value="2000" />
+				<float name="munition" value="1000" />
 				<float name="soviet_progression" value="-1" />
 				<float name="soviet_227" value="-1" />
 				<float name="popcap" value="-1" />
@@ -215,29 +225,29 @@
 		<group name="ai_production_info">
 			<list name="base_building_list">
 				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\generic_kombat_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\generic_panzer_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\generic_reserve_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>

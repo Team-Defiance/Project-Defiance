@@ -52,7 +52,7 @@
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.4" />
+				<float name="near" value="0.35" />
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
@@ -425,7 +425,7 @@
 				<float name="speed_vertical" value="90" />
 			</group>
 			<float name="pivot_end_time" value="0" />
-			<bool name="pivot_only" value="True" />
+			<bool name="pivot_only" value="False" />
 			<float name="pivot_start_time" value="0" />
 			<float name="fire_cone_angle_vert" value="2" />
 		</group>

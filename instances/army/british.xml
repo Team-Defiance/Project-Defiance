@@ -54,8 +54,8 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="450" />
-			<float name="munition" value="20" />
+			<float name="manpower" value="300" />
+			<float name="munition" value="10" />
 			<float name="popcap" value="0" />
 		</group>
 		<list name="start_actions">
@@ -120,14 +120,17 @@
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\brit_hq_engineer_call_in" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\land_mattress_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\concentrated_fire_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\strafing_run_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
 				<float name="command" value="20" />
-				<float name="fuel" value="450" />
-				<float name="manpower" value="1750" />
-				<float name="munition" value="800" />
+				<float name="fuel" value="500" />
+				<float name="manpower" value="2000" />
+				<float name="munition" value="1000" />
 				<float name="soviet_progression" value="-1" />
 				<float name="soviet_227" value="-1" />
 				<float name="popcap" value="-1" />
@@ -360,6 +363,10 @@
 				<string name="key" value="default_mp" />
 				<instance_reference name="building" value="ebps\races\british\buildings\base_building\british_base_stamper" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
+					<group name="starting_squad">
+						<instance_reference name="squad" value="sbps\races\british\tier_0\royal_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<bool name="check_requirements" value="False" />
+					</group>
 				</list>
 				<list name="player_upgrades">
 				</list>

@@ -11,20 +11,20 @@
 			</list>
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="2" />
+					<float name="duration" value="5" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\kicker_message_action">
-							<float name="loop_interval" value="0.2" />
-							<locstring name="message" value="2399" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="loop_interval" value="0" />
+							<locstring name="message" value="2619" mod="84428889d71d41a48e2eff09c2425d54" />
 							<float name="message_colour_a" value="255" />
 							<float name="message_colour_b" value="255" />
 							<float name="message_colour_g" value="255" />
 							<float name="message_colour_r" value="255" />
-							<float name="message_duration" value="1" />
-							<bool name="team_only" value="True" />
-							<bool name="check_fow" value="False" />
-							<uniqueid name="id" value="1073753874" />
+							<float name="message_duration" value="5" />
+							<bool name="team_only" value="False" />
+							<bool name="check_fow" value="True" />
+							<uniqueid name="id" value="1073756502" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073753875" />
@@ -112,7 +112,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="11084198" />
-			<locstring name="help_text" value="11084199" />
+			<locstring name="help_text" value="2689" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_fire_smoke_shell" />
 			<string name="overlay_name" value="" />
@@ -144,7 +144,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />

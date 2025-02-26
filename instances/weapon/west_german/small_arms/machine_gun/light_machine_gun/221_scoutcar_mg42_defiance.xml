@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="pintle_mg42_tracer" />
-		<float name="fx_tracer_speed" value="200" />
+		<float name="fx_tracer_speed" value="140" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.4" />
-				<float name="min" value="5" />
+				<float name="max" value="5.2" />
+				<float name="min" value="4.8" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

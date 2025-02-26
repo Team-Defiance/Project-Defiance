@@ -16,10 +16,11 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\valentine_2_inch_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\toggle_ability\valentine_observation_mode_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\valentine_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\valentine_2_inch_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -85,7 +86,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="80" />
+					<float name="fuel" value="75" />
 					<float name="manpower" value="300" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -163,9 +164,9 @@
 					<uniqueid name="id" value="1073753357" />
 				</template_reference>
 			</list>
-			<float name="armor" value="125" />
-			<float name="rear_armor" value="110" />
-			<float name="target_size" value="18" />
+			<float name="armor" value="130" />
+			<float name="rear_armor" value="100" />
+			<float name="target_size" value="19" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -247,7 +248,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="7" />
+			<float name="personnel_pop" value="8" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -257,12 +258,12 @@
 			</group>
 			<bool name="extended_sight" value="True" />
 			<float name="extended_sight_radius" value="100" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
 				<float name="outer_height" value="-3" />
-				<float name="outer_radius" value="35" />
+				<float name="outer_radius" value="30" />
 				<float name="cone_angle" value="360" />
 				<float name="cone_start_radius" value="0" />
 			</group>
@@ -425,7 +426,7 @@
 								<float name="z" value="1.1" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\cromwell_coaxial_vehicle_turret_mp" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_valentine_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

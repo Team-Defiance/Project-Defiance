@@ -161,18 +161,6 @@
 			<float name="spacing_distance" value="0" />
 			<bool name="self_construct" value="False" />
 			<list name="on_construction_actions">
-				<template_reference name="action" value="action\add_ability_action">
-					<uniqueid name="id" value="1073747013" />
-					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\mech_beasts_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
-				<template_reference name="action" value="action\add_ability_action">
-					<uniqueid name="id" value="1073747014" />
-					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_equipment_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
-				<template_reference name="action" value="action\add_ability_action">
-					<uniqueid name="id" value="1073747015" />
-					<instance_reference name="ability_to_add" value="abilities\german\timed_ability\german_infantry_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -240,7 +228,7 @@
 			<string name="extra_text_deprecated" value="Allows production of Pioneers, Grenadiers and Panzergrenadiers. Research Battle Phases to unlock additional equipment, units and construction options." />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="823" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2099300" />
 			<string name="hotkey_name" value="axis_foundation_hq" />
 			<icon name="icon_name" value="Icons_buildings_building_german_hq" />
 			<enum name="kill_type" value="building" />
@@ -660,19 +648,19 @@
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\pioniere\pioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\grenadiere\grenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\soldiers\panzergrenadiere\panzergrenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 			</list>
 			<list name="bonus_xp_from_hold_list">

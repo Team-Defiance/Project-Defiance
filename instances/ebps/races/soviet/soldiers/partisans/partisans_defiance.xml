@@ -31,7 +31,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="50" />
+					<float name="manpower" value="48" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -420,7 +420,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\small_arms\single_fire\rifle\mosin_partisans_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\small_arms\single_fire\rifle\k98_partisans_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -781,7 +781,7 @@
 											<locstring name="ui_name" value="0" />
 											<bool name="include_queued" value="False" />
 											<bool name="is_present" value="True" />
-											<instance_reference name="upgrade_name" value="upgrade\soviet\items\ppsh_41_partisans" mod="84428889d71d41a48e2eff09c2425d54" />
+											<instance_reference name="upgrade_name" value="upgrade\soviet\items\smg_package_partisans" mod="84428889d71d41a48e2eff09c2425d54" />
 										</template_reference>
 									</list>
 									<list name="action_table">

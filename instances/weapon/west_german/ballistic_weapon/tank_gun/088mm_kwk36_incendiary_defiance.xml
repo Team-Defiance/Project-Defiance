@@ -275,6 +275,8 @@
 			<float name="max" value="160" />
 			<float name="min" value="160" />
 			<list name="on_penetrated_actions">
+			</list>
+			<list name="post_damage_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -294,7 +296,7 @@
 						</template_reference>
 						<template_reference name="required" value="requirements\required_health">
 							<float name="health_range_min_percentage" value="0" />
-							<float name="health_range_max_percentage" value="0.01" />
+							<float name="health_range_max_percentage" value="0.025" />
 							<locstring name="ui_name" value="0" />
 							<enum name="reason" value="usage" />
 						</template_reference>
@@ -308,34 +310,32 @@
 										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\burn_death" />
-											<uniqueid name="id" value="1073754097" />
+											<uniqueid name="id" value="1073756182" />
 										</template_reference>
 									</list>
-									<int name="weight" value="18" />
+									<int name="weight" value="20" />
 								</group>
 								<group name="action_choice">
 									<list name="actions">
 										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073754098" />
+											<uniqueid name="id" value="1073756183" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
 										</template_reference>
 									</list>
-									<int name="weight" value="82" />
+									<int name="weight" value="80" />
 								</group>
 							</list>
-							<uniqueid name="id" value="1073754099" />
+							<uniqueid name="id" value="1073756184" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754100" />
+					<uniqueid name="id" value="1073756185" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-			</list>
-			<list name="post_damage_actions">
 			</list>
 		</group>
 		<group name="damage_over_time">

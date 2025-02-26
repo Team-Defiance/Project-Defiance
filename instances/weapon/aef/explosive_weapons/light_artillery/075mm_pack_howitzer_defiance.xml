@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.12" />
-				<float name="near" value="0.75" />
+				<float name="near" value="0.72" />
 				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.06" />
-				<float name="near" value="0.375" />
+				<float name="near" value="0.36" />
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
@@ -431,7 +431,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="big_explosive" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
 			<float name="mid" value="60" />

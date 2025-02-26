@@ -115,7 +115,7 @@
 		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="brit_officer_arty" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="True" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -123,7 +123,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="art" />
+			<string name="code_1" value="155" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -170,7 +170,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
