@@ -422,7 +422,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.4" />
+			<float name="accuracy_multiplier" value="0.6" />
 			<float name="burst_multiplier" value="0.75" />
 			<float name="cooldown_multiplier" value="0.75" />
 			<bool name="disable_moving_firing" value="False" />
@@ -472,8 +472,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="2" />
-				<float name="min" value="2" />
+				<float name="max" value="3" />
+				<float name="min" value="3" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
@@ -484,7 +484,7 @@
 			<float name="delay_bracket_change_chance" value="0.5" />
 			<float name="distance_bracket_count_air" value="2" />
 			<float name="distance_bracket_count_ground" value="5" />
-			<float name="distance_scatter_max" value="4.8" />
+			<float name="distance_scatter_max" value="2.4" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
