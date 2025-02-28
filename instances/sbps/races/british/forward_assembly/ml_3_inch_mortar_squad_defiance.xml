@@ -798,7 +798,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="480" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11145685" />
+								<locstring name="screen_name" value="3020" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -834,9 +834,18 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
+												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_smoke_barrage_mp" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073753636" />
@@ -848,7 +857,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="960" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11047264" />
+								<locstring name="screen_name" value="3021" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -886,7 +895,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.6" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_mortar_barrage_mp" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -895,7 +904,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.6" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_smoke_barrage_mp" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -904,7 +913,16 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.6" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\mortar_team_mortar_victortarget_barrage_mp" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.6" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073753639" />
@@ -916,7 +934,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="1920" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11047265" />
+								<locstring name="screen_name" value="3022" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -956,13 +974,29 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="2880" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="3019" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073756867" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>
@@ -970,13 +1004,29 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="3840" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="3023" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073756868" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>
