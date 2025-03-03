@@ -728,7 +728,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
 			<float name="capture_rate_multiplier" value="1" />
-			<float name="revert_rate_multiplier" value="1.33" />
+			<float name="revert_rate_multiplier" value="1.3" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">

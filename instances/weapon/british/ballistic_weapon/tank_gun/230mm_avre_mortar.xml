@@ -422,13 +422,20 @@
 					<instance_reference name="upgrade" value="upgrade\british\ability_lock_out\ability_lock_out_avre_not_reloaded" />
 					<uniqueid name="id" value="1073756882" />
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="off" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="avre_mortar_vis" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073756883" />
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="25" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="off" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="avre_mortar_vis" />
+							<string name="undo_action_state_name" value="on" />
+							<uniqueid name="id" value="1073756942" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073756941" />
 				</template_reference>
 			</list>
 		</group>
