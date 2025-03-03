@@ -126,10 +126,10 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="160" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="75" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="axis_mortar_barrage" />
+		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
