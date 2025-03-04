@@ -172,6 +172,20 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\overwatch\sprint_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="3040" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="2" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
 		<int name="ui_position" value="34" />
