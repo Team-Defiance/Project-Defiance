@@ -183,6 +183,7 @@
 				<instance_reference name="upgrade" value="upgrade\soviet\items\engineer_minesweeper_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\soviet\items\ppsh_41_sappers" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\soviet\items\shockarmy_50_sappers" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\soviet\items\mobilize_reserves_saperi" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -379,6 +380,15 @@
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
+							<template_reference name="modifier" value="modifiers\weapon_scatter">
+								<enum name="application_type" value="apply_to_weapon" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="hardpoint_01" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="2.5" />
+								<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+							</template_reference>
 						</list>
 						<uniqueid name="id" value="1073752790" />
 					</template_reference>
@@ -435,6 +445,22 @@
 							<uniqueid name="id" value="1073752791" />
 							<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\saperi\sapper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
+						</template_reference>
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.92" />
+									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073792234" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073752792" />
@@ -743,12 +769,12 @@
 			</group>
 			<group name="ui_info">
 				<locstring name="extra_text" value="0" />
-				<locstring name="help_text" value="0" />
+				<locstring name="help_text" value="11042673" />
 				<string name="hotkey_name" value="Reinforce" />
 				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
-				<locstring name="screen_name" value="0" />
+				<locstring name="screen_name" value="11007514" />
 			</group>
 			<list name="paradrop_requirements">
 			</list>

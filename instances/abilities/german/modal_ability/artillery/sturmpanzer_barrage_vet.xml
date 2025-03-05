@@ -1,10 +1,10 @@
-<instance description="Brummbar Vet 1 ability barrage" template="abilities">
+<instance description="Brummbar Vet 4 barrage" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="1" />
-					<uniqueid name="id" value="1073745080" />
+					<uniqueid name="id" value="1073792228" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -18,11 +18,11 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073745081" />
+					<uniqueid name="id" value="1073792229" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073745082" />
+					<uniqueid name="id" value="1073792230" />
 				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
 					<bool name="disable_parent_hardpoint" value="True" />
@@ -31,10 +31,10 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="3" />
+					<float name="num_salvo" value="5" />
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
-					<uniqueid name="id" value="1073745086" />
+					<uniqueid name="id" value="1073792231" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 			</list>
@@ -49,7 +49,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="35" />
+			<float name="munition" value="20" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -72,7 +72,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="60" />
+		<float name="range" value="70" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="False" />
@@ -103,7 +103,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="469" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="3045" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11078361" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_abilities_ability_west_german_128mm_supporting_fire" />
@@ -128,27 +128,16 @@
 				<bool name="is_present" value="False" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11072949" />
-				<float name="veterancy_rank" value="1" />
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<float name="veterancy_rank" value="4" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11046462" />
+				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\german\commander\ability\hulldown_constructing" />
 				<bool name="include_queued" value="False" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_squad_veterancy">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<float name="veterancy_rank" value="4" />
-					</template_reference>
-				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -184,5 +173,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741936" />
+	<uniqueid name="pbgid" value="1073742447" />
 </instance>
