@@ -303,7 +303,7 @@
 						<float name="min_distance" value="-1" />
 					</group>
 				</group>
-				<float name="damage_frequency" value="3" />
+				<float name="damage_frequency" value="2.5" />
 				<instance_reference name="dot_weapon" value="weapon\british\flame_throwers\universal_carrier_flamthrower_dot" />
 				<float name="dots_max" value="1" />
 				<float name="dots_min" value="1" />
@@ -311,7 +311,7 @@
 				<float name="duration_min" value="15" />
 				<float name="radius_max" value="3" />
 				<float name="radius_min" value="3" />
-				<float name="radius_scatter" value="3" />
+				<float name="radius_scatter" value="4" />
 				<group name="target_info">
 					<template_reference name="target_info" value="type_ability_target_type\all">
 					</template_reference>
