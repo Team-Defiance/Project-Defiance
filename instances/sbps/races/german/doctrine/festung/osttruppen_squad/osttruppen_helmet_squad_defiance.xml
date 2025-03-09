@@ -162,11 +162,11 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="3" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\ostruppen_soldier\ostruppen_soldier_helmet_cape_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\german\soldiers\osttruppen_soldier\osttruppen_soldier_helmet_cape_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="3" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\ostruppen_soldier\ostruppen_soldier_helmet_only_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\german\soldiers\osttruppen_soldier\osttruppen_soldier_helmet_only_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -481,7 +481,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\add_to_squad_loadout_action">
 							<uniqueid name="id" value="1073757003" />
-							<instance_reference name="unit_type" value="ebps\races\german\soldiers\ostruppen_soldier\ostruppen_soldier_helmet_cape_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="unit_type" value="ebps\races\german\soldiers\osttruppen_soldier\osttruppen_soldier_helmet_cape_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
 						</template_reference>
 					</list>
