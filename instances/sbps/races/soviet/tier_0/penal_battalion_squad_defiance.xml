@@ -479,7 +479,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.931035" />
+									<float name="value" value="0.93328" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>
@@ -570,7 +570,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="0.5" />
+				<float name="cost_percentage" value="0.4839" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">
