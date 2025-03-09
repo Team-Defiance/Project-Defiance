@@ -56,7 +56,7 @@
 						<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
 					</template_reference>
 					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-						<enum name="application_type" value="apply_to_entity" />
+						<enum name="application_type" value="apply_to_squad" />
 						<bool name="exclusive" value="False" />
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
