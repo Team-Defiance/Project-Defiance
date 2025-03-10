@@ -123,11 +123,11 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1.125" />
-				<float name="min" value="0.875" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.06" />
+				<float name="accuracy_multiplier" value="1.08" />
 				<group name="search_radius">
 					<float name="far" value="12" />
 					<float name="near" value="6" />
@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.625" />
-				<float name="min" value="1.375" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.75" />
@@ -357,8 +357,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="10" />
-				<float name="min" value="8" />
+				<float name="max" value="11" />
+				<float name="min" value="9" />
 			</group>
 			<list name="on_reload_actions">
 			</list>

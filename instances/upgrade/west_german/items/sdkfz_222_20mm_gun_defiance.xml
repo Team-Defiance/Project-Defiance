@@ -30,7 +30,7 @@
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="3" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="11045931" />
+			<locstring name="extra_text" value="3068" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2601" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="W" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_german_222_dualbarrel" />
@@ -164,6 +164,22 @@
 					<float name="variable_increment_per_tick" value="0" />
 					<float name="variable_cap" value="0" />
 				</template_reference>
+			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\armor_modifier">
+						<enum name="application_type" value="apply_to_entity" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="addition" />
+						<float name="value" value="2.5" />
+						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073792299" />
 			</template_reference>
 		</list>
 		<list name="requirements">
