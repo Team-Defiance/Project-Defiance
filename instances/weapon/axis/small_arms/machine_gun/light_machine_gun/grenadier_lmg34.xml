@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.65" />
-			<float name="far" value="0.4875" />
-			<float name="mid" value="0.585" />
+			<float name="near" value="0.66" />
+			<float name="far" value="0.5445" />
+			<float name="mid" value="0.594" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -17,8 +17,8 @@
 				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="1.75" />
-				<float name="far" value="3.5" />
+				<float name="near" value="1.5" />
+				<float name="far" value="3" />
 				<float name="mid" value="1" />
 			</group>
 		</group>

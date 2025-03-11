@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\model_24_smoke_grenade_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="25" />
+			<float name="max" value="30" />
 			<float name="min" value="5" />
 			<group name="distance">
 				<float name="near" value="-1" />
