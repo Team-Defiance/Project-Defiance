@@ -61,291 +61,6 @@
 					</group>
 					<instance_reference name="ext_key" value="racebps\british" />
 				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083403" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083402" />
-						<string name="hotkey_name" value="S" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill_crocodile" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077205" />
-						<string name="selection_group" value="Crocodile" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="cc" />
-							<string name="code_2" value="ha" />
-							<string name="code_3" value="ar" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="ccr" />
-							<string name="code_2" value="htk" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="46" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_churchill_crocodile_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_churchill_crocodile_s_portrait" />
-						<float name="minimap_texture_scale" value="1.1" />
-						<locstring name="brief_text" value="0" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_churchill_crocodile_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083403" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083402" />
-						<string name="hotkey_name" value="S" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill_crocodile" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077205" />
-						<string name="selection_group" value="Crocodile" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="cc" />
-							<string name="code_2" value="ma" />
-							<string name="code_3" value="ar" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="ccr" />
-							<string name="code_2" value="htk" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="46" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_churchill_crocodile_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_churchill_crocodile_s_portrait" />
-						<float name="minimap_texture_scale" value="1.1" />
-						<locstring name="brief_text" value="0" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_churchill_crocodile_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\soviet" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083403" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083402" />
-						<string name="hotkey_name" value="S" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill_crocodile" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077205" />
-						<string name="selection_group" value="Crocodile" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="wh" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="cc" />
-							<string name="code_2" value="ha" />
-							<string name="code_3" value="ar" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="ccr" />
-							<string name="code_2" value="htk" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="46" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_churchill_crocodile_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_churchill_crocodile_s_portrait" />
-						<float name="minimap_texture_scale" value="1.1" />
-						<locstring name="brief_text" value="0" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_churchill_crocodile_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\west_german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083403" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083402" />
-						<string name="hotkey_name" value="S" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill_crocodile" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077205" />
-						<string name="selection_group" value="Crocodile" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="cc" />
-							<string name="code_2" value="ha" />
-							<string name="code_3" value="ar" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="ccr" />
-							<string name="code_2" value="htk" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="46" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_churchill_crocodile_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_churchill_crocodile_s_portrait" />
-						<float name="minimap_texture_scale" value="1.1" />
-						<locstring name="brief_text" value="0" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_churchill_crocodile_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\aef" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11083403" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11083402" />
-						<string name="hotkey_name" value="S" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_british_churchill_crocodile" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11077205" />
-						<string name="selection_group" value="Crocodile" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="sh" />
-							<string name="code_2" value="ma" />
-							<string name="code_3" value="ar" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="she" />
-							<string name="code_2" value="mar" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="46" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_british_churchill_crocodile_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_british_churchill_crocodile_s_portrait" />
-						<float name="minimap_texture_scale" value="1.1" />
-						<locstring name="brief_text" value="0" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_churchill_crocodile_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="" />
-				</group>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_stance_ext">
@@ -447,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\british\doctrines\placeholder\churchill_crocodile_defiance_placeholder" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\british\vehicles\heavy_tanks\churchill_crocodile_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -577,7 +292,7 @@
 				<template_reference name="action" value="action\slot_item_add">
 					<instance_reference name="slot_item" value="slot_item\british\brit_croc_dummy_slot_item" />
 					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073753597" />
+					<uniqueid name="id" value="1073792344" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -605,10 +320,10 @@
 								<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_track_vehicle" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073753598" />
+							<uniqueid name="id" value="1073792345" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753599" />
+					<uniqueid name="id" value="1073792346" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -629,7 +344,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753600" />
+					<uniqueid name="id" value="1073792347" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -669,11 +384,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753601" />
+												<uniqueid name="id" value="1073792348" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753602" />
+										<uniqueid name="id" value="1073792349" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -689,7 +404,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753603" />
+										<uniqueid name="id" value="1073792350" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -730,11 +445,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753604" />
+												<uniqueid name="id" value="1073792351" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753605" />
+										<uniqueid name="id" value="1073792352" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -750,7 +465,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753136" />
+										<uniqueid name="id" value="1073792353" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -791,11 +506,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073753606" />
+												<uniqueid name="id" value="1073792354" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073753607" />
+										<uniqueid name="id" value="1073792355" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -811,7 +526,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753608" />
+										<uniqueid name="id" value="1073792356" />
 									</template_reference>
 									<template_reference name="action" value="action\ui_unit_modifier_action">
 										<bool name="die_with_creator" value="False" />
@@ -821,13 +536,73 @@
 											<icon name="icon_name" value="Icons_abilities_ability_british_engine_critical_self_repair" />
 											<string name="hotkey_name" value="" />
 										</template_reference>
-										<uniqueid name="id" value="1073753609" />
+										<uniqueid name="id" value="1073792357" />
 									</template_reference>
 									<template_reference name="action" value="action\upgrade_add">
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073753610" />
+										<uniqueid name="id" value="1073792358" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="10100" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073792359" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="20200" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073792360" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -881,5 +656,5 @@
 			<float name="revert_rate_multiplier" value="0" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741958" />
+	<uniqueid name="pbgid" value="1073741977" />
 </instance>

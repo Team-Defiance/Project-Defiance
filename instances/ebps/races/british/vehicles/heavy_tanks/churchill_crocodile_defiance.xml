@@ -17,7 +17,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" />
-				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_hardpoint2_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_mp" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\churchill_smoke_shell_shot_mp" />
@@ -31,7 +31,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="variant" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073753439" />
+					<uniqueid name="id" value="1073792333" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -77,10 +77,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753440" />
+							<uniqueid name="id" value="1073792334" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753441" />
+					<uniqueid name="id" value="1073792335" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -109,7 +109,7 @@
 			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="1080" />
+			<float name="hitpoints" value="960" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -155,13 +155,13 @@
 										<template_reference name="action" value="action\upgrade_remove">
 											<bool name="apply_to_entities_in_squad" value="False" />
 											<instance_reference name="upgrade" value="upgrade\british\commander\passive\command_vehicle_active_player" />
-											<uniqueid name="id" value="1073753442" />
+											<uniqueid name="id" value="1073792336" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073753443" />
+									<uniqueid name="id" value="1073792337" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753444" />
+							<uniqueid name="id" value="1073792338" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -169,11 +169,11 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753445" />
+					<uniqueid name="id" value="1073792339" />
 				</template_reference>
 			</list>
 			<float name="armor" value="290" />
-			<float name="rear_armor" value="180" />
+			<float name="rear_armor" value="165" />
 			<float name="target_size" value="26" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -323,22 +323,6 @@
 							</enum_table>
 							<enum name="apply_on" value="penetrate" />
 						</group>
-						<group name="info">
-							<float name="weight" value="10" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="False" />
-								<bool name="flame" value="False" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_destroy_maingun" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
 					</list>
 				</group>
 				<group name="critical_group">
@@ -370,22 +354,6 @@
 								<bool name="small_explosive" value="True" />
 							</enum_table>
 							<instance_reference name="critical" value="critical\vehicle_out_of_control_fast" />
-							<enum_table name="applicable_hit_direction">
-								<bool name="front" value="True" />
-								<bool name="rear" value="True" />
-							</enum_table>
-							<enum name="apply_on" value="penetrate" />
-						</group>
-						<group name="info">
-							<float name="weight" value="5" />
-							<enum_table name="applicable_weapons">
-								<bool name="small_arms" value="True" />
-								<bool name="flame" value="True" />
-								<bool name="ballistic" value="True" />
-								<bool name="big_explosive" value="True" />
-								<bool name="small_explosive" value="True" />
-							</enum_table>
-							<instance_reference name="critical" value="critical\vehicle_abandon_clone_mp" />
 							<enum_table name="applicable_hit_direction">
 								<bool name="front" value="True" />
 								<bool name="rear" value="True" />
@@ -876,10 +844,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753446" />
+							<uniqueid name="id" value="1073792340" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753447" />
+					<uniqueid name="id" value="1073792341" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -906,10 +874,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753448" />
+							<uniqueid name="id" value="1073792342" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753449" />
+					<uniqueid name="id" value="1073792343" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -1107,5 +1075,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742199" />
+	<uniqueid name="pbgid" value="1073742317" />
 </instance>
