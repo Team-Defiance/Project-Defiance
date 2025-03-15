@@ -812,45 +812,21 @@
 									<list name="action_table">
 										<template_reference name="action" value="action\change_target_action">
 											<list name="actions">
-												<template_reference name="action" value="action\requirement_action">
-													<bool name="check_self" value="False" />
-													<bool name="global_fire_and_forget_on_success" value="False" />
-													<bool name="instant_requirement_check" value="False" />
-													<bool name="kill_action_on_failed_requirements" value="False" />
-													<bool name="no_retrigger" value="False" />
-													<bool name="validate_all_sub_actions" value="True" />
-													<list name="requirement_table">
-														<template_reference name="required" value="requirements\required_active_weapon">
-															<enum name="reason" value="usage" />
-															<locstring name="ui_name" value="0" />
-															<string name="hardpoint_name" value="hardpoint_01" />
-															<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\sub_machine_gun\commando_sten_mk_vi_silenced_smg_mp" />
+												<template_reference name="action" value="action\apply_modifiers_action">
+													<float name="duration" value="5" />
+													<bool name="permanent" value="False" />
+													<list name="modifiers">
+														<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+															<enum name="application_type" value="apply_to_weapon" />
+															<bool name="exclusive" value="True" />
+															<string name="modifier_id" value="ambush_camou_firststrike_acc" />
+															<string name="target_type_name" value="hardpoint_01" />
+															<enum name="usage_type" value="multiplication" />
+															<float name="value" value="1.5" />
+															<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 														</template_reference>
 													</list>
-													<list name="action_table">
-														<template_reference name="action" value="action\apply_modifiers_action">
-															<float name="duration" value="5" />
-															<bool name="permanent" value="False" />
-															<list name="modifiers">
-																<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-																	<enum name="application_type" value="apply_to_weapon" />
-																	<bool name="exclusive" value="True" />
-																	<string name="modifier_id" value="ambush_camou_firststrike_acc" />
-																	<string name="target_type_name" value="hardpoint_01" />
-																	<enum name="usage_type" value="multiplication" />
-																	<float name="value" value="1.5" />
-																	<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-																</template_reference>
-															</list>
-															<uniqueid name="id" value="1073792455" />
-														</template_reference>
-													</list>
-													<uniqueid name="id" value="1073792456" />
-													<bool name="fire_and_forget_non_global" value="False" />
-													<template_reference name="ui_help_text" value="tables\help_text_phrase">
-														<int name="phrase_order" value="0" />
-														<locstring name="phrase" value="0" />
-													</template_reference>
+													<uniqueid name="id" value="1073792484" />
 												</template_reference>
 												<template_reference name="action" value="action\requirement_action">
 													<bool name="check_self" value="False" />
@@ -863,7 +839,7 @@
 														<template_reference name="required" value="requirements\required_squad_veterancy">
 															<enum name="reason" value="usage" />
 															<locstring name="ui_name" value="0" />
-															<float name="veterancy_rank" value="2" />
+															<float name="veterancy_rank" value="4" />
 														</template_reference>
 													</list>
 													<list name="action_table">
@@ -871,14 +847,14 @@
 															<float name="duration" value="3.25" />
 															<bool name="permanent" value="False" />
 															<list name="modifiers">
-																<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-																	<enum name="application_type" value="apply_to_entity" />
-																	<bool name="exclusive" value="True" />
-																	<string name="modifier_id" value="commandos_ambush" />
-																	<string name="target_type_name" value="" />
+																<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+																	<enum name="application_type" value="apply_to_weapon" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="hardpoint_01" />
 																	<enum name="usage_type" value="multiplication" />
-																	<float name="value" value="1.35" />
-																	<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+																	<float name="value" value="0.8" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 																</template_reference>
 															</list>
 															<uniqueid name="id" value="1073792457" />
@@ -918,7 +894,7 @@
 													<bool name="die_with_creator" value="True" />
 													<template_reference name="ui_info" value="tables\ui_info">
 														<locstring name="screen_name" value="11140645" />
-														<locstring name="help_text" value="11095020" />
+														<locstring name="help_text" value="3084" mod="84428889d71d41a48e2eff09c2425d54" />
 														<icon name="icon_name" value="Icons_abilities_ability_aef_first_strike" />
 														<string name="hotkey_name" value="" />
 													</template_reference>
