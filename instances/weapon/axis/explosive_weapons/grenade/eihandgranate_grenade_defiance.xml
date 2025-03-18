@@ -51,9 +51,9 @@
 				<float name="mid" value="0.75" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.25" />
-				<float name="near" value="0.25" />
-				<float name="mid" value="0.25" />
+				<float name="far" value="0.125" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.375" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
@@ -74,8 +74,8 @@
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="25" />
-				<float name="mid" value="25" />
+				<float name="far" value="1" />
+				<float name="mid" value="15" />
 				<float name="near" value="25" />
 			</template_reference>
 			<group name="building_damage">
@@ -450,7 +450,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\assault_grenadier_stielgranate_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\m43_stungrenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="30" />
