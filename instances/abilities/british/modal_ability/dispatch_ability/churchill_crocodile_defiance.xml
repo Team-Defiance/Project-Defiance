@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="360" />
+		<float name="recharge_time" value="120" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -135,7 +135,7 @@
 					<template_reference name="required" value="requirements\required_entity">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
-						<instance_reference name="entity_blueprint_name" value="ebps\races\british\vehicles\churchill\churchill_crocodile_mp" />
+						<instance_reference name="entity_blueprint_name" value="ebps\races\british\vehicles\heavy_tanks\churchill_crocodile_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="entity_type" value="" />
 					</template_reference>
 				</list>
@@ -170,6 +170,12 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
+			<template_reference name="required" value="requirements\required_squad">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\british\doctrines\churchill_crocodile_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
