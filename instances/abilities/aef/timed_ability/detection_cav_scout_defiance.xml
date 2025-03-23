@@ -34,6 +34,15 @@
 							<float name="value" value="25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\detect_specific_camouflage_radius" />
 						</template_reference>
+						<template_reference name="modifier" value="modifiers\detect_global_camouflage_radius">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="15" />
+							<instance_reference name="tooltip" value="modifier_tooltip\detect_global_camouflage_radius" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073792566" />
 				</template_reference>
@@ -67,7 +76,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="15" />
+			<float name="munition" value="20" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -122,7 +131,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="3096" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3097" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3098" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="C" />
 			<icon name="icon_name" value="Icons_abilities_ability_west_german_detection_off" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
