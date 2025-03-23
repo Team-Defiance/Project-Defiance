@@ -294,10 +294,13 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\soldier_sniped" />
-							<uniqueid name="id" value="1073792656" />
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="40" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="False" />
+							<enum name="crit_weapon_type" value="small_arms" />
+							<uniqueid name="id" value="1073792668" />
 						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
@@ -381,10 +384,13 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\soldier_sniped" />
-							<uniqueid name="id" value="1073792662" />
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="40" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="False" />
+							<enum name="crit_weapon_type" value="small_arms" />
+							<uniqueid name="id" value="1073792669" />
 						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
@@ -404,11 +410,11 @@
 													<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 												</template_reference>
 											</list>
-											<uniqueid name="id" value="1073792663" />
+											<uniqueid name="id" value="1073792670" />
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="entities" />
-									<uniqueid name="id" value="1073792664" />
+									<uniqueid name="id" value="1073792671" />
 								</template_reference>
 								<template_reference name="action" value="action\timed_action">
 									<float name="duration" value="10" />
@@ -420,14 +426,14 @@
 											<bool name="retrigger" value="True" />
 											<string name="state_machine_name" value="ability_attack_debuff_state" />
 											<string name="undo_action_state_name" value="off" />
-											<uniqueid name="id" value="1073792665" />
+											<uniqueid name="id" value="1073792672" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073792666" />
+									<uniqueid name="id" value="1073792673" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073792667" />
+							<uniqueid name="id" value="1073792674" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073792577" />
