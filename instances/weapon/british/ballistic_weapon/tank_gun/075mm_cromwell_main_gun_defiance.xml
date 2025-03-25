@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="2" />
+			<float name="reaction_radius" value="2.25" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -224,9 +224,9 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.15" />
@@ -410,8 +410,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.2" />
-				<float name="min" value="5" />
+				<float name="max" value="5.1" />
+				<float name="min" value="4.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

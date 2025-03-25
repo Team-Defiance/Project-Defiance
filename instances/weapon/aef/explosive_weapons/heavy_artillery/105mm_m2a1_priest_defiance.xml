@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="7.5" />
+			<float name="reaction_radius" value="12.75" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="False" />
 			<bool name="can_abort_winddown" value="False" />
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="8" />
+			<float name="angle_scatter" value="9.1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />

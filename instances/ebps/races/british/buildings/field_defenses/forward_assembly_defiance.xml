@@ -125,6 +125,13 @@
 							<locstring name="ui_name" value="0" />
 							<bool name="do_construction_completion_check" value="True" />
 						</template_reference>
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\animator_set_state">
@@ -202,7 +209,45 @@
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\british\research\tier_0\weapon_racks_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073753520" />
+					<uniqueid name="id" value="1073756818" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_sector_type">
+							<enum name="reason" value="usage" />
+							<enum name="sector_type" value="sector_type_command" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+									<enum name="application_type" value="apply_to_entity" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073756875" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073756874" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</template_reference>
@@ -449,11 +494,11 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="200" />
+					<float name="manpower" value="100" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="80" />
+				<float name="time_seconds" value="60" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -463,7 +508,7 @@
 			<float name="death_seconds" value="1" />
 			<bool name="delete_when_dead" value="False" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="600" />
+			<float name="hitpoints" value="300" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -520,7 +565,7 @@
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="2" />
+			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -595,6 +640,13 @@
 					<bool name="is_secured_by_checkpoint" value="False" />
 					<bool name="not_in_transition" value="True" />
 				</template_reference>
+				<template_reference name="required" value="requirements\required_entity_upgrade">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<instance_reference name="upgrade_name" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="include_queued" value="False" />
+				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>
@@ -602,6 +654,9 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\british\items\forward_staging_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\forward_assembly_retreat_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
@@ -612,6 +667,7 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\25_pounder_suppressive_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\artillery_flares_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\forward_assembly_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\toggle_ability\forward_hq_retreat_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">

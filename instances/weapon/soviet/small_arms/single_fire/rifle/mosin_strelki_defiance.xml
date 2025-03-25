@@ -17,7 +17,7 @@
 				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.25" />
+				<float name="near" value="0.125" />
 				<float name="far" value="2.5" />
 				<float name="mid" value="1.25" />
 			</group>
@@ -156,7 +156,7 @@
 				<float name="min" value="1.125" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.15" />
+				<float name="near" value="0.1" />
 				<float name="far" value="2" />
 				<float name="mid" value="1" />
 			</group>
@@ -175,25 +175,25 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.75" />
-				<float name="damage_multiplier" value="0.7" />
+				<float name="accuracy_multiplier" value="0.55" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
-				<float name="accuracy_multiplier" value="0.7" />
-				<float name="damage_multiplier" value="0.7" />
+				<float name="accuracy_multiplier" value="0.55" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.7" />
-				<float name="damage_multiplier" value="0.7" />
+				<float name="accuracy_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.7" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />

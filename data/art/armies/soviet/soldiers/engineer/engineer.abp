@@ -1,0 +1,19 @@
+model =
+{
+	"..\\..\\..\\Common\\CompleteMotionTree.abp",
+	"..\\..\\weapons\\rifle_mosin_nagant_sniper\\rifle_mosin_nagant_sniper.abp",
+	"..\\..\\..\\common\\engineer.abp",
+
+	-- Common Soviet Gear
+    "..\\..\\sovietcommongear.abp",
+    "..\\..\\weapons\\mine_tm35\\mine_tm35",
+    
+	-- Main Mesh
+	"engineer",
+}
+
+simvis_attributes =
+{
+	model_scale = 1.0,
+	SingleBoneSkinningDistance = 0, -- engineer's backpack stretches in single bone mode
+}

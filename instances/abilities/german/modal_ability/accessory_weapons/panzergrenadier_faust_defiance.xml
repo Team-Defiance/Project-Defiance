@@ -93,7 +93,7 @@
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="True" />
-		<enum name="shared_timer" value="generic_unit_shared" />
+		<enum name="shared_timer" value="squad_ability_2" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="pf" />
@@ -184,13 +184,6 @@
 						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\pkrieger_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />

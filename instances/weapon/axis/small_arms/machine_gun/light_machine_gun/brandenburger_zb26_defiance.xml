@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.75" />
-			<float name="far" value="0.5625" />
-			<float name="mid" value="0.675" />
+			<float name="near" value="0.76" />
+			<float name="far" value="0.627" />
+			<float name="mid" value="0.684" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -175,25 +175,25 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.55" />
+				<float name="accuracy_multiplier" value="0.65" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.6" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.6" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.6" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />

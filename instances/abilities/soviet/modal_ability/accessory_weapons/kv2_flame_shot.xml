@@ -16,7 +16,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0" />
-							<locstring name="message" value="2618" mod="84428889d71d41a48e2eff09c2425d54" />
+							<locstring name="message" value="3071" mod="84428889d71d41a48e2eff09c2425d54" />
 							<float name="message_colour_a" value="255" />
 							<float name="message_colour_b" value="255" />
 							<float name="message_colour_g" value="255" />
@@ -79,7 +79,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="45" />
+		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
@@ -133,6 +133,11 @@
 				<locstring name="ui_name" value="0" />
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="3070" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

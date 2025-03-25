@@ -383,12 +383,13 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\mortar_team_mortar_victortarget_barrage_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_deep_snow_camo" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_mortar_barrage_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_smoke_barrage_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\team_weapon_suppression_stun_mp" />
-				<instance_reference name="ability" value="abilities\german\timed_ability\mortar_veterancy_3_mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\brit_mortar_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -410,7 +411,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\m1_81mm_mortar_team_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -431,7 +432,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\m1_81mm_mortar_team_barrage_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -452,28 +453,7 @@
 								<float name="z" value="1.41" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\m1_81mm_mortar_team_smoke_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0.47" />
-								<float name="y" value="2.63" />
-								<float name="z" value="1.41" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\m1_81mm_mortar_counter_barrage_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mortar\081mm_mortar_usf_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.5" />
+				<float name="radius" value="0.7" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.25" />
+				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
 				<float name="near" value="0.25" />
-				<float name="mid" value="0.125" />
+				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1.2" />
-				<float name="near" value="0.4" />
-				<float name="mid" value="0.8" />
+				<float name="far" value="0.525" />
+				<float name="near" value="0.175" />
+				<float name="mid" value="0.35" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="2" />
+			<float name="reaction_radius" value="2.25" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />

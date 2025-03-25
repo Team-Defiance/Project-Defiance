@@ -49,7 +49,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -74,7 +74,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="60" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="100" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -127,11 +127,6 @@
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11072949" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11046462" />
@@ -139,15 +134,26 @@
 				<instance_reference name="upgrade_name" value="upgrade\german\commander\ability\hulldown_constructing" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<float name="veterancy_rank" value="4" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
-		<float name="ui_reticule_radius_min" value="7.5" />
-		<float name="ui_reticule_radius_max" value="10" />
+		<float name="ui_reticule_radius_min" value="9.1" />
+		<float name="ui_reticule_radius_max" value="12" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

@@ -43,15 +43,15 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="3" />
+				<float name="radius" value="3.25" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.075" />
 				<float name="near" value="0.75" />
 				<float name="mid" value="0.325" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
+				<float name="far" value="0.0375" />
 				<float name="near" value="0.375" />
 				<float name="mid" value="0.1625" />
 			</group>
@@ -79,9 +79,9 @@
 				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="0.1625" />
+				<float name="far" value="0.00075" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="2.1" />
+			<float name="reaction_radius" value="4.5" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />

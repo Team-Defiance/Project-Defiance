@@ -181,6 +181,11 @@
 					<string name="undo_action_state_name" value="" />
 					<uniqueid name="id" value="1073754438" />
 				</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073792498" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
