@@ -343,7 +343,7 @@
 											<list name="modifiers">
 												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 													<enum name="application_type" value="apply_to_weapon" />
-													<bool name="exclusive" value="True" />
+													<bool name="exclusive" value="False" />
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="hardpoint_01" />
 													<enum name="usage_type" value="multiplication" />
@@ -421,7 +421,7 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="small_arms" />
-							<uniqueid name="id" value="1073792691" />
+							<uniqueid name="id" value="1073792699" />
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="True" />
@@ -444,10 +444,10 @@
 									<bool name="set" value="False" />
 									<bool name="cause_criticals" value="False" />
 									<enum name="crit_weapon_type" value="small_arms" />
-									<uniqueid name="id" value="1073792692" />
+									<uniqueid name="id" value="1073792700" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073792693" />
+							<uniqueid name="id" value="1073792701" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -464,7 +464,7 @@
 											<list name="modifiers">
 												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
 													<enum name="application_type" value="apply_to_weapon" />
-													<bool name="exclusive" value="True" />
+													<bool name="exclusive" value="False" />
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="hardpoint_01" />
 													<enum name="usage_type" value="multiplication" />
@@ -472,11 +472,11 @@
 													<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 												</template_reference>
 											</list>
-											<uniqueid name="id" value="1073792694" />
+											<uniqueid name="id" value="1073792702" />
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="entities" />
-									<uniqueid name="id" value="1073792695" />
+									<uniqueid name="id" value="1073792703" />
 								</template_reference>
 								<template_reference name="action" value="action\timed_action">
 									<float name="duration" value="10" />
@@ -488,14 +488,14 @@
 											<bool name="retrigger" value="True" />
 											<string name="state_machine_name" value="ability_attack_debuff_state" />
 											<string name="undo_action_state_name" value="off" />
-											<uniqueid name="id" value="1073792696" />
+											<uniqueid name="id" value="1073792704" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073792697" />
+									<uniqueid name="id" value="1073792705" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073792698" />
+							<uniqueid name="id" value="1073792706" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073792577" />

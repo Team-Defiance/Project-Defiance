@@ -178,6 +178,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\british\items\sapper_hazard_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\items\sapper_flamethrower" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\commander\defiance\items\sappers_heavy_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -867,7 +868,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="400" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11106981" />
+								<locstring name="screen_name" value="3148" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -892,6 +893,22 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.1" />
+												<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073792744" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">

@@ -10,16 +10,16 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="16" />
+					<float name="minimum_pop_used" value="10" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\british\tier_2\comet_a34_cruiser_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\british\doctrines\mobile_assault\brit_land_mattress_launcher_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073753496" />
+					<uniqueid name="id" value="1073754808" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073753497" />
+					<uniqueid name="id" value="1073754809" />
 				</template_reference>
 			</list>
 		</group>
@@ -40,8 +40,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="125" />
-			<float name="manpower" value="375" />
+			<float name="fuel" value="45" />
+			<float name="manpower" value="360" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -61,29 +61,29 @@
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
-		<bool name="initial_recharge" value="True" />
+		<bool name="initial_recharge" value="False" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="70" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="generic_unit_shared" />
-		<bool name="shared_timer_player_wide" value="False" />
+		<enum name="shared_timer" value="" />
+		<bool name="shared_timer_player_wide" value="True" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="ioo" />
+			<string name="code_1" value="rar" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
-		<enum name="target" value="tp_entity_and_position" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
 			<template_reference name="target_special_validation" value="type_ability_target_type\all">
 			</template_reference>
@@ -96,15 +96,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2247" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2246" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="W" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_british_comet" />
+			<locstring name="extra_text" value="11085950" />
+			<locstring name="help_text" value="11085948" />
+			<string name="hotkey_name" value="" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_british_land_mattress" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="2212" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11085949" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="2248" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -114,9 +114,31 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11115449" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="8" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="popcap" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\british\commander\defiance\unlock\mobile_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="12" />
+		<int name="ui_position" value="50" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
@@ -146,7 +168,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
-		<bool name="ability_super_event_cue" value="True" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742234" />
+	<uniqueid name="pbgid" value="1073742329" />
 </instance>
