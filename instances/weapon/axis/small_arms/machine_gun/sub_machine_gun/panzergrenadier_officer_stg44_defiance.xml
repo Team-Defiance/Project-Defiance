@@ -127,11 +127,11 @@
 				<float name="min" value="0.85" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.025" />
 				<group name="search_radius">
-					<float name="far" value="0" />
+					<float name="far" value="3" />
 					<float name="near" value="5" />
-					<float name="mid" value="2.5" />
+					<float name="mid" value="4" />
 				</group>
 			</group>
 			<group name="rate_of_fire">
@@ -175,25 +175,25 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.6" />
-				<float name="damage_multiplier" value="0.55" />
+				<float name="accuracy_multiplier" value="0.75" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
-				<float name="accuracy_multiplier" value="0.55" />
-				<float name="damage_multiplier" value="0.55" />
+				<float name="accuracy_multiplier" value="0.75" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
-				<float name="accuracy_multiplier" value="0.55" />
-				<float name="damage_multiplier" value="0.55" />
+				<float name="accuracy_multiplier" value="0.7" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.55" />
+				<float name="accuracy_multiplier" value="0.7" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
@@ -223,10 +223,10 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1.5" />
-				<float name="damage_multiplier" value="1.5" />
-				<float name="penetration_multiplier" value="0.5" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
+				<float name="penetration_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.35" />

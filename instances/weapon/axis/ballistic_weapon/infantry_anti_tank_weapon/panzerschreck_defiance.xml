@@ -1,25 +1,25 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.06" />
-			<float name="far" value="0.01" />
-			<float name="mid" value="0.035" />
+			<float name="near" value="0.065" />
+			<float name="far" value="0.015" />
+			<float name="mid" value="0.04" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
-				<float name="max" value="0.625" />
-				<float name="min" value="0.625" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<float name="post_firing_aim_time" value="1.25" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1.25" />
-				<float name="min" value="1.25" />
+				<float name="max" value="0.75" />
+				<float name="min" value="0.75" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="1" />
-				<float name="far" value="1.25" />
-				<float name="mid" value="1.125" />
+				<float name="near" value="0.8" />
+				<float name="far" value="1" />
+				<float name="mid" value="0.9" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="True" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="0.5" />
+			<float name="reaction_radius" value="1.2" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />

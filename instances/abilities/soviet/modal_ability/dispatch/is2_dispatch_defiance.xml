@@ -178,6 +178,14 @@
 				<bool name="check_team" value="False" />
 				<bool name="require_construction_complete" value="True" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_population">
+				<enum name="reason" value="usage" />
+				<group name="free_pop">
+					<float name="medic" value="0" />
+					<float name="personnel" value="21" />
+					<float name="vehicle" value="0" />
+				</group>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="30" />

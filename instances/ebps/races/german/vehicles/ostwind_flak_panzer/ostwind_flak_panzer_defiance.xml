@@ -236,7 +236,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="2.1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
@@ -1277,5 +1277,5 @@
 			<bool name="use_simbox_range_plus_spots" value="True" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741836" />
+	<uniqueid name="pbgid" value="1073742310" />
 </instance>

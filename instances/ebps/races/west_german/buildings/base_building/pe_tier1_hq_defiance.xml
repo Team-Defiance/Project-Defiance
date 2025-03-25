@@ -523,16 +523,6 @@
 					<bool name="play_as_intel_event" value="True" />
 					<enum name="speech_category" value="intel_event" />
 				</template_reference>
-				<template_reference name="action" value="action\ui_unit_modifier_action">
-					<bool name="die_with_creator" value="False" />
-					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="0" />
-						<locstring name="help_text" value="0" />
-						<icon name="icon_name" value="Icons_abilities_ability_aef_reinforce" />
-						<string name="hotkey_name" value="" />
-					</template_reference>
-					<uniqueid name="id" value="1073747789" />
-				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -663,6 +653,7 @@
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
 				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_hospital_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_reinforcements_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_retreat_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -670,7 +661,7 @@
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="True" />
-			<float name="reinforce_radius" value="0" />
+			<float name="reinforce_radius" value="30" />
 			<list name="spawn_items">
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
@@ -694,6 +685,24 @@
 			<list name="bonus_xp_from_hold_list">
 			</list>
 			<list name="reinforce_requirements">
+				<template_reference name="required" value="requirements\required_any_in_list">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t1_reinforcements_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_sector_type">
+							<enum name="reason" value="usage" />
+							<enum name="sector_type" value="sector_type_command" />
+						</template_reference>
+					</list>
+				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>

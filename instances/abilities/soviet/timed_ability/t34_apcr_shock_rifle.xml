@@ -52,8 +52,8 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="0" />
-								<locstring name="help_text" value="0" />
+								<locstring name="screen_name" value="3063" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="3064" mod="84428889d71d41a48e2eff09c2425d54" />
 								<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
@@ -100,7 +100,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="25" />
+		<float name="duration_time" value="30" />
 		<bool name="enable_in_building" value="True" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -147,7 +147,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="3065" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />

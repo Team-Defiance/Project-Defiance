@@ -53,7 +53,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="40" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -76,7 +76,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="80" />
+		<float name="range" value="85" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="50" />
 		<bool name="refundable" value="True" />
@@ -125,20 +125,23 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad_veterancy">
+			<template_reference name="required" value="requirements\required_structure">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="565" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
+				<locstring name="ui_name" value="0" />
+				<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<int name="required_structure_count" value="1" />
+				<bool name="check_team" value="False" />
+				<bool name="require_construction_complete" value="True" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_82mm_mortar_barrage" />
 		<float name="ui_reticule_radius_min" value="4" />
-		<float name="ui_reticule_radius_max" value="7" />
+		<float name="ui_reticule_radius_max" value="9" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

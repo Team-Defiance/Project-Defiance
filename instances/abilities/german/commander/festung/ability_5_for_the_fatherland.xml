@@ -105,7 +105,7 @@
 							<bool name="trigger_on_squad_death" value="False" />
 						</group>
 						<group name="replace_info">
-							<instance_reference name="squad_type_to_monitor" value="sbps\races\german\doctrine\festung\ostruppen_squad\ostruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="squad_type_to_monitor" value="sbps\races\german\doctrine\festung\osttruppen_squad\osttruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="trigger_on_squad_death" value="False" />
 						</group>
 						<group name="replace_info">
@@ -133,7 +133,7 @@
 							<bool name="trigger_on_squad_death" value="False" />
 						</group>
 					</list>
-					<instance_reference name="replacement_squad_type" value="sbps\races\german\doctrine\festung\ostruppen_squad\ostruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="replacement_squad_type" value="sbps\races\german\doctrine\festung\osttruppen_squad\osttruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<int name="spawn_count" value="1" />
 					<int name="trigger_replace_at_entity_death_count" value="6" />
 					<uniqueid name="id" value="1073752041" />

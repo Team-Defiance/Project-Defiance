@@ -28,11 +28,11 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="60" />
+					<float name="manpower" value="65" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="6" />
+				<float name="time_seconds" value="7" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -909,7 +909,7 @@
 													<bool name="retrigger" value="False" />
 													<string name="state_machine_name" value="ability_attack_buff_state" />
 													<string name="undo_action_state_name" value="off" />
-													<uniqueid name="id" value="1073741903" />
+													<uniqueid name="id" value="1073792141" />
 												</template_reference>
 												<template_reference name="action" value="action\requirement_action">
 													<bool name="check_self" value="False" />
@@ -937,13 +937,13 @@
 																<template_reference name="action" value="action\slot_item_add">
 																	<instance_reference name="slot_item" value="slot_item\german\ambush_camo_portrait_icon_item" />
 																	<bool name="permanent" value="False" />
-																	<uniqueid name="id" value="1073741904" />
+																	<uniqueid name="id" value="1073792142" />
 																</template_reference>
 															</list>
-															<uniqueid name="id" value="1073741905" />
+															<uniqueid name="id" value="1073792143" />
 														</template_reference>
 													</list>
-													<uniqueid name="id" value="1073741906" />
+													<uniqueid name="id" value="1073792144" />
 													<bool name="fire_and_forget_non_global" value="False" />
 													<template_reference name="ui_help_text" value="tables\help_text_phrase">
 														<int name="phrase_order" value="0" />
@@ -964,13 +964,13 @@
 															<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 														</template_reference>
 													</list>
-													<uniqueid name="id" value="1073741907" />
+													<uniqueid name="id" value="1073792145" />
 												</template_reference>
 											</list>
-											<uniqueid name="id" value="1073741908" />
+											<uniqueid name="id" value="1073792146" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073741909" />
+									<uniqueid name="id" value="1073792147" />
 									<bool name="fire_and_forget_non_global" value="False" />
 									<template_reference name="ui_help_text" value="tables\help_text_phrase">
 										<int name="phrase_order" value="0" />
@@ -979,10 +979,10 @@
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073741910" />
+							<uniqueid name="id" value="1073792148" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073741911" />
+					<uniqueid name="id" value="1073792149" />
 				</template_reference>
 			</list>
 		</template_reference>

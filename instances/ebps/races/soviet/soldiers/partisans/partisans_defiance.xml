@@ -776,12 +776,10 @@
 												</template_reference>
 											</list>
 										</template_reference>
-										<template_reference name="required" value="requirements\required_squad_upgrade">
+										<template_reference name="required" value="requirements\required_squad_veterancy">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<bool name="include_queued" value="False" />
-											<bool name="is_present" value="True" />
-											<instance_reference name="upgrade_name" value="upgrade\soviet\items\smg_package_partisans" mod="84428889d71d41a48e2eff09c2425d54" />
+											<float name="veterancy_rank" value="1" />
 										</template_reference>
 									</list>
 									<list name="action_table">

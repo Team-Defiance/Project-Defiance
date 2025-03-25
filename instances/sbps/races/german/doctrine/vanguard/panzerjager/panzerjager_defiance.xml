@@ -546,7 +546,7 @@
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073741995" />
+										<uniqueid name="id" value="1073792158" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -592,11 +592,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073741996" />
+										<uniqueid name="id" value="1073792159" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073741997" />
+										<uniqueid name="id" value="1073792160" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -632,7 +632,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073741998" />
+										<uniqueid name="id" value="1073792161" />
 									</template_reference>
 								</list>
 							</group>
@@ -891,7 +891,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
-					<uniqueid name="id" value="1073742003" />
+					<uniqueid name="id" value="1073792162" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>

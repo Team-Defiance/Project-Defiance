@@ -13,13 +13,13 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.5" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="2.5" />
-				<float name="mid" value="1.5" />
+				<float name="far" value="6" />
+				<float name="mid" value="2" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -80,8 +80,8 @@
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="0.001" />
-				<float name="far" value="0.0005" />
+				<float name="mid" value="0.0625" />
+				<float name="far" value="0.0004375" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_sturmtiger" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -467,11 +467,11 @@
 			<instance_reference name="projectile" value="ebps\projectile\380mm_sturmtiger_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="105" />
+			<float name="max" value="85" />
 			<float name="min" value="15" />
 			<group name="distance">
 				<float name="near" value="20" />
-				<float name="far" value="-1" />
+				<float name="far" value="60" />
 				<float name="mid" value="-1" />
 			</group>
 		</group>

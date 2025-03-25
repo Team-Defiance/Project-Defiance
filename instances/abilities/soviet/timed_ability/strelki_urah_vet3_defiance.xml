@@ -182,13 +182,42 @@
 				<float name="veterancy_rank" value="3" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11051738" />
 				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_squad_veterancy">
+					<template_reference name="required" value="requirements\required_in_state">
 						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="856" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="veterancy_rank" value="5" />
+						<locstring name="ui_name" value="0" />
+						<bool name="garrisoned" value="False" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="-1" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="True" />
+						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11157657" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_in_state">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="garrisoned" value="False" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="-1" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="False" />
+						<bool name="suppressed" value="True" />
+						<bool name="camouflaged" value="False" />
 					</template_reference>
 				</list>
 			</template_reference>
