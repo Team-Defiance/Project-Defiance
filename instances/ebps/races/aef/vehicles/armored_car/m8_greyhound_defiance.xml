@@ -428,36 +428,6 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\037mm_m8_greyhound_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="0.5" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\m8_greyhound_shellshock_vet0_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="0.5" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\m8_greyhound_shellshock_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
@@ -480,7 +450,7 @@
 							<instance_reference name="weapon" value="" />
 						</group>
 					</list>
-					<bool name="receives_attack_commands" value="True" />
+					<bool name="receives_attack_commands" value="False" />
 				</group>
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="1" />
@@ -896,7 +866,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
 								<string name="death_event_name" value="Death_Crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="gunner_h8m1_left" />
@@ -906,7 +876,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />
