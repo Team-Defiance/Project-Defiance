@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.00152" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1.25" />
-				<float name="radius_min" value="0.5" />
+				<float name="radius_max" value="4" />
+				<float name="radius_min" value="2" />
 				<float name="splat_only_splat_seconds" value="90" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -168,9 +168,9 @@
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
 			<float name="acceleration" value="60" />
 			<group name="artillery">
-				<bool name="can_counter_barrage" value="True" />
+				<bool name="can_counter_barrage" value="False" />
 				<bool name="is_artillery" value="False" />
-				<bool name="is_target_only" value="True" />
+				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.2" />
 				<float name="speed_increment" value="0.5" />
 				<enum name="firing_angle_type" value="low_angle" />
@@ -191,21 +191,21 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="60" />
+			<float name="speed" value="65" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="tank_gun" />
+					<string name="do_action_state_name" value="tank_gun_ap" />
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073754187" />
+					<uniqueid name="id" value="1073792777" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742225" />
+	<uniqueid name="pbgid" value="1073742323" />
 </instance>
