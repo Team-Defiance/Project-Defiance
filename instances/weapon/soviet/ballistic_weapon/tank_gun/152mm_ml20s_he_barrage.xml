@@ -307,12 +307,12 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.35" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
-			<bool name="disable_moving_firing" value="True" />
-			<float name="moving_end_time" value="1.5" />
-			<float name="moving_start_time" value="1.8" />
+			<bool name="disable_moving_firing" value="False" />
+			<float name="moving_end_time" value="0" />
+			<float name="moving_start_time" value="0" />
 		</group>
 		<string name="name" value="ML-20 152mm Howitzer Round" />
 		<group name="offhand">
