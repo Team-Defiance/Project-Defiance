@@ -186,6 +186,18 @@
 					<float name="vehicle" value="0" />
 				</group>
 			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_entity">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="2415" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_blueprint_name" value="ebps\races\soviet\vehicles\stalin_tank\isu_152" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="entity_type" value="" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="30" />
@@ -221,6 +233,12 @@
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\soviet\vehicles\stalin_tanks\is2_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\soviet\vehicles\stalin_tanks\isu_152_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
