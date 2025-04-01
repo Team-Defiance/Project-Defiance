@@ -203,10 +203,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
 			<bool name="cant_build" value="True" />
-			<bool name="heavy_crush" value="True" />
-			<bool name="land" value="True" />
-			<bool name="light_crush" value="True" />
-			<bool name="medium_crush" value="True" />
+			<bool name="heavy_crush" value="False" />
+			<bool name="land" value="False" />
+			<bool name="light_crush" value="False" />
+			<bool name="medium_crush" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
