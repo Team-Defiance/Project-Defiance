@@ -237,6 +237,19 @@
 			<bool name="ui_can_scuttle" value="False" />
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_halftrack_sdkfz_251_mp" />
 			<list name="death_actions">
+				<template_reference name="action" value="action\target_occupants_action">
+					<list name="subactions">
+						<template_reference name="action" value="action\damage">
+							<float name="damage" value="30" />
+							<bool name="percentage" value="False" />
+							<bool name="set" value="False" />
+							<bool name="cause_criticals" value="True" />
+							<enum name="crit_weapon_type" value="small_arms" />
+							<uniqueid name="id" value="1073792810" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073792811" />
+				</template_reference>
 			</list>
 			<float name="armor" value="14" />
 			<float name="rear_armor" value="8" />
