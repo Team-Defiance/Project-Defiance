@@ -211,7 +211,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="20" />
+		<float name="duration_time" value="15" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -258,7 +258,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11079720" />
+			<locstring name="extra_text" value="3163" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="1620" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="N" />
 			<icon name="icon_name" value="Icons_abilities_ability_step_on_it" />
