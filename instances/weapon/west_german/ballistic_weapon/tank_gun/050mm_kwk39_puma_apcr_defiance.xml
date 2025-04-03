@@ -312,7 +312,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\sequence_action">
-									<uniqueid name="id" value="1073754740" />
+									<uniqueid name="id" value="1073792826" />
 									<list name="action_list_sequences">
 										<list name="actions">
 											<template_reference name="action" value="action\requirement_action">
@@ -326,7 +326,7 @@
 													<template_reference name="required" value="requirements\required_critical">
 														<enum name="reason" value="usage" />
 														<locstring name="ui_name" value="0" />
-														<instance_reference name="critical_name" value="critical\vehicle_vison_block_damaged" />
+														<instance_reference name="critical_name" value="critical\vehicle_blind" />
 														<bool name="is_present" value="True" />
 													</template_reference>
 												</list>
@@ -334,10 +334,10 @@
 													<template_reference name="action" value="action\trigger_critical_action">
 														<float name="remove_at_health" value="1" />
 														<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-														<uniqueid name="id" value="1073754741" />
+														<uniqueid name="id" value="1073792827" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073754742" />
+												<uniqueid name="id" value="1073792828" />
 												<bool name="fire_and_forget_non_global" value="False" />
 												<template_reference name="ui_help_text" value="tables\help_text_phrase">
 													<int name="phrase_order" value="0" />
@@ -348,15 +348,15 @@
 										<list name="actions">
 											<template_reference name="action" value="action\trigger_critical_action">
 												<float name="remove_at_health" value="1" />
-												<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
-												<uniqueid name="id" value="1073754743" />
+												<instance_reference name="critical" value="critical\vehicle_blind" />
+												<uniqueid name="id" value="1073792829" />
 											</template_reference>
 										</list>
 									</list>
 									<bool name="run_now" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754744" />
+							<uniqueid name="id" value="1073792830" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -420,7 +420,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\sequence_action">
-									<uniqueid name="id" value="1073754746" />
+									<uniqueid name="id" value="1073792821" />
 									<list name="action_list_sequences">
 										<list name="actions">
 											<template_reference name="action" value="action\requirement_action">
@@ -434,7 +434,7 @@
 													<template_reference name="required" value="requirements\required_critical">
 														<enum name="reason" value="usage" />
 														<locstring name="ui_name" value="0" />
-														<instance_reference name="critical_name" value="critical\vehicle_vison_block_damaged" />
+														<instance_reference name="critical_name" value="critical\vehicle_blind" />
 														<bool name="is_present" value="True" />
 													</template_reference>
 												</list>
@@ -442,10 +442,10 @@
 													<template_reference name="action" value="action\trigger_critical_action">
 														<float name="remove_at_health" value="1" />
 														<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-														<uniqueid name="id" value="1073754747" />
+														<uniqueid name="id" value="1073792822" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073754748" />
+												<uniqueid name="id" value="1073792823" />
 												<bool name="fire_and_forget_non_global" value="False" />
 												<template_reference name="ui_help_text" value="tables\help_text_phrase">
 													<int name="phrase_order" value="0" />
@@ -456,15 +456,15 @@
 										<list name="actions">
 											<template_reference name="action" value="action\trigger_critical_action">
 												<float name="remove_at_health" value="1" />
-												<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
-												<uniqueid name="id" value="1073754749" />
+												<instance_reference name="critical" value="critical\vehicle_blind" />
+												<uniqueid name="id" value="1073792824" />
 											</template_reference>
 										</list>
 									</list>
 									<bool name="run_now" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754750" />
+							<uniqueid name="id" value="1073792825" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
