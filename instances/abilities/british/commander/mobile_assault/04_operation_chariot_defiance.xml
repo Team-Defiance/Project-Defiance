@@ -4,36 +4,6 @@
 			<list name="end_self_actions">
 			</list>
 			<list name="end_target_actions">
-				<template_reference name="action" value="action\filter_action">
-					<bool name="apply_to_future_units" value="True" />
-					<bool name="apply_to_local_player" value="True" />
-					<instance_reference name="deprecated_entity_type" value="" />
-					<instance_reference name="deprecated_squad_type" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
-							<enum name="unit_type" value="brit_tommy_infantry_section_only" />
-						</template_reference>
-					</group>
-					<enum name="deprecated_unit_class_type" value="" />
-					<list name="action_table">
-						<template_reference name="action" value="action\change_target_action">
-							<list name="actions">
-								<template_reference name="action" value="action\remove_weapon">
-									<bool name="fire_and_forget" value="False" />
-									<float name="hardpoint" value="2" />
-									<uniqueid name="id" value="1073792723" />
-								</template_reference>
-							</list>
-							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073792724" />
-						</template_reference>
-					</list>
-					<enum name="deprecated_squad_class_type" value="" />
-					<list name="target_requirements">
-					</list>
-					<bool name="target_squad" value="False" />
-					<uniqueid name="id" value="1073792725" />
-				</template_reference>
 			</list>
 			<list name="start_self_actions">
 			</list>
@@ -231,35 +201,6 @@
 					</list>
 					<bool name="target_squad" value="False" />
 					<uniqueid name="id" value="1073792733" />
-				</template_reference>
-				<template_reference name="action" value="action\filter_action">
-					<bool name="apply_to_future_units" value="True" />
-					<bool name="apply_to_local_player" value="True" />
-					<instance_reference name="deprecated_entity_type" value="" />
-					<instance_reference name="deprecated_squad_type" value="" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\all">
-						</template_reference>
-					</group>
-					<enum name="deprecated_unit_class_type" value="" />
-					<list name="action_table">
-						<template_reference name="action" value="action\change_target_action">
-							<list name="actions">
-								<template_reference name="action" value="action\remove_weapon">
-									<bool name="fire_and_forget" value="True" />
-									<float name="hardpoint" value="2" />
-									<uniqueid name="id" value="1073792734" />
-								</template_reference>
-							</list>
-							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073792735" />
-						</template_reference>
-					</list>
-					<enum name="deprecated_squad_class_type" value="team_weapon" />
-					<list name="target_requirements">
-					</list>
-					<bool name="target_squad" value="False" />
-					<uniqueid name="id" value="1073792736" />
 				</template_reference>
 			</list>
 		</group>
