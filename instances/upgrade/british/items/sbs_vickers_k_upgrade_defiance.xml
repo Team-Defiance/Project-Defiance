@@ -24,14 +24,14 @@
 				<float name="munition" value="60" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="20" />
+			<float name="time_seconds" value="30" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="1" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="2879" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2897" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3176" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="K" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_vickers_lmg" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -43,9 +43,9 @@
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\small_arms\vickers_k_light_machine_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_vickers_k_light_machine_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073756416" />
+				<uniqueid name="id" value="1073792965" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -67,7 +67,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_slot_item_size">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2892" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="3180" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="required_free_slot_size" value="1" />
 			</template_reference>
 		</list>
@@ -82,5 +82,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742006" />
+	<uniqueid name="pbgid" value="1073742027" />
 </instance>

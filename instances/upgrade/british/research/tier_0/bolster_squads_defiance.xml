@@ -73,6 +73,15 @@
 						<float name="value" value="1" />
 						<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 					</template_reference>
+					<template_reference name="modifier" value="modifiers\squad_size_change_modifier">
+						<enum name="application_type" value="apply_to_squad_type" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<instance_reference name="target_type_name" value="sbps\races\british\doctrines\lend_lease\sbs_raiders_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="usage_type" value="addition" />
+						<float name="value" value="1" />
+						<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+					</template_reference>
 				</list>
 				<uniqueid name="id" value="1073753518" />
 			</template_reference>
