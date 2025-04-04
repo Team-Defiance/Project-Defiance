@@ -279,9 +279,9 @@
 			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_aef_halftrack_m3_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
-			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="" />
-			<string name="skin_winter" value="" />
+			<bool name="skin_pack_override" value="True" />
+			<string name="skin_summer" value="us_0014_summer" />
+			<string name="skin_winter" value="us_0014_winter" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_gen_ext">
 			<string name="animation_event_name" value="" />
