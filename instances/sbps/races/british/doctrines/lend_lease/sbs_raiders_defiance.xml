@@ -764,7 +764,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.15" />
+												<float name="value" value="1.1" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
 										</list>
@@ -993,32 +993,6 @@
 				</template_reference>
 			</list>
 			<list name="construction_groups">
-				<group name="construction_group">
-					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
-					<list name="construction_items">
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
-							<int name="ui_position" value="13" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_munition_mp" />
-							<int name="ui_position" value="31" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_fuel_mp" />
-							<int name="ui_position" value="32" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\british\buildings\defensive_structures\slit_trench_mp" />
-							<int name="ui_position" value="11" />
-						</group>
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\british\buildings\defensive_structures\brit_sandbag_fence__construction__" />
-							<int name="ui_position" value="0" />
-						</group>
-					</list>
-					<enum name="construction_type" value="tp_construction_soviet_conscripts" />
-				</group>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_population_ext">

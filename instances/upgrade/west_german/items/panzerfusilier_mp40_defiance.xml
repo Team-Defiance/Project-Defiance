@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="50" />
+				<float name="munition" value="60" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="20" />
@@ -82,14 +82,6 @@
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\west_german\items\fusilier_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_in_territory">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="in_supply" value="True" />
-				<bool name="is_secured" value="False" />
-				<bool name="is_secured_by_checkpoint" value="False" />
-				<bool name="not_in_transition" value="False" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
