@@ -469,22 +469,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073744324" />
-				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>
@@ -710,14 +694,14 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
+											<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="enable" />
-												<float name="value" value="1" />
-												<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.15" />
+												<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744038" />
