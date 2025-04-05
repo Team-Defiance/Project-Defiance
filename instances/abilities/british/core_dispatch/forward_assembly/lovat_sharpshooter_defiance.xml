@@ -73,13 +73,13 @@
 		<enum name="shared_timer" value="generic_unit_shared" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="sn" />
+			<string name="code_2" value="in" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="eng" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="sni" />
+			<string name="code_2" value="inf" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
