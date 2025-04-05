@@ -95,6 +95,15 @@
 													<float name="value" value="0.75" />
 													<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 												</template_reference>
+												<template_reference name="modifier" value="modifiers\received_damage_modifier">
+													<enum name="application_type" value="apply_to_entity" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.9" />
+													<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073793108" />
 										</template_reference>
@@ -181,7 +190,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="25" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="55" />
+		<float name="recharge_time" value="75" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_2" />
