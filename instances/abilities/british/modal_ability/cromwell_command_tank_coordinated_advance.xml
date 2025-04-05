@@ -95,6 +95,15 @@
 													<float name="value" value="0.75" />
 													<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 												</template_reference>
+												<template_reference name="modifier" value="modifiers\received_damage_modifier">
+													<enum name="application_type" value="apply_to_entity" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.9" />
+													<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073793108" />
 										</template_reference>
@@ -188,11 +197,11 @@
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
-			<string name="code_2" value="" />
+			<string name="code_2" value="sk" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="akn" />
+			<string name="code_1" value="smk" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
