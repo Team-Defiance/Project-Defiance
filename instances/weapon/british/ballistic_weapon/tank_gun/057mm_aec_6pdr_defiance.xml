@@ -24,7 +24,7 @@
 		</group>
 		<group name="anim_table">
 			<string name="cooldown_time_name" value="" />
-			<string name="state_name" value="Main_Gun_State" />
+			<string name="state_name" value="main_gun_state" />
 			<string name="track_horizontal" value="Main_Gun_Horiz" />
 			<string name="track_horizontal_speed" value="Main_Gun_Horiz_Speed" />
 			<string name="track_vertical" value="Main_Gun_Vertical" />
@@ -93,7 +93,7 @@
 			<bool name="artillery_force_obey_los" value="False" />
 			<bool name="attack_team_weapon_user" value="False" />
 			<bool name="can_be_offhanded" value="False" />
-			<bool name="can_be_substituted" value="False" />
+			<bool name="can_be_substituted" value="True" />
 			<float name="combat_slot_offset" value="0" />
 			<bool name="enable_auto_target_search" value="True" />
 			<bool name="fire_at_building_combat_slot" value="False" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="2.25" />
+			<float name="reaction_radius" value="0.5" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -296,10 +296,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_vision" />
-							<uniqueid name="id" value="1073793235" />
+							<uniqueid name="id" value="1073793253" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073793236" />
+					<uniqueid name="id" value="1073793254" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -345,7 +345,7 @@
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
-		<string name="name" value="M3 75mm Main Gun" />
+		<string name="name" value="aec_armored_car_75mm" />
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />
 			<float name="offhand_start_time" value="0" />
@@ -369,7 +369,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\057mm_british_tank_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="45" />
+			<float name="max" value="50" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
@@ -379,8 +379,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.1" />
-				<float name="min" value="4.9" />
+				<float name="max" value="4.1" />
+				<float name="min" value="3.6" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -487,5 +487,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742274" />
+	<uniqueid name="pbgid" value="1073742276" />
 </instance>

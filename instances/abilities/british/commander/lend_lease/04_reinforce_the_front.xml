@@ -159,50 +159,6 @@
 					</list>
 					<bool name="enable_landing" value="False" />
 				</template_reference>
-				<template_reference name="action" value="action\air_strike_action">
-					<bool name="random_direction" value="False" />
-					<float name="source_offset_x" value="1" />
-					<float name="source_offset_y" value="1" />
-					<float name="source_offset_z" value="1" />
-					<float name="time_range_between_planes_maximum" value="1" />
-					<float name="time_range_between_planes_minimum" value="1" />
-					<bool name="use_long_path" value="False" />
-					<group name="loiter_info">
-						<float name="loiter_area_radius" value="1" />
-						<float name="loiter_time_sec" value="0" />
-						<bool name="follow_target" value="False" />
-						<float name="lowest_altitude" value="0" />
-						<bool name="loiter_descend" value="False" />
-						<float name="loiter_circling_time_sec" value="0" />
-						<bool name="can_be_targeted" value="True" />
-					</group>
-					<group name="attack_info">
-						<float name="target_lead_out_distance" value="0" />
-						<float name="target_lead_in_distance" value="0" />
-						<int name="attacks_per_aircraft" value="1" />
-						<float name="delay_between_attack" value="10" />
-						<float name="attack_sway_width" value="0" />
-						<float name="attack_sway_frequency" value="0" />
-						<float name="target_attack_distance" value="100" />
-						<float name="target_attack_time_sec" value="5" />
-						<float name="initial_attack_delay" value="0" />
-					</group>
-					<template_reference name="target_info" value="type_ability_target_type\is_position">
-					</template_reference>
-					<int name="number_aircraft" value="1" />
-					<bool name="search_attack_target" value="False" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_pack_howitzer_plane_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073793237" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-					<list name="additional_loiter_info">
-					</list>
-					<list name="aircraft_on_spawn_actions">
-					</list>
-					<bool name="enable_landing" value="False" />
-				</template_reference>
 				<template_reference name="action" value="action\sector_highlight">
 					<float name="highlight_r" value="33" />
 					<float name="highlight_g" value="206" />
@@ -302,7 +258,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11160956" />
+				<locstring name="ui_name" value="3265" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
 					<float name="command" value="2" />
