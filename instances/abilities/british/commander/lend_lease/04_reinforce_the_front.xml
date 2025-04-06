@@ -6,6 +6,69 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="True" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_territory">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="in_supply" value="True" />
+							<bool name="is_secured" value="False" />
+							<bool name="is_secured_by_checkpoint" value="False" />
+							<bool name="not_in_transition" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\filter_action">
+							<bool name="apply_to_future_units" value="True" />
+							<bool name="apply_to_local_player" value="True" />
+							<instance_reference name="deprecated_entity_type" value="" />
+							<instance_reference name="deprecated_squad_type" value="" />
+							<group name="target_info">
+								<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+									<list name="target_infos">
+										<template_reference name="info" value="type_ability_target_type\own">
+										</template_reference>
+									</list>
+								</template_reference>
+							</group>
+							<enum name="deprecated_unit_class_type" value="" />
+							<list name="action_table">
+								<template_reference name="action" value="action\slot_item_add">
+									<instance_reference name="slot_item" value="slot_item\british\brit_reinforce_the_front" />
+									<bool name="permanent" value="False" />
+									<uniqueid name="id" value="1073793218" />
+								</template_reference>
+							</list>
+							<enum name="deprecated_squad_class_type" value="" />
+							<list name="target_requirements">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="infantry" />
+									<template_reference name="qualify_option" value="options\requirements\required_unit_type_option\any">
+										<int name="min_count" value="1" />
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<bool name="target_squad" value="True" />
+							<uniqueid name="id" value="1073793219" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073793220" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\air_strike_action">
@@ -84,8 +147,8 @@
 					</template_reference>
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="False" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_pack_howitzer_plane_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073792978" />
+					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_m2hb_plane_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073792979" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
@@ -128,8 +191,8 @@
 					</template_reference>
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="False" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_m2hb_plane_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073792979" />
+					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_pack_howitzer_plane_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073793237" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
@@ -160,7 +223,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
-			<float name="manpower" value="125" />
+			<float name="manpower" value="175" />
 			<float name="munition" value="80" />
 			<float name="popcap" value="0" />
 		</group>
@@ -168,7 +231,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="20" />
+		<float name="duration_time" value="40" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -186,7 +249,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="150" />
+		<float name="recharge_time" value="200" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

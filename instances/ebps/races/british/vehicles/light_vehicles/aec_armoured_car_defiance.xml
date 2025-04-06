@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\british\vehicles\cromwell\cromwell" />
+			<file name="animator" value="armies\british\vehicles\aec_armoured_car\aec_armoured_car" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -16,13 +16,13 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\cromwell_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\aec_defensive_smoke" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" />
+				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_war_speed_bonus_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_war_speed_bonus_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\aec_tread_shot_vet_0_mp" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\aec_tread_shot_vet_1mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -67,14 +67,14 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2.1" />
+									<float name="value" value="2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753370" />
+							<uniqueid name="id" value="1073793195" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753371" />
+					<uniqueid name="id" value="1073793196" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -88,22 +88,22 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="105" />
-					<float name="manpower" value="320" />
+					<float name="fuel" value="60" />
+					<float name="manpower" value="290" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="55" />
+				<float name="time_seconds" value="45" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="0.1" />
+			<float name="death_seconds" value="1.8" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="560" />
+			<float name="hitpoints" value="360" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -119,6 +119,15 @@
 			<bool name="ui_can_scuttle" value="False" />
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
+				<template_reference name="action" value="action\modify_crush_obb">
+					<float name="offset_centre_x" value="0" />
+					<float name="offset_centre_y" value="0" />
+					<float name="offset_centre_z" value="0" />
+					<float name="offset_scale_x" value="1.5" />
+					<float name="offset_scale_y" value="1.5" />
+					<float name="offset_scale_z" value="1.5" />
+					<uniqueid name="id" value="1073793197" />
+				</template_reference>
 				<template_reference name="action" value="action\timed_action">
 					<float name="duration" value="1" />
 					<bool name="fire_and_forget" value="True" />
@@ -149,13 +158,13 @@
 										<template_reference name="action" value="action\upgrade_remove">
 											<bool name="apply_to_entities_in_squad" value="False" />
 											<instance_reference name="upgrade" value="upgrade\british\commander\passive\command_vehicle_active_player" />
-											<uniqueid name="id" value="1073753372" />
+											<uniqueid name="id" value="1073793198" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073753373" />
+									<uniqueid name="id" value="1073793199" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753374" />
+							<uniqueid name="id" value="1073793200" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -163,63 +172,17 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753375" />
+					<uniqueid name="id" value="1073793201" />
 				</template_reference>
-				<template_reference name="action" value="action\random_action">
-					<bool name="instant" value="True" />
-					<list name="random_actions">
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\no_action">
-									<uniqueid name="id" value="1073755665" />
-									<template_reference name="ui_help_text" value="options\none">
-									</template_reference>
-								</template_reference>
-							</list>
-							<int name="weight" value="90" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\spawn_entity">
-									<float name="duration" value="10" />
-									<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
-									<bool name="permanent" value="False" />
-									<bool name="player_owned" value="False" />
-									<group name="target_info">
-										<template_reference name="target_info" value="type_ability_target_type\all">
-										</template_reference>
-									</group>
-									<uniqueid name="id" value="1073755666" />
-									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
-										<string name="attach_target_marker_name" value="" />
-										<string name="attach_action_name" value="" />
-										<string name="detach_action_name" value="" />
-										<bool name="destroy_on_cancel" value="True" />
-										<list name="detach_entity_actions">
-										</list>
-									</template_reference>
-									<list name="spawned_entity_actions">
-										<template_reference name="actions" value="action\self_destruction_action">
-											<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\mortarincendiary_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
-											<uniqueid name="id" value="1073755667" />
-										</template_reference>
-									</list>
-									<group name="offset">
-										<float name="x" value="0" />
-										<float name="y" value="0" />
-										<float name="z" value="0" />
-									</group>
-								</template_reference>
-							</list>
-							<int name="weight" value="10" />
-						</group>
-					</list>
-					<uniqueid name="id" value="1073755467" />
+				<template_reference name="action" value="action\remove_crew_action">
+					<string name="crew_name" value="Gunner" />
+					<bool name="kill" value="False" />
+					<uniqueid name="id" value="1073793202" />
 				</template_reference>
 			</list>
-			<float name="armor" value="125" />
-			<float name="rear_armor" value="80" />
-			<float name="target_size" value="20" />
+			<float name="armor" value="45" />
+			<float name="rear_armor" value="30" />
+			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -263,8 +226,8 @@
 			<float name="weapon_priority" value="0" />
 			<template_reference name="wreck_entity_option" value="options\ebpextensions\healthext\wreck_table">
 				<enum_table name="wreck_entities">
-					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_british_cromwell" />
-					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_british_cromwell_brew_up" />
+					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_british_aec" />
+					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_british_aec_armoured_car_brew_up" />
 				</enum_table>
 			</template_reference>
 			<list name="self_destruct_actions">
@@ -301,27 +264,27 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="12" />
+			<float name="personnel_pop" value="6" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
 			<group name="detect_camouflage">
-				<float name="tp_global" value="10" />
+				<float name="tp_global" value="25" />
 				<float name="tp_mine" value="0" />
 			</group>
-			<bool name="extended_sight" value="False" />
-			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="1" />
+			<bool name="extended_sight" value="True" />
+			<float name="extended_sight_radius" value="35" />
+			<float name="reveal_area_on_death_time" value="6" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
 				<float name="outer_height" value="-3" />
-				<float name="outer_radius" value="35" />
+				<float name="outer_radius" value="40" />
 				<float name="cone_angle" value="360" />
 				<float name="cone_start_radius" value="0" />
 			</group>
 			<group name="extended_sight_target_info">
-				<template_reference name="extended_sight_target_info" value="type_ability_target_type\all">
+				<template_reference name="extended_sight_target_info" value="type_ability_target_type\enemy">
 				</template_reference>
 			</group>
 		</template_reference>
@@ -329,15 +292,15 @@
 			<group name="unit_type_list">
 				<enum name="unit_type00" value="vehicle" />
 				<enum name="unit_type01" value="armour" />
-				<enum name="unit_type02" value="brit_cromwell" />
-				<enum name="unit_type03" value="heavy_vehicle" />
+				<enum name="unit_type02" value="halftrack" />
+				<enum name="unit_type03" value="light_vehicle" />
 				<enum name="unit_type04" value="tank_awareness" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="brit_vehicle" />
 				<enum name="unit_type07" value="" />
-				<enum name="unit_type08" value="medium_tank" />
+				<enum name="unit_type08" value="" />
 				<enum name="unit_type09" value="" />
-				<enum name="unit_type10" value="" />
+				<enum name="unit_type10" value="brits_aec" />
 				<enum name="unit_type11" value="salvageable_object" />
 				<enum name="unit_type12" value="" />
 				<enum name="unit_type13" value="" />
@@ -354,10 +317,10 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11078049" />
+			<locstring name="help_text" value="11086024" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_british_cromwell" />
-			<enum name="kill_type" value="medium_armour" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_british_mkiii_armored_car" />
+			<enum name="kill_type" value="light_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
 			<float name="minimap_color_g" value="255" />
@@ -368,24 +331,24 @@
 			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11078050" />
+			<locstring name="screen_name" value="11084085" />
 			<enum name="selection_name" value="vehicle" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="squad_select" />
 			<bool name="sloppy_selectable" value="False" />
 			<group name="speaker">
-				<string name="code_1" value="mt" />
+				<string name="code_1" value="lv" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_2">
-				<string name="code_1" value="cw" />
-				<string name="code_2" value="ma" />
+				<string name="code_1" value="ae" />
+				<string name="code_2" value="la" />
 				<string name="code_3" value="ar" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="cmw" />
-				<string name="code_2" value="mtk" />
+				<string name="code_1" value="aec" />
+				<string name="code_2" value="ltk" />
 				<string name="code_3" value="arm" />
 			</group>
 			<group name="speech_code_cover">
@@ -394,28 +357,28 @@
 				<string name="code_3" value="" />
 			</group>
 			<bool name="tacmap_team_only" value="False" />
-			<locstring name="tooltip_txt" value="11078052" />
+			<locstring name="tooltip_txt" value="11086027" />
 			<int name="ui_priority" value="0" />
 			<icon name="minimap_icon" value="" />
-			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_british_cromwell_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_vehicle_british_mkiii_armored_car_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_british_cromwell_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_british_mkiii_armored_car_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="11078047" />
+			<locstring name="extra_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
-			<locstring name="screen_name_world" value="11078051" />
+			<locstring name="screen_name_world" value="11086026" />
 			<locstring name="help_text_world" value="0" />
-			<locstring name="extra_text_world" value="11078048" />
+			<locstring name="extra_text_world" value="11086025" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_cromwell_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_vehicle_british_mkiii_armored_car_symbol" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
 			<bool name="skin_pack_override" value="False" />
@@ -449,16 +412,16 @@
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
-								<float name="z" value="2.5" />
+								<float name="z" value="4.752" />
 							</group>
 							<float name="length" value="0" />
 							<group name="origin">
-								<float name="x" value="-0.1" />
-								<float name="y" value="2.346" />
-								<float name="z" value="1.1" />
+								<float name="x" value="0" />
+								<float name="y" value="2.6" />
+								<float name="z" value="0.7" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\075mm_cromwell_main_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\aec_75mm_ap_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -470,37 +433,16 @@
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
-								<float name="z" value="2.5" />
+								<float name="z" value="4.752" />
 							</group>
 							<float name="length" value="0" />
 							<group name="origin">
-								<float name="x" value="-0.29" />
-								<float name="y" value="2.37" />
-								<float name="z" value="1.1" />
+								<float name="x" value="-0.2" />
+								<float name="y" value="2.6" />
+								<float name="z" value="0.7" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_cromwell_coax_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="0.05" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="-0.26" />
-								<float name="y" value="1.6" />
-								<float name="z" value="2" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_cromwell_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\aec_coaxial_vehicle_turret_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -564,7 +506,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753376" />
+						<uniqueid name="id" value="1073793203" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.8" />
@@ -582,7 +524,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753377" />
+						<uniqueid name="id" value="1073793204" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.9" />
@@ -601,7 +543,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753378" />
+						<uniqueid name="id" value="1073793205" />
 					</template_reference>
 				</list>
 			</group>
@@ -619,7 +561,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753379" />
+						<uniqueid name="id" value="1073793206" />
 					</template_reference>
 				</list>
 			</group>
@@ -637,7 +579,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753380" />
+						<uniqueid name="id" value="1073793207" />
 					</template_reference>
 				</list>
 			</group>
@@ -665,7 +607,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753381" />
+						<uniqueid name="id" value="1073793208" />
 					</template_reference>
 				</list>
 			</group>
@@ -697,7 +639,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753382" />
+						<uniqueid name="id" value="1073793209" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -715,7 +657,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073753383" />
+						<uniqueid name="id" value="1073793210" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -772,10 +714,10 @@
 								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Gunner" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_turret" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
@@ -792,8 +734,8 @@
 								<string name="animator_bp" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="False" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
 								<string name="animator_bp_female" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
@@ -812,8 +754,8 @@
 								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="False" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
 								<string name="animator_bp_female" value="" />
@@ -832,9 +774,9 @@
 								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
-								<bool name="sync_on_create" value="False" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Pintle" />
+								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
@@ -852,9 +794,9 @@
 								<string name="animator_bp" value="armies\british\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
-								<bool name="sync_on_create" value="False" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Pintle" />
+								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
@@ -872,9 +814,9 @@
 								<string name="animator_bp" value="armies\british\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Spotter" />
-								<string name="sync_action_name" value="Attach_Spotter" />
-								<bool name="sync_on_create" value="False" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Gunner" />
+								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_turret" />
 								<string name="animator_bp_female" value="" />
 							</group>
@@ -886,9 +828,16 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crush_ext">
-			<bool name="crushes_humans" value="True" />
-			<enum name="default_crush_mode" value="crush_medium" />
+			<bool name="crushes_humans" value="False" />
+			<enum name="default_crush_mode" value="crush_light" />
 			<list name="crush_mode_actions_heavy">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="1.5" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+					</list>
+					<uniqueid name="id" value="1073793211" />
+				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="0.5" />
 					<float name="delay_min" value="0" />
@@ -909,16 +858,23 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753384" />
+							<uniqueid name="id" value="1073793212" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753385" />
+					<uniqueid name="id" value="1073793213" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
 			<list name="crush_mode_actions_light">
 			</list>
 			<list name="crush_mode_actions_medium">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="1.5" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+					</list>
+					<uniqueid name="id" value="1073793214" />
+				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="0.5" />
 					<float name="delay_min" value="0" />
@@ -939,10 +895,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073753386" />
+							<uniqueid name="id" value="1073793215" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753387" />
+					<uniqueid name="id" value="1073793216" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -956,21 +912,21 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="4.4" />
+			<float name="deceleration" value="5.8" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
-			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate_crouch" value="270" />
+			<instance_reference name="pass_type" value="pass_types\light_crusher" />
+			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
-			<float name="rotation_rate_stand" value="270" />
+			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
-			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
+			<instance_reference name="turn_plan" value="turn_plan\jeep_i" />
 			<float name="acceleration" value="3" />
-			<float name="rotation_rate" value="32" />
-			<float name="speed_max" value="7" />
+			<float name="rotation_rate" value="35" />
+			<float name="speed_max" value="7.2" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
-			<float name="on_land_overturn_scale" value="0.2" />
-			<float name="on_ice_overturn_scale" value="2" />
+			<float name="on_land_overturn_scale" value="0.1" />
+			<float name="on_ice_overturn_scale" value="1.3" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
 			<enum name="cover_type" value="tp_heavy" />
@@ -980,7 +936,7 @@
 			<float name="offset_x" value="0" />
 			<float name="offset_y" value="0" />
 			<float name="offset_z" value="0" />
-			<bool name="prevent_prone" value="False" />
+			<bool name="prevent_prone" value="True" />
 			<float name="range_x" value="0" />
 			<float name="range_y" value="0" />
 			<float name="range_z" value="0" />
@@ -991,9 +947,51 @@
 		<template_reference name="exts" value="ebpextensions\recrewable_ext">
 			<list name="race_list">
 				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\aef" />
+					<group name="info">
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\british\vehicles\aec_armoured_car\aec_armoured_car_squad_mp" />
+						<float name="max_capture_crew_size" value="9" />
+						<float name="min_capture_crew_size" value="3" />
+						<list name="recrew_penalties_list">
+						</list>
+						<float name="abandon_animation_seconds" value="2.5" />
+						<int name="recrew_max_squad_size" value="1" />
+						<bool name="abandoned_allows_pass_through" value="False" />
+						<list name="apply_to_driver_action">
+							<template_reference name="action" value="action\apply_modifiers_action">
+								<float name="duration" value="0" />
+								<bool name="permanent" value="False" />
+								<list name="modifiers">
+									<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
+										<enum name="application_type" value="apply_to_squad" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="" />
+										<enum name="usage_type" value="multiplication" />
+										<float name="value" value="0" />
+										<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
+										<enum name="application_type" value="apply_to_squad" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="" />
+										<enum name="usage_type" value="enable" />
+										<float name="value" value="-1" />
+										<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
+									</template_reference>
+								</list>
+								<uniqueid name="id" value="1073793217" />
+							</template_reference>
+						</list>
+						<float name="driver_death_chance_on_entity_death" value="1" />
+						<instance_reference name="driver_squad_blueprint" value="sbps\races\aef\soldiers\vehicle_crew_squad\vehicle_crew_squad_mp" />
+					</group>
+				</group>
+				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\british\vehicles\cromwell_squad_mp\cromwell_mk4_75mm_squad_mp" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\british\vehicles\aec_armoured_car\aec_armoured_car_squad_mp" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">
@@ -1036,5 +1034,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742195" />
+	<uniqueid name="pbgid" value="1073742334" />
 </instance>
