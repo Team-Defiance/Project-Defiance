@@ -21,8 +21,7 @@
 				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\aec_tread_shot_vet_0_mp" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\accessory_weapons\aec_tread_shot_vet_1mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\aec_target_weak_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
