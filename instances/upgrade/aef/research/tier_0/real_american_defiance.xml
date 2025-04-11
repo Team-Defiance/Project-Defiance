@@ -28,7 +28,7 @@
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="1" />
+		<int name="ui_position" value="31" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="3293" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="3292" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -66,6 +66,14 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\m26_pershing_dispatch" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_0\real_american_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
