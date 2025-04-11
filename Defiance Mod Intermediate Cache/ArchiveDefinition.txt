@@ -58,10 +58,15 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_he_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_smoke_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_wp_barrage_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\cover_to_cover.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\sherman_urban_assault_package.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\urban_assault_kit.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p45_nokota_ace_mg_rocket_loiter_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p47_mg_rocket_loiter_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p47_mg_rocket_strafe_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\aef_hq_engineer_call_in.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\rangers_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\sherman_calliope_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\m16_ranger_smoke_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\m16_smoke_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\mk2_frag_grenade_cooked_elite_defiance.rgd
@@ -106,12 +111,14 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\rear_echelon_volley_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_75mm_ammo_switch_ap_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_75mm_ammo_switch_he_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_75mm_lap_loading_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_76mm_jumbo_ammo_switch_apcr_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_76mm_jumbo_ammo_switch_ap_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_crocodile_burnitdown_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sprint_cav_scouts_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\aef_mortar_hold_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\ambulance_heal_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\hull_down_jumbo_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\priority_vehicles_usf.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\usf_hold_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\vehicle_crew_repair_toggle_abulance_defiance.rgd
@@ -2187,6 +2194,7 @@ TOCStart name="data" alias="data" path="" relativeroot="data"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\rifleman\cavalry_scouts.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\rifleman\drip_rifleman.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\soldiers\rifleman\rifleman.abp
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\vehicles\m4a3_sherman_76mm\m4a3_sherman_76mm.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\vehicles\sherman_m4a3\sherman_m4a3.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\aef\vehicles\sherman_m4a3\sherman_m4a3_crocodile.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\british\soldiers\commando\aef_mech_crew.abp
