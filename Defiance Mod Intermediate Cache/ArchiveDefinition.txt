@@ -59,6 +59,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_smoke_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_wp_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\cover_to_cover.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\m26_pershing_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\off_map_smoke_artillery.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\sherman_urban_assault_package.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\urban_assault_kit.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\placeholder_doctrine\p45_nokota_ace_mg_rocket_loiter_defiance.rgd
@@ -116,6 +118,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_76mm_jumbo_ammo_switch_ap_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_crocodile_burnitdown_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sprint_cav_scouts_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\commander_ability\combined_arms.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\aef_mortar_hold_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\ambulance_heal_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\hull_down_jumbo_defiance.rgd
@@ -1402,6 +1405,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\small_arms\pintle_m2hb_m8_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\small_arms\ranger_m1918_bar_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\small_arms\riflemen_m1918_bar_item_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\aef\small_arms\riflemen_m1919a6_lmg_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\british\ballistic\avre_spigot_mortar_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\british\ballistic_weapon\cromwell_command_arty_marker_shell_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\british\ballistic_weapon\infantry_at_weapon\brit_sniper_boys_anti_tank_critical_shot_defiance.rgd
@@ -1524,6 +1528,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\ai_upgrades\ai_profile_rifle_company.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\commander\items\cav_scouts_sniper_upgrade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\commander\items\rear_echelon_smg_upgrade.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\commander\passive\riflemen_defensive_buildings.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\commander\unlock\armor_company_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\commander\unlock\infantry_company_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m5_m16_meat_chopper_package_defiance.rgd
@@ -1534,6 +1539,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\re_minesweeper_upgrade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\rifleman_dual_bazooka_upgrade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\rifleman_single_bar_upgrade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\riflemen_m1919a6_lmg_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\sherman_dozer_blade_105_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\sherman_top_gunner_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\wc51_m2hb_upgrade_defiance.rgd
@@ -1545,6 +1551,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\aef_tech_up\tier_2_company_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\aef_tech_up\tier_3_battalion_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_0\explosives_package_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_0\real_american_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_0\veteran_infantry_training_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_1\combat_support_group_defiance.rgd
@@ -1793,6 +1800,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\light_machine_gun\m1918a2_bar_elite_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\light_machine_gun\m1918a2_bar_fastfire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\light_machine_gun\m1918a2_bar_generic_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\light_machine_gun\m1919a6_lmg_generic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\sub_machine_gun\m3_grease_gun_re_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\single_fire\rifle\m1903_sniper_rifle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\single_fire\rifle\m1c_garand_cav_scout_assassinate_defiance.rgd
