@@ -319,7 +319,7 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\company_hammer_mp" />
+							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\hammer_tactics_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -681,7 +681,7 @@
 								</list>
 							</group>
 						</list>
-						<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
+						<enum name="shared_veterancy_type" value="tp_commonwealth_vehicles" />
 					</group>
 				</group>
 			</list>

@@ -6,6 +6,10 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\veterancy_action">
+					<float name="number_of_experience_points" value="100" />
+					<uniqueid name="id" value="1073793307" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\timed_action">
@@ -188,7 +192,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="35" />
+		<float name="range" value="40" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="75" />
 		<bool name="refundable" value="False" />
