@@ -173,7 +173,7 @@
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.125" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
+				<enum name="firing_angle_type" value="low_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
 				<float name="non_collide_start_angle" value="15" />
 				<float name="non_collide_end_angle" value="40" />
