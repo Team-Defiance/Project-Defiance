@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.6" />
-			<float name="far" value="0.435" />
-			<float name="mid" value="0.51" />
+			<float name="near" value="0.56" />
+			<float name="far" value="0.406" />
+			<float name="mid" value="0.476" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -123,7 +123,7 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="0.625" />
+				<float name="max" value="0.6" />
 				<float name="min" value="0.5" />
 			</group>
 			<group name="incremental_target_table">
@@ -364,15 +364,15 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="3" />
+			<float name="angle_scatter" value="16" />
 			<bool name="burst_pattern_enable" value="True" />
 			<float name="delay_bracket_change_chance" value="0.3" />
 			<float name="distance_bracket_count_air" value="5" />
 			<float name="distance_bracket_count_ground" value="4" />
-			<float name="distance_scatter_max" value="8" />
+			<float name="distance_scatter_max" value="16" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
-			<float name="distance_scatter_offset" value="0.2" />
-			<float name="distance_scatter_ratio" value="0.8" />
+			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
 			<float name="max_tilt_angle" value="5" />
