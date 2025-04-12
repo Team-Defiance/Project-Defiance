@@ -63,6 +63,12 @@
 				</list>
 				<uniqueid name="id" value="1073755012" />
 			</template_reference>
+			<template_reference name="action" value="action\upgrade_add">
+				<bool name="apply_to_entities_in_squad" value="False" />
+				<bool name="trigger_publish_event" value="False" />
+				<instance_reference name="upgrade" value="upgrade\terror_struck" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073793375" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_all_in_list">
