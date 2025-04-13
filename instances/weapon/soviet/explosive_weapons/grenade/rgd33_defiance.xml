@@ -57,8 +57,8 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="2" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="1.75" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="True" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="5.1" />
+			<float name="reaction_radius" value="9" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -324,7 +324,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="15" />
+		<float name="flinch_radius" value="9" />
 		<string name="fx_action_target_name" value="grenade_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
