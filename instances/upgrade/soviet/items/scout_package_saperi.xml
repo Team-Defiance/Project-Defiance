@@ -31,7 +31,7 @@
 		<int name="ui_position" value="4" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="3056" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3058" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="I" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_tracking" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -43,10 +43,6 @@
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\add_ability_action">
-				<uniqueid name="id" value="1073792261" />
-				<instance_reference name="ability_to_add" value="abilities\soviet\always_on_ability\saperi_in_cover_stationary_camouflage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="action" value="action\add_ability_action">
 				<uniqueid name="id" value="1073792281" />
 				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\saperi_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
@@ -54,6 +50,22 @@
 				<instance_reference name="slot_item" value="slot_item\german\tank_commander_icon_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073792286" />
+			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\detect_global_camouflage_radius">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="addition" />
+						<float name="value" value="20" />
+						<instance_reference name="tooltip" value="modifier_tooltip\detect_global_camouflage_radius" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073793476" />
 			</template_reference>
 		</list>
 		<list name="requirements">
