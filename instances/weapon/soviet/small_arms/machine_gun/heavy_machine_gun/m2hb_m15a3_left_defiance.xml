@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.5" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -223,9 +223,9 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.5" />
 				<float name="damage_multiplier" value="1.5" />
-				<float name="penetration_multiplier" value="1" />
+				<float name="penetration_multiplier" value="0.5" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_z_bunker">
@@ -448,8 +448,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.8" />
-			<float name="nearby_suppression_radius" value="10" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
+			<float name="nearby_suppression_radius" value="9" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
@@ -462,7 +462,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.000175" />
+			<float name="amount" value="0.00016" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -487,9 +487,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="7.5" />
-			<float name="far" value="6.25" />
-			<float name="near" value="10" />
+			<float name="mid" value="6" />
+			<float name="far" value="5" />
+			<float name="near" value="8" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
