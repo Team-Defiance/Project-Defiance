@@ -7,294 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="1639" mod="84428889d71d41a48e2eff09c2425d54" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="1638" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="1308" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="selection_group" value="m5halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="m5h" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="29" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_m5_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_m5_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="1640" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="screen_name_short" value="1309" mod="84428889d71d41a48e2eff09c2425d54" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_m5_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\aef" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11007360" />
 						<bool name="has_speech_code" value="False" />
 						<locstring name="help_text" value="11097762" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007075" />
-						<string name="selection_group" value="m5halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="m5h" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="29" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_m5_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_m5_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038670" />
-						<locstring name="screen_name_short" value="11045809" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_m5_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007360" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11097762" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007075" />
-						<string name="selection_group" value="m5halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="m5h" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="29" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_m5_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_m5_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038670" />
-						<locstring name="screen_name_short" value="11045809" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_m5_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\soviet" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007360" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11097762" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007075" />
-						<string name="selection_group" value="m5halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="m5h" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="29" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_m5_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_m5_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038670" />
-						<locstring name="screen_name_short" value="11045809" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_m5_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\west_german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007360" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11097762" />
-						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007075" />
-						<string name="selection_group" value="m5halftrack" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="ht" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="hft" />
-							<string name="code_2" value="m5h" />
-							<string name="code_3" value="" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="29" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_m5_halftrack_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_m5_halftrack_s_portrait" />
-						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="11038670" />
-						<locstring name="screen_name_short" value="11045809" />
-						<enum name="map_rotation_type_override" value="heading" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_m5_halftrack_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\british" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007360" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007372" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
 						<bool name="minimap_team_only" value="False" />
@@ -447,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\aef\vehicles\halftracks\m5_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\soviet\vehicles\halftracks\m5_soviet_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -456,14 +171,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_player_upgrade">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
-					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\aef\research\aef_tech_up\tier_2_company_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
@@ -899,16 +606,7 @@
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_step_on_it_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\soviet_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073792797" />
@@ -937,7 +635,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\soviet_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="-10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
@@ -946,16 +644,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_step_on_it_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-														<enum name="usage_type" value="addition" />
-														<float name="value" value="-10" />
-														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
-													</template_reference>
-													<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
-														<enum name="application_type" value="apply_to_ability" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_light_vehicle_defiance_unused" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\drop_medpack_ability_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="-10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
@@ -967,7 +656,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\soviet_overdrive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -976,16 +665,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\m5_step_on_it_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-													</template_reference>
-													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-														<enum name="application_type" value="apply_to_ability" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.75" />
-														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\aef_emergency_repair_light_vehicle_defiance_unused" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\drop_medpack_ability_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073750691" />
@@ -1067,7 +747,7 @@
 								</list>
 							</group>
 						</list>
-						<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
+						<enum name="shared_veterancy_type" value="no_sharing" />
 					</group>
 				</group>
 			</list>

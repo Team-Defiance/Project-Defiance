@@ -426,12 +426,12 @@
 			<FileHash>744b27a6b7502edb76fb3532b68bd311</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\timed_ability\m5_overdrive_defiance.xml</FileName>
-			<FileHash>63c4cf88d93e5f6f315871d63b4656ec</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\timed_ability\m3_step_on_it_defiance.xml</FileName>
+			<FileHash>ccd65ec141100deafe23928d69e16303</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\timed_ability\m5_step_on_it_defiance.xml</FileName>
-			<FileHash>ce145fb34720e99cc772b60aad643aba</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\timed_ability\m5_overdrive_defiance.xml</FileName>
+			<FileHash>63c4cf88d93e5f6f315871d63b4656ec</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\timed_ability\rear_echelon_volley_fire_defiance.xml</FileName>
@@ -2246,10 +2246,6 @@
 			<FileHash>e64303c7f2a04ad5461c79796cd7ec09</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\timed_ability\m3_overdrive_defiance.xml</FileName>
-			<FileHash>10fe4549085600b86c22d772763f286b</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\timed_ability\m3_self_repair.xml</FileName>
 			<FileHash>30406e24b8e4fd2c352f79a57464e22e</FileHash>
 		</BurnInfo>
@@ -2280,6 +2276,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\timed_ability\soviet_equipment_passive_defiance.xml</FileName>
 			<FileHash>e871aa3c8211530152d36fafc75ecf4d</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\timed_ability\soviet_overdrive_defiance.xml</FileName>
+			<FileHash>e127ae551458754bd5b461a0e6cc153a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\timed_ability\soviet_t34_85_here_we_go.xml</FileName>
@@ -3567,7 +3567,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\buildings\base_building\usf_tier2_company_defiance.xml</FileName>
-			<FileHash>d48752890a2a2eebbbaf3d8b403183df</FileHash>
+			<FileHash>3abe6aa446a0683b17ad58d4fb3d922f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\buildings\base_building\usf_tier3_battalion_defiance.xml</FileName>
@@ -3854,8 +3854,8 @@
 			<FileHash>095089743fc5b3caf3cf8423d6621ce4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\halftracks\m15aa_halftrack_defiance.xml</FileName>
-			<FileHash>55eacf270bbbb3ad5c0c2f2b6454dabd</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\halftracks\m15a1_aa_halftrack_defiance.xml</FileName>
+			<FileHash>b4d52f6848d892b8ad5ff8ded8a84a13</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\halftracks\m21_mortar_halftrack_defiance.xml</FileName>
@@ -3863,11 +3863,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\halftracks\m3_halftrack_defiance.xml</FileName>
-			<FileHash>1c4a6ce605eeac5f6c8ff0720f5c2716</FileHash>
+			<FileHash>db506128e85de4a30cc5297319d838e5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\halftracks\m5_halftrack_defiance.xml</FileName>
-			<FileHash>fbf163f813f04ba1d35602000b685c33</FileHash>
+			<FileHash>08d378ae1a48dd34b3ac0afe38b131d3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\heavy_tanks\m26_experimental_pershing_defiance.xml</FileName>
@@ -3887,7 +3887,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\light_tanks\m8_scott_defiance.xml</FileName>
-			<FileHash>cda086dd987623794336a2335b7e6c1d</FileHash>
+			<FileHash>5bdf6e04c1e065d12ea89c8674e62db1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\aef\vehicles\light_tanks\m9_barclay_defiance.xml</FileName>
@@ -4527,15 +4527,15 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\motorpool_mp.xml</FileName>
-			<FileHash>939d65bb0e84329c1a053306f5bcbc43</FileHash>
+			<FileHash>dc550ce76725383eacfc3f8cc0559ca1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\tank_depot_mp.xml</FileName>
-			<FileHash>dbc7c345b5e3cb91059ba87c5b61f852</FileHash>
+			<FileHash>97997a6f2699e8e8e8761f67f7a3dada</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\weapon_support_center_mp.xml</FileName>
-			<FileHash>980921f66cab6063c9f16da2f66b6ba3</FileHash>
+			<FileHash>94867894f1ab9cab1cdadbdd38987c0d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\hq\hq_mp.xml</FileName>
@@ -4686,12 +4686,8 @@
 			<FileHash>73491ee7e747e25c5686e8e13b30b75d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\aa_halftrack\m15a1_aa_halftrack_defiance.xml</FileName>
-			<FileHash>1cee937990319895e4e69f68e6183f76</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\halftracks\m3_soviet_halftrack_defiance.xml</FileName>
-			<FileHash>5c115f841159b11d528ed28d0fb34093</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\halftracks\m5_soviet_halftrack_defiance.xml</FileName>
+			<FileHash>c2267ae1dfd0d836d16cf3ee386c3e0c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\il-2_sturmovik_aircraft\il-2_sturmovik_high_alt_recon_defiance.xml</FileName>
@@ -4719,7 +4715,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\m3a1_scout_car\m3a1_scoutcar_defiance.xml</FileName>
-			<FileHash>8b3a9d3c421a8b693beb36e067f39b95</FileHash>
+			<FileHash>877c5b638e558a5351c134fa600bfb8a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\stalin_tank\is2.xml</FileName>
@@ -5002,6 +4998,10 @@
 			<FileHash>1c2e40f83d0e9cd9ed7b7ad9a10b78a5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\doctrine\mechanized\vehicles\m21_mortar_halftrack_squad_defiance.xml</FileName>
+			<FileHash>7b803f6e388415d7c7f87fb958cd9f4a</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\doctrine\mechanized\vehicles\m4a3e8_76mm_command_squad_defiance.xml</FileName>
 			<FileHash>28b3feb2914247585206555b76fecb37</FileHash>
 		</BurnInfo>
@@ -5046,12 +5046,12 @@
 			<FileHash>858c939bc1f28127d96f20e90c2473b2</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\m21_mortar_halftrack_squad_defiance.xml</FileName>
-			<FileHash>7b7270c940c76bf9ab8fb71ebfbd9685</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\m15aa_halftrack_squad_defiance.xml</FileName>
+			<FileHash>8b101954aac853505f4cce0f509517dd</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\m5_halftrack_squad_defiance.xml</FileName>
-			<FileHash>15305f48205f4267ba8b5b84a9ab1374</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\m3_halftrack_squad_defiance.xml</FileName>
+			<FileHash>cba37d93ea6f3d0fd9cdda9b41f636c4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\m8_greyhound_squad_defiance.xml</FileName>
@@ -5379,7 +5379,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_1\m3_scout_car_transport_squad_defiance.xml</FileName>
-			<FileHash>ceccec423187902b8bd820c5fd884426</FileHash>
+			<FileHash>459b839adb7d8f2630871cd90e5f9a7a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_1\maxim_hmg_squad_defiance.xml</FileName>
@@ -5390,8 +5390,8 @@
 			<FileHash>105ca23dd86320f80d2e7933a2e2c1c5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_2\m3_halftrack_squad_defiance.xml</FileName>
-			<FileHash>3dcab1943cc486c9ab089e0add1b8122</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_2\m5_soviet_halftrack_squad_defiance.xml</FileName>
+			<FileHash>aaea0c57d6243197fa2d45aff19006b4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_2\pm41_82mm_mortar_squad_defiance.xml</FileName>
@@ -5402,12 +5402,12 @@
 			<FileHash>25e23b06465adbf4927ae519ed38cee4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_3\m15aa_halftrack_squad_defiance.xml</FileName>
-			<FileHash>2373a9a05ca48f22fbe1aedb20a67de0</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_3\su76_tank_destroyer_squad_defiance.xml</FileName>
 			<FileHash>d1cc09e34ab6f7f8c13643325ff4f57a</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_3\t34_76mm_squad_defiance.xml</FileName>
+			<FileHash>adf46fcb92f614cf4c89c8aa34e90e08</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_3\t70_light_tank_squad_defiance.xml</FileName>
@@ -5419,15 +5419,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_4\kv1_heavy_tank_squad_defiance.xml</FileName>
-			<FileHash>a25ca8b4a737f2f4980162fee1ebf06b</FileHash>
+			<FileHash>280939a079b7863674ee9cec3f41f0b3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_4\su85_squad.xml</FileName>
 			<FileHash>5755b3d83cab2d96ce40c815617fbaf8</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_4\t34_76mm_squad_defiance.xml</FileName>
-			<FileHash>cc190caea0785915eb333eb3798edec0</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\vehicles\heavy_artillery\b4_203mm_squad_defiance.xml</FileName>
@@ -6744,6 +6740,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\upgrade\soviet\items\sniper_ptrs_pu.xml</FileName>
 			<FileHash>42bb748899d0a5f48daeebf2b5b8b911</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\upgrade\soviet\items\soviet_m5_m16_meat_chopper_package_defiance.xml</FileName>
+			<FileHash>a84b2ad77b5ce7c6e69019163971d228</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\upgrade\soviet\items\t34_add_on_armor.xml</FileName>
@@ -8727,7 +8727,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>f8d05ec39814d79cfb833518ddf4009f</FileHash>
+			<FileHash>b62d0f98a1092c3a4fdd752855daf9cd</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>
