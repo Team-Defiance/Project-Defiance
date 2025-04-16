@@ -18,7 +18,7 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\handbrake_mode_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_hardpoint2_mp" />
-				<instance_reference name="ability" value="abilities\global\modal_ability\aa_mode_allies" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\aa_mode_allies_m15" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_aa_half_track_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
@@ -820,33 +820,33 @@
 						<list name="role_list">
 							<group name="role">
 								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
+								<string name="death_event_name" value="Death" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="gunner_m15a1_left" />
+								<string name="sync_action_name" value="attach_gunner_m15a1_left" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_m15a1_left" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
+								<string name="death_event_name" value="Death" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="gunner_m15a1_right" />
+								<string name="sync_action_name" value="attach_gunner_m15a1_right" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_m15a1_right" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Driver" />
 								<string name="sync_action_name" value="Attach_Driver" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_driver" />
-								<string name="animator_bp_female" value="armies\aef\soldiers\rifleman\rifleman" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\rifleman\rifleman" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_gunner" />
-								<string name="animator_bp_female" value="armies\aef\soldiers\rifleman\rifleman" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\mg_crew\mg_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="gunner_quad" />
-								<string name="sync_action_name" value="attach_gunner_quad" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_quad50" />
-								<string name="animator_bp_female" value="armies\aef\soldiers\mg_crew\mg_crew" />
+								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
