@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="0.125" />
-				<float name="min" value="0.125" />
+				<float name="max" value="0.2" />
+				<float name="min" value="0.2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
@@ -502,18 +502,9 @@
 				<enum name="unit_type" value="infantry" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="0.5" />
+					<float name="damage_multiplier" value="1" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="100" />
-				</group>
-			</group>
-			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="vehicle" />
-				<group name="weapon_multipliers">
-					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.25" />
-					<float name="penetration_multiplier" value="1" />
-					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>
 		</list>
