@@ -97,8 +97,8 @@
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.5" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\range_weapon_modifier">
@@ -106,8 +106,8 @@
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_02" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.5" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\range_weapon_modifier">
@@ -115,8 +115,8 @@
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_03" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.5" />
+							<enum name="usage_type" value="addition" />
+							<float name="value" value="5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\horizontal_speed_weapon_modifier">
@@ -136,6 +136,24 @@
 							<enum name="usage_type" value="multiplication" />
 							<float name="value" value="2" />
 							<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1.25" />
+							<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.65" />
+							<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073793524" />
@@ -225,7 +243,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11077808" />
+			<locstring name="extra_text" value="3325" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11200982" />
 			<string name="hotkey_name" value="Z" />
 			<icon name="icon_name" value="Icons_abilities_allies_aa_mode" />
