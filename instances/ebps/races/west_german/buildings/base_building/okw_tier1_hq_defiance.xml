@@ -1,9 +1,9 @@
-<instance description="Flak Building" template="ebps">
+<instance description="Healing building" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\west_german\structures\base_building_02\base_building_02" />
+			<file name="animator" value="armies\west_german\structures\base_building_01\base_building_01" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -20,7 +20,7 @@
 			<float name="death_seconds" value="0" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="1600" />
+			<float name="hitpoints" value="1920" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -39,7 +39,7 @@
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<instance_reference name="upgrade" value="upgrade\west_german\ability_lock_out\ability_lock_out_sws_truck" />
-					<uniqueid name="id" value="1073747807" />
+					<uniqueid name="id" value="1073747776" />
 				</template_reference>
 			</list>
 			<float name="armor" value="0" />
@@ -72,8 +72,8 @@
 			<float name="weapon_priority" value="-80" />
 			<template_reference name="wreck_entity_option" value="options\ebpextensions\healthext\wreck_table">
 				<enum_table name="wreck_entities">
-					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_base_building02" />
-					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_base_building02_self_destruct" />
+					<instance_reference name="default" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_base_building01" />
+					<instance_reference name="brewup" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_base_building01_self_destruct" />
 				</enum_table>
 			</template_reference>
 			<list name="self_destruct_actions">
@@ -82,7 +82,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hit_object_ext">
-			<instance_reference name="hit_material" value="hit_material\wood" />
+			<instance_reference name="hit_material" value="hit_material\sandbag" />
 			<bool name="hit_non_neutral" value="True" />
 			<float name="hit_percentage" value="1" />
 			<bool name="pass_through" value="False" />
@@ -111,7 +111,7 @@
 		<template_reference name="exts" value="ebpextensions\modifier_ext">
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\site_ext">
-			<float name="extra_build_test_footprint" value="0" />
+			<float name="extra_build_test_footprint" value="2" />
 			<bool name="require_all_cells_clear" value="True" />
 			<bool name="snap_to_terrain" value="False" />
 			<bool name="ignore_impass" value="False" />
@@ -119,7 +119,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">
 			<group name="unit_type_list">
-				<enum name="unit_type00" value="motor_pool_light" />
+				<enum name="unit_type00" value="barracks" />
 				<enum name="unit_type01" value="building" />
 				<enum name="unit_type02" value="annihilation_condition" />
 				<enum name="unit_type03" value="sws_base" />
@@ -140,8 +140,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\west_german\toggle_ability\flak_aa_mode_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\king_tiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\toggle_ability\base_building_retreat_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -160,7 +159,7 @@
 			<bool name="must_be_on" value="False" />
 			<bool name="must_not_be_in_walkable_surfaces" value="True" />
 			<instance_reference name="on_construction_squad" value="" />
-			<float name="orientation" value="0" />
+			<float name="orientation" value="90" />
 			<enum name="placement_type" value="tp_structure" />
 			<bool name="prefer_spots_on_side_with_leader" value="False" />
 			<bool name="query_abilities_for_range_ui" value="True" />
@@ -193,17 +192,8 @@
 							<float name="value" value="0.5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
-						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747809" />
+					<uniqueid name="id" value="1073747777" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -227,10 +217,10 @@
 							<bool name="apply_to_entities_in_squad" value="False" />
 							<bool name="trigger_publish_event" value="False" />
 							<instance_reference name="upgrade" value="upgrade\west_german\passive\any_structure_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073747810" />
+							<uniqueid name="id" value="1073748019" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747811" />
+					<uniqueid name="id" value="1073747779" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -238,7 +228,7 @@
 					</template_reference>
 				</template_reference>
 				<template_reference name="action" value="action\speech_action">
-					<uniqueid name="id" value="1073747812" />
+					<uniqueid name="id" value="1073747780" />
 					<float name="min_freq_second" value="1" />
 					<enum name="speech_path" value="speechaction" />
 					<enum name="speech_event_3_letter_code" value="hqc" />
@@ -250,42 +240,11 @@
 					<bool name="play_as_intel_event" value="True" />
 					<enum name="speech_category" value="intel_event" />
 				</template_reference>
-				<template_reference name="action" value="action\remove_crew_action">
-					<string name="crew_name" value="Gunner_right" />
-					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073747813" />
-				</template_reference>
-				<template_reference name="action" value="action\remove_crew_action">
-					<string name="crew_name" value="Gunner_left" />
-					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073747814" />
-				</template_reference>
-				<template_reference name="action" value="action\player_target_action">
-					<bool name="allies" value="False" />
-					<bool name="enemies" value="False" />
-					<bool name="neutral" value="False" />
-					<bool name="self" value="True" />
-					<list name="subactions">
-						<template_reference name="action" value="action\upgrade_add">
-							<bool name="apply_to_entities_in_squad" value="False" />
-							<bool name="trigger_publish_event" value="False" />
-							<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_3_structure_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073747830" />
-						</template_reference>
-						<template_reference name="action" value="action\upgrade_add">
-							<bool name="apply_to_entities_in_squad" value="False" />
-							<bool name="trigger_publish_event" value="False" />
-							<instance_reference name="upgrade" value="upgrade\west_german\passive\any_structure_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073747831" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073747829" />
-				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_3_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073748023" />
+					<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_1_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073748021" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -301,8 +260,8 @@
 			</group>
 			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
 			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
-			<instance_reference name="ui_range" value="ui_reticule\construction_range_hq" />
-			<float name="ui_range_radius" value="55" />
+			<instance_reference name="ui_range" value="" />
+			<float name="ui_range_radius" value="0" />
 			<instance_reference name="ui_setfacing" value="ui_setfacing\construction_base_building" />
 			<bool name="query_weapon_for_range_ui" value="True" />
 			<bool name="squad_ignore_pathfinding" value="False" />
@@ -313,7 +272,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="60" />
+					<float name="fuel" value="15" />
 					<float name="manpower" value="150" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -362,9 +321,9 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="1189" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_buildings_building_west_german_battle_group_hq" />
+			<locstring name="help_text" value="11055051" />
+			<string name="hotkey_name" value="H" />
+			<icon name="icon_name" value="Icons_buildings_building_west_german_mechanized_regiment_hq" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -376,7 +335,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11051195" />
+			<locstring name="screen_name" value="11051193" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -392,7 +351,7 @@
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="spc" />
+				<string name="code_1" value="bgc" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
@@ -404,17 +363,17 @@
 			<bool name="tacmap_team_only" value="False" />
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="100" />
-			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_west_german_battle_group_hq" />
-			<icon name="portrait_icon_winter" value="Icons_portraits_building_west_german_battle_group_hq_w_portrait" />
+			<icon name="minimap_icon" value="Icons_taskbar_coh_taskbar_west_german_mechanized_regiment_hq" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_west_german_mechanized_regiment_hq_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<icon name="portrait_icon_summer" value="Icons_portraits_building_west_german_battle_group_hq_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_west_german_mechanized_regiment_hq_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="1190" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="1184" mod="84428889d71d41a48e2eff09c2425d54" />
 			<bool name="show_in_build_log" value="True" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_entity_appearance" value="True" />
@@ -423,7 +382,7 @@
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
 			<enum name="occlusion_state" value="can_be_occluded" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_west_german_battle_group_hq_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_building_west_german_mechanized_regiment_hq_symbol" />
 			<enum name="decorator_visibility" value="visible" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
@@ -432,6 +391,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\animator_set_event">
+					<string name="event_name" value="fond_camo_upgrade" />
+					<uniqueid name="id" value="1073747783" />
+				</template_reference>
 				<template_reference name="action" value="action\add_aura">
 					<instance_reference name="aura" value="aura\heat_aura_mp" />
 					<group name="area_info">
@@ -443,23 +406,7 @@
 					<template_reference name="target_info" value="type_ability_target_type\all">
 					</template_reference>
 					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073747815" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_damage_modifier">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="2" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073747816" />
+					<uniqueid name="id" value="1073747784" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_deformation_action">
 					<group name="deform_decal">
@@ -539,16 +486,32 @@
 					<float name="scale_x" value="14" />
 					<float name="scale_y" value="14" />
 					<bool name="undoable" value="False" />
-					<uniqueid name="id" value="1073747817" />
+					<uniqueid name="id" value="1073747785" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="2" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073747786" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\west_german\ability_lock_out\ability_lock_out_sws_truck" />
-					<uniqueid name="id" value="1073747818" />
+					<uniqueid name="id" value="1073747787" />
 				</template_reference>
 				<template_reference name="action" value="action\speech_action">
-					<uniqueid name="id" value="1073747819" />
+					<uniqueid name="id" value="1073747788" />
 					<float name="min_freq_second" value="1" />
 					<enum name="speech_path" value="speechaction" />
 					<enum name="speech_event_3_letter_code" value="hqs" />
@@ -568,68 +531,65 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_territory">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="in_supply" value="True" />
+							<bool name="is_secured" value="False" />
+							<bool name="is_secured_by_checkpoint" value="False" />
+							<bool name="not_in_transition" value="False" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_constructionstate">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="do_construction_completion_check" value="True" />
+						</template_reference>
 						<template_reference name="required" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\west_german\research\panzer_authorization_upgrade_mp" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t1_retreat_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="on" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="ability_reinforce_state" />
+							<string name="undo_action_state_name" value="off" />
+							<uniqueid name="id" value="1073754579" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="2469" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="2468" mod="84428889d71d41a48e2eff09c2425d54" />
+								<icon name="icon_name" value="Icons_odds_reinforce" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="1073754580" />
+						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
+								<template_reference name="modifier" value="modifiers\reinforce_radius_modifier">
+									<enum name="application_type" value="apply_to_entity" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="enable" />
-									<float name="value" value="1" />
-									<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="25" />
+									<instance_reference name="tooltip" value="modifier_tooltip\reinforce_radius_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073747820" />
+							<uniqueid name="id" value="1073754581" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747821" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\add_crew_action">
-							<string name="crew_name" value="Gunner_left" />
-							<uniqueid name="id" value="1073747822" />
-						</template_reference>
-						<template_reference name="action" value="action\add_crew_action">
-							<string name="crew_name" value="Gunner_right" />
-							<uniqueid name="id" value="1073747823" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073747824" />
+					<uniqueid name="id" value="1073754582" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -641,42 +601,6 @@
 		<template_reference name="exts" value="ebpextensions\combat_ext">
 			<bool name="reject_attack_command" value="True" />
 			<list name="hardpoints">
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="-4.752" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.8" />
-								<float name="z" value="-1.5" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\037mm_base_building_flak_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="-4.752" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.8" />
-								<float name="z" value="-1.5" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\base_building_flak_20mm_flak38_aa_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
 			<list name="kill_actions">
@@ -693,20 +617,10 @@
 								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner_left" />
-								<string name="sync_action_name" value="attach_gunner_basebuilding_02_left" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_gunner_basebuilding_02_left" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner_right" />
-								<string name="sync_action_name" value="attach_gunner_basebuilding_02_right" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_gunner_basebuilding_02_right" />
+								<string name="role_name" value="Gunner" />
+								<string name="sync_action_name" value="Attach_Gunner" />
+								<bool name="sync_on_create" value="False" />
+								<string name="abandon_event_name" value="" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
@@ -720,12 +634,12 @@
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_not">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="1176" mod="84428889d71d41a48e2eff09c2425d54" />
+					<locstring name="ui_name" value="1177" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="requirement_table">
 						<template_reference name="required" value="requirements\required_structure">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="required_structure_count" value="1" />
 							<bool name="check_team" value="False" />
 							<bool name="require_construction_complete" value="True" />
@@ -738,45 +652,343 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_hospital_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_reinforcements_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\research\t1_retreat_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\spawner_ext">
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
-			<bool name="must_be_in_supply" value="False" />
-			<float name="reinforce_radius" value="0" />
+			<bool name="must_be_in_supply" value="True" />
+			<float name="reinforce_radius" value="30" />
 			<list name="spawn_items">
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\soldiers\gebirgjaeger_squad\gebirgjaeger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
+					<instance_reference name="squad" value="sbps\races\west_german\soldiers\nachtjager_squad\nachtjager_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\rocket_mattress\rocket_mattress_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\sdkfz_221\sdkfz_221_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\pe_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="14" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\leig_squad\leig_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
 			<list name="bonus_xp_from_hold_list">
 			</list>
 			<list name="reinforce_requirements">
+				<template_reference name="required" value="requirements\required_any_in_list">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t1_reinforcements_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_sector_type">
+							<enum name="reason" value="usage" />
+							<enum name="sector_type" value="sector_type_command" />
+						</template_reference>
+					</list>
+				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\repair_station_ext">
+			<list name="race_list">
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\soviet" />
+					<group name="info">
+						<instance_reference name="engineer_to_spawn" value="ebps\races\soviet\soldiers\medic\medic" />
+						<float name="number_of_engineers" value="3" />
+						<float name="repair_radius" value="30" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+								<list name="target_infos">
+									<template_reference name="info" value="type_ability_target_type\allied">
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\has_unit_type">
+										<enum name="unit_type" value="infantry" />
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_casualty">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_hold">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+												<enum name="unit_type" value="medic" />
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_other_healer">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_combat">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_retreating">
+											</template_reference>
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\german" />
+					<group name="info">
+						<instance_reference name="engineer_to_spawn" value="ebps\races\german\soldiers\medic\german_medic" />
+						<float name="number_of_engineers" value="3" />
+						<float name="repair_radius" value="30" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+								<list name="target_infos">
+									<template_reference name="info" value="type_ability_target_type\allied">
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\has_unit_type">
+										<enum name="unit_type" value="infantry" />
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_casualty">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_hold">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+												<enum name="unit_type" value="medic" />
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_other_healer">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_combat">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_retreating">
+											</template_reference>
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\aef" />
+					<group name="info">
+						<instance_reference name="engineer_to_spawn" value="ebps\races\soviet\soldiers\medic\medic" />
+						<float name="number_of_engineers" value="3" />
+						<float name="repair_radius" value="30" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+								<list name="target_infos">
+									<template_reference name="info" value="type_ability_target_type\allied">
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\has_unit_type">
+										<enum name="unit_type" value="infantry" />
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_casualty">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_hold">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+												<enum name="unit_type" value="medic" />
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_other_healer">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_combat">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_retreating">
+											</template_reference>
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="racebps\west_german" />
+					<group name="info">
+						<instance_reference name="engineer_to_spawn" value="ebps\races\german\soldiers\medic\german_medic" />
+						<float name="number_of_engineers" value="3" />
+						<float name="repair_radius" value="25" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+								<list name="target_infos">
+									<template_reference name="info" value="type_ability_target_type\allied">
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\has_unit_type">
+										<enum name="unit_type" value="infantry" />
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_casualty">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_hold">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+												<enum name="unit_type" value="medic" />
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_other_healer">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_combat">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_retreating">
+											</template_reference>
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+					</group>
+				</group>
+				<group name="race_data">
+					<instance_reference name="ext_key" value="" />
+					<group name="info">
+						<instance_reference name="engineer_to_spawn" value="ebps\races\soviet\soldiers\medic\medic" />
+						<float name="number_of_engineers" value="3" />
+						<float name="repair_radius" value="30" />
+						<group name="target_info">
+							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
+								<list name="target_infos">
+									<template_reference name="info" value="type_ability_target_type\allied">
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\has_unit_type">
+										<enum name="unit_type" value="infantry" />
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_casualty">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_hold">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_unit_type">
+												<enum name="unit_type" value="medic" />
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_other_healer">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_in_combat">
+											</template_reference>
+										</group>
+									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\is_retreating">
+											</template_reference>
+										</group>
+									</template_reference>
+								</list>
+							</template_reference>
+						</group>
+					</group>
+				</group>
+			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
@@ -931,5 +1143,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741981" />
+	<uniqueid name="pbgid" value="1073741979" />
 </instance>

@@ -1,4 +1,4 @@
-<instance description="veteran ability for the german infantry units. Notes: range is 8 there is bug with formationmovementstate(squadmovement) setting it to 0 will never reach target. requirements: this is use to cross out ability button, so user can not try to cast the ability but does not guard edge case where multiple ability is casted at same time. Action validation is the one stop player from finish the ability." template="abilities">
+<instance description="veteran ability for the german infantry units. Notes:  range is 8 there is bug with formationmovementstate(squadmovement) setting it to 0 will never reach target. requirements: this is use to cross out ability button, so user can not try to cast the ability but does not guard edge case where multiple ability is casted at same time. Action validation is the one stop player from finish the ability." template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -6,10 +6,23 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\speech_action">
+					<uniqueid name="id" value="1073747764" />
+					<float name="min_freq_second" value="1" />
+					<enum name="speech_path" value="speechaction" />
+					<enum name="speech_event_3_letter_code" value="hqs" />
+					<float name="specific_speaker_percentage" value="0" />
+					<float name="low_verb_second" value="5" />
+					<float name="med_verb_second" value="15" />
+					<int name="sort_priority" value="1" />
+					<float name="queue_time_second" value="5" />
+					<bool name="play_as_intel_event" value="True" />
+					<enum name="speech_category" value="intel_event" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\sequence_action">
-					<uniqueid name="id" value="1073747759" />
+					<uniqueid name="id" value="1073747765" />
 					<list name="action_list_sequences">
 						<list name="actions">
 							<template_reference name="action" value="action\move_action">
@@ -17,7 +30,7 @@
 								<float name="offset_angle" value="-1" />
 								<float name="offset_distance" value="5" />
 								<float name="radius" value="0.5" />
-								<uniqueid name="id" value="1073747760" />
+								<uniqueid name="id" value="1073747766" />
 								<bool name="stop_on_arrival" value="True" />
 								<float name="min_range" value="0" />
 								<enum name="progress_write_name" value="" />
@@ -29,8 +42,8 @@
 						</list>
 						<list name="actions">
 							<template_reference name="action" value="action\construct_action">
-								<uniqueid name="id" value="1073747761" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<uniqueid name="id" value="1073747767" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="query_only" value="False" />
 								<bool name="check_visible" value="False" />
 								<bool name="use_target_entity_facing" value="False" />
@@ -43,11 +56,11 @@
 										<bool name="destroy" value="True" />
 										<list name="death_reaction_table">
 										</list>
-										<uniqueid name="id" value="1073747762" />
+										<uniqueid name="id" value="1073747768" />
 									</template_reference>
 								</list>
 								<enum name="change_target_type" value="self" />
-								<uniqueid name="id" value="1073747763" />
+								<uniqueid name="id" value="1073747769" />
 							</template_reference>
 						</list>
 					</list>
@@ -68,7 +81,7 @@
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
-		<string name="cursor_ghost_blueprint" value="armies\west_german\structures\base_building_02\base_building_02" />
+		<string name="cursor_ghost_blueprint" value="armies\west_german\structures\base_building_01\base_building_01" />
 		<float name="cursor_ghost_blueprint_angle" value="90" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
@@ -101,7 +114,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="bgc" />
+			<string name="code_1" value="mrc" />
 			<string name="code_2" value="gnc" />
 			<string name="code_3" value="" />
 		</group>
@@ -123,15 +136,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="1184" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1018" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_buildings_building_west_german_mechanized_regiment_hq" />
+			<locstring name="extra_text" value="1187" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1035" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="C" />
+			<icon name="icon_name" value="Icons_buildings_building_west_german_schwerwer_panzer_hq" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1019" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="1024" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="1031" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="1035" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -148,7 +161,7 @@
 					<template_reference name="required" value="requirements\required_structure">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<int name="required_structure_count" value="1" />
 						<bool name="check_team" value="False" />
 						<bool name="require_construction_complete" value="True" />
@@ -161,7 +174,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -204,12 +217,12 @@
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="optionally_directional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742031" />
+	<uniqueid name="pbgid" value="1073742032" />
 </instance>
