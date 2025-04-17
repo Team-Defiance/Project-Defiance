@@ -446,7 +446,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="20" />
+			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -629,13 +629,6 @@
 				<locstring name="ui_name" value="1622" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="veterancy_rank" value="1" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_entity_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\items\m5_m16_meat_chopper_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="include_queued" value="False" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="1816" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -653,7 +646,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
