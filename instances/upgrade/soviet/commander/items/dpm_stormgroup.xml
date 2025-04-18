@@ -1,4 +1,4 @@
-<instance description="add armor&#xA;Multiplayer Clone." template="upgrade">
+<instance description="" template="upgrade">
 	<group name="upgrade_bag">
 		<bool name="enable_in_hold" value="True" />
 		<float name="global_max_limit" value="0" />
@@ -11,7 +11,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="pps" />
+			<string name="code_1" value="d28" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -21,46 +21,31 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="0" />
+				<float name="munition" value="70" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="20" />
+			<float name="time_seconds" value="35" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="1" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="634" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="953" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="W" />
-			<icon name="icon_name" value="Icons_tooltips_ranged_2" />
+			<locstring name="extra_text" value="637" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="636" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="M" />
+			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_soviet_dp28_lmg" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1927" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="brief_text" value="952" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="screen_name_short" value="1926" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="635" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
 		</group>
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\dpm_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073747006" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073747008" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073748255" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073752847" />
+				<uniqueid name="id" value="1073745981" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -77,7 +62,7 @@
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\dpm_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\ppsh_41_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
@@ -91,5 +76,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741866" />
+	<uniqueid name="pbgid" value="1073741867" />
 </instance>

@@ -107,12 +107,9 @@
 			<instance_reference name="ability" value="abilities\soviet\always_on_ability\soviet_hq_engineer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\commander_ability\fear_propaganda_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\partisan_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\storm_group_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\05_fire_artillery_152mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\02_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\06_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\reserve_infantry" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\shock_rifle" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\counterattack_artillery" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\01_scorched_earth" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\02_mediums_su100" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -122,9 +119,14 @@
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\05_b4_howitzer_passive" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_ptab_strike" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_recon_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\is2_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\06_is2_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\kv2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\modal_ability\dispatch\isu_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\01_rocket_trap" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\04_maskirovka" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\03_storm_group_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\05_fire_artillery_152mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\shock_rifle" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
