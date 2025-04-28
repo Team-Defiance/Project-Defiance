@@ -46,19 +46,19 @@
 				<float name="radius" value="10.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.0625" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.125" />
+				<float name="far" value="0.09" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.175" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.03125" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="0.0625" />
+				<float name="far" value="0.045" />
+				<float name="near" value="0.45" />
+				<float name="mid" value="0.0875" />
 			</group>
 			<group name="distance">
 				<float name="far" value="8.625" />
-				<float name="near" value="0.3" />
-				<float name="mid" value="4.125" />
+				<float name="near" value="1" />
+				<float name="mid" value="4" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -272,11 +272,43 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="280" />
-			<float name="min" value="280" />
+			<float name="max" value="200" />
+			<float name="min" value="200" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
+							<uniqueid name="id" value="1073793944" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073793945" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
