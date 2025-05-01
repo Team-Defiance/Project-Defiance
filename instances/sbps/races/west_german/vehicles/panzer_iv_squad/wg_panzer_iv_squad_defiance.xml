@@ -289,7 +289,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\p4_blitz_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\p4_blitz_wg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
@@ -563,7 +563,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\pe_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\wg_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
@@ -575,7 +575,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\pe_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\west_german\timed_ability\wg_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -750,7 +750,7 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_pe_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_wg_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="include_queued" value="False" />
 						</template_reference>
 					</list>
@@ -819,6 +819,11 @@
 								<locstring name="phrase" value="0" />
 							</template_reference>
 						</template_reference>
+						<template_reference name="action" value="action\ui_portrait_action">
+							<icon name="summer_portrait_icon" value="Icons_portraits_vehicle_german_panzer_iv_s_portrait" />
+							<icon name="winter_portrait_icon" value="Icons_portraits_vehicle_german_panzer_iv_w_portrait" />
+							<uniqueid name="id" value="1073794269" />
+						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
 								<template_reference name="action" value="action\ui_unit_modifier_action">
@@ -830,6 +835,36 @@
 										<string name="hotkey_name" value="" />
 									</template_reference>
 									<uniqueid name="id" value="1073753726" />
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_entity_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="True" />
+											<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_skirts_shared_wg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<bool name="include_queued" value="False" />
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\ui_portrait_action">
+											<icon name="summer_portrait_icon" value="Icons_portraits_vehicle_west_german_panzer_iv_s_portrait" />
+											<icon name="winter_portrait_icon" value="Icons_portraits_vehicle_west_german_panzer_iv_w_portrait" />
+											<uniqueid name="id" value="1073794268" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073794267" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />

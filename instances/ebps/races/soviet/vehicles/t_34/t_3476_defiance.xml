@@ -115,35 +115,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\random_action">
-					<bool name="instant" value="False" />
-					<list name="random_actions">
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\animator_set_state">
-									<string name="do_action_state_name" value="on" />
-									<string name="state_machine_name" value="hull_extras" />
-									<bool name="apply_to_leader_only" value="False" />
-									<bool name="retrigger" value="False" />
-									<string name="undo_action_state_name" value="" />
-									<uniqueid name="id" value="1073743407" />
-								</template_reference>
-							</list>
-							<int name="weight" value="50" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\no_action">
-									<uniqueid name="id" value="1073743408" />
-									<template_reference name="ui_help_text" value="options\none">
-									</template_reference>
-								</template_reference>
-							</list>
-							<int name="weight" value="50" />
-						</group>
-					</list>
-					<uniqueid name="id" value="1073743409" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
