@@ -450,8 +450,8 @@
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="sergeant_summer" />
-			<string name="skin_winter" value="sergeant_winter" />
+			<string name="skin_summer" value="guard_summer" />
+			<string name="skin_winter" value="guard_winter" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_ext">
 			<bool name="should_face_target" value="True" />
