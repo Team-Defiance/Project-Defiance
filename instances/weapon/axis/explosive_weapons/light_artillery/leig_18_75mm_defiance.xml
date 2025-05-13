@@ -46,14 +46,14 @@
 				<float name="radius" value="3.25" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.68" />
-				<float name="mid" value="0.4" />
+				<float name="far" value="0.125" />
+				<float name="near" value="0.85" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.05" />
-				<float name="near" value="0.34" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.0625" />
+				<float name="near" value="0.425" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
@@ -79,9 +79,9 @@
 				<float name="near" value="30" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="0.72" />
-				<float name="mid" value="0.2" />
-				<float name="far" value="0.0012" />
+				<float name="near" value="0.85" />
+				<float name="mid" value="0.25" />
+				<float name="far" value="0.00125" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_mortar" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -461,8 +461,17 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.4" />
+					<float name="damage_multiplier" value="1.2" />
 					<float name="penetration_multiplier" value="0.5" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.8" />
+					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

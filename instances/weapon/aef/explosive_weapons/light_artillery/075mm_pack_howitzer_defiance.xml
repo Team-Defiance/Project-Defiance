@@ -46,14 +46,14 @@
 				<float name="radius" value="5.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.12" />
-				<float name="near" value="0.72" />
-				<float name="mid" value="0.4" />
+				<float name="far" value="0.15" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.06" />
-				<float name="near" value="0.36" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.075" />
+				<float name="near" value="0.45" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
 				<float name="far" value="5" />
@@ -79,9 +79,9 @@
 				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
-				<float name="far" value="0.005" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.25" />
+				<float name="far" value="0.0015" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -445,6 +445,24 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.4" />
+					<float name="penetration_multiplier" value="0.5" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.8" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742166" />
