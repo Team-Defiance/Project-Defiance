@@ -390,7 +390,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\vehicles\soviet_at_gun_squads\m64_45mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\m63_45mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>

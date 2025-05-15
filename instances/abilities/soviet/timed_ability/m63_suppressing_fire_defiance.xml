@@ -132,8 +132,8 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="3504" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3505" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
 			<string name="overlay_name" value="" />
@@ -154,6 +154,13 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="3468" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="veterancy_rank" value="1" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="3506" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\ability_lock_out\isu152_he_rounds" />
+				<bool name="include_queued" value="False" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
