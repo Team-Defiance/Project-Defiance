@@ -1063,6 +1063,11 @@
 										</list>
 										<uniqueid name="id" value="1073744628" />
 									</template_reference>
+									<template_reference name="action" value="action\slot_item_add">
+										<instance_reference name="slot_item" value="slot_item\german\small_arms\vsl_stg44_item" mod="84428889d71d41a48e2eff09c2425d54" />
+										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="1073794501" />
+									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
 								</list>

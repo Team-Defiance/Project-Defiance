@@ -30,12 +30,12 @@
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="2" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="3494" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3495" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="P" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_soviet_ptrs_41" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="3493" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
@@ -56,6 +56,10 @@
 				<instance_reference name="slot_item" value="slot_item\soviet\anti_tank_weapon\ptrs_41_penals_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073794462" />
+			</template_reference>
+			<template_reference name="action" value="action\add_ability_action">
+				<uniqueid name="id" value="1073794502" />
+				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
 			</template_reference>
 		</list>
 		<list name="requirements">
