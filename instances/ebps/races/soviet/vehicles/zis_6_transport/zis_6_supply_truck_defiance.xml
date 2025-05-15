@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\german\always_on_ability\opel_supply_territory_check" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\supply_truck_lockdown_soviet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\toggle_ability\commander_ability\supply_truck_lockdown" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
