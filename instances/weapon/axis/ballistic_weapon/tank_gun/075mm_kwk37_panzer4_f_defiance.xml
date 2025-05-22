@@ -434,8 +434,8 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="80" />
-			<float name="far" value="55" />
+			<float name="near" value="85" />
+			<float name="far" value="60" />
 			<float name="mid" value="70" />
 		</group>
 		<group name="ui_map_colour">

@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="5" />
-				<float name="near" value="20" />
+				<float name="mid" value="2" />
+				<float name="near" value="5" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.1" />
-				<float name="min" value="5.8" />
+				<float name="max" value="6" />
+				<float name="min" value="5.7" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="7" />
+			<float name="distance_scatter_max" value="6.1" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="190" />
-			<float name="far" value="150" />
-			<float name="mid" value="175" />
+			<float name="near" value="205" />
+			<float name="far" value="140" />
+			<float name="mid" value="170" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

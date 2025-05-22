@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="116" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11007043" />
+						<locstring name="help_text" value="3284" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="E" />
 						<icon name="icon_name" value="Icons_units_unit_soviet_engineer" />
 						<bool name="minimap_team_only" value="False" />
@@ -155,7 +155,7 @@
 			<bool name="support_weapons_to_flanks" value="True" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
-			<bool name="can_pick_up" value="False" />
+			<bool name="can_pick_up" value="True" />
 			<float name="num_slots" value="3" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
@@ -182,7 +182,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\soviet\items\engineer_minesweeper_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\soviet\items\ppsh_41_sappers" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\soviet\items\shockarmy_50_sappers" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\soviet\commander\items\shockarmy_50_sappers" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\soviet\items\mobilize_reserves_saperi" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\soviet\items\scout_package_saperi" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>

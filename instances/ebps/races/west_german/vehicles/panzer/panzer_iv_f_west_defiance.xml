@@ -19,11 +19,11 @@
 				<instance_reference name="ability" value="abilities\german\toggle_ability\wehr_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\kt_kwk_panzeriv_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\timed_ability\pe_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\wg_heat_p4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\p4_f_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\p4_smoke_drop_pe" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_4_range_ui_pe" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\p4_rocket_volley_pe" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\p4_smoke_drop_okw" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\fire_support_ui_okw" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\p4_rocket_volley_okw" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_cannons_raketen59_pe" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -90,7 +90,7 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="False" />
-							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_pe_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_wg_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="include_queued" value="False" />
 						</template_reference>
 					</list>
@@ -151,7 +151,7 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_pe_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_wg_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="include_queued" value="False" />
 						</template_reference>
 					</list>
@@ -547,7 +547,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -1227,9 +1227,9 @@
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
 				<instance_reference name="upgrade" value="upgrade\german\items\p4_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_skirts_shared_panzer_elite_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_pe_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_pe_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_skirts_shared_wg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_wg_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\p4_wg_rocket_gun_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\recrewable_ext">

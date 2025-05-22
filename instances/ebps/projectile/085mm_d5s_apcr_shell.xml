@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.00085" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="4" />
-				<float name="radius_min" value="1" />
+				<float name="radius_max" value="0.34" />
+				<float name="radius_min" value="0.305" />
 				<float name="splat_only_splat_seconds" value="45" />
 				<group name="splat_only_splats">
 					<group name="entry_01">

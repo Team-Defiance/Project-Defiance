@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="300" />
+			<float name="manpower" value="320" />
 			<float name="munition" value="10" />
 			<float name="popcap" value="0" />
 		</group>
@@ -121,22 +121,29 @@
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\british\modal_ability\dispatch_ability\brit_hq_engineer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\mobile_assault_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\01_heavy_sappers_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\02_smoke_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\04_operation_chariot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\03_infiltration_commandos_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\05_land_mattress_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\06_comet_a34_cruiser_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\01_comet_a34_cruiser_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\02_heavy_sappers_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\03_smoke_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\04_infiltration_commandos_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\05_operation_chariot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\mobile_assault\06_land_mattress_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\lend_lease_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\01_sbs_raiders_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\02_sherman_iv_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\03_lend_leased_equipment_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\04_reinforce_the_front" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\05_command_cromwell_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\lend_lease\06_concentrated_fire_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="20" />
-				<float name="fuel" value="500" />
-				<float name="manpower" value="2000" />
-				<float name="munition" value="1000" />
-				<float name="soviet_progression" value="-1" />
-				<float name="soviet_227" value="-1" />
+				<float name="command" value="32" />
+				<float name="fuel" value="-1" />
+				<float name="manpower" value="-1" />
+				<float name="munition" value="-1" />
+				<float name="soviet_progression" value="100" />
+				<float name="soviet_227" value="100" />
 				<float name="popcap" value="-1" />
 			</template_reference>
 		</group>

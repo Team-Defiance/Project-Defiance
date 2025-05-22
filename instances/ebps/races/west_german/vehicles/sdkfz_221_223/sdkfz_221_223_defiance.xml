@@ -18,7 +18,7 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\wehr_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\vehicle_ability\222_defensive_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\scout_car_221_lay_heavy_mine" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\scout_car_riegel_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_cannons_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
@@ -235,7 +235,7 @@
 			</group>
 			<bool name="extended_sight" value="True" />
 			<float name="extended_sight_radius" value="85" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -350,8 +350,8 @@
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="True" />
-			<string name="skin_summer" value="german_0013_summer" />
-			<string name="skin_winter" value="german_0013_winter" />
+			<string name="skin_summer" value="german_0014_summer" />
+			<string name="skin_winter" value="german_0014_summer" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_gen_ext">
 			<string name="animation_event_name" value="" />

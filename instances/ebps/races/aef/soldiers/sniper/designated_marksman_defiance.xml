@@ -65,7 +65,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="36" />
+				<float name="time_seconds" value="20" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -739,7 +739,7 @@
 			<float name="attack_priority" value="0" />
 			<enum name="camouflage_type" value="tp_global" />
 			<bool name="chain_revealer" value="True" />
-			<float name="detection_radius" value="1" />
+			<float name="detection_radius" value="6" />
 			<bool name="must_be_fully_constructed" value="False" />
 			<bool name="permanently_activated" value="False" />
 			<float name="combat_reset_time" value="10" />

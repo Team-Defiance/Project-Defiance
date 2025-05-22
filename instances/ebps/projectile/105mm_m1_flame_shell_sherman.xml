@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.00105" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="4" />
-				<float name="radius_min" value="3" />
+				<float name="radius_max" value="2.86" />
+				<float name="radius_min" value="1.635" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -203,7 +203,7 @@
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.2" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="lowest_non_collide_angle" />
+				<enum name="firing_angle_type" value="low_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
 				<float name="non_collide_start_angle" value="15" />
 				<float name="non_collide_end_angle" value="40" />

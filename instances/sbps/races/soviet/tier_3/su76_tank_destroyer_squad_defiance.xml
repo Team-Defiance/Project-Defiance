@@ -7,120 +7,6 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="2857" mod="84428889d71d41a48e2eff09c2425d54" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007362" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_su76m_assault_gun" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
-						<string name="selection_group" value="SU-76M" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="s7" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="ma" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="s76" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="mar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="38" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038617" />
-						<locstring name="screen_name_short" value="11047890" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_su76m_assault_gun_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\aef" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007363" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007362" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_su76m_assault_gun" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
-						<string name="selection_group" value="SU-76M" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="s7" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="ma" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="s76" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="mar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="38" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038617" />
-						<locstring name="screen_name_short" value="11047890" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_su76m_assault_gun_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11007363" />
 						<bool name="has_speech_code" value="False" />
 						<locstring name="help_text" value="2522" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -130,178 +16,7 @@
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
-						<string name="selection_group" value="SU-76M" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="s7" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="ma" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="s76" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="mar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="38" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038617" />
-						<locstring name="screen_name_short" value="11047890" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_su76m_assault_gun_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\soviet" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007363" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007362" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_su76m_assault_gun" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
-						<string name="selection_group" value="SU-76M" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="wm" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="s7" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="ma" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="s76" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="mar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="38" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038617" />
-						<locstring name="screen_name_short" value="11047890" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_su76m_assault_gun_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\west_german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007363" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007362" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_su76m_assault_gun" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
-						<string name="selection_group" value="SU-76M" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="s7" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="ma" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="s76" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="mar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="38" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_su76_artillery_tank_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="11038617" />
-						<locstring name="screen_name_short" value="11047890" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_soviet_su76m_assault_gun_symbol" />
-						<bool name="speaker_highest_priority" value="False" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\british" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11007363" />
-						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11007362" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_su76m_assault_gun" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11007080" />
+						<locstring name="screen_name" value="3420" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="SU-76M" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -574,6 +289,92 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_all_in_list">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<float name="max_completed" value="100" />
+									<float name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<float name="max_completed" value="100" />
+									<float name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\soviet\research\commander_choice_2" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
+							</list>
+						</template_reference>
+						<template_reference name="required" value="requirements\required_resource">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="3386" mod="84428889d71d41a48e2eff09c2425d54" />
+							<template_reference name="resource" value="tables\resource_table">
+								<float name="action" value="0" />
+								<float name="command" value="3" />
+								<float name="fuel" value="0" />
+								<float name="manpower" value="0" />
+								<float name="munition" value="0" />
+								<float name="soviet_progression" value="0" />
+								<float name="soviet_227" value="0" />
+								<float name="popcap" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\received_experience_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="1.1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073793876" />
+						</template_reference>
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="3390" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="3391" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="ModIcons_84428889d71d41a48e2eff09c2425d54_soviet_symbols_abilities_veteran_crew_training" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073793877" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="self" />
+							<uniqueid name="id" value="1073793878" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073793784" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>

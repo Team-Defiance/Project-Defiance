@@ -199,8 +199,8 @@
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
-				<float name="accuracy_multiplier" value="1.25" />
-				<float name="damage_multiplier" value="1.25" />
+				<float name="accuracy_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1.5" />
 			</group>
@@ -224,9 +224,9 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1" />
+				<float name="suppression_multiplier" value="1.5" />
 			</group>
 			<group name="tp_z_bunker">
 				<float name="accuracy_multiplier" value="0.15" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="320" />
-			<float name="min" value="320" />
+			<float name="max" value="250" />
+			<float name="min" value="250" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -295,7 +295,7 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="6" />
+		<float name="flinch_radius" value="2.25" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -307,12 +307,12 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.35" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
-			<bool name="disable_moving_firing" value="True" />
-			<float name="moving_end_time" value="1.5" />
-			<float name="moving_start_time" value="1.8" />
+			<bool name="disable_moving_firing" value="False" />
+			<float name="moving_end_time" value="0" />
+			<float name="moving_start_time" value="0" />
 		</group>
 		<string name="name" value="ML-20 152mm Armor Piercing Round" />
 		<group name="offhand">
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="285" />
-			<float name="far" value="265" />
-			<float name="mid" value="275" />
+			<float name="near" value="295" />
+			<float name="far" value="250" />
+			<float name="mid" value="270" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -445,6 +445,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.28" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742099" />

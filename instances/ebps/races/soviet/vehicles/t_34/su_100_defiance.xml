@@ -111,7 +111,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="150" />
+					<float name="fuel" value="170" />
 					<float name="manpower" value="400" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -422,7 +422,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="15" />
+			<float name="personnel_pop" value="18" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">

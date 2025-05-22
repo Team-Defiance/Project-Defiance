@@ -138,12 +138,12 @@
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
 				<float name="action" value="-1" />
-				<float name="command" value="20" />
-				<float name="fuel" value="500" />
-				<float name="manpower" value="2000" />
-				<float name="munition" value="1000" />
-				<float name="soviet_progression" value="-1" />
-				<float name="soviet_227" value="-1" />
+				<float name="command" value="32" />
+				<float name="fuel" value="-1" />
+				<float name="manpower" value="-1" />
+				<float name="munition" value="-1" />
+				<float name="soviet_progression" value="100" />
+				<float name="soviet_227" value="100" />
 				<float name="popcap" value="-1" />
 			</template_reference>
 		</group>
@@ -225,29 +225,29 @@
 		<group name="ai_production_info">
 			<list name="base_building_list">
 				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\medic_healing_mp" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>

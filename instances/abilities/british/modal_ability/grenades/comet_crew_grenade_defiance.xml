@@ -67,7 +67,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="3" />
+		<float name="duration_time" value="0" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="True" />
@@ -75,7 +75,7 @@
 		<float name="facing_angle" value="10" />
 		<bool name="facing_ignore" value="True" />
 		<float name="final_close_in_distance" value="0" />
-		<bool name="fire_and_forget" value="False" />
+		<bool name="fire_and_forget" value="True" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
@@ -139,8 +139,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="3" />
-		<float name="ui_reticule_radius_max" value="3" />
+		<float name="ui_reticule_radius_min" value="6" />
+		<float name="ui_reticule_radius_max" value="6" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

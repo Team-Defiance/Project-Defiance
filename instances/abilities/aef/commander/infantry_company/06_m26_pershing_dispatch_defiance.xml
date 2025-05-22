@@ -10,7 +10,7 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="19" />
+					<float name="minimum_pop_used" value="21" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
@@ -132,7 +132,7 @@
 				<enum name="reason" value="usage" />
 				<group name="free_pop">
 					<float name="medic" value="0" />
-					<float name="personnel" value="19" />
+					<float name="personnel" value="21" />
 					<float name="vehicle" value="0" />
 				</group>
 			</template_reference>
@@ -198,7 +198,7 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\aef\doctrine\m4a3e2_sherman_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="squad_name" value="sbps\races\aef\doctrine\armor\vehicles\m4a3e2_sherman_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />

@@ -64,6 +64,13 @@
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\items\rifleman_dual_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\items\riflemen_m1919a6_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />

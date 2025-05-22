@@ -31,12 +31,12 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\heal_action">
-							<float name="amount" value="6.4" />
+							<float name="amount" value="7" />
 							<group name="target_info">
 								<template_reference name="target_info" value="type_ability_target_type\all">
 								</template_reference>
 							</group>
-							<uniqueid name="id" value="1073751556" />
+							<uniqueid name="id" value="1073793864" />
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="False" />
@@ -63,13 +63,13 @@
 								<template_reference name="required" value="requirements\required_entity">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="entity_blueprint_name" value="ebps\races\aef\vehicles\light_vehicles\usf_wc51_transport_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="entity_blueprint_name" value="ebps\races\aef\vehicles\halftracks\m5_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<enum name="entity_type" value="" />
 								</template_reference>
 								<template_reference name="required" value="requirements\required_squad_veterancy">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="3" />
+									<float name="veterancy_rank" value="1" />
 								</template_reference>
 							</list>
 							<list name="action_table">
@@ -79,10 +79,10 @@
 										<template_reference name="target_info" value="type_ability_target_type\all">
 										</template_reference>
 									</group>
-									<uniqueid name="id" value="1073754839" />
+									<uniqueid name="id" value="1073793865" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754838" />
+							<uniqueid name="id" value="1073793866" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -90,7 +90,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751557" />
+					<uniqueid name="id" value="1073793867" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -100,17 +100,17 @@
 				<template_reference name="action" value="action\slot_item_add">
 					<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
 					<bool name="permanent" value="False" />
-					<uniqueid name="id" value="1073751558" />
+					<uniqueid name="id" value="1073793868" />
 				</template_reference>
 				<template_reference name="action" value="action\ui_unit_modifier_action">
 					<bool name="die_with_creator" value="True" />
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="1815" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="help_text" value="0" />
+						<locstring name="help_text" value="3389" mod="84428889d71d41a48e2eff09c2425d54" />
 						<icon name="icon_name" value="Icons_abilities_ability_british_engine_critical_self_repair" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
-					<uniqueid name="id" value="1073751559" />
+					<uniqueid name="id" value="1073793869" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
@@ -118,7 +118,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="ability_repair_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073751560" />
+					<uniqueid name="id" value="1073793870" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -188,7 +188,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751561" />
+					<uniqueid name="id" value="1073793871" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">

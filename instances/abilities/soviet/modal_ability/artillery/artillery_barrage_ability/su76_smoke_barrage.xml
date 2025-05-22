@@ -79,7 +79,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="80" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_mortar_barrage" />
@@ -143,13 +143,27 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
+			<template_reference name="required" value="requirements\required_all_in_list">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\ability\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\soviet\research\commander_choice_2" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+				</list>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />

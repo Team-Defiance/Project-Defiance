@@ -297,7 +297,9 @@
 				<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\choice_1_mobile_support" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\choice_2_at_support" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\choice_1_infantry_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\choice_2_apcr_shells" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\choice_2_mechanized_refit" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\choice_1_logistical_support" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\choice_2_infantry_support" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -701,6 +703,56 @@
 						<float name="z" value="-6.02" />
 					</group>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_terrain_material">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="not" value="False" />
+									<list name="materials">
+										<instance_reference name="material" value="material\crater_snow" />
+										<instance_reference name="material" value="material\snow" />
+										<instance_reference name="material" value="material\crater_ice" />
+										<instance_reference name="material" value="material\ice" />
+										<instance_reference name="material" value="material\icywater" />
+									</list>
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_player_upgrade">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="is_present" value="True" />
+									<float name="max_completed" value="100" />
+									<float name="min_completed" value="1" />
+									<instance_reference name="upgrade_name" value="upgrade\campaign\allow_building_campfires" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\winter" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073793933" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073793932" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -774,7 +826,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\soldiers\soviet_hmg_squad\dshk38_hmgsquad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\dshk38_hmgsquad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 			</list>

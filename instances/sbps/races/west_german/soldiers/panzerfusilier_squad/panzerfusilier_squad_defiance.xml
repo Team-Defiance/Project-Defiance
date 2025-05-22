@@ -418,31 +418,37 @@
 								</template_reference>
 							</list>
 							<list name="action_table">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_01" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.9" />
+													<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073792794" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755294" />
+									<enum name="change_target_type" value="entities" />
+									<uniqueid name="id" value="1073792795" />
 								</template_reference>
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11159008" />
-										<locstring name="help_text" value="2656" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="3162" mod="84428889d71d41a48e2eff09c2425d54" />
 										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="1073755297" />
+									<uniqueid name="id" value="1073792796" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073755295" />
@@ -469,21 +475,27 @@
 								</template_reference>
 							</list>
 							<list name="action_table">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\received_damage_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_01" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="1.1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073792791" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755632" />
+									<enum name="change_target_type" value="entities" />
+									<uniqueid name="id" value="1073792792" />
 								</template_reference>
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
@@ -493,7 +505,7 @@
 										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="1073755633" />
+									<uniqueid name="id" value="1073792793" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073755634" />
@@ -728,27 +740,33 @@
 								</template_reference>
 							</list>
 							<list name="action_table">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_01" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.9" />
+													<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073792788" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755307" />
+									<enum name="change_target_type" value="entities" />
+									<uniqueid name="id" value="1073792787" />
 								</template_reference>
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="11159008" />
-										<locstring name="help_text" value="2627" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="3162" mod="84428889d71d41a48e2eff09c2425d54" />
 										<icon name="icon_name" value="Icons_abilities_ability_german_combined_arms" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
@@ -779,21 +797,27 @@
 								</template_reference>
 							</list>
 							<list name="action_table">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\received_damage_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_01" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="1.1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073792790" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755635" />
+									<enum name="change_target_type" value="entities" />
+									<uniqueid name="id" value="1073792789" />
 								</template_reference>
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
@@ -1496,14 +1520,15 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\fusilier_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_fuesilier_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\panzer_elite_fusilier_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzerfusiliers_flare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\pe_m43_nebelgranate_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\passives_ui\panzer_elite_combined_arms_passive_fuesilier_rpzb54_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_fuesilier_g43_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_fuesilier_mp40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_fuesilier_rpzb54_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\fusilier_at_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_fusilier_splitter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

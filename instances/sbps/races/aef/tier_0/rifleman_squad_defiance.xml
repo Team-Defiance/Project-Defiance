@@ -182,6 +182,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\aef\items\rifleman_single_bar_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\aef\items\rifleman_dual_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\riflemen_m1919a6_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -506,7 +507,7 @@
 						<template_reference name="required" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
+							<bool name="is_present" value="False" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
 							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_3\armored_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -523,7 +524,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.965" />
+									<float name="value" value="1.037038" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 								</template_reference>
 							</list>
@@ -536,22 +537,6 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.077" />
-							<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073754862" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -781,7 +766,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.82" />
+												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
