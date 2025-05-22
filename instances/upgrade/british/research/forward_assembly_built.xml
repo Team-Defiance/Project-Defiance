@@ -1,17 +1,17 @@
-<instance description="Bren LMG unlock on HQ" template="upgrade">
+<instance description="" template="upgrade">
 	<group name="upgrade_bag">
 		<bool name="enable_in_hold" value="False" />
-		<float name="global_max_limit" value="0" />
-		<bool name="has_speech_code" value="True" />
-		<float name="local_max_limit" value="1" />
-		<enum name="owner_type" value="self" />
+		<float name="global_max_limit" value="1" />
+		<bool name="has_speech_code" value="False" />
+		<float name="local_max_limit" value="0" />
+		<enum name="owner_type" value="player" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="ifa" />
+			<string name="code_1" value="" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -19,28 +19,28 @@
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="20" />
-				<float name="manpower" value="25" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="15" />
+			<float name="time_seconds" value="0" />
 		</group>
-		<bool name="ui_event_cue" value="True" />
-		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="2" />
+		<bool name="ui_event_cue" value="False" />
+		<enum name="ui_group" value="command_panel" />
+		<int name="ui_position" value="0" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="3005" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3006" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="G" />
-			<icon name="icon_name" value="Icons_commander_cmdr_british_forward_observation_post" />
-			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="3007" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="" />
+			<icon name="icon_name" value="" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="3512" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
-			<enum name="ui_style" value="emphasized" />
+			<enum name="ui_style" value="default" />
 		</group>
-		<bool name="validate_actions" value="True" />
+		<bool name="validate_actions" value="False" />
 		<list name="actions">
 		</list>
 		<list name="requirements">
@@ -56,5 +56,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742008" />
+	<uniqueid name="pbgid" value="1073742040" />
 </instance>
