@@ -7,301 +7,16 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="813" mod="84428889d71d41a48e2eff09c2425d54" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="812" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="L" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panzer_ii_luchs" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
-						<string name="selection_group" value="luchs" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="wm" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="lar" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="45" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<float name="minimap_texture_scale" value="0.8" />
-						<locstring name="brief_text" value="814" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="screen_name_short" value="11071729" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_panzer_ii_luchs_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\west_german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11051454" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051453" />
-						<string name="hotkey_name" value="W" />
-						<icon name="icon_name" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
-						<string name="selection_group" value="luchs" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="lar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="45" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<float name="minimap_texture_scale" value="0.8" />
-						<locstring name="brief_text" value="11051452" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_panzer_ii_luchs_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\aef" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11051454" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051453" />
-						<string name="hotkey_name" value="W" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panzer_ii_luchs" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
-						<string name="selection_group" value="luchs" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="lar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="45" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<float name="minimap_texture_scale" value="0.8" />
-						<locstring name="brief_text" value="11051452" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_panzer_ii_luchs_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\german" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11051454" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051453" />
-						<string name="hotkey_name" value="W" />
-						<icon name="icon_name" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
-						<string name="selection_group" value="luchs" />
-						<group name="speaker_generic">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="mt" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="arm" />
-							<string name="code_3" value="lar" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="45" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="ft" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<float name="minimap_texture_scale" value="0.8" />
-						<locstring name="brief_text" value="11051452" />
-						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_panzer_ii_luchs_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\soviet" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11051454" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051453" />
+						<locstring name="help_text" value="3525" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="A" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panzer_ii_luchs" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
-						<string name="selection_group" value="luchs" />
-						<group name="speaker_generic">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speaker_specific">
-							<string name="code_1" value="lv" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
-						</group>
-						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="lar" />
-							<string name="code_3" value="arm" />
-						</group>
-						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="45" />
-						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
-						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
-							<string name="code_2" value="" />
-							<string name="code_3" value="" />
-						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_s_portrait" />
-						<float name="minimap_texture_scale" value="0.8" />
-						<locstring name="brief_text" value="11051452" />
-						<locstring name="screen_name_short" value="11071729" />
-						<enum name="map_rotation_type_override" value="no_override" />
-						<bool name="decoratable" value="True" />
-						<bool name="show_in_build_log" value="True" />
-						<bool name="speaker_highest_priority" value="False" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_west_german_panzer_ii_luchs_symbol" />
-						<enum name="ui_style" value="default" />
-						<string name="cover_level_icon_postfix" value="" />
-					</group>
-					<instance_reference name="ext_key" value="racebps\british" />
-				</group>
-				<group name="race_data">
-					<group name="info">
-						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11051454" />
-						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051453" />
-						<string name="hotkey_name" value="A" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_panzer_ii_luchs" />
-						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
-						<instance_reference name="modal_ability" value="" />
-						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11051187" />
+						<locstring name="screen_name" value="3524" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="luchs" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -309,26 +24,26 @@
 							<string name="code_3" value="" />
 						</group>
 						<group name="speaker_specific">
-							<string name="code_1" value="wm" />
+							<string name="code_1" value="mt" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speech_code_2">
-							<string name="code_1" value="la" />
-							<string name="code_2" value="ar" />
-							<string name="code_3" value="" />
+							<string name="code_1" value="22" />
+							<string name="code_2" value="ac" />
+							<string name="code_3" value="la" />
 						</group>
 						<group name="speech_code_3">
-							<string name="code_1" value="llt" />
-							<string name="code_2" value="lar" />
-							<string name="code_3" value="arm" />
+							<string name="code_1" value="222" />
+							<string name="code_2" value="arc" />
+							<string name="code_3" value="lar" />
 						</group>
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="45" />
 						<bool name="use_random_entity_speaker" value="False" />
 						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_panzer_ii_luchs_w_portrait" />
 						<group name="speaker_specific_alt">
-							<string name="code_1" value="" />
+							<string name="code_1" value="ft" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>

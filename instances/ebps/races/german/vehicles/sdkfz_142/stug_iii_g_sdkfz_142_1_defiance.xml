@@ -825,12 +825,6 @@
 					<bool name="receives_attack_commands" value="False" />
 				</group>
 				<group name="hardpoint">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
 					<float name="parent_hardpoint" value="1" />
 					<list name="weapon_table">
 						<group name="weapon">
@@ -848,6 +842,12 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_stuk40_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
