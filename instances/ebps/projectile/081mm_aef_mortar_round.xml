@@ -187,7 +187,7 @@
 			<float name="deathtimer" value="3" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
-			<string name="launcher_marker" value="marker_fx_muzzle" />
+			<string name="launcher_marker" value="mortar_fire" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="False" />
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073756681" />
+					<uniqueid name="id" value="1073794511" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742279" />
+	<uniqueid name="pbgid" value="1073742351" />
 </instance>
