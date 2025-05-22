@@ -46,14 +46,14 @@
 				<float name="radius" value="5.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.12" />
-				<float name="near" value="0.72" />
-				<float name="mid" value="0.4" />
+				<float name="far" value="0.15" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.06" />
-				<float name="near" value="0.36" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.075" />
+				<float name="near" value="0.45" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
 				<float name="far" value="5" />
@@ -79,9 +79,9 @@
 				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="0.72" />
-				<float name="mid" value="0.2" />
-				<float name="far" value="0.0012" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.25" />
+				<float name="far" value="0.0015" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -378,7 +378,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\leig_75_shell_high" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\leig_75_shell_high_incendiary" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="125" />
@@ -412,7 +412,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="6.5" />
+			<float name="distance_scatter_max" value="6" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.075" />
@@ -492,8 +492,17 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.4" />
+					<float name="damage_multiplier" value="1.2" />
 					<float name="penetration_multiplier" value="0.5" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.8" />
+					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

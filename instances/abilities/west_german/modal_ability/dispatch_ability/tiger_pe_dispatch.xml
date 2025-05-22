@@ -174,7 +174,7 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11158573" />
 				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\west_german_tiger_squad_mp" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -220,9 +220,15 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11158576" />
+				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />

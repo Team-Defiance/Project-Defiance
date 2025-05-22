@@ -62,6 +62,45 @@
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073792568" />
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="2" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\extended_sight_enable">
+									<enum name="application_type" value="apply_to_entity" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="enable" />
+									<float name="value" value="1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\extended_sight_enable" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073792758" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073792757" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
@@ -76,14 +115,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="20" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="45" />
+		<float name="duration_time" value="30" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />

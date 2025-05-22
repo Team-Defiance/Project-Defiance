@@ -35,7 +35,7 @@
 					<bool name="can_prevent_refund" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\aef\grenades\m23_smoke_stream_grenade_anti_tank_item_mp" />
+					<instance_reference name="accessory_weapon_item" value="slot_item\soviet\grenades\smoke_stream_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="decrement_accessory_item" value="" />
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
@@ -156,7 +156,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="11071969" />
-			<locstring name="help_text" value="11066907" />
+			<locstring name="help_text" value="3407" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="D" />
 			<icon name="icon_name" value="Icons_abilities_ability_west_german_m23_rifle_smoke_grenade" />
 			<string name="overlay_name" value="" />
@@ -198,7 +198,7 @@
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="False" />
 				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\dpm_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\dpm_stormgroup" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

@@ -6,7 +6,23 @@
 					<bool name="fire_and_forget" value="True" />
 					<bool name="random" value="False" />
 					<instance_reference name="slot_item" value="slot_item\german\hulldown_slot_item" />
-					<uniqueid name="id" value="1073752161" />
+					<uniqueid name="id" value="1073794491" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="false" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="hull_down" />
+					<string name="undo_action_state_name" value="" />
+					<uniqueid name="id" value="1073794492" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="false" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="hull_down_complete" />
+					<string name="undo_action_state_name" value="" />
+					<uniqueid name="id" value="1073794493" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="4" />
@@ -31,7 +47,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753015" />
+					<uniqueid name="id" value="1073794499" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -285,103 +301,180 @@
 					<uniqueid name="id" value="1073752172" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="5" />
-					<float name="delay_min" value="5" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="9999" />
-							<instance_reference name="entity_blueprint" value="ebps\environment\art_ambient\objects\defenses\sandbags\sandbag_pile_01" />
-							<bool name="permanent" value="False" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
-								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073752173" />
-							<template_reference name="spawn_attached_option" value="options\none">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="True" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="panzer" />
+							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
-							<list name="spawned_entity_actions">
-							</list>
-							<group name="offset">
-								<float name="x" value="0.95" />
-								<float name="y" value="1.7" />
-								<float name="z" value="2.2" />
-							</group>
-						</template_reference>
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="9999" />
-							<instance_reference name="entity_blueprint" value="ebps\environment\art_ambient\objects\defenses\sandbags\sandbag_pile_01" />
-							<bool name="permanent" value="False" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
-								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073752174" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
-							</list>
-							<group name="offset">
-								<float name="x" value="-0.65" />
-								<float name="y" value="1.9" />
-								<float name="z" value="2.2" />
-							</group>
-						</template_reference>
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="9999" />
-							<instance_reference name="entity_blueprint" value="ebps\environment\art_ambient\objects\defenses\sandbags\sandbag_pile_01" />
-							<bool name="permanent" value="False" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
-								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073752175" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
-							</list>
-							<group name="offset">
-								<float name="x" value="0.9" />
-								<float name="y" value="1.43" />
-								<float name="z" value="3.25" />
-							</group>
-						</template_reference>
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="9999" />
-							<instance_reference name="entity_blueprint" value="ebps\environment\art_ambient\objects\defenses\sandbags\sandbag_pile_01" />
-							<bool name="permanent" value="False" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
-								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073752176" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
-							</list>
-							<group name="offset">
-								<float name="x" value="-0.9" />
-								<float name="y" value="1.4" />
-								<float name="z" value="3.2" />
-							</group>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752177" />
-					<bool name="can_prevent_refund" value="True" />
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="panzer" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="tank_type" />
+							<string name="undo_action_state_name" value="" />
+							<uniqueid name="id" value="1073794471" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073794472" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="false" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="hull_down" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073752178" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="True" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="ostwind" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="ostwind" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="tank_type" />
+							<string name="undo_action_state_name" value="" />
+							<uniqueid name="id" value="1073794473" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073794474" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="True" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="panther" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="panther" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="tank_type" />
+							<string name="undo_action_state_name" value="" />
+							<uniqueid name="id" value="1073794475" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073794476" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="True" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="stug" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="stug" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="tank_type" />
+							<string name="undo_action_state_name" value="" />
+							<uniqueid name="id" value="1073794477" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073794478" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="True" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="brummbar" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="False" />
+							<string name="do_action_state_name" value="brummbar" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="tank_type" />
+							<string name="undo_action_state_name" value="" />
+							<uniqueid name="id" value="1073794520" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073794521" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 			<list name="start_target_actions">

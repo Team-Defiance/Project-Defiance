@@ -136,6 +136,21 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\interval_action">
+					<float name="interval_second" value="0.125" />
+					<uniqueid name="id" value="1073793310" />
+					<list name="interval_subactions">
+						<group name="interval_subaction_group">
+							<float name="trigger_time_second" value="0" />
+							<list name="actions">
+								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="0.25" />
+									<uniqueid name="id" value="1073793311" />
+								</template_reference>
+							</list>
+						</group>
+					</list>
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\requirement_action">

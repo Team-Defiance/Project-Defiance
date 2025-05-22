@@ -28,7 +28,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="3.75" />
+							<float name="value" value="10" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -46,7 +46,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.2" />
+							<float name="value" value="1.25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 						</template_reference>
 					</list>
@@ -64,7 +64,7 @@
 								<locstring name="screen_name" value="1538" mod="84428889d71d41a48e2eff09c2425d54" />
 								<locstring name="help_text" value="0" />
 								<icon name="icon_name" value="Icons_abilities_ability_german_phospherous_rounds" />
-								<string name="hotkey_name" value="The M20 is firing SLAP rounds which increase damage and pen" />
+								<string name="hotkey_name" value="The M20 is firing SLAP rounds which have increased penetration." />
 							</template_reference>
 							<uniqueid name="id" value="1073750401" />
 						</template_reference>

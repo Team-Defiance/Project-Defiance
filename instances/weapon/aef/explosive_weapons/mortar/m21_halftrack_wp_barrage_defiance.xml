@@ -46,14 +46,14 @@
 				<float name="radius" value="4.75" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.7" />
-				<float name="mid" value="0.4" />
+				<float name="far" value="0.125" />
+				<float name="near" value="0.875" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.05" />
-				<float name="near" value="0.35" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="0.0625" />
+				<float name="near" value="0.4375" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3.75" />
@@ -79,9 +79,9 @@
 				<float name="near" value="40" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
-				<float name="far" value="1" />
+				<float name="near" value="0.875" />
+				<float name="mid" value="0.25" />
+				<float name="far" value="0.00125" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_mortar" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="20" />
-			<float name="min" value="20" />
+			<float name="max" value="25" />
+			<float name="min" value="25" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -482,6 +482,15 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.8" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742028" />

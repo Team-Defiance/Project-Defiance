@@ -18,8 +18,8 @@
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="0.1" />
-				<float name="far" value="1.5" />
-				<float name="mid" value="0.75" />
+				<float name="far" value="2" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -290,7 +290,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="0.5" />
+			<float name="wind_down" value="0.375" />
 			<float name="wind_up" value="0" />
 			<list name="on_fire_actions">
 			</list>
@@ -342,7 +342,7 @@
 			<group name="distance">
 				<float name="near" value="5" />
 				<float name="far" value="35" />
-				<float name="mid" value="25" />
+				<float name="mid" value="24" />
 			</group>
 		</group>
 		<group name="reload">

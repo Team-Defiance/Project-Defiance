@@ -10,16 +10,16 @@
 				<float name="max" value="0.125" />
 				<float name="min" value="0.125" />
 			</group>
-			<float name="post_firing_aim_time" value="0" />
+			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.5" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="far" value="2.5" />
+				<float name="mid" value="1.5" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -616,9 +616,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="near" value="390" />
-			<float name="far" value="320" />
-			<float name="mid" value="360" />
+			<float name="near" value="425" />
+			<float name="far" value="295" />
+			<float name="mid" value="355" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

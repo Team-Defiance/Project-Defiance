@@ -287,113 +287,6 @@
 			<float name="deflection_damage_multiplier" value="0.1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="True" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_all_in_list">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_unit_type">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<enum name="unit_type" value="wg_jagdtiger" />
-									<template_reference name="qualify_option" value="options\none">
-									</template_reference>
-									<bool name="search_load_out" value="False" />
-									<bool name="owned_by_player_only" value="True" />
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_critical">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<instance_reference name="critical_name" value="critical\vehicle_crew_dazed_jagdtiger" />
-									<bool name="is_present" value="False" />
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_not">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_squad_veterancy">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<float name="veterancy_rank" value="5" />
-										</template_reference>
-									</list>
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\random_action">
-							<bool name="instant" value="False" />
-							<list name="random_actions">
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="1" />
-											<instance_reference name="critical" value="critical\vehicle_crew_dazed_jagdtiger" />
-											<uniqueid name="id" value="1073753912" />
-										</template_reference>
-									</list>
-									<int name="weight" value="3" />
-								</group>
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073753913" />
-											<template_reference name="ui_help_text" value="options\none">
-											</template_reference>
-										</template_reference>
-									</list>
-									<int name="weight" value="3" />
-								</group>
-							</list>
-							<uniqueid name="id" value="1073753914" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073753915" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\company_hammer_mp" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_vision" />
-							<uniqueid name="id" value="1073753916" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073753917" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 		</group>
 		<group name="fire">
@@ -542,8 +435,8 @@
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="mid" value="125" />
-			<float name="far" value="110" />
-			<float name="near" value="140" />
+			<float name="far" value="100" />
+			<float name="near" value="150" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

@@ -207,7 +207,7 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
@@ -216,7 +216,7 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
@@ -225,7 +225,7 @@
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
 						<float name="radius_requirement" value="20" />
-						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\pe_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="entity_pbg" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
 						<list name="near_entity_requirement">
@@ -235,8 +235,8 @@
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
-		<locstring name="ui_squad_name_override" value="11048694" />
-		<locstring name="ui_squad_help_text_override" value="0" />
+		<locstring name="ui_squad_name_override" value="3238" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_help_text_override" value="3239" mod="84428889d71d41a48e2eff09c2425d54" />
 		<locstring name="ui_squad_extra_text_override" value="0" />
 		<list name="ui_preview">
 		</list>

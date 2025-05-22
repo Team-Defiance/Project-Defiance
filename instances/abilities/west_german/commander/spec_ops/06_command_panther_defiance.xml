@@ -134,13 +134,11 @@
 				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
+			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11171552" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />
@@ -153,6 +151,14 @@
 				<locstring name="ui_name" value="2798" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11171552" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -196,19 +202,25 @@
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\tiger_squad_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\tiger_squad_pe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11158576" />
+				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
