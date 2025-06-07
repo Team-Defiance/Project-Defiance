@@ -241,9 +241,25 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\blizzard_active" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="30" />
+		<int name="ui_position" value="50" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
@@ -271,6 +287,14 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
