@@ -103,11 +103,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\remove_crew_action">
-					<string name="crew_name" value="Gunner" />
-					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073792893" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -816,7 +811,7 @@
 								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="armies\british\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">

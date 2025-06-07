@@ -249,12 +249,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\upgrade_add">
-					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073794513" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext">
@@ -443,6 +437,12 @@
 					<float name="offset_y" value="0" />
 					<float name="offset_z" value="0" />
 					<bool name="camera_relative_rotation" value="False" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073794551" />
 				</template_reference>
 			</list>
 			<list name="materials">

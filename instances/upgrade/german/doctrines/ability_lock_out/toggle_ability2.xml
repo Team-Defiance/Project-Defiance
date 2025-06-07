@@ -4,7 +4,7 @@
 		<float name="global_max_limit" value="0" />
 		<bool name="has_speech_code" value="False" />
 		<float name="local_max_limit" value="0" />
-		<enum name="owner_type" value="player" />
+		<enum name="owner_type" value="" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
 			<string name="code_2" value="" />
@@ -28,38 +28,22 @@
 		</group>
 		<bool name="ui_event_cue" value="False" />
 		<enum name="ui_group" value="command_panel" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="0" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="3514" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3515" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_buildings_building_british_forward_assembly" />
+			<icon name="icon_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="3511" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="0" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
-			<enum name="ui_style" value="emphasized" />
+			<enum name="ui_style" value="default" />
 		</group>
 		<bool name="validate_actions" value="False" />
 		<list name="actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="3516" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="is_present" value="False" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_structure">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<int name="required_structure_count" value="1" />
-				<bool name="check_team" value="False" />
-				<bool name="require_construction_complete" value="True" />
-			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
 		<locstring name="ui_squad_name_override" value="0" />
@@ -72,5 +56,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742039" />
+	<uniqueid name="pbgid" value="1073742042" />
 </instance>
