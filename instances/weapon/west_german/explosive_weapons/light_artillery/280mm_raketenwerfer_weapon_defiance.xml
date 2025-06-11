@@ -79,9 +79,9 @@
 				<float name="near" value="200" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="0.0625" />
-				<float name="far" value="0.000625" />
+				<float name="near" value="0.9" />
+				<float name="mid" value="0.0875" />
+				<float name="far" value="0.0009" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_stuka_rockets" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -594,20 +594,20 @@
 		</group>
 		<list name="target_type_table">
 			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="production_building" />
-				<group name="weapon_multipliers">
-					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="0.75" />
-					<float name="penetration_multiplier" value="1" />
-					<float name="suppression_multiplier" value="1" />
-				</group>
-			</group>
-			<group name="target_unit_type_multipliers">
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="1" />
 					<float name="penetration_multiplier" value="0.5" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="production_building" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.75" />
+					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>
