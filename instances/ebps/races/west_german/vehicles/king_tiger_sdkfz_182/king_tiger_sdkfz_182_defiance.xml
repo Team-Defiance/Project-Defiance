@@ -126,6 +126,11 @@
 					<bool name="kill" value="False" />
 					<uniqueid name="id" value="1073793393" />
 				</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073794615" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">

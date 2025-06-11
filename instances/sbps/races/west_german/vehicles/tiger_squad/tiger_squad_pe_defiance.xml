@@ -594,6 +594,11 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\slot_item_add">
+										<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="1073794616" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">

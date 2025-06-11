@@ -136,7 +136,7 @@
 				<template_reference name="action" value="action\target_occupants_action">
 					<list name="subactions">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="30" />
+							<float name="damage" value="36" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -824,7 +824,7 @@
 			<float name="min_hold_seconds" value="1" />
 			<float name="num_slots" value="14" />
 			<float name="num_squad_slots" value="2" />
-			<float name="percent_unload_on_death" value="0.5" />
+			<float name="percent_unload_on_death" value="1" />
 			<bool name="revert_ownership" value="False" />
 			<bool name="scavenge_enabled" value="False" />
 			<group name="scavenge_resource">

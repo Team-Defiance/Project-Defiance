@@ -870,10 +870,6 @@
 				<group name="construction_group">
 					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
 					<list name="construction_items">
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\defensive_structure\slit_trench_german_mp" />
-							<int name="ui_position" value="24" />
-						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_german_grenadier" />
 				</group>
