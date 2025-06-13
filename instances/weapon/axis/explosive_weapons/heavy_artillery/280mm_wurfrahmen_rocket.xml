@@ -1,16 +1,16 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0" />
-			<float name="far" value="0" />
-			<float name="mid" value="0" />
+			<float name="near" value="1" />
+			<float name="far" value="1" />
+			<float name="mid" value="1" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
 				<float name="max" value="0.125" />
 				<float name="min" value="0.125" />
 			</group>
-			<float name="post_firing_aim_time" value="0.5" />
+			<float name="post_firing_aim_time" value="0" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
 				<float name="max" value="0.125" />
@@ -24,10 +24,10 @@
 		</group>
 		<group name="anim_table">
 			<string name="cooldown_time_name" value="" />
-			<string name="state_name" value="3in_projector_state" />
-			<string name="track_horizontal" value="" />
-			<string name="track_horizontal_speed" value="" />
-			<string name="track_vertical" value="3in_projector_vertical" />
+			<string name="state_name" value="" />
+			<string name="track_horizontal" value="rocket_horiz" />
+			<string name="track_horizontal_speed" value="rocket_horiz_speed" />
+			<string name="track_vertical" value="" />
 			<string name="track_vertical_speed" value="" />
 			<string name="variety_name" value="" />
 			<string name="visibility_name" value="" />
@@ -106,7 +106,7 @@
 			<bool name="share_parent_anim" value="False" />
 			<bool name="single_handed_weapon" value="False" />
 			<bool name="substitute_weapon" value="False" />
-			<bool name="support_weapon" value="True" />
+			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
 			<float name="reaction_radius" value="15.75" />
@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.125" />
+				<float name="min" value="0.125" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
@@ -277,97 +277,6 @@
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="vehicle" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-							<bool name="owned_by_player_only" value="True" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-							<uniqueid name="id" value="1073793944" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073793945" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="infantry" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-							<bool name="owned_by_player_only" value="True" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_health">
-							<float name="health_range_min_percentage" value="0" />
-							<float name="health_range_max_percentage" value="0.025" />
-							<locstring name="ui_name" value="0" />
-							<enum name="reason" value="usage" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\random_action">
-							<bool name="instant" value="False" />
-							<list name="random_actions">
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="1" />
-											<instance_reference name="critical" value="critical\burn_death" />
-											<uniqueid name="id" value="1073756190" />
-										</template_reference>
-									</list>
-									<int name="weight" value="50" />
-								</group>
-								<group name="action_choice">
-									<list name="actions">
-										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073756191" />
-											<template_reference name="ui_help_text" value="options\none">
-											</template_reference>
-										</template_reference>
-									</list>
-									<int name="weight" value="50" />
-								</group>
-							</list>
-							<uniqueid name="id" value="1073756192" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756193" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 		</group>
 		<group name="damage_over_time">
@@ -384,49 +293,6 @@
 			<float name="wind_down" value="0" />
 			<float name="wind_up" value="0" />
 			<list name="on_fire_actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_slot_item">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="check_item_on_entity" value="False" />
-							<bool name="display_requirement" value="True" />
-							<float name="max_owned" value="0" />
-							<float name="min_owned" value="0" />
-							<instance_reference name="slot_item" value="slot_item\aef\aef_calliope_dummy_slot_item" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="False" />
-							<string name="do_action_state_name" value="on" />
-							<bool name="retrigger" value="False" />
-							<string name="state_machine_name" value="main_gun_fireorder" />
-							<string name="undo_action_state_name" value="" />
-							<uniqueid name="id" value="1073750895" />
-						</template_reference>
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="False" />
-							<string name="do_action_state_name" value="on" />
-							<bool name="retrigger" value="False" />
-							<string name="state_machine_name" value="main_gun_fire_order_regular" />
-							<string name="undo_action_state_name" value="" />
-							<uniqueid name="id" value="1073750896" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073750897" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 		</group>
 		<float name="flinch_radius" value="15.75" />
@@ -444,11 +310,11 @@
 			<float name="accuracy_multiplier" value="0.5" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
-			<bool name="disable_moving_firing" value="True" />
+			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
-		<string name="name" value="60lb Rocket" />
+		<string name="name" value="Walking Stuka Rockets (280mm)" />
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />
 			<float name="offhand_start_time" value="0" />
@@ -469,11 +335,11 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\280mm_werfer_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\280mm_stuka_rocket_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="200" />
-			<float name="min" value="50" />
+			<float name="max" value="1000" />
+			<float name="min" value="20" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -482,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.5" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -491,24 +357,10 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="29" />
-				<float name="min" value="29" />
+				<float name="max" value="0" />
+				<float name="min" value="0" />
 			</group>
 			<list name="on_reload_actions">
-				<template_reference name="action" value="action\slot_item_remove">
-					<bool name="fire_and_forget" value="True" />
-					<bool name="random" value="False" />
-					<instance_reference name="slot_item" value="slot_item\aef\aef_calliope_dummy_slot_item" />
-					<uniqueid name="id" value="1073750898" />
-				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="off" />
-					<bool name="retrigger" value="False" />
-					<string name="state_machine_name" value="main_gun_fireorder" />
-					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073750899" />
-				</template_reference>
 			</list>
 		</group>
 		<group name="scatter">
@@ -529,7 +381,7 @@
 			<float name="tilt_scatter_chance" value="0" />
 		</group>
 		<group name="setup">
-			<float name="duration" value="3" />
+			<float name="duration" value="0" />
 			<bool name="has_instant_setup" value="False" />
 			<bool name="can_interrupt_setup" value="False" />
 			<float name="attach_duration" value="0" />
@@ -560,17 +412,17 @@
 			<float name="amount" value="0" />
 		</group>
 		<group name="teardown">
-			<float name="duration" value="3" />
+			<float name="duration" value="5" />
 		</group>
 		<group name="tracking">
-			<float name="fire_cone_angle" value="45" />
+			<float name="fire_cone_angle" value="5" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="90" />
-				<float name="speed_horizontal" value="10000" />
-				<float name="speed_vertical" value="10000" />
+				<float name="speed_horizontal" value="5000" />
+				<float name="speed_vertical" value="5000" />
 			</group>
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />
@@ -582,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="320" />
-			<float name="far" value="320" />
 			<float name="mid" value="320" />
+			<float name="far" value="320" />
+			<float name="near" value="320" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
@@ -603,6 +455,24 @@
 				</group>
 			</group>
 			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="commonwealth_emplacements" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.5" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="team_weapon" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="0.5" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
 				<enum name="unit_type" value="production_building" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
@@ -613,5 +483,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742058" />
+	<uniqueid name="pbgid" value="1073742290" />
 </instance>
