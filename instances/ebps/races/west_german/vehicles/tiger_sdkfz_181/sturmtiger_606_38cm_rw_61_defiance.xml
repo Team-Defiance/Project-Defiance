@@ -151,6 +151,57 @@
 					</list>
 					<uniqueid name="id" value="1073755527" />
 				</template_reference>
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="True" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\no_action">
+									<uniqueid name="id" value="1073794712" />
+									<template_reference name="ui_help_text" value="options\none">
+									</template_reference>
+								</template_reference>
+							</list>
+							<int name="weight" value="90" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="10" />
+									<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="False" />
+									<bool name="player_owned" value="False" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073794713" />
+									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+										<string name="attach_target_marker_name" value="" />
+										<string name="attach_action_name" value="" />
+										<string name="detach_action_name" value="" />
+										<bool name="destroy_on_cancel" value="True" />
+										<list name="detach_entity_actions">
+										</list>
+									</template_reference>
+									<list name="spawned_entity_actions">
+										<template_reference name="actions" value="action\self_destruction_action">
+											<instance_reference name="detonation_weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\380mm_sturmtiger_launcher" mod="84428889d71d41a48e2eff09c2425d54" />
+											<uniqueid name="id" value="1073794714" />
+										</template_reference>
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<int name="weight" value="10" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073794715" />
+				</template_reference>
 			</list>
 			<float name="armor" value="380" />
 			<float name="rear_armor" value="180" />
