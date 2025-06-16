@@ -76,7 +76,7 @@
 					<bool name="apply_to_future_units" value="False" />
 					<bool name="apply_to_local_player" value="True" />
 					<instance_reference name="deprecated_entity_type" value="" />
-					<instance_reference name="deprecated_squad_type" value="sbps\races\german\soldiers\mg42_heavy_machine_gun_squad\mg42_heavy_machine_gun_squad_mp" />
+					<instance_reference name="deprecated_squad_type" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<group name="target_info">
 						<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
 							<list name="target_infos">
