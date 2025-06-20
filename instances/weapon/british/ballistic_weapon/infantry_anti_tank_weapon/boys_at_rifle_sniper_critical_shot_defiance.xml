@@ -766,7 +766,7 @@
 							<float name="damage" value="10" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073756764" />
 						</template_reference>
@@ -816,7 +816,7 @@
 							<float name="damage" value="7" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073756766" />
 						</template_reference>

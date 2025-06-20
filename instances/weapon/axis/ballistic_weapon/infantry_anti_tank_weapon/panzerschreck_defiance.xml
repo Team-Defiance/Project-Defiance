@@ -35,15 +35,15 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0.8" />
+				<float name="radius" value="0.9" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.6" />
-				<float name="near" value="0.2" />
-				<float name="mid" value="0.4" />
+				<float name="far" value="0.675" />
+				<float name="near" value="0.225" />
+				<float name="mid" value="0.45" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -79,9 +79,9 @@
 				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.075" />
+				<float name="far" value="0.0005" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -437,7 +437,7 @@
 							<float name="damage" value="53" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073752264" />
 						</template_reference>
@@ -487,7 +487,7 @@
 							<float name="damage" value="40.4" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073752266" />
 						</template_reference>

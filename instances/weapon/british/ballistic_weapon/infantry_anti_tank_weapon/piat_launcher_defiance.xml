@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0.6" />
+				<float name="radius" value="0.8" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.45" />
-				<float name="near" value="0.15" />
-				<float name="mid" value="0.3" />
+				<float name="far" value="0.6" />
+				<float name="near" value="0.2" />
+				<float name="mid" value="0.4" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -437,7 +437,7 @@
 							<float name="damage" value="20" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073753960" />
 						</template_reference>
@@ -487,7 +487,7 @@
 							<float name="damage" value="14" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073753962" />
 						</template_reference>

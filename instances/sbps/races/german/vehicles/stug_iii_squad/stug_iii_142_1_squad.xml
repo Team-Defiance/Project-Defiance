@@ -845,7 +845,7 @@
 														<enum name="application_type" value="apply_to_weapon" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_03" />
+														<string name="target_type_name" value="hardpoint_02" />
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.85" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
@@ -946,7 +946,7 @@
 														<enum name="application_type" value="apply_to_weapon" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_03" />
+														<string name="target_type_name" value="hardpoint_02" />
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.85" />
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
@@ -1011,6 +1011,24 @@
 												<enum name="usage_type" value="multiply_add" />
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\accessory_weapons\stug_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\stug_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073745297" />
