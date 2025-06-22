@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\common\projectiles\shell_heavy\shell_heavy" />
+			<file name="animator" value="armies\aef\projectiles\aef_smoke_shell\aef_smoke_shell" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -193,6 +193,26 @@
 						</template_reference>
 					</group>
 					<uniqueid name="id" value="1073746799" />
+					<template_reference name="spawn_attached_option" value="options\none">
+					</template_reference>
+					<list name="spawned_entity_actions">
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="30" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_cloud_mortar" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073794727" />
 					<template_reference name="spawn_attached_option" value="options\none">
 					</template_reference>
 					<list name="spawned_entity_actions">

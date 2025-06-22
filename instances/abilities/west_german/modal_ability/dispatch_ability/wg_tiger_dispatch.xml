@@ -115,7 +115,7 @@
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_all_in_list">
-				<enum name="reason" value="usage_and_display" />
+				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="2178" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="requirements">
 					<template_reference name="requirement" value="requirements\required_player_upgrade">
@@ -154,7 +154,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="3561" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="requirements">
 					<template_reference name="requirement" value="requirements\required_squad">
 						<enum name="reason" value="usage" />
@@ -184,7 +184,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="10" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -192,7 +192,7 @@
 		<float name="ui_reticule_radius_min" value="0" />
 		<float name="ui_reticule_radius_max" value="0" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
-		<enum name="ui_group" value="group_secondary" />
+		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
