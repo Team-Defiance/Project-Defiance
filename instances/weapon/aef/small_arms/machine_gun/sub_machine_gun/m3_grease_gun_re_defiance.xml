@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.6" />
-			<float name="far" value="0.216" />
-			<float name="mid" value="0.36" />
+			<float name="near" value="0.55" />
+			<float name="far" value="0.198" />
+			<float name="mid" value="0.33" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.2" />
-				<float name="min" value="0.8" />
+				<float name="max" value="1.5" />
+				<float name="min" value="1.25" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="3" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2.8" />
-				<float name="min" value="2" />
+				<float name="max" value="3.1" />
+				<float name="min" value="2.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
