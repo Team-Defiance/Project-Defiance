@@ -111,11 +111,11 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="40" />
+		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="50" />
 		<bool name="refundable" value="True" />
-		<bool name="require_no_shot_block" value="False" />
+		<bool name="require_no_shot_block" value="True" />
 		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
