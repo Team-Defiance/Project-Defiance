@@ -56,6 +56,10 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073753755" />
 			</template_reference>
+			<template_reference name="action" value="action\ui_decorator_action">
+				<icon name="symbol_icon" value="Icons_symbols_unit_soviet_conscript_frontviki" />
+				<uniqueid name="id" value="1073795081" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
