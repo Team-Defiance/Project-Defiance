@@ -107,7 +107,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="25" />
+		<float name="range" value="22" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
@@ -203,7 +203,7 @@
 		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_target_dispatch" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_positive" />
 		<float name="ui_reticule_radius_min" value="5" />
 		<float name="ui_reticule_radius_max" value="5" />
