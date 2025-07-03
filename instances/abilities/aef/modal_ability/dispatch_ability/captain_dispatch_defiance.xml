@@ -61,13 +61,13 @@
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
-		<bool name="initial_recharge" value="False" />
+		<bool name="initial_recharge" value="True" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="free_fire" />

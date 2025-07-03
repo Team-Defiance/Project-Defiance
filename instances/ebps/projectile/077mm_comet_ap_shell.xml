@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\common\projectiles\shell_medium\shell_medium" />
+			<file name="animator" value="armies\common\projectiles\shell_heavy\shell_heavy" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -89,12 +89,12 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.00075" />
+					<float name="vertical_scale" value="0.00077" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1.2" />
-				<float name="radius_min" value="1.015" />
-				<float name="splat_only_splat_seconds" value="45" />
+				<float name="radius_max" value="0.73" />
+				<float name="radius_min" value="0.5" />
+				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
 						<string name="splat_texture" value="" />
@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="60" />
+			<float name="acceleration" value="10" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="False" />
@@ -181,17 +181,17 @@
 			<float name="building_hit_fx_delay" value="0" />
 			<bool name="collision_building_wall_panel_ignore" value="False" />
 			<group name="collision_type">
-				<template_reference name="collision_type" value="type_projectile_collision\tp_artillery">
+				<template_reference name="collision_type" value="type_projectile_collision\tp_homing">
 				</template_reference>
 			</group>
 			<float name="deathtimer" value="2.5" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
-			<string name="launcher_marker" value="markerfx_stubgun_muzzle" />
+			<string name="launcher_marker" value="fx_marker_muzzle" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="40" />
+			<float name="speed" value="100" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073752346" />
+					<uniqueid name="id" value="1073795134" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742131" />
+	<uniqueid name="pbgid" value="1073742369" />
 </instance>

@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.75" />
+				<float name="radius" value="3" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.08" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
+				<float name="far" value="0.04" />
 				<float name="near" value="0.25" />
 				<float name="mid" value="0.1" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1.2" />
-				<float name="near" value="0.4" />
-				<float name="mid" value="0.8" />
+				<float name="far" value="2.5" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="1.2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -81,7 +81,7 @@
 			<group name="building_damage">
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.1" />
-				<float name="far" value="0.0005" />
+				<float name="far" value="0.0008" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -366,7 +366,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\brit_17_pounder_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\077mm_comet_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="50" />
