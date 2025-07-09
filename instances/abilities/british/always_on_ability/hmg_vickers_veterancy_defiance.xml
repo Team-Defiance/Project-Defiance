@@ -55,10 +55,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742103" />
+							<uniqueid name="id" value="1073795166" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742104" />
+					<uniqueid name="id" value="1073795167" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -123,10 +123,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742105" />
+							<uniqueid name="id" value="1073795168" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742106" />
+					<uniqueid name="id" value="1073795169" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -253,5 +253,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741828" />
+	<uniqueid name="pbgid" value="1073742572" />
 </instance>
