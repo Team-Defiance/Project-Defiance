@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="125" />
-			<float name="min" value="125" />
+			<float name="max" value="100" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -284,7 +284,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.15" />
+			<float name="deflection_damage_multiplier" value="0.1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
@@ -300,7 +300,7 @@
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="shell_medium" />
+		<string name="fx_munition_name" value="shell_medium_heat" />
 		<string name="fx_tracer_name" value="fx_fire_maingun_tracer" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="False" />
@@ -349,7 +349,7 @@
 		<group name="reload">
 			<group name="duration">
 				<float name="max" value="7" />
-				<float name="min" value="6.5" />
+				<float name="min" value="6.7" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -421,7 +421,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="25" />
-				<float name="speed_horizontal" value="24" />
+				<float name="speed_horizontal" value="22" />
 				<float name="speed_vertical" value="20" />
 			</group>
 			<float name="pivot_end_time" value="0" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="270" />
-			<float name="far" value="220" />
-			<float name="near" value="335" />
+			<float name="mid" value="380" />
+			<float name="far" value="305" />
+			<float name="near" value="470" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

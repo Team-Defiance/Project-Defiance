@@ -2,10 +2,11 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
-				<template_reference name="action" value="action\upgrade_remove">
+				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
-					<uniqueid name="id" value="1073795196" />
+					<uniqueid name="id" value="1073795206" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -135,7 +136,7 @@
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
+				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
@@ -146,6 +147,14 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\ability_lock_out\base_artillery_active" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

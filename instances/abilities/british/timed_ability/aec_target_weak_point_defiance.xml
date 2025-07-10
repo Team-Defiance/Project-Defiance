@@ -41,6 +41,22 @@
 					<instance_reference name="upgrade" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073793274" />
 				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.5" />
+							<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795235" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
@@ -55,14 +71,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="35" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="10" />
+		<float name="duration_time" value="8" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />

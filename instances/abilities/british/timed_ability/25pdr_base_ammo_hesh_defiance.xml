@@ -2,11 +2,10 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
-				<template_reference name="action" value="action\upgrade_add">
+				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
-					<uniqueid name="id" value="1073754043" />
+					<uniqueid name="id" value="1073795205" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -136,7 +135,7 @@
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
+				<bool name="is_present" value="True" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
 				<bool name="include_queued" value="False" />
 			</template_reference>

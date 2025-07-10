@@ -455,8 +455,8 @@
 				<instance_reference name="ability" value="abilities\british\always_on_ability\brit_sniper_delayed_cover_auto_camouflage_mp" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_engineer_defiance_test" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_sniper_nothrow_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

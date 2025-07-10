@@ -294,7 +294,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="7" />
+							<float name="duration" value="6" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
 								<template_reference name="modifier" value="modifiers\enable_visible_in_fow">
