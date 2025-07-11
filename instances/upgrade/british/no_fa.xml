@@ -66,6 +66,21 @@
 		<locstring name="ui_squad_help_text_override" value="0" />
 		<locstring name="ui_squad_extra_text_override" value="0" />
 		<list name="ui_preview">
+			<group name="ui_preview">
+				<locstring name="brief_text" value="3657" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_units_unit_british_vickers_hmg" />
+				<locstring name="screen_name" value="3656" mod="84428889d71d41a48e2eff09c2425d54" />
+			</group>
+			<group name="ui_preview">
+				<locstring name="brief_text" value="3659" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_commander_brit_mortar" />
+				<locstring name="screen_name" value="3658" mod="84428889d71d41a48e2eff09c2425d54" />
+			</group>
+			<group name="ui_preview">
+				<locstring name="brief_text" value="3661" mod="84428889d71d41a48e2eff09c2425d54" />
+				<icon name="icon_name" value="Icons_units_unit_british_sniper" />
+				<locstring name="screen_name" value="3660" mod="84428889d71d41a48e2eff09c2425d54" />
+			</group>
 		</list>
 		<list name="on_cancel_actions">
 		</list>
