@@ -6,34 +6,53 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="3663" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="True" />
+					<uniqueid name="id" value="1073795412" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="3" />
+					<float name="delay" value="2.5" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
-						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="3" />
-							<float name="radius" value="3" />
-							<float name="source_offset_x" value="50" />
-							<float name="source_offset_y" value="50" />
-							<float name="source_offset_z" value="50" />
-							<float name="time_range_between_shells_max" value="0.5" />
-							<float name="time_range_between_shells_min" value="0.5" />
-							<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\stuka_nc_50kg_smoke_bomb_mp" />
-							<uniqueid name="id" value="1073795264" />
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="5" />
+							<bool name="fire_and_forget" value="True" />
+							<list name="subactions">
+								<template_reference name="action" value="action\off_map_artillery">
+									<float name="num_salvo" value="3" />
+									<float name="radius" value="3" />
+									<float name="source_offset_x" value="50" />
+									<float name="source_offset_y" value="50" />
+									<float name="source_offset_z" value="50" />
+									<float name="time_range_between_shells_max" value="0.5" />
+									<float name="time_range_between_shells_min" value="0.5" />
+									<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\stuka_nc_50kg_smoke_bomb_mp" />
+									<uniqueid name="id" value="1073795401" />
+								</template_reference>
+								<template_reference name="action" value="action\trigger_dca_action">
+									<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
+									<float name="duration" value="5" />
+									<bool name="is_terrain_only" value="True" />
+									<uniqueid name="id" value="1073795402" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795400" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073795265" />
 					<bool name="can_prevent_refund" value="True" />
-				</template_reference>
-				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
-					<float name="duration" value="5" />
-					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073795266" />
 				</template_reference>
 			</list>
 		</group>
@@ -62,7 +81,7 @@
 		<float name="facing_angle" value="5" />
 		<bool name="facing_ignore" value="False" />
 		<float name="final_close_in_distance" value="0" />
-		<bool name="fire_and_forget" value="True" />
+		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />

@@ -8,136 +8,153 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\barrage_warning_smoke" />
-					<float name="duration" value="15" />
-					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073795217" />
-				</template_reference>
-				<template_reference name="action" value="action\scar_function_call">
-					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073795218" />
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\victor_target_action">
-							<bool name="non_squad_entities_only" value="True" />
-							<list name="abilities_to_use">
-								<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="2.5" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="15" />
+							<bool name="fire_and_forget" value="True" />
+							<list name="subactions">
+								<template_reference name="action" value="action\trigger_dca_action">
+									<string name="dca_action_name" value="UI\barrage_warning_smoke" />
+									<float name="duration" value="15" />
+									<bool name="is_terrain_only" value="True" />
+									<uniqueid name="id" value="1073795388" />
+								</template_reference>
+								<template_reference name="action" value="action\scar_function_call">
+									<string name="function_name" value="AE_BarrageEvent" />
+									<uniqueid name="id" value="1073795389" />
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="True" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="True" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_player_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="True" />
+											<float name="max_completed" value="100" />
+											<float name="min_completed" value="1" />
+											<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\victor_target_action">
+											<bool name="non_squad_entities_only" value="True" />
+											<list name="abilities_to_use">
+												<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long" mod="84428889d71d41a48e2eff09c2425d54" />
+											</list>
+											<uniqueid name="id" value="1073795390" />
+										</template_reference>
+										<template_reference name="action" value="action\victor_target_action">
+											<bool name="non_squad_entities_only" value="True" />
+											<list name="abilities_to_use">
+												<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long_2" mod="84428889d71d41a48e2eff09c2425d54" />
+											</list>
+											<uniqueid name="id" value="1073795391" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795392" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="True" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="True" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_player_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="False" />
+											<float name="max_completed" value="100" />
+											<float name="min_completed" value="1" />
+											<instance_reference name="upgrade_name" value="upgrade\british\research\tech_structure_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\victor_target_action">
+											<bool name="non_squad_entities_only" value="True" />
+											<list name="abilities_to_use">
+												<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />
+											</list>
+											<uniqueid name="id" value="1073795393" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795394" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action">
+									<bool name="check_self" value="True" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="True" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_player_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="True" />
+											<float name="max_completed" value="100" />
+											<float name="min_completed" value="1" />
+											<instance_reference name="upgrade_name" value="upgrade\british\research\tech_structure_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+										</template_reference>
+										<template_reference name="required" value="requirements\required_player_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="False" />
+											<float name="max_completed" value="100" />
+											<float name="min_completed" value="1" />
+											<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\victor_target_action">
+											<bool name="non_squad_entities_only" value="True" />
+											<list name="abilities_to_use">
+												<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />
+											</list>
+											<uniqueid name="id" value="1073795395" />
+										</template_reference>
+										<template_reference name="action" value="action\victor_target_action">
+											<bool name="non_squad_entities_only" value="True" />
+											<list name="abilities_to_use">
+												<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short_2" mod="84428889d71d41a48e2eff09c2425d54" />
+											</list>
+											<uniqueid name="id" value="1073795396" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795397" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
+								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795219" />
-						</template_reference>
-						<template_reference name="action" value="action\victor_target_action">
-							<bool name="non_squad_entities_only" value="True" />
-							<list name="abilities_to_use">
-								<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long_2" mod="84428889d71d41a48e2eff09c2425d54" />
-							</list>
-							<uniqueid name="id" value="1073795220" />
+							<uniqueid name="id" value="1073795398" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795221" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="False" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tech_structure_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\victor_target_action">
-							<bool name="non_squad_entities_only" value="True" />
-							<list name="abilities_to_use">
-								<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />
-							</list>
-							<uniqueid name="id" value="1073795222" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073795223" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tech_structure_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="False" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\victor_target_action">
-							<bool name="non_squad_entities_only" value="True" />
-							<list name="abilities_to_use">
-								<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />
-							</list>
-							<uniqueid name="id" value="1073795224" />
-						</template_reference>
-						<template_reference name="action" value="action\victor_target_action">
-							<bool name="non_squad_entities_only" value="True" />
-							<list name="abilities_to_use">
-								<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short_2" mod="84428889d71d41a48e2eff09c2425d54" />
-							</list>
-							<uniqueid name="id" value="1073795225" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073795226" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
+					<uniqueid name="id" value="1073795399" />
+					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
 		</group>
@@ -166,7 +183,7 @@
 		<float name="facing_angle" value="5" />
 		<bool name="facing_ignore" value="True" />
 		<float name="final_close_in_distance" value="0" />
-		<bool name="fire_and_forget" value="True" />
+		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
@@ -177,7 +194,7 @@
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="150" />
-		<bool name="refundable" value="False" />
+		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="free_fire" />
 		<bool name="shared_timer_player_wide" value="True" />
