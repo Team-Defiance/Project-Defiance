@@ -20,9 +20,10 @@
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\accessory_weapons\stug_smoke_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\passives_ui\stug_vehicle_tracking_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\stug_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\timed_ability\atg_free_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\hull_down_generic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\stug_ammo_switch_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\stug_ammo_switch_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -821,12 +822,6 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_stuk40_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
 						<group name="weapon">
 							<group name="heading">
 								<float name="x" value="0" />
@@ -842,6 +837,12 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_stuk40_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>

@@ -53,7 +53,7 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="30" />
+					<float name="num_salvo" value="15" />
 					<float name="use_hardpoint" value="3" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073754824" />
@@ -138,9 +138,9 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="2490" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11085959" />
+			<locstring name="help_text" value="3650" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
-			<icon name="icon_name" value="Icons_abilities_ability_british_rp3_he_rocket_barrage" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_rp3_white_phospherous_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="2488" mod="84428889d71d41a48e2eff09c2425d54" />
