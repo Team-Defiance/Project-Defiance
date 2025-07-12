@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.56" />
-			<float name="far" value="0.462" />
-			<float name="mid" value="0.504" />
+			<float name="near" value="0.5" />
+			<float name="far" value="0.4625" />
+			<float name="mid" value="0.475" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="0.9" />
-				<float name="min" value="0.8" />
+				<float name="max" value="0.85" />
+				<float name="min" value="0.75" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.04" />
@@ -156,9 +156,9 @@
 				<float name="min" value="0.9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.8" />
+				<float name="near" value="1" />
 				<float name="far" value="1" />
-				<float name="mid" value="0.9" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="cover_table">

@@ -1,8 +1,8 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="1" />
-			<float name="far" value="1" />
+			<float name="near" value="1.1" />
+			<float name="far" value="0.9" />
 			<float name="mid" value="1" />
 		</group>
 		<group name="aim">
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="12" />
-				<float name="near" value="16" />
+				<float name="mid" value="10" />
+				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -295,7 +295,7 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="20" />
+		<float name="flinch_radius" value="3.75" />
 		<string name="fx_action_target_name" value="flamewerfer_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -364,12 +364,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="6" />
+			<float name="angle_scatter" value="7.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="6.2" />
+			<float name="distance_scatter_max" value="5" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.25" />
