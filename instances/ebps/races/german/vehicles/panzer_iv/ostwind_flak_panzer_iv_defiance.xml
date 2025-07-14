@@ -1088,15 +1088,15 @@
 			<float name="attack_priority" value="80" />
 			<enum name="camouflage_type" value="tp_global" />
 			<bool name="chain_revealer" value="False" />
-			<float name="detection_radius" value="10" />
+			<float name="detection_radius" value="32" />
 			<bool name="must_be_fully_constructed" value="False" />
 			<bool name="permanently_activated" value="False" />
-			<float name="combat_reset_time" value="10" />
+			<float name="combat_reset_time" value="15" />
 			<float name="first_strike_shots" value="1" />
-			<float name="revert_max" value="10" />
-			<float name="revert_multiplier" value="2" />
-			<float name="revert_time" value="1.5" />
-			<float name="revert_time_on_detection" value="1" />
+			<float name="revert_max" value="25" />
+			<float name="revert_multiplier" value="1.5" />
+			<float name="revert_time" value="10" />
+			<float name="revert_time_on_detection" value="10" />
 			<list name="camouflage_actions">
 			</list>
 			<list name="first_strike_actions">
