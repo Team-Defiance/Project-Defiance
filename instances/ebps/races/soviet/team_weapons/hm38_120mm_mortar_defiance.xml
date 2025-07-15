@@ -193,6 +193,7 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\120mm_hm38_smoke_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\120mm_mortar_barrage_scatter_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\mortar_barrage_ability\120mm_mortar_barrage_soviet_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\120mm_hm38_flare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
@@ -298,7 +299,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mortar\hm_38_120mm_mortar_barrage_victortarget_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mortar\120mm_hm38_mortar_flare" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
