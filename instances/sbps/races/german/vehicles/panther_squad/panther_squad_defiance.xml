@@ -180,7 +180,6 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\doctrines\overwatch\ambush_camouflage_vehicles_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\doctrines\spearhead\panzer_commander_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -274,12 +273,13 @@
 							<bool name="suppressed" value="False" />
 							<bool name="camouflaged" value="False" />
 						</template_reference>
-						<template_reference name="required" value="requirements\required_squad_upgrade">
+						<template_reference name="required" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<bool name="include_queued" value="False" />
 							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\german\doctrines\overwatch\ambush_camouflage_vehicles_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\german\commander\current\overwatch_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
@@ -300,6 +300,20 @@
 									<bool name="camouflaged" value="False" />
 								</template_reference>
 							</list>
+						</template_reference>
+						<template_reference name="required" value="requirements\required_resource">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<template_reference name="resource" value="tables\resource_table">
+								<float name="action" value="0" />
+								<float name="command" value="7" />
+								<float name="fuel" value="0" />
+								<float name="manpower" value="0" />
+								<float name="munition" value="0" />
+								<float name="soviet_progression" value="0" />
+								<float name="soviet_227" value="0" />
+								<float name="popcap" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -323,10 +337,10 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073795438" />
+									<uniqueid name="id" value="1073795531" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795437" />
+							<uniqueid name="id" value="1073795532" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>

@@ -23,6 +23,7 @@
 				<instance_reference name="ability" value="abilities\aef\timed_ability\sherman_75mm_ammo_switch_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\sherman_75mm_ammo_switch_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\sherman_75mm_lap_loading_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\passive_ability\sherman_radio_net_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -133,7 +134,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="540" />
+			<float name="hitpoints" value="560" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
