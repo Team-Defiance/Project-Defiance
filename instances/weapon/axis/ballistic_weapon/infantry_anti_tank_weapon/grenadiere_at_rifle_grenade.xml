@@ -357,7 +357,7 @@
 				<template_reference name="action" value="action\damage">
 					<float name="damage" value="4" />
 					<bool name="percentage" value="False" />
-					<bool name="set" value="True" />
+					<bool name="set" value="False" />
 					<bool name="cause_criticals" value="True" />
 					<enum name="crit_weapon_type" value="big_explosive" />
 					<uniqueid name="id" value="1073752259" />
