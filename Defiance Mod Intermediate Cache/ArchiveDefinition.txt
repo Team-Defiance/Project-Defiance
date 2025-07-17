@@ -101,7 +101,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\sherman_jumbo_passive_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\sherman_radio_net_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\wc51_stealth_detection_ui_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\aef_57mm_rapid_maneuver.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\57_atgun_piercing_ability.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\aef_emergency_repair_ambulance_defiance_unused.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\aef_emergency_repair_heavy_tank_defiance_unused.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\aef_emergency_repair_light_vehicle_defiance_unused.rgd
@@ -237,7 +237,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\25pdr_base_ammo_airburst_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\25pdr_base_ammo_hesh_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\25pdr_base_ammo_he_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\6pdr_atgun_piercing_ability.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\6pdr_rapid_maneuver.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\6_pounder_take_aim_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\aec_target_weak_point_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\brit_vehicle_crew_repair_defiance.rgd
@@ -274,12 +274,12 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\03_osttruppen_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\04_oberstleutnant_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\05_heavy_emplacements.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_for_the_fatherland.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_railway_gun_artillery_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_1_railway_gun_artillery_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_2_for_the_fatherland.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\ability_2_opel_supply_truck.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\festung_doctrine_selection.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\toggle_2\toggle_fatherland.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\toggle_2\toggle_railway.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\toggle\toggle_fatherland.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\toggle\toggle_railway.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\firestorm\ability_1_paradrop_med_supplies.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\firestorm\ability_2_mortar_halftrack.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\firestorm\ability_3_walking_stuka.rgd
@@ -297,10 +297,13 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\01_passive_ambush_camouflage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\02_early_warning.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\03_brandenburger_dispatch.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\04_stuka_air_superiority.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\04_1_stuka_suppression_loiter.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\04_2_supply_break_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\05_camo_netting.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\06_elefant_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\overwatch_doctrine_selection.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\toggle\toggle_supply_break.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\overwatch\toggle\toggle_suppression_loiter.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\01_halftrack_250.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\02_passive_panzer_commander.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\03_stosstruppen_dispatch.rgd
@@ -309,8 +312,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\05_2_leig_18_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\06_tiger_dispatch_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\spearhead_doctrine_selection.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle_2\toggle_lab.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle_2\toggle_smoke.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle\toggle_lab.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle\toggle_smoke.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_1_panzerjager.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_2_forward_repair_station.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_3_stuka_ace.rgd
@@ -662,7 +665,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\toggle_ability\vehicle_recon_toggle_t70command.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\01_rocket_p4.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\02_gebirgs_stg.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\03_operation_griffin_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\03_radio_silence_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\04_stuka_smoke_bomb.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\05_37mm_at_strafe_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\spec_ops\06_command_panther_defiance.rgd
@@ -670,7 +673,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\01_volksgrenadiere.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\02_leig_pyro.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\03_ostwind.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\04_radio_silence_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\04_operation_griffin_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\05_artillery_105mm.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\06_sturmtiger_pe_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\urban_assault_selection.rgd
@@ -1674,6 +1677,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_3\armored_support_group_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\research\tier_3\veteran_vehicle_training_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\army_items\infantry_discount_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\army_items\radio_silence_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\firefly_first_strike.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\no_fa.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\ability_lock_out\base_artillery_active.rgd
@@ -1687,9 +1691,9 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\commander\passive\brit_vehicle_repairs_unlock_ability_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\bren_upgrade_weapon_rack_pickup_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\churchill_vickers_k_upgrade_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\forward_assembly_fortifcation_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\forward_assembly_retreat_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\forward_staging_point_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\fa_forward_reinforcement_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\fa_forward_retreat_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\fa_team_weapon_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\infantry_section_medical_supplies_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\officer_vickers_k_upgrade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\british\items\sapper_flamethrower.rgd

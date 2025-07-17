@@ -9,7 +9,7 @@
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<instance_reference name="upgrade" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073794554" />
+					<uniqueid name="id" value="1073795564" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -79,13 +79,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="3576" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="3699" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3700" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_cmdr_german_stuka_smoke_bomb" />
+			<icon name="icon_name" value="Icons_commander_cmdr_german_stuka_close_air_support_loiter" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="3538" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="3695" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -111,11 +111,11 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\overwatch_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -147,5 +147,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742549" />
+	<uniqueid name="pbgid" value="1073742586" />
 </instance>

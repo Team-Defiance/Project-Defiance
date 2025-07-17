@@ -303,74 +303,6 @@
 					<enum name="deprecated_unit_class_type" value="" />
 					<enum name="deprecated_squad_class_type" value="" />
 				</template_reference>
-				<template_reference name="action" value="action\filter_action">
-					<bool name="apply_to_future_units" value="False" />
-					<bool name="apply_to_local_player" value="True" />
-					<instance_reference name="deprecated_entity_type" value="" />
-					<instance_reference name="deprecated_squad_type" value="" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\own">
-						</template_reference>
-					</group>
-					<enum name="deprecated_unit_class_type" value="" />
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="60" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\production_speed_modifier">
-									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\production_speed_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073752184" />
-						</template_reference>
-						<template_reference name="action" value="action\ui_unit_modifier_action">
-							<bool name="die_with_creator" value="False" />
-							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="2044" mod="84428889d71d41a48e2eff09c2425d54" />
-								<locstring name="help_text" value="2025" mod="84428889d71d41a48e2eff09c2425d54" />
-								<icon name="icon_name" value="Icons_commander_cmdr_west_german_for_the_fatherland" />
-								<string name="hotkey_name" value="" />
-							</template_reference>
-							<uniqueid name="id" value="1073752203" />
-						</template_reference>
-					</list>
-					<enum name="deprecated_squad_class_type" value="" />
-					<list name="target_requirements">
-						<template_reference name="required" value="requirements\required_entity">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<enum name="entity_type" value="" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_entity">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\bereich_festung_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<enum name="entity_type" value="" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_entity">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<enum name="entity_type" value="" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_entity">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="entity_blueprint_name" value="ebps\races\german\buildings\base_building\schweres_kriegswerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<enum name="entity_type" value="" />
-						</template_reference>
-					</list>
-					<bool name="target_squad" value="False" />
-					<uniqueid name="id" value="1073752183" />
-				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="timed" />
@@ -437,7 +369,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2021" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="3701" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2022" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_cmdr_west_german_for_the_fatherland" />

@@ -6,10 +6,11 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\upgrade_remove">
+				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073794906" />
+					<uniqueid name="id" value="1073794905" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -79,13 +80,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="3582" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="3703" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3705" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_cmdr_west_german_for_the_fatherland" />
+			<icon name="icon_name" value="Icons_commander_cmdr_german_off_map_dora_support" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="3580" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="3579" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -100,7 +101,7 @@
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
+				<bool name="is_present" value="False" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -115,7 +116,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -147,5 +148,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742563" />
+	<uniqueid name="pbgid" value="1073742562" />
 </instance>
