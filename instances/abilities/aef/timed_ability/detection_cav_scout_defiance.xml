@@ -40,7 +40,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="15" />
+							<float name="value" value="5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\detect_global_camouflage_radius" />
 						</template_reference>
 					</list>
@@ -140,7 +140,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="100" />
+		<float name="recharge_time" value="55" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
