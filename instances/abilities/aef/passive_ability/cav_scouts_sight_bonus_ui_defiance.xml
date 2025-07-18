@@ -48,7 +48,7 @@
 		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="True" />
-		<enum name="shared_timer" value="aef_airborne_fireteam_ability" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -94,7 +94,7 @@
 		<list name="requirements">
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="23" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
