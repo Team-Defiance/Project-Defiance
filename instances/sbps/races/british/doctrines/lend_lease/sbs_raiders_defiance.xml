@@ -418,22 +418,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.25" />
-							<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073795580" />
-				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -501,7 +485,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
 			<float name="capture_rate_multiplier" value="1" />
-			<float name="revert_rate_multiplier" value="1" />
+			<float name="revert_rate_multiplier" value="1.25" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_retreat_ext">
 			<group name="retreat_building_types">
