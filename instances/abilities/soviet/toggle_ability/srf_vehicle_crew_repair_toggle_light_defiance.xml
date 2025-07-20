@@ -38,57 +38,6 @@
 							</group>
 							<uniqueid name="id" value="1073793765" />
 						</template_reference>
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="False" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="False" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="True" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="False" />
-									<bool name="not_retreating" value="False" />
-									<bool name="pinned" value="False" />
-									<bool name="suppressed" value="False" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-								<template_reference name="required" value="requirements\required_entity">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<instance_reference name="entity_blueprint_name" value="ebps\races\aef\vehicles\halftracks\m5_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-									<enum name="entity_type" value="" />
-								</template_reference>
-								<template_reference name="required" value="requirements\required_squad_veterancy">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="1" />
-								</template_reference>
-							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\heal_action">
-									<float name="amount" value="2.112" />
-									<group name="target_info">
-										<template_reference name="target_info" value="type_ability_target_type\all">
-										</template_reference>
-									</group>
-									<uniqueid name="id" value="1073793766" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073793767" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
-						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073793768" />
 					<bool name="fire_and_forget_non_global" value="False" />

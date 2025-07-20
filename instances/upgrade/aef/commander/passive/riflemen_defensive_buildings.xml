@@ -1,5 +1,5 @@
 <instance description="" template="upgrade">
-	<group name="upgrade_bag">
+	<group name="upgrade_bag" comment="Vanilla ability&#xD;&#xA;">
 		<bool name="enable_in_hold" value="False" />
 		<float name="global_max_limit" value="0" />
 		<bool name="has_speech_code" value="True" />

@@ -378,11 +378,11 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073795726" />
+									<uniqueid name="id" value="1073795764" />
 								</template_reference>
 							</list>
-							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073795727" />
+							<enum name="change_target_type" value="self" />
+							<uniqueid name="id" value="1073795765" />
 						</template_reference>
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
@@ -392,7 +392,7 @@
 								<icon name="icon_name" value="Icons_abilities_ability_step_on_it" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073795728" />
+							<uniqueid name="id" value="1073795766" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073795729" />
