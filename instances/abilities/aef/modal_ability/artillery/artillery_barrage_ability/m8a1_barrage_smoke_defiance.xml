@@ -1,4 +1,4 @@
-<instance description="105mm Barrage ability from the M7B1 priest" template="abilities">
+<instance description="" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -18,7 +18,7 @@
 					<float name="num_salvo" value="4" />
 					<float name="use_hardpoint" value="3" />
 					<bool name="face_to_target" value="False" />
-					<uniqueid name="id" value="1073750495" />
+					<uniqueid name="id" value="1073795951" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -27,11 +27,11 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073750496" />
+					<uniqueid name="id" value="1073795905" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073750497" />
+					<uniqueid name="id" value="1073795906" />
 				</template_reference>
 			</list>
 		</group>
@@ -70,19 +70,19 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="80" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="55" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="ab" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="" />
+			<string name="code_2" value="sk" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="b75" />
-			<string name="code_2" value="brg" />
+			<string name="code_1" value="smb" />
+			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
@@ -95,17 +95,17 @@
 		<float name="toggled_recharge_time_on" value="0" />
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
-			<string name="cursor_good" value="modal_attack" />
+			<string name="cursor_good" value="modal_ability" />
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11068492" />
-			<locstring name="help_text" value="11052814" />
-			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_abilities_ability_aef_m8a1_artillery_barrage" />
+			<locstring name="extra_text" value="11071777" />
+			<locstring name="help_text" value="11052815" />
+			<string name="hotkey_name" value="C" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_m8a1_smoke_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11052812" />
+			<locstring name="screen_name" value="11052813" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -123,14 +123,25 @@
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<float name="veterancy_rank" value="5" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
-		<float name="ui_reticule_radius_min" value="3" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
+		<float name="ui_reticule_radius_min" value="5.5" />
 		<float name="ui_reticule_radius_max" value="10" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
@@ -139,7 +150,7 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="multi" />
+		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
@@ -160,5 +171,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742101" />
+	<uniqueid name="pbgid" value="1073742608" />
 </instance>
