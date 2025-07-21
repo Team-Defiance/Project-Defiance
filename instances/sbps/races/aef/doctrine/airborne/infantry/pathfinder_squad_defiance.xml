@@ -156,13 +156,13 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
-			<float name="num_slots" value="2" />
+			<float name="num_slots" value="4" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<float name="num" value="4" />
-					<instance_reference name="type" value="ebps\races\aef\soldiers\pathfinder\pathfinder_recon_mp" />
+					<float name="num" value="3" />
+					<instance_reference name="type" value="ebps\races\aef\soldiers\doctrines\airborne\usf_pathfinder_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -180,7 +180,8 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\pm\american\specializations\troop_support\troop_support_medics_upg" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\pathfinder_thompson_sub_machine_gun_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\pathfinder_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -445,15 +446,10 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\slot_item_add">
-					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
-					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073749734" />
-				</template_reference>
-				<template_reference name="action" value="action\slot_item_add">
-					<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_pathfinder_garand" />
-					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073749735" />
+				<template_reference name="action" value="action\add_to_squad_loadout_action">
+					<uniqueid name="id" value="1073795774" />
+					<instance_reference name="unit_type" value="ebps\races\aef\soldiers\doctrines\airborne\usf_pathfinder_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<int name="count" value="1" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -478,12 +474,10 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\aef\always_on_ability\pathfinder_in_cover_stationary_camouflage_mp" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\pathfinder_plant_beacon" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\pathfinder_plant_beacon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
-				<instance_reference name="ability" value="abilities\aef\always_on_ability\pathfinder_in_cover_stationary_camouflage_improved_mp" />
-				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
+				<instance_reference name="ability" value="abilities\aef\always_on_ability\pathfinder_camouflage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\m16_ranger_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -581,7 +575,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
-			<float name="capture_rate_multiplier" value="1" />
+			<float name="capture_rate_multiplier" value="1.25" />
 			<float name="revert_rate_multiplier" value="1" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_vault_ext">
@@ -610,7 +604,7 @@
 						<float name="max_persistent_squads" value="3" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="340" />
+								<float name="experience_value" value="480" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071185" />
 								<bool name="single_player_only" value="False" />
@@ -656,7 +650,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="680" />
+								<float name="experience_value" value="960" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071186" />
 								<bool name="single_player_only" value="False" />
@@ -718,7 +712,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1360" />
+								<float name="experience_value" value="1920" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="11071187" />
 								<bool name="single_player_only" value="False" />
@@ -770,6 +764,66 @@
 										</list>
 										<uniqueid name="id" value="1073749743" />
 									</template_reference>
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="2880" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073795775" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+								</list>
+							</group>
+							<group name="veterancy_rank">
+								<float name="experience_value" value="3840" />
+								<bool name="hide_ingame_veterancy_art" value="False" />
+								<locstring name="screen_name" value="0" />
+								<bool name="single_player_only" value="False" />
+								<list name="leader_actions">
+								</list>
+								<list name="non_leader_actions">
+								</list>
+								<list name="squad_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="True" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiply_add" />
+												<float name="value" value="0.2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073795776" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
 								</list>
 							</group>
 						</list>

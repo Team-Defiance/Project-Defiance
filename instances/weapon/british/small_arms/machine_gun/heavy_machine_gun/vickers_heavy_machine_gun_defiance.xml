@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="lmg_vickers_tracer" />
-		<float name="fx_tracer_speed" value="140" />
+		<float name="fx_tracer_speed" value="80" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="near" value="2.1" />
+			<float name="near" value="2.2" />
 			<float name="far" value="1.5" />
-			<float name="mid" value="1.9" />
+			<float name="mid" value="1.8" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

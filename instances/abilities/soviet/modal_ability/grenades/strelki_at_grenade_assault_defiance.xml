@@ -133,7 +133,7 @@
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_vehicle" />
 		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="1" />
-		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
+		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />

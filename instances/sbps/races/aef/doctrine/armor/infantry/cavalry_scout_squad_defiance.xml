@@ -70,23 +70,23 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<float name="combat_follower_cover_search_radius" value="1" />
 			<group name="cover_formation_table">
-				<instance_reference name="tp_defcover" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_defcover" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
 				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
-				<instance_reference name="tp_heavy" value="squad_formations\new_wedge_elite_cover" />
-				<instance_reference name="tp_light" value="squad_formations\new_wedge_elite_cover" />
-				<instance_reference name="tp_negative" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_open" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_smoke" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_heavy" value="squad_formations\new_standard_blob_cover" />
+				<instance_reference name="tp_light" value="squad_formations\new_standard_blob_cover" />
+				<instance_reference name="tp_negative" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_open" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_smoke" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_trench" value="squad_formations\default" />
-				<instance_reference name="tp_water" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_water" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
 				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
-				<instance_reference name="tp_z_ice" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_z_snow" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_z_ice" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_z_snow" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="1" />
@@ -104,28 +104,28 @@
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="03_soldiers">
-					<float name="units_in_core" value="1" />
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="0" />
+					<float name="units_in_right_flank" value="0" />
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="04_soldiers">
+					<float name="units_in_core" value="1" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="1" />
+				</group>
+				<group name="05_soldiers">
 					<float name="units_in_core" value="2" />
 					<float name="units_in_left_flank" value="1" />
 					<float name="units_in_right_flank" value="1" />
-					<float name="units_in_scout" value="0" />
-				</group>
-				<group name="05_soldiers">
-					<float name="units_in_core" value="1" />
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_right_flank" value="2" />
-					<float name="units_in_scout" value="0" />
+					<float name="units_in_scout" value="1" />
 				</group>
 				<group name="06_soldiers">
-					<float name="units_in_core" value="2" />
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_right_flank" value="2" />
-					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="1" />
 				</group>
 				<group name="07_soldiers">
 					<float name="units_in_core" value="7" />
@@ -152,7 +152,7 @@
 					<float name="units_in_scout" value="2" />
 				</group>
 			</group>
-			<bool name="support_weapons_to_flanks" value="True" />
+			<bool name="support_weapons_to_flanks" value="False" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
@@ -180,7 +180,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\aef\commander\items\cav_scouts_sniper_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\cav_scouts_sniper_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -627,6 +627,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\cavalry_scouts_covering_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\detection_cav_scout_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\passive_ability\cav_scouts_sight_bonus_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\passive_ability\cav_scouts_stealth_detection_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

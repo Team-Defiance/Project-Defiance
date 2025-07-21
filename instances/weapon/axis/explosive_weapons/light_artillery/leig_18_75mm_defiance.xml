@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="10" />
-				<float name="near" value="30" />
+				<float name="near" value="25" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.85" />
@@ -381,7 +381,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="4" />
+			<float name="distance_scatter_max" value="4.5" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.1" />

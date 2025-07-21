@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\projectiles\nahv_grenade\nahv_grenade" />
+			<file name="animator" value="armies\aef\projectiles\aef_smoke_shell\aef_smoke_shell" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -238,7 +238,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="nahv_grenade" />
+					<string name="do_action_state_name" value="mortar" />
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />

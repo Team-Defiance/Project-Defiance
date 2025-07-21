@@ -184,7 +184,7 @@
 				<instance_reference name="upgrade" value="upgrade\pm\american\specializations\troop_support\troop_support_medics_upg" />
 				<instance_reference name="upgrade" value="upgrade\aef\items\riflemen_flamethrower" />
 				<instance_reference name="upgrade" value="upgrade\aef\items\rear_echelon_rifle_nades_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\aef\commander\items\rear_echelon_smg_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\rear_echelon_smg_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -381,14 +381,14 @@
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
-							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
-								<enum name="application_type" value="apply_to_ability" />
+							<template_reference name="modifier" value="modifiers\weapon_scatter">
+								<enum name="application_type" value="apply_to_weapon" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\stormgroup_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<string name="target_type_name" value="hardpoint_01" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="0.65" />
-								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+								<float name="value" value="2.5" />
+								<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 							</template_reference>
 						</list>
 						<uniqueid name="id" value="1073749314" />
@@ -479,65 +479,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073750207" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="True" />
-									<bool name="not_retreating" value="True" />
-									<bool name="pinned" value="True" />
-									<bool name="suppressed" value="True" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-							</list>
-						</template_reference>
-						<template_reference name="required" value="requirements\required_squad_veterancy">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="1614" mod="84428889d71d41a48e2eff09c2425d54" />
-							<float name="veterancy_rank" value="4" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\sight_radius_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073750675" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073750674" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -655,6 +596,69 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="False" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_state">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="garrisoned" value="False" />
+							<bool name="healed" value="False" />
+							<float name="in_combat_since" value="-1" />
+							<bool name="injured" value="False" />
+							<bool name="leader" value="False" />
+							<bool name="not_moving" value="True" />
+							<bool name="not_retreating" value="False" />
+							<bool name="pinned" value="False" />
+							<bool name="suppressed" value="False" />
+							<bool name="camouflaged" value="False" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="4" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="1.5" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\sight_radius_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795069" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795070" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795071" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
@@ -730,27 +734,27 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\rear_echelon\m7_throw_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.25" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\stormgroup_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.25" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\rear_echelon_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\vehicle_repair_rate_modifier">
-												<enum name="application_type" value="apply_to_entity_type" />
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.33" />
-												<instance_reference name="tooltip" value="modifier_tooltip\vehicle_repair_rate_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m16_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="3" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749327" />
@@ -783,7 +787,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.1" />
+												<float name="value" value="1.15" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
 										</list>
@@ -814,8 +818,17 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073749331" />
+									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
 											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-												<enum name="application_type" value="apply_to_squad" />
+												<enum name="application_type" value="apply_to_entity" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
@@ -823,11 +836,18 @@
 												<float name="value" value="0.85" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073749331" />
+										<uniqueid name="id" value="1073794728" />
 									</template_reference>
-								</list>
-								<list name="squad_entity_actions">
 								</list>
 							</group>
 							<group name="veterancy_rank">
@@ -860,7 +880,25 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\stormgroup_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\rear_echelon_smoke_rifle_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m16_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\re_volley_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073751272" />
@@ -946,6 +984,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\rear_echelon_cutters_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\repair_ability\critical_repair_re_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\m16_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\timed_ability\re_volley_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

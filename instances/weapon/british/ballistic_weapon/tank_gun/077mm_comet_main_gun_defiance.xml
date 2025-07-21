@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.75" />
+				<float name="radius" value="3" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.08" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
+				<float name="far" value="0.04" />
 				<float name="near" value="0.25" />
 				<float name="mid" value="0.1" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1.2" />
-				<float name="near" value="0.4" />
-				<float name="mid" value="0.8" />
+				<float name="far" value="2.5" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="1.2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -79,9 +79,9 @@
 				<float name="near" value="10" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.1" />
+				<float name="far" value="0.0008" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -289,14 +289,61 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\hammer_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_vision" />
-							<uniqueid name="id" value="1073753926" />
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="6" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\interval_action">
+											<float name="interval_second" value="0.125" />
+											<uniqueid name="id" value="1073795348" />
+											<list name="interval_subactions">
+												<group name="interval_subaction_group">
+													<float name="trigger_time_second" value="0.125" />
+													<list name="actions">
+														<template_reference name="action" value="action\reveal_area">
+															<bool name="all_player" value="True" />
+															<float name="duration" value="1" />
+															<bool name="fire_and_forget" value="True" />
+															<float name="radius" value="2.5" />
+															<uniqueid name="id" value="1073795349" />
+														</template_reference>
+													</list>
+												</group>
+											</list>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795350" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795347" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073753927" />
@@ -366,7 +413,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\brit_17_pounder_shell_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\077mm_comet_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="50" />

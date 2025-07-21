@@ -539,6 +539,15 @@
 														<float name="value" value="1.25" />
 														<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 													</template_reference>
+													<template_reference name="modifier" value="modifiers\armor_modifier">
+														<enum name="application_type" value="apply_to_entity" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<string name="target_type_name" value="" />
+														<enum name="usage_type" value="addition" />
+														<float name="value" value="0.6" />
+														<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073752991" />
 											</template_reference>

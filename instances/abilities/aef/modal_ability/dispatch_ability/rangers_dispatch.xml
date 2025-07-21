@@ -19,7 +19,7 @@
 						<instance_reference name="squad" value="sbps\races\aef\soldiers\ranger_squad\ranger_squad_commander_mp" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073793359" />
+					<uniqueid name="id" value="1073795016" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073793360" />
+					<uniqueid name="id" value="1073795017" />
 				</template_reference>
 			</list>
 		</group>

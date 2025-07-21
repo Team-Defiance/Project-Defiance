@@ -194,7 +194,7 @@
 					<uniqueid name="id" value="1073755479" />
 				</template_reference>
 			</list>
-			<float name="armor" value="180" />
+			<float name="armor" value="190" />
 			<float name="rear_armor" value="140" />
 			<float name="target_size" value="19" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -996,12 +996,12 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="acceleration" value="2.2" />
-			<float name="deceleration" value="4.3" />
+			<float name="acceleration" value="2" />
+			<float name="deceleration" value="4.2" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
-			<float name="rotation_rate" value="25" />
+			<float name="rotation_rate" value="24" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />

@@ -156,7 +156,7 @@
 				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.1" />
+				<float name="near" value="0.125" />
 				<float name="far" value="1.5" />
 				<float name="mid" value="0.85" />
 			</group>
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="fx_garand_rifle_tracer" />
-		<float name="fx_tracer_speed" value="140" />
+		<float name="fx_tracer_speed" value="90" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -342,7 +342,7 @@
 			<group name="distance">
 				<float name="near" value="5" />
 				<float name="far" value="35" />
-				<float name="mid" value="20" />
+				<float name="mid" value="19" />
 			</group>
 		</group>
 		<group name="reload">

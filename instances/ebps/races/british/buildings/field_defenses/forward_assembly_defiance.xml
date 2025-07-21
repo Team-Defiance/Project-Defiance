@@ -129,7 +129,7 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\british\items\fa_forward_reinforcement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="include_queued" value="False" />
 						</template_reference>
 					</list>
@@ -248,12 +248,6 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\upgrade_add">
-					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073794513" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -443,6 +437,12 @@
 					<float name="offset_y" value="0" />
 					<float name="offset_z" value="0" />
 					<bool name="camera_relative_rotation" value="False" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073794551" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -715,7 +715,7 @@
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
 					<bool name="is_present" value="True" />
-					<instance_reference name="upgrade_name" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\british\items\fa_forward_reinforcement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="include_queued" value="False" />
 				</template_reference>
 			</list>
@@ -725,9 +725,9 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\forward_staging_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\british\items\forward_assembly_fortifcation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\british\items\forward_assembly_retreat_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\fa_team_weapon_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\fa_forward_reinforcement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\fa_forward_retreat_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">

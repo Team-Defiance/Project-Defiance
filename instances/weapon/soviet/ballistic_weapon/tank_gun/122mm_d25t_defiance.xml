@@ -46,12 +46,12 @@
 				<float name="radius" value="7" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.05" />
+				<float name="far" value="0.06" />
 				<float name="near" value="0.8" />
 				<float name="mid" value="0.28" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.025" />
+				<float name="far" value="0.03" />
 				<float name="near" value="0.4" />
 				<float name="mid" value="0.14" />
 			</group>
@@ -79,9 +79,9 @@
 				<float name="near" value="60" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="near" value="0.8" />
+				<float name="mid" value="0.14" />
+				<float name="far" value="0.0006" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="6" />
+			<float name="distance_scatter_max" value="5.8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />

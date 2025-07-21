@@ -72,16 +72,16 @@
 				<float name="near" value="0.2" />
 				<float name="mid" value="0.15" />
 			</group>
-			<bool name="damage_all_in_hold" value="True" />
+			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="15" />
 				<float name="near" value="65" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.075" />
+				<float name="far" value="0.0005" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -288,15 +288,148 @@
 							<locstring name="ui_name" value="0" />
 							<float name="veterancy_rank" value="1" />
 						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="4" />
+								</template_reference>
+							</list>
+						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_vision" />
-							<uniqueid name="id" value="1073742429" />
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="6" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\interval_action">
+											<float name="interval_second" value="0.125" />
+											<uniqueid name="id" value="1073795280" />
+											<list name="interval_subactions">
+												<group name="interval_subaction_group">
+													<float name="trigger_time_second" value="0.125" />
+													<list name="actions">
+														<template_reference name="action" value="action\reveal_area">
+															<bool name="all_player" value="True" />
+															<float name="duration" value="1" />
+															<bool name="fire_and_forget" value="True" />
+															<float name="radius" value="2.5" />
+															<uniqueid name="id" value="1073795281" />
+														</template_reference>
+													</list>
+												</group>
+											</list>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795282" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795283" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073742430" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="4" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="12" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\interval_action">
+											<float name="interval_second" value="0.125" />
+											<uniqueid name="id" value="1073795274" />
+											<list name="interval_subactions">
+												<group name="interval_subaction_group">
+													<float name="trigger_time_second" value="0.125" />
+													<list name="actions">
+														<template_reference name="action" value="action\reveal_area">
+															<bool name="all_player" value="True" />
+															<float name="duration" value="1" />
+															<bool name="fire_and_forget" value="True" />
+															<float name="radius" value="2.5" />
+															<uniqueid name="id" value="1073795275" />
+														</template_reference>
+													</list>
+												</group>
+											</list>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795273" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795270" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795231" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -315,6 +448,167 @@
 			<float name="deflection_damage_multiplier" value="0.1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="1" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="4" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="3" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\interval_action">
+											<float name="interval_second" value="0.125" />
+											<uniqueid name="id" value="1073795285" />
+											<list name="interval_subactions">
+												<group name="interval_subaction_group">
+													<float name="trigger_time_second" value="0.125" />
+													<list name="actions">
+														<template_reference name="action" value="action\reveal_area">
+															<bool name="all_player" value="True" />
+															<float name="duration" value="1" />
+															<bool name="fire_and_forget" value="True" />
+															<float name="radius" value="2.5" />
+															<uniqueid name="id" value="1073795286" />
+														</template_reference>
+													</list>
+												</group>
+											</list>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795287" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795284" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795229" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="4" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="6" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\interval_action">
+											<float name="interval_second" value="0.125" />
+											<uniqueid name="id" value="1073795289" />
+											<list name="interval_subactions">
+												<group name="interval_subaction_group">
+													<float name="trigger_time_second" value="0.125" />
+													<list name="actions">
+														<template_reference name="action" value="action\reveal_area">
+															<bool name="all_player" value="True" />
+															<float name="duration" value="1" />
+															<bool name="fire_and_forget" value="True" />
+															<float name="radius" value="2.5" />
+															<uniqueid name="id" value="1073795290" />
+														</template_reference>
+													</list>
+												</group>
+											</list>
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073795291" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073795288" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795233" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</group>
 		<group name="fire">

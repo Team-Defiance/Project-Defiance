@@ -58,6 +58,10 @@
 				</list>
 				<uniqueid name="id" value="1073752785" />
 			</template_reference>
+			<template_reference name="action" value="action\ui_decorator_action">
+				<icon name="symbol_icon" value="Icons_symbols_unit_soviet_conscript_03_symbol" />
+				<uniqueid name="id" value="1073795128" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_squad_upgrade">

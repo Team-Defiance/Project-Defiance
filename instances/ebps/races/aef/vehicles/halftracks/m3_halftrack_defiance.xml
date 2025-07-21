@@ -73,12 +73,12 @@
 				<template_reference name="action" value="action\target_occupants_action">
 					<list name="subactions">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="30" />
+							<float name="damage" value="36" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="small_arms" />
-							<uniqueid name="id" value="1073792808" />
+							<uniqueid name="id" value="1073794613" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073792809" />

@@ -485,13 +485,13 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
+						<template_reference name="required" value="requirements\required_structure">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\hammer_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="True" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -782,7 +782,7 @@
 				<instance_reference name="ability" value="abilities\british\timed_ability\infantry_section_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\always_on_ability\tommy_cover_combat_bonus" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_nothrow_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -928,7 +928,7 @@
 					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
 					<list name="construction_items">
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\british\buildings\field_defenses\british_sandbag_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\british\buildings\defensive_structures\brit_sandbag_fence__construction__" />
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">
@@ -1029,7 +1029,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
+												<float name="value" value="0.85" />
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
@@ -1187,7 +1187,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
