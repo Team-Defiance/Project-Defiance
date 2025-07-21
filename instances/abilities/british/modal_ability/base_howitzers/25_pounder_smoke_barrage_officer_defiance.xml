@@ -6,57 +6,46 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="0.75" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="False" />
-							<string name="do_action_state_name" value="off" />
-							<bool name="retrigger" value="True" />
-							<string name="state_machine_name" value="rifle_lee_enfield_visible" />
-							<string name="undo_action_state_name" value="on" />
-							<uniqueid name="id" value="1073756593" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756594" />
-					<bool name="can_prevent_refund" value="False" />
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="3663" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="True" />
+					<uniqueid name="id" value="1073795411" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\british\grenades\smoke_barrage_marker_grenade_mp" />
-					<instance_reference name="decrement_accessory_item" value="" />
-					<bool name="entity_target_only" value="False" />
-					<bool name="force_squad_to_target" value="False" />
-					<bool name="no_decrement" value="True" />
-					<float name="number_of_shots" value="1" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\all">
-						</template_reference>
-					</group>
-					<uniqueid name="id" value="1073756595" />
-					<bool name="target_override_direction_times_max_range" value="False" />
-				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1.5" />
+					<float name="delay" value="3" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
-						<template_reference name="action" value="action\game_event_action">
-							<float name="event_extra_param" value="0" />
-							<float name="event_param_begin" value="1" />
-							<float name="event_param_end" value="-1" />
-							<enum name="event_type" value="grenade" />
-							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073756596" />
+						<template_reference name="action" value="action\off_map_artillery">
+							<float name="num_salvo" value="3" />
+							<float name="radius" value="3" />
+							<float name="source_offset_x" value="50" />
+							<float name="source_offset_y" value="50" />
+							<float name="source_offset_z" value="50" />
+							<float name="time_range_between_shells_max" value="0.5" />
+							<float name="time_range_between_shells_min" value="0.5" />
+							<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\stuka_nc_50kg_smoke_bomb_mp" />
+							<uniqueid name="id" value="1073795262" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756597" />
-					<bool name="can_prevent_refund" value="False" />
+					<uniqueid name="id" value="1073795261" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\trigger_dca_action">
+					<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
+					<float name="duration" value="5" />
+					<bool name="is_terrain_only" value="True" />
+					<uniqueid name="id" value="1073795263" />
 				</template_reference>
 			</list>
 		</group>
@@ -85,7 +74,7 @@
 		<float name="facing_angle" value="5" />
 		<bool name="facing_ignore" value="False" />
 		<float name="final_close_in_distance" value="0" />
-		<bool name="fire_and_forget" value="False" />
+		<bool name="fire_and_forget" value="True" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
@@ -93,7 +82,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="30" />
+		<float name="range" value="45" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
@@ -196,17 +185,9 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\ability_lock_out\ability_lock_out_base_artillery_counter_barrage_ability_active" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\platoon_aec_passive" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="23" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />

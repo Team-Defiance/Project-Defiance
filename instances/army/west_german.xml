@@ -122,7 +122,7 @@
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\wg_hq_pioneer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\01_rocket_p4" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\02_gebirgs_stg" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\03_operation_griffin_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\03_radio_silence_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\04_stuka_smoke_bomb" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\05_37mm_at_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\06_command_panther_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -130,10 +130,17 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\01_volksgrenadiere" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\02_leig_pyro" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\03_ostwind" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\04_radio_silence_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\04_operation_griffin_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\05_artillery_105mm" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\06_sturmtiger_pe_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\urban_assault_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\01_breakthrough_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\02_vehicle_crew_repair" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\03_vehicle_speed_passive" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\04_special_shells" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\05_breakthrough_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\06_king_tiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\elite_armor_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">

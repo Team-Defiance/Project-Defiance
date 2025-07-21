@@ -387,7 +387,7 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\team_weapon_suppression_stun_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\brit_mortar_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\always_on_ability\brit_mortar_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_he_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\mortar_barrage\brit_81mm_mortar_smoke_barrage_vet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
@@ -798,7 +798,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="2" />
+			<float name="personnel_pop" value="1" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\upgrade_ext">

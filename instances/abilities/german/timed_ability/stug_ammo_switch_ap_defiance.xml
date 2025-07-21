@@ -32,6 +32,25 @@
 					</list>
 					<uniqueid name="id" value="1073754534" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="6" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\kicker_message_action">
+							<float name="loop_interval" value="0.3" />
+							<locstring name="message" value="2612" mod="84428889d71d41a48e2eff09c2425d54" />
+							<float name="message_colour_a" value="255" />
+							<float name="message_colour_b" value="255" />
+							<float name="message_colour_g" value="255" />
+							<float name="message_colour_r" value="255" />
+							<float name="message_duration" value="1" />
+							<bool name="team_only" value="False" />
+							<bool name="check_fow" value="True" />
+							<uniqueid name="id" value="1073795416" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073795417" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
@@ -53,7 +72,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="5.5" />
+		<float name="duration_time" value="5" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -71,7 +90,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="10" />
+		<float name="recharge_time" value="15" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_1" />
@@ -100,13 +119,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="3671" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3669" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_armor_piercing_rounds_sherman" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="3653" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />

@@ -28,7 +28,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.4" />
+							<float name="value" value="1.6" />
 							<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
@@ -37,7 +37,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="4" />
+							<float name="value" value="5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -76,7 +76,7 @@
 					<bool name="apply_to_future_units" value="False" />
 					<bool name="apply_to_local_player" value="True" />
 					<instance_reference name="deprecated_entity_type" value="" />
-					<instance_reference name="deprecated_squad_type" value="sbps\races\german\soldiers\mg42_heavy_machine_gun_squad\mg42_heavy_machine_gun_squad_mp" />
+					<instance_reference name="deprecated_squad_type" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<group name="target_info">
 						<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
 							<list name="target_infos">
@@ -109,6 +109,20 @@
 					</list>
 					<bool name="target_squad" value="False" />
 					<uniqueid name="id" value="1073743851" />
+				</template_reference>
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="True" />
+							<string name="do_action_state_name" value="on" />
+							<bool name="retrigger" value="False" />
+							<string name="state_machine_name" value="ability_attack_buff_state" />
+							<string name="undo_action_state_name" value="off" />
+							<uniqueid name="id" value="1073794717" />
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="squad" />
+					<uniqueid name="id" value="1073794716" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">

@@ -328,7 +328,7 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_1\hammer_tactics_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -438,6 +438,22 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\health_maximum_modifier">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="70" />
+												<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073795136" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">

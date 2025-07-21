@@ -43,12 +43,12 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="5.4375" />
+				<float name="radius" value="5.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.0625" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.45" />
+				<float name="mid" value="0.35" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.0375" />
@@ -56,8 +56,8 @@
 				<float name="mid" value="0.225" />
 			</group>
 			<group name="distance">
-				<float name="far" value="4.6875" />
-				<float name="near" value="0.5625" />
+				<float name="far" value="4.7" />
+				<float name="near" value="0.75" />
 				<float name="mid" value="1.35" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="60" />
-			<float name="min" value="60" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -338,7 +338,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="10" />
+		<float name="flinch_radius" value="8.15625" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />

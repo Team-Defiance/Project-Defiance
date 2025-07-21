@@ -766,7 +766,7 @@
 							<float name="damage" value="10" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073756764" />
 						</template_reference>
@@ -816,7 +816,7 @@
 							<float name="damage" value="7" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
+							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
 							<uniqueid name="id" value="1073756766" />
 						</template_reference>
@@ -940,10 +940,10 @@
 			<instance_reference name="projectile" value="" />
 		</group>
 		<group name="range">
-			<float name="max" value="50" />
+			<float name="max" value="75" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>

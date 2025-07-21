@@ -19,7 +19,7 @@
 				<float name="chance_splat_only" value="1" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
-					<string name="deform_decal_file" value="offmap_artillery_crater" />
+					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
 					<bool name="random_rotation" value="True" />
 					<float name="rotation" value="0" />
@@ -191,7 +191,7 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="1000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="35" />
+			<float name="speed" value="30" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

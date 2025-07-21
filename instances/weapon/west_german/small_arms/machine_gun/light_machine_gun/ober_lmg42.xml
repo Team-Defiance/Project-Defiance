@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="mg42lmg_tracer" />
-		<float name="fx_tracer_speed" value="140" />
+		<float name="fx_tracer_speed" value="75" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -395,7 +395,7 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.25" />
+			<float name="nearby_suppression_multiplier" value="0.5" />
 			<float name="nearby_suppression_radius" value="5" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />

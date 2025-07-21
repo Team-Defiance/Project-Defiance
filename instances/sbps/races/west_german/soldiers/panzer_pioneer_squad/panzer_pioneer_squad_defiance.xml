@@ -182,6 +182,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\west_german\items\panzer_pioneer_minesweeper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\west_german\items\panzer_pioneer_stg44_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\west_german\items\panzerpioniere_breakthrough_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -1072,7 +1073,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\panzer_elite_pioneer_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\repair_ability\wg_pioneer_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\pioneer_fuel_munitions_salvage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m44_incendiary_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -1080,6 +1081,7 @@
 				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_pioneer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzer_pioneer_wirecutter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_assault_panzerpio" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\ea_panzer_pioniere_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

@@ -127,7 +127,7 @@
 				<float name="min" value="1.125" />
 			</group>
 			<group name="incremental_target_table">
-				<float name="accuracy_multiplier" value="1.02" />
+				<float name="accuracy_multiplier" value="1.025" />
 				<group name="search_radius">
 					<float name="far" value="10" />
 					<float name="near" value="6" />
@@ -139,8 +139,8 @@
 				<float name="min" value="8.5" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.15" />
-				<float name="far" value="0.85" />
+				<float name="near" value="1.1" />
+				<float name="far" value="0.9" />
 				<float name="mid" value="1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
@@ -355,7 +355,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
 		<string name="fx_tracer_name" value="fx_fire_bren_tracer" />
-		<float name="fx_tracer_speed" value="140" />
+		<float name="fx_tracer_speed" value="80" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />

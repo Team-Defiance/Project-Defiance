@@ -121,47 +121,29 @@
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\german\always_on_ability\german_hq_pioneer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\festung\festung_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\firestorm_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\mechanized_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\overwatch_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\spearhead_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\vanguard_doctrine_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\01_osttruppen_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\ability_2_opel_supply_truck" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\ability_3_stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\ability_4_heavy_emplacements" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\ability_5_for_the_fatherland" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\festung\passive_defensive_preparation" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_1_paradrop_med_supplies" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_2_mortar_halftrack" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_3_walking_stuka" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_4_sturmpanzer_brummbar" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\ability_5_strategic_bombing" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\firestorm\passive_urban_assault" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_1_armored_vehicle_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_2_wacht_am_rhein" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_3_break_supply_line" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_4_emergency_repair" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\ability_5_close_the_pocket" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\mechanized\passive_blitzkrieg" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\01_defensive_preparation" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\02_stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\03_osttruppen_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\04_oberstleutnant_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\05_heavy_emplacements" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\06_1_railway_gun_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\festung\06_2_for_the_fatherland" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\01_passive_ambush_camouflage" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\overwatch\02_lightning_warfare" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\overwatch\03_early_warning" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\overwatch\04_brandenburger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\overwatch\05_stuka_air_superiority" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\02_early_warning" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\03_brandenburger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\04_1_stuka_suppression_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\04_2_supply_break_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\overwatch\05_camo_netting" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\06_elefant_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\01_halftrack_250" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\02_passive_panzer_commander" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\03_stosstruppen_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\04_emergency_airdrop" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_stuka_smoke_bombs_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_1_stuka_smoke_bombs_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_2_leig_18_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\06_tiger_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_1_panzerjager" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_2_forward_repair_station" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_3_stuka_ace" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_4_command_panzer_iv" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\ability_5_lefh_howitzer" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\passive_sentinel_packages" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">

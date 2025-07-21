@@ -139,9 +139,9 @@
 				<float name="min" value="9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.25" />
-				<float name="far" value="1" />
-				<float name="mid" value="1.125" />
+				<float name="near" value="1.1" />
+				<float name="far" value="0.9" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -355,7 +355,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg_large" />
 		<string name="fx_tracer_name" value="fx_hmg_turret_tracer02" />
-		<float name="fx_tracer_speed" value="160" />
+		<float name="fx_tracer_speed" value="90" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -462,7 +462,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.00016" />
+			<float name="amount" value="0.00015" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />

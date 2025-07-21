@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="bullet" />
 		<string name="fx_tracer_name" value="fx_g34_sniperfire_tracer" />
-		<float name="fx_tracer_speed" value="120" />
+		<float name="fx_tracer_speed" value="65" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -394,8 +394,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0.1" />
-			<float name="nearby_suppression_radius" value="10" />
+			<float name="nearby_suppression_multiplier" value="0.5" />
+			<float name="nearby_suppression_radius" value="5" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />

@@ -470,7 +470,7 @@
 								<float name="z" value="-7.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_he" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_hesh" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 						<group name="weapon">
 							<group name="heading">
@@ -485,7 +485,7 @@
 								<float name="z" value="-7.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_hesh" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_airburst" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -506,7 +506,7 @@
 								<float name="z" value="-7.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_he_accurate" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_hesh_accurate" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 						<group name="weapon">
 							<group name="heading">
@@ -521,7 +521,7 @@
 								<float name="z" value="-7.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_hesh_accurate" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_airburst_accurate" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -840,12 +840,13 @@
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_2\centaur_spaa_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_2\churchill_a22_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_2\sherman_firefly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_2\cromwell_a27m_cruiser_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short_2" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long_2" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_smoke_screen_base_mp" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_overwatch_base_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\howitzer_counter_barrage_commander_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\25pdr_base_ammo_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\25pdr_base_ammo_airburst_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\25pdr_base_ammo_hesh_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>

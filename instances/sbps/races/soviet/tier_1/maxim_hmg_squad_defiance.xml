@@ -470,7 +470,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\commander\ability\ambush_camou_package" />
+				<instance_reference name="upgrade" value="upgrade\german\doctrines\overwatch\ambush_camouflage_infantry_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -887,31 +887,6 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
-									<template_reference name="action" value="action\apply_modifiers_action">
-										<float name="duration" value="0" />
-										<bool name="permanent" value="False" />
-										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
-												<enum name="application_type" value="apply_to_weapon" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.2" />
-												<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\horizontal_speed_weapon_modifier">
-												<enum name="application_type" value="apply_to_weapon" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.3" />
-												<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073746323" />
-									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
@@ -924,12 +899,6 @@
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
-									<template_reference name="action" value="action\upgrade_add">
-										<bool name="apply_to_entities_in_squad" value="False" />
-										<bool name="trigger_publish_event" value="False" />
-										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073746324" />
-									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
@@ -948,46 +917,6 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
-									<template_reference name="action" value="action\change_target_action">
-										<list name="actions">
-											<template_reference name="action" value="action\apply_modifiers_action">
-												<float name="duration" value="0" />
-												<bool name="permanent" value="False" />
-												<list name="modifiers">
-													<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-														<enum name="application_type" value="apply_to_weapon" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_01" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="1.3" />
-														<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-													</template_reference>
-													<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
-														<enum name="application_type" value="apply_to_weapon" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_01" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="1.2" />
-														<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
-													</template_reference>
-													<template_reference name="modifier" value="modifiers\horizontal_speed_weapon_modifier">
-														<enum name="application_type" value="apply_to_weapon" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_01" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="1.1" />
-														<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
-													</template_reference>
-												</list>
-												<uniqueid name="id" value="1073746326" />
-											</template_reference>
-										</list>
-										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073746327" />
-									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">

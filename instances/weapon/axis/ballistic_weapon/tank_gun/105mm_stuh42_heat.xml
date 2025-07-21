@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="10" />
-				<float name="near" value="100" />
+				<float name="near" value="35" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.5" />
@@ -296,7 +296,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_blind" />
+							<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
 							<uniqueid name="id" value="1073746782" />
 						</template_reference>
 					</list>
@@ -428,7 +428,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="3.125" />
+			<float name="angle_scatter" value="2.875" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -498,9 +498,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="170" />
-			<float name="far" value="170" />
-			<float name="mid" value="170" />
+			<float name="near" value="190" />
+			<float name="far" value="190" />
+			<float name="mid" value="190" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

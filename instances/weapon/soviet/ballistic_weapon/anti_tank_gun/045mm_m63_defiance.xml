@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="2.5" />
+				<float name="radius" value="3" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.15" />
@@ -74,9 +74,9 @@
 			</group>
 			<bool name="damage_all_in_hold" value="False" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="1.5" />
-				<float name="mid" value="5" />
-				<float name="near" value="15" />
+				<float name="far" value="1" />
+				<float name="mid" value="4" />
+				<float name="near" value="20" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -334,7 +334,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="3.75" />
+		<float name="flinch_radius" value="4.5" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -396,8 +396,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="4" />
-				<float name="min" value="4" />
+				<float name="max" value="5" />
+				<float name="min" value="5" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
@@ -485,20 +485,20 @@
 		</group>
 		<list name="target_type_table">
 			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1.5" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="1" />
 					<float name="penetration_multiplier" value="0.5" />
-					<float name="suppression_multiplier" value="1" />
-				</group>
-			</group>
-			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="infantry" />
-				<group name="weapon_multipliers">
-					<float name="accuracy_multiplier" value="1.5" />
-					<float name="damage_multiplier" value="0.5" />
-					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

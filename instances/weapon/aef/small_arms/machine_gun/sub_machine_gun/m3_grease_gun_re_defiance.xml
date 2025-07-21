@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.6" />
-			<float name="far" value="0.216" />
-			<float name="mid" value="0.36" />
+			<float name="near" value="0.55" />
+			<float name="far" value="0.198" />
+			<float name="mid" value="0.33" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.2" />
-				<float name="min" value="0.8" />
+				<float name="max" value="1.5" />
+				<float name="min" value="1.25" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="3" />
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="smg" />
 		<string name="fx_tracer_name" value="smg_m3_greasegun_tracer" />
-		<float name="fx_tracer_speed" value="100" />
+		<float name="fx_tracer_speed" value="35" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2.8" />
-				<float name="min" value="2" />
+				<float name="max" value="3.1" />
+				<float name="min" value="2.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -395,10 +395,10 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="0" />
-			<float name="nearby_suppression_radius" value="0" />
+			<float name="nearby_suppression_multiplier" value="0.5" />
+			<float name="nearby_suppression_radius" value="5" />
 			<group name="target_pinned_multipliers">
-				<float name="accuracy_multiplier" value="0.75" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />

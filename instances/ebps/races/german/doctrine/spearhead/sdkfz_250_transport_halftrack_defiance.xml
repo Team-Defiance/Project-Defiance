@@ -150,7 +150,7 @@
 				<template_reference name="action" value="action\target_occupants_action">
 					<list name="subactions">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="30" />
+							<float name="damage" value="36" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -161,9 +161,9 @@
 					<uniqueid name="id" value="1073792805" />
 				</template_reference>
 			</list>
-			<float name="armor" value="12" />
+			<float name="armor" value="12.5" />
 			<float name="rear_armor" value="5.75" />
-			<float name="target_size" value="18" />
+			<float name="target_size" value="17" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -873,7 +873,7 @@
 			<float name="min_hold_seconds" value="1" />
 			<float name="num_slots" value="12" />
 			<float name="num_squad_slots" value="1" />
-			<float name="percent_unload_on_death" value="0.5" />
+			<float name="percent_unload_on_death" value="1" />
 			<bool name="revert_ownership" value="False" />
 			<bool name="scavenge_enabled" value="False" />
 			<group name="scavenge_resource">

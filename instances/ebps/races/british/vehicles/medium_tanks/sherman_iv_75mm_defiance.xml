@@ -19,7 +19,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\smoke_sherman_mortar_barrage_mp" />
 				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\sherman_step_on_it_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\sherman_iv_apcr_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -103,11 +103,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\remove_crew_action">
-					<string name="crew_name" value="Gunner" />
-					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073792893" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -115,7 +110,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="110" />
+					<float name="fuel" value="105" />
 					<float name="manpower" value="320" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -457,6 +452,21 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\075mm_m3_sherman_british_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="4.752" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.6" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\075mm_m3_sherman_british_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -801,7 +811,7 @@
 								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="armies\british\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
