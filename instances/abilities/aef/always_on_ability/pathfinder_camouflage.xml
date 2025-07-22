@@ -7,7 +7,7 @@
 			</list>
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
+					<bool name="check_self" value="True" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -56,7 +56,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\delay">
-									<float name="delay" value="0.5" />
+									<float name="delay" value="0.25" />
 									<float name="delay_min" value="0" />
 									<bool name="progress_bar" value="False" />
 									<bool name="randomize" value="False" />
@@ -75,14 +75,14 @@
 													<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 												</template_reference>
 											</list>
-											<uniqueid name="id" value="1073795779" />
+											<uniqueid name="id" value="1073796053" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073795780" />
+									<uniqueid name="id" value="1073796054" />
 									<bool name="can_prevent_refund" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795781" />
+							<uniqueid name="id" value="1073796055" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -90,7 +90,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795782" />
+					<uniqueid name="id" value="1073796056" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -135,10 +135,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795783" />
+							<uniqueid name="id" value="1073796057" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795784" />
+					<uniqueid name="id" value="1073796058" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -204,12 +204,12 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="3765" mod="84428889d71d41a48e2eff09c2425d54" />
-								<locstring name="help_text" value="3766" mod="84428889d71d41a48e2eff09c2425d54" />
-								<icon name="icon_name" value="Icons_abilities_ability_common_camouflage_on" />
+								<locstring name="screen_name" value="3767" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="11045647" />
+								<icon name="icon_name" value="Icons_abilities_ability_german_ambush_camo_on" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073795785" />
+							<uniqueid name="id" value="1073796059" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
@@ -225,10 +225,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795786" />
+							<uniqueid name="id" value="1073796060" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795787" />
+					<uniqueid name="id" value="1073796061" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -236,7 +236,7 @@
 					</template_reference>
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
+					<bool name="check_self" value="True" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -279,7 +279,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\delay">
-									<float name="delay" value="3.5" />
+									<float name="delay" value="2.5" />
 									<float name="delay_min" value="0" />
 									<bool name="progress_bar" value="False" />
 									<bool name="randomize" value="False" />
@@ -298,14 +298,14 @@
 													<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 												</template_reference>
 											</list>
-											<uniqueid name="id" value="1073795788" />
+											<uniqueid name="id" value="1073796062" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073795789" />
+									<uniqueid name="id" value="1073796063" />
 									<bool name="can_prevent_refund" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795790" />
+							<uniqueid name="id" value="1073796064" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -313,7 +313,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795791" />
+					<uniqueid name="id" value="1073796065" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

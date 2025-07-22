@@ -7,9 +7,9 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11051545" />
+						<locstring name="extra_text" value="3818" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11051548" />
+						<locstring name="help_text" value="3819" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="W" />
 						<icon name="icon_name" value="Icons_units_unit_aef_paratroopers" />
 						<bool name="minimap_team_only" value="False" />
@@ -528,7 +528,7 @@
 						<template_reference name="required" value="requirements\required_squad_veterancy">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<float name="veterancy_rank" value="2" />
+							<float name="veterancy_rank" value="4" />
 						</template_reference>
 						<template_reference name="required" value="requirements\required_in_state">
 							<enum name="reason" value="usage" />
@@ -660,48 +660,47 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_all_in_list">
+						<template_reference name="required" value="requirements\required_player_upgrade">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_3\veteran_vehicle_training_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<float name="max_completed" value="100" />
-									<float name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\pm\aef_pm" />
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_player_upgrade">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<float name="max_completed" value="100" />
-									<float name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\pm\american\commanders\airborne\pm_airborne_unlock" />
+									<float name="veterancy_rank" value="1" />
 								</template_reference>
 							</list>
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.6" />
-									<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
+						<template_reference name="action" value="action\veterancy_action">
+							<float name="number_of_experience_points" value="-680" />
+							<uniqueid name="id" value="1073796077" />
+						</template_reference>
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="5" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\veterancy_action">
+									<float name="number_of_experience_points" value="680" />
+									<uniqueid name="id" value="1073796078" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073749758" />
+							<uniqueid name="id" value="1073796079" />
+							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073749759" />
+					<uniqueid name="id" value="1073796080" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -734,7 +733,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_heavy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\timed_ability\sprint_paratrooper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\paratrooper_timed_demo_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -882,7 +881,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="680" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11069237" />
+								<locstring name="screen_name" value="3820" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -893,41 +892,14 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="False" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
+											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paratrooper_mk2_fragmentation_grenade_mp" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_assault_move_test_mp" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_suppressing_fire_ability_mp" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_timed_demo_mp" />
+												<float name="value" value="0.9" />
+												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749761" />
@@ -955,7 +927,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="1360" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11069238" />
+								<locstring name="screen_name" value="3821" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -966,14 +938,14 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paratrooper_mk2_fragmentation_grenade_mp" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.25" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749763" />
@@ -1009,6 +981,15 @@
 												<float name="value" value="1.25" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749765" />
 									</template_reference>
@@ -1017,7 +998,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="2720" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11069239" />
+								<locstring name="screen_name" value="3822" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -1034,7 +1015,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.747" />
+												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
@@ -1079,7 +1060,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="4080" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="3806" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -1099,6 +1080,33 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.7" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_heavy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.7" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_timed_demo_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.7" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073795777" />
 									</template_reference>
@@ -1109,7 +1117,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="5440" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="0" />
+								<locstring name="screen_name" value="3823" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -1128,6 +1136,33 @@
 												<enum name="usage_type" value="multiply_add" />
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_heavy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\paratrooper_timed_demo_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073795778" />
@@ -1185,10 +1220,6 @@
 				<group name="construction_group">
 					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
 					<list name="construction_items">
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_m5_paratrooper_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="11" />
-						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\gameplay\buildable_campfire_mp" />
 							<int name="ui_position" value="21" />

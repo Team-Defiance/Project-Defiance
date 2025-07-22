@@ -159,11 +159,11 @@
 						</list>
 					</template_reference>
 					<bool name="permanent" value="False" />
-					<uniqueid name="id" value="1073795804" />
+					<uniqueid name="id" value="1073796024" />
 				</template_reference>
 				<template_reference name="action" value="action\interval_action">
 					<float name="interval_second" value="1" />
-					<uniqueid name="id" value="1073795876" />
+					<uniqueid name="id" value="1073796025" />
 					<list name="interval_subactions">
 						<group name="interval_subaction_group">
 							<float name="trigger_time_second" value="1" />
@@ -174,11 +174,40 @@
 									<bool name="set" value="False" />
 									<bool name="cause_criticals" value="True" />
 									<enum name="crit_weapon_type" value="small_arms" />
-									<uniqueid name="id" value="1073795877" />
+									<uniqueid name="id" value="1073796026" />
 								</template_reference>
 							</list>
 						</group>
 					</list>
+				</template_reference>
+				<template_reference name="action" value="action\add_aura">
+					<instance_reference name="aura" value="aura\aef\beacon_sight_bonus_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<group name="area_info">
+						<float name="angle_left" value="0" />
+						<float name="angle_right" value="0" />
+						<enum name="area_type" value="circle" />
+						<float name="radius" value="20" />
+					</group>
+					<template_reference name="target_info" value="type_ability_target_type\all">
+					</template_reference>
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073796027" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\extended_sight_enable">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="enable" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\extended_sight_enable" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796028" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -219,7 +248,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="11056085" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_buildings_building_german_bunker" />
 			<enum name="kill_type" value="building" />
@@ -233,7 +262,7 @@
 			<bool name="obb_selectable" value="True" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="11056086" />
 			<enum name="selection_name" value="building" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="single_entity_select" />
@@ -271,7 +300,7 @@
 			<float name="minimap_icon_scale" value="0.8" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_radio_beacon_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="11071280" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
@@ -289,35 +318,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\extended_sight_enable">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\extended_sight_enable" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073795805" />
-				</template_reference>
-				<template_reference name="action" value="action\add_aura">
-					<instance_reference name="aura" value="aura\aef\beacon_sight_bonus_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<group name="area_info">
-						<float name="angle_left" value="0" />
-						<float name="angle_right" value="0" />
-						<enum name="area_type" value="circle" />
-						<float name="radius" value="20" />
-					</group>
-					<template_reference name="target_info" value="type_ability_target_type\all">
-					</template_reference>
-					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073795806" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">

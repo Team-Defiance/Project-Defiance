@@ -31,7 +31,7 @@
 		<int name="ui_position" value="1" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="3784" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="3816" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="V" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_aef_m1_thompson_sub_machine_gun" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -71,6 +71,13 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\items\pathfinder_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
