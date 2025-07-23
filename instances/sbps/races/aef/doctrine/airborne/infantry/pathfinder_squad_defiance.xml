@@ -161,7 +161,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_loadout_ext">
 			<list name="unit_list">
 				<group name="loadout_data">
-					<float name="num" value="3" />
+					<float name="num" value="4" />
 					<instance_reference name="type" value="ebps\races\aef\soldiers\doctrines\airborne\usf_pathfinder_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
@@ -500,11 +500,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\add_to_squad_loadout_action">
-					<uniqueid name="id" value="1073795774" />
-					<instance_reference name="unit_type" value="ebps\races\aef\soldiers\doctrines\airborne\usf_pathfinder_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<int name="count" value="1" />
-				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -736,6 +731,15 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.9" />
+												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749738" />
 									</template_reference>
@@ -841,7 +845,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.77" />
+												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
