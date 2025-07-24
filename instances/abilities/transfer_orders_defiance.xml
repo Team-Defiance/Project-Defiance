@@ -189,7 +189,7 @@
 							<instance_reference name="entity_type_to_retreat_to" value="" />
 							<enum name="retreat_type" value="withdraw_to_entry_point" />
 							<uniqueid name="id" value="1073745040" />
-							<float name="refund_percent_after_retreat" value="0" />
+							<float name="refund_percent_after_retreat" value="0.1" />
 						</template_reference>
 						<template_reference name="action" value="action\scar_function_call">
 							<string name="function_name" value="AE_TransferOrders" />
