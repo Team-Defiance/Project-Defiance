@@ -3,9 +3,9 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
+			<file name="animator" value="armies\german\vehicles\stuka_aircraft\stuka_aircraft" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
-			<file name="animator" value="armies\aef\vehicles\p47_thunderbolt\p47_thunderbolt" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sim_entity_ext">
 			<bool name="is_in_spatial_bucket" value="True" />
@@ -19,6 +19,47 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="55" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="enable" />
+											<float name="value" value="-1" />
+											<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_02" />
+											<enum name="usage_type" value="enable" />
+											<float name="value" value="-1" />
+											<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073796171" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="entities" />
+							<uniqueid name="id" value="1073796172" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796173" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -26,12 +67,12 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="120" />
-					<float name="manpower" value="75" />
-					<float name="munition" value="75" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="200" />
+					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="38" />
+				<float name="time_seconds" value="0" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -59,7 +100,7 @@
 			<list name="death_actions">
 				<template_reference name="action" value="action\set_crush_mode">
 					<enum name="crush_mode" value="crush_heavy" />
-					<uniqueid name="id" value="1073751975" />
+					<uniqueid name="id" value="1073796164" />
 				</template_reference>
 			</list>
 			<float name="armor" value="1000" />
@@ -131,10 +172,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
 			<group name="detect_camouflage">
-				<float name="tp_global" value="0" />
+				<float name="tp_global" value="10" />
 				<float name="tp_mine" value="0" />
 			</group>
-			<bool name="extended_sight" value="True" />
+			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
 			<float name="reveal_area_on_death_time" value="10" />
 			<group name="sight_package">
@@ -179,9 +220,9 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="11038280" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_p47_thunderbolt" />
+			<icon name="icon_name" value="" />
 			<enum name="kill_type" value="heavy_armour" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -199,17 +240,17 @@
 			<enum name="selection_type" value="no_select" />
 			<bool name="sloppy_selectable" value="False" />
 			<group name="speaker">
-				<string name="code_1" value="il" />
+				<string name="code_1" value="st" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_2">
-				<string name="code_1" value="47" />
+				<string name="code_1" value="sk" />
 				<string name="code_2" value="pl" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="p47" />
+				<string name="code_1" value="stk" />
 				<string name="code_2" value="pln" />
 				<string name="code_3" value="" />
 			</group>
@@ -224,14 +265,14 @@
 			<icon name="minimap_icon" value="Icons_minimap_airplane" />
 			<icon name="portrait_icon_winter" value="" />
 			<group name="speaker_alt">
-				<string name="code_1" value="il" />
+				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="11049121" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
@@ -239,10 +280,10 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<enum name="occlusion_state" value="can_be_occluded" />
 			<icon name="symbol_icon_name" value="" />
+			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
-			<string name="decorator_marker_name" value="fx_ui" />
+			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
 			<string name="skin_summer" value="" />
 			<string name="skin_winter" value="" />
@@ -278,33 +319,12 @@
 							</group>
 							<float name="length" value="0" />
 							<group name="origin">
-								<float name="x" value="-3.5" />
-								<float name="y" value="0" />
+								<float name="x" value="2.7" />
+								<float name="y" value="1" />
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_micro_rocket_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="3.5" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_micro_rocket_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\stuka_mg_17" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -320,78 +340,15 @@
 							</group>
 							<float name="length" value="0" />
 							<group name="origin">
-								<float name="x" value="-3.5" />
-								<float name="y" value="0" />
+								<float name="x" value="-2.7" />
+								<float name="y" value="1" />
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_mg_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\stuka_mg_17" />
 						</group>
 					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="3.5" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_mg_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="-1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="-3.5" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_micro_rocket_loiter_2" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="3.5" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\plane_weapons\p45_nokota_micro_rocket_loiter_2" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
+					<bool name="receives_attack_commands" value="True" />
 				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
@@ -412,7 +369,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crush_ext">
-			<bool name="crushes_humans" value="False" />
+			<bool name="crushes_humans" value="True" />
 			<enum name="default_crush_mode" value="crush_off" />
 			<list name="crush_mode_actions_heavy">
 			</list>
@@ -585,35 +542,50 @@
 			<float name="crash_fall_cap" value="60" />
 			<float name="crash_fall_rate" value="40" />
 			<float name="crash_turn_rate_cap" value="10" />
-			<instance_reference name="crash_weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\il_2_plane_crash_mp" />
-			<float name="distance_to_dive" value="200" />
+			<instance_reference name="crash_weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\stuka_plane_crash_mp" />
+			<float name="distance_to_dive" value="225" />
 			<float name="est_seconds_in_future" value="5" />
-			<float name="flight_max_turning_degree" value="5" />
+			<float name="flight_max_turning_degree" value="10" />
 			<float name="crash_max_turn_accel_var" value="20" />
 			<float name="crash_min_turn_accel_var" value="10" />
 			<float name="lowest_height_above_buildings" value="4" />
-			<float name="preferred_height_approach" value="26" />
-			<float name="preferred_height_dive" value="15" />
-			<float name="preferred_height_exit" value="40" />
-			<float name="speed" value="200" />
+			<float name="preferred_height_approach" value="30" />
+			<float name="preferred_height_dive" value="18" />
+			<float name="preferred_height_exit" value="18" />
+			<float name="speed" value="185" />
 			<float name="lowest_height_above_ground" value="8" />
 			<group name="actions">
 				<list name="attack_dive_actions">
-					<template_reference name="action" value="action\delay">
-						<float name="delay" value="60" />
-						<float name="delay_min" value="0" />
-						<bool name="progress_bar" value="False" />
-						<bool name="randomize" value="False" />
-						<list name="delayed_actions">
-							<template_reference name="action" value="action\retreat_action">
-								<instance_reference name="entity_type_to_retreat_to" value="" />
-								<enum name="retreat_type" value="withdraw_to_entry_point" />
-								<uniqueid name="id" value="1073796127" />
-								<float name="refund_percent_after_retreat" value="0" />
+					<template_reference name="action" value="action\change_target_action">
+						<list name="actions">
+							<template_reference name="action" value="action\apply_modifiers_action">
+								<float name="duration" value="0" />
+								<bool name="permanent" value="False" />
+								<list name="modifiers">
+									<template_reference name="modifier" value="modifiers\sight_cone_angle_modifier">
+										<enum name="application_type" value="apply_to_entity" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="" />
+										<enum name="usage_type" value="addition" />
+										<float name="value" value="-70" />
+										<instance_reference name="tooltip" value="modifier_tooltip\sight_cone_angle_modifier" />
+									</template_reference>
+									<template_reference name="modifier" value="modifiers\sight_radius_modifier">
+										<enum name="application_type" value="apply_to_entity" />
+										<bool name="exclusive" value="False" />
+										<string name="modifier_id" value="" />
+										<string name="target_type_name" value="" />
+										<enum name="usage_type" value="addition" />
+										<float name="value" value="135" />
+										<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+									</template_reference>
+								</list>
+								<uniqueid name="id" value="1073796165" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073796126" />
-						<bool name="can_prevent_refund" value="True" />
+						<enum name="change_target_type" value="self" />
+						<uniqueid name="id" value="1073796166" />
 					</template_reference>
 				</list>
 				<list name="to_attack_position_actions">
@@ -646,11 +618,11 @@
 										<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="1073795741" />
+								<uniqueid name="id" value="1073796167" />
 							</template_reference>
 						</list>
 						<enum name="change_target_type" value="self" />
-						<uniqueid name="id" value="1073795742" />
+						<uniqueid name="id" value="1073796168" />
 					</template_reference>
 				</list>
 			</group>
@@ -679,5 +651,5 @@
 			<float name="on_ice_overturn_scale" value="1.3" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742112" />
+	<uniqueid name="pbgid" value="1073742381" />
 </instance>

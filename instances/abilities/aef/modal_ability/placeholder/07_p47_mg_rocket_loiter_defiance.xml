@@ -30,7 +30,7 @@
 							<bool name="use_long_path" value="False" />
 							<group name="loiter_info">
 								<float name="loiter_area_radius" value="50" />
-								<float name="loiter_time_sec" value="30" />
+								<float name="loiter_time_sec" value="60" />
 								<bool name="follow_target" value="False" />
 								<float name="lowest_altitude" value="0" />
 								<bool name="loiter_descend" value="False" />
@@ -39,13 +39,13 @@
 							</group>
 							<group name="attack_info">
 								<float name="target_lead_in_distance" value="20" />
-								<int name="attacks_per_aircraft" value="3" />
+								<int name="attacks_per_aircraft" value="5" />
 								<float name="target_lead_out_distance" value="20" />
 								<float name="delay_between_attack" value="5" />
 								<float name="attack_sway_width" value="4" />
 								<float name="attack_sway_frequency" value="1" />
 								<float name="target_attack_distance" value="225" />
-								<float name="target_attack_time_sec" value="4.25" />
+								<float name="target_attack_time_sec" value="4" />
 								<float name="initial_attack_delay" value="0" />
 							</group>
 							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
@@ -78,7 +78,7 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="True" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p45_nokota_mg_rocket_loiter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p47_mg_rocket_loiter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073751985" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -99,7 +99,7 @@
 					<uniqueid name="id" value="1073751989" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="45" />
+					<float name="duration" value="5" />
 					<bool name="fire_and_forget" value="True" />
 					<list name="subactions">
 						<template_reference name="action" value="action\reticule_action">
@@ -116,6 +116,41 @@
 					</list>
 					<uniqueid name="id" value="1073751992" />
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action" comment="Stops drawing the circle when all planes are shot down">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\aef\vehicles\planes\p47_mg_rocket_loiter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\reticule_action">
+							<uniqueid name="id" value="1073796180" />
+							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+							<float name="radius" value="50" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_map_icon_action">
+							<uniqueid name="id" value="1073796181" />
+							<icon name="icon" value="Icons_minimap_aoe_circle" />
+							<float name="scale" value="80" />
+							<colour name="colour" value="1442775040" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796182" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
@@ -128,14 +163,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="150" />
+			<float name="munition" value="200" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="50" />
+		<float name="duration_time" value="80" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -193,7 +228,7 @@
 			<locstring name="extra_text" value="1940" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="1939" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_bob_upgrades_evasive_maneouvers" />
+			<icon name="icon_name" value="Icons_bob_upgrades_rapid_response" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="1938" mod="84428889d71d41a48e2eff09c2425d54" />

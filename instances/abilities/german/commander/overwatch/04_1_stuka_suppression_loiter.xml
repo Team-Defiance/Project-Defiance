@@ -74,7 +74,7 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="True" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_squad" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_ground_attack_squad_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073746281" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -95,22 +95,57 @@
 					<uniqueid name="id" value="1073746283" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="60" />
-					<bool name="fire_and_forget" value="True" />
+					<float name="duration" value="5" />
+					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\reticule_action">
-							<uniqueid name="id" value="1073746284" />
+							<uniqueid name="id" value="1073796159" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
 							<float name="radius" value="50" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_map_icon_action">
+							<uniqueid name="id" value="1073796160" />
+							<icon name="icon" value="Icons_minimap_aoe_circle" />
+							<float name="scale" value="80" />
+							<colour name="colour" value="1442775040" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073746285" />
 				</template_reference>
-				<template_reference name="action" value="action\ui_map_icon_action">
-					<uniqueid name="id" value="1073746286" />
-					<icon name="icon" value="Icons_minimap_aoe_circle" />
-					<float name="scale" value="80" />
-					<colour name="colour" value="1442775040" />
+				<template_reference name="action" value="action\requirement_action" comment="Stops drawing the circle when all planes are shot down">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\vehicles\stuka_aircraft\stuka_ground_attack_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<enum name="entity_type" value="" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\reticule_action">
+							<uniqueid name="id" value="1073796161" />
+							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+							<float name="radius" value="50" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_map_icon_action">
+							<uniqueid name="id" value="1073796162" />
+							<icon name="icon" value="Icons_minimap_aoe_circle" />
+							<float name="scale" value="80" />
+							<colour name="colour" value="1442775040" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796163" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>
