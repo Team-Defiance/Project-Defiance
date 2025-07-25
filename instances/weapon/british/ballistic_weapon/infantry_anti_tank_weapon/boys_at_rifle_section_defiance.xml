@@ -156,7 +156,7 @@
 				<float name="min" value="1.75" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.75" />
+				<float name="near" value="0.625" />
 				<float name="far" value="1.25" />
 				<float name="mid" value="1" />
 			</group>
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="25" />
-			<float name="min" value="25" />
+			<float name="max" value="30" />
+			<float name="min" value="30" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -299,7 +299,7 @@
 								<template_reference name="required" value="requirements\required_slot_item">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<bool name="check_item_on_entity" value="True" />
+									<bool name="check_item_on_entity" value="False" />
 									<bool name="display_requirement" value="True" />
 									<float name="max_owned" value="10" />
 									<float name="min_owned" value="1" />
@@ -310,15 +310,15 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="25" />
+							<float name="damage" value="30" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073796192" />
+							<uniqueid name="id" value="1073796378" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796193" />
+					<uniqueid name="id" value="1073796379" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -345,7 +345,7 @@
 						<template_reference name="required" value="requirements\required_slot_item">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<bool name="check_item_on_entity" value="True" />
+							<bool name="check_item_on_entity" value="False" />
 							<bool name="display_requirement" value="True" />
 							<float name="max_owned" value="10" />
 							<float name="min_owned" value="1" />
@@ -354,15 +354,15 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="15" />
+							<float name="damage" value="18" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073796194" />
+							<uniqueid name="id" value="1073796380" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796195" />
+					<uniqueid name="id" value="1073796381" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -416,15 +416,15 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="6.25" />
+							<float name="damage" value="7.5" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073796196" />
+							<uniqueid name="id" value="1073796382" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796197" />
+					<uniqueid name="id" value="1073796383" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -460,15 +460,15 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="3.75" />
+							<float name="damage" value="4.5" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073796198" />
+							<uniqueid name="id" value="1073796384" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796199" />
+					<uniqueid name="id" value="1073796385" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -484,12 +484,12 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="pzb39_target" />
+		<string name="fx_action_target_name" value="ptrs41_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="mg_phosphorus" />
-		<string name="fx_tracer_name" value="fx_pzb39_tracer" />
+		<string name="fx_tracer_name" value="fx_ptrs41_tracer" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
@@ -523,7 +523,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\008mm_pzb39_shell" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\012mm_boys_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="40" />
@@ -552,7 +552,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="5" />
+			<float name="angle_scatter" value="6.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
