@@ -569,7 +569,7 @@
 											<locstring name="ui_name" value="0" />
 											<bool name="include_queued" value="False" />
 											<bool name="is_present" value="True" />
-											<instance_reference name="upgrade_name" value="upgrade\british\items\tommy_assault_package_upgrade_mp" />
+											<instance_reference name="upgrade_name" value="upgrade\british\items\section_stens" mod="84428889d71d41a48e2eff09c2425d54" />
 										</template_reference>
 									</list>
 								</template_reference>
@@ -618,42 +618,6 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_squad_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="include_queued" value="False" />
-							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\british\items\tommy_assault_package_upgrade_mp" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_active_weapon">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<string name="hardpoint_name" value="hardpoint_01" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\single_fire\rifle\tommy_lee_enfield_rifle_mp" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\change_weapon">
-							<float name="hardpoint" value="1" />
-							<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\sub_machine_gun\tommy_9mm_sten_gun_mp" />
-							<uniqueid name="id" value="1073753659" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073753660" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
 						<template_reference name="required" value="requirements\required_any_in_list">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
@@ -681,7 +645,7 @@
 									<locstring name="ui_name" value="0" />
 									<bool name="include_queued" value="False" />
 									<bool name="is_present" value="True" />
-									<instance_reference name="upgrade_name" value="upgrade\british\items\tommy_assault_package_upgrade_mp" />
+									<instance_reference name="upgrade_name" value="upgrade\british\items\section_stens" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
 							</list>
 						</template_reference>
@@ -781,9 +745,11 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\infantry_section_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\always_on_ability\tommy_cover_combat_bonus" />
+				<instance_reference name="ability" value="abilities\british\always_on_ability\tommy_cover_combat_bonus_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_nothrow_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\assault_tommy_m34_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\tank_hunter_section_heat_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
