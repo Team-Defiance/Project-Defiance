@@ -134,6 +134,9 @@
 			<instance_reference name="ability" value="abilities\british\commander\lend_lease\04_reinforce_the_front" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\british\commander\lend_lease\05_command_cromwell_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\british\commander\lend_lease\06_concentrated_fire_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\special_weapons\special_weapons_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\special_weapons\01_tank_hunter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\commander\special_weapons\02_m3_recovery_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
