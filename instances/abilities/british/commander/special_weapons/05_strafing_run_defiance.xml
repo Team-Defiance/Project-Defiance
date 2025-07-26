@@ -43,11 +43,11 @@
 								<float name="target_lead_in_distance" value="20" />
 								<int name="attacks_per_aircraft" value="3" />
 								<float name="target_lead_out_distance" value="20" />
-								<float name="delay_between_attack" value="18" />
+								<float name="delay_between_attack" value="10" />
 								<float name="attack_sway_width" value="4" />
 								<float name="attack_sway_frequency" value="2" />
 								<float name="target_attack_distance" value="225" />
-								<float name="target_attack_time_sec" value="4.25" />
+								<float name="target_attack_time_sec" value="3" />
 								<float name="initial_attack_delay" value="0" />
 							</group>
 							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
@@ -65,7 +65,7 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="True" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\hawker_typhoon\strafe_hawker_typhoon_mp" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\hawker_typhoon\strafe_hawker_typhoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073756703" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -108,7 +108,7 @@
 								<float name="target_lead_in_distance" value="20" />
 								<int name="attacks_per_aircraft" value="3" />
 								<float name="target_lead_out_distance" value="20" />
-								<float name="delay_between_attack" value="18" />
+								<float name="delay_between_attack" value="10" />
 								<float name="attack_sway_width" value="4" />
 								<float name="attack_sway_frequency" value="2" />
 								<float name="target_attack_distance" value="225" />
@@ -143,7 +143,7 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="True" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\hawker_typhoon\rocket_hawker_typhoon_mp" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\hawker_typhoon\rocket_hawker_typhoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073756705" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -169,23 +169,70 @@
 					<string name="function_name" value="AE_AirstrikeEvent" />
 					<uniqueid name="id" value="1073756708" />
 				</template_reference>
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="60" />
-					<bool name="fire_and_forget" value="True" />
+				<template_reference name="action" value="action\timed_action" comment="Draws the circle for the first 5 seconds of the ability">
+					<float name="duration" value="5" />
+					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\reticule_action">
-							<uniqueid name="id" value="1073756709" />
+							<uniqueid name="id" value="1073796487" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
 							<float name="radius" value="50" />
 						</template_reference>
+						<template_reference name="action" value="action\ui_map_icon_action">
+							<uniqueid name="id" value="1073796488" />
+							<icon name="icon" value="Icons_minimap_aoe_circle" />
+							<float name="scale" value="80" />
+							<colour name="colour" value="1442775040" />
+						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756710" />
+					<uniqueid name="id" value="1073796489" />
 				</template_reference>
-				<template_reference name="action" value="action\ui_map_icon_action">
-					<uniqueid name="id" value="1073756711" />
-					<icon name="icon" value="Icons_minimap_aoe_circle" />
-					<float name="scale" value="80" />
-					<colour name="colour" value="1442775040" />
+				<template_reference name="action" value="action\requirement_action" comment="Stops drawing the circle when all planes are shot down">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_any_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_entity">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="entity_blueprint_name" value="ebps\races\british\vehicles\hawker_typhoon\strafe_hawker_typhoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<enum name="entity_type" value="" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_entity">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<instance_reference name="entity_blueprint_name" value="ebps\races\british\vehicles\hawker_typhoon\rocket_hawker_typhoon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<enum name="entity_type" value="" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\reticule_action">
+							<uniqueid name="id" value="1073796490" />
+							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+							<float name="radius" value="50" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_map_icon_action">
+							<uniqueid name="id" value="1073796491" />
+							<icon name="icon" value="Icons_minimap_aoe_circle" />
+							<float name="scale" value="80" />
+							<colour name="colour" value="1442775040" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796492" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>
@@ -206,7 +253,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="True" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="55" />
+		<float name="duration_time" value="60" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -307,7 +354,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_airstrike" />
-		<int name="ui_position" value="120" />
+		<int name="ui_position" value="50" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />

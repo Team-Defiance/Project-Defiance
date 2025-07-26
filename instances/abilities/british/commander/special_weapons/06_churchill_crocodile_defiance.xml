@@ -30,6 +30,123 @@
 					<bool name="event_send_to_target_player" value="False" />
 					<uniqueid name="id" value="1073792362" />
 				</template_reference>
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="4" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\paradrop_action">
+							<float name="drop_drift" value="10" />
+							<float name="drop_height" value="18" />
+							<float name="drop_zone_centre_scatter" value="4" />
+							<instance_reference name="entity_to_spawn" value="ebps\projectile\artillery_flare_west_german" />
+							<float name="max_squad_entity_count" value="0" />
+							<instance_reference name="squad_to_spawn" value="" />
+							<int name="number_of_entities_to_spawn" value="1" />
+							<float name="entity_scatter" value="25" />
+							<float name="entity_height_scatter" value="5" />
+							<uniqueid name="id" value="1073796480" />
+							<enum name="paradrop_drift_type" value="random_dir" />
+							<template_reference name="scatter_type_option" value="options\none">
+							</template_reference>
+							<float name="group_landing_scatter_radius" value="0" />
+							<group name="group_landing_scatter_addition">
+								<instance_reference name="blizzard_active_player_upgrade" value="" />
+								<float name="additional_scatter_during_blizzard" value="0" />
+								<float name="additional_scatter_in_fog_of_war" value="0" />
+								<float name="additional_scatter_near_entity" value="0" />
+								<float name="additional_scatter_entity_radius" value="0" />
+								<list name="near_entities">
+								</list>
+							</group>
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796481" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="8" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\paradrop_action">
+							<float name="drop_drift" value="10" />
+							<float name="drop_height" value="18" />
+							<float name="drop_zone_centre_scatter" value="4" />
+							<instance_reference name="entity_to_spawn" value="ebps\projectile\artillery_flare_west_german" />
+							<float name="max_squad_entity_count" value="0" />
+							<instance_reference name="squad_to_spawn" value="" />
+							<int name="number_of_entities_to_spawn" value="1" />
+							<float name="entity_scatter" value="25" />
+							<float name="entity_height_scatter" value="5" />
+							<uniqueid name="id" value="1073796482" />
+							<enum name="paradrop_drift_type" value="random_dir" />
+							<template_reference name="scatter_type_option" value="options\none">
+							</template_reference>
+							<float name="group_landing_scatter_radius" value="0" />
+							<group name="group_landing_scatter_addition">
+								<instance_reference name="blizzard_active_player_upgrade" value="" />
+								<float name="additional_scatter_during_blizzard" value="0" />
+								<float name="additional_scatter_in_fog_of_war" value="0" />
+								<float name="additional_scatter_near_entity" value="0" />
+								<float name="additional_scatter_entity_radius" value="0" />
+								<list name="near_entities">
+								</list>
+							</group>
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796483" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="11" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\paradrop_action">
+							<float name="drop_drift" value="10" />
+							<float name="drop_height" value="18" />
+							<float name="drop_zone_centre_scatter" value="4" />
+							<instance_reference name="entity_to_spawn" value="ebps\projectile\artillery_flare_west_german" />
+							<float name="max_squad_entity_count" value="0" />
+							<instance_reference name="squad_to_spawn" value="" />
+							<int name="number_of_entities_to_spawn" value="1" />
+							<float name="entity_scatter" value="25" />
+							<float name="entity_height_scatter" value="5" />
+							<uniqueid name="id" value="1073796484" />
+							<enum name="paradrop_drift_type" value="random_dir" />
+							<template_reference name="scatter_type_option" value="options\none">
+							</template_reference>
+							<float name="group_landing_scatter_radius" value="0" />
+							<group name="group_landing_scatter_addition">
+								<instance_reference name="blizzard_active_player_upgrade" value="" />
+								<float name="additional_scatter_during_blizzard" value="0" />
+								<float name="additional_scatter_in_fog_of_war" value="0" />
+								<float name="additional_scatter_near_entity" value="0" />
+								<float name="additional_scatter_entity_radius" value="0" />
+								<list name="near_entities">
+								</list>
+							</group>
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796485" />
+					<bool name="can_prevent_refund" value="True" />
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
@@ -96,8 +213,8 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11083420" />
-			<locstring name="help_text" value="11083419" />
+			<locstring name="extra_text" value="3946" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="3947" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_cmdr_british_vanguard_operations_crocodile" />
 			<string name="overlay_name" value="" />
@@ -148,9 +265,17 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\commander\defiance\unlock\special_weapons_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\anvil_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="120" />
+		<int name="ui_position" value="60" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
