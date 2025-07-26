@@ -53,7 +53,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\move_enable_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796342" />
+					<uniqueid name="id" value="1073796444" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_deformation_action">
 					<group name="deform_decal">
@@ -133,12 +133,12 @@
 					<float name="scale_x" value="18" />
 					<float name="scale_y" value="18" />
 					<bool name="undoable" value="False" />
-					<uniqueid name="id" value="1073796343" />
+					<uniqueid name="id" value="1073796445" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_stamp_action">
 					<string name="stamp_name" value="data:art\stamps\british_emp_large_01.stamp" />
 					<float name="rotation" value="0" />
-					<uniqueid name="id" value="1073796344" />
+					<uniqueid name="id" value="1073796446" />
 					<float name="offset_x" value="0" />
 					<float name="offset_y" value="0" />
 					<float name="offset_z" value="0" />
@@ -167,19 +167,19 @@
 								<template_reference name="action" value="action\ui_unit_modifier_action">
 									<bool name="die_with_creator" value="False" />
 									<template_reference name="ui_info" value="tables\ui_info">
-										<locstring name="screen_name" value="11082797" />
-										<locstring name="help_text" value="11082798" />
+										<locstring name="screen_name" value="0" />
+										<locstring name="help_text" value="0" />
 										<icon name="icon_name" value="Icons_commander_cmdr_british_stand_fast_operation" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
-									<uniqueid name="id" value="1073796345" />
+									<uniqueid name="id" value="1073796447" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073796346" />
+							<uniqueid name="id" value="1073796448" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796347" />
+					<uniqueid name="id" value="1073796449" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -256,10 +256,10 @@
 							<bool name="destroy" value="True" />
 							<list name="death_reaction_table">
 							</list>
-							<uniqueid name="id" value="1073796348" />
+							<uniqueid name="id" value="1073796450" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796349" />
+					<uniqueid name="id" value="1073796451" />
 					<bool name="any_subaction" value="False" />
 				</template_reference>
 			</list>
@@ -566,10 +566,18 @@
 				<template_reference name="required" value="requirements\required_structure">
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="0" />
-					<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_2_mp" />
+					<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<int name="required_structure_count" value="1" />
 					<bool name="check_team" value="False" />
 					<bool name="require_construction_complete" value="True" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\british\commander\defiance\unlock\special_weapons_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -664,7 +672,7 @@
 			<bool name="must_be_in_territory" value="False" />
 			<bool name="must_be_on" value="False" />
 			<bool name="must_not_be_in_walkable_surfaces" value="True" />
-			<instance_reference name="on_construction_squad" value="sbps\races\british\team_weapons\at_gun_17_pounder\brit_17_pounder_at_gun_squad_mp" />
+			<instance_reference name="on_construction_squad" value="sbps\races\british\team_weapons\at_gun_17_pounder\special_brit_17_pounder_at_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<float name="orientation" value="0" />
 			<enum name="placement_type" value="tp_structure" />
 			<bool name="prefer_spots_on_side_with_leader" value="False" />
@@ -754,7 +762,7 @@
 					<float name="scale_x" value="12" />
 					<float name="scale_y" value="12" />
 					<bool name="undoable" value="False" />
-					<uniqueid name="id" value="1073796350" />
+					<uniqueid name="id" value="1073796452" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -770,25 +778,25 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796351" />
+					<uniqueid name="id" value="1073796453" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_crew_action">
 					<bool name="apply_removal" value="False" />
 					<string name="crew_name" value="Gunner" />
 					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073796352" />
+					<uniqueid name="id" value="1073796454" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_crew_action">
 					<bool name="apply_removal" value="False" />
 					<string name="crew_name" value="Loader" />
 					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073796353" />
+					<uniqueid name="id" value="1073796455" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_crew_action">
 					<bool name="apply_removal" value="False" />
 					<string name="crew_name" value="Gunner_seated" />
 					<bool name="kill" value="False" />
-					<uniqueid name="id" value="1073796354" />
+					<uniqueid name="id" value="1073796456" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
@@ -796,12 +804,12 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="maingun_visibility" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073796355" />
+					<uniqueid name="id" value="1073796457" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="True" />
 					<instance_reference name="upgrade" value="upgrade\is_manned" />
-					<uniqueid name="id" value="1073796356" />
+					<uniqueid name="id" value="1073796458" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -879,5 +887,5 @@
 			<bool name="use_simbox_range_plus_spots" value="True" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742387" />
+	<uniqueid name="pbgid" value="1073742391" />
 </instance>

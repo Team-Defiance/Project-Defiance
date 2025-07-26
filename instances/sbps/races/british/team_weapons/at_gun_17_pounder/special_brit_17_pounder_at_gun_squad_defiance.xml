@@ -360,11 +360,11 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\british\buildings\emplacements\brit_17_pounder_pit_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\british\buildings\emplacements\special_brit_17_pounder_pit_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\british\buildings\emplacements\brit_17_pounder_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\british\buildings\emplacements\special_brit_17_pounder_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -416,7 +416,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="2000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11090855" />
+								<locstring name="screen_name" value="0" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -437,7 +437,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796365" />
+										<uniqueid name="id" value="1073796431" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -446,7 +446,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="4000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11090858" />
+								<locstring name="screen_name" value="0" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -467,7 +467,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796366" />
+										<uniqueid name="id" value="1073796432" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -494,14 +494,14 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796367" />
+										<uniqueid name="id" value="1073796433" />
 									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
 								<float name="experience_value" value="8000" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="11090856" />
+								<locstring name="screen_name" value="0" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -512,7 +512,7 @@
 										<bool name="apply_to_entities_in_squad" value="False" />
 										<bool name="trigger_publish_event" value="False" />
 										<instance_reference name="upgrade" value="upgrade\max_vet" />
-										<uniqueid name="id" value="1073796368" />
+										<uniqueid name="id" value="1073796434" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -528,7 +528,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796369" />
+										<uniqueid name="id" value="1073796435" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -546,7 +546,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796370" />
+										<uniqueid name="id" value="1073796436" />
 									</template_reference>
 								</list>
 							</group>
@@ -574,7 +574,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796376" />
+										<uniqueid name="id" value="1073796437" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -604,7 +604,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073796377" />
+										<uniqueid name="id" value="1073796438" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -792,7 +792,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073796371" />
+						<uniqueid name="id" value="1073796439" />
 					</template_reference>
 					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
@@ -814,10 +814,10 @@
 										<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="1073796372" />
+								<uniqueid name="id" value="1073796440" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073796373" />
+						<uniqueid name="id" value="1073796441" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
 				</list>
@@ -863,7 +863,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073796374" />
+						<uniqueid name="id" value="1073796442" />
 					</template_reference>
 				</list>
 			</group>
@@ -902,12 +902,12 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="pivot" />
 					<string name="undo_action_state_name" value="on" />
-					<uniqueid name="id" value="1073796375" />
+					<uniqueid name="id" value="1073796443" />
 				</template_reference>
 			</list>
 			<list name="can_setup_requirement">
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742001" />
+	<uniqueid name="pbgid" value="1073742002" />
 </instance>
