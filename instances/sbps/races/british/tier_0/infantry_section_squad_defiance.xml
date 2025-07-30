@@ -378,15 +378,6 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="0.65" />
-								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
-							</template_reference>
-							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
-								<enum name="application_type" value="apply_to_ability" />
-								<bool name="exclusive" value="False" />
-								<string name="modifier_id" value="" />
 								<instance_reference name="target_type_name" value="abilities\british\modal_ability\grenades\assault_tommy_no77_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.65" />
@@ -815,7 +806,6 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_he_barrage_section_nothrow_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\assault_tommy_no77_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\tank_hunter_section_heat_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -1230,15 +1220,6 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\british\modal_ability\grenades\infantry_section_mills_bomb_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
