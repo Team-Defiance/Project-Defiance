@@ -1,4 +1,4 @@
-<instance description="WC-51 is planting mines now - it's so joever broskis" template="abilities">
+<instance description="Plant schu mine" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -9,21 +9,21 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="12" />
+					<float name="delay" value="8" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="True" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="1" />
-							<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_m5_riflemen_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="True" />
+							<float name="duration" value="0" />
+							<instance_reference name="entity_blueprint" value="ebps\races\german\buildings\defensive_structure\schu_42_mine" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="permanent" value="False" />
 							<bool name="player_owned" value="True" />
 							<group name="target_info">
 								<template_reference name="target_info" value="type_ability_target_type\all">
 								</template_reference>
 							</group>
-							<uniqueid name="id" value="1073750292" />
+							<uniqueid name="id" value="1073796608" />
 							<template_reference name="spawn_attached_option" value="options\none">
 							</template_reference>
 							<list name="spawned_entity_actions">
@@ -35,21 +35,8 @@
 							</group>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073750293" />
+					<uniqueid name="id" value="1073796609" />
 					<bool name="can_prevent_refund" value="True" />
-				</template_reference>
-				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\riegel_mine_plant" />
-					<float name="duration" value="6" />
-					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073750294" />
-				</template_reference>
-				<template_reference name="action" value="action\construct_action">
-					<uniqueid name="id" value="1073750295" />
-					<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\m20_m6_at_mine_mp" />
-					<bool name="query_only" value="True" />
-					<bool name="check_visible" value="False" />
-					<bool name="use_target_entity_facing" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -66,11 +53,11 @@
 			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
-		<string name="cursor_ghost_blueprint" value="" />
+		<string name="cursor_ghost_blueprint" value="armies\german\weapons\schumine_batch\schumine_batch" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="True" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="13" />
+		<float name="duration_time" value="9" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -99,7 +86,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="min" />
+			<string name="code_1" value="atm" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -117,13 +104,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="1491" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1490" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="M" />
-			<icon name="icon_name" value="Icons_abilities_ability_aef_at_mines" />
+			<locstring name="extra_text" value="11171624" />
+			<locstring name="help_text" value="4019" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="V" />
+			<icon name="icon_name" value="Icons_buildings_building_west_german_schu_mine" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1492" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="4018" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -135,24 +122,14 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_not">
+			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1816" mod="84428889d71d41a48e2eff09c2425d54" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_slot_item">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="check_item_on_entity" value="True" />
-						<bool name="display_requirement" value="True" />
-						<float name="max_owned" value="10" />
-						<float name="min_owned" value="1" />
-						<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
-					</template_reference>
-				</list>
+				<locstring name="ui_name" value="4017" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -166,23 +143,23 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
+		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="nondirectional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_m5_riflemen_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742074" />
+	<uniqueid name="pbgid" value="1073742644" />
 </instance>
