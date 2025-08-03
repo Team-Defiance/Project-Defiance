@@ -1,9 +1,9 @@
 <instance description="the vehicle activated teller mine&#xA;Multiplayer Clone." template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
-			<string name="alternate_sua" value="" />
+			<string name="alternate_sua" value="armies\soviet\structures\mine_tm35_planted\mine_tm35_planted" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\weapons\tellermine_batch\tellermine_batch" />
+			<file name="animator" value="armies\aef\weapons\m6_antitank_mine_batch\m6_antitank_mine_batch" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -341,7 +341,7 @@
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="2316" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="E" />
-			<icon name="icon_name" value="Icons_buildings_building_german_mines" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_ap_mine_no_3_mk1" />
 			<enum name="kill_type" value="building" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
@@ -382,14 +382,14 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="90" />
 			<icon name="minimap_icon" value="" />
-			<icon name="portrait_icon_winter" value="Icons_portraits_building_german_anti_personnel_mine_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_aef_m6_at_mine_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<icon name="portrait_icon_summer" value="Icons_portraits_building_german_anti_personnel_mine_s_portrait" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_m6_at_mine_s_portrait" />
 			<locstring name="brief_text" value="3981" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="extra_text" value="2317" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
