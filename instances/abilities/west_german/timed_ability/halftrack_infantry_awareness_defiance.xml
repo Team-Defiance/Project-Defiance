@@ -7,7 +7,7 @@
 			</list>
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="20" />
+					<float name="duration" value="0" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\animator_set_state">
@@ -16,26 +16,10 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_sight_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073754567" />
-						</template_reference>
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073754572" />
+							<uniqueid name="id" value="1073796602" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754568" />
+					<uniqueid name="id" value="1073796603" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -51,7 +35,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\extended_sight_enable" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754569" />
+					<uniqueid name="id" value="1073796604" />
 				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
@@ -59,15 +43,15 @@
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11046555" />
-								<locstring name="help_text" value="2460" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="11046554" />
 								<icon name="icon_name" value="Icons_abilities_ability_german_infantry_awareness" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073754570" />
+							<uniqueid name="id" value="1073796605" />
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="squad" />
-					<uniqueid name="id" value="1073754571" />
+					<uniqueid name="id" value="1073796606" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -137,13 +121,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2462" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2461" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="11039324" />
+			<locstring name="help_text" value="11032125" />
 			<string name="hotkey_name" value="N" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_infantry_awareness" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2464" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11034261" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
