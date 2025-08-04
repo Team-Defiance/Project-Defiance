@@ -46,19 +46,19 @@
 				<float name="radius" value="6" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.375" />
+				<float name="far" value="0.125" />
 				<float name="near" value="1" />
 				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.1875" />
+				<float name="far" value="0.0625" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="2" />
+				<float name="far" value="5.5" />
+				<float name="near" value="4.5" />
+				<float name="mid" value="5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="True" />
@@ -75,17 +75,17 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1" />
-				<float name="mid" value="15" />
-				<float name="near" value="30" />
+				<float name="mid" value="10" />
+				<float name="near" value="40" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="mid" value="0.25" />
+				<float name="far" value="0.00125" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_grenade" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
-			<int name="damage_max_members_per_squad" value="3" />
+			<int name="damage_max_members_per_squad" value="2" />
 		</group>
 		<group name="behaviour">
 			<bool name="aa_weapon" value="False" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="60" />
-			<float name="min" value="60" />
+			<float name="max" value="40" />
+			<float name="min" value="40" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -409,7 +409,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.15" />
+			<float name="amount" value="0.075" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="30" />
-			<float name="far" value="30" />
-			<float name="mid" value="30" />
+			<float name="near" value="40" />
+			<float name="far" value="40" />
+			<float name="mid" value="40" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
