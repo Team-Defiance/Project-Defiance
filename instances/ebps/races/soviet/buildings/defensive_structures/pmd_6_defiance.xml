@@ -1,9 +1,9 @@
-<instance description="the vehicle activated teller mine&#xA;Multiplayer Clone." template="ebps">
+<instance description="" template="ebps">
 	<list name="extensions">
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
-			<string name="alternate_sua" value="armies\soviet\structures\mine_tm35_planted\mine_tm35_planted" />
+			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\weapons\tellermine_batch\tellermine_batch" />
+			<file name="animator" value="armies\soviet\structures\mine_pmd6_planted\mine_pmd6_planted" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -27,22 +27,6 @@
 			<float name="revert_time" value="5" />
 			<float name="revert_time_on_detection" value="10" />
 			<list name="camouflage_actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\health_maximum_modifier">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="10" />
-							<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073753300" />
-				</template_reference>
 			</list>
 			<list name="first_strike_actions">
 			</list>
@@ -66,7 +50,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\explosive_weapons\mines\mkv_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\mines\axis_mine_anti_personnel_mp" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -83,10 +67,10 @@
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
-					<float name="munition" value="40" />
+					<float name="munition" value="7" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="40" />
+				<float name="time_seconds" value="10" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
@@ -165,11 +149,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.0016" />
+					<float name="vertical_scale" value="0.001" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="6" />
-				<float name="radius_min" value="5.455" />
+				<float name="radius_max" value="1.5" />
+				<float name="radius_min" value="1" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -261,11 +245,11 @@
 			<bool name="regeneration_disabled" value="True" />
 			<bool name="remove_from_pathfinding_on_death" value="True" />
 			<bool name="reveal_to_all_on_death" value="False" />
-			<bool name="ui_can_scuttle" value="True" />
+			<bool name="ui_can_scuttle" value="False" />
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
 				<template_reference name="action" value="action\detonate">
-					<uniqueid name="id" value="1073753301" />
+					<uniqueid name="id" value="1073796622" />
 				</template_reference>
 			</list>
 			<float name="armor" value="35" />
@@ -306,9 +290,9 @@
 		<template_reference name="exts" value="ebpextensions\mine_ext">
 			<float name="defuse_seconds" value="2" />
 			<float name="detonate_on_defuse_chance" value="0" />
-			<float name="detonate_radius" value="0.001" />
+			<float name="detonate_radius" value="0.01" />
 			<float name="initial_delay_seconds" value="2.5" />
-			<enum name="trigger_type" value="vehicle" />
+			<enum name="trigger_type" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext">
 			<group name="unit_type_list">
@@ -336,13 +320,13 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="" />
-			<bool name="ghost_enable" value="True" />
+			<string name="extra_text_deprecated" value="Effective against Infantry." />
+			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="2316" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="E" />
-			<icon name="icon_name" value="Icons_abilities_ability_british_ap_mine_no_3_mk1" />
-			<enum name="kill_type" value="building" />
+			<locstring name="help_text" value="4027" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="S" />
+			<icon name="icon_name" value="Icons_commander_cmdr_german_mine_pmd6" />
+			<enum name="kill_type" value="" />
 			<float name="minimap_color_a" value="255" />
 			<float name="minimap_color_b" value="255" />
 			<float name="minimap_color_g" value="255" />
@@ -350,10 +334,10 @@
 			<bool name="minimap_enable" value="False" />
 			<bool name="minimap_team_only" value="False" />
 			<bool name="minimap_teamcolor" value="False" />
-			<bool name="obb_selectable" value="True" />
+			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2315" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11052483" />
 			<enum name="selection_name" value="" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="multi_entity_kind_select" />
@@ -364,13 +348,13 @@
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_2">
-				<string name="code_1" value="tm" />
-				<string name="code_2" value="mi" />
+				<string name="code_1" value="mi" />
+				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="atm" />
-				<string name="code_2" value="min" />
+				<string name="code_1" value="min" />
+				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_cover">
@@ -382,16 +366,16 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="90" />
 			<icon name="minimap_icon" value="" />
-			<icon name="portrait_icon_winter" value="Icons_portraits_building_aef_m6_at_mine_w_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_german_mine_pmd6_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<float name="minimap_icon_scale" value="1" />
-			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_m6_at_mine_s_portrait" />
-			<locstring name="brief_text" value="3981" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="extra_text" value="2317" mod="84428889d71d41a48e2eff09c2425d54" />
+			<icon name="portrait_icon_summer" value="Icons_portraits_building_german_mine_pmd6_s_portrait" />
+			<locstring name="brief_text" value="11052485" />
+			<locstring name="extra_text" value="11052487" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
@@ -399,7 +383,7 @@
 			<locstring name="help_text_world" value="0" />
 			<locstring name="extra_text_world" value="0" />
 			<enum name="map_rotation_type_override" value="no_override" />
-			<icon name="symbol_icon_name" value="Icons_symbols_building_german_mines_symbol" />
+			<icon name="symbol_icon_name" value="Icons_symbols_cmdr_german_mine_pmd6_symbol" />
 			<enum name="occlusion_state" value="can_be_occluded" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
@@ -439,6 +423,46 @@
 			<bool name="use_blocking_box" value="False" />
 			<enum name="does_block_line_of_sight" value="Never" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\requirement_ext">
+			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_resource">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="11056058" />
+					<template_reference name="resource" value="tables\resource_table">
+						<float name="action" value="0" />
+						<float name="command" value="2" />
+						<float name="fuel" value="0" />
+						<float name="manpower" value="0" />
+						<float name="munition" value="0" />
+						<float name="soviet_progression" value="0" />
+						<float name="soviet_227" value="0" />
+						<float name="popcap" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_any_in_list">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<list name="requirements">
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\anti_personnel_mines" />
+						</template_reference>
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage_and_display" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\tank_traps" />
+						</template_reference>
+					</list>
+				</template_reference>
+			</list>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
 			<group name="detect_camouflage">
 				<float name="tp_global" value="-1" />
@@ -460,13 +484,22 @@
 				</template_reference>
 			</group>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\impass_ext">
+			<bool name="cant_build" value="True" />
+			<bool name="heavy_crush" value="False" />
+			<bool name="land" value="False" />
+			<bool name="light_crush" value="False" />
+			<bool name="medium_crush" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\marker_ext">
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
 			<bool name="automatic_fit_on_placement" value="True" />
 			<bool name="can_set_facing" value="False" />
 			<float name="cancel_refund_percentage" value="100" />
 			<bool name="check_terrain" value="True" />
 			<string name="construction_state_name" value="Mine_Lay_State" />
-			<float name="construction_transition_time" value="1.36666" />
+			<float name="construction_transition_time" value="0" />
 			<bool name="force_construction" value="False" />
 			<float name="max_engineers" value="8" />
 			<bool name="must_be_in_command_territory" value="False" />
@@ -484,12 +517,11 @@
 			<bool name="query_upgrade_actions_for_range_ui" value="True" />
 			<bool name="random_rotation" value="False" />
 			<float name="replace_ghost_distance" value="5" />
-			<float name="spacing_distance" value="2" />
+			<float name="spacing_distance" value="0" />
 			<bool name="self_construct" value="False" />
 			<list name="on_construction_actions">
 			</list>
 			<list name="materials">
-				<instance_reference name="material" value="material\icywater" />
 			</list>
 			<group name="field_placement_info">
 				<instance_reference name="border_entity" value="" />
@@ -506,19 +538,6 @@
 			<bool name="squad_ignore_pathfinding" value="False" />
 			<bool name="must_not_be_in_command_territory" value="False" />
 		</template_reference>
-		<template_reference name="exts" value="ebpextensions\impass_ext">
-			<bool name="cant_build" value="True" />
-			<bool name="heavy_crush" value="False" />
-			<bool name="land" value="False" />
-			<bool name="light_crush" value="False" />
-			<bool name="medium_crush" value="False" />
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\requirement_ext">
-			<list name="requirement_table">
-			</list>
-		</template_reference>
-		<template_reference name="exts" value="ebpextensions\marker_ext">
-		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742202" />
+	<uniqueid name="pbgid" value="1073742396" />
 </instance>
