@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="4.3" />
+			<float name="reaction_radius" value="9" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -296,16 +296,11 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_crew_shocked" />
-							<uniqueid name="id" value="1073796613" />
-						</template_reference>
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-							<uniqueid name="id" value="1073796614" />
+							<instance_reference name="critical" value="critical\vehicle_lose_treads_or_wheels" />
+							<uniqueid name="id" value="1073796652" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796612" />
+					<uniqueid name="id" value="1073796651" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -332,7 +327,7 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="0" />
+		<float name="flinch_radius" value="9" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -484,5 +479,5 @@
 		<list name="target_type_table">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742314" />
+	<uniqueid name="pbgid" value="1073742318" />
 </instance>

@@ -32,7 +32,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mine\fieldcraft_mine_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mine\pomz_2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -349,7 +349,7 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="0" />
+				<float name="chance_splat_only" value="0.6" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
@@ -425,8 +425,8 @@
 					<float name="vertical_scale" value="0" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="5" />
-				<float name="radius_min" value="5" />
+				<float name="radius_max" value="2.5" />
+				<float name="radius_min" value="2.435" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">

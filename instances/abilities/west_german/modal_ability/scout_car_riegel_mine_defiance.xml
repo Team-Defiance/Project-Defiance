@@ -16,7 +16,7 @@
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\spawn_entity">
 							<float name="duration" value="0" />
-							<instance_reference name="entity_blueprint" value="ebps\races\german\buildings\defensive_structure\halftrack_riegel_43_mine_mp" />
+							<instance_reference name="entity_blueprint" value="ebps\races\german\buildings\defensive_structure\riegel_43_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="permanent" value="True" />
 							<bool name="player_owned" value="True" />
 							<group name="target_info">
