@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="10" />
-				<float name="near" value="20" />
+				<float name="near" value="40" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.5" />
