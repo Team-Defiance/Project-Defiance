@@ -205,7 +205,7 @@
 				<float name="speed_increment" value="0.5" />
 				<enum name="firing_angle_type" value="low_angle" />
 				<bool name="use_homing_when_no_blocker" value="False" />
-				<float name="non_collide_start_angle" value="15" />
+				<float name="non_collide_start_angle" value="5" />
 				<float name="non_collide_end_angle" value="40" />
 			</group>
 			<float name="building_hit_fx_delay" value="0" />
@@ -221,7 +221,7 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="True" />
-			<float name="speed" value="40" />
+			<float name="speed" value="35" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">

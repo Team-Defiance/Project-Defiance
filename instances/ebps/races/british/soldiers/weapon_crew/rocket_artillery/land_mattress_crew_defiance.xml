@@ -311,19 +311,19 @@
 			<enum name="selection_type" value="squad_select" />
 			<bool name="sloppy_selectable" value="True" />
 			<group name="speaker">
-				<string name="code_1" value="wi" />
+				<string name="code_1" value="wd" />
 				<string name="code_2" value="" />
 				<string name="code_3" value="" />
 			</group>
 			<group name="speech_code_2">
-				<string name="code_1" value="lm" />
-				<string name="code_2" value="wi" />
-				<string name="code_3" value="in" />
+				<string name="code_1" value="b6" />
+				<string name="code_2" value="at" />
+				<string name="code_3" value="wp" />
 			</group>
 			<group name="speech_code_3">
-				<string name="code_1" value="lmt" />
-				<string name="code_2" value="wic" />
-				<string name="code_3" value="inf" />
+				<string name="code_1" value="b6p" />
+				<string name="code_2" value="ant" />
+				<string name="code_3" value="wpc" />
 			</group>
 			<group name="speech_code_cover">
 				<string name="code_1" value="" />
@@ -357,8 +357,8 @@
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
 			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="" />
-			<string name="skin_winter" value="" />
+			<string name="skin_summer" value="assault_summer" />
+			<string name="skin_winter" value="assault_winter" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_ext">
 			<bool name="should_face_target" value="True" />
