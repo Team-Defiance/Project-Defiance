@@ -17,7 +17,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
+					<bool name="check_self" value="True" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -53,7 +53,7 @@
 					</template_reference>
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
+					<bool name="check_self" value="True" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="True" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
@@ -64,6 +64,17 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<float name="veterancy_rank" value="3" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="5" />
+								</template_reference>
+							</list>
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -76,6 +87,36 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073795810" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="5" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\construct_action">
+							<uniqueid name="id" value="1073796094" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="query_only" value="False" />
+							<bool name="check_visible" value="False" />
+							<bool name="use_target_entity_facing" value="False" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796095" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -119,8 +160,8 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="2" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="60" />
-		<bool name="refundable" value="True" />
+		<float name="recharge_time" value="80" />
+		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
@@ -148,7 +189,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11071202" />
+			<locstring name="extra_text" value="3808" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11056077" />
 			<string name="hotkey_name" value="E" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_construct_radio_beacon" />
@@ -166,23 +207,9 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11072355" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\aef\buildings\defensive_structures\airborne_beacon_mp" />
-						<int name="required_structure_count" value="3" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-				</list>
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="21" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

@@ -16,7 +16,7 @@
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\spawn_entity">
 							<float name="duration" value="1" />
-							<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\m20_m6_at_mine_mp" />
+							<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="permanent" value="True" />
 							<bool name="player_owned" value="True" />
 							<group name="target_info">

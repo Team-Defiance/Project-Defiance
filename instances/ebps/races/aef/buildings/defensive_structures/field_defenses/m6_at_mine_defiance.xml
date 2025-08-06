@@ -66,7 +66,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mines\m20_m6_mine_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mines\m20_m6_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -239,6 +239,36 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="1" />
+					<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073796655" />
+					<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+						<string name="attach_target_marker_name" value="" />
+						<string name="attach_action_name" value="" />
+						<string name="detach_action_name" value="" />
+						<bool name="destroy_on_cancel" value="True" />
+						<list name="detach_entity_actions">
+						</list>
+					</template_reference>
+					<list name="spawned_entity_actions">
+						<template_reference name="actions" value="action\self_destruction_action">
+							<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\satchel_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073796656" />
+						</template_reference>
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -339,7 +369,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11068298" />
+			<locstring name="help_text" value="4000" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_at_mines" />
 			<enum name="kill_type" value="" />
@@ -382,7 +412,7 @@
 			<locstring name="tooltip_txt" value="0" />
 			<int name="ui_priority" value="90" />
 			<icon name="minimap_icon" value="" />
-			<icon name="portrait_icon_winter" value="Icons_portraits_building_aef_m6_at_mine_s_portrait" />
+			<icon name="portrait_icon_winter" value="Icons_portraits_building_aef_m6_at_mine_w_portrait" />
 			<group name="speaker_alt">
 				<string name="code_1" value="" />
 				<string name="code_2" value="" />
@@ -391,7 +421,7 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_m6_at_mine_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="11068299" />
+			<locstring name="extra_text" value="4001" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />

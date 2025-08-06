@@ -50,7 +50,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mines\rear_echelon_mines_mp" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\mines\m7_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -76,7 +76,7 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="0" />
+				<float name="chance_splat_only" value="0.6" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
@@ -149,11 +149,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.001" />
+					<float name="vertical_scale" value="0.0004" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1.5" />
-				<float name="radius_min" value="1" />
+				<float name="radius_max" value="5" />
+				<float name="radius_min" value="4.875" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -320,10 +320,10 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Deals light damage to armor but slows them for a short period of time. Only triggered by vehicles." />
+			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11145722" />
+			<locstring name="help_text" value="3998" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="V" />
 			<icon name="icon_name" value="Icons_buildings_building_aef_m7_light_at_mine" />
 			<enum name="kill_type" value="" />
@@ -337,7 +337,7 @@
 			<bool name="obb_selectable" value="False" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11145648" />
+			<locstring name="screen_name" value="3997" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="selection_name" value="" />
 			<float name="selection_scale" value="1" />
 			<enum name="selection_type" value="multi_entity_kind_select" />
@@ -374,8 +374,8 @@
 			</group>
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_building_aef_m7_light_at_mine_s_portrait" />
-			<locstring name="brief_text" value="11145721" />
-			<locstring name="extra_text" value="11145570" />
+			<locstring name="brief_text" value="3999" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4002" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="False" />
 			<bool name="show_entity_appearance" value="True" />

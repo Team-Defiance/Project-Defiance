@@ -180,6 +180,7 @@
 				<instance_reference name="upgrade" value="upgrade\british\items\sapper_flamethrower" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\items\sappers_heavy_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\items\sappers_single_bar_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\sappers_breakthrough_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_combat_behaviour_ext">
@@ -376,6 +377,15 @@
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
+							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+								<enum name="application_type" value="apply_to_ability" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<instance_reference name="target_type_name" value="abilities\british\modal_ability\grenades\sw_sappers_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.65" />
+								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+							</template_reference>
 						</list>
 						<uniqueid name="id" value="1073752948" />
 					</template_reference>
@@ -496,7 +506,43 @@
 					</template_reference>
 				</template_reference>
 			</list>
-			<list name="squad_entity_actions">
+			<list name="squad_entity_actions" comment="Carbine Sappers">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\british\items\sapper_carbines" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_active_weapon">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<string name="hardpoint_name" value="hardpoint_01" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\sub_machine_gun\royal_engineer_sten_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\change_weapon">
+							<float name="hardpoint" value="1" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\single_fire\rifle\m1_carbine_cav_scout_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073796559" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796560" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
@@ -515,6 +561,7 @@
 				<instance_reference name="ability" value="abilities\british\modal_ability\destroy_cover_defiance_placeholder" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_engineer_defiance_test" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\sappers_cutters_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\grenades\sw_sappers_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -662,11 +709,11 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\british\buildings\field_defenses\mines\british_cuppa_ap_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\british\buildings\field_defenses\mines\british_ap_no3_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="14" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\british\buildings\field_defenses\mines\british_spider_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\british\buildings\field_defenses\mines\british_gs_mkv_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
@@ -680,6 +727,10 @@
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\british\buildings\emplacements\brit_3_inch_mortar_emplacement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\british\buildings\emplacements\special_brit_17_pounder_pit_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="22" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />

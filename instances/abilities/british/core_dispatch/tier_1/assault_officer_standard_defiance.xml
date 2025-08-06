@@ -70,7 +70,7 @@
 		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="" />
+		<enum name="shared_timer" value="generic_unit_shared" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="of" />
@@ -152,7 +152,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
-		<bool name="ability_super_event_cue" value="True" />
+		<bool name="ability_super_event_cue" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1073742413" />
 </instance>

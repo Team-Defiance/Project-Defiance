@@ -743,7 +743,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="sniper_antitank" />
 		<string name="fx_tracer_name" value="fx_ptrs41_tracer" />
-		<float name="fx_tracer_speed" value="80" />
+		<float name="fx_tracer_speed" value="90" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -805,17 +805,17 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7.5" />
+			<float name="angle_scatter" value="6.5" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="5" />
+			<float name="distance_scatter_max" value="5.5" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
 			<float name="distance_scatter_offset" value="0.8" />
-			<float name="distance_scatter_ratio" value="1" />
-			<float name="fow_angle_multiplier" value="1" />
-			<float name="fow_distance_multiplier" value="1" />
+			<float name="distance_scatter_ratio" value="0.25" />
+			<float name="fow_angle_multiplier" value="1.25" />
+			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
