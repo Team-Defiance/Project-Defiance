@@ -32,7 +32,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\explosive_weapons\mines\artillery_flare_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\mine\pomz_2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -49,7 +49,7 @@
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
-					<float name="munition" value="50" />
+					<float name="munition" value="80" />
 					<float name="popcap" value="0" />
 				</group>
 				<float name="time_seconds" value="32" />
@@ -120,7 +120,7 @@
 		<template_reference name="exts" value="ebpextensions\mine_ext">
 			<float name="defuse_seconds" value="2" />
 			<float name="detonate_on_defuse_chance" value="0" />
-			<float name="detonate_radius" value="8" />
+			<float name="detonate_radius" value="1" />
 			<float name="initial_delay_seconds" value="2.5" />
 			<enum name="trigger_type" value="" />
 		</template_reference>
@@ -500,26 +500,56 @@
 					<float name="duration" value="10" />
 					<bool name="fire_and_forget" value="True" />
 					<list name="subactions">
-						<template_reference name="action" value="action\reveal_area">
-							<bool name="all_player" value="True" />
-							<float name="duration" value="1" />
-							<bool name="fire_and_forget" value="False" />
-							<float name="radius" value="10" />
-							<uniqueid name="id" value="1073796666" />
-						</template_reference>
-						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="4" />
-							<float name="radius" value="8" />
-							<float name="source_offset_x" value="0" />
-							<float name="source_offset_y" value="250" />
-							<float name="source_offset_z" value="0" />
-							<float name="time_range_between_shells_max" value="1.25" />
-							<float name="time_range_between_shells_min" value="1" />
-							<instance_reference name="weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\150mm_hummel_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073796688" />
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="2" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="False" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\off_map_artillery">
+									<float name="num_salvo" value="5" />
+									<float name="radius" value="10" />
+									<float name="source_offset_x" value="0" />
+									<float name="source_offset_y" value="250" />
+									<float name="source_offset_z" value="0" />
+									<float name="time_range_between_shells_max" value="1.5" />
+									<float name="time_range_between_shells_min" value="1.25" />
+									<instance_reference name="weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\150mm_grille_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<uniqueid name="id" value="1073796762" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796761" />
+							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073796665" />
+				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="3" />
+					<bool name="fire_and_forget" value="True" />
+					<list name="subactions">
+						<template_reference name="action" value="action\spawn_entity">
+							<float name="duration" value="5" />
+							<instance_reference name="entity_blueprint" value="ebps\races\soviet\buildings\defensive_structures\flare_fire_mp" />
+							<bool name="permanent" value="False" />
+							<bool name="player_owned" value="True" />
+							<group name="target_info">
+								<template_reference name="target_info" value="type_ability_target_type\all">
+								</template_reference>
+							</group>
+							<uniqueid name="id" value="1073796759" />
+							<template_reference name="spawn_attached_option" value="options\none">
+							</template_reference>
+							<list name="spawned_entity_actions">
+							</list>
+							<group name="offset">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="0" />
+							</group>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796760" />
 				</template_reference>
 			</list>
 		</template_reference>
