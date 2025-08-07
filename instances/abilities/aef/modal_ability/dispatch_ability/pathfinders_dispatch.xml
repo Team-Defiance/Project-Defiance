@@ -1,4 +1,4 @@
-<instance description="ranger dispatch" template="abilities">
+<instance description="dispatches the m20 utility car" template="abilities">
 	<group name="ability_bag" comment="Vanilla ability">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -10,16 +10,16 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="10" />
+					<float name="minimum_pop_used" value="6" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\aef\soldiers\ranger_squad\ranger_squad_commander_mp" />
+						<instance_reference name="squad" value="sbps\races\aef\soldiers\pathfinder_squad\pathfinder_squad_mp" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073795016" />
+					<uniqueid name="id" value="1073796692" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073795017" />
+					<uniqueid name="id" value="1073796693" />
 				</template_reference>
 			</list>
 		</group>
@@ -41,7 +41,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
-			<float name="manpower" value="350" />
+			<float name="manpower" value="290" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -61,13 +61,13 @@
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
-		<bool name="initial_recharge" value="False" />
+		<bool name="initial_recharge" value="True" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="26" />
+		<float name="recharge_time" value="25" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -78,7 +78,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="ufr" />
+			<string name="code_1" value="pth" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -96,13 +96,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11077781" />
-			<locstring name="help_text" value="11077782" />
+			<locstring name="extra_text" value="11071155" />
+			<locstring name="help_text" value="11071154" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_units_unit_aef_ranger" />
+			<icon name="icon_name" value="Icons_units_unit_aef_pathfinders" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11077780" />
+			<locstring name="screen_name" value="11071153" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -114,27 +114,13 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_resource">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11064650" />
-				<template_reference name="resource" value="tables\resource_table">
-					<float name="action" value="0" />
-					<float name="command" value="3" />
-					<float name="fuel" value="0" />
-					<float name="manpower" value="0" />
-					<float name="munition" value="0" />
-					<float name="soviet_progression" value="0" />
-					<float name="soviet_227" value="0" />
-					<float name="popcap" value="0" />
-				</template_reference>
-			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\ranger_dispatch" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\pathfinders" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -146,7 +132,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="20" />
+		<int name="ui_position" value="10" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
@@ -178,5 +164,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="96850" />
+	<uniqueid name="pbgid" value="16340" />
 </instance>
