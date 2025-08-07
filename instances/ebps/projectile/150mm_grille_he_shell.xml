@@ -199,14 +199,14 @@
 			<float name="acceleration" value="60" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="False" />
-				<bool name="is_artillery" value="False" />
+				<bool name="is_artillery" value="True" />
 				<bool name="is_target_only" value="False" />
-				<float name="speed_distance_multiplier" value="0.2" />
+				<float name="speed_distance_multiplier" value="0.125" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="low_angle" />
-				<bool name="use_homing_when_no_blocker" value="True" />
-				<float name="non_collide_start_angle" value="10" />
-				<float name="non_collide_end_angle" value="89" />
+				<enum name="firing_angle_type" value="high_angle" />
+				<bool name="use_homing_when_no_blocker" value="False" />
+				<float name="non_collide_start_angle" value="15" />
+				<float name="non_collide_end_angle" value="40" />
 			</group>
 			<float name="building_hit_fx_delay" value="0" />
 			<bool name="collision_building_wall_panel_ignore" value="False" />
@@ -219,10 +219,10 @@
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="Marker_Tank_Barrel_End" />
 			<float name="life_time_while_alive" value="0" />
-			<float name="rotation_speed" value="10000" />
+			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="False" />
 			<float name="speed" value="25" />
-			<bool name="collision_land_ignore" value="True" />
+			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
