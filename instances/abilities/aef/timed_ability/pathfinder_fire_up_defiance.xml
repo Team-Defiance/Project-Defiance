@@ -10,6 +10,22 @@
 					<float name="duration" value="20" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\camouflage_enable">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="enable" />
+									<float name="value" value="-1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796772" />
+						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="False" />
 							<bool name="global_fire_and_forget_on_success" value="False" />
@@ -53,20 +69,68 @@
 											<float name="value" value="1.25" />
 											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\camouflage_enable">
-											<enum name="application_type" value="apply_to_squad" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="enable" />
-											<float name="value" value="-1" />
-											<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
-										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073796758" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073796757" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_in_state">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="garrisoned" value="False" />
+									<bool name="healed" value="False" />
+									<float name="in_combat_since" value="-1" />
+									<bool name="injured" value="False" />
+									<bool name="leader" value="False" />
+									<bool name="not_moving" value="True" />
+									<bool name="not_retreating" value="False" />
+									<bool name="pinned" value="False" />
+									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.25" />
+											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.75" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073796773" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796771" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -123,8 +187,8 @@
 							<bool name="die_with_creator" value="True" />
 							<template_reference name="ui_info" value="tables\ui_info">
 								<locstring name="screen_name" value="11105933" />
-								<locstring name="help_text" value="11105934" />
-								<icon name="icon_name" value="Icons_abilities_ability_aef_sprint_hmg" />
+								<locstring name="help_text" value="4063" mod="84428889d71d41a48e2eff09c2425d54" />
+								<icon name="icon_name" value="Icons_abilities_ability_aef_assault" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="1073796755" />
@@ -146,7 +210,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="15" />
+			<float name="munition" value="25" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -171,7 +235,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
