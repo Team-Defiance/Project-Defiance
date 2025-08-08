@@ -49,7 +49,7 @@
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
-					<float name="munition" value="80" />
+					<float name="munition" value="45" />
 					<float name="popcap" value="0" />
 				</group>
 				<float name="time_seconds" value="32" />
@@ -535,26 +535,15 @@
 							</group>
 						</template_reference>
 						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="5" />
-							<float name="radius" value="24" />
-							<float name="source_offset_x" value="30" />
-							<float name="source_offset_y" value="30" />
-							<float name="source_offset_z" value="30" />
+							<float name="num_salvo" value="1" />
+							<float name="radius" value="2.5" />
+							<float name="source_offset_x" value="0" />
+							<float name="source_offset_y" value="300" />
+							<float name="source_offset_z" value="0" />
 							<float name="time_range_between_shells_max" value="0.5" />
 							<float name="time_range_between_shells_min" value="0.25" />
 							<instance_reference name="weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\150mm_grille_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073796764" />
-						</template_reference>
-						<template_reference name="action" value="action\off_map_artillery">
-							<float name="num_salvo" value="1" />
-							<float name="radius" value="5" />
-							<float name="source_offset_x" value="30" />
-							<float name="source_offset_y" value="30" />
-							<float name="source_offset_z" value="30" />
-							<float name="time_range_between_shells_max" value="0.5" />
-							<float name="time_range_between_shells_min" value="0.25" />
-							<instance_reference name="weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\150mm_grille_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073796765" />
 						</template_reference>
 						<template_reference name="action" value="action\trigger_dca_action">
 							<string name="dca_action_name" value="UI\barrage_warning_smoke" />
