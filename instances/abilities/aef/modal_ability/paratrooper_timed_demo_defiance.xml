@@ -7,7 +7,7 @@
 			</list>
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="5" />
+					<float name="duration" value="2.5" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\animator_set_state">
@@ -37,37 +37,147 @@
 					<string name="undo_action_state_name" value="ready" />
 					<uniqueid name="id" value="1073795977" />
 				</template_reference>
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="4066" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="True" />
+					<uniqueid name="id" value="1073796954" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1.5" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="True" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="0" />
-							<instance_reference name="entity_blueprint" value="ebps\props\timed_charge_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="True" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="5" />
 								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073795978" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
 							</list>
-							<group name="offset">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795979" />
-					<bool name="can_prevent_refund" value="True" />
+					<list name="action_table">
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="2.5" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="True" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="0" />
+									<instance_reference name="entity_blueprint" value="ebps\props\timed_charge_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="True" />
+									<bool name="player_owned" value="True" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073796939" />
+									<template_reference name="spawn_attached_option" value="options\none">
+									</template_reference>
+									<list name="spawned_entity_actions">
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+								<template_reference name="action" value="action\game_event_action">
+									<float name="event_extra_param" value="0" />
+									<float name="event_param_begin" value="1" />
+									<float name="event_param_end" value="-1" />
+									<enum name="event_type" value="grenade" />
+									<bool name="event_send_to_target_player" value="False" />
+									<uniqueid name="id" value="1073796940" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796941" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796938" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="5" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="1.5" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="True" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="0" />
+									<instance_reference name="entity_blueprint" value="ebps\props\timed_charge_defiance_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="True" />
+									<bool name="player_owned" value="True" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073796942" />
+									<template_reference name="spawn_attached_option" value="options\none">
+									</template_reference>
+									<list name="spawned_entity_actions">
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+								<template_reference name="action" value="action\game_event_action">
+									<float name="event_extra_param" value="0" />
+									<float name="event_param_begin" value="1" />
+									<float name="event_param_end" value="-1" />
+									<enum name="event_type" value="grenade" />
+									<bool name="event_send_to_target_player" value="False" />
+									<uniqueid name="id" value="1073796943" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796944" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796945" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>
@@ -88,7 +198,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="-1" />
+		<float name="duration_time" value="3" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -103,7 +213,7 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="True" />
-		<float name="move_back_distance" value="15" />
+		<float name="move_back_distance" value="20" />
 		<float name="range" value="4" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="60" />
