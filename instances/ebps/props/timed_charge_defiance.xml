@@ -160,7 +160,7 @@
 			<float name="attack_priority" value="0" />
 			<enum name="camouflage_type" value="tp_mine" />
 			<bool name="chain_revealer" value="False" />
-			<float name="detection_radius" value="0" />
+			<float name="detection_radius" value="10" />
 			<bool name="must_be_fully_constructed" value="False" />
 			<bool name="permanently_activated" value="True" />
 			<float name="combat_reset_time" value="5" />
@@ -193,7 +193,7 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\grenade\paratrooper_timed_demo_charge" />
+							<instance_reference name="weapon" value="weapon\global\explosive_weapons\mines\demo_charge_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -279,11 +279,11 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.005" />
+					<float name="vertical_scale" value="0.004" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="4.2" />
-				<float name="radius_min" value="3.8" />
+				<float name="radius_max" value="9.315" />
+				<float name="radius_min" value="8.46" />
 				<float name="splat_only_splat_seconds" value="90" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -353,6 +353,36 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="1" />
+					<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073796902" />
+					<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+						<string name="attach_target_marker_name" value="" />
+						<string name="attach_action_name" value="" />
+						<string name="detach_action_name" value="" />
+						<bool name="destroy_on_cancel" value="True" />
+						<list name="detach_entity_actions">
+						</list>
+					</template_reference>
+					<list name="spawned_entity_actions">
+						<template_reference name="actions" value="action\self_destruction_action">
+							<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\280mm_rocket_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073796903" />
+						</template_reference>
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -410,7 +440,7 @@
 					<uniqueid name="id" value="1073796867" />
 				</template_reference>
 			</list>
-			<float name="armor" value="35" />
+			<float name="armor" value="5" />
 			<float name="rear_armor" value="0" />
 			<float name="target_size" value="1" />
 			<bool name="dies_from_broken_ice" value="True" />
