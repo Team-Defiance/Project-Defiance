@@ -1,4 +1,4 @@
-<instance description="passive used for the display of this ability on the command bar." template="abilities">
+<instance description="" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -11,9 +11,9 @@
 			</list>
 		</group>
 		<enum name="activation" value="timed" />
-		<bool name="can_interrupt" value="False" />
-		<bool name="can_target_in_fow" value="False" />
-		<float name="caster_close_in_distance" value="2" />
+		<bool name="can_interrupt" value="True" />
+		<bool name="can_target_in_fow" value="True" />
+		<float name="caster_close_in_distance" value="0" />
 		<bool name="casters_can_evacuate" value="False" />
 		<group name="cost">
 			<float name="action" value="0" />
@@ -25,9 +25,9 @@
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="True" />
-		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="0" />
+		<bool name="disable_combat" value="False" />
+		<bool name="disable_when_active" value="False" />
+		<float name="duration_time" value="-1" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -42,12 +42,12 @@
 		<bool name="initial_recharge" value="False" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
-		<float name="move_back_distance" value="10" />
-		<float name="range" value="85" />
+		<float name="move_back_distance" value="0" />
+		<float name="range" value="25" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="120" />
+		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="True" />
-		<bool name="require_no_shot_block" value="False" />
+		<bool name="require_no_shot_block" value="True" />
 		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
@@ -56,31 +56,31 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="hd1" />
+			<string name="code_1" value="tac" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
-		<enum name="squad_caster" value="squad" />
-		<enum name="target" value="tp_any" />
+		<enum name="squad_caster" value="one_entity" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
-			<template_reference name="target_special_validation" value="type_ability_target_type\all">
+			<template_reference name="target_special_validation" value="type_ability_target_type\is_position">
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="0" />
 		<float name="toggled_recharge_time_on" value="0" />
 		<group name="ui_cursor">
-			<string name="cursor_bad" value="modal_ability_cancel" />
-			<string name="cursor_good" value="modal_ability" />
+			<string name="cursor_bad" value="" />
+			<string name="cursor_good" value="" />
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="1974" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="1973" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="1489" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1488" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_cmdr_german_hull_down" />
-			<string name="overlay_name" value="" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_observation_mode" />
+			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="1972" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="1487" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -88,40 +88,32 @@
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
-		<bool name="validate_actions" value="True" />
+		<bool name="validate_actions" value="False" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\festung_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="10" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_reticule" value="" />
-		<float name="ui_reticule_radius_min" value="1" />
-		<float name="ui_reticule_radius_max" value="1" />
-		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
+		<float name="ui_reticule_radius_min" value="3" />
+		<float name="ui_reticule_radius_max" value="3" />
+		<enum name="pending_ability_out_of_range_behaviour" value="stop" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
+		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
-		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -134,5 +126,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742184" />
+	<uniqueid name="pbgid" value="1073742648" />
 </instance>

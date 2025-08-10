@@ -117,6 +117,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\captain_extra_models_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\cav_scouts_sight_bonus_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\cav_scouts_stealth_detection_ui_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\m20_stealth_detection_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\pathfinder_fast_capture_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\ranger_bazookas_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\sherman_jumbo_passive_ui_defiance.rgd
@@ -203,6 +204,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\tier_2\churchill_a22_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\tier_2\cromwell_a27m_cruiser_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\core_dispatch\tier_2\sherman_firefly_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commando_demo_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\cromwell_command_tank_coordinated_advance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\destroy_cover_defiance_placeholder.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\half_track_healing_m3.rgd
@@ -503,6 +505,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\force_reload_cannons_222_pe.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\force_reload_cannons_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\force_reload_cannons_raketen59_pe.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\force_reload_cannons_wc51.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\force_reload_mgs_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\garrisoned_squad_facing.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\global\modal_ability\garrisoned_squad_facing_unset.rgd
@@ -575,6 +578,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commissar_propaganda_artillery_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commissar_zis_smoke.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\drop_medpack_ability_half_track_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\engineer_demo_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\merge_ability_strelki.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\rocket_trap_fire.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\saperi_flare_defiance.rgd
@@ -1038,9 +1042,11 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\stuka_airstrike_bomb_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\zis_smoke_shell_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\brit_clearing_demo_charge_instant.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\demo_charge_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\muni_fx_dummy_charge.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\pioniere_medical_supplies.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\pioniere_medical_supplies_vet5.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\props\timed_charge_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\buildings\base_building\aef_base_stamper_defiance_defunc.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\buildings\base_building\aef_custom_base_stamper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\buildings\base_building\usf_tier0_barracks_defiance.rgd
