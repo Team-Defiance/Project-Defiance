@@ -39,7 +39,7 @@
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="1" />
+			<float name="target_size" value="12" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -176,10 +176,6 @@
 					</list>
 					<uniqueid name="id" value="1073795553" />
 				</template_reference>
-				<template_reference name="action" value="action\scar_function_call">
-					<string name="function_name" value="AE_ReplaceCrushableConstructionEntity" />
-					<uniqueid name="id" value="1073795554" />
-				</template_reference>
 			</list>
 			<list name="materials">
 				<instance_reference name="material" value="material\icywater" />
@@ -215,8 +211,8 @@
 		<template_reference name="exts" value="ebpextensions\impass_ext">
 			<bool name="cant_build" value="True" />
 			<bool name="heavy_crush" value="False" />
-			<bool name="land" value="False" />
-			<bool name="light_crush" value="False" />
+			<bool name="land" value="True" />
+			<bool name="light_crush" value="True" />
 			<bool name="medium_crush" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext">
