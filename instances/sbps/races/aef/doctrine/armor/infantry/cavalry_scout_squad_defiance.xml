@@ -899,6 +899,15 @@
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\detect_global_camouflage_radius">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\detect_global_camouflage_radius" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749564" />
 									</template_reference>
