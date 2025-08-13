@@ -4,11 +4,11 @@
 			<list name="end_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\050mm_kwk39_puma_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073752912" />
+					<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\088mm_kwk36_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073797019" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="6.5" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -21,7 +21,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752913" />
+					<uniqueid name="id" value="1073797020" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -29,8 +29,8 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\050mm_kwk39_puma_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073752915" />
+					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\088mm_kwk36_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073797021" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="True" />
@@ -38,26 +38,26 @@
 					<bool name="retrigger" value="True" />
 					<string name="state_machine_name" value="ability_attack_buff_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073752917" />
+					<uniqueid name="id" value="1073797022" />
 				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="2163" mod="84428889d71d41a48e2eff09c2425d54" />
-								<locstring name="help_text" value="2164" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="screen_name" value="0" />
+								<locstring name="help_text" value="0" />
 								<icon name="icon_name" value="Icons_abilities_ability_aef_apds_rounds" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073792296" />
+							<uniqueid name="id" value="1073797023" />
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="squad" />
-					<uniqueid name="id" value="1073792295" />
+					<uniqueid name="id" value="1073797024" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="6.5" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -70,7 +70,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752916" />
+					<uniqueid name="id" value="1073797025" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -111,7 +111,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="45" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="okw_elite_armor_ability_group" />
@@ -140,9 +140,9 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2115" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="1867" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="F" />
+			<string name="hotkey_name" value="X" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -168,7 +168,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="3726" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
 					<float name="command" value="7" />
@@ -214,5 +214,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742221" />
+	<uniqueid name="pbgid" value="1073742651" />
 </instance>
