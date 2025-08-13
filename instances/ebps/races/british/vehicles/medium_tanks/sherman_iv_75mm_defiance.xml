@@ -813,6 +813,16 @@
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\british\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="False" />
+								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
+								<string name="animator_bp_female" value="" />
+							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
 						</template_reference>
@@ -962,7 +972,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\aef\items\sherman_top_gunner_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\items\ukf_sherman_tank_commander" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\marker_ext">
