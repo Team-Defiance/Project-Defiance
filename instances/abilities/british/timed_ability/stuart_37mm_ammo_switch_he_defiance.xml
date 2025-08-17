@@ -14,7 +14,7 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\037mm_canister_shot_stuart" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\037mm_stuart_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073797100" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
@@ -73,7 +73,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="6" />
+		<float name="duration_time" value="4" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -123,7 +123,7 @@
 			<locstring name="extra_text" value="4113" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="4114" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
-			<icon name="icon_name" value="Icons_abilities_ability_aef_canister_shot" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_high_explosive_rounds_sherman" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="4093" mod="84428889d71d41a48e2eff09c2425d54" />
