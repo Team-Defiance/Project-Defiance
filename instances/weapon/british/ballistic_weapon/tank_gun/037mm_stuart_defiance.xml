@@ -326,10 +326,10 @@
 								<template_reference name="action" value="action\trigger_critical_action">
 									<float name="remove_at_health" value="1" />
 									<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
-									<uniqueid name="id" value="1073754697" />
+									<uniqueid name="id" value="1073797067" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754698" />
+							<uniqueid name="id" value="1073797068" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -376,10 +376,10 @@
 											<bool name="set" value="False" />
 											<bool name="cause_criticals" value="False" />
 											<enum name="crit_weapon_type" value="big_explosive" />
-											<uniqueid name="id" value="1073754699" />
+											<uniqueid name="id" value="1073797069" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073754700" />
+									<uniqueid name="id" value="1073797070" />
 									<bool name="fire_and_forget_non_global" value="False" />
 									<template_reference name="ui_help_text" value="tables\help_text_phrase">
 										<int name="phrase_order" value="0" />
@@ -387,7 +387,7 @@
 									</template_reference>
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073754701" />
+							<uniqueid name="id" value="1073797071" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -395,7 +395,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754702" />
+					<uniqueid name="id" value="1073797072" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -450,7 +450,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\037mm_greyhound_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\037mm_stuart_ap_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="45" />
@@ -571,5 +571,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742022" />
+	<uniqueid name="pbgid" value="1073742329" />
 </instance>

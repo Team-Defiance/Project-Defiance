@@ -453,6 +453,7 @@
 			<list name="standard_upgrades">
 				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\artillery_pyrotechnics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\platoon_aec_research" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\platoon_stuart_research" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -850,6 +851,7 @@
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\assault_officer_standard_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\aec_armoured_car_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\6_pounder_at_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\stuart_v_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_long" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_smoke_screen_base_mp" />
