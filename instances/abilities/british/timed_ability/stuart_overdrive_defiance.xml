@@ -171,17 +171,17 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073755733" />
+									<uniqueid name="id" value="1073797134" />
 								</template_reference>
 								<template_reference name="action" value="action\change_move_data_action">
 									<float name="acceleration_multiplier" value="1.6" />
 									<float name="deceleration_multiplier" value="1" />
 									<float name="pathfinding_size_x" value="0" />
 									<float name="pathfinding_size_y" value="0" />
-									<uniqueid name="id" value="1073755734" />
+									<uniqueid name="id" value="1073797135" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073755735" />
+							<uniqueid name="id" value="1073797136" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -194,11 +194,11 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_movement_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073755736" />
+							<uniqueid name="id" value="1073797137" />
 						</template_reference>
 						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="3" />
-							<locstring name="message" value="4121" mod="84428889d71d41a48e2eff09c2425d54" />
+							<locstring name="message" value="4122" mod="84428889d71d41a48e2eff09c2425d54" />
 							<float name="message_colour_a" value="255" />
 							<float name="message_colour_b" value="255" />
 							<float name="message_colour_g" value="255" />
@@ -206,28 +206,7 @@
 							<float name="message_duration" value="1" />
 							<bool name="team_only" value="False" />
 							<bool name="check_fow" value="False" />
-							<uniqueid name="id" value="1073755737" />
-						</template_reference>
-						<template_reference name="action" value="action\target_occupants_action">
-							<list name="subactions">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073755738" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073755739" />
+							<uniqueid name="id" value="1073797138" />
 						</template_reference>
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
@@ -237,10 +216,10 @@
 								<icon name="icon_name" value="Icons_abilities_ability_soviet_steady_driving" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073755740" />
+							<uniqueid name="id" value="1073797141" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073755741" />
+					<uniqueid name="id" value="1073797142" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -437,7 +416,7 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2690" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
 				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
@@ -474,5 +453,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742378" />
+	<uniqueid name="pbgid" value="1073742656" />
 </instance>

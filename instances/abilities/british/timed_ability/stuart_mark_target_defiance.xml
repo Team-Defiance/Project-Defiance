@@ -66,7 +66,7 @@
 								<template_reference name="required" value="requirements\required_entity">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\vehicles\stuka_aircraft\stuka_mark_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="entity_blueprint_name" value="ebps\races\british\vehicles\hawker_typhoon\typhoon_mark_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<enum name="entity_type" value="" />
 								</template_reference>
 							</list>
@@ -139,7 +139,7 @@
 					</template_reference>
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="True" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\west_german\vehicles\stuka_aircraft\stuka_mark_target_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\hawker_typhoon\typhoon_mark_target_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073797112" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -231,13 +231,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="4106" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4105" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
-			<icon name="icon_name" value="Icons_abilities_ability_west_german_coordinated_fire" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_priority_targeting_on" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="4094" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11145651" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
