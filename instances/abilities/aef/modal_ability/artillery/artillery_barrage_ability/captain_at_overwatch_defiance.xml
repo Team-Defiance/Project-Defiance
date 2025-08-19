@@ -27,27 +27,19 @@
 					<uniqueid name="id" value="1073797239" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="3" />
+					<float name="delay" value="5" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\timed_action">
-							<float name="duration" value="20" />
+							<float name="duration" value="30" />
 							<bool name="fire_and_forget" value="False" />
 							<list name="subactions">
 								<template_reference name="action" value="action\blip_action">
 									<enum name="blip_type" value="sector_artillery" />
 									<float name="duration" value="0" />
 									<uniqueid name="id" value="1073797220" />
-								</template_reference>
-								<template_reference name="action" value="action\animator_set_action">
-									<string name="action_name" value="ui\sector_artillery_loop" />
-									<bool name="allies_only" value="False" />
-									<float name="duration" value="0" />
-									<bool name="fire_and_forget" value="False" />
-									<bool name="is_terrain_only" value="True" />
-									<uniqueid name="id" value="1073797230" />
 								</template_reference>
 								<template_reference name="action" value="action\overwatch_action">
 									<group name="area_info">
@@ -56,10 +48,10 @@
 										<enum name="area_type" value="circle" />
 										<float name="radius" value="15" />
 									</group>
-									<float name="duration" value="20" />
-									<float name="interval" value="2" />
-									<float name="interval_min" value="1" />
-									<float name="interval_multiplier" value="0.95" />
+									<float name="duration" value="30" />
+									<float name="interval" value="4" />
+									<float name="interval_min" value="2" />
+									<float name="interval_multiplier" value="0.9" />
 									<float name="interval_reset_delay" value="6" />
 									<group name="target_info">
 										<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
@@ -91,10 +83,13 @@
 									</list>
 									<uniqueid name="id" value="1073797199" />
 								</template_reference>
-								<template_reference name="action" value="action\reticule_action">
-									<uniqueid name="id" value="1073797200" />
-									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-									<float name="radius" value="16" />
+								<template_reference name="action" value="action\animator_set_action">
+									<string name="action_name" value="ui\sector_artillery_loop" />
+									<bool name="allies_only" value="False" />
+									<float name="duration" value="0" />
+									<bool name="fire_and_forget" value="False" />
+									<bool name="is_terrain_only" value="True" />
+									<uniqueid name="id" value="1073797252" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073797197" />
@@ -115,6 +110,18 @@
 					<uniqueid name="id" value="1073797192" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="35" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\reticule_action">
+							<uniqueid name="id" value="1073797251" />
+							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+							<float name="radius" value="16" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797249" />
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
@@ -127,7 +134,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="60" />
+			<float name="munition" value="80" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -152,7 +159,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="120" />
+		<float name="recharge_time" value="150" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
