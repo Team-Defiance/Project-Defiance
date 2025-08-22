@@ -263,6 +263,48 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="5" />
+							<instance_reference name="upgrade_name" value="upgrade\terror_struck" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_active_weapon">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<string name="hardpoint_name" value="hardpoint_01" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\single_fire\rifle\m1903_sniper_rifle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\slot_item_add">
+							<instance_reference name="slot_item" value="slot_item\aef\small_arms\m1c_sniper_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="permanent" value="True" />
+							<uniqueid name="id" value="1073797288" />
+						</template_reference>
+						<template_reference name="action" value="action\change_weapon">
+							<float name="hardpoint" value="1" />
+							<instance_reference name="weapon" value="weapon\aef\small_arms\single_fire\rifle\john_bazooka_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073797289" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797287" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>
