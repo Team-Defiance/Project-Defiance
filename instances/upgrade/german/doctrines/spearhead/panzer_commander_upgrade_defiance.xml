@@ -71,21 +71,59 @@
 				<string name="crew_name" value="Spotter" />
 				<uniqueid name="id" value="1073752511" />
 			</template_reference>
-			<template_reference name="action" value="action\animator_set_state">
-				<bool name="apply_to_leader_only" value="False" />
-				<string name="do_action_state_name" value="opened" />
-				<bool name="retrigger" value="False" />
-				<string name="state_machine_name" value="_turret_mg42_hatch" />
-				<string name="undo_action_state_name" value="closed" />
-				<uniqueid name="id" value="1073752512" />
-			</template_reference>
-			<template_reference name="action" value="action\animator_set_state">
-				<bool name="apply_to_leader_only" value="False" />
-				<string name="do_action_state_name" value="on" />
-				<bool name="retrigger" value="False" />
-				<string name="state_machine_name" value="turret_spotter_state" />
-				<string name="undo_action_state_name" value="off" />
-				<uniqueid name="id" value="1073752513" />
+			<template_reference name="action" value="action\requirement_action">
+				<bool name="check_self" value="False" />
+				<bool name="global_fire_and_forget_on_success" value="False" />
+				<bool name="instant_requirement_check" value="False" />
+				<bool name="kill_action_on_failed_requirements" value="False" />
+				<bool name="no_retrigger" value="False" />
+				<bool name="validate_all_sub_actions" value="True" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_not">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirement_table">
+							<template_reference name="required" value="requirements\required_in_state">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<bool name="garrisoned" value="False" />
+								<bool name="healed" value="False" />
+								<float name="in_combat_since" value="5" />
+								<bool name="injured" value="False" />
+								<bool name="leader" value="False" />
+								<bool name="not_moving" value="False" />
+								<bool name="not_retreating" value="False" />
+								<bool name="pinned" value="False" />
+								<bool name="suppressed" value="False" />
+								<bool name="camouflaged" value="False" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
+				<list name="action_table">
+					<template_reference name="action" value="action\animator_set_state">
+						<bool name="apply_to_leader_only" value="False" />
+						<string name="do_action_state_name" value="on" />
+						<bool name="retrigger" value="False" />
+						<string name="state_machine_name" value="turret_spotter_state" />
+						<string name="undo_action_state_name" value="off" />
+						<uniqueid name="id" value="1073797049" />
+					</template_reference>
+					<template_reference name="action" value="action\animator_set_state">
+						<bool name="apply_to_leader_only" value="False" />
+						<string name="do_action_state_name" value="opened" />
+						<bool name="retrigger" value="False" />
+						<string name="state_machine_name" value="_turret_mg42_hatch" />
+						<string name="undo_action_state_name" value="closed" />
+						<uniqueid name="id" value="1073797050" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073797047" />
+				<bool name="fire_and_forget_non_global" value="False" />
+				<template_reference name="ui_help_text" value="tables\help_text_phrase">
+					<int name="phrase_order" value="0" />
+					<locstring name="phrase" value="0" />
+				</template_reference>
 			</template_reference>
 			<template_reference name="action" value="action\animator_set_state">
 				<bool name="apply_to_leader_only" value="False" />

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
+	<fx:Script>
+		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/slotitems/dp27.png')]
+		public static var dp27:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/slotitems/ppsh_41.png')]
+		public static var ppsh_41:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/slotitems/ptrs_41.png')]
+		public static var ptrs_41:Class;
+		]]>
+	</fx:Script>
+</display:MovieClip>

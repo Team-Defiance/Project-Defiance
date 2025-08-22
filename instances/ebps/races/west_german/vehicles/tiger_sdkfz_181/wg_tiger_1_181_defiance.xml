@@ -21,6 +21,9 @@
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\accessory_weapons\tiger_flame_shot" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\timed_ability\tiger_s_mine_launcher" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\toggle_ability\ea_vehicle_crew_repair_toggle_heavy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\wg_apcr_tiger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\toggle_ability\tiger_spec_ops_spearhead_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_tiger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -771,6 +774,21 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\088mm_kwk36_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="2.6" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\088mm_kwk36_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
@@ -1134,91 +1152,11 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\tiger_top_gunner_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\tiger_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\german" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\soviet" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\west_german" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">

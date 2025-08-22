@@ -70,23 +70,23 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<float name="combat_follower_cover_search_radius" value="1" />
 			<group name="cover_formation_table">
-				<instance_reference name="tp_defcover" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_defcover" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_standard_line" />
 				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
 				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
-				<instance_reference name="tp_heavy" value="squad_formations\new_standard_blob_cover" />
-				<instance_reference name="tp_light" value="squad_formations\new_standard_blob_cover" />
-				<instance_reference name="tp_negative" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_open" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_smoke" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_heavy" value="squad_formations\new_standard_line_cover" />
+				<instance_reference name="tp_light" value="squad_formations\new_standard_line_cover" />
+				<instance_reference name="tp_negative" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_open" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_smoke" value="squad_formations\new_standard_line" />
 				<instance_reference name="tp_trench" value="squad_formations\default" />
-				<instance_reference name="tp_water" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_water" value="squad_formations\new_standard_line" />
 				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
 				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
-				<instance_reference name="tp_z_ice" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_z_snow" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_standard_blob" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_z_ice" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_z_snow" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_standard_line" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\new_standard_line" />
 				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="1" />
@@ -104,27 +104,27 @@
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="03_soldiers">
-					<float name="units_in_core" value="3" />
-					<float name="units_in_left_flank" value="0" />
-					<float name="units_in_right_flank" value="0" />
-					<float name="units_in_scout" value="0" />
-				</group>
-				<group name="04_soldiers">
 					<float name="units_in_core" value="1" />
 					<float name="units_in_left_flank" value="1" />
 					<float name="units_in_right_flank" value="1" />
-					<float name="units_in_scout" value="1" />
+					<float name="units_in_scout" value="0" />
 				</group>
-				<group name="05_soldiers">
+				<group name="04_soldiers">
 					<float name="units_in_core" value="2" />
 					<float name="units_in_left_flank" value="1" />
 					<float name="units_in_right_flank" value="1" />
-					<float name="units_in_scout" value="1" />
+					<float name="units_in_scout" value="0" />
+				</group>
+				<group name="05_soldiers">
+					<float name="units_in_core" value="1" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_right_flank" value="2" />
+					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="06_soldiers">
-					<float name="units_in_core" value="3" />
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_core" value="1" />
+					<float name="units_in_left_flank" value="2" />
+					<float name="units_in_right_flank" value="2" />
 					<float name="units_in_scout" value="1" />
 				</group>
 				<group name="07_soldiers">
@@ -152,7 +152,7 @@
 					<float name="units_in_scout" value="2" />
 				</group>
 			</group>
-			<bool name="support_weapons_to_flanks" value="False" />
+			<bool name="support_weapons_to_flanks" value="True" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_item_slot_ext">
 			<bool name="can_pick_up" value="True" />
@@ -412,7 +412,9 @@
 			</group>
 			<float name="reaction_combat_delay_seconds" value="30" />
 			<string name="squad_ai_sniped_file" value="sniped-reaction-plan-mp" />
-			<template_reference name="can_recrew_abandoned_option" value="options\none">
+			<template_reference name="can_recrew_abandoned_option" value="options\sbpextensions\squad_combat_behaviour_ext\can_recrew_abandoned">
+				<template_reference name="is_mobile_driver_option" value="options\none">
+				</template_reference>
 			</template_reference>
 			<float name="reveal_defender_time" value="0" />
 			<bool name="reveal_defender_time_use" value="False" />
@@ -551,8 +553,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-			</list>
-			<list name="squad_entity_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -583,34 +583,42 @@
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\sight_radius_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="addition" />
-											<float name="value" value="10" />
-											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\sight_radius_modifier">
+													<enum name="application_type" value="apply_to_entity" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="addition" />
+													<float name="value" value="10" />
+													<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073796962" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073792587" />
+									<enum name="change_target_type" value="entities" />
+									<uniqueid name="id" value="1073796961" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073792589" />
+							<uniqueid name="id" value="1073796959" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073792571" />
+					<uniqueid name="id" value="1073796960" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+			</list>
+			<list name="squad_entity_actions">
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">
@@ -832,6 +840,22 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\sight_radius_modifier">
+												<enum name="application_type" value="apply_to_entity" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073796851" />
+									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
@@ -875,14 +899,14 @@
 												<float name="value" value="0.75" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\sight_radius_modifier">
+											<template_reference name="modifier" value="modifiers\detect_global_camouflage_radius">
 												<enum name="application_type" value="apply_to_entity" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
+												<float name="value" value="10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\detect_global_camouflage_radius" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749564" />

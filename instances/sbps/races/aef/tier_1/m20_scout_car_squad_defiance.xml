@@ -458,11 +458,11 @@
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_player_upgrade">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="1417" mod="84428889d71d41a48e2eff09c2425d54" />
+					<locstring name="ui_name" value="0" />
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_1\combat_support_group_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_1\recon_support_authorization_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -491,7 +491,7 @@
 							<bool name="is_present" value="True" />
 							<float name="max_completed" value="100" />
 							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_3\veteran_vehicle_training_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_3\unit_readiness_training_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
@@ -896,8 +896,8 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.8" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\vehicle_ability\m20_m6_mine_plant_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>

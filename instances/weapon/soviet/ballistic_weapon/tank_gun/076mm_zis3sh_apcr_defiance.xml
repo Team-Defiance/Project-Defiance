@@ -47,12 +47,12 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.5" />
+				<float name="near" value="1" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
-				<float name="near" value="0.25" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="100" />
-			<float name="min" value="100" />
+			<float name="max" value="60" />
+			<float name="min" value="60" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="True" />
@@ -656,7 +656,7 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.2" />
+					<float name="damage_multiplier" value="2" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>

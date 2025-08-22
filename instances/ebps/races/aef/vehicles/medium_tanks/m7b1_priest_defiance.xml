@@ -756,7 +756,7 @@
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
+					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
@@ -771,7 +771,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\assault_engineer\assault_engineer" />
+								<string name="animator_bp" value="armies\aef\soldiers\lieutenant\lieutenant" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="gunner_priest_right" />

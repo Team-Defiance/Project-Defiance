@@ -8,48 +8,143 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="12" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="True" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="1" />
-							<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="True" />
-							<bool name="player_owned" value="True" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="4" />
 								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073750385" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
 							</list>
-							<group name="offset">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073750386" />
-					<bool name="can_prevent_refund" value="True" />
+					<list name="action_table">
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="12" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="True" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="1" />
+									<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="True" />
+									<bool name="player_owned" value="True" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073796853" />
+									<template_reference name="spawn_attached_option" value="options\none">
+									</template_reference>
+									<list name="spawned_entity_actions">
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796854" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+						<template_reference name="action" value="action\trigger_dca_action">
+							<string name="dca_action_name" value="UI\riegel_mine_plant" />
+							<float name="duration" value="6" />
+							<bool name="is_terrain_only" value="True" />
+							<uniqueid name="id" value="1073796855" />
+						</template_reference>
+						<template_reference name="action" value="action\construct_action">
+							<uniqueid name="id" value="1073796856" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="query_only" value="True" />
+							<bool name="check_visible" value="False" />
+							<bool name="use_target_entity_facing" value="False" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796852" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\riegel_mine_plant" />
-					<float name="duration" value="6" />
-					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073750387" />
-				</template_reference>
-				<template_reference name="action" value="action\construct_action">
-					<uniqueid name="id" value="1073750388" />
-					<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="query_only" value="True" />
-					<bool name="check_visible" value="False" />
-					<bool name="use_target_entity_facing" value="False" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="4" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\delay">
+							<float name="delay" value="9" />
+							<float name="delay_min" value="0" />
+							<bool name="progress_bar" value="True" />
+							<bool name="randomize" value="False" />
+							<list name="delayed_actions">
+								<template_reference name="action" value="action\spawn_entity">
+									<float name="duration" value="1" />
+									<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<bool name="permanent" value="True" />
+									<bool name="player_owned" value="True" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073796858" />
+									<template_reference name="spawn_attached_option" value="options\none">
+									</template_reference>
+									<list name="spawned_entity_actions">
+									</list>
+									<group name="offset">
+										<float name="x" value="0" />
+										<float name="y" value="0" />
+										<float name="z" value="0" />
+									</group>
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073796859" />
+							<bool name="can_prevent_refund" value="True" />
+						</template_reference>
+						<template_reference name="action" value="action\trigger_dca_action">
+							<string name="dca_action_name" value="UI\riegel_mine_plant" />
+							<float name="duration" value="6" />
+							<bool name="is_terrain_only" value="True" />
+							<uniqueid name="id" value="1073796860" />
+						</template_reference>
+						<template_reference name="action" value="action\construct_action">
+							<uniqueid name="id" value="1073796861" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\aef\buildings\defensive_structures\field_defenses\m6_at_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="query_only" value="True" />
+							<bool name="check_visible" value="False" />
+							<bool name="use_target_entity_facing" value="False" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073796857" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>
@@ -123,7 +218,7 @@
 			<icon name="icon_name" value="Icons_abilities_ability_aef_at_mines" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11053548" />
+			<locstring name="screen_name" value="4064" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />

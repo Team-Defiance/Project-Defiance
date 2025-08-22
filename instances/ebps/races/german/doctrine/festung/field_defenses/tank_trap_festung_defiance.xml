@@ -137,7 +137,7 @@
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="26" />
+			<float name="target_size" value="16" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -258,7 +258,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="50" />
+							<float name="value" value="75" />
 							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 						</template_reference>
 					</list>
@@ -293,7 +293,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="30" />
+				<float name="time_seconds" value="40" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">
