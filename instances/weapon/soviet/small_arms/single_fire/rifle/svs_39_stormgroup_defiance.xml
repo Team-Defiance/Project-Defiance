@@ -156,7 +156,7 @@
 				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0" />
+				<float name="near" value="0.05" />
 				<float name="far" value="1.2" />
 				<float name="mid" value="0.85" />
 			</group>
@@ -430,7 +430,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="small_arms" />
-		<string name="name" value="SVS-39 Guards" />
+		<string name="name" value="SVS-39 Stormgroup" />
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">

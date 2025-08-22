@@ -166,7 +166,7 @@
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="4" />
-					<instance_reference name="type" value="ebps\races\west_german\soldiers\weapon_crew\pe_generic_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\west_german\soldiers\weapon_crew\wg_nebel_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -717,17 +717,17 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="1" />
+				<float name="cost_percentage" value="0.5" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">
 				<locstring name="extra_text" value="0" />
-				<locstring name="help_text" value="11090044" />
-				<string name="hotkey_name" value="Reinforce" />
+				<locstring name="help_text" value="11075049" />
+				<string name="hotkey_name" value="reinforce" />
 				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
-				<locstring name="screen_name" value="11090045" />
+				<locstring name="screen_name" value="11071801" />
 			</group>
 			<list name="paradrop_requirements">
 				<template_reference name="required" value="requirements\required_all_in_list">

@@ -8,7 +8,7 @@
 					<uniqueid name="id" value="1073752898" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="5.5" />
+					<float name="duration" value="6.5" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -57,7 +57,7 @@
 					<uniqueid name="id" value="1073792297" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="5.5" />
+					<float name="duration" value="6.5" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -111,7 +111,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="40" />
+		<float name="recharge_time" value="45" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="okw_elite_armor_ability_group" />

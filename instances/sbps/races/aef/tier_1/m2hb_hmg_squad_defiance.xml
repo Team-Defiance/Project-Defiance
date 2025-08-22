@@ -11,7 +11,7 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="11051363" />
 						<string name="hotkey_name" value="H" />
-						<icon name="icon_name" value="Icons_units_unit_aef_mg_crew" />
+						<icon name="icon_name" value="Icons_units_unit_aef_hmg_m2hb" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
@@ -1379,23 +1379,6 @@
 			<float name="multiplier_pct_share" value="0.1" />
 			<float name="radius" value="35" />
 			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
-		</template_reference>
-		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext">
-			<float name="construction_rate_multiplier" value="1" />
-			<list name="in_construction_actions">
-			</list>
-			<list name="construction_groups">
-				<group name="construction_group">
-					<instance_reference name="construction_menu" value="construction_menu\basic_infantry" />
-					<list name="construction_items">
-						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\aef\buildings\defensive_structures\field_defenses\aef_sandbagwall_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="21" />
-						</group>
-					</list>
-					<enum name="construction_type" value="tp_construction_german_grenadier" />
-				</group>
-			</list>
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741904" />

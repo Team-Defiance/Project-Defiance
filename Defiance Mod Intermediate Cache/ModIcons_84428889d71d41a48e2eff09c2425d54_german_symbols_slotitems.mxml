@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
+	<fx:Script>
+		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/slotitems/mg34.png')]
+		public static var mg34:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/slotitems/mg42.png')]
+		public static var mg42:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/slotitems/pzb_39.png')]
+		public static var pzb_39:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/slotitems/stg_44.png')]
+		public static var stg_44:Class;
+		]]>
+	</fx:Script>
+</display:MovieClip>

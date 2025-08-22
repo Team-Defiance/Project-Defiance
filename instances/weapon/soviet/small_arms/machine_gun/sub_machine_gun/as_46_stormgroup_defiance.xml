@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.775" />
+			<float name="near" value="0.76" />
 			<float name="far" value="0.35" />
-			<float name="mid" value="0.6125" />
+			<float name="mid" value="0.621" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -140,8 +140,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="0.55" />
-				<float name="mid" value="0.85" />
+				<float name="far" value="0.5" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -157,8 +157,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.4" />
-				<float name="far" value="1.35" />
-				<float name="mid" value="0.85" />
+				<float name="far" value="1.4" />
+				<float name="mid" value="0.6" />
 			</group>
 		</group>
 		<group name="cover_table">
@@ -314,7 +314,7 @@
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
 		</group>
-		<string name="name" value="AS-46 Assault Rifle (Guards)" />
+		<string name="name" value="AS-46 Assault Rifle (Storm Group)" />
 		<group name="offhand">
 			<float name="offhand_end_time" value="0" />
 			<float name="offhand_start_time" value="0" />
@@ -343,7 +343,7 @@
 			<group name="distance">
 				<float name="near" value="7" />
 				<float name="far" value="35" />
-				<float name="mid" value="20" />
+				<float name="mid" value="21" />
 			</group>
 		</group>
 		<group name="reload">

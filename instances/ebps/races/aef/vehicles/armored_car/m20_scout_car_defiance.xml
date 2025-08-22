@@ -19,10 +19,11 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\vehicle_ability\m20_m6_mine_plant_ability_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\m20_slap_rounds_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\passive_ability\wc51_stealth_detection_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\passive_ability\m20_stealth_detection_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\m20_smoke_dischargers_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\priority_vehicles_usf" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_cannons_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -120,7 +121,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="300" />
+			<float name="hitpoints" value="280" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -742,7 +743,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\aef\items\m20_side_skirts_mp" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\m20_side_skirts_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\obj_cover_ext">
@@ -764,12 +765,12 @@
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
+					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
 							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\assault_engineer\assault_engineer" />
+								<string name="animator_bp" value="armies\aef\soldiers\mg_crew\mg_crew" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />

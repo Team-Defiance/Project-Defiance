@@ -895,159 +895,29 @@
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\soviet" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\german" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_A" />
-								<string name="sync_action_name" value="attach_Crew_Desant_A" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_a" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_B" />
-								<string name="sync_action_name" value="attach_Crew_Desant_B" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_b" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_C" />
-								<string name="sync_action_name" value="attach_Crew_Desant_C" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_c" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_D" />
-								<string name="sync_action_name" value="attach_Crew_Desant_D" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_d" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_E" />
-								<string name="sync_action_name" value="attach_Crew_Desant_E" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_e" />
-								<string name="animator_bp_female" value="" />
-							</group>
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\paratrooper\paratrooper" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Crew_Desant_F" />
-								<string name="sync_action_name" value="attach_Crew_Desant_F" />
-								<bool name="sync_on_create" value="False" />
-								<string name="abandon_event_name" value="abandon_crew_desant_f" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\west_german" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Pintle" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
 							<group name="role">
-								<string name="animator_bp" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
+								<string name="animator_bp" value="armies\aef\soldiers\lieutenant\lieutenant" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />
 								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
-								<string name="animator_bp_female" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\aef\soldiers\lieutenant\lieutenant" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="False" />
+								<string name="abandon_event_name" value="abandon_m2hb50cal_gunner" />
+								<string name="animator_bp_female" value="" />
 							</group>
 						</list>
 						<template_reference name="additional_crew_option" value="options\none">
