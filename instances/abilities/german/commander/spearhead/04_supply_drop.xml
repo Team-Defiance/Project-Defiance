@@ -52,20 +52,34 @@
 					</list>
 					<bool name="enable_landing" value="False" />
 				</template_reference>
-				<template_reference name="action" value="action\sector_highlight">
-					<float name="highlight_r" value="33" />
-					<float name="highlight_g" value="206" />
-					<float name="highlight_b" value="62" />
-					<float name="highlight_a" value="50" />
-					<bool name="self_only" value="True" />
-					<uniqueid name="id" value="1073752011" />
-					<int name="priority" value="0" />
+				<template_reference name="action" value="action\trigger_dca_action">
+					<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
+					<float name="duration" value="5" />
+					<bool name="is_terrain_only" value="True" />
+					<uniqueid name="id" value="1073797324" />
+				</template_reference>
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="1" />
+					<locstring name="message" value="4159" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="0" />
+					<float name="message_colour_b" value="0" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="2" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="False" />
+					<uniqueid name="id" value="1073797325" />
+				</template_reference>
+				<template_reference name="action" value="action\blip_action">
+					<enum name="blip_type" value="general" />
+					<float name="duration" value="0" />
+					<uniqueid name="id" value="1073797326" />
 				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
 		<bool name="can_interrupt" value="False" />
-		<bool name="can_target_in_fow" value="True" />
+		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />
 		<group name="cost">
@@ -80,13 +94,13 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="40" />
+		<float name="duration_time" value="5" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
 		<float name="entity_busy_time" value="0" />
 		<float name="facing_angle" value="5" />
-		<bool name="facing_ignore" value="False" />
+		<bool name="facing_ignore" value="True" />
 		<float name="final_close_in_distance" value="0" />
 		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
@@ -98,7 +112,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="220" />
+		<float name="recharge_time" value="120" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -109,18 +123,14 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="arf" />
+			<string name="code_1" value="amn" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
-		<enum name="squad_caster" value="squad" />
-		<enum name="target" value="tp_position_in_territory" />
+		<enum name="squad_caster" value="one_entity" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
-			<template_reference name="target_special_validation" value="type_ability_target_type\not">
-				<group name="target_info">
-					<template_reference name="target_info" value="type_ability_target_type\is_command_sector">
-					</template_reference>
-				</group>
+			<template_reference name="target_special_validation" value="type_ability_target_type\is_position">
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="0" />
@@ -184,8 +194,8 @@
 		<int name="ui_position" value="40" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="" />
+		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
 		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="1" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
@@ -196,11 +206,11 @@
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
 		<enum_table name="ui_modal_highlight">
-			<bool name="world_sector" value="True" />
-			<bool name="map_sector" value="True" />
+			<bool name="world_sector" value="False" />
+			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
-		<enum name="ui_group_cast_type" value="single" />
+		<enum name="ui_group_cast_type" value="multi" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">

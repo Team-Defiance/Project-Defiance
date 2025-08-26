@@ -57,6 +57,10 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073756359" />
 			</template_reference>
+			<template_reference name="action" value="action\add_ability_action">
+				<uniqueid name="id" value="1073797302" />
+				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
