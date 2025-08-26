@@ -43,77 +43,127 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="True" />
-					<string name="do_action_state_name" value="on" />
-					<bool name="retrigger" value="True" />
-					<string name="state_machine_name" value="ability_defensive_buff_state" />
-					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073755383" />
-				</template_reference>
-				<template_reference name="action" value="action\ui_unit_modifier_action">
-					<bool name="die_with_creator" value="False" />
-					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="11046728" />
-						<locstring name="help_text" value="11046729" />
-						<icon name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
-						<string name="hotkey_name" value="" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="False" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\strelki_at_package" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\animator_set_state">
+							<bool name="apply_to_leader_only" value="True" />
+							<string name="do_action_state_name" value="on" />
+							<bool name="retrigger" value="True" />
+							<string name="state_machine_name" value="ability_defensive_buff_state" />
+							<string name="undo_action_state_name" value="off" />
+							<uniqueid name="id" value="1073797314" />
+						</template_reference>
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="False" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="11046728" />
+								<locstring name="help_text" value="11046729" />
+								<icon name="icon_name" value="Icons_abilities_ability_soviet_evasive_tactics_on" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="1073797315" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797313" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
 					</template_reference>
-					<uniqueid name="id" value="1073755384" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\facing_only_enable">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\posture_prone_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\posture_prone_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\received_damage_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.9" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.8" />
-							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="False" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\strelki_at_package" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073755385" />
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\facing_only_enable">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="enable" />
+									<float name="value" value="1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\facing_only_enable" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\posture_prone_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="enable" />
+									<float name="value" value="1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\posture_prone_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.9" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.8" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073797311" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797310" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>

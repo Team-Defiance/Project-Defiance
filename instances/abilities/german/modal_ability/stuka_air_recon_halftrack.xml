@@ -48,7 +48,7 @@
 					</template_reference>
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="True" />
-					<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_air_cap_squad" />
+					<instance_reference name="aircraft_squad_name" value="sbps\races\german\vehicles\stuka\stuka_air_cap_squad_mp" />
 					<uniqueid name="id" value="1073744145" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -66,17 +66,41 @@
 					<bool name="is_terrain_only" value="True" />
 					<uniqueid name="id" value="1073744146" />
 				</template_reference>
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="75" />
-					<bool name="fire_and_forget" value="True" />
-					<list name="subactions">
-						<template_reference name="action" value="action\reticule_action">
-							<uniqueid name="id" value="1073744147" />
-							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_pulse" />
-							<float name="radius" value="75" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="entity_blueprint_name" value="ebps\races\german\vehicles\stuka_aircraft\stuka_air_recon_mp" />
+							<enum name="entity_type" value="" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073744148" />
+					<list name="action_table">
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="75" />
+							<bool name="fire_and_forget" value="True" />
+							<list name="subactions">
+								<template_reference name="action" value="action\reticule_action">
+									<uniqueid name="id" value="1073797333" />
+									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_pulse" />
+									<float name="radius" value="75" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073797334" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797332" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>

@@ -406,7 +406,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\aef\always_on_ability\wc51_m3_moving_accuracy_mp" />
+				<instance_reference name="ability" value="abilities\global\always_on_ability\halftrack_moving_penalty" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\wc51_mark_target" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\commander_ability\wc51_artillery_155mm_mp" />
 			</list>

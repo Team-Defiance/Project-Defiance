@@ -10,9 +10,32 @@
 					<int name="hardpoint_index" value="1" />
 					<uniqueid name="id" value="1073755706" />
 				</template_reference>
-				<template_reference name="action" value="action\force_reload_action">
-					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073797018" />
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_weapon_hardpoint">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<string name="hardpoint_name" value="hardpoint_02" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\force_reload_action">
+							<int name="hardpoint_index" value="2" />
+							<uniqueid name="id" value="1073797319" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797318" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 			<list name="start_target_actions">

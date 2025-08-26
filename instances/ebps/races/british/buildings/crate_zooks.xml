@@ -299,6 +299,10 @@
 							<bool name="permanent" value="True" />
 							<uniqueid name="id" value="1073796317" />
 						</template_reference>
+						<template_reference name="action" value="action\add_ability_action">
+							<uniqueid name="id" value="1073797301" />
+							<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073796312" />
 					<bool name="fire_and_forget_non_global" value="False" />

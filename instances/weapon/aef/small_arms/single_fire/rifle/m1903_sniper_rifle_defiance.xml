@@ -437,13 +437,13 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="fx_g34_sniperfire_target" />
+		<string name="fx_action_target_name" value="ptrs41_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="sniper" />
-		<string name="fx_tracer_name" value="fx_g34_sniperfire_tracer" />
-		<float name="fx_tracer_speed" value="90" />
+		<string name="fx_munition_name" value="mg_phosphorus" />
+		<string name="fx_tracer_name" value="fx_ptrs41_tracer" />
+		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -476,7 +476,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="" />
+			<instance_reference name="projectile" value="ebps\projectile\014mm_ptrs_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="50" />

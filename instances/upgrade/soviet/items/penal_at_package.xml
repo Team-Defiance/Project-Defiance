@@ -62,6 +62,10 @@
 				<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\shtrafniki\penal_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
 				<int name="count" value="1" />
 			</template_reference>
+			<template_reference name="action" value="action\add_ability_action">
+				<uniqueid name="id" value="1073797298" />
+				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">

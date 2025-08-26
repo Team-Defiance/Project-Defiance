@@ -36,6 +36,12 @@
 			<bool name="ui_can_scuttle" value="True" />
 			<instance_reference name="wreck_entity" value="" />
 			<list name="death_actions">
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\terror_struck" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073797283" />
+				</template_reference>
 			</list>
 			<float name="armor" value="2" />
 			<float name="rear_armor" value="0" />
