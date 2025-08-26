@@ -23,7 +23,7 @@
 					<uniqueid name="id" value="1073796001" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="3.5" />
+					<float name="delay" value="2" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -74,7 +74,7 @@
 							</template_reference>
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="False" />
-							<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p47_strafes" />
+							<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p47_suppression_strafes_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073796002" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -87,7 +87,7 @@
 							<bool name="enable_landing" value="False" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="3.5" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -138,7 +138,7 @@
 									</template_reference>
 									<int name="number_aircraft" value="1" />
 									<bool name="search_attack_target" value="False" />
-									<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p47_strafes" />
+									<instance_reference name="aircraft_squad_name" value="sbps\races\aef\vehicles\planes\p47_strafes_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<uniqueid name="id" value="1073796021" />
 									<template_reference name="ui_help_text" value="tables\help_text_phrase">
 										<int name="phrase_order" value="0" />
