@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="4" />
+				<float name="near" value="8" />
+				<float name="mid" value="6" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -51,14 +51,14 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.25" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.625" />
+				<float name="far" value="0.5" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="0.75" />
+				<float name="far" value="3" />
+				<float name="near" value="1" />
+				<float name="mid" value="2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -68,15 +68,15 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="suppression_friendly">
-				<float name="far" value="0.25" />
-				<float name="near" value="1" />
-				<float name="mid" value="0.625" />
+				<float name="far" value="0.1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.25" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="42.5" />
-				<float name="mid" value="42.5" />
-				<float name="near" value="42.5" />
+				<float name="far" value="1" />
+				<float name="mid" value="5" />
+				<float name="near" value="30" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -135,8 +135,8 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="16" />
-				<float name="min" value="16" />
+				<float name="max" value="18" />
+				<float name="min" value="18" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg_large" />
 		<string name="fx_tracer_name" value="m2hb50cal_tracer" />
-		<float name="fx_tracer_speed" value="175" />
+		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -395,7 +395,7 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="1.25" />
+			<float name="nearby_suppression_multiplier" value="0.8" />
 			<float name="nearby_suppression_radius" value="20" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="42.5" />
-			<float name="far" value="42.5" />
-			<float name="mid" value="42.5" />
+			<float name="near" value="32" />
+			<float name="far" value="32" />
+			<float name="mid" value="32" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

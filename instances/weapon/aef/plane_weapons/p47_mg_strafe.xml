@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg_large" />
 		<string name="fx_tracer_name" value="m2hb50cal_tracer" />
-		<float name="fx_tracer_speed" value="175" />
+		<float name="fx_tracer_speed" value="90" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="42.5" />
-			<float name="far" value="42.5" />
-			<float name="mid" value="42.5" />
+			<float name="near" value="35" />
+			<float name="far" value="35" />
+			<float name="mid" value="35" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
