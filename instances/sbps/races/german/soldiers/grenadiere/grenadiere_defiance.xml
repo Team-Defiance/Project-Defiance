@@ -291,6 +291,15 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 									<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\grenadiere_rifle_grenade_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
+								<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+									<enum name="application_type" value="apply_to_ability" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.85" />
+									<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+									<instance_reference name="target_type_name" value="abilities\german\timed_ability\grenadier_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								</template_reference>
 								<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
 									<enum name="application_type" value="apply_to_squad" />
 									<bool name="exclusive" value="False" />
@@ -775,6 +784,15 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\grenadiere_rifle_grenade_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.75" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\german\timed_ability\grenadier_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073741922" />
 									</template_reference>
@@ -977,6 +995,15 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\german\modal_ability\accessory_weapons\grenadier_lmg_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\timed_ability\grenadier_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
