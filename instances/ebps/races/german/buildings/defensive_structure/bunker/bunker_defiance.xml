@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\structures\bunker\bunker" />
+			<file name="animator" value="armies\german\structures\base_defense\base_defense" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -39,7 +39,7 @@
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="24" />
+			<float name="target_size" value="26" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -414,7 +414,7 @@
 					<float name="scale_x" value="5.35" />
 					<float name="scale_y" value="5.35" />
 					<bool name="undoable" value="True" />
-					<uniqueid name="id" value="1073744886" />
+					<uniqueid name="id" value="1073797464" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -430,7 +430,15 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073744887" />
+					<uniqueid name="id" value="1073797465" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="off" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="pintle_mg42_visibility" />
+					<string name="undo_action_state_name" value="" />
+					<uniqueid name="id" value="1073797466" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="1" />
@@ -441,10 +449,10 @@
 						<template_reference name="action" value="action\remove_weapon">
 							<bool name="fire_and_forget" value="False" />
 							<float name="hardpoint" value="1" />
-							<uniqueid name="id" value="1073744889" />
+							<uniqueid name="id" value="1073797467" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073744890" />
+					<uniqueid name="id" value="1073797468" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -470,21 +478,6 @@
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\mgnest_mg42t_dummy_mp" />
 						</group>
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="0.5" />
-								<float name="z" value="2.5" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\small_arms\machine_gun\heavy_machine_gun\pillbox_mg42_mp" />
-						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
@@ -497,8 +490,9 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\concrete_bunker_mg42_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\german\items\concrete_bunker_medic_station_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\bunker_mg42_addition_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\bunker_medic_station_mp" />
+				<instance_reference name="upgrade" value="upgrade\german\items\bunker_command_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
@@ -506,14 +500,14 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<string name="sync_target_name" value="HeavyMachineGun_Target" />
+						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
 							<group name="role">
 								<string name="animator_bp" value="armies\german\soldiers\hmg\hmg" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="HMG_Attach_Skeleton" />
+								<string name="sync_action_name" value="Attach_Pintle" />
 								<bool name="sync_on_create" value="False" />
 								<string name="abandon_event_name" value="" />
 								<string name="animator_bp_female" value="" />

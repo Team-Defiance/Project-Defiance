@@ -48,12 +48,12 @@
 				<bool name="retrigger" value="False" />
 				<string name="state_machine_name" value="Medic_Upgrade" />
 				<string name="undo_action_state_name" value="" />
-				<uniqueid name="id" value="1073748274" />
+				<uniqueid name="id" value="1073797474" />
 			</template_reference>
 			<template_reference name="action" value="action\remove_weapon">
 				<bool name="fire_and_forget" value="False" />
 				<float name="hardpoint" value="1" />
-				<uniqueid name="id" value="1073748275" />
+				<uniqueid name="id" value="1073797475" />
 			</template_reference>
 			<template_reference name="action" value="action\activate_extension_action">
 				<bool name="activation" value="True" />
@@ -61,12 +61,12 @@
 				<bool name="repair_station_ext" value="True" />
 				<bool name="supply_ext" value="False" />
 				<bool name="territory_ext" value="False" />
-				<uniqueid name="id" value="1073748276" />
+				<uniqueid name="id" value="1073797476" />
 			</template_reference>
 			<template_reference name="action" value="action\ui_portrait_action">
 				<icon name="summer_portrait_icon" value="Icons_portraits_building_german_bunker_medic_station_s_portrait" />
 				<icon name="winter_portrait_icon" value="Icons_portraits_building_german_bunker_medic_station_w_portrait" />
-				<uniqueid name="id" value="1073748277" />
+				<uniqueid name="id" value="1073797477" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_modifiers_action">
 				<float name="duration" value="0" />
@@ -82,23 +82,7 @@
 						<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073748278" />
-			</template_reference>
-			<template_reference name="action" value="action\apply_modifiers_action">
-				<float name="duration" value="0" />
-				<bool name="permanent" value="False" />
-				<list name="modifiers">
-					<template_reference name="modifier" value="modifiers\reinforce_radius_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="25" />
-						<instance_reference name="tooltip" value="modifier_tooltip\reinforce_radius_modifier" />
-					</template_reference>
-				</list>
-				<uniqueid name="id" value="1073748279" />
+				<uniqueid name="id" value="1073797478" />
 			</template_reference>
 		</list>
 		<list name="requirements">
