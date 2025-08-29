@@ -22,6 +22,7 @@
 				<instance_reference name="ability" value="abilities\aef\modal_ability\drop_medpack_ability_m3_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\passive_ability\m3_forward_reinforcements_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -696,6 +697,8 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
+				<instance_reference name="upgrade" value="upgrade\aef\items\m3_assault_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\aef\items\m3_support_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\hold_ext">
@@ -883,12 +886,19 @@
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="False" />
-			<float name="reinforce_radius" value="20" />
+			<float name="reinforce_radius" value="27.5" />
 			<list name="spawn_items">
 			</list>
 			<list name="bonus_xp_from_hold_list">
 			</list>
 			<list name="reinforce_requirements">
+				<template_reference name="required" value="requirements\required_entity_upgrade">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<instance_reference name="upgrade_name" value="upgrade\aef\items\m3_support_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="include_queued" value="False" />
+				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>
