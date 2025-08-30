@@ -1,8 +1,8 @@
 <instance description="" template="ai_economy">
 	<group name="ai_economy_bag">
 		<group name="default_squad_utility">
-			<float name="per_unit_scale" value="0.3" />
-			<float name="per_unit_scale_historical" value="0.2" />
+			<float name="per_unit_scale" value="0.5" />
+			<float name="per_unit_scale_historical" value="0" />
 			<float name="utility" value="100" />
 			<float name="utility_random_range_offset" value="10" />
 		</group>
@@ -17,335 +17,707 @@
 			<float name="utility_random_range_offset" value="10" />
 		</group>
 		<list name="upgrades">
-		</list>
-		<list name="player_upgrades">
-			<group name="player_upgrade_utility">
+			<group name="utility_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="-1" />
 				<float name="utility" value="-1" />
 				<instance_reference name="blueprint" value="" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 		</list>
+		<list name="player_upgrades">
+			<group name="player_upgrade_utility">
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="player_upgrade_utility">
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="upgrade\british\research\tier_0\bolster_squads_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="player_upgrade_utility">
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="upgrade\aef\research\tier_0\explosives_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="player_upgrade_utility">
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="upgrade\west_german\research\t1_hospital_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+		</list>
 		<list name="squads">
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\mortar_team\mortar_team_81mm" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\grenadier_squad\grenadier_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
 				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\mg42_heavy_machine_gun_squad\mg42_heavy_machine_gun_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\scout_car_sdkfz222\scoutcar_sdkfz222" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\ostwind_squad\ostwind_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_stubby_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\panzer_grenadier_squad\panzer_grenadier_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.4" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\at_gun_squad\pak40_75mm_at_gun_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panther_squad\panther_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\at_gun_squad\pak43_88mm_at_gun_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\sniper_squad\sniper_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.2" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\brummbar_squad\brummbar_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_tank_destroyer_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\halftrack_squad\mortar_250_halftrack_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_e_squad" />
-				<float name="utility_random_range_offset" value="-1" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\pioniere\pioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
 			</group>
 			<group name="squad_utility">
 				<float name="per_unit_scale" value="0.5" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\tiger_squad\tiger_squad" />
-				<float name="utility_random_range_offset" value="-1" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_0\soviet_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="200" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\panzer_pioneer_squad\panzer_pioneer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\rear_echelon_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.99" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_0\royal_engineer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
 				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad" />
-				<float name="utility_random_range_offset" value="-1" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\mortar_team\grw42_81mm_mortar_team_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.4" />
+				<float name="per_unit_scale" value="0.5" />
 				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\dshk_38_hmg_squad\dshk_38_hmg_squad" />
-				<float name="utility_random_range_offset" value="-1" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_2\pm41_82mm_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="10" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.4" />
+				<float name="per_unit_scale" value="0.3" />
 				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\m1910_maxim_hmg_squad\m1910_maxim_heavy_machine_gun_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\mortar_squad\hm-120_38_mortar_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\mortar_squad\pm-82_41_mortar_squad" />
+				<float name="utility" value="200" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\team_weapons\leig_squad\leig_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
 				<float name="per_unit_scale" value="0.5" />
 				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\sniper_team\sniper_team" />
-				<float name="utility_random_range_offset" value="-1" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_1\usf_81mm_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="10" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\troops\guards_troops" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\troops\penal_battalion" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\troops\shock_troops" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.2" />
+				<float name="per_unit_scale" value="1" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\is-2\is-2" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale" value="1" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\isu-152\isu-152" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\british\doctrines\mobile_assault\brit_land_mattress_launcher_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.1" />
+				<float name="per_unit_scale" value="0.3" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\katyusha_rocket_trucks\katyusha_bm-13n_squad" />
+				<float name="utility" value="155" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_3\m7b1_priest_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\kv-1\kv-1" />
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\team_weapons\rocket_mattress\rocket_mattress_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.2" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\kv-8\kv-8" />
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_4\katyusha_132mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.5" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\m3a1_scout_car_squad\m3a1_scout_car_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="0.3" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\m5_halftrack_squad\m5_halftrack_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\soviet_at_gun_squads\m1942_zis-3_76mm_at_gun_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\su-76m\su-76m" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.2" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\t_34_squad\t_34_76_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.2" />
-				<float name="per_unit_scale_historical" value="0.05" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\t_34_squad\t_34_85_squad" />
-				<float name="utility_random_range_offset" value="-1" />
-			</group>
-			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
 				<float name="utility" value="0" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\zis_6_transport_truck\zis_6_transport_truck" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="90" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_1\6_pounder_at_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="90" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_2\usf_57mm_atgun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="90" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\at_gun_squad\pak40_at_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="90" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_2\zis3_76mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="100" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\team_weapons\at_gun_squad\raketenwerfer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.25" />
+				<float name="per_unit_scale_historical" value="0.2" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\grenadiere\grenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.5" />
+				<float name="utility" value="800" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_ii_squad\panzer_ii_luchs_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_1\m3_scout_car_transport_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.5" />
+				<float name="utility" value="500" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\sdkfz_221\sdkfz_221_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="299" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_flak_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_0\universal_carrier_standard_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="200" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_1\aec_armoured_car_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="500" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_2\m8_greyhound_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.3" />
+				<float name="utility" value="175" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="210" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_3\t70_light_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="140" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\stug_iii_squad\stug_iii_142_1_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\sdkfz_234_squad\sdkfz_234_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0.5" />
+				<float name="utility" value="200" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_2\m15aa_halftrack_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
 				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panther_squad\panther_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_iv_squad\stupa_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
 				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\t-70m\t-70m" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\tiger_squad\tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="-1" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\tiger_squad\wg_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="105" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.15" />
+				<float name="per_unit_scale_historical" value="0.05" />
+				<float name="utility" value="180" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_3\t34_76mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.2" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\commander\counterattack\vehicles\t_3485_squad_counterattack" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="135" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_4\su85_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
 				<float name="per_unit_scale" value="0.2" />
-				<float name="per_unit_scale_historical" value="0.1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\su-85\su-85" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_4\kv1_heavy_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\german\soldiers\pioneer_squad\pioneer_squad" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\commander\reserve_infantry_tactics\vehicles\kv2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="0" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="sbps\races\soviet\soldiers\combat_engineer_squad\combat_engineer_squad" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\commander\shock_rifle_tactics\vehicles\is2_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="115" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\vehicles\stalin_tanks\isu_152_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.3" />
+				<float name="utility" value="175" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\panzer_iv_squad\wg_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
 				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="1" />
-				<instance_reference name="blueprint" value="sbps\races\british\soldiers\brit_medic_squad\brit_medic_squad_mp" />
+				<float name="utility" value="105" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="115" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="165" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.4" />
+				<float name="utility" value="225" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_2\cromwell_iv_cruiser_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="140" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_2\centaur_spaa_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="155" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_2\sherman_firefly_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="115" />
+				<instance_reference name="blueprint" value="sbps\races\british\doctrines\mobile_assault\comet_a34_cruiser_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="85" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_2\churchill_vii_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="100" />
+				<instance_reference name="blueprint" value="sbps\races\british\doctrines\special_weapons\churchill_crocodile_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.3" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_3\m4a3_sherman_75mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="125" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_3\m4a3e8_sherman_76mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="100" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\armor\vehicles\m4a3e2_sherman_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\mechanized\vehicles\m4a3_sherman_105mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="200" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_3\m10_wolverine_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\infantry\vehicles\m26_pershing_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\usf_wc54_ambulance_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="100" />
+				<instance_reference name="blueprint" value="sbps\races\german\doctrine\festung\osttruppen_squad\osttruppen_helmet_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\german\vehicles\halftrack_squad\sdkfz_251_halftrack_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="75" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_2\m5_soviet_halftrack_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="75" />
+				<instance_reference name="blueprint" value="sbps\races\german\doctrine\spearhead\sdkfz_250_halftrack\sdkfz_250_halftrack_transport_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.18" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="160" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\rifleman_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="10" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.25" />
+				<float name="per_unit_scale_historical" value="0.12" />
+				<float name="utility" value="100" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_0\strelki_riflemen_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="90" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_0\penal_battalion_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="140" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_3\su76_tank_destroyer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\dshk38_hmgsquad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="120" />
+				<instance_reference name="blueprint" value="sbps\races\british\forward_assembly\lovat_sharpshooter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="95" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="180" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\team_weapons\mg34_hmg_squad\mg34_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="145" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_0\infantry_section_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.25" />
+				<float name="per_unit_scale_historical" value="0.01" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\panzerfusilier_squad\panzerfusilier_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_ir_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\panzergrenadiere\panzergrenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="130" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\m63_45mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="250" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\usf_wc51_transport_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\sws_halftrack_squad\sws_halftrack_generic_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="170" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_1\assault_officer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.2" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="50" />
+				<instance_reference name="blueprint" value="sbps\races\british\forward_assembly\vickers_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="50" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_1\m2hb_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\british\team_weapons\mortar_team_3_inch\brit_3_inch_mortar_team_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="104" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\captain_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale_historical" value="0.03" />
+				<float name="utility" value="106" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\gebirgjaeger_squad\gebirgjaeger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\german\soldiers\ger_sniper\ger_sniper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0" />
+				<float name="utility" value="0" />
+				<instance_reference name="blueprint" value="sbps\races\british\team_weapons\at_gun_17_pounder\special_brit_17_pounder_at_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="0.1" />
+				<float name="utility" value="250" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_1\maxim_hmg_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.01" />
+				<float name="per_unit_scale_historical" value="0.3" />
+				<float name="utility" value="180" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\volksgrenadier_squad\volksgrenadier_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="0" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="0.3" />
+				<float name="per_unit_scale_historical" value="0.1" />
+				<float name="utility" value="150" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\airborne\infantry\pathfinder_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\soviet\tier_1\scout_sniper_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\aef\tier_1\designated_marksman_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="squad_utility">
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="110" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\nachtjager_squad\nachtjager_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 		</list>
@@ -360,10 +732,10 @@
 			</group>
 		</list>
 		<group name="default_defensive_structure_utility">
-			<float name="utility" value="90" />
-			<float name="utility_random_range_offset" value="10" />
-			<float name="per_unit_scale" value="0.3" />
-			<float name="per_unit_scale_historical" value="0.2" />
+			<float name="utility" value="100" />
+			<float name="utility_random_range_offset" value="1" />
+			<float name="per_unit_scale" value="0.5" />
+			<float name="per_unit_scale_historical" value="0" />
 		</group>
 	</group>
 	<uniqueid name="pbgid" value="0" />
