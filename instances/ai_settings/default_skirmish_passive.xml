@@ -155,7 +155,7 @@
 			<float name="encounter_pos_in_combat_cover_user_distance_scale" value="0.1" />
 			<float name="encounter_pos_in_combat_setup_weapon_distance_scale" value="0.1" />
 		</group>
-		<bool name="should_update_threat_map" value="False" />
+		<bool name="should_update_threat_map" value="True" />
 		<float name="attack_objective_replan_time" value="1" />
 		<group name="combat_ratings">
 			<group name="cover_table">

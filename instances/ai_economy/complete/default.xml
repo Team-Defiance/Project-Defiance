@@ -18,10 +18,10 @@
 		</group>
 		<list name="upgrades">
 			<group name="utility_utility">
-				<float name="per_unit_scale" value="-1" />
-				<float name="per_unit_scale_historical" value="-1" />
-				<float name="utility" value="-1" />
-				<instance_reference name="blueprint" value="" />
+				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale_historical" value="1" />
+				<float name="utility" value="95" />
+				<instance_reference name="blueprint" value="upgrade\german\items\grenadier_veteran_squad_leader_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 		</list>
@@ -49,6 +49,11 @@
 			<group name="player_upgrade_utility">
 				<float name="utility" value="1000" />
 				<instance_reference name="blueprint" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="utility_random_range_offset" value="-1" />
+			</group>
+			<group name="player_upgrade_utility">
+				<float name="utility" value="1000" />
+				<instance_reference name="blueprint" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 		</list>
@@ -201,8 +206,8 @@
 				<float name="utility_random_range_offset" value="0" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.01" />
-				<float name="per_unit_scale_historical" value="0.5" />
+				<float name="per_unit_scale" value="1" />
+				<float name="per_unit_scale_historical" value="1" />
 				<float name="utility" value="800" />
 				<instance_reference name="blueprint" value="sbps\races\german\vehicles\panzer_ii_squad\panzer_ii_luchs_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
