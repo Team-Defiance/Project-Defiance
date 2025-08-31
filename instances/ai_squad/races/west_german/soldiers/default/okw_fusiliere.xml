@@ -13,20 +13,20 @@
 			</group>
 			<group name="capture_team_weapon_tactic">
 				<string name="entity_target_filter" value="EntityTargetFilter_CaptureTeamWeapon" />
-				<float name="priority" value="45" />
-				<string name="tactic_filter_start" value="TacticFilter_ShouldCapTeamWeapons" />
-				<float name="tactic_max_range_override" value="90" />
+				<float name="priority" value="0" />
+				<string name="tactic_filter_start" value="" />
+				<float name="tactic_max_range_override" value="0" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
 					<bool name="tactic_OnTask" value="True" />
 					<bool name="tactic_Moving" value="True" />
 				</enum_table>
-				<string name="tactic_filter_abort" value="TacticFilter_ShouldCancelCapTeamWeapons" />
+				<string name="tactic_filter_abort" value="" />
 			</group>
 			<group name="cover_tactic">
-				<float name="priority" value="200" />
+				<float name="priority" value="0" />
 				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="18" />
+				<float name="tactic_max_range_override" value="15" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
 					<bool name="tactic_OnTask" value="True" />
@@ -47,7 +47,7 @@
 			<group name="hold_tactic">
 				<float name="priority" value="250" />
 				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="20" />
+				<float name="tactic_max_range_override" value="17" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
 					<bool name="tactic_OnTask" value="True" />
@@ -59,7 +59,7 @@
 				<string name="entity_target_filter" value="EntityTargetFilter_PickUp" />
 				<float name="priority" value="45" />
 				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="75" />
+				<float name="tactic_max_range_override" value="45" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
 					<bool name="tactic_OnTask" value="True" />
@@ -68,13 +68,13 @@
 				<string name="tactic_filter_abort" value="" />
 			</group>
 			<group name="rush_at_target">
-				<float name="priority" value="-1" />
+				<float name="priority" value="225" />
 				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="50" />
+				<float name="tactic_max_range_override" value="35" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
-					<bool name="tactic_OnTask" value="False" />
-					<bool name="tactic_Moving" value="False" />
+					<bool name="tactic_OnTask" value="True" />
+					<bool name="tactic_Moving" value="True" />
 				</enum_table>
 				<string name="tactic_filter_abort" value="" />
 			</group>
@@ -91,9 +91,9 @@
 			</group>
 			<group name="recrew_tactic">
 				<string name="entity_target_filter" value="EntityTargetFilter_Recrew" />
-				<float name="priority" value="45" />
+				<float name="priority" value="25" />
 				<string name="tactic_filter_start" value="" />
-				<float name="tactic_max_range_override" value="90" />
+				<float name="tactic_max_range_override" value="45" />
 				<enum_table name="class">
 					<bool name="tactic_Combat" value="True" />
 					<bool name="tactic_OnTask" value="True" />
