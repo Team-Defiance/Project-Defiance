@@ -144,8 +144,8 @@
 						<bool name="exclusive" value="True" />
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="1" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="1.1" />
 						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 					</template_reference>
 				</list>

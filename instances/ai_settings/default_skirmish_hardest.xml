@@ -54,9 +54,9 @@
 		</group>
 		<group name="skirmish_settings">
 			<group name="resource">
-				<float name="fuel_mult" value="1.4" />
-				<float name="manpower_mult" value="1.4" />
-				<float name="munitions_mult" value="1.25" />
+				<float name="fuel_mult" value="1.6" />
+				<float name="manpower_mult" value="1.6" />
+				<float name="munitions_mult" value="1.3" />
 			</group>
 			<group name="combat_eval">
 				<float name="combat_eval_min_class_rating" value="5" />
@@ -142,7 +142,7 @@
 				<float name="min_non_support_units_to_support_units_ratio" value="2" />
 				<bool name="should_reinforce" value="True" />
 			</group>
-			<bool name="use_offensive_player_abilities" value="False" />
+			<bool name="use_offensive_player_abilities" value="True" />
 			<group name="reinforce">
 				<float name="reinforce_wait_time" value="15" />
 				<float name="reinforce_failed_retry_wait_time" value="60" />
