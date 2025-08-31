@@ -68,6 +68,22 @@
 					<IsExpanded>true</IsExpanded>
 					<Name>ui</Name>
 				</d2p1:anyType>
+				<d2p1:anyType i:type="Folder">
+					<Children>
+						<d2p1:anyType i:type="Folder">
+							<Children>
+								<d2p1:anyType i:type="BurnFile">
+									<BurnSettings i:nil="true" />
+									<RelativeName>ai\personality\zycatai.ai</RelativeName>
+								</d2p1:anyType>
+							</Children>
+							<IsExpanded>true</IsExpanded>
+							<Name>personality</Name>
+						</d2p1:anyType>
+					</Children>
+					<IsExpanded>true</IsExpanded>
+					<Name>ai</Name>
+				</d2p1:anyType>
 			</Children>
 			<IsExpanded>true</IsExpanded>
 		</d2p1:anyType>
