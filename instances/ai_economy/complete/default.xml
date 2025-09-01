@@ -18,16 +18,16 @@
 		</group>
 		<list name="upgrades">
 			<group name="utility_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="1" />
-				<float name="utility" value="95" />
+				<float name="per_unit_scale" value="0.1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="200" />
 				<instance_reference name="blueprint" value="upgrade\german\items\grenadier_veteran_squad_leader_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="utility_utility">
-				<float name="per_unit_scale" value="0.5" />
-				<float name="per_unit_scale_historical" value="1" />
-				<float name="utility" value="95" />
+				<float name="per_unit_scale" value="0.1" />
+				<float name="per_unit_scale_historical" value="-1" />
+				<float name="utility" value="200" />
 				<instance_reference name="blueprint" value="upgrade\soviet\items\mobilize_reserves_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
@@ -293,7 +293,7 @@
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="0.5" />
+				<float name="per_unit_scale" value="0.3" />
 				<float name="per_unit_scale_historical" value="-1" />
 				<float name="utility" value="175" />
 				<instance_reference name="blueprint" value="sbps\races\west_german\vehicles\sdkfz_234_squad\sdkfz_234_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
