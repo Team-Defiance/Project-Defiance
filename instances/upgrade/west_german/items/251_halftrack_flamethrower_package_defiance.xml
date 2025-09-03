@@ -160,6 +160,11 @@
 				</list>
 				<uniqueid name="id" value="1073754643" />
 			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\west_german\flamethrowers\hetzer_flamethrower_item_mp" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073798102" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">

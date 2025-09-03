@@ -313,14 +313,26 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073792994" />
+									<uniqueid name="id" value="1073798094" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="squad" />
-							<uniqueid name="id" value="1073792995" />
+							<uniqueid name="id" value="1073798095" />
+						</template_reference>
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\german\ability_lock_out\ability_lock_out_assgren_grenades" />
+									<uniqueid name="id" value="1073798096" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="squad" />
+							<uniqueid name="id" value="1073798097" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073792996" />
+					<uniqueid name="id" value="1073798098" />
 				</template_reference>
 			</list>
 		</group>
