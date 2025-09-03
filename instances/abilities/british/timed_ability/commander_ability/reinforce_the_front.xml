@@ -42,7 +42,7 @@
 								<template_reference name="action" value="action\slot_item_add">
 									<instance_reference name="slot_item" value="slot_item\british\brit_reinforce_the_front" />
 									<bool name="permanent" value="False" />
-									<uniqueid name="id" value="1073798065" />
+									<uniqueid name="id" value="1073798072" />
 								</template_reference>
 							</list>
 							<enum name="deprecated_squad_class_type" value="" />
@@ -59,10 +59,10 @@
 								</template_reference>
 							</list>
 							<bool name="target_squad" value="True" />
-							<uniqueid name="id" value="1073798066" />
+							<uniqueid name="id" value="1073798073" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073798067" />
+					<uniqueid name="id" value="1073798074" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -104,7 +104,7 @@
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="False" />
 					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\paradrop_plane\paratroopers_plane_atgun_british_matt_test_mp" />
-					<uniqueid name="id" value="1073798068" />
+					<uniqueid name="id" value="1073798075" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
@@ -148,7 +148,7 @@
 					<int name="number_aircraft" value="1" />
 					<bool name="search_attack_target" value="False" />
 					<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_mortar_plane" />
-					<uniqueid name="id" value="1073798069" />
+					<uniqueid name="id" value="1073798076" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
@@ -198,7 +198,7 @@
 							<int name="number_aircraft" value="1" />
 							<bool name="search_attack_target" value="False" />
 							<instance_reference name="aircraft_squad_name" value="sbps\races\british\vehicles\planes\british_cargo_plane" />
-							<uniqueid name="id" value="1073798070" />
+							<uniqueid name="id" value="1073798077" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
@@ -210,7 +210,7 @@
 							<bool name="enable_landing" value="False" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073798071" />
+					<uniqueid name="id" value="1073798078" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -324,7 +324,7 @@
 				<instance_reference name="upgrade_name" value="upgrade\blizzard_active" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
+				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
