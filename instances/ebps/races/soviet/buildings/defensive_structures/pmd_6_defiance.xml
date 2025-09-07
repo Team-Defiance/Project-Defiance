@@ -439,27 +439,13 @@
 						<float name="popcap" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="required" value="requirements\required_any_in_list">
+				<template_reference name="required" value="requirements\required_player_upgrade">
 					<enum name="reason" value="usage_and_display" />
 					<locstring name="ui_name" value="0" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage_and_display" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\anti_personnel_mines" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage_and_display" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\tank_traps" />
-						</template_reference>
-					</list>
+					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\unobtainium" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
