@@ -852,9 +852,9 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="engineer_to_spawn" value="ebps\races\soviet\soldiers\medic\medic_mp" />
+						<instance_reference name="engineer_to_spawn" value="ebps\races\soviet\soldiers\medic\sov_medic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="number_of_engineers" value="3" />
-						<float name="repair_radius" value="40" />
+						<float name="repair_radius" value="35" />
 						<group name="target_info">
 							<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
 								<list name="target_infos">

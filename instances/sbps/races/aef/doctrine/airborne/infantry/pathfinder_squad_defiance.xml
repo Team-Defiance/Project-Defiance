@@ -938,7 +938,7 @@
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\pathfinder_mine" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="-5" />
+												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
@@ -947,7 +947,7 @@
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m16_pathfinder_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="-5" />
+												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
@@ -956,7 +956,7 @@
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\pathfinder_fire_up_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="-5" />
+												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>

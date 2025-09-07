@@ -1,0 +1,33 @@
+<instance description="" template="ai_ability">
+	<group name="ai_ability_bag">
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\west_german\timed_ability\251_defensive_smoke_defiance_pe" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\modal_ability\vehicle_ability\222_defensive_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+		</list>
+		<group name="ai_tactic">
+			<string name="entity_target_filter" value="" />
+			<string name="position_target_filter" value="" />
+			<float name="priority" value="85" />
+			<string name="squad_target_filter" value="" />
+			<string name="tactic_filter_start" value="TacticFilter_LowHealthInCombatAndMoving" />
+			<float name="tactic_max_range_override" value="-1" />
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="True" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="True" />
+			</enum_table>
+			<string name="tactic_filter_abort" value="" />
+			<float name="tactic_min_range_override" value="-1" />
+		</group>
+		<group name="ai_tactic_toggle_off">
+			<float name="priority" value="-1" />
+			<string name="tactic_filter_start" value="" />
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="False" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="False" />
+			</enum_table>
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073741874" />
+</instance>

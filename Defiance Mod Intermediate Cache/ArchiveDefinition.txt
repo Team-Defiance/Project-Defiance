@@ -30,6 +30,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\commander\infantry_company\06_m26_pershing_dispatch_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\commander\infantry_company\infantry_company_selection.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\ambulance_base_durability_icon_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\captain_dispatch_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\captain_on_me_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\captain_rapid_recon_run_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\cavalry_scouts_covering_fire_defiance.rgd
@@ -77,20 +78,55 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_he_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_smoke_barrage_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\artillery\mortar_barrage_ability\m21_halftrack_wp_barrage_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\airdropped_mines_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\artillery_155mm.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\artillery_smoke_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\cover_to_cover.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\m26_pershing_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\off_map_smoke_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\p47_recon_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\p47_rocket_attack.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\recon_sweep.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\siege_240mm_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\support_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\support_artillery_decoy.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\time_on_target_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\usf_strafing_run.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\wc51_artillery_155mm_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\assault_package_ui.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\elite_vehicle_crews.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\mechanized_group_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\rifleman_fire_up.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_30_caliber_lmg.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_defensive_buildings.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_flamethrowers.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\riflemen_flares.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\sherman_urban_assault_package.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\urban_assault_kit.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\commander_ability\passive_ability\withdraw_and_refit.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\aef_hq_engineer_call_in.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\air_drop_combat_group.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\assault_engineer_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\cavalry_riflemen_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\dodge_wc51_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\greyhound_recon_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\m10_deploy.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\m10_deploy_british.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\m21_mortar_halftrack_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\m3_halftrack_group.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\m5_quad_halftrack_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\paradrops_anti_tank_gun.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\paradrop_machine_gun.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\paratroopers_paradrop.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\paratroopers_paradrop_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\pathfinders_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\pathfinders_recon_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\priest_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\rangers_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\sherman_bulldozer_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\sherman_calliope_dispatch.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\defiance\captain_dispatch_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\sherman_easy8_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\dispatch_ability\sherman_modifications.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\m15_wp_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\m16_pathfinder_smoke_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\modal_ability\grenades\m16_ranger_smoke_grenade_defiance.rgd
@@ -120,6 +156,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\cav_scouts_sight_bonus_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\cav_scouts_stealth_detection_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\m20_stealth_detection_ui_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\m3_forward_reinforcements_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\pathfinder_fast_capture_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\ranger_bazookas_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\passive_ability\sherman_jumbo_passive_ui_defiance.rgd
@@ -156,7 +193,9 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_76mm_lap_loading_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sherman_crocodile_burnitdown_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\sprint_cav_scouts_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\commander_ability\cmd_paratroopers_from_pathfinders.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\commander_ability\combined_arms.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\timed_ability\commander_ability\raid_tactics.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\aef_mortar_hold_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\ambulance_heal_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\aef\toggle_ability\captain_retreat_point_defiance.rgd
@@ -252,16 +291,53 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_engineer_defiance_test.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_officer_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\base_howitzers\25_pounder_smoke_barrage_sniper_defiance_test.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\allied_strategic_bombing.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\artillery_cover.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\artillery_cover_always_on.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\artillery_cover_forward_hq.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\command_hq.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\command_hq_he_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\command_hq_recon_plane.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\command_hq_smoke_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\command_hq_strafe_plane.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\crew_repair.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\early_warning.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\early_warning_targeted_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\glider_commandos_only.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\mortar_artillery.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\mortar_fire_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\officer_recon_sweep.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\pepper_pot.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\percision_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\rapid_response_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\smoke_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\strafing_run.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\tank_hunter.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\assault_package_tommy.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\reinforced_structures.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\reinforced_structures_cmd_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\commander_ability\passive_ability\sapper_flamethrowers.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\assault_sections.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\at_gun_airdrop.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\breakthrough_operation.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\brit_hq_engineer_call_in.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\churchill_avre.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\churchill_crocodile.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\direct_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\field_recovery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\fire_support_team.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\glider_headquarters.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\infiltration_commandos.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\land_mattress.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\m1_81mm_mortar_dispatch_brits_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\m5_quad_halftrack_british_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\observation_valentine.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\raid_section_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\sexton_dispatch_british.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\super_overwatch_test.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\vickers_airdrop.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\dispatch_ability\defiance\churchill_avre_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\forward_assembly\25_pounder_suppressive_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\modal_ability\forward_assembly\artillery_flares_defiance.rgd
@@ -284,6 +360,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\passives_ui\commando_assassinate_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\passives_ui\elite_bren_guns_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\passives_ui\raid_tactics_ui_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\passives_ui\t1_25_pdr_unlock_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\17pdr_rapid_maneuver.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\17pdr_tank_detection_ability.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\25pdr_base_ammo_airburst_defiance.rgd
@@ -291,6 +368,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\25pdr_base_ammo_he_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\6pdr_rapid_maneuver.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\6_pounder_take_aim_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\aec_defensive_smoke_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\aec_target_weak_point_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\brit_vehicle_crew_repair_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\churchill_croc_war_speed_defiance.rgd
@@ -305,6 +383,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\firefly_sabot_piercing_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\heroic_charge_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\infantry_section_medical_supplies_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\rapid_advance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\sbs_sprint_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\sherman_iv_apcr_vet1.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\sherman_step_on_it_defiance.rgd
@@ -315,6 +394,14 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\universal_carrier_vickers_suppression_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\valentine_overdrive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\vickers_take_aim_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\advanced_cover_combat.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\british_hold_the_line.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\crew_repair_operation.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\crew_repair_operation_cmd_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\fortify_our_position.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\reinforce_the_front.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\timed_ability\commander_ability\stand_fast.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\toggle_ability\activate_repair_station_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\toggle_ability\brit_emplacement_braced_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\british\toggle_ability\brit_vehicle_hold_fire_mp.rgd
@@ -329,10 +416,10 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\always_on_ability\ostruppen_cover_bonus_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\always_on_ability\commander_ability\infantry_ambush_camouflage_passive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\01_defensive_preparation.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\02_stuh_42.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\03_osttruppen_dispatch.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\04_oberstleutnant_dispatch.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\05_heavy_emplacements.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\02_osttruppen_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\03_oberstleutnant_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\04_pak_43_emplacement.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\05_lefh_emplacement.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_1_railway_gun_artillery_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\06_2_for_the_fatherland.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\festung\ability_2_opel_supply_truck.rgd
@@ -385,11 +472,13 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander_outdated\spearhead_doctrine_outdated.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\251_lay_teller_mine.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\brandenburger_flare_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\coordinated_stuka_fragmentation_bomb_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\critical_repair_pioneers.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\flare_trap_capture_point_generic.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\gebirgsjager_booby_trap.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\german_medkits_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\kt_kwk_panzeriv_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\lay_schu_mine_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\officer_inspire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\p4_smoke_drop.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\panther_smoke_drop.rgd
@@ -438,9 +527,82 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_incendiary_barrage_vet.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\ability_5_stuka_bombing_strike.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\coordinated_stuka_fragmentation_bomb_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\lay_schu_mine_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\air_dropped_medical_supplies.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\air_dropped_medical_supplies_airbourne_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\air_dropped_munitions.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\air_dropped_supplies.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\armor_commander.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\assault_field_officer.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\blinding_grenade.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\camouflage_nets.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\convert_tank_wreck.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\fast_march.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\forward_repair_station.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\forward_repair_station_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\german_hulldown_ability.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\german_hulldown_disable.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\german_hulldown_tanks_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\jaeger_commander_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\jaeger_interrogation.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\lay_heavy_at_mine.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\lay_schu_mine.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\light_support_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\luftwaffe_field_officer_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\munitions_blitz.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\observation_flare_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\officer_smoke_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\panzer_defensive_smoke.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\railway_gun_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\redistribute_resources.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\resource_requisition.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\sector_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stormtrooper_jaeger_interrogation.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\strategic_bombing.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\strategic_bombing_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_aerial_superiority_close_air_support.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_aerial_superiority_recon.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_aerial_superiority_strafing_run.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_air_recon.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_bombing_strike.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_close_air_support.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_fragmentation_bomb.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_incendiary_bombs.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_smoke_bomb.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\stuka_strafing_run.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\supply_break.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\supply_truck.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\troop_training.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\ambush_camouflage_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\blinding_grenades_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\breakthrough_package.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\camouflage_nets_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\convert_tank_wreck_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\defensive_fortifications.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\elefant_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\heavy_at_mine_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\howitzer_105mm_emplacement_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\hull_down_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\infantry_veteran_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\jaeger_infantry_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\mobile_observation_post.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\mortar_halftrack.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\mortar_incendiary_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\pak_43_emplacement_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\panzer_tactician_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\sprint.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\tiger_tank.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\commander_ability\passive_ability\trench_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\assault_grenadiers.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\mechanized_assault_group.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\mechanized_grenadier_group.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\ostruppen.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\ostruppen_reserves.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\puma_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\sdkfz_221_light_at_halftrack.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\stormtroopers.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\stug_iii_e.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\tiger_tank_ace.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\dispatch\urban_assault_grenadiers.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\brandenburger_stun_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_at_rifle_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_at_rifle_grenade_vet2.rgd
@@ -460,6 +622,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\m44_brandgranate.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\osttruppen_at_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\pkrieger_grenade_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\unused\ability_5_stuka_bombing_strike.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\passives_ui\osttruppen_cover_bonus_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\passives_ui\panther_range_ui.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\passives_ui\panzer_4_range_ui.rgd
@@ -493,6 +656,15 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\tier4_infantry_vet_passive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\tier4_tank_vet_passive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\veterancy_tech_passive.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\assault_and_hold.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\breakthrough.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\counterattack_tactics.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\crush_the_pocket.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\german_vehicle_emergency_repair_ability_251_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\german_vehicle_emergency_repair_ability_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\relief_infantry.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\tank_detection_ability_convoy.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\commander_ability\vehicle_emergency_repair_ability_tiger_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\toggle_ability\halftrack_250_lockdown_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\toggle_ability\hull_down_generic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\toggle_ability\hull_down_tiger_defiance.rgd
@@ -642,11 +814,53 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\artillery\mortar_barrage_ability\pm41_82_propaganda_shot.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\artillery\mortar_barrage_ability\pm41_82_ptab_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\artillery\mortar_barrage_ability\pm41_82_smoke_barrage.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\artillery_152mm.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\covering_fire.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\fire_artillery_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\t70_zis_he.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\air_dropped_medical_supplies_airbourne.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\air_dropped_supplies_soviet_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\allied_air_supplies.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\anti_tank_overwatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\fear_propaganda_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\fire_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\forward_hq.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_anti_tank_bomb_strike.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_anti_tank_rockets.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_precision_bomb_strike.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_recon.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_sturmovik_attack.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_sturmovik_attack_advanced.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_support.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\il-2_supression_strafe.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\manpower_blitz.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\mark_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\partisan_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\shock_152_artillery_offmap_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\soviet_supply_truck_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\anti-personnel_mines.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\anti_tank_grenade_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\b4_203mm_howitzer.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\conscript_ptrs_upgrade.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\light_anti_vehicle_mines.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\no_retreat_no_surrender.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\repair_station.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\salvage_kits.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\soviet_industry.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\commander_ability\passive_ability\tank_traps.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\base_conscript_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\base_conscript_dispatch_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\commissar_officer_squad_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\commissar_squad_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\conscript_dispatch_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\dshk_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\frontoviki_conscript_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\is2_dispatch_sp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\isu_152_dispatch_sp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\isu_dispatch_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\kv-2.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\m-42_at_gun.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\m2hb_50cal_soviet_lendlease_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\m5_halftrack_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\partisans_commander_anti_infantry.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\partisans_commander_anti_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\dispatch\sherman_soviet_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\f1_penals.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\guards_rifle_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\light_at_engineer.rgd
@@ -665,6 +879,10 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\stormgroup_smoke_rifle_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\strelki_at_grenade_assault_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\grenades\strelki_molotov_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\unused\artillery_152mm.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\unused\covering_fire.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\unused\fire_artillery_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\modal_ability\unused\t70_zis_he.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\passives_ui\b4_camo_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\passives_ui\half_track_reinforcements.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\passives_ui\kv2_firingpositions_ui.rgd
@@ -703,6 +921,34 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\su_85_hunt_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\t34_apcr_shock_rifle.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\zis_mg_tracking_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\for_mother_russia_ability.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\hold_the_line.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\rapid_conscription.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\scorched_earth_policy.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\scorched_earth_policy_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\spy_network.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\tank_detection_ability.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\commander_ability\passive_ability\scorched_earth_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\assault_guard_troops_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_120mm_mortar_crew.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_advanced_t34_85_medium_tank.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_at_gun_ambush_tactics_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_conscript_assault_package.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_conscript_evasive_tactics.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_conscript_repair_kit.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_guard_troops.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_is2_heavy_tank.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_isu-152.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_katyusha.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_kv-1_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_kv-8_unlock_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_ml_20.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_radio_intercept.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_shock_troops.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_soviet_industry.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_t34_85_medium_tank.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_tank_hunter_ambush_tactics_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\timed_ability\throw_away_hack_ui\cmd_vehicle_crew_repair_training.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\toggle_ability\guards_redbanner_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\toggle_ability\kv1_hulldown_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\soviet\toggle_ability\m3a1_camocreep.rgd
@@ -747,6 +993,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\05_artillery_105mm.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\06_sturmtiger_pe_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\commander\urban_assault\urban_assault_selection.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\construct_armored_infantry_command.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\construct_okw_tier1_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\construct_okw_tier2_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\construct_okw_tier3_defiance.rgd
@@ -772,12 +1019,50 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\raketenwerfer_56_150mm_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\raketenwerfer_56_150mm_white_phosphorus.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\raketenwerfer_56_280mm_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\airborne_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\command_mark_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\coordinated_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\flare_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\howitzer_105mm_offmap_barrage.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\okw_sector_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\okw_stuka_aerial_superiority_recon.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\pe_stuka_bombing_strike_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\pioneer_volks_through_salvage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\radio_silence.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\rocket_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\stuka_smoke_bomb_okw.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\west_german_tiger_aura.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\west_german_tiger_aura_vet2.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\zeroing_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\advanced_siphon.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\field_defenses.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\forward_recievers.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\heat_shells_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\heavy_fortifications.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\howitzer_105mm_emplacement_unlock_okw.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\incendiary_munitions_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\infrared_stg44.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\pyro_volks.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\tank_commander_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\through_salvage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\commander_ability\passive_ability\west_german_tiger_tank.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch\scout_car_221_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\command_panther.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\command_royal_tiger_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\fallschirmjaeger.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\goliath_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\jaeger_light_infantry_recon_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\jagdtiger.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\king_tiger_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\mg34_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\mortar_halftrack_west_german.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\opel_blitz_reinforce_truck_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\ostwind_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\panzerfusiliers_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\panzer_iv_group_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\sturmtiger_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\sws_halftrack_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\terror_officer.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\wg_hq_pioneer_call_in.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\dispatch_ability\wg_tiger_dispatch.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\modal_ability\grenades\blendkorper_defiance.rgd
@@ -832,7 +1117,20 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\wg_hmg34_sustained_fire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\wg_kingtiger_blitz_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\wg_tiger_blitz_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\assault_artillery.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\breakthrough_2.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\breakthrough_tactics.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\early_warning_flares.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\early_warning_systems.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\for_the_fatherland.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\heat_shells_ability_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\recoup_losses.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\scout_car_223_signal_flags.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\valiant_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\vehicle_critical_repair_unlock.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\vehicle_emergency_repair_ability_221_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\vehicle_emergency_repair_ability_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\timed_ability\commander_ability\vehicle_emergency_repair_ability_sws_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\base_building_retreat_point_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\ea_vehicle_crew_repair_toggle_heavy_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\ea_vehicle_crew_repair_toggle_light_defiance.rgd
@@ -843,6 +1141,55 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\sdkfz_251_20_infrared_spotlight_toggle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\tiger_spec_ops_spearhead_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\west_german\toggle_ability\wg_ambulance_heal_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\accessory_weapons\rifleman_snare.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_mortar_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\artillery\mortar_barrage_ability\m1_81mm_mortar_team_smoke_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\grenades\mk2_fragmentation_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\repair_ability\aef_repair_ability_rear_echelon_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\timed_ability\captain_heal_area.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\timed_ability\captain_on_me.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\accessory_weapons\sapper_snare.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\artillery\mortar_barrage_ability\brit_81mm_mortar_team_mortar_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\artillery\mortar_barrage_ability\brit_81mm_mortar_team_smoke_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\dispatch\british_dispatch.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\grenades\mills_bombs_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\repair_ability\british_repair_ability_sapper_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\infantry_medkits_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\accessory_weapons\grenadier_rifle_grenade_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\accessory_weapons\grenadier_snare_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\accessory_weapons\osttruppen_snare_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\accessory_weapons\panzergrenadier_snare_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\artillery\mortar_barrage_ability\mortar_team_mortar_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\artillery\mortar_barrage_ability\mortar_team_smoke_barrage_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\grenades\panzer_grenadier_bundles_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\grenades\panzer_grenadier_grenades_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\german\modal_ability\repair_ability\german_repair_ability_pioneer_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\artillery\mortar_barrage_ability\mortar_barrage_82mm_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\artillery\mortar_barrage_ability\mortar_barrage_82mm_smoke_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\anti_tank_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\conscript_molotov_cocktail_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\f1_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\rgd_1_smoke_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\rg_42_anti_personnel_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\satchel_at_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\grenades\satchel_he_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\repair_ability\soviet_repair_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\timed_ability\penal_oorah.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\timed_ability\strelki_oorah.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t1.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t2.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t3.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\accessory_weapons\panzerfusilier_snare_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\accessory_weapons\volks_panzerfaust_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\artillery\mortar_barrage_ability\le_ig_18_barrage_smoke_wg_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\artillery\mortar_barrage_ability\le_ig_18_barrage_wg_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\grenades\panzerfusilier_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\grenades\panzerfusilier_smoke_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\grenades\pioneer_flame_grenade_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\repair_ability\west_german_repair_ability_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\221_smoke.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\puma_twp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\wg_combat_blitz.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_economy\complete\default.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_personality\default_skirmish.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_settings\default_skirmish_easy.rgd
@@ -850,11 +1197,83 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_settings\default_skirmish_hardest.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_settings\default_skirmish_passive.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_settings\default_skirmish_standard.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\custom\at_gun_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\custom\mg_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\custom\mortar_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\soldiers\default\usf_close_range_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\soldiers\default\usf_default_soldier.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\soldiers\default\usf_long_range_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\soldiers\default\usf_rear_echelon.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\soldiers\default\usf_sniper.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\vehicles\default\usf_default_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\vehicles\default\usf_m7b1.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\vehicles\default\usf_m8a1.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\vehicles\default\usf_m8_greyhound.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\aef\vehicles\default\usf_td.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\soldiers\default\ukf_close_range_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\soldiers\default\ukf_default_soldier.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\soldiers\default\ukf_infantry_section.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\soldiers\default\ukf_sappers.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\soldiers\default\ukf_sniper.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_aec.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_churchills.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_comet.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_cromwell.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_default_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_firefly.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\british\vehicles\default\ukf_uc.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_close_range_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_default_soldier.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_grenadiere.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_osttruppen.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_pioniere.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\soldiers\default\german_sniper.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_default_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_luchs.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_ostwind.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_p4.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_panther.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_stug_iii.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_stuh.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_stupa.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\german\vehicles\default\german_tiger.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_close_range_squads.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_default_soldier.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_partizany.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_saperi.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_shtrafniki.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_sniper.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\soldiers\default\soviet_strelki.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_default_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_kv1.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_kv2.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_m5.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_su76.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_su85_100.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_t34s.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\soviet\vehicles\default\soviet_t70.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_default_soldier.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_fusiliere.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_gebirgsjaeger.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_panzerpioniere.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_sniper.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\soldiers\default\okw_volksgrenadiere.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_221.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_234_puma.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_default_vehicle.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_ostwind.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_panther.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_panzer_iv_70.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_panzer_iv_k.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_sturmtiger.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_sws.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_squad\races\west_german\vehicles\default\okw_tiger.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\army\aef.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\army\british.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\army\german.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\army\soviet.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\army\west_german.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\aura\healing_aura_medics_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\aura\aef\beacon_sight_bonus_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\aura\aef\sherman_battle_group_vet_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\aura\soviet\t_70m_command_aura.rgd
@@ -876,6 +1295,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\gameplay\victory_point.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\008mm_pzb39_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\012mm_boys_shell.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\012mm_p47_bullet.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\014mm_ptrs_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\020mm_cetaur_he_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\020mm_flak38_shell_he.rgd
@@ -982,6 +1402,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\105mm_stuh_shell_smoke.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\122mm_d25t_he_shell_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\122mm_d25t_shell.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\127mm_p47_hvar_heat.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\132mm_katyusha_rocket_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\132mm_katyusha_rocket_smoke_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\150mm_grille_he_shell.rgd
@@ -1179,6 +1600,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\vehicles\planes\p47_mg_rocket_loiter_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\vehicles\planes\p47_recon_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\vehicles\planes\p47_rockets_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\vehicles\planes\p47_strafe_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\aef\vehicles\planes\p47_suppression_strafe_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\british\buildings\crate_assault.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\british\buildings\crate_zooks.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\british\buildings\base_building\british_base_stamper.rgd
@@ -1293,6 +1716,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\ger_sniper\ger_sniper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\grenadiere\grenadier_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\grenadiere\grenadier_squadlead_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\medic\german_medic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\officer\officer_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\officer\osttruppen_guard_helmet_cape_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\soldiers\officer\osttruppen_guard_helmet_defiance.rgd
@@ -1356,6 +1780,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\commissar\commissar_officer_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\commissar\commissar_rifleman_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\guards\guards_rifle_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\medic\sov_medic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\partisans\partisans_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\partisans\partisans_mosin_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\soviet\soldiers\saperi\sapper_defiance.rgd
@@ -1418,6 +1843,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\paradrop_crates\airdrop_west_german_med_crates_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\paradrop_crates\airdrop_west_german_munitions_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\soldiers\gebirgjaeger\gebirgjaeger_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\soldiers\medic\wg_medic_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\soldiers\nachtjager\nachtjager_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\soldiers\panzerfusilier\panzerfusilier_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\west_german\soldiers\panzer_pioneer\panzer_pioneer_defiance.rgd
@@ -1471,6 +1897,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\doctrine\mechanized\vehicles\m4a3_sherman_105mm_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\doctrine\mechanized\vehicles\m9a1_barclay_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\tier_0\captain_squad_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\tier_0\captain_squad_defiance_ai.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\tier_0\rear_echelon_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\tier_0\rifleman_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\tier_0\usf_wc51_transport_squad_defiance.rgd
@@ -1491,6 +1918,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\vehicles\planes\p47_mg_rocket_loiter_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\vehicles\planes\p47_recon_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\vehicles\planes\p47_rockets_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\vehicles\planes\p47_strafes_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\aef\vehicles\planes\p47_suppression_strafes_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\doctrines\churchill_avre_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\doctrines\lend_lease\cromwell_command_tank_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\british\doctrines\lend_lease\sbs_raiders_defiance.rgd
@@ -1528,7 +1957,6 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\festung\officer_squad\osttruppen_oberstleutnant_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\festung\osttruppen_squad\osttruppen_helmet_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\festung\pak_43_emplacement\pak_43_squad_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\festung\stuh_42_assault_gun\stuh_42.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\overwatch\brandenburger\brandenburger.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\spearhead\sdkfz_250_halftrack\sdkfz_250_halftrack_transport_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\spearhead\stormtrooper\stormtrooper_defiance.rgd
@@ -1542,6 +1970,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\soldiers\mortar_team\leig_18_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\soldiers\panzergrenadiere\panzergrenadiere_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\soldiers\pioniere\pioniere_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\unused\stuh_42_assault_gun\stuh_42.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\at_gun_squad\pak36_at_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\at_gun_squad\pak40_at_squad_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_squad_defiance.rgd
@@ -1756,8 +2185,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\sten_partisan_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\svs39_guards_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\soviet\small_arms\svs39_strelki_item.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\ballistic_weapon\p4_rocket_icon_dummy.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\ballistic_weapon\infantry_at_weapon\panzerschreck_volks_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\ballistic_weapons\p4_rocket_icon_dummy.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\explosive_weapon\grenade\blendkorper_2h_smoke_grenade_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\explosive_weapon\grenade\m43_bundle_grenade_assault_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\explosive_weapon\grenade\rifle_grenade_assault_defiance.rgd
@@ -1769,6 +2198,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\small_arms\panzer_pioneer_mp44_item_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\west_german\small_arms\volksgrenadiere_stg44_item.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\251_radio_lockout.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef_anticommander_test.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\mark_target.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\spawner_01.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\spawner_02.rgd
@@ -1789,6 +2219,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\cav_scouts_sniper_upgrade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\fighting_position_mg_addition_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m20_side_skirts_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m3_assault_package_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m3_support_package_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m5_m16_meat_chopper_package_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\m8_top_gunner_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\aef\items\paratrooper_m1919a6_lmg_defiance.rgd
@@ -1892,8 +2324,9 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\doctrines\spearhead\grenadier_stg44_passive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\doctrines\spearhead\panzer_commander_passive_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\doctrines\spearhead\panzer_commander_upgrade_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\concrete_bunker_medic_station_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\concrete_bunker_mg42_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\bunker_command_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\bunker_medic_station_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\bunker_mg42_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\grenadier_k43_sniper_upgrade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\grenadier_veteran_squad_leader_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\jaeger_k43_sniper_upgrade.rgd
@@ -2042,6 +2475,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\heavy_artillery\m7b1_priest_m2a1_105mm_creeping_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\heavy_artillery\m7b1_priest_m89_smoke_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\heavy_artillery\major_offmap_105mm_mp.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\heavy_artillery\p47_hvar_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\light_artillery\075mm_m8a1_autofire_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\light_artillery\075mm_m8a1_he_barrage_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\explosive_weapons\light_artillery\075mm_m8a1_smoke_defiance.rgd
@@ -2073,6 +2507,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m15a1_aa_half_track_dummy_mp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_hmg_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_hmg_fast_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_hmg_p47_lethal_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_hmg_p47_suppression_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_m20_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_m5_halftrack_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_priest_defiance.rgd
@@ -2574,4 +3010,5 @@ TOCStart name="data" alias="data" path="" relativeroot="data"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\art\armies\west_german\soldiers\volksgrenadier\volksgrenadier.abp
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\ui\Assets\Textures\84428889d71d41a48e2eff09c2425d54_I3.dds
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\ui\Bin\84428889d71d41a48e2eff09c2425d54.gfx
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\data\ai\personality\zycatai.ai
 TOCEnd
