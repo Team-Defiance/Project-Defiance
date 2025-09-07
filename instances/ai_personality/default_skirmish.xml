@@ -2,22 +2,22 @@
 	<group name="ai_personality_bag">
 		<group name="easy">
 			<instance_reference name="settings" value="ai_settings\default_skirmish_easy" mod="84428889d71d41a48e2eff09c2425d54" />
-			<file name="lua_script" value="default_skirmish" />
+			<file name="lua_script" value="zycatai" />
 			<instance_reference name="economy" value="ai_economy_group\default" />
 		</group>
 		<group name="standard">
 			<instance_reference name="settings" value="ai_settings\default_skirmish_standard" mod="84428889d71d41a48e2eff09c2425d54" />
-			<file name="lua_script" value="default_skirmish" />
+			<file name="lua_script" value="zycatai" />
 			<instance_reference name="economy" value="ai_economy_group\default" />
 		</group>
 		<group name="hard">
 			<instance_reference name="settings" value="ai_settings\default_skirmish_hard" mod="84428889d71d41a48e2eff09c2425d54" />
-			<file name="lua_script" value="default_skirmish" />
+			<file name="lua_script" value="zycatai" />
 			<instance_reference name="economy" value="ai_economy_group\default" />
 		</group>
 		<group name="hardest">
 			<instance_reference name="settings" value="ai_settings\default_skirmish_hardest" mod="84428889d71d41a48e2eff09c2425d54" />
-			<file name="lua_script" value="default_skirmish" />
+			<file name="lua_script" value="zycatai" />
 			<instance_reference name="economy" value="ai_economy_group\default" />
 		</group>
 	</group>

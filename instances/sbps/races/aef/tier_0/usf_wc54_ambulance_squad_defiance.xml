@@ -469,6 +469,78 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_all_in_list">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirements">
+								<template_reference name="requirement" value="requirements\required_sector_type">
+									<enum name="reason" value="usage" />
+									<enum name="sector_type" value="sector_type_command" />
+								</template_reference>
+								<template_reference name="requirement" value="requirements\required_in_territory">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="in_supply" value="True" />
+									<bool name="is_secured" value="False" />
+									<bool name="is_secured_by_checkpoint" value="False" />
+									<bool name="not_in_transition" value="False" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\ui_decorator_state_action">
+							<uniqueid name="id" value="1073797389" />
+							<string name="state_icon" value="FrameBraceEnabled" />
+						</template_reference>
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+									<enum name="application_type" value="apply_to_squad" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.8" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073797390" />
+						</template_reference>
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="4228" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="4229" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_bob_perks_infantry_company_damage" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073797392" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="squad" />
+							<uniqueid name="id" value="1073797391" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797388" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>

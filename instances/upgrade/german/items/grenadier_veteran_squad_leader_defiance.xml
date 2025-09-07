@@ -46,6 +46,22 @@
 				<icon name="symbol_icon" value="Icons_symbols_assgren_shield_symbol" />
 				<uniqueid name="id" value="1073748229" />
 			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\armor_modifier">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="True" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="1" />
+						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073797579" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
@@ -70,13 +86,6 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="True" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\grenadier_veteran_squad_leader_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

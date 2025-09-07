@@ -253,23 +253,14 @@
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_molotov_grenade_mp" />
-					<instance_reference name="unlocked_ability" value="abilities\soviet\modal_ability\grenades\conscript_molotov_cocktail" />
+					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_medics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad" />
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_anti_tank_grenade_mp" />
-					<instance_reference name="unlocked_ability" value="abilities\soviet\modal_ability\grenades\anti_tank_grenade" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\soviet\soldiers\conscript_squad\conscript_squad" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\hq_healing_aura_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">

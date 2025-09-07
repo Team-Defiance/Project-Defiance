@@ -1,0 +1,62 @@
+--[[	
+	if(AI_Think_Counter % 60 == 0) then				-- do it once every x ticks to conserve cpu
+		if self_worldtime > 2400 then
+			if ai_difficulty == AD_Hardest then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 24*6)
+			elseif ai_difficulty == AD_Hard then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 7*6)
+			end	
+		elseif self_worldtime > 1800 then
+			if ai_difficulty == AD_Hardest then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 21*6)
+			elseif ai_difficulty == AD_Hard then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 6*6)
+			end
+		elseif self_worldtime > 1200 then
+			if ai_difficulty == AD_Hardest then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 18*6)
+			elseif ai_difficulty == AD_Hard then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 5*6)
+			end
+		elseif self_worldtime > 600 then
+			if ai_difficulty == AD_Hardest then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 15*6)
+			elseif ai_difficulty == AD_Hard then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 4*6)
+			end
+		elseif self_worldtime > 90 then
+			if ai_difficulty == AD_Hardest then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 12*6)
+			elseif ai_difficulty == AD_Hard then
+				SGroup_IncreaseVeterancyExperience(Player_GetSquads(ai_player), 3*6)
+			end
+		end
+	end
+]]	
+
+		if ai_difficulty == AD_Hardest then
+			Player_AddUnspentCommandPoints( ai_player, 1 )                 -- starting cp
+		elseif ai_difficulty == AD_Hard then
+			Player_AddUnspentCommandPoints( ai_player, 0.25 )            
+		end
+		
+		
+			-- Resource Cheat Handler
+	
+	local num_strategic_points = Player_GetNumStrategicPoints(ai_player)
+--	local num_victory_points = Player_GetNumVictoryPoints(ai_player)
+	local map_strategic_points = World_GetNumStrategicPoints()
+--	local map_victory_points = World_GetNumVictoryPoints()
+
+	if(AI_Think_Counter % 3 == 0) then				-- do it once every x ticks to conserve cpu
+		if ai_difficulty == AD_Hardest then
+			aisettings_manpower_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 0.8)
+			aisettings_fuel_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 1)
+			aisettings_munitions_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 1)
+		elseif ai_difficulty == AD_Hard then
+			aisettings_manpower_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 0.2)
+			aisettings_fuel_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 0.3)
+			aisettings_munitions_mult = 1.0 + (((map_strategic_points - num_strategic_points)/map_strategic_points) * 0.3)
+		end
+	end
+

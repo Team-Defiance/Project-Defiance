@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\centaur_strafe_attack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\aa_mode_allies" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -922,7 +922,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\british\vehicles\centaur_squad_mp\centaur_aa_mk2_squad_mp" />
+						<instance_reference name="capture_squad_blueprint" value="" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">

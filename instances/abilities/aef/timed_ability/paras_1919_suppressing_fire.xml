@@ -6,112 +6,117 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="15" />
-					<bool name="fire_and_forget" value="True" />
-					<list name="subactions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.25" />
+							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1.25" />
+							<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.875" />
+							<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073797531" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_in_state">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="garrisoned" value="False" />
+							<bool name="healed" value="False" />
+							<float name="in_combat_since" value="-1" />
+							<bool name="injured" value="False" />
+							<bool name="leader" value="False" />
+							<bool name="not_moving" value="True" />
+							<bool name="not_retreating" value="False" />
+							<bool name="pinned" value="False" />
+							<bool name="suppressed" value="False" />
+							<bool name="camouflaged" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+								<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.25" />
-									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.25" />
-									<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.875" />
-									<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="0.01" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795823" />
-						</template_reference>
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="False" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="False" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="True" />
-									<bool name="not_retreating" value="False" />
-									<bool name="pinned" value="False" />
-									<bool name="suppressed" value="False" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\apply_modifiers_action">
-									<float name="duration" value="0" />
-									<bool name="permanent" value="False" />
-									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="addition" />
-											<float name="value" value="0.01" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073795824" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073795825" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
-						</template_reference>
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="True" />
-							<string name="do_action_state_name" value="on" />
-							<bool name="retrigger" value="True" />
-							<string name="state_machine_name" value="ability_attack_buff_state" />
-							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073795826" />
+							<uniqueid name="id" value="1073797532" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795827" />
+					<uniqueid name="id" value="1073797533" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="True" />
+					<string name="do_action_state_name" value="on" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="ability_attack_buff_state" />
+					<string name="undo_action_state_name" value="off" />
+					<uniqueid name="id" value="1073797534" />
 				</template_reference>
 				<template_reference name="action" value="action\ui_unit_modifier_action">
 					<bool name="die_with_creator" value="True" />
 					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="0" />
-						<locstring name="help_text" value="0" />
+						<locstring name="screen_name" value="4239" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="4240" mod="84428889d71d41a48e2eff09c2425d54" />
 						<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
-					<uniqueid name="id" value="1073795828" />
+					<uniqueid name="id" value="1073797535" />
+				</template_reference>
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="4242" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="False" />
+					<uniqueid name="id" value="1073797552" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -182,7 +187,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="3774" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11051740" />
+			<locstring name="help_text" value="4237" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_suppressing_fire" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
