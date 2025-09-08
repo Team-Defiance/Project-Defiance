@@ -162,17 +162,17 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073799008" />
+									<uniqueid name="id" value="1073798999" />
 								</template_reference>
 								<template_reference name="action" value="action\change_move_data_action">
 									<float name="acceleration_multiplier" value="1.6" />
 									<float name="deceleration_multiplier" value="1" />
 									<float name="pathfinding_size_x" value="0" />
 									<float name="pathfinding_size_y" value="0" />
-									<uniqueid name="id" value="1073799009" />
+									<uniqueid name="id" value="1073799000" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073799010" />
+							<uniqueid name="id" value="1073799001" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -185,7 +185,7 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_movement_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073799011" />
+							<uniqueid name="id" value="1073799002" />
 						</template_reference>
 						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0" />
@@ -197,7 +197,7 @@
 							<float name="message_duration" value="5" />
 							<bool name="team_only" value="False" />
 							<bool name="check_fow" value="False" />
-							<uniqueid name="id" value="1073799012" />
+							<uniqueid name="id" value="1073799003" />
 						</template_reference>
 						<template_reference name="action" value="action\target_occupants_action">
 							<list name="subactions">
@@ -215,10 +215,10 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073799013" />
+									<uniqueid name="id" value="1073799004" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073799014" />
+							<uniqueid name="id" value="1073799005" />
 						</template_reference>
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
@@ -228,10 +228,10 @@
 								<icon name="icon_name" value="Icons_abilities_ability_soviet_steady_driving" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073799015" />
+							<uniqueid name="id" value="1073799006" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073799016" />
+					<uniqueid name="id" value="1073799007" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -326,7 +326,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_all_in_list">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11043026" />
+				<locstring name="ui_name" value="0" />
 				<list name="requirements">
 					<template_reference name="requirement" value="requirements\required_critical">
 						<enum name="reason" value="usage" />
@@ -426,33 +426,6 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_entity_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\items\m5_m16_meat_chopper_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="include_queued" value="False" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1623" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1816" mod="84428889d71d41a48e2eff09c2425d54" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_slot_item">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="check_item_on_entity" value="True" />
-						<bool name="display_requirement" value="True" />
-						<float name="max_owned" value="10" />
-						<float name="min_owned" value="1" />
-						<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
-					</template_reference>
-				</list>
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
 		<int name="ui_position" value="31" />
@@ -487,5 +460,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742098" />
+	<uniqueid name="pbgid" value="1073742668" />
 </instance>
