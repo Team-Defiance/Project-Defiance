@@ -9,14 +9,14 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11158952" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11158953" />
+						<locstring name="help_text" value="4279" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="R" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_german_250_halftrack" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="False" />
-						<locstring name="screen_name" value="11158954" />
+						<locstring name="screen_name" value="4277" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="mortarhalftrack" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -180,7 +180,6 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\vehicles_optics" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
