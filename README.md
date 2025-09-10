@@ -14,6 +14,29 @@ Defiance reimagines balance, abilities, and gameplay flow while respecting the v
 
 ---
 
+## 📥 Installation
+
+There are three ways to install Project Defiance:
+
+### 1. Steam Workshop (coming soon)
+- Subscribe to the official Project Defiance Steam Workshop item.
+- Restart the game.
+
+### 2. Download the `.sga` file
+- Download the latest `.sga` file from the [Releases](../../releases) page.
+- Place the file in: `\Documents\My Games\Company of Heroes 2\mods\tuning`
+- Restart the game.
+
+### 3. Building the mod yourself
+- Update CoH2 Mod Tools (instructions: [Updated Modding Tools XML File](https://www.coh2.org/topic/111697/updated-modding-tools-xml-file)).
+- Clone this repository.
+- Open the CoH2 Mod Tools.
+- In the Mod Tools, select **File > Open**, navigate to the repository, and select `Defiance Mod.mod`.
+- Click **Build** in the CoH2 Mod Tools.
+- Restart the game.
+
+---
+
 ## 🚀 Features
 - **Standalone Doctrine System**  
   Replaces the vanilla commander system. All doctrines are available from the start, each bringing unique units, upgrades, and abilities.
