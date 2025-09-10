@@ -1,6 +1,6 @@
 # Project Defiance
 
-_A squad-based RTS mod for **Company of Heroes 2**, designed to deliver a fresh yet familiar experience._
+_A fan-made game modification for **Company of Heroes 2**, designed to deliver a fresh yet familiar experience._
 
 ---
 
@@ -16,7 +16,7 @@ Defiance reimagines balance, abilities, and gameplay flow while respecting the v
 
 ## 🚀 Features
 - **Standalone Doctrine System**  
-  Replaces the vanilla commander model. All doctrines are available from the start, each bringing unique units, upgrades, and abilities.
+  Replaces the vanilla commander system. All doctrines are available from the start, each bringing unique units, upgrades, and abilities.
 
 - **Refined Gameplay Mechanics**  
   Streamlined weapon damage, cover behavior, and explosive interactions for consistency and clarity.
@@ -57,6 +57,6 @@ This means:
 ---
 
 ## 🌐 Community & Support
-- [Discord]([#](https://discord.gg/2M7s68Cu8U))  
+- [Discord](https://discord.gg/2M7s68Cu8U)  
 - [Wiki](#) (in progress)  
 - [Issues & Feedback](../../issues)  
