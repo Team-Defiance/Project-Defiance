@@ -1,0 +1,48 @@
+model =
+{
+---------------------
+-- BaseMotions.abp --
+---------------------
+"base\\basemotion\\basemotion",
+"base\\basehead\\basehead",
+
+-----------------------
+-- CommonMotions.abp --
+-----------------------
+-- Common Weapon Animations
+"..\\german\\weapons\\mg42_light\\mg42_light",
+"weapons\\bazooka\\bazooka",
+"weapons\\flamethrowers\\flamethrowers",
+"weapons\\grenade\\grenade",
+"weapons\\heavy_machine_guns_sync\\heavy_machine_guns_sync",
+"weapons\\hmg_platforms_sync\\hmg_platforms_sync",
+"weapons\\mortar_sync\\mortar_sync",
+"weapons\\rifle\\rifle",
+"weapons\\sub_machine_guns\\sub_machine_guns",
+"props\\sandbag\\sandbag",
+"props\\shovel_digin\\shovel_digin",
+"props\\fire\\fire",
+
+
+--------------------------------
+-- Resuming CommonMotions.abp --
+--------------------------------
+
+-- Common Team Weapon Sync files
+"vehicles\\antitank_guns_sync\\antitank_guns_sync",
+"vehicles\\antitank_guns_big_sync\\antitank_guns_big_sync",
+"vehicles\\syncpoint\\syncpoint",
+
+"..\\german\\weapons\\mg42_heavy_tripod_sync\\mg42_heavy_tripod_sync",
+"..\\soviet\\weapons\\mortar_120mm_m1938_sync\\mortar_120mm_m1938_sync",
+"..\\german\\weapons\\panzerschreck\\panzerschreck",
+"..\\soviet\\weapons\\flamethrower_roks3\\flamethrower_roks3",
+"..\\german\\weapons\\flamethrower\\flamethrower",
+}
+
+
+-- Intermediate ABP
+simvis_attributes =
+{
+Intermediate_Model = 1
+}
