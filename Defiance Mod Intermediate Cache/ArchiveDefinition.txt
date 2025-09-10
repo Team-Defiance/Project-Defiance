@@ -1151,6 +1151,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\modal_ability\repair_ability\aef_repair_ability_rear_echelon_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\timed_ability\captain_heal_area.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\timed_ability\captain_on_me.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\aef\toggle_ability\vehicle_crew_repair_toggle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\accessory_weapons\sapper_snare.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\artillery\mortar_barrage_ability\brit_81mm_mortar_team_mortar_barrage_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\british\modal_ability\artillery\mortar_barrage_ability\brit_81mm_mortar_team_smoke_barrage_defiance.rgd
@@ -1179,6 +1180,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\modal_ability\repair_ability\soviet_repair_ability_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\timed_ability\penal_oorah.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\timed_ability\strelki_oorah.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\soviet\toggle_ability\srf_vehicle_crew_repair_toggle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t1.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t2.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\modal_ability\sws_t3.rgd
@@ -1193,6 +1195,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\221_smoke.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\puma_twp.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\timed_ability\wg_combat_blitz.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_ability\west_german\toggle_ability\ea_vehicle_crew_repair_toggle_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_economy\complete\default.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_personality\default_skirmish.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ai_settings\default_skirmish_easy.rgd
@@ -2618,6 +2621,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_mines.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\explosive_weapons\mortar\grw42_81_mortar_smoke_barrage.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\flame_throwers\halftrack_flammenwerfer_left_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\flame_throwers\halftrack_flammenwerfer_right_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\flame_throwers\pioneer_flamethrower_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\flame_throwers\grenade\m44_brandgranate.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\small_arms\machine_gun\heavy_machine_gun\hmg34_defiance.rgd
@@ -2697,6 +2702,8 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\grenade\commando_smoke_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\grenade\gammon_bomb_heavy_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\grenade\gammon_bomb_light_assault_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\heavy_artillery\076mm_hawker_typhoon_rocket_left_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\heavy_artillery\076mm_hawker_typhoon_rocket_right_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_airburst.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_airburst_accurate.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\explosive_weapons\heavy_artillery\088mm_25pdr_base_artillery_he.rgd
@@ -2720,6 +2727,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\flame_throwers\churchill_flamethrower_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\flame_throwers\no2_sapper.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\flame_throwers\universal_carrier_ronson_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\small_arms\machine_gun\heavy_machine_gun\hawker_typhoon_20mm_hispano_cannons_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\small_arms\machine_gun\heavy_machine_gun\vickers_heavy_machine_gun_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\small_arms\machine_gun\light_machine_gun\1919_firefly_coax_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\british\small_arms\machine_gun\light_machine_gun\besa_aec_coax_defiance.rgd
