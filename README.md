@@ -48,7 +48,7 @@ We welcome contributions!
 
 ## 📜 Licensing
 - **Code**: [GNU GPL v3](LICENSE-CODE)  
-- **Assets (art, sound, writing, etc.)**: [CC BY-NC-ND 4.0](LICENSE-ASSETS)  
+- **Assets (art, writing, lore, etc.)**: [CC BY-NC-ND 4.0](LICENSE-ASSETS)  
 
 This means:  
 - Code is open-source, and modifications must also be shared under GPLv3.  
