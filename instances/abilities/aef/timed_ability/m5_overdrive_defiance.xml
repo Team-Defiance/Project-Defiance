@@ -162,17 +162,17 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073750465" />
+									<uniqueid name="id" value="1073799008" />
 								</template_reference>
 								<template_reference name="action" value="action\change_move_data_action">
 									<float name="acceleration_multiplier" value="1.6" />
 									<float name="deceleration_multiplier" value="1" />
 									<float name="pathfinding_size_x" value="0" />
 									<float name="pathfinding_size_y" value="0" />
-									<uniqueid name="id" value="1073750466" />
+									<uniqueid name="id" value="1073799009" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073750467" />
+							<uniqueid name="id" value="1073799010" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -185,7 +185,7 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_movement_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073750468" />
+							<uniqueid name="id" value="1073799011" />
 						</template_reference>
 						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0" />
@@ -197,7 +197,7 @@
 							<float name="message_duration" value="5" />
 							<bool name="team_only" value="False" />
 							<bool name="check_fow" value="False" />
-							<uniqueid name="id" value="1073750469" />
+							<uniqueid name="id" value="1073799012" />
 						</template_reference>
 						<template_reference name="action" value="action\target_occupants_action">
 							<list name="subactions">
@@ -215,10 +215,10 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073750470" />
+									<uniqueid name="id" value="1073799013" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073750471" />
+							<uniqueid name="id" value="1073799014" />
 						</template_reference>
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
@@ -228,10 +228,10 @@
 								<icon name="icon_name" value="Icons_abilities_ability_soviet_steady_driving" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073750472" />
+							<uniqueid name="id" value="1073799015" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073750473" />
+					<uniqueid name="id" value="1073799016" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

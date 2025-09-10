@@ -1,0 +1,89 @@
+model =
+{
+	---------------------
+	-- BaseMotions.abp --
+	---------------------
+	"base\\basemotion\\basemotion",
+	"base\\basematerial\\basematerial",
+	"base\\basehead\\basehead",
+	"soldiers\\giblets\\giblets\\giblets",
+	
+
+	-----------------------
+	-- CommonMotions.abp --
+	-----------------------
+	-- Common Weapon Animations
+	
+	"weapons\\bazooka\\bazooka",
+	"weapons\\flamethrowers\\flamethrowers",
+	"weapons\\grenade\\grenade",
+	"weapons\\heavy_machine_guns_sync\\heavy_machine_guns_sync",
+   	"weapons\\hmg_platforms_sync\\hmg_platforms_sync",
+	"weapons\\mortar_sync\\mortar_sync",
+	"weapons\\rifle\\rifle",
+	"weapons\\sub_machine_guns\\sub_machine_guns",
+	
+	"props\\sandbag\\sandbag",
+	"props\\shovel_digin\\shovel_digin",
+	"props\\fire\\fire",
+	
+	--------------------------------
+	-- Resuming CommonMotions.abp --
+	--------------------------------
+
+	-- Common Team Weapon Sync files
+	"vehicles\\antitank_guns_sync\\antitank_guns_sync",
+	"vehicles\\antitank_guns_big_sync\\antitank_guns_big_sync",
+	"vehicles\\syncpoint\\syncpoint",
+	"vehicles\\abandon_sync\\abandon_sync",
+	
+	-- west german common sync
+	"..\\west_german\\weapons\\raketenwerfer_sync\\raketenwerfer_sync",
+	"..\\west_german\\weapons\\le_ig_18_inf_support_gun_sync\\le_ig_18_inf_support_gun_sync",
+	"..\\west_german\\structures\\flak_gun_emplacement_sync\\flak_gun_emplacement_sync",
+	"..\\west_german\\weapons\\smg_mp44_default\\smg_mp44_default",
+
+	-- aef common sync
+	"..\\aef\\weapons\\m1_75mm_pack_howitzer_sync\\m1_75mm_pack_howitzer_sync",
+	"..\\aef\\weapons\\m2hb_50cal_machine_gun_sync\\m2hb_50cal_machine_gun_sync",
+	-- soviet common sync
+	"..\\soviet\\weapons\\artillery_203mm_b4_sync\\artillery_203mm_b4_sync",
+	-- german common sync
+	"..\\german\\weapons\\mg42_heavy_tripod_sync\\mg42_heavy_tripod_sync",
+	"..\\british\\weapons\\vickers_hmg_sync\\vickers_hmg_sync",
+--	"..\\british\\weapons\\25_pounder_sync\\25_pounder_sync",
+	"..\\west_german\\weapons\\mg34_heavy_tripod_sync\\mg34_heavy_tripod_sync",
+   	"..\\soviet\\weapons\\mortar_120mm_m1938_sync\\mortar_120mm_m1938_sync",
+	"..\\soviet\\weapons\\flamethrower_roks3\\flamethrower_roks3",
+	"..\\german\\weapons\\granatwerfer_34_sync\\granatwerfer_34_sync",
+	"..\\aef\\weapons\\m1_81mm_mortar_sync\\m1_81mm_mortar_sync",
+	"..\\soviet\\weapons\\mortar_82mm_pm41_sync\\mortar_82mm_pm41_sync",
+	"..\\german\\weapons\\panzerschreck\\panzerschreck",
+	"..\\german\\weapons\\flamethrower\\flamethrower",
+	"..\\soviet\\weapons\\lmg_dp28\\lmg_dp28",
+	"..\\soviet\\weapons\\rifle_ptrs41\\rifle_ptrs41",
+	"..\\german\\weapons\\rifle_pzb39_at\\rifle_pzb39_at",
+	"..\\german\\weapons\\mg42_light\\mg42_light",
+	"..\\aef\\weapons\\bazooka_m9\\bazooka_m9",
+	"..\\aef\\weapons\\rifle_m1918a2_browning\\rifle_m1918a2_browning",
+	"..\\aef\\weapons\\flamethrower_m2\\flamethrower_m2",
+	"..\\west_german\\weapons\\lmg_mg34\\lmg_mg34",
+	"..\\german\\weapons\\rifle_g43_sniper\\rifle_g43_sniper",
+--	"..\\west_german\\weapons\\rifle_fg42\\rifle_fg42",
+	"..\\aef\\weapons\\lmg_m1919a6\\lmg_m1919a6",
+	"..\\british\\weapons\\piat\\piat",
+	-- british common sync
+	"..\\british\\weapons\\vickers_hmg_sync\\vickers_hmg_sync",
+--	"..\\british\\weapons\\25_pounder_sync\\25_pounder_sync",
+	"..\\british\\weapons\\piat\\piat",
+	"..\\british\\weapons\\bren_gun\\bren_gun",
+	"..\\british\\weapons\\lmg_vickers\\lmg_vickers",
+	"..\\british\\weapons\\3in_projector_sync\\3in_projector_sync",
+}	
+
+
+-- Intermediate ABP
+simvis_attributes =
+{
+	Intermediate_Model = 1
+}
