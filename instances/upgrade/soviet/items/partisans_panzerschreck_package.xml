@@ -24,17 +24,17 @@
 				<float name="munition" value="60" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="20" />
+			<float name="time_seconds" value="25" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="392" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="391" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4287" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4288" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="W" />
-			<icon name="icon_name" value="Icons_tooltips_ranged_2" />
+			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_german_panzerschrek" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="390" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="4286" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
@@ -42,25 +42,22 @@
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_partisan_item" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\west_german\ballistic_weapon\infantry_at_weapon\panzerschreck_volks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073744620" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\mp40_partisan_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073744621" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\sten_partisan_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073744641" />
+				<uniqueid name="id" value="1073799100" />
 			</template_reference>
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\items\partisans_smg_package" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<int name="ui_position" value="0" />
-		<icon name="ui_kicker_icon_name" value="" />
+		<icon name="ui_kicker_icon_name" value="Icons_weapons_weapon_panzerschreck" />
 		<locstring name="ui_squad_name_override" value="0" />
 		<locstring name="ui_squad_help_text_override" value="0" />
 		<locstring name="ui_squad_extra_text_override" value="0" />
@@ -71,5 +68,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741848" />
+	<uniqueid name="pbgid" value="1073742072" />
 </instance>
