@@ -434,6 +434,22 @@
 					</list>
 					<uniqueid name="id" value="1073756486" />
 				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="aud_act_lee_enfield_sniper_rifle_fire" />
+					<bool name="allies_only" value="False" />
+					<float name="duration" value="2" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<uniqueid name="id" value="1073799111" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="fx_lee_enfield_fire" />
+					<bool name="allies_only" value="False" />
+					<float name="duration" value="2" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<uniqueid name="id" value="1073799112" />
+				</template_reference>
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
