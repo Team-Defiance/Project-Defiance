@@ -1,35 +1,62 @@
-# Project-Defiance
-## Frequently Asked Questions
+# Project Defiance
 
-### Q: What is Project Defiance?
-**A:** Project Defiance is a squad-based RTS mod built on Company of Heroes 2, designed to offer a fresh but familiar experience. While it stays true to WWII units and themes, it reimagines balance, abilities, and gameplay flow to create a more engaging battlefield. Our goal is to keep the transition from vanilla CoH2 to Defiance smooth, so players can dive in without relearning the entire game.
+_A squad-based RTS mod for **Company of Heroes 2**, designed to deliver a fresh yet familiar experience._
 
-### Q: How does Project Defiance change the base game?
-**A:** Project Defiance builds on the core mechanics of Company of Heroes 2 while introducing new units, abilities, and refined gameplay systems. We’ve streamlined weapon damage, cover interactions, and explosive effects to make them more consistent and intuitive, all while staying true to the vanilla feel. For those interested in the full technical breakdown, we’ll provide a detailed document covering the deeper balance and mechanical changes.
+---
 
-### Q: Are there new units or abilities?
-**A:** Absolutely. Project Defiance introduces a standalone doctrine system that replaces the vanilla commander model. Unlike the paid DLC commanders in the base game, all doctrines in Defiance are available to everyone from the start. Each doctrine comes with its own unique units, upgrades, and abilities, giving players the tools to pre-empt their opponents or counter enemy strategies in dynamic new ways.
+## 🎯 Introduction
+Project Defiance is a total overhaul of the Company of Heroes 2 ruleset. It keeps the core gameplay recognizable for veterans while refining mechanics and introducing new options that make every match feel fresh. The transition from vanilla CoH2 to Defiance is smooth, so you can dive in without relearning the entire game, but engaging enough to keep you hooked.
 
-### Q: Will this mod include experimental or prototype weapons?
-**A:** Yes, but only selectively. Project Defiance is set in an alternate timeline where the war extends into 1946–1947, allowing certain late-war prototypes or experimental concepts to appear. These additions exist purely to create new and engaging gameplay mechanics, often used to rework units that felt lackluster in vanilla. We keep this element restrained compared to other workshop mods, but you’ll still encounter the occasional experimental weapon or design during your time with Defiance.
+---
 
-### Q: Will this mod be compatible with other mods?
-**A:** By design, Project Defiance is a tuning pack, which means it won’t be compatible with other tuning packs. However, it doesn’t alter core game modes, so win conditions and custom scenarios (theoretically) remain usable. We also fully endorse custom skin packs, so you’re free to use any skins you like alongside Defiance.
+## 📖 Overview
+Defiance reimagines balance, abilities, and gameplay flow while respecting the vanilla feel. Weapon damage, cover interactions, and explosive effects have been streamlined to reduce frustrating randomness and improve consistency. The result is a mechanically polished, accessible experience that emphasizes fun and battlefield flow over strict competitive balance.
 
-### Q: Is this mod balanced for competitive play, or more for a casual audience?
-**A:** While we aim for relative balance between factions, Project Defiance is not designed with competitive play as its primary focus. Our goal is fun, consistency, and reducing frustrating mechanics from vanilla. Elements like weapon slot drops, random vehicle crits (Main Gun Destroyed, Vehicle Abandon), and overly RNG-heavy explosive damage have been streamlined or removed. Think of it like Team Fortress 2: mechanically tight, but always with consistency as the priority. That said, the mod can still be played competitively in arranged matches, if you truly wish to do so.
+---
 
-### Q: How many custom doctrines will we see in Project Defiance?
-**A:** Project Defiance will launch with 3 doctrines per faction, each offering its own unique playstyle, units, and abilities. Following release, we plan to add 3 additional doctrines per faction as post-launch content, all of which will be completely free of charge.
+## 🚀 Features
+- **Standalone Doctrine System**  
+  Replaces the vanilla commander model. All doctrines are available from the start, each bringing unique units, upgrades, and abilities.
 
-### Q: Do you plan to add [X features] in future updates?
-**A:** We’re always open to good ideas, and if something fits our vision for Project Defiance it might make its way in. That said, we have a clear direction for the mod, so not every suggestion will be implemented. In short: if it’s interesting and enhances the gameplay, maybe? Don’t count on everything making it in.
+- **Refined Gameplay Mechanics**  
+  Streamlined weapon damage, cover behavior, and explosive interactions for consistency and clarity.
 
-### Q: Why does Project Defiance have less content compared to other mods or even vanilla CoH2?
-**A**: It’s not that we don’t want to add more content; our team is small, and our priority is delivering a polished and balanced experience rather than flooding the game with new units for the sake of numbers. Content bloat often dilutes gameplay, so we’ve chosen to focus on refining the mechanics and units we already have. That said, we do plan to release additional doctrines and content post-launch, all free of charge. Players can also follow our official Discord for progress updates, previews, and discussions about future additions.
+- **New Units and Abilities**  
+  Expands each faction’s toolkit with fresh strategic options.
 
-### Q: Does the mod have faction bias?
-**A**: We’ll be honest: most of our dev team mains Allies. That said, we believe that to create a strong protagonist, you also need an equally strong antagonist. Every faction in Defiance has been designed to stand on its own, with unique strengths and tools. At the end of the day, it’s your skill and strategy that will determine victory, not developer bias.
+- **Accessible Yet Fresh**  
+  Vanilla-like gameplay that feels familiar but with enough new mechanics to keep players engaged.
 
-### Q: Where are all the Soviet Guards units?
-**A**: In vanilla, Guards were designed and balanced in a way that we didn’t enjoy, so we decided to hold off on them for a while (yes, we kind of hated them as a unit). That said, Guards aren’t gone forever: they already exist in the mod files and will make their return in an upcoming doctrine.
+- **Planned Growth**  
+  Launch includes 3 doctrines per faction, with additional free doctrines planned post-release
+  
+---
+
+## ❓ FAQ
+Looking for details on design choices, units, or mechanics?  
+See the full [FAQ](docs/FAQ.md).
+
+---
+
+## 🛠️ Contributing
+We welcome contributions!  
+- Fork this repo and submit a pull request.  
+- Follow our content guidelines in `CONTRIBUTING.md` (coming soon).  
+- Respect the licensing terms.  
+
+---
+
+## 📜 Licensing
+- **Code**: [GNU GPL v3](LICENSE-CODE)  
+- **Assets (art, sound, writing, etc.)**: [CC BY-NC-ND 4.0](LICENSE-ASSETS)  
+
+This means:  
+- Code is open-source, and modifications must also be shared under GPLv3.  
+- Assets may be shared but not used commercially or remixed without permission.
+
+---
+
+## 🌐 Community & Support
+- [Discord]([#](https://discord.gg/2M7s68Cu8U))  
+- [Wiki](#) (in progress)  
+- [Issues & Feedback](../../issues)  
