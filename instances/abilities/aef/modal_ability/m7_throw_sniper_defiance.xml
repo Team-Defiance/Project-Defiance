@@ -1,15 +1,47 @@
-<instance description="Harmful smoke grenade" template="abilities">
+<instance description="pinning grenade on the penal battalion" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="ready" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="submachinegun_state" />
+					<string name="undo_action_state_name" value="on" />
+					<uniqueid name="id" value="1073799177" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="ready" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="rifle_state" />
+					<string name="undo_action_state_name" value="on" />
+					<uniqueid name="id" value="1073799178" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="offhand" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="submachinegun_state" />
+					<string name="undo_action_state_name" value="on" />
+					<uniqueid name="id" value="1073799179" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="offhand" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="rifle_state" />
+					<string name="undo_action_state_name" value="on" />
+					<uniqueid name="id" value="1073799180" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\british\explosive_weapon\grenade\no77_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="accessory_weapon_item" value="slot_item\aef\grenades\m7_thrown_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="decrement_accessory_item" value="" />
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
@@ -19,26 +51,8 @@
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
 					</group>
-					<uniqueid name="id" value="1073796325" />
+					<uniqueid name="id" value="1073799181" />
 					<bool name="target_override_direction_times_max_range" value="False" />
-				</template_reference>
-				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1.5" />
-					<float name="delay_min" value="0" />
-					<bool name="progress_bar" value="False" />
-					<bool name="randomize" value="False" />
-					<list name="delayed_actions">
-						<template_reference name="action" value="action\game_event_action">
-							<float name="event_extra_param" value="0" />
-							<float name="event_param_begin" value="1" />
-							<float name="event_param_end" value="-1" />
-							<enum name="event_type" value="grenade" />
-							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073796326" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073796327" />
-					<bool name="can_prevent_refund" value="False" />
 				</template_reference>
 			</list>
 		</group>
@@ -52,10 +66,10 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="25" />
+			<float name="munition" value="15" />
 			<float name="popcap" value="0" />
 		</group>
-		<string name="cursor_ghost_blueprint" value="" />
+		<string name="cursor_ghost_blueprint" value="armies\aef\weapons\m7_light_antitank_mine\m7_light_antitank_mine" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="True" />
 		<bool name="disable_when_active" value="True" />
@@ -73,11 +87,11 @@
 		<float name="initial_delay_time" value="0" />
 		<bool name="initial_recharge" value="False" />
 		<bool name="is_default_action" value="False" />
-		<bool name="move_back" value="False" />
-		<float name="move_back_distance" value="10" />
-		<float name="range" value="18" />
+		<bool name="move_back" value="True" />
+		<float name="move_back_distance" value="0" />
+		<float name="range" value="10" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="30" />
+		<float name="recharge_time" value="15" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_1" />
@@ -88,8 +102,8 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="mk2" />
-			<string name="code_2" value="gnd" />
+			<string name="code_1" value="tsc" />
+			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
@@ -106,13 +120,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11167074" />
-			<locstring name="help_text" value="3589" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="E" />
-			<icon name="icon_name" value="Icons_abilities_ability_west_german_vahvw_grenade_launcher" />
+			<locstring name="extra_text" value="1480" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="1479" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="F" />
+			<icon name="icon_name" value="Icons_buildings_building_aef_m7_light_at_mine" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="3588" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="1478" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -144,22 +158,20 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\british\items\section_stens" mod="84428889d71d41a48e2eff09c2425d54" />
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4306" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="5.5" />
-		<float name="ui_reticule_radius_max" value="5.5" />
+		<instance_reference name="ui_reticule" value="" />
+		<float name="ui_reticule_radius_min" value="6" />
+		<float name="ui_reticule_radius_max" value="6" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -167,12 +179,12 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
+		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -185,5 +197,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742630" />
+	<uniqueid name="pbgid" value="1073742675" />
 </instance>
