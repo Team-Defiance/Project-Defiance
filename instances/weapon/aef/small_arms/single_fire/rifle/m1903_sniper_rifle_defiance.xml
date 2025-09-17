@@ -29,8 +29,8 @@
 			<string name="track_horizontal_speed" value="" />
 			<string name="track_vertical" value="Rifle_Tilt" />
 			<string name="track_vertical_speed" value="" />
-			<string name="variety_name" value="off" />
-			<string name="visibility_name" value="Kar98_Visible" />
+			<string name="variety_name" value="scope" />
+			<string name="visibility_name" value="rifle_lee_enfield_visible" />
 			<string name="target_range_name" value="" />
 		</group>
 		<group name="area_effect">
@@ -433,6 +433,22 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073756486" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="aud_act_lee_enfield_sniper_rifle_fire" />
+					<bool name="allies_only" value="False" />
+					<float name="duration" value="2" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<uniqueid name="id" value="1073799111" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="fx_lee_enfield_fire" />
+					<bool name="allies_only" value="False" />
+					<float name="duration" value="2" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<uniqueid name="id" value="1073799112" />
 				</template_reference>
 			</list>
 		</group>

@@ -102,13 +102,13 @@
 						<float name="z" value="-0.7" />
 					</group>
 					<enum name="type" value="squad" />
-					<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_right_mp" />
+					<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_right_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<uniqueid name="id" value="1073754529" />
 			</template_reference>
 			<template_reference name="action" value="action\change_weapon">
 				<float name="hardpoint" value="2" />
-				<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_right_mp" />
+				<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_right_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073754530" />
 			</template_reference>
 			<template_reference name="action" value="action\remove_weapon">
@@ -131,13 +131,13 @@
 						<float name="z" value="0.6" />
 					</group>
 					<enum name="type" value="squad" />
-					<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_mp" />
+					<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_left_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<uniqueid name="id" value="1073754640" />
 			</template_reference>
 			<template_reference name="action" value="action\change_weapon">
 				<float name="hardpoint" value="4" />
-				<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_mp" />
+				<instance_reference name="weapon" value="weapon\axis\flame_throwers\halftrack_flammenwerfer_left_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073754641" />
 			</template_reference>
 			<template_reference name="action" value="action\change_combat_facing_action">
@@ -161,7 +161,7 @@
 				<uniqueid name="id" value="1073754643" />
 			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\brit_croc_dummy_slot_item" />
+				<instance_reference name="slot_item" value="slot_item\german\flame_weapon\halftrack_flamethrower_voice_item_mp" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073798102" />
 			</template_reference>
