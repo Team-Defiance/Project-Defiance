@@ -89,7 +89,7 @@
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="True" />
+		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
 		<float name="duration_time" value="-1" />
 		<bool name="enable_in_building" value="False" />
@@ -140,7 +140,7 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="11145593" />
 			<locstring name="help_text" value="11140709" />
-			<string name="hotkey_name" value="E" />
+			<string name="hotkey_name" value="X" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_satchel_charge" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
