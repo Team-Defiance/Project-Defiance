@@ -10,6 +10,105 @@
 					<float name="number_of_experience_points" value="100" />
 					<uniqueid name="id" value="1073793307" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="15" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="True" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_in_state">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="11157821" />
+									<bool name="garrisoned" value="False" />
+									<bool name="healed" value="False" />
+									<float name="in_combat_since" value="-1" />
+									<bool name="injured" value="False" />
+									<bool name="leader" value="False" />
+									<bool name="not_moving" value="False" />
+									<bool name="not_retreating" value="True" />
+									<bool name="pinned" value="False" />
+									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
+								</template_reference>
+								<template_reference name="required" value="requirements\required_all_in_list">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_in_state">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<bool name="garrisoned" value="False" />
+													<bool name="healed" value="False" />
+													<float name="in_combat_since" value="-1" />
+													<bool name="injured" value="False" />
+													<bool name="leader" value="False" />
+													<bool name="not_moving" value="False" />
+													<bool name="not_retreating" value="False" />
+													<bool name="pinned" value="True" />
+													<bool name="suppressed" value="True" />
+													<bool name="camouflaged" value="False" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073799248" />
+								</template_reference>
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="4311" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="4312" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_commander_cmdr_british_command_vehicle_operation" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073799249" />
+								</template_reference>
+								<template_reference name="action" value="action\animator_set_state">
+									<bool name="apply_to_leader_only" value="True" />
+									<string name="do_action_state_name" value="on" />
+									<bool name="retrigger" value="True" />
+									<string name="state_machine_name" value="ability_attack_debuff_state" />
+									<string name="undo_action_state_name" value="off" />
+									<uniqueid name="id" value="1073799250" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073799251" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073799247" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\target">
@@ -17,7 +116,7 @@
 						<float name="angle_left" value="0" />
 						<float name="angle_right" value="0" />
 						<enum name="area_type" value="circle" />
-						<float name="radius" value="10" />
+						<float name="radius" value="7.5" />
 					</group>
 					<bool name="die_with_creator" value="True" />
 					<bool name="do_recalc_targets" value="False" />
@@ -29,6 +128,12 @@
 						<template_reference name="target_info" value="type_ability_target_type\has_all_in_list">
 							<list name="target_infos">
 								<template_reference name="info" value="type_ability_target_type\allied">
+								</template_reference>
+								<template_reference name="info" value="type_ability_target_type\not">
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\is_self">
+										</template_reference>
+									</group>
 								</template_reference>
 							</list>
 						</template_reference>
@@ -281,8 +386,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_positive" />
-		<float name="ui_reticule_radius_min" value="10" />
-		<float name="ui_reticule_radius_max" value="10" />
+		<float name="ui_reticule_radius_min" value="7.5" />
+		<float name="ui_reticule_radius_max" value="7.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
