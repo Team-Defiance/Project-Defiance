@@ -16,14 +16,14 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\uec_self_repair" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\uec_self_repair_improved" />
 				<instance_reference name="ability" value="abilities\german\toggle_ability\handbrake_mode_new_mp" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\universal_carrier_vickers_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_cannons_222_pe" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\global\modal_ability\force_reload_aa_half_track_mp" />
+				<instance_reference name="ability" value="abilities\british\passives_ui\aec_stealth_detection_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
