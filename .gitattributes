@@ -1,5 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# Force .ucs files to be treated as text and allow diffs
-*.ucs text diff
