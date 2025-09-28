@@ -1187,7 +1187,15 @@
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\soviet_incendiary_mine_counterattack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="13" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_57_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="22" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_6_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="21" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_conscripts" />

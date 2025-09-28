@@ -8,45 +8,40 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="1" />
-					<bool name="fire_and_forget" value="True" />
-					<list name="subactions">
+				<template_reference name="action" value="action\delay">
+					<float name="delay" value="3" />
+					<float name="delay_min" value="0" />
+					<bool name="progress_bar" value="False" />
+					<bool name="randomize" value="False" />
+					<list name="delayed_actions">
+						<template_reference name="action" value="action\off_map_artillery">
+							<float name="num_salvo" value="8" />
+							<float name="radius" value="10" />
+							<float name="source_offset_x" value="300" />
+							<float name="source_offset_y" value="150" />
+							<float name="source_offset_z" value="1" />
+							<float name="time_range_between_shells_max" value="0.75" />
+							<float name="time_range_between_shells_min" value="0.25" />
+							<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\officer_smoke_artillery_mp" />
+							<uniqueid name="id" value="1073799391" />
+						</template_reference>
 						<template_reference name="action" value="action\game_event_action">
 							<float name="event_extra_param" value="0" />
 							<float name="event_param_begin" value="-1" />
 							<float name="event_param_end" value="-1" />
 							<enum name="event_type" value="artillery_set" />
 							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073751648" />
+							<uniqueid name="id" value="1073799392" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073751649" />
+					<uniqueid name="id" value="1073799393" />
+					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\trigger_dca_action">
 					<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
 					<float name="duration" value="5" />
 					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073751650" />
-				</template_reference>
-				<template_reference name="action" value="action\off_map_artillery">
-					<float name="num_salvo" value="5" />
-					<float name="radius" value="12" />
-					<float name="source_offset_x" value="50" />
-					<float name="source_offset_y" value="150" />
-					<float name="source_offset_z" value="1" />
-					<float name="time_range_between_shells_max" value="1.125" />
-					<float name="time_range_between_shells_min" value="0.75" />
-					<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\zis3_barrage_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073751651" />
-				</template_reference>
-				<template_reference name="action" value="action\game_event_action">
-					<float name="event_extra_param" value="0" />
-					<float name="event_param_begin" value="-1" />
-					<float name="event_param_end" value="-1" />
-					<enum name="event_type" value="artillery_set" />
-					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073751656" />
+					<uniqueid name="id" value="1073799394" />
 				</template_reference>
 			</list>
 		</group>
@@ -60,12 +55,12 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="25" />
+			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="True" />
+		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
 		<float name="duration_time" value="30" />
 		<bool name="enable_in_building" value="False" />
@@ -151,7 +146,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
