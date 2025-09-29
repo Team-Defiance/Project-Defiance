@@ -296,12 +296,12 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="nagant_rifle_target" />
+		<string name="fx_action_target_name" value="mosin_nagant_sniper_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="bullet" />
-		<string name="fx_tracer_name" value="fx_mosin_nagant_rifle_tracer" />
+		<string name="fx_munition_name" value="sniper" />
+		<string name="fx_tracer_name" value="fx_mosin_nagant_sniper_tracer" />
 		<float name="fx_tracer_speed" value="85" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
