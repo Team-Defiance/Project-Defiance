@@ -97,7 +97,7 @@
 			<float name="combat_slot_offset" value="0" />
 			<bool name="enable_auto_target_search" value="True" />
 			<bool name="fire_at_building_combat_slot" value="False" />
-			<float name="ground_hit_rate" value="0.75" />
+			<float name="ground_hit_rate" value="1" />
 			<bool name="ignore_shot_blocking" value="False" />
 			<bool name="non_moving_setup" value="True" />
 			<bool name="point_blank" value="True" />
@@ -223,7 +223,7 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_water">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="1.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1.25" />
@@ -424,7 +424,7 @@
 			<float name="distance_bracket_count_ground" value="18" />
 			<float name="distance_scatter_max" value="9" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_offset" value="0.8" />
+			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.25" />
 			<float name="fow_angle_multiplier" value="1" />
 			<float name="fow_distance_multiplier" value="1" />
