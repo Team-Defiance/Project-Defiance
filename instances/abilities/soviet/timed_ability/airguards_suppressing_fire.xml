@@ -38,7 +38,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797537" />
+					<uniqueid name="id" value="1073799532" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -78,10 +78,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073797538" />
+							<uniqueid name="id" value="1073799533" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797539" />
+					<uniqueid name="id" value="1073799534" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -94,7 +94,7 @@
 					<bool name="retrigger" value="True" />
 					<string name="state_machine_name" value="ability_attack_buff_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073797540" />
+					<uniqueid name="id" value="1073799535" />
 				</template_reference>
 				<template_reference name="action" value="action\ui_unit_modifier_action">
 					<bool name="die_with_creator" value="True" />
@@ -104,7 +104,7 @@
 						<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
-					<uniqueid name="id" value="1073797541" />
+					<uniqueid name="id" value="1073799536" />
 				</template_reference>
 				<template_reference name="action" value="action\kicker_message_action">
 					<float name="loop_interval" value="0" />
@@ -116,7 +116,7 @@
 					<float name="message_duration" value="5" />
 					<bool name="team_only" value="False" />
 					<bool name="check_fow" value="False" />
-					<uniqueid name="id" value="1073797553" />
+					<uniqueid name="id" value="1073799537" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -160,7 +160,7 @@
 		<float name="recharge_time" value="45" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="True" />
-		<enum name="shared_timer" value="aef_airborne_fireteam_ability" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -187,9 +187,9 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="3628" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3629" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4351" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_abilities_ability_german_tactical_advance" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="3627" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -229,11 +229,11 @@
 				<enum name="reason" value="usage" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage" />
+				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="False" />
 				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\kp31_stormtrooper" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\as_46_airguards" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -269,5 +269,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742569" />
+	<uniqueid name="pbgid" value="1073742686" />
 </instance>
