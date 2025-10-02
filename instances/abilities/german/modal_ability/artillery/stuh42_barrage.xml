@@ -24,6 +24,18 @@
 					<string name="function_name" value="AE_BarrageEvent" />
 					<uniqueid name="id" value="1073746804" />
 				</template_reference>
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="4370" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="False" />
+					<uniqueid name="id" value="1073799676" />
+				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
 					<bool name="disable_parent_hardpoint" value="True" />
 					<group name="filter_weapons">
@@ -34,7 +46,7 @@
 					<float name="num_salvo" value="5" />
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
-					<uniqueid name="id" value="1073746805" />
+					<uniqueid name="id" value="1073799677" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 			</list>
