@@ -84,6 +84,15 @@
 									<float name="value" value="1.025" />
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
+								<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.925" />
+									<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073743468" />
 						</template_reference>
@@ -142,6 +151,15 @@
 											<enum name="usage_type" value="multiplication" />
 											<float name="value" value="1.025" />
 											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.925" />
+											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073743471" />
@@ -202,6 +220,15 @@
 													<float name="value" value="1.025" />
 													<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 												</template_reference>
+												<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+													<enum name="application_type" value="apply_to_weapon" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="hardpoint_01" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.925" />
+													<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073743476" />
 										</template_reference>
@@ -260,6 +287,15 @@
 															<enum name="usage_type" value="multiplication" />
 															<float name="value" value="1.025" />
 															<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+														</template_reference>
+														<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+															<enum name="application_type" value="apply_to_weapon" />
+															<bool name="exclusive" value="False" />
+															<string name="modifier_id" value="" />
+															<string name="target_type_name" value="hardpoint_01" />
+															<enum name="usage_type" value="multiplication" />
+															<float name="value" value="0.925" />
+															<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 														</template_reference>
 													</list>
 													<uniqueid name="id" value="1073743473" />
