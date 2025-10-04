@@ -10,6 +10,18 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="4370" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="False" />
+					<uniqueid name="id" value="1073799705" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\game_event_action">
@@ -23,18 +35,6 @@
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
 					<uniqueid name="id" value="1073746804" />
-				</template_reference>
-				<template_reference name="action" value="action\kicker_message_action">
-					<float name="loop_interval" value="0" />
-					<locstring name="message" value="4370" mod="84428889d71d41a48e2eff09c2425d54" />
-					<float name="message_colour_a" value="255" />
-					<float name="message_colour_b" value="255" />
-					<float name="message_colour_g" value="255" />
-					<float name="message_colour_r" value="255" />
-					<float name="message_duration" value="5" />
-					<bool name="team_only" value="False" />
-					<bool name="check_fow" value="False" />
-					<uniqueid name="id" value="1073799676" />
 				</template_reference>
 				<template_reference name="action" value="action\artillery_attack">
 					<bool name="disable_parent_hardpoint" value="True" />
