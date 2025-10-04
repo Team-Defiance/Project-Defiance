@@ -94,10 +94,6 @@
 				<icon name="symbol_icon" value="Icons_symbols_vehicle_soviet_kv8_symbol" />
 				<uniqueid name="id" value="1073799755" />
 			</template_reference>
-			<template_reference name="action" value="action\add_ability_action">
-				<uniqueid name="id" value="1073799756" />
-				<instance_reference name="ability_to_add" value="abilities\soviet\timed_ability\kv1_57_apcr_terror" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
@@ -107,6 +103,64 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\kv-8_unlock" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\items\kv8_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="False" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2591" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\hq\hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="40" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\barracks_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\motorpool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
