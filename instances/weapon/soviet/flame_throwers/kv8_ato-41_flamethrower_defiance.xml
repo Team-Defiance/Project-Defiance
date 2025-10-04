@@ -327,8 +327,8 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0" />
-			<bool name="has_deflection_damage" value="False" />
+			<float name="deflection_damage_multiplier" value="0.25" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
 		</group>
@@ -384,7 +384,7 @@
 			<float name="max" value="30" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -477,9 +477,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="2.5" />
-			<float name="far" value="2.5" />
-			<float name="mid" value="2.5" />
+			<float name="near" value="20" />
+			<float name="far" value="20" />
+			<float name="mid" value="20" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
