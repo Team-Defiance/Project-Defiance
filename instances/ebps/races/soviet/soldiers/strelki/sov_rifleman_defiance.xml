@@ -837,6 +837,14 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
+								<template_reference name="action" value="action\animator_set_state">
+									<bool name="apply_to_leader_only" value="True" />
+									<string name="do_action_state_name" value="on" />
+									<bool name="retrigger" value="False" />
+									<string name="state_machine_name" value="ability_attack_buff_state" />
+									<string name="undo_action_state_name" value="off" />
+									<uniqueid name="id" value="1073799835" />
+								</template_reference>
 								<template_reference name="action" value="action\apply_modifiers_action">
 									<float name="duration" value="5" />
 									<bool name="permanent" value="False" />
@@ -844,21 +852,30 @@
 										<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="ptrs_ambush" />
+											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="multiplication" />
 											<float name="value" value="1.25" />
 											<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 										</template_reference>
+										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.75" />
+											<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
+										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073742690" />
+									<uniqueid name="id" value="1073799836" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073742691" />
+							<uniqueid name="id" value="1073799837" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742692" />
+					<uniqueid name="id" value="1073799834" />
 				</template_reference>
 			</list>
 		</template_reference>
