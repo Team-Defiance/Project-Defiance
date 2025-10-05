@@ -150,10 +150,17 @@
 			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\05_1_rapid_conscription" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\05_2_artillery_152mm" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\06_kv2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\ml20_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\02_1_desantniki_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\il2_bombingrun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\il2_terror_airstrike" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\01_radio_intercept_terror_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\02_kv_modernization_passive" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\03_1_desantniki_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\03_2_partisan_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\04_il2_terror_airstrike" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\05_ml20_passive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\06_1_il2_bombingrun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\06_2_high_alt_recon_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\04_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\06_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\terror_tactics" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
