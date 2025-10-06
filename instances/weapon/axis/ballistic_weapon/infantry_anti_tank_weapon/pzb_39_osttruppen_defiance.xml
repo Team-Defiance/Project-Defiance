@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.6" />
-				<float name="min" value="1.6" />
+				<float name="max" value="2" />
+				<float name="min" value="2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.75" />
@@ -315,10 +315,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073744308" />
+							<uniqueid name="id" value="1073799887" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073744309" />
+					<uniqueid name="id" value="1073799888" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -359,10 +359,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073752268" />
+							<uniqueid name="id" value="1073799889" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752269" />
+					<uniqueid name="id" value="1073799890" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -421,10 +421,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073752270" />
+							<uniqueid name="id" value="1073799891" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752271" />
+					<uniqueid name="id" value="1073799892" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -465,10 +465,10 @@
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
 							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073752272" />
+							<uniqueid name="id" value="1073799893" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073752273" />
+					<uniqueid name="id" value="1073799894" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -644,5 +644,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741889" />
+	<uniqueid name="pbgid" value="1073742362" />
 </instance>
