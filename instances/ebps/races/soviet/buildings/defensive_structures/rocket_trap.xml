@@ -540,6 +540,14 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="UI\Selection\selectover_allies_ally" />
+					<float name="duration" value="0" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<bool name="allies_only" value="False" />
+					<uniqueid name="id" value="1073799926" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
