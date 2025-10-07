@@ -291,7 +291,7 @@
 		</group>
 		<group name="fire">
 			<float name="wind_down" value="0" />
-			<float name="wind_up" value="0" />
+			<float name="wind_up" value="0.5" />
 			<list name="on_fire_actions">
 			</list>
 		</group>
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.4" />
-				<float name="min" value="6.2" />
+				<float name="max" value="5.9" />
+				<float name="min" value="5.7" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />

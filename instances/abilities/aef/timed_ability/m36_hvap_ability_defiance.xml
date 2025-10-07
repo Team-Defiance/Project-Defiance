@@ -56,7 +56,7 @@
 					<uniqueid name="id" value="1073799917" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="6" />
+					<float name="delay" value="6.4" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="True" />
 					<bool name="randomize" value="False" />
@@ -75,7 +75,7 @@
 									<bool name="die_with_creator" value="False" />
 									<template_reference name="ui_info" value="tables\ui_info">
 										<locstring name="screen_name" value="4418" mod="84428889d71d41a48e2eff09c2425d54" />
-										<locstring name="help_text" value="0" />
+										<locstring name="help_text" value="4435" mod="84428889d71d41a48e2eff09c2425d54" />
 										<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
 										<string name="hotkey_name" value="" />
 									</template_reference>
