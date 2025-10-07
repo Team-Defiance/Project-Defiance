@@ -8,7 +8,7 @@
 					<uniqueid name="id" value="1073799913" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="4.5" />
+					<float name="duration" value="6.4" />
 					<bool name="fire_and_forget" value="True" />
 					<list name="subactions">
 						<template_reference name="action" value="action\apply_modifiers_action">
@@ -40,7 +40,7 @@
 					<uniqueid name="id" value="1073799916" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4.5" />
+					<float name="duration" value="6.4" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -56,7 +56,7 @@
 					<uniqueid name="id" value="1073799917" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="4.5" />
+					<float name="delay" value="6" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="True" />
 					<bool name="randomize" value="False" />
@@ -103,7 +103,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="20" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -128,7 +128,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="45" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

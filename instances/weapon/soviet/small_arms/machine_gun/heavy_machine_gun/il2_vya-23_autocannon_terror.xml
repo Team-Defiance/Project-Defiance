@@ -398,13 +398,13 @@
 			<float name="nearby_suppression_multiplier" value="0.75" />
 			<float name="nearby_suppression_radius" value="10" />
 			<group name="target_pinned_multipliers">
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="target_suppressed_multipliers">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
