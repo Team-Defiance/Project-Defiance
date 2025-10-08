@@ -111,7 +111,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11051594" />
+			<locstring name="extra_text" value="4458" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="11051593" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_high_explosive_rounds_pack_howitzer" />
@@ -141,7 +141,7 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_howitzer_barrage" />
-		<float name="ui_reticule_radius_min" value="4" />
+		<float name="ui_reticule_radius_min" value="5.5" />
 		<float name="ui_reticule_radius_max" value="14" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />

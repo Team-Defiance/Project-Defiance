@@ -152,8 +152,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.75" />
-				<float name="min" value="1.75" />
+				<float name="max" value="1.4" />
+				<float name="min" value="1.4" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.5" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="30" />
-			<float name="min" value="30" />
+			<float name="max" value="25" />
+			<float name="min" value="25" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -310,7 +310,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="30" />
+							<float name="damage" value="25" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -354,7 +354,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="18" />
+							<float name="damage" value="15" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -416,7 +416,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="7.5" />
+							<float name="damage" value="6.25" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
@@ -460,7 +460,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="4.5" />
+							<float name="damage" value="3.75" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />

@@ -1,9 +1,9 @@
 <instance description="German AT rifle for testing" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.12" />
-			<float name="far" value="0.04" />
-			<float name="mid" value="0.08" />
+			<float name="near" value="0.13" />
+			<float name="far" value="0.05" />
+			<float name="mid" value="0.09" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="25" />
-			<float name="min" value="25" />
+			<float name="max" value="20" />
+			<float name="min" value="20" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -310,7 +310,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="25" />
+							<float name="damage" value="20" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -354,7 +354,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="15" />
+							<float name="damage" value="12" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="True" />
@@ -416,7 +416,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="6.25" />
+							<float name="damage" value="5" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
@@ -460,7 +460,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\damage">
-							<float name="damage" value="3.75" />
+							<float name="damage" value="3" />
 							<bool name="percentage" value="False" />
 							<bool name="set" value="False" />
 							<bool name="cause_criticals" value="False" />
