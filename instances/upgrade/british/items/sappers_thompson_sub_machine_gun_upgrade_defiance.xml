@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="30" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="30" />
@@ -52,21 +52,6 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073793041" />
 			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_thompson_defiance_no_slot" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073793042" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_thompson_defiance_no_slot" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073793044" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_thompson_defiance_no_slot" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073796115" />
-			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_slot_item_size">
@@ -74,27 +59,13 @@
 				<locstring name="ui_name" value="11074843" />
 				<float name="required_free_slot_size" value="2" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_structure">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-				</list>
+				<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<int name="required_structure_count" value="1" />
+				<bool name="check_team" value="False" />
+				<bool name="require_construction_complete" value="True" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -103,13 +74,6 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\commander\defiance\unlock\lend_lease_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="True" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\british\items\officer_vickers_k_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />

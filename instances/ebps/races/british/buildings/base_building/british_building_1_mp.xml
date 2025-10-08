@@ -177,10 +177,10 @@
 				<enum name="unit_type00" value="building" />
 				<enum name="unit_type01" value="brit_building_1_built" />
 				<enum name="unit_type02" value="annihilation_condition" />
-				<enum name="unit_type03" value="armory" />
+				<enum name="unit_type03" value="barracks" />
 				<enum name="unit_type04" value="production_building" />
 				<enum name="unit_type05" value="" />
-				<enum name="unit_type06" value="alternate_retreat_point" />
+				<enum name="unit_type06" value="" />
 				<enum name="unit_type07" value="" />
 				<enum name="unit_type08" value="" />
 				<enum name="unit_type09" value="" />
@@ -467,7 +467,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="-1" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\forward_assembly\lovat_sharpshooter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\british\tier_1\lovat_sharpshooter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
@@ -481,7 +481,6 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\artillery_pyrotechnics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\platoon_aec_research" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -878,6 +877,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\assault_officer_standard_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\lovat_sharpshooter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\aec_armoured_car_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\core_dispatch\tier_1\6_pounder_at_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\25pdr_barrage_short" mod="84428889d71d41a48e2eff09c2425d54" />

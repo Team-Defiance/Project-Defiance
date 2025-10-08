@@ -326,7 +326,7 @@
 				<enum name="unit_type00" value="aef_weapon_rack" />
 				<enum name="unit_type01" value="defence_building" />
 				<enum name="unit_type02" value="building" />
-				<enum name="unit_type03" value="barracks" />
+				<enum name="unit_type03" value="motor_pool_light" />
 				<enum name="unit_type04" value="" />
 				<enum name="unit_type05" value="" />
 				<enum name="unit_type06" value="" />
@@ -421,22 +421,16 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753284" />
+					<uniqueid name="id" value="1073799990" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_stamp_action">
 					<string name="stamp_name" value="data:art\stamps\british_fwd_hq_dummy_pickups.stamp" />
 					<float name="rotation" value="0" />
-					<uniqueid name="id" value="1073753285" />
+					<uniqueid name="id" value="1073799991" />
 					<float name="offset_x" value="-1" />
 					<float name="offset_y" value="0" />
 					<float name="offset_z" value="0" />
 					<bool name="camera_relative_rotation" value="False" />
-				</template_reference>
-				<template_reference name="action" value="action\upgrade_add">
-					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073794551" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -494,11 +488,11 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="0" />
-					<float name="manpower" value="150" />
+					<float name="manpower" value="200" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="60" />
+				<float name="time_seconds" value="150" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext">
@@ -508,7 +502,7 @@
 			<float name="death_seconds" value="1" />
 			<bool name="delete_when_dead" value="False" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="300" />
+			<float name="hitpoints" value="600" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -556,81 +550,16 @@
 							<bool name="destroy" value="True" />
 							<list name="death_reaction_table">
 							</list>
-							<uniqueid name="id" value="1073753286" />
+							<uniqueid name="id" value="1073799992" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753287" />
+					<uniqueid name="id" value="1073799993" />
 					<bool name="any_subaction" value="False" />
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_structure">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="required_structure_count" value="0" />
-							<bool name="check_team" value="False" />
-							<bool name="require_construction_complete" value="True" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\upgrade_remove">
-							<bool name="apply_to_entities_in_squad" value="False" />
-							<instance_reference name="upgrade" value="upgrade\british\research\forward_assembly_built" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073794516" />
-						</template_reference>
-						<template_reference name="action" value="action\filter_action">
-							<bool name="apply_to_future_units" value="False" />
-							<bool name="apply_to_local_player" value="True" />
-							<instance_reference name="deprecated_entity_type" value="" />
-							<instance_reference name="deprecated_squad_type" value="" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\is_building">
-									<bool name="check_garrisoned" value="True" />
-									<bool name="is_constructed" value="False" />
-								</template_reference>
-							</group>
-							<enum name="deprecated_unit_class_type" value="" />
-							<list name="action_table">
-								<template_reference name="action" value="action\upgrade_add">
-									<bool name="apply_to_entities_in_squad" value="False" />
-									<bool name="trigger_publish_event" value="False" />
-									<instance_reference name="upgrade" value="upgrade\british\no_fa" mod="84428889d71d41a48e2eff09c2425d54" />
-									<uniqueid name="id" value="1073794519" />
-								</template_reference>
-							</list>
-							<enum name="deprecated_squad_class_type" value="" />
-							<list name="target_requirements">
-								<template_reference name="required" value="requirements\required_structure">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_hq\british_hq_truck_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-									<int name="required_structure_count" value="1" />
-									<bool name="check_team" value="False" />
-									<bool name="require_construction_complete" value="True" />
-								</template_reference>
-							</list>
-							<bool name="target_squad" value="False" />
-							<uniqueid name="id" value="1073794518" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073794515" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
 				</template_reference>
 			</list>
 			<float name="armor" value="0" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="20" />
+			<float name="target_size" value="2" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -671,6 +600,12 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\requirement_ext">
 			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_entity">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<instance_reference name="entity_blueprint_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" />
+					<enum name="entity_type" value="" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\line_of_sight_ext">
@@ -705,13 +640,6 @@
 					<bool name="is_secured_by_checkpoint" value="False" />
 					<bool name="not_in_transition" value="True" />
 				</template_reference>
-				<template_reference name="required" value="requirements\required_entity_upgrade">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<bool name="is_present" value="True" />
-					<instance_reference name="upgrade_name" value="upgrade\british\items\fa_forward_reinforcement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="include_queued" value="False" />
-				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />
 		</template_reference>
@@ -719,16 +647,11 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\items\fa_weapon_racks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\british\items\fa_forward_reinforcement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\items\fa_forward_retreat_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\british\core_dispatch\forward_assembly\lovat_sharpshooter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\core_dispatch\forward_assembly\ml_3_inch_mortar_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\core_dispatch\forward_assembly\vickers_machine_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\25_pounder_suppressive_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\artillery_flares_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\forward_assembly\forward_assembly_medical_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
