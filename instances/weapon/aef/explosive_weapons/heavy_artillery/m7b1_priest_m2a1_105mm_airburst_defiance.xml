@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="3" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.5" />
-				<float name="min" value="0.5" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -354,7 +354,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="4.67" />
+			<float name="wind_down" value="4.625" />
 			<float name="wind_up" value="0.625" />
 			<list name="on_fire_actions">
 			</list>

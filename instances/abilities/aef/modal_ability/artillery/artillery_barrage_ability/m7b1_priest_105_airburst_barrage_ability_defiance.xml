@@ -15,7 +15,7 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="6" />
+					<float name="num_salvo" value="4" />
 					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073742245" />
@@ -45,7 +45,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="60" />
+			<float name="munition" value="50" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -70,7 +70,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="180" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="140" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />

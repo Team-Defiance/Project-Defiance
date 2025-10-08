@@ -54,7 +54,7 @@
 									<instance_reference name="weapon_02" value="" />
 									<instance_reference name="weapon_03" value="" />
 								</group>
-								<float name="num_salvo" value="3" />
+								<float name="num_salvo" value="1" />
 								<float name="use_hardpoint" value="2" />
 								<bool name="face_to_target" value="True" />
 								<uniqueid name="id" value="1073744717" />
@@ -101,7 +101,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="270" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="150" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="free_fire" />

@@ -86,51 +86,6 @@
 								<bool name="target_override_direction_times_max_range" value="False" />
 							</template_reference>
 						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="4" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744808" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="3" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744807" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="4" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744809" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
 					</list>
 					<bool name="run_now" value="False" />
 				</template_reference>
@@ -183,7 +138,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="240" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="150" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
