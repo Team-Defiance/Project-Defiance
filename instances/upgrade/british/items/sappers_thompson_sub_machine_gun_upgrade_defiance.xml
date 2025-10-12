@@ -48,7 +48,7 @@
 				<uniqueid name="id" value="1073793040" />
 			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_thompson_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\british\small_arms\sbs_thompson_defiance_no_slot" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073793041" />
 			</template_reference>
@@ -56,8 +56,8 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_slot_item_size">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11074843" />
-				<float name="required_free_slot_size" value="2" />
+				<locstring name="ui_name" value="4461" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="required_free_slot_size" value="1" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_structure">
 				<enum name="reason" value="usage" />
