@@ -182,8 +182,8 @@
 			</group>
 			<group name="tp_garrison_halftrack">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.1" />
-				<float name="penetration_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="1" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
