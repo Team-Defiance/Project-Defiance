@@ -114,7 +114,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="60" />
+			<float name="munition" value="50" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -139,7 +139,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="60" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -194,9 +194,14 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\blizzard_active" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4466" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_airstrike" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
