@@ -4223,11 +4223,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_defiance.xml</FileName>
-			<FileHash>42dc36139313097e8362db261bbb8e1b</FileHash>
+			<FileHash>335ca49c71b95ba75eb5acee524bfde1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_incendiary_defiance.xml</FileName>
-			<FileHash>001de74548d65333bc54245bd8a95d80</FileHash>
+			<FileHash>c5c1b67a5a3770f7c4c71ce0690825db</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\commander_ability\airborne_assault.xml</FileName>
@@ -5856,6 +5856,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\280mm_stuka_rocket_defiance.xml</FileName>
 			<FileHash>4fcc5bc46c444bbd1950a8188a4d2e86</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\280mm_stuka_rocket_napalm_defiance.xml</FileName>
+			<FileHash>878ac9a4cf15a52365b3e3fadc17f710</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\280mm_werfer_rocket.xml</FileName>
@@ -7663,7 +7667,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\halftrack_sdkfz_251_wurfrahmen_40_defiance.xml</FileName>
-			<FileHash>2e17b05b04a2aed3bc7388e835568b94</FileHash>
+			<FileHash>48752d2592f7236b2df7120208977f0d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\sdkfz_251_flak_defiance.xml</FileName>
@@ -8395,7 +8399,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_wurfrahmen_40_squad_defiance.xml</FileName>
-			<FileHash>ee7d8f75bf752a49b3f24a321d446952</FileHash>
+			<FileHash>a97d98121b17d0d3eb3ab276f080609c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\wg_sdkfz_250_halftrack_transport_defiance.xml</FileName>
@@ -10678,14 +10682,6 @@
 			<FileHash>5c9d92e90457c5ac55987d1f3de47359</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\280mm_wurfrahmen_rocket.xml</FileName>
-			<FileHash>d205a56b37dc8944b58aadc705834670</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\280mm_wurfrahmen_rocket_creeping.xml</FileName>
-			<FileHash>d2a2f2e2de2a82b31a557342beed1414</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\heavy_artillery\800mm_railway_artillery.xml</FileName>
 			<FileHash>40e65268536eb8c3a9da23235048bffa</FileHash>
 		</BurnInfo>
@@ -10751,7 +10747,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_flame_rockets.xml</FileName>
-			<FileHash>a1160ce70435b789e8297293e1502f42</FileHash>
+			<FileHash>0b78b5a0a1ea14a8fa3fcac47e8c9e78</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\explosive_weapons\light_artillery\panzerwerfer_heat_rockets.xml</FileName>
@@ -12058,6 +12054,18 @@
 			<FileHash>bf366f4589c381778a09c436a4f40385</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\explosive_weapons\heavy_artillery\280mm_wurfrahmen_rocket.xml</FileName>
+			<FileHash>60d3ffa71f403b0463d0eff868bfca3d</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\explosive_weapons\heavy_artillery\280mm_wurfrahmen_rocket_creeping.xml</FileName>
+			<FileHash>acf1fb0843157d605267c1e08d102946</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\explosive_weapons\heavy_artillery\280mm_wurfrahmen_rocket_creeping_napalm.xml</FileName>
+			<FileHash>78fc47cfbb933e02d353cfe9302a2c93</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\west_german\explosive_weapons\heavy_artillery\380mm_sturmtiger_launcher.xml</FileName>
 			<FileHash>012b1743cea5396a01757c30394535e4</FileHash>
 		</BurnInfo>
@@ -12167,7 +12175,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>b6ceaff1c0709b72be3c054b56a25807</FileHash>
+			<FileHash>9b8aa1881da92de31f829d4ee841a636</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>

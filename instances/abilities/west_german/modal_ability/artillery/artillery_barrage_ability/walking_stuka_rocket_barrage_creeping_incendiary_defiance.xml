@@ -126,10 +126,10 @@
 						<template_reference name="action" value="action\creeping_barrage">
 							<float name="box_length" value="40" />
 							<float name="box_width" value="8" />
-							<float name="hardpoint" value="3" />
+							<float name="hardpoint" value="4" />
 							<list name="sections">
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -137,7 +137,7 @@
 									</list>
 								</group>
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -145,7 +145,7 @@
 									</list>
 								</group>
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -153,7 +153,7 @@
 									</list>
 								</group>
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -161,7 +161,7 @@
 									</list>
 								</group>
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -169,7 +169,7 @@
 									</list>
 								</group>
 								<group name="section">
-									<float name="duration" value="0.5" />
+									<float name="duration" value="0" />
 									<float name="num_shots" value="1" />
 									<list name="actions_end">
 									</list>
@@ -229,7 +229,7 @@
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
 		<float name="entity_busy_time" value="0" />
-		<float name="facing_angle" value="1" />
+		<float name="facing_angle" value="5" />
 		<bool name="facing_ignore" value="False" />
 		<float name="final_close_in_distance" value="0" />
 		<bool name="fire_and_forget" value="False" />
@@ -304,10 +304,10 @@
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
-		<bool name="facing_ignore_during_active" value="False" />
+		<bool name="facing_ignore_during_active" value="True" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_walking_stuka_creeping_barrage" />
-		<float name="ui_reticule_radius_min" value="10.5" />
+		<float name="ui_reticule_radius_min" value="7" />
 		<float name="ui_reticule_radius_max" value="25" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
@@ -326,7 +326,7 @@
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
-		<enum name="ui_direction_requirement" value="nondirectional" />
+		<enum name="ui_direction_requirement" value="directional" />
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
