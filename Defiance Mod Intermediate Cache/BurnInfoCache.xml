@@ -2070,14 +2070,6 @@
 			<FileHash>dc96f64119caa20c554e2061ce49d1c4</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\artillery\artillery_barrage_ability\stuka_barrage_creeping.xml</FileName>
-			<FileHash>de63eadd22eac198e43229b8329a27eb</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\artillery\artillery_barrage_ability\stuka_barrage_default.xml</FileName>
-			<FileHash>f2381ad2a97f76607d78a11c512021f0</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\artillery\mortar_barrage_ability\grw42_81_barrage.xml</FileName>
 			<FileHash>6986ec5e1ffdc3d32be14b9a24fe038f</FileHash>
 		</BurnInfo>
@@ -2891,7 +2883,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\always_on_ability\to_the_last_man_defiance.xml</FileName>
-			<FileHash>cadabe85b82b2d794936e902bb4338ab</FileHash>
+			<FileHash>1b52843b61d54f3b1c0ca1d8faf9256a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\always_on_ability\t_3485_vet_point_capture_passive_defiance.xml</FileName>
@@ -4228,6 +4220,14 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\raketenwerfer_56_280mm_barrage.xml</FileName>
 			<FileHash>f23de13f82e0d41247d77fbd3b8ce92e</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_defiance.xml</FileName>
+			<FileHash>42dc36139313097e8362db261bbb8e1b</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_wp_defiance.xml</FileName>
+			<FileHash>c5423f5be05af383d81181deb1a7f176</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\west_german\modal_ability\commander_ability\airborne_assault.xml</FileName>
@@ -7154,10 +7154,6 @@
 			<FileHash>3903959ba53bab9d72441c94a9f90a67</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\halftrack_sdkfz_251\halftrack_sdkfz_251_wurfrahmen_40_defiance.xml</FileName>
-			<FileHash>882bafa3a50370683f24a11222d9004e</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\vehicles\ostwind_flak_panzer\ostwind_flak_panzer_defiance.xml</FileName>
 			<FileHash>9ed14398789179afdd611e1f65c5d1cb</FileHash>
 		</BurnInfo>
@@ -7543,7 +7539,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance.xml</FileName>
-			<FileHash>9c56cd523222e6c33f44acffc0cd7e45</FileHash>
+			<FileHash>1322cf507bed9f6ae67a0b682fc535fd</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\buildings\base_building\panzer_tier3_hq_defiance_unused.xml</FileName>
@@ -7664,6 +7660,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\command_panther_defiance.xml</FileName>
 			<FileHash>c42a4dcbcc3bd36940b757c75bfb2c49</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\halftrack_sdkfz_251_wurfrahmen_40_defiance.xml</FileName>
+			<FileHash>d87112b32c5653dad032450e42f8cd34</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\west_german\vehicles\halftracks\sdkfz_251_flak_defiance.xml</FileName>
@@ -8142,10 +8142,6 @@
 			<FileHash>2f37ce6dfaa4bd6628016b80cc33add1</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\vehicles\halftrack_squad\sdkfz_251_wurfrahmen_40_squad_defiance.xml</FileName>
-			<FileHash>f3e48c0daaef56d702cb19c1108c3c93</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\vehicles\panther_squad\panther_squad_defiance.xml</FileName>
 			<FileHash>aee0253892ca9d5c0347e9b951a87447</FileHash>
 		</BurnInfo>
@@ -8396,6 +8392,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_ir_squad_defiance.xml</FileName>
 			<FileHash>19c9a75523c1de3c9e025ea4f021b9a4</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_wurfrahmen_40_squad_defiance.xml</FileName>
+			<FileHash>07b3a18a9e99e8d4b25104e2b82207c9</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\west_german\vehicles\halftrack_squads\wg_sdkfz_250_halftrack_transport_defiance.xml</FileName>
@@ -12167,7 +12167,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>cf30d731e14e319fdabef1293c2b688c</FileHash>
+			<FileHash>16fc8b52792dc6275f5437481915e268</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>
