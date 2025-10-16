@@ -307,8 +307,8 @@
 				<instance_reference name="dot_weapon" value="weapon\british\flame_throwers\universal_carrier_flamthrower_dot" />
 				<float name="dots_max" value="1" />
 				<float name="dots_min" value="1" />
-				<float name="duration_max" value="15" />
-				<float name="duration_min" value="15" />
+				<float name="duration_max" value="8" />
+				<float name="duration_min" value="8" />
 				<float name="radius_max" value="3" />
 				<float name="radius_min" value="3" />
 				<float name="radius_scatter" value="4" />
@@ -319,7 +319,7 @@
 				<list name="dot_spawn_actions">
 					<template_reference name="action" value="action\trigger_dca_action">
 						<string name="dca_action_name" value="Weapons\Splash_Damage\splashdmg_incendiary" />
-						<float name="duration" value="15" />
+						<float name="duration" value="8" />
 						<bool name="is_terrain_only" value="True" />
 						<uniqueid name="id" value="1073792236" />
 					</template_reference>

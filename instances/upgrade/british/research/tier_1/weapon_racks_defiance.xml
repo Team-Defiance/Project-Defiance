@@ -19,7 +19,7 @@
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="15" />
+				<float name="fuel" value="10" />
 				<float name="manpower" value="150" />
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
@@ -28,7 +28,7 @@
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="2" />
+		<int name="ui_position" value="1" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="4390" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="4391" mod="84428889d71d41a48e2eff09c2425d54" />
