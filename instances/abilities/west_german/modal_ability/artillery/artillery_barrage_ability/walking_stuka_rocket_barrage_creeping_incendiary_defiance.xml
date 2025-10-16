@@ -217,7 +217,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="45" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -242,20 +242,20 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="120" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="130" />
+		<float name="recharge_time" value="120" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="kb" />
-			<string name="code_2" value="rb" />
-			<string name="code_3" value="bm" />
+			<string name="code_1" value="rb" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="krb" />
-			<string name="code_2" value="rkb" />
-			<string name="code_3" value="brg" />
+			<string name="code_1" value="icr" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
 		<enum name="target" value="tp_position" />
@@ -305,8 +305,8 @@
 		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_range_katyusha" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_kaytusha_rocket" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_walking_stuka_creeping_barrage" />
 		<float name="ui_reticule_radius_min" value="10.5" />
 		<float name="ui_reticule_radius_max" value="25" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />

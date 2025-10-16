@@ -17,7 +17,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\walking_stuka_rocket_barrage_creeping_incendiary_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
