@@ -118,7 +118,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="25" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -143,7 +143,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="18" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="30" />
+		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_1" />
