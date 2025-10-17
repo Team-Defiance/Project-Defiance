@@ -110,7 +110,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="910" />
+			<float name="hitpoints" value="1040" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -850,15 +850,6 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\modifier_apply_ext">
 			<list name="modifiers">
-				<template_reference name="modifier" value="modifiers\received_damage_modifier">
-					<enum name="application_type" value="apply_to_entity" />
-					<bool name="exclusive" value="False" />
-					<string name="modifier_id" value="" />
-					<string name="target_type_name" value="" />
-					<enum name="usage_type" value="multiplication" />
-					<float name="value" value="0.875" />
-					<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\crew_ext">
