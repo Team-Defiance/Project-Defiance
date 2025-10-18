@@ -20,8 +20,8 @@
 				<float name="action" value="0" />
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
-				<float name="manpower" value="200" />
-				<float name="munition" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="80" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="30" />
@@ -42,38 +42,13 @@
 		</group>
 		<bool name="validate_actions" value="False" />
 		<list name="actions">
-			<template_reference name="action" value="action\apply_modifiers_action">
-				<float name="duration" value="0" />
-				<bool name="permanent" value="False" />
-				<list name="modifiers">
-					<template_reference name="modifier" value="modifiers\health_maximum_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="250" />
-						<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
-					</template_reference>
-					<template_reference name="modifier" value="modifiers\manpower_resource_per_tick_modifier">
-						<enum name="application_type" value="apply_to_entity" />
-						<bool name="exclusive" value="False" />
-						<string name="modifier_id" value="" />
-						<string name="target_type_name" value="" />
-						<enum name="usage_type" value="addition" />
-						<float name="value" value="0.03" />
-						<instance_reference name="tooltip" value="modifier_tooltip\manpower_resource_per_tick_modifier" />
-					</template_reference>
-				</list>
-				<uniqueid name="id" value="1073800131" />
-			</template_reference>
 		</list>
 		<list name="requirements">
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
-		<locstring name="ui_squad_name_override" value="0" />
-		<locstring name="ui_squad_help_text_override" value="0" />
-		<locstring name="ui_squad_extra_text_override" value="0" />
+		<locstring name="ui_squad_name_override" value="4481" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_help_text_override" value="4485" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_extra_text_override" value="4484" mod="84428889d71d41a48e2eff09c2425d54" />
 		<list name="ui_preview">
 		</list>
 		<list name="on_cancel_actions">

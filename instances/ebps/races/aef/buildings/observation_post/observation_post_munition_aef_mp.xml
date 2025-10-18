@@ -197,51 +197,6 @@
 					</list>
 					<uniqueid name="id" value="1073799257" />
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_entity_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\global\supercache" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="include_queued" value="False" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\spawn_entity">
-							<float name="duration" value="99999" />
-							<instance_reference name="entity_blueprint" value="ebps\props\supply_depot" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="False" />
-							<bool name="player_owned" value="False" />
-							<group name="target_info">
-								<template_reference name="target_info" value="type_ability_target_type\all">
-								</template_reference>
-							</group>
-							<uniqueid name="id" value="1073800153" />
-							<template_reference name="spawn_attached_option" value="options\none">
-							</template_reference>
-							<list name="spawned_entity_actions">
-							</list>
-							<group name="offset">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="0" />
-							</group>
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073800155" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -408,7 +363,7 @@
 			<bool name="must_be_in_supply" value="True" />
 			<float name="number_of_standard_slots" value="1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\global\supercache" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\global\supercache_munitions" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_ext">
@@ -480,6 +435,69 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073799258" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\global\supercache_munitions" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\sequence_action">
+							<uniqueid name="id" value="1073800177" />
+							<list name="action_list_sequences">
+								<list name="actions">
+									<template_reference name="action" value="action\spawn_entity">
+										<float name="duration" value="0" />
+										<instance_reference name="entity_blueprint" value="ebps\races\aef\buildings\observation_post\supercache_munitions_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										<bool name="permanent" value="False" />
+										<bool name="player_owned" value="True" />
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\all">
+											</template_reference>
+										</group>
+										<uniqueid name="id" value="1073800178" />
+										<template_reference name="spawn_attached_option" value="options\none">
+										</template_reference>
+										<list name="spawned_entity_actions">
+										</list>
+										<group name="offset">
+											<float name="x" value="0" />
+											<float name="y" value="0" />
+											<float name="z" value="0" />
+										</group>
+									</template_reference>
+								</list>
+								<list name="actions">
+									<template_reference name="action" value="action\make_dead">
+										<enum name="death_intensity" value="death_intensity_low" />
+										<bool name="ignore_invulnerability" value="False" />
+										<bool name="destroy" value="True" />
+										<list name="death_reaction_table">
+										</list>
+										<uniqueid name="id" value="1073800179" />
+									</template_reference>
+								</list>
+							</list>
+							<bool name="run_now" value="False" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800180" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</template_reference>
