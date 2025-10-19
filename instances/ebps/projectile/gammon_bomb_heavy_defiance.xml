@@ -16,13 +16,13 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="0.8" />
+				<float name="chance_splat_only" value="0.25" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
 					<bool name="random_rotation" value="True" />
-					<float name="rotation" value="0" />
+					<float name="rotation" value="90" />
 					<group name="splat_list">
 						<group name="entry_01">
 							<string name="splat_texture" value="" />
@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.001" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="4" />
-				<float name="radius_min" value="3" />
+				<float name="radius_max" value="3.2" />
+				<float name="radius_min" value="2" />
 				<float name="splat_only_splat_seconds" value="60" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -163,10 +163,40 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
+				<template_reference name="action" value="action\spawn_entity">
+					<float name="duration" value="1" />
+					<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="False" />
+					<bool name="player_owned" value="False" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
+					</group>
+					<uniqueid name="id" value="1073800303" />
+					<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
+						<string name="attach_target_marker_name" value="" />
+						<string name="attach_action_name" value="" />
+						<string name="detach_action_name" value="" />
+						<bool name="destroy_on_cancel" value="True" />
+						<list name="detach_entity_actions">
+						</list>
+					</template_reference>
+					<list name="spawned_entity_actions">
+						<template_reference name="actions" value="action\self_destruction_action">
+							<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\rocket_light_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073800304" />
+						</template_reference>
+					</list>
+					<group name="offset">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="0" />
+					</group>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="10" />
+			<float name="acceleration" value="5" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="False" />
 				<bool name="is_artillery" value="True" />
@@ -184,8 +214,8 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_throw">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="0" />
-			<float name="delay_detonate_time" value="0.25" />
+			<float name="deathtimer" value="1" />
+			<float name="delay_detonate_time" value="1" />
 			<bool name="delay_detonate_ui_enabled" value="True" />
 			<string name="launcher_marker" value="Marker_Grenade" />
 			<float name="life_time_while_alive" value="0" />
