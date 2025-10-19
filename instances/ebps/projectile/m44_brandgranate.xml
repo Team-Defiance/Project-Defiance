@@ -16,8 +16,8 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="0.9" />
-				<enum name="cover_type" value="tp_negative" />
+				<float name="chance_splat_only" value="1" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="mortar_crater" />
 					<bool name="limited" value="True" />
@@ -93,7 +93,7 @@
 					<enum name="deform_type" value="tp_additive" />
 				</group>
 				<float name="radius_max" value="3" />
-				<float name="radius_min" value="2" />
+				<float name="radius_min" value="1" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
