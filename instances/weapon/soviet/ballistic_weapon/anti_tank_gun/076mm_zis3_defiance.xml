@@ -193,8 +193,8 @@
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
-				<float name="accuracy_multiplier" value="0.85" />
-				<float name="damage_multiplier" value="0.85" />
+				<float name="accuracy_multiplier" value="0.9" />
+				<float name="damage_multiplier" value="0.9" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.5" />
+				<float name="suppression_multiplier" value="1.25" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -334,7 +334,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="1" />
+		<float name="flinch_radius" value="1.05" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -387,8 +387,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.3" />
-				<float name="min" value="4.2" />
+				<float name="max" value="4.4" />
+				<float name="min" value="4.3" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -408,7 +408,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="10" />
+			<float name="distance_scatter_max" value="11" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />

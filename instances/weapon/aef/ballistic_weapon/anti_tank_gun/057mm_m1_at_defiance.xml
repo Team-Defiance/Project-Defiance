@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
-			<float name="far" value="0.045" />
-			<float name="mid" value="0.0575" />
+			<float name="near" value="0.075" />
+			<float name="far" value="0.05" />
+			<float name="mid" value="0.0625" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -290,7 +290,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="0.875" />
+			<float name="wind_down" value="0.5" />
 			<float name="wind_up" value="0.25" />
 			<list name="on_fire_actions">
 				<template_reference name="action" value="action\timed_action">
@@ -387,8 +387,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3" />
-				<float name="min" value="2.9" />
+				<float name="max" value="3.3" />
+				<float name="min" value="3.2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -408,7 +408,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="10" />
+			<float name="distance_scatter_max" value="9" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
@@ -473,9 +473,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_default" />
 		<group name="penetration">
-			<float name="mid" value="175" />
-			<float name="far" value="140" />
-			<float name="near" value="220" />
+			<float name="mid" value="185" />
+			<float name="far" value="150" />
+			<float name="near" value="235" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
