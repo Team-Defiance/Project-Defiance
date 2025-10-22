@@ -835,7 +835,7 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="1080" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="2702" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="screen_name" value="1434" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
@@ -856,11 +856,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073753000" />
-									</template_reference>
-									<template_reference name="action" value="action\scar_function_call">
-										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073753001" />
+										<uniqueid name="id" value="1073800444" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -1004,13 +1000,35 @@
 							<group name="veterancy_rank">
 								<float name="experience_value" value="6480" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
-								<locstring name="screen_name" value="2703" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="screen_name" value="1437" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
 								<list name="leader_actions">
 								</list>
 								<list name="non_leader_actions">
 								</list>
 								<list name="squad_actions">
+									<template_reference name="action" value="action\change_target_action">
+										<list name="actions">
+											<template_reference name="action" value="action\apply_modifiers_action">
+												<float name="duration" value="0" />
+												<bool name="permanent" value="False" />
+												<list name="modifiers">
+													<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+														<enum name="application_type" value="apply_to_ability" />
+														<bool name="exclusive" value="False" />
+														<string name="modifier_id" value="" />
+														<instance_reference name="target_type_name" value="abilities\aef\timed_ability\57_atgun_piercing_ability" mod="84428889d71d41a48e2eff09c2425d54" />
+														<enum name="usage_type" value="addition" />
+														<float name="value" value="-5" />
+														<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+													</template_reference>
+												</list>
+												<uniqueid name="id" value="1073800448" />
+											</template_reference>
+										</list>
+										<enum name="change_target_type" value="self" />
+										<uniqueid name="id" value="1073800449" />
+									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
@@ -1024,17 +1042,8 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\british\timed_ability\6pdr_rapid_maneuver" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="-5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
-											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073755148" />
+										<uniqueid name="id" value="1073800450" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
