@@ -152,12 +152,12 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.1" />
-				<float name="min" value="0.85" />
+				<float name="max" value="1.125" />
+				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.1" />
-				<float name="far" value="1.5" />
+				<float name="far" value="1.55" />
 				<float name="mid" value="1" />
 			</group>
 		</group>
