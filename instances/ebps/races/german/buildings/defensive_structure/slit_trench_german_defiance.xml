@@ -139,7 +139,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="60" />
+				<float name="time_seconds" value="90" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -584,7 +584,7 @@
 			<string name="construction_state_name" value="build_shovel_sandbag_state" />
 			<float name="construction_transition_time" value="1.36666" />
 			<bool name="force_construction" value="False" />
-			<float name="max_engineers" value="8" />
+			<float name="max_engineers" value="2" />
 			<bool name="must_be_in_command_territory" value="False" />
 			<bool name="must_be_in_line_of_sight" value="False" />
 			<bool name="must_be_in_supply_territory" value="False" />
