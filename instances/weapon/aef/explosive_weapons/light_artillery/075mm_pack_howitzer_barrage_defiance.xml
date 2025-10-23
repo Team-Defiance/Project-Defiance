@@ -339,7 +339,7 @@
 		</group>
 		<group name="range">
 			<float name="max" value="200" />
-			<float name="min" value="40" />
+			<float name="min" value="35" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="2.5" />
-				<float name="min" value="2.3" />
+				<float name="max" value="2.2" />
+				<float name="min" value="2" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
