@@ -14,9 +14,13 @@
 					<string name="undo_action_state_name" value="" />
 					<uniqueid name="id" value="1073800493" />
 				</template_reference>
-				<template_reference name="action" value="action\self_destruction_action">
-					<instance_reference name="detonation_weapon_name" value="weapon\west_german\explosive_weapons\mines\goliath_self_destruct_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073800494" />
+				<template_reference name="action" value="action\damage">
+					<float name="damage" value="120" />
+					<bool name="percentage" value="False" />
+					<bool name="set" value="False" />
+					<bool name="cause_criticals" value="True" />
+					<enum name="crit_weapon_type" value="small_arms" />
+					<uniqueid name="id" value="1073800513" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">

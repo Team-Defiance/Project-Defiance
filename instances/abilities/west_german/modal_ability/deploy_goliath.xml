@@ -150,7 +150,7 @@
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="nondirectional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\vehicles\goliath\goliath_mp" />
+		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
