@@ -570,7 +570,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="tp_light" />
+				<enum name="cover_type" value="tp_negative" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="mortar_crater" />
 					<bool name="limited" value="True" />

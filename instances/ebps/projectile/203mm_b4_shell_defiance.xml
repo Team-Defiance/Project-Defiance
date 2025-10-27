@@ -58,7 +58,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="tp_negative" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="mortar_crater" />
 					<bool name="limited" value="True" />
@@ -133,8 +133,8 @@
 					<float name="vertical_scale" value="0.00203" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="6" />
-				<float name="radius_min" value="4" />
+				<float name="radius_max" value="9.375" />
+				<float name="radius_min" value="7.34" />
 				<float name="splat_only_splat_seconds" value="180" />
 				<group name="splat_only_splats">
 					<group name="entry_01">

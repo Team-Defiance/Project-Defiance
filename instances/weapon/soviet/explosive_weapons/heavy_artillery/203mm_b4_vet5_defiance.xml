@@ -297,10 +297,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
-							<uniqueid name="id" value="1073753763" />
+							<uniqueid name="id" value="1073800514" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753764" />
+					<uniqueid name="id" value="1073800515" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -331,10 +331,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073753765" />
+							<uniqueid name="id" value="1073800516" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073753766" />
+					<uniqueid name="id" value="1073800517" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -374,7 +374,7 @@
 										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\burn_death" />
-											<uniqueid name="id" value="1073756172" />
+											<uniqueid name="id" value="1073800518" />
 										</template_reference>
 									</list>
 									<int name="weight" value="40" />
@@ -382,7 +382,7 @@
 								<group name="action_choice">
 									<list name="actions">
 										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073756173" />
+											<uniqueid name="id" value="1073800519" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
 										</template_reference>
@@ -390,10 +390,10 @@
 									<int name="weight" value="60" />
 								</group>
 							</list>
-							<uniqueid name="id" value="1073756174" />
+							<uniqueid name="id" value="1073800520" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756167" />
+					<uniqueid name="id" value="1073800521" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -424,10 +424,10 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="artillery_state" />
 							<string name="undo_action_state_name" value="ready" />
-							<uniqueid name="id" value="1073754011" />
+							<uniqueid name="id" value="1073800522" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754012" />
+					<uniqueid name="id" value="1073800523" />
 				</template_reference>
 			</list>
 		</group>
@@ -500,7 +500,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7.28" />
+			<float name="angle_scatter" value="9.1" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -508,9 +508,9 @@
 			<float name="distance_scatter_max" value="21" />
 			<float name="distance_scatter_obj_hit_min" value="0" />
 			<float name="distance_scatter_offset" value="0" />
-			<float name="distance_scatter_ratio" value="0.056" />
-			<float name="fow_angle_multiplier" value="2.5" />
-			<float name="fow_distance_multiplier" value="2.5" />
+			<float name="distance_scatter_ratio" value="0.07" />
+			<float name="fow_angle_multiplier" value="2" />
+			<float name="fow_distance_multiplier" value="2" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
@@ -592,5 +592,5 @@
 			</group>
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742121" />
+	<uniqueid name="pbgid" value="1073742367" />
 </instance>
