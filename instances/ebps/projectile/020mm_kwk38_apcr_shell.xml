@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="1" />
+				<float name="chance_splat_only" value="0.75" />
 				<enum name="cover_type" value="tp_defcover" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073753986" />
+					<uniqueid name="id" value="1073800542" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742219" />
+	<uniqueid name="pbgid" value="1073742455" />
 </instance>
