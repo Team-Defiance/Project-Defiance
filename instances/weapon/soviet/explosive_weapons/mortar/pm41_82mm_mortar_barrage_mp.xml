@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7" />
+			<float name="angle_scatter" value="8" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="100" />
-			<float name="far" value="100" />
-			<float name="mid" value="100" />
+			<float name="near" value="50" />
+			<float name="far" value="50" />
+			<float name="mid" value="50" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

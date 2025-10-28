@@ -53,7 +53,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="50" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -110,7 +110,7 @@
 			<locstring name="extra_text" value="11051296" />
 			<locstring name="help_text" value="512" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
-			<icon name="icon_name" value="Icons_bob_abilities_pinpoint_artillery" />
+			<icon name="icon_name" value="Icons_commander_cmdr_soviet_direct_fire_artillery" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="511" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -143,13 +143,13 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_152mm_artillery_barrage" />
-		<float name="ui_reticule_radius_min" value="3" />
-		<float name="ui_reticule_radius_max" value="20" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
+		<float name="ui_reticule_radius_min" value="12.5" />
+		<float name="ui_reticule_radius_max" value="12.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

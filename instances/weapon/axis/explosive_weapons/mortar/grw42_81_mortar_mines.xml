@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="60" />
-			<float name="far" value="60" />
-			<float name="mid" value="60" />
+			<float name="near" value="50" />
+			<float name="far" value="50" />
+			<float name="mid" value="50" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
