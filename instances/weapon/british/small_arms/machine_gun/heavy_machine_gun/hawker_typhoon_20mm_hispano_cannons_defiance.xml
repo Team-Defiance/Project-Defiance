@@ -46,9 +46,9 @@
 				<float name="radius" value="0" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.25" />
+				<float name="far" value="0.2" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.625" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.25" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="14" />
-			<float name="min" value="14" />
+			<float name="max" value="12" />
+			<float name="min" value="12" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -285,7 +285,7 @@
 		</group>
 		<group name="deflection">
 			<float name="deflection_damage_multiplier" value="0" />
-			<bool name="has_deflection_damage" value="False" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
 		</group>
@@ -302,7 +302,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="20mmshell" />
 		<string name="fx_tracer_name" value="fx_maingun_tracer" />
-		<float name="fx_tracer_speed" value="175" />
+		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -395,8 +395,8 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="1" />
-			<float name="nearby_suppression_radius" value="13" />
+			<float name="nearby_suppression_multiplier" value="0.75" />
+			<float name="nearby_suppression_radius" value="12" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
@@ -409,7 +409,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.0135" />
+			<float name="amount" value="0.015" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="42.5" />
-			<float name="far" value="42.5" />
-			<float name="mid" value="42.5" />
+			<float name="near" value="40" />
+			<float name="far" value="40" />
+			<float name="mid" value="40" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
