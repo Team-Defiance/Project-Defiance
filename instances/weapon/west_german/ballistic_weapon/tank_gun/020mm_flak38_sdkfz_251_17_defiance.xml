@@ -46,14 +46,14 @@
 				<float name="radius" value="2.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.625" />
-				<float name="mid" value="0.3125" />
+				<float name="far" value="0.125" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="0.375" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.05" />
-				<float name="near" value="0.3125" />
-				<float name="mid" value="0.15625" />
+				<float name="far" value="0.0625" />
+				<float name="near" value="0.375" />
+				<float name="mid" value="0.1875" />
 			</group>
 			<group name="distance">
 				<float name="far" value="2" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="24" />
-			<float name="min" value="24" />
+			<float name="max" value="20" />
+			<float name="min" value="20" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
