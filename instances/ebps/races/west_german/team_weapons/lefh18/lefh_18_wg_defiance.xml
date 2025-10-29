@@ -15,13 +15,16 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\howitzer_105mm_victortarget_barrage_ability_mp" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_barrage_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_barrage_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_delayed_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_delayed_barrage_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_delayed_barrage_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_barrage_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_barrage_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_barrage_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_smoke_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_smoke_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\artillery_barrage_ability\lefh18_105mm_wg_smoke_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\always_on_ability\lefh_wg_vet_bonuses" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -276,7 +279,7 @@
 			<bool name="generates_spotted_events" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\combat_ext">
-			<bool name="reject_attack_command" value="True" />
+			<bool name="reject_attack_command" value="False" />
 			<list name="hardpoints">
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="-1" />
@@ -294,13 +297,13 @@
 								<float name="z" value="-0.31433" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\heavy_artillery\lefh18_105mm_disabled_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\west_german\explosive_weapons\heavy_artillery\105mm_lefh_autofire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
 				<group name="hardpoint">
-					<float name="parent_hardpoint" value="-1" />
+					<float name="parent_hardpoint" value="1" />
 					<list name="weapon_table">
 						<group name="weapon">
 							<group name="heading">
@@ -315,13 +318,13 @@
 								<float name="z" value="-0.31433" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\west_german\explosive_weapons\heavy_artillery\105mm_lefh_wg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
 				<group name="hardpoint">
-					<float name="parent_hardpoint" value="2" />
+					<float name="parent_hardpoint" value="1" />
 					<list name="weapon_table">
 						<group name="weapon">
 							<group name="heading">
@@ -336,70 +339,7 @@
 								<float name="z" value="-0.31433" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_delay_buried_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="2" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="3" />
-							<group name="origin">
-								<float name="x" value="-0.00511" />
-								<float name="y" value="4" />
-								<float name="z" value="-0.31433" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_delay_airburst_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="2" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="3" />
-							<group name="origin">
-								<float name="x" value="-0.00511" />
-								<float name="y" value="4" />
-								<float name="z" value="-0.31433" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\heavy_artillery\howitzer_105mm_gun_vet3_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="2" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="3" />
-							<group name="origin">
-								<float name="x" value="-0.00511" />
-								<float name="y" value="4" />
-								<float name="z" value="-0.31433" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\explosive_weapons\heavy_artillery\howitzer_105mm_gun_direct_fire_mp" />
+							<instance_reference name="weapon" value="weapon\west_german\explosive_weapons\heavy_artillery\105mm_lefh_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -524,14 +464,6 @@
 						<float name="soviet_227" value="0" />
 						<float name="popcap" value="0" />
 					</template_reference>
-				</template_reference>
-				<template_reference name="required" value="requirements\required_player_upgrade">
-					<enum name="reason" value="usage_and_display" />
-					<locstring name="ui_name" value="0" />
-					<bool name="is_present" value="True" />
-					<float name="max_completed" value="100" />
-					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\german\commander\current\festung_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
