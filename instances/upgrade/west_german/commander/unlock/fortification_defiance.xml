@@ -1,8 +1,8 @@
 <instance description="" template="upgrade">
 	<group name="upgrade_bag">
 		<bool name="enable_in_hold" value="False" />
-		<float name="global_max_limit" value="1" />
-		<bool name="has_speech_code" value="False" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
 		<float name="local_max_limit" value="1" />
 		<enum name="owner_type" value="player" />
 		<group name="speech_code_2">
@@ -26,14 +26,14 @@
 			</group>
 			<float name="time_seconds" value="0" />
 		</group>
-		<bool name="ui_event_cue" value="False" />
+		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="command_panel" />
-		<int name="ui_position" value="0" />
+		<int name="ui_position" value="-1" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="" />
+			<icon name="icon_name" value="Icons_bob_abilities_at_overwatch" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="0" />
 			<locstring name="brief_text" value="0" />
@@ -56,5 +56,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073742088" />
+	<uniqueid name="pbgid" value="1073742089" />
 </instance>
