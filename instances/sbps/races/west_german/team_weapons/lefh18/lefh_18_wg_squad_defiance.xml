@@ -9,22 +9,22 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11038536" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="419" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="R" />
+						<locstring name="help_text" value="4594" mod="84428889d71d41a48e2eff09c2425d54" />
+						<string name="hotkey_name" value="E" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_german_howitzer" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="False" />
-						<locstring name="screen_name" value="4180" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="screen_name" value="4595" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="howitzer" />
 						<group name="speaker_generic">
-							<string name="code_1" value="xs" />
+							<string name="code_1" value="wp" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speaker_specific">
-							<string name="code_1" value="fd" />
+							<string name="code_1" value="wp" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
@@ -49,13 +49,13 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_german_howitzer_105mm_s_portrait" />
 						<float name="minimap_texture_scale" value="1" />
-						<locstring name="brief_text" value="420" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="brief_text" value="11038773" />
 						<locstring name="screen_name_short" value="11045752" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_howitzer_symbol" />
 						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_vehicle_german_howitzer_symbol" />
 						<enum name="ui_style" value="default" />
 						<string name="cover_level_icon_postfix" value="" />
 					</group>
@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="4" />
-					<instance_reference name="type" value="ebps\races\west_german\soldiers\weapon_crew\wg_leig_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\west_german\soldiers\weapon_crew\wg_lefh_crew_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<group name="loadout_data">
 					<float name="num" value="1" />
@@ -823,6 +823,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_howitzer" />
+				<instance_reference name="ability" value="abilities\german\toggle_ability\german_mortar_hold_fire_mp" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
