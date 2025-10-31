@@ -88,7 +88,7 @@
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
 		<group name="behaviour">
-			<bool name="aa_weapon" value="False" />
+			<bool name="aa_weapon" value="True" />
 			<bool name="aa_weapon_shoot_through" value="True" />
 			<bool name="artillery_force_obey_los" value="False" />
 			<bool name="attack_team_weapon_user" value="False" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="3" />
+			<float name="reaction_radius" value="4.875" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -348,7 +348,7 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="2" />
+		<float name="flinch_radius" value="4.875" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -474,7 +474,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="90" />
-				<float name="speed_horizontal" value="50" />
+				<float name="speed_horizontal" value="75" />
 				<float name="speed_vertical" value="100" />
 			</group>
 			<float name="pivot_end_time" value="0" />

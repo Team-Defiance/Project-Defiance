@@ -349,7 +349,28 @@
 								<float name="z" value="-0.31433" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_direct_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="3" />
+							<group name="origin">
+								<float name="x" value="-0.00511" />
+								<float name="y" value="2" />
+								<float name="z" value="-0.31433" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_direct_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

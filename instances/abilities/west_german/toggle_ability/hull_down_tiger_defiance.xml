@@ -103,15 +103,6 @@
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="addition" />
-											<float name="value" value="5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_02" />
 											<enum name="usage_type" value="addition" />
 											<float name="value" value="5" />
@@ -240,7 +231,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="" />
 											<enum name="usage_type" value="addition" />
-											<float name="value" value="50" />
+											<float name="value" value="60" />
 											<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 										</template_reference>
 									</list>
@@ -422,9 +413,17 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\commander\unlock\fortification_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

@@ -413,7 +413,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="5" />
+			<float name="wind_down" value="7.5" />
 			<float name="wind_up" value="0.5" />
 			<list name="on_fire_actions">
 				<template_reference name="action" value="action\use_hold_action">
