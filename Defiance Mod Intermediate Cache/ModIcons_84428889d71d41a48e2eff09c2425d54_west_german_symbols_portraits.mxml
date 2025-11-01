@@ -2,8 +2,12 @@
 <display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
 	<fx:Script>
 		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/portraits/mouldy_grenadiere_small.png')]
+		public static var mouldy_grenadiere_small:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/portraits/okw_tiger_small.png')]
 		public static var okw_tiger_small:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/portraits/panzer_lehr_grenadiere_small.png')]
+		public static var panzer_lehr_grenadiere_small:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/portraits/westwind_small.png')]
 		public static var westwind_small:Class;
 		]]>

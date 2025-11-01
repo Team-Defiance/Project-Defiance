@@ -2,6 +2,8 @@
 <display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
 	<fx:Script>
 		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/infantry/mouldy_grenadiere.png')]
+		public static var mouldy_grenadiere:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/west_german/symbols/infantry/sturmpioneers_demolitions.png')]
 		public static var sturmpioneers_demolitions:Class;
 		]]>
