@@ -228,12 +228,25 @@
 				<locstring name="ui_name" value="0" />
 				<enum name="reason" value="usage" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
+			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\items\paratrooper_m1919a6_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="False" />
+						<bool name="is_present" value="True" />
+						<instance_reference name="upgrade_name" value="upgrade\aef\items\paratrooper_dual_bar_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_squad_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="include_queued" value="False" />
+						<bool name="is_present" value="True" />
+						<instance_reference name="upgrade_name" value="upgrade\aef\items\paratrooper_m1919a6_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
