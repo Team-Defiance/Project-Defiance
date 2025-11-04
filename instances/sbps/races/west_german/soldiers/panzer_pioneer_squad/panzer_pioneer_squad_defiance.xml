@@ -201,7 +201,7 @@
 							<list name="requirements">
 								<template_reference name="requirement" value="requirements\required_near_entity">
 									<enum name="alliance_requirement" value="ally" />
-									<float name="radius_requirement" value="30" />
+									<float name="radius_requirement" value="25" />
 									<instance_reference name="entity_pbg" value="" />
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
@@ -348,7 +348,7 @@
 							<list name="requirements">
 								<template_reference name="requirement" value="requirements\required_near_entity">
 									<enum name="alliance_requirement" value="ally" />
-									<float name="radius_requirement" value="40" />
+									<float name="radius_requirement" value="35" />
 									<instance_reference name="entity_pbg" value="" />
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
