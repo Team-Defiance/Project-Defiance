@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\flak_halftrack_concealing_smoke_mp" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\flak_halftrack_bitchass_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\handbrake_mode_mp" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_hardpoint2_mp" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\aa_mode_german_251" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -395,7 +395,7 @@
 			</list>
 			<float name="armor" value="28" />
 			<float name="rear_armor" value="12" />
-			<float name="target_size" value="18" />
+			<float name="target_size" value="19" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
