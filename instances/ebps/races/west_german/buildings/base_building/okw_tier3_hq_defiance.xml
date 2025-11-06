@@ -756,19 +756,19 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_wurfrahmen_40_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\wg_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\wg_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_wurfrahmen_40_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>
