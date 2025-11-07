@@ -1,0 +1,200 @@
+<instance description="temporary skirt upgrade for shared ostheer P4" template="upgrade">
+	<group name="upgrade_bag">
+		<bool name="enable_in_hold" value="True" />
+		<float name="global_max_limit" value="0" />
+		<bool name="has_speech_code" value="True" />
+		<float name="local_max_limit" value="1" />
+		<enum name="owner_type" value="self" />
+		<group name="speech_code_2">
+			<string name="code_1" value="" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="speech_code_3">
+			<string name="code_1" value="skt" />
+			<string name="code_2" value="" />
+			<string name="code_3" value="" />
+		</group>
+		<group name="time_cost">
+			<group name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="fuel" value="0" />
+				<float name="manpower" value="0" />
+				<float name="munition" value="30" />
+				<float name="popcap" value="0" />
+			</group>
+			<float name="time_seconds" value="15" />
+		</group>
+		<bool name="ui_event_cue" value="True" />
+		<enum name="ui_group" value="unit_upgrade_panel" />
+		<int name="ui_position" value="2" />
+		<group name="ui_info">
+			<locstring name="extra_text" value="4374" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4375" mod="84428889d71d41a48e2eff09c2425d54" />
+			<string name="hotkey_name" value="K" />
+			<icon name="icon_name" value="Icons_abilities_ability_soviet_kv8_flamethrower" />
+			<bool name="reveal_for_decryption" value="False" />
+			<locstring name="screen_name" value="4371" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="brief_text" value="0" />
+			<locstring name="screen_name_short" value="0" />
+			<enum name="ui_style" value="default" />
+		</group>
+		<bool name="validate_actions" value="True" />
+		<list name="actions">
+			<template_reference name="action" value="action\animator_set_state">
+				<string name="do_action_state_name" value="kv-8" />
+				<string name="state_machine_name" value="tank_variation" />
+				<bool name="apply_to_leader_only" value="False" />
+				<bool name="retrigger" value="False" />
+				<string name="undo_action_state_name" value="" />
+				<uniqueid name="id" value="1073799681" />
+			</template_reference>
+			<template_reference name="action" value="action\remove_weapon">
+				<bool name="fire_and_forget" value="False" />
+				<float name="hardpoint" value="1" />
+				<uniqueid name="id" value="1073799682" />
+			</template_reference>
+			<template_reference name="action" value="action\remove_weapon">
+				<bool name="fire_and_forget" value="False" />
+				<float name="hardpoint" value="2" />
+				<uniqueid name="id" value="1073799695" />
+			</template_reference>
+			<template_reference name="action" value="action\add_weapon">
+				<float name="hardpoint" value="1" />
+				<group name="weapon">
+					<group name="heading">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="1" />
+					</group>
+					<float name="length" value="0" />
+					<group name="origin">
+						<float name="x" value="0" />
+						<float name="y" value="2.68" />
+						<float name="z" value="0.53" />
+					</group>
+					<enum name="type" value="default" />
+					<instance_reference name="weapon" value="weapon\soviet\flame_throwers\kv8_ato-41_flamethrower_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<uniqueid name="id" value="1073799683" />
+			</template_reference>
+			<template_reference name="action" value="action\change_weapon">
+				<float name="hardpoint" value="1" />
+				<instance_reference name="weapon" value="weapon\soviet\flame_throwers\kv8_ato-41_flamethrower_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073799684" />
+			</template_reference>
+			<template_reference name="action" value="action\add_weapon">
+				<float name="hardpoint" value="1" />
+				<group name="weapon">
+					<group name="heading">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+						<float name="z" value="1" />
+					</group>
+					<float name="length" value="0" />
+					<group name="origin">
+						<float name="x" value="0" />
+						<float name="y" value="0.5" />
+						<float name="z" value="0" />
+					</group>
+					<enum name="type" value="default" />
+					<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\045mm_m1938_kv8" mod="84428889d71d41a48e2eff09c2425d54" />
+				</group>
+				<uniqueid name="id" value="1073799685" />
+			</template_reference>
+			<template_reference name="action" value="action\ui_decorator_action">
+				<icon name="symbol_icon" value="Icons_symbols_vehicle_soviet_kv8_symbol" />
+				<uniqueid name="id" value="1073799686" />
+			</template_reference>
+			<template_reference name="action" value="action\add_ability_action">
+				<uniqueid name="id" value="1073799696" />
+				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\kv-8_flame_45mm_toggle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\soviet\flamethrowers\kv-8_ato-41_flamethrower_item_mp" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073799697" />
+			</template_reference>
+		</list>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\terror_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\items\kv57_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="include_queued" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2591" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\hq\hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="40" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\barracks_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\motorpool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\tank_depot_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_near_entity">
+						<enum name="alliance_requirement" value="self" />
+						<float name="radius_requirement" value="20" />
+						<instance_reference name="entity_pbg" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="near_entity_requirement">
+						</list>
+					</template_reference>
+				</list>
+			</template_reference>
+		</list>
+		<icon name="ui_kicker_icon_name" value="" />
+		<locstring name="ui_squad_name_override" value="4372" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_help_text_override" value="4373" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_extra_text_override" value="11038408" />
+		<list name="ui_preview">
+		</list>
+		<list name="on_cancel_actions">
+		</list>
+		<list name="on_begin_actions">
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="1073742077" />
+</instance>

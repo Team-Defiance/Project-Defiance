@@ -146,7 +146,7 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\is-2_support" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\isu152_unlock" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_all_in_list">
 				<enum name="reason" value="usage" />

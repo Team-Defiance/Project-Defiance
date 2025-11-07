@@ -70,23 +70,23 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_formation_ext">
 			<float name="combat_follower_cover_search_radius" value="1" />
 			<group name="cover_formation_table">
-				<instance_reference name="tp_defcover" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_defcover" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_defcover_narrow" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_garrison_cover" value="squad_formations\default" />
 				<instance_reference name="tp_garrison_halftrack" value="squad_formations\default" />
-				<instance_reference name="tp_heavy" value="squad_formations\new_wedge_elite_cover" />
-				<instance_reference name="tp_light" value="squad_formations\new_wedge_elite_cover" />
-				<instance_reference name="tp_negative" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_open" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_smoke" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_heavy" value="squad_formations\new_standard_blob_cover" />
+				<instance_reference name="tp_light" value="squad_formations\new_standard_blob_cover" />
+				<instance_reference name="tp_negative" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_open" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_smoke" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_trench" value="squad_formations\default" />
-				<instance_reference name="tp_water" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_water" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_z_bunker" value="squad_formations\wedge" />
 				<instance_reference name="tp_z_emplacement" value="squad_formations\default" />
-				<instance_reference name="tp_z_ice" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_z_snow" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_wedge_elite" />
-				<instance_reference name="tp_zz_mud" value="squad_formations\new_wedge_elite" />
+				<instance_reference name="tp_z_ice" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_z_snow" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_zz_deep_snow" value="squad_formations\new_standard_blob" />
+				<instance_reference name="tp_zz_mud" value="squad_formations\new_standard_blob" />
 				<instance_reference name="tp_zz_team_weapon_heavy" value="squad_formations\default" />
 			</group>
 			<float name="move_dest_cover_search_radius" value="1" />
@@ -104,28 +104,28 @@
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="03_soldiers">
-					<float name="units_in_core" value="1" />
-					<float name="units_in_left_flank" value="1" />
-					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="0" />
+					<float name="units_in_right_flank" value="0" />
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="04_soldiers">
+					<float name="units_in_core" value="1" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="1" />
+				</group>
+				<group name="05_soldiers">
 					<float name="units_in_core" value="2" />
 					<float name="units_in_left_flank" value="1" />
 					<float name="units_in_right_flank" value="1" />
-					<float name="units_in_scout" value="0" />
-				</group>
-				<group name="05_soldiers">
-					<float name="units_in_core" value="1" />
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_right_flank" value="2" />
-					<float name="units_in_scout" value="0" />
+					<float name="units_in_scout" value="1" />
 				</group>
 				<group name="06_soldiers">
-					<float name="units_in_core" value="2" />
-					<float name="units_in_left_flank" value="2" />
-					<float name="units_in_right_flank" value="2" />
-					<float name="units_in_scout" value="0" />
+					<float name="units_in_core" value="3" />
+					<float name="units_in_left_flank" value="1" />
+					<float name="units_in_right_flank" value="1" />
+					<float name="units_in_scout" value="1" />
 				</group>
 				<group name="07_soldiers">
 					<float name="units_in_core" value="7" />
@@ -423,6 +423,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
+			</list>
+			<list name="squad_entity_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -446,19 +448,17 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\change_weapon">
 							<float name="hardpoint" value="1" />
-							<instance_reference name="weapon" value="weapon\soviet\small_arms\single_fire\rifle\svs_39_guards_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073794508" />
+							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\sub_machine_gun\ppsh_41_stormgroup_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073799824" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073794509" />
+					<uniqueid name="id" value="1073799825" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-			</list>
-			<list name="squad_entity_actions">
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_attention_ext">

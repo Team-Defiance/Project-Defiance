@@ -75,7 +75,7 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="30" />
+				<float name="mid" value="35" />
 				<float name="near" value="1000" />
 			</template_reference>
 			<group name="building_damage">
@@ -550,6 +550,15 @@
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="0.75" />
 					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1" />
+					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

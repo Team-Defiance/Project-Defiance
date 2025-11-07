@@ -214,7 +214,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="25" />
+					<float name="fuel" value="20" />
 					<float name="manpower" value="100" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -269,7 +269,7 @@
 			<string name="extra_text_deprecated" value="Allows production of the Pak 40 AT Gun, Sd.Kfz. 251 Halftrack, and Panzer II Luchs" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11007426" />
+			<locstring name="help_text" value="4314" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="D" />
 			<icon name="icon_name" value="Icons_buildings_building_german_dolch_aktionen" />
 			<enum name="kill_type" value="building" />
@@ -566,7 +566,6 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\research\utility_refit" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>

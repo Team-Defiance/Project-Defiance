@@ -378,15 +378,35 @@
 									<bool name="is_present" value="True" />
 									<float name="max_completed" value="100" />
 									<float name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\british\research\company_anvil_point_sight_mp" />
+									<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
-								<template_reference name="requirement" value="requirements\required_player_upgrade">
+								<template_reference name="requirement" value="requirements\required_all_in_list">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
-									<bool name="is_present" value="True" />
-									<float name="max_completed" value="100" />
-									<float name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\british\research\company_anvil_mp" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_player_upgrade">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<bool name="is_present" value="True" />
+											<float name="max_completed" value="100" />
+											<float name="min_completed" value="1" />
+											<instance_reference name="upgrade_name" value="upgrade\west_german\commander\unlock\fortification_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_resource">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<template_reference name="resource" value="tables\resource_table">
+												<float name="action" value="0" />
+												<float name="command" value="1" />
+												<float name="fuel" value="0" />
+												<float name="manpower" value="0" />
+												<float name="munition" value="0" />
+												<float name="soviet_progression" value="0" />
+												<float name="soviet_227" value="0" />
+												<float name="popcap" value="0" />
+											</template_reference>
+										</template_reference>
+									</list>
 								</template_reference>
 							</list>
 						</template_reference>
@@ -406,10 +426,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073746675" />
+							<uniqueid name="id" value="1073800616" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073746676" />
+					<uniqueid name="id" value="1073800617" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

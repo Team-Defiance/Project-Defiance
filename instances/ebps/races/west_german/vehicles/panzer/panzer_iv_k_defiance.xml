@@ -220,6 +220,36 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\items\p4_wg_kwk_40_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\ui_portrait_action">
+							<icon name="summer_portrait_icon" value="Icons_portraits_vehicle_german_panzer_iv_s_portrait" />
+							<icon name="winter_portrait_icon" value="Icons_portraits_vehicle_german_panzer_iv_w_portrait" />
+							<uniqueid name="id" value="1073800015" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800016" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -310,8 +340,8 @@
 					<uniqueid name="id" value="1073755519" />
 				</template_reference>
 			</list>
-			<float name="armor" value="135" />
-			<float name="rear_armor" value="60" />
+			<float name="armor" value="145" />
+			<float name="rear_armor" value="65" />
 			<float name="target_size" value="20" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
@@ -759,27 +789,6 @@
 							</group>
 							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="1" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="4.752" />
-							</group>
-							<float name="length" value="0" />
-							<group name="origin">
-								<float name="x" value="0" />
-								<float name="y" value="2.346" />
-								<float name="z" value="-0.561" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\075mm_kwk37_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

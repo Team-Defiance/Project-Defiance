@@ -326,6 +326,58 @@
 			<bool name="ignore_impass" value="False" />
 			<bool name="lock_to_impass" value="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\slotitem_ext">
+			<float name="pickup_radius" value="5" />
+			<list name="on_pickup_actions">
+				<template_reference name="action" value="action\modify_resources">
+					<template_reference name="resource_to_modify" value="tables\resource_table">
+						<float name="action" value="0" />
+						<float name="command" value="0" />
+						<float name="fuel" value="1000" />
+						<float name="manpower" value="0" />
+						<float name="munition" value="0" />
+						<float name="soviet_progression" value="0" />
+						<float name="soviet_227" value="0" />
+						<float name="popcap" value="0" />
+					</template_reference>
+					<bool name="modify_per_second" value="False" />
+					<bool name="ignore_resource_cap" value="False" />
+					<uniqueid name="id" value="1073800320" />
+				</template_reference>
+			</list>
+			<enum name="pickup_type" value="weapon" />
+			<list name="pickup_requirements">
+				<template_reference name="required" value="requirements\required_player_upgrade">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="4507" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="10" />
+					<instance_reference name="upgrade_name" value="upgrade\spzul" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
+				<template_reference name="required" value="requirements\required_player_upgrade">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\cavalry_riflemen_dispatch" />
+				</template_reference>
+			</list>
+			<template_reference name="unlimited_option" value="options\ebpextensions\slotitem_ext\unlimited_option">
+				<group name="item_cost">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="popcap" value="0" />
+				</group>
+				<list name="slot_item_actions">
+				</list>
+				<locstring name="item_screen_name" value="0" />
+			</template_reference>
+		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="16288" />
 </instance>

@@ -339,7 +339,7 @@
 		</group>
 		<group name="range">
 			<float name="max" value="80" />
-			<float name="min" value="40" />
+			<float name="min" value="35" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="7.5" />
-				<float name="min" value="7" />
+				<float name="max" value="7.3" />
+				<float name="min" value="6.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
-			<float name="mid" value="60" />
-			<float name="far" value="60" />
-			<float name="near" value="60" />
+			<float name="mid" value="32" />
+			<float name="far" value="32" />
+			<float name="near" value="32" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

@@ -1246,7 +1246,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_engineer_ext">
-			<float name="construction_rate_multiplier" value="0.65" comment="FUCK GRENADIERS AND THEIR ABILITY TO MAKE BAGS" />
+			<float name="construction_rate_multiplier" value="0.7" comment="FUCK GRENADIERS AND THEIR ABILITY TO MAKE BAGS" />
 			<list name="in_construction_actions">
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />

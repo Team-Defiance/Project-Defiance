@@ -18,9 +18,10 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml_20_152mm_barrage_ability_victortarget_mp" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\passives_ui\ml20_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_barrage_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\passives_ui\ml20_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\ml20_152mm_direct_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -33,7 +34,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="60" />
-					<float name="manpower" value="175" />
+					<float name="manpower" value="190" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -348,28 +349,7 @@
 								<float name="z" value="-0.31433" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\152mm_m-30_vet3_mp" />
-						</group>
-					</list>
-					<bool name="receives_attack_commands" value="False" />
-				</group>
-				<group name="hardpoint">
-					<float name="parent_hardpoint" value="2" />
-					<list name="weapon_table">
-						<group name="weapon">
-							<group name="heading">
-								<float name="x" value="0" />
-								<float name="y" value="0" />
-								<float name="z" value="1" />
-							</group>
-							<float name="length" value="3" />
-							<group name="origin">
-								<float name="x" value="-0.00511" />
-								<float name="y" value="4" />
-								<float name="z" value="-0.31433" />
-							</group>
-							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\152mm_m-30_victortarget_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\ml_20_direct_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -448,7 +428,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="racebps\soviet" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\commander\terror_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
@@ -465,7 +445,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\soviet\commander\terror_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
@@ -499,7 +479,7 @@
 			<bool name="must_be_in_territory" value="False" />
 			<bool name="must_be_on" value="False" />
 			<bool name="must_not_be_in_walkable_surfaces" value="True" />
-			<instance_reference name="on_construction_squad" value="sbps\races\soviet\commander\reserve_infantry_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="on_construction_squad" value="sbps\races\soviet\commander\terror_tactics\team_weapons\ml20_152mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 			<float name="orientation" value="0" />
 			<enum name="placement_type" value="tp_structure" />
 			<bool name="prefer_spots_on_side_with_leader" value="False" />
@@ -587,7 +567,7 @@
 					<bool name="is_present" value="True" />
 					<float name="max_completed" value="100" />
 					<float name="min_completed" value="1" />
-					<instance_reference name="upgrade_name" value="upgrade\soviet\commander\passive\ml_20_howitzer_unlock" />
+					<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\terror_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -626,7 +606,7 @@
 			<float name="revert_max" value="25" />
 			<float name="revert_multiplier" value="2" />
 			<float name="revert_time" value="10" />
-			<float name="revert_time_on_detection" value="2.5" />
+			<float name="revert_time_on_detection" value="5" />
 			<list name="camouflage_actions">
 			</list>
 			<list name="first_strike_actions">

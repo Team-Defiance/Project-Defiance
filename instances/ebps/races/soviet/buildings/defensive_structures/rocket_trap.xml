@@ -390,7 +390,7 @@
 			<bool name="can_set_facing" value="True" />
 			<float name="cancel_refund_percentage" value="100" />
 			<bool name="check_terrain" value="True" />
-			<string name="construction_state_name" value="Mine_Lay_State" />
+			<string name="construction_state_name" value="blowtorch_state" />
 			<float name="construction_transition_time" value="1.36666" />
 			<bool name="force_construction" value="False" />
 			<float name="max_engineers" value="8" />
@@ -539,6 +539,14 @@
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_action">
+					<string name="action_name" value="UI\Selection\selectover_allies_ally" />
+					<float name="duration" value="0" />
+					<bool name="fire_and_forget" value="True" />
+					<bool name="is_terrain_only" value="False" />
+					<bool name="allies_only" value="False" />
+					<uniqueid name="id" value="1073799926" />
 				</template_reference>
 			</list>
 		</template_reference>

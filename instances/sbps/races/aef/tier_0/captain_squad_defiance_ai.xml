@@ -10,7 +10,7 @@
 						<locstring name="extra_text" value="11051353" />
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="3602" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="" />
+						<string name="hotkey_name" value="C" />
 						<icon name="icon_name" value="Icons_units_unit_aef_officer_captain" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
@@ -183,7 +183,7 @@
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="3598" mod="84428889d71d41a48e2eff09c2425d54" />
 					<float name="max_squad_cap" value="1" />
-					<instance_reference name="squad_name" value="sbps\races\aef\tier_0\captain_squad_defiance_ai" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad_name" value="sbps\races\aef\tier_0\captain_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -304,7 +304,7 @@
 								<instance_reference name="tooltip" value="modifier_tooltip\move_enable_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073797948" />
+						<uniqueid name="id" value="1073800020" />
 					</template_reference>
 					<template_reference name="action" value="action\delay">
 						<float name="delay" value="10" />
@@ -326,10 +326,10 @@
 										<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 									</template_reference>
 								</list>
-								<uniqueid name="id" value="1073797949" />
+								<uniqueid name="id" value="1073800021" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073797950" />
+						<uniqueid name="id" value="1073800022" />
 						<bool name="can_prevent_refund" value="True" />
 					</template_reference>
 					<template_reference name="action" value="action\animator_set_state">
@@ -338,7 +338,7 @@
 						<bool name="retrigger" value="False" />
 						<string name="state_machine_name" value="suppression" />
 						<string name="undo_action_state_name" value="normal" />
-						<uniqueid name="id" value="1073797951" />
+						<uniqueid name="id" value="1073800023" />
 					</template_reference>
 				</list>
 				<list name="suppressed_activate_actions">
@@ -386,13 +386,13 @@
 								<enum name="application_type" value="apply_to_ability" />
 								<bool name="exclusive" value="False" />
 								<string name="modifier_id" value="" />
-								<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_captain_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="usage_type" value="multiplication" />
 								<float name="value" value="0.65" />
 								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 							</template_reference>
 						</list>
-						<uniqueid name="id" value="1073797952" />
+						<uniqueid name="id" value="1073800024" />
 					</template_reference>
 				</list>
 			</group>
@@ -460,7 +460,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
 							<float name="number_of_experience_points" value="-640" />
-							<uniqueid name="id" value="1073797953" />
+							<uniqueid name="id" value="1073800025" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
 							<float name="delay" value="5" />
@@ -470,14 +470,14 @@
 							<list name="delayed_actions">
 								<template_reference name="action" value="action\veterancy_action">
 									<float name="number_of_experience_points" value="640" />
-									<uniqueid name="id" value="1073797954" />
+									<uniqueid name="id" value="1073800026" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073797955" />
+							<uniqueid name="id" value="1073800027" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797956" />
+					<uniqueid name="id" value="1073800028" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -503,12 +503,12 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\add_to_squad_loadout_action">
-							<uniqueid name="id" value="1073797957" />
+							<uniqueid name="id" value="1073800029" />
 							<instance_reference name="unit_type" value="ebps\races\aef\soldiers\officers\captain\captain_riflemen_guard" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797958" />
+					<uniqueid name="id" value="1073800030" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -534,12 +534,12 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\add_to_squad_loadout_action">
-							<uniqueid name="id" value="1073797959" />
+							<uniqueid name="id" value="1073800031" />
 							<instance_reference name="unit_type" value="ebps\races\aef\soldiers\officers\captain\captain_riflemen_guard" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797960" />
+					<uniqueid name="id" value="1073800032" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -565,12 +565,12 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\add_to_squad_loadout_action">
-							<uniqueid name="id" value="1073797961" />
+							<uniqueid name="id" value="1073800033" />
 							<instance_reference name="unit_type" value="ebps\races\aef\soldiers\officers\captain\captain_riflemen_guard" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="count" value="1" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797962" />
+					<uniqueid name="id" value="1073800034" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -580,14 +580,64 @@
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073797981" />
+					<instance_reference name="upgrade" value="upgrade\aef\research\tier_0\explosives_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073800792" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\aef\research\tier_0\explosives_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073797982" />
+					<instance_reference name="upgrade" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073800793" />
+				</template_reference>
+				<template_reference name="action" value="action\random_action">
+					<bool name="instant" value="False" />
+					<list name="random_actions">
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\aef\commander\unlock\airborne_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<uniqueid name="id" value="1073800795" />
+								</template_reference>
+							</list>
+							<int name="weight" value="25" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\aef\commander\unlock\armor_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<uniqueid name="id" value="1073800796" />
+								</template_reference>
+							</list>
+							<int name="weight" value="25" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\aef\commander\unlock\infantry_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<uniqueid name="id" value="1073800797" />
+								</template_reference>
+							</list>
+							<int name="weight" value="25" />
+						</group>
+						<group name="action_choice">
+							<list name="actions">
+								<template_reference name="action" value="action\upgrade_add">
+									<bool name="apply_to_entities_in_squad" value="False" />
+									<bool name="trigger_publish_event" value="False" />
+									<instance_reference name="upgrade" value="upgrade\aef\commander\unlock\tact_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<uniqueid name="id" value="1073800798" />
+								</template_reference>
+							</list>
+							<int name="weight" value="25" />
+						</group>
+					</list>
+					<uniqueid name="id" value="1073800794" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -640,14 +690,14 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073797963" />
+									<uniqueid name="id" value="1073800035" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073797964" />
+							<uniqueid name="id" value="1073800036" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797965" />
+					<uniqueid name="id" value="1073800037" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -678,12 +728,13 @@
 				<instance_reference name="ability" value="abilities\pm\aef\specializations\cover_specialization\cover_specialization_hunker_down" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\sp\refuel_tank_sp" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\captain_on_me_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_captain_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\timed_ability\captain_medic_timed_area_heal_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\passive_ability\captain_extra_models_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\captain_at_overwatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\captain_retreat_point_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\captain_rapid_recon_run_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\captain_mark_target_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -715,7 +766,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\suppression">
 					<float name="suppression" value="0" />
-					<uniqueid name="id" value="1073797966" />
+					<uniqueid name="id" value="1073800038" />
 					<float name="supressionrecovertime" value="0" />
 				</template_reference>
 			</list>
@@ -831,7 +882,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797967" />
+										<uniqueid name="id" value="1073800039" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -861,7 +912,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797968" />
+										<uniqueid name="id" value="1073800040" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -877,7 +928,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797969" />
+										<uniqueid name="id" value="1073800041" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -904,7 +955,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797970" />
+										<uniqueid name="id" value="1073800042" />
 									</template_reference>
 								</list>
 							</group>
@@ -938,7 +989,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_captain_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -968,7 +1019,7 @@
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\captain_at_overwatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797971" />
+										<uniqueid name="id" value="1073800043" />
 									</template_reference>
 									<template_reference name="action" value="action\requirement_action">
 										<bool name="check_self" value="False" />
@@ -1014,7 +1065,7 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073797972" />
+												<uniqueid name="id" value="1073800044" />
 											</template_reference>
 											<template_reference name="action" value="action\animator_set_state">
 												<bool name="apply_to_leader_only" value="True" />
@@ -1022,7 +1073,7 @@
 												<bool name="retrigger" value="True" />
 												<string name="state_machine_name" value="ability_movement_buff_state" />
 												<string name="undo_action_state_name" value="off" />
-												<uniqueid name="id" value="1073797973" />
+												<uniqueid name="id" value="1073800045" />
 											</template_reference>
 											<template_reference name="action" value="action\ui_unit_modifier_action">
 												<bool name="die_with_creator" value="False" />
@@ -1032,10 +1083,10 @@
 													<icon name="icon_name" value="Icons_abilities_ability_aef_sprint_hmg" />
 													<string name="hotkey_name" value="" />
 												</template_reference>
-												<uniqueid name="id" value="1073797974" />
+												<uniqueid name="id" value="1073800046" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797975" />
+										<uniqueid name="id" value="1073800047" />
 										<bool name="fire_and_forget_non_global" value="False" />
 										<template_reference name="ui_help_text" value="tables\help_text_phrase">
 											<int name="phrase_order" value="0" />
@@ -1056,7 +1107,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797976" />
+										<uniqueid name="id" value="1073800048" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -1074,7 +1125,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797977" />
+										<uniqueid name="id" value="1073800049" />
 									</template_reference>
 								</list>
 							</group>
@@ -1096,7 +1147,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\grenades\m15_wp_grenade_captain_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -1111,7 +1162,7 @@
 												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\captain_on_me_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797978" />
+										<uniqueid name="id" value="1073800050" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -1127,7 +1178,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797979" />
+										<uniqueid name="id" value="1073800051" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -1157,7 +1208,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073797980" />
+										<uniqueid name="id" value="1073800052" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

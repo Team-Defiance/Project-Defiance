@@ -140,6 +140,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
+				<instance_reference name="ability" value="abilities\west_german\always_on_ability\dispatch_ability\sws_halftrack_forward_receivers_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -326,7 +327,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11071244" />
+			<locstring name="help_text" value="4315" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="S" />
 			<icon name="icon_name" value="Icons_buildings_building_west_german_schwerwer_panzer_hq" />
 			<enum name="kill_type" value="building" />

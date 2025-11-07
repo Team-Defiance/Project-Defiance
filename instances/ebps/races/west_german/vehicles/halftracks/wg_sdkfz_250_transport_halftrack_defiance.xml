@@ -116,7 +116,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="20" />
+					<float name="fuel" value="15" />
 					<float name="manpower" value="210" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -805,7 +805,7 @@
 						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
 							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
 								<string name="death_event_name" value="death_detach_skeleton" />
 								<string name="desync_action_name" value="driver_detach" />
 								<string name="role_name" value="driver_" />
@@ -815,7 +815,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
+								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="Gunner" />

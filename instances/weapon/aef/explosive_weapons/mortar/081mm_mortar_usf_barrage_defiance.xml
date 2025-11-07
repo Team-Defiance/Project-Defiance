@@ -103,7 +103,7 @@
 			<bool name="point_blank" value="False" />
 			<bool name="prevents_prone" value="True" />
 			<bool name="reset_rotation_on_teardown" value="True" />
-			<bool name="share_parent_anim" value="True" />
+			<bool name="share_parent_anim" value="False" />
 			<bool name="single_handed_weapon" value="False" />
 			<bool name="substitute_weapon" value="False" />
 			<bool name="support_weapon" value="False" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="80" />
-			<float name="far" value="80" />
-			<float name="near" value="80" />
+			<float name="mid" value="40" />
+			<float name="far" value="40" />
+			<float name="near" value="40" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

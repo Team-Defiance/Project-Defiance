@@ -161,6 +161,24 @@
 											<float name="value" value="0.7" />
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
+										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.3" />
+											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.3" />
+											<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
+										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073798999" />
 								</template_reference>
@@ -277,7 +295,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

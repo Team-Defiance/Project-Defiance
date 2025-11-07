@@ -134,7 +134,7 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
 		<float name="ui_reticule_radius_min" value="5.5" />
 		<float name="ui_reticule_radius_max" value="10" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />

@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="30" />
-			<float name="manpower" value="380" />
+			<float name="manpower" value="400" />
 			<float name="munition" value="15" />
 			<float name="popcap" value="0" />
 		</group>
@@ -141,6 +141,14 @@
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\04_paratroopers_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\05_p47_strafing_run" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\06_p47_rocket_attack" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\mechanized\assault_engineer_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\tact_support_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\01_m36_jackson_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\02_breakthrough_equipment_usf" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\03_riflemen_1919_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\04_team_weapons_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\05_p47_recon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\06_man_the_defenses_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
@@ -166,7 +174,7 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051139" />
+					<locstring name="screen_name" value="4450" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_aef_rifle_company_and_support_platoon" />
 					<enum name="unit_type" value="hq" />
 					<icon name="icon_name" value="Icons_tooltips_tab_01_aef_barrack" />
@@ -184,7 +192,7 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051208" />
+					<locstring name="screen_name" value="4451" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_aef_lieutenant_building" />
 					<enum name="unit_type" value="barracks" />
 					<icon name="icon_name" value="Icons_tooltips_tab_02_aef_platoon_command_post" />
@@ -202,7 +210,7 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051213" />
+					<locstring name="screen_name" value="4452" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_aef_captain_building" />
 					<enum name="unit_type" value="armory" />
 					<icon name="icon_name" value="Icons_tooltips_tab_03_aef_company_command_post" />
@@ -220,7 +228,7 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051205" />
+					<locstring name="screen_name" value="4453" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_aef_major_building" />
 					<enum name="unit_type" value="motor_pool_light" />
 					<icon name="icon_name" value="Icons_tooltips_tab_04_aef_battallion_command_post" />

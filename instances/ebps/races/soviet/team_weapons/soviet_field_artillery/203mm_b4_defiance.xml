@@ -18,8 +18,10 @@
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet1" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet3" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\passives_ui\b4_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_shot1_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\passives_ui\b4_camo_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_direct_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\b4_203mm_direct_fire_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -331,6 +333,48 @@
 					</list>
 					<bool name="receives_attack_commands" value="False" />
 				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="3" />
+							<group name="origin">
+								<float name="x" value="-0.00511" />
+								<float name="y" value="2" />
+								<float name="z" value="-0.31433" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_direct_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="3" />
+							<group name="origin">
+								<float name="x" value="-0.00511" />
+								<float name="y" value="2" />
+								<float name="z" value="-0.31433" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\heavy_artillery\203mm_b4_direct_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
 			</list>
 			<int name="sight_hardpoint" value="-1" />
 			<list name="kill_actions">
@@ -604,7 +648,7 @@
 			<float name="revert_max" value="25" />
 			<float name="revert_multiplier" value="2" />
 			<float name="revert_time" value="10" />
-			<float name="revert_time_on_detection" value="2.5" />
+			<float name="revert_time_on_detection" value="5" />
 			<list name="camouflage_actions">
 			</list>
 			<list name="first_strike_actions">

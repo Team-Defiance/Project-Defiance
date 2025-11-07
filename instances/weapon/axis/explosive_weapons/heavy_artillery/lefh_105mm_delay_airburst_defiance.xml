@@ -13,13 +13,13 @@
 			<float name="post_firing_aim_time" value="0" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1.25" />
-				<float name="mid" value="1.1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -35,15 +35,15 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0" />
+				<float name="radius" value="12.75" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.15" />
@@ -53,7 +53,7 @@
 			<group name="damage_friendly">
 				<float name="far" value="0.075" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.1875" />
+				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
 				<float name="far" value="10.5" />
@@ -72,16 +72,16 @@
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.25" />
 			</group>
-			<bool name="damage_all_in_hold" value="False" />
+			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1" />
 				<float name="mid" value="5" />
-				<float name="near" value="30" />
+				<float name="near" value="15" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="0.001" />
-				<float name="far" value="0.005" />
+				<float name="mid" value="0.175" />
+				<float name="far" value="0.0015" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -272,11 +272,75 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="0" />
-			<float name="min" value="0" />
+			<float name="max" value="80" />
+			<float name="min" value="80" />
 			<list name="on_penetrated_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_blind" />
+							<uniqueid name="id" value="1073800753" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800754" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="post_damage_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_blind" />
+							<uniqueid name="id" value="1073800755" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800756" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</group>
 		<group name="damage_over_time">
@@ -291,7 +355,7 @@
 		</group>
 		<group name="fire">
 			<float name="wind_down" value="2" />
-			<float name="wind_up" value="0" />
+			<float name="wind_up" value="0.25" />
 			<list name="on_fire_actions">
 			</list>
 		</group>
@@ -395,7 +459,7 @@
 			<float name="suppressed_reload_multiplier" value="1" />
 		</group>
 		<group name="suppression">
-			<float name="nearby_suppression_multiplier" value="1" />
+			<float name="nearby_suppression_multiplier" value="0.1" />
 			<float name="nearby_suppression_radius" value="12" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
@@ -409,7 +473,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0" />
+			<float name="amount" value="0.5" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -451,6 +515,15 @@
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="0.75" />
 					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="vehicle" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="1.375" />
+					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>

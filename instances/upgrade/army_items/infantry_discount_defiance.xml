@@ -45,7 +45,7 @@
 			<template_reference name="action" value="action\filter_action">
 				<bool name="apply_to_future_units" value="True" />
 				<bool name="apply_to_local_player" value="True" />
-				<instance_reference name="deprecated_entity_type" value="ebps\races\west_german\soldiers\gebirgjaeger\gebirgjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="deprecated_entity_type" value="ebps\races\west_german\soldiers\panzer_lehr_grenadiere\panzer_lehr_grenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="deprecated_squad_type" value="" />
 				<group name="target_info">
 					<template_reference name="target_info" value="type_ability_target_type\own">
@@ -147,7 +147,7 @@
 			<template_reference name="action" value="action\filter_action">
 				<bool name="apply_to_future_units" value="True" />
 				<bool name="apply_to_local_player" value="True" />
-				<instance_reference name="deprecated_entity_type" value="ebps\races\soviet\soldiers\commander_troops\penal_battalion_troops_mp" />
+				<instance_reference name="deprecated_entity_type" value="ebps\races\west_german\soldiers\panzer_pioneer\panzer_pioneer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="deprecated_squad_type" value="" />
 				<group name="target_info">
 					<template_reference name="target_info" value="type_ability_target_type\own">
@@ -165,7 +165,7 @@
 								<string name="modifier_id" value="" />
 								<string name="target_type_name" value="" />
 								<enum name="usage_type" value="multiplication" />
-								<float name="value" value="1.08" />
+								<float name="value" value="0.83077" />
 								<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
 							</template_reference>
 						</list>
@@ -313,6 +313,40 @@
 				</list>
 				<bool name="target_squad" value="True" />
 				<uniqueid name="id" value="1073754668" />
+			</template_reference>
+			<template_reference name="action" value="action\filter_action">
+				<bool name="apply_to_future_units" value="True" />
+				<bool name="apply_to_local_player" value="True" />
+				<instance_reference name="deprecated_entity_type" value="ebps\races\soviet\soldiers\desantniki\desantniki_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="deprecated_squad_type" value="" />
+				<group name="target_info">
+					<template_reference name="target_info" value="type_ability_target_type\own">
+					</template_reference>
+				</group>
+				<enum name="deprecated_unit_class_type" value="" />
+				<list name="action_table">
+					<template_reference name="action" value="action\apply_modifiers_action">
+						<float name="duration" value="0" />
+						<bool name="permanent" value="False" />
+						<list name="modifiers">
+							<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
+								<enum name="application_type" value="apply_to_squad" />
+								<bool name="exclusive" value="True" />
+								<string name="modifier_id" value="" />
+								<string name="target_type_name" value="" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.8" />
+								<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
+							</template_reference>
+						</list>
+						<uniqueid name="id" value="1073799656" />
+					</template_reference>
+				</list>
+				<enum name="deprecated_squad_class_type" value="" />
+				<list name="target_requirements">
+				</list>
+				<bool name="target_squad" value="True" />
+				<uniqueid name="id" value="1073799657" />
 			</template_reference>
 		</list>
 		<list name="requirements">

@@ -10,6 +10,11 @@
 					<string name="tracer_name" value="" />
 					<uniqueid name="id" value="1073755760" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_remove">
+					<bool name="apply_to_entities_in_squad" value="True" />
+					<instance_reference name="upgrade" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073800443" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -51,7 +56,7 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="11053228" />
+								<locstring name="screen_name" value="4536" mod="84428889d71d41a48e2eff09c2425d54" />
 								<locstring name="help_text" value="3706" mod="84428889d71d41a48e2eff09c2425d54" />
 								<icon name="icon_name" value="Icons_abilities_ability_aef_apds_rounds" />
 								<string name="hotkey_name" value="" />
@@ -61,6 +66,12 @@
 					</list>
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073755765" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="True" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073800442" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -76,14 +87,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="30" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="30" />
+		<float name="duration_time" value="20" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="True" />
@@ -101,7 +112,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="50" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

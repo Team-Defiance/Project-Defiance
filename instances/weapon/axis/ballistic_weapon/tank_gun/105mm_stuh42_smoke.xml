@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="28" />
-				<float name="near" value="80" />
+				<float name="mid" value="20" />
+				<float name="near" value="70" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.5" />
@@ -338,7 +338,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\105mm_stuh_shell_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="100" />
+			<float name="max" value="110" />
 			<float name="min" value="20" />
 			<group name="distance">
 				<float name="near" value="-1" />

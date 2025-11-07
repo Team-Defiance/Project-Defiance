@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="1.1" />
-			<float name="far" value="0.9" />
-			<float name="mid" value="1" />
+			<float name="near" value="1.5" />
+			<float name="far" value="1" />
+			<float name="mid" value="1.2" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -47,18 +47,18 @@
 			</group>
 			<group name="damage">
 				<float name="far" value="0.4" />
-				<float name="near" value="0.8" />
+				<float name="near" value="0.9" />
 				<float name="mid" value="0.6" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.2" />
-				<float name="near" value="0.4" />
+				<float name="near" value="0.45" />
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
-				<float name="far" value="2.5" />
-				<float name="near" value="0.5" />
-				<float name="mid" value="1.5" />
+				<float name="far" value="2.4" />
+				<float name="near" value="0.8" />
+				<float name="mid" value="1.6" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -139,14 +139,14 @@
 				<float name="min" value="4" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1.25" />
-				<float name="far" value="1" />
-				<float name="mid" value="1.1" />
+				<float name="near" value="1" />
+				<float name="far" value="1.1" />
+				<float name="mid" value="1.05" />
 			</group>
 			<group name="rate_of_fire_multiplier">
-				<float name="near" value="1.1" />
-				<float name="far" value="1" />
-				<float name="mid" value="1.05" />
+				<float name="near" value="1" />
+				<float name="far" value="0.9" />
+				<float name="mid" value="0.95" />
 			</group>
 			<bool name="focus_fire" value="False" />
 		</group>
@@ -182,8 +182,8 @@
 			</group>
 			<group name="tp_garrison_halftrack">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.1" />
-				<float name="penetration_multiplier" value="0.5" />
+				<float name="damage_multiplier" value="1" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_heavy">
@@ -194,7 +194,7 @@
 			</group>
 			<group name="tp_light">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
@@ -398,13 +398,13 @@
 			<float name="nearby_suppression_multiplier" value="0" />
 			<float name="nearby_suppression_radius" value="0" />
 			<group name="target_pinned_multipliers">
-				<float name="accuracy_multiplier" value="0.25" />
+				<float name="accuracy_multiplier" value="0.75" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="target_suppressed_multipliers">
-				<float name="accuracy_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="20" />
+			<float name="near" value="22" />
 			<float name="far" value="20" />
-			<float name="mid" value="20" />
+			<float name="mid" value="21" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

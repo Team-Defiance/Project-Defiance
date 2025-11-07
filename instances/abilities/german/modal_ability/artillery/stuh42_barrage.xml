@@ -10,6 +10,18 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\kicker_message_action">
+					<float name="loop_interval" value="0" />
+					<locstring name="message" value="4370" mod="84428889d71d41a48e2eff09c2425d54" />
+					<float name="message_colour_a" value="255" />
+					<float name="message_colour_b" value="255" />
+					<float name="message_colour_g" value="255" />
+					<float name="message_colour_r" value="255" />
+					<float name="message_duration" value="5" />
+					<bool name="team_only" value="False" />
+					<bool name="check_fow" value="False" />
+					<uniqueid name="id" value="1073799705" />
+				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\game_event_action">
@@ -34,7 +46,7 @@
 					<float name="num_salvo" value="5" />
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
-					<uniqueid name="id" value="1073746805" />
+					<uniqueid name="id" value="1073799677" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 			</list>
@@ -72,7 +84,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="60" />
+		<float name="range" value="70" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="110" />
 		<bool name="refundable" value="True" />

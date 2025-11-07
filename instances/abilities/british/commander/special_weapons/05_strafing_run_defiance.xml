@@ -105,13 +105,13 @@
 								<bool name="can_be_targeted" value="True" />
 							</group>
 							<group name="attack_info">
-								<float name="target_lead_in_distance" value="20" />
+								<float name="target_lead_in_distance" value="12" />
 								<int name="attacks_per_aircraft" value="3" />
-								<float name="target_lead_out_distance" value="20" />
-								<float name="delay_between_attack" value="10" />
-								<float name="attack_sway_width" value="4" />
-								<float name="attack_sway_frequency" value="2" />
-								<float name="target_attack_distance" value="225" />
+								<float name="target_lead_out_distance" value="10" />
+								<float name="delay_between_attack" value="8" />
+								<float name="attack_sway_width" value="2" />
+								<float name="attack_sway_frequency" value="1" />
+								<float name="target_attack_distance" value="200" />
 								<float name="target_attack_time_sec" value="4.25" />
 								<float name="initial_attack_delay" value="0" />
 							</group>
