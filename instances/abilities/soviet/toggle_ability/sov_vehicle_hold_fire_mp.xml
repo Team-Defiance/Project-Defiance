@@ -535,7 +535,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_zis3sh_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="" />
 					<uniqueid name="id" value="1073754215" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -571,6 +571,74 @@
 					</list>
 					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_f34_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073754217" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\057mm_zis4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073799767" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\057mm_zis4_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073799768" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="weapon\soviet\ballistic_weapon\tank_gun\045mm_m1938_kv8" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073799769" />
+					<bool name="auto_attack_only" value="True" />
+					<bool name="persist_on_weapon_change" value="True" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_target_prereq_action">
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_unit_type">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
+						</template_reference>
+					</list>
+					<instance_reference name="weapon_to_override" value="weapon\soviet\flame_throwers\kv8_ato-41_flamethrower_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073799770" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
 				</template_reference>

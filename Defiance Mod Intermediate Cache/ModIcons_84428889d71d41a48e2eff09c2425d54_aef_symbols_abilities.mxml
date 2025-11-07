@@ -2,6 +2,8 @@
 <display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
 	<fx:Script>
 		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/abilities/m15_wp.png')]
+		public static var m15_wp:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/abilities/m16_smoke.png')]
 		public static var m16_smoke:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/abilities/sticky_grenade.png')]

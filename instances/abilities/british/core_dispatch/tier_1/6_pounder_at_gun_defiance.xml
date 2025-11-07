@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="28" />
+		<float name="recharge_time" value="40" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="generic_unit_shared" />
@@ -138,7 +138,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="12" />
+		<int name="ui_position" value="13" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />

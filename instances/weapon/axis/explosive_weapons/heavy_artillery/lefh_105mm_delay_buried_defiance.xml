@@ -13,13 +13,13 @@
 			<float name="post_firing_aim_time" value="0" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="1.25" />
-				<float name="mid" value="1.1" />
+				<float name="far" value="1" />
+				<float name="mid" value="1" />
 			</group>
 		</group>
 		<group name="anim_table">
@@ -53,7 +53,7 @@
 			<group name="damage_friendly">
 				<float name="far" value="0.0375" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.1875" />
+				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
 				<float name="far" value="4.5" />
@@ -360,7 +360,7 @@
 		</group>
 		<group name="fire">
 			<float name="wind_down" value="2" />
-			<float name="wind_up" value="0" />
+			<float name="wind_up" value="0.25" />
 			<list name="on_fire_actions">
 			</list>
 		</group>

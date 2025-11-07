@@ -107,6 +107,36 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\items\sdkfz_222_20mm_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\ui_portrait_action">
+							<icon name="summer_portrait_icon" value="Icons_portraits_vehicle_german_222_scout_car_s_portrait" />
+							<icon name="winter_portrait_icon" value="Icons_portraits_vehicle_german_222_scout_car_w_portrait" />
+							<uniqueid name="id" value="1073800013" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800014" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext">
@@ -114,7 +144,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="20" />
+					<float name="fuel" value="25" />
 					<float name="manpower" value="250" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -146,7 +176,7 @@
 			<instance_reference name="wreck_entity" value="ebps\environment\art_ambient\objects\vehicles\wrecked_vehicles\wrecked_armored_car_sdkfz_222_mp" />
 			<list name="death_actions">
 			</list>
-			<float name="armor" value="15" />
+			<float name="armor" value="14" />
 			<float name="rear_armor" value="10" />
 			<float name="target_size" value="17" />
 			<bool name="dies_from_broken_ice" value="True" />

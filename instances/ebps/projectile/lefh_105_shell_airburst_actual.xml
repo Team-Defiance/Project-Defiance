@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\common\projectiles\shell_medium_offmap\shell_medium_offmap" />
+			<file name="animator" value="armies\common\projectiles\shell_medium\shell_medium" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -17,7 +17,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="1" />
-				<enum name="cover_type" value="tp_negative" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />

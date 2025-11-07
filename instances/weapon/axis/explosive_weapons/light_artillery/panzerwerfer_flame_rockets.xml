@@ -218,9 +218,9 @@
 			</group>
 			<group name="tp_trench">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="0.25" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="0" />
+				<float name="suppression_multiplier" value="0.75" />
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />

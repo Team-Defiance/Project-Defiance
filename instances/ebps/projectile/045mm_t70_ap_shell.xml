@@ -192,7 +192,7 @@
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
 			<float name="speed" value="75" />
-			<bool name="collision_land_ignore" value="True" />
+			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">

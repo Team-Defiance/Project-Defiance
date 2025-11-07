@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="0.6" />
+				<float name="radius" value="2.25" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.2" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
 				<float name="near" value="0.25" />
-				<float name="mid" value="0.075" />
+				<float name="mid" value="0.1" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.45" />
-				<float name="near" value="0.15" />
-				<float name="mid" value="0.3" />
+				<float name="far" value="1.75" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="1" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -80,7 +80,7 @@
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.075" />
+				<float name="mid" value="0.1" />
 				<float name="far" value="0.0005" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.35" />
+			<float name="accuracy_multiplier" value="0.4" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.9" />
-				<float name="min" value="4.6" />
+				<float name="max" value="4.7" />
+				<float name="min" value="4.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="7.4" />
+			<float name="distance_scatter_max" value="7.1" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="225" />
-			<float name="far" value="170" />
-			<float name="mid" value="200" />
+			<float name="near" value="250" />
+			<float name="far" value="155" />
+			<float name="mid" value="195" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

@@ -201,7 +201,7 @@
 							<list name="requirements">
 								<template_reference name="requirement" value="requirements\required_near_entity">
 									<enum name="alliance_requirement" value="ally" />
-									<float name="radius_requirement" value="30" />
+									<float name="radius_requirement" value="25" />
 									<instance_reference name="entity_pbg" value="" />
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
@@ -219,6 +219,21 @@
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
 											<enum name="ownership_type" value="ally" />
+										</template_reference>
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_unit_type">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<enum name="unit_type" value="german_goliath" />
+													<template_reference name="qualify_option" value="options\none">
+													</template_reference>
+													<bool name="search_load_out" value="False" />
+													<bool name="owned_by_player_only" value="True" />
+												</template_reference>
+											</list>
 										</template_reference>
 									</list>
 								</template_reference>
@@ -333,7 +348,7 @@
 							<list name="requirements">
 								<template_reference name="requirement" value="requirements\required_near_entity">
 									<enum name="alliance_requirement" value="ally" />
-									<float name="radius_requirement" value="40" />
+									<float name="radius_requirement" value="35" />
 									<instance_reference name="entity_pbg" value="" />
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
@@ -351,6 +366,21 @@
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
 											<enum name="ownership_type" value="ally" />
+										</template_reference>
+										<template_reference name="required" value="requirements\required_not">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_unit_type">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<enum name="unit_type" value="german_goliath" />
+													<template_reference name="qualify_option" value="options\none">
+													</template_reference>
+													<bool name="search_load_out" value="False" />
+													<bool name="owned_by_player_only" value="True" />
+												</template_reference>
+											</list>
 										</template_reference>
 									</list>
 								</template_reference>
@@ -1091,6 +1121,7 @@
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\panzer_pioneer_wirecutter_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\m43_stielgranate_assault_panzerpio" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\modal_ability\grenades\ea_panzer_pioniere_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\flare_trap_capture_point_wg" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -1106,7 +1137,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="0.4166667" />
+				<float name="cost_percentage" value="0.5" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">
@@ -1238,24 +1269,40 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\observation_post\fuel_post_german_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\observation_post\observation_post_fuel_aef_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="32" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\german\buildings\observation_post\munition_post_german_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\observation_post\observation_post_munition_aef_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="31" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\field_defenses\sandbag_wall_panzerpioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="21" />
+							<instance_reference name="ebp" value="ebps\races\west_german\team_weapons\lefh18\lefh_18_wg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="24" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\reinforced_barbed_wire_fence__construction__mp" />
 							<int name="ui_position" value="11" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\arty_flare_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\s_mines_fortifications_doc" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="14" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\sandbag_wall_panzerpioniere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\team_weapons\pak43\wg_pak_43_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="23" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\2cm_flak_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="13" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\west_german\buildings\defensive_structures\arty_flare_mine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="22" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />

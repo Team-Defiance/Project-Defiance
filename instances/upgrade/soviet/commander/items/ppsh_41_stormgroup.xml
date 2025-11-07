@@ -24,7 +24,7 @@
 				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
-			<float name="time_seconds" value="20" />
+			<float name="time_seconds" value="10" />
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
@@ -61,6 +61,46 @@
 				<instance_reference name="slot_item" value="slot_item\soviet\small_arms\ppsh41_stormgroup_item" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073752847" />
+			</template_reference>
+			<template_reference name="action" value="action\apply_modifiers_action">
+				<float name="duration" value="0" />
+				<bool name="permanent" value="False" />
+				<list name="modifiers">
+					<template_reference name="modifier" value="modifiers\squad_cost_manpower_modifier">
+						<enum name="application_type" value="apply_to_squad" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="0.875" />
+						<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
+					</template_reference>
+					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+						<enum name="application_type" value="apply_to_entity" />
+						<bool name="exclusive" value="False" />
+						<string name="modifier_id" value="" />
+						<string name="target_type_name" value="" />
+						<enum name="usage_type" value="multiplication" />
+						<float name="value" value="0.9" />
+						<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073800019" />
+			</template_reference>
+			<template_reference name="action" value="action\modify_resources">
+				<template_reference name="resource_to_modify" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="0" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="35" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
+				<bool name="modify_per_second" value="False" />
+				<bool name="ignore_resource_cap" value="False" />
+				<uniqueid name="id" value="1073800069" />
 			</template_reference>
 		</list>
 		<list name="requirements">

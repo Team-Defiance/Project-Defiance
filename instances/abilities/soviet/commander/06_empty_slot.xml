@@ -74,8 +74,8 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="4246" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="4244" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4245" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4243" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_commander_portrait_custom_commander_06" />
 			<string name="overlay_name" value="" />
@@ -92,35 +92,13 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\counterattack_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\shock_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\reserve_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-				</list>
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\terror_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage_and_display" />
@@ -184,5 +162,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742235" />
+	<uniqueid name="pbgid" value="1073742703" />
 </instance>

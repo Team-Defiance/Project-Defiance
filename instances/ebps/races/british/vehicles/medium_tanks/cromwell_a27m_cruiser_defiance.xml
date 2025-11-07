@@ -20,8 +20,7 @@
 				<instance_reference name="ability" value="abilities\british\toggle_ability\brit_vehicle_hold_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_war_speed_bonus_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_war_speed_bonus_vet5_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\british\timed_ability\cromwell_suppression_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\british\passives_ui\cromwell_dakka_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -75,6 +74,111 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073753371" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="5" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_02" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="1.1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_02" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073800289" />
+						</template_reference>
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_03" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="1.1" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_03" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073800290" />
+						</template_reference>
+						<template_reference name="action" value="action\change_target_action">
+							<list name="actions">
+								<template_reference name="action" value="action\ui_unit_modifier_action">
+									<bool name="die_with_creator" value="False" />
+									<template_reference name="ui_info" value="tables\ui_info">
+										<locstring name="screen_name" value="2919" mod="84428889d71d41a48e2eff09c2425d54" />
+										<locstring name="help_text" value="4506" mod="84428889d71d41a48e2eff09c2425d54" />
+										<icon name="icon_name" value="Icons_abilities_ability_german_phospherous_rounds" />
+										<string name="hotkey_name" value="" />
+									</template_reference>
+									<uniqueid name="id" value="1073800291" />
+								</template_reference>
+							</list>
+							<enum name="change_target_type" value="squad" />
+							<uniqueid name="id" value="1073800292" />
+						</template_reference>
+						<template_reference name="action" value="action\override_weapon_attributes">
+							<float name="hardpoint" value="2" />
+							<string name="munition_name" value="mg_phosphorus" />
+							<instance_reference name="projectile" value="" />
+							<string name="target_name" value="" />
+							<string name="tracer_name" value="" />
+							<uniqueid name="id" value="1073800295" />
+						</template_reference>
+						<template_reference name="action" value="action\override_weapon_attributes">
+							<float name="hardpoint" value="3" />
+							<string name="munition_name" value="mg_phosphorus" />
+							<instance_reference name="projectile" value="" />
+							<string name="target_name" value="" />
+							<string name="tracer_name" value="" />
+							<uniqueid name="id" value="1073800296" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800285" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

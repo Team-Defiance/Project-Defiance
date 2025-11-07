@@ -295,12 +295,12 @@
 			<list name="on_fire_actions">
 			</list>
 		</group>
-		<float name="flinch_radius" value="0" />
+		<float name="flinch_radius" value="3.5625" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
-		<string name="fx_munition_name" value="antitank_light" />
+		<string name="fx_munition_name" value="20mmShell" />
 		<string name="fx_tracer_name" value="" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
@@ -335,21 +335,21 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\soviet_45mm_kv8_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\045mm_kv8_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="45" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="-1" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.7" />
-				<float name="min" value="3.5" />
+				<float name="max" value="4.3" />
+				<float name="min" value="4.1" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -420,9 +420,9 @@
 				<float name="max_down" value="-90" />
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
-				<float name="max_up" value="30" />
-				<float name="speed_horizontal" value="35" />
-				<float name="speed_vertical" value="20" />
+				<float name="max_up" value="25" />
+				<float name="speed_horizontal" value="45" />
+				<float name="speed_vertical" value="35" />
 			</group>
 			<float name="pivot_end_time" value="0" />
 			<bool name="pivot_only" value="False" />
@@ -445,15 +445,6 @@
 			<int name="alpha" value="0" />
 		</group>
 		<list name="target_type_table">
-			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="vehicle" />
-				<group name="weapon_multipliers">
-					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.25" />
-					<float name="penetration_multiplier" value="1" />
-					<float name="suppression_multiplier" value="1" />
-				</group>
-			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742102" />

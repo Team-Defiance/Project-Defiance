@@ -218,6 +218,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
+				<instance_reference name="upgrade" value="upgrade\aef\items\paratrooper_dual_bar_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\aef\items\paratrooper_m1919a6_lmg_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -741,7 +742,7 @@
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\grenades\paras_gammon_bomb_heavy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\timed_ability\paras_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\paratrooper_timed_demo_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
@@ -954,7 +955,7 @@
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073749763" />
@@ -1114,7 +1115,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.7" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073795777" />
@@ -1159,7 +1160,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_1919_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\aef\timed_ability\paras_suppressing_fire" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />

@@ -987,14 +987,14 @@
 					<float name="duration" value="0" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 							<enum name="application_type" value="apply_to_entity" />
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="multiplication" />
 							<float name="value" value="2" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073752802" />
@@ -1021,8 +1021,8 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\team_weapons\soviet_field_artillery\203mm_b4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="14" />
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\dshk_38_commander_machine_gun_nest_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="13" />
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_6_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -1031,6 +1031,14 @@
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_57_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="22" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\team_weapons\soviet_field_artillery\203mm_b4_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="14" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\tanktrap_soviet_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="14" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_engineer_basic" />
@@ -1051,11 +1059,11 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_fuel_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\observation_post\observation_post_fuel_aef_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="22" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\observation_post\observation_post_munition_mp" />
+							<instance_reference name="ebp" value="ebps\races\aef\buildings\observation_post\observation_post_munition_aef_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="21" />
 						</group>
 						<group name="construction_item">

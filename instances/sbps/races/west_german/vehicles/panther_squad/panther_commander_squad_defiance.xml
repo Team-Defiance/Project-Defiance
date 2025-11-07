@@ -458,8 +458,8 @@
 														<bool name="exclusive" value="True" />
 														<string name="modifier_id" value="" />
 														<string name="target_type_name" value="" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="1.1" />
+														<enum name="usage_type" value="addition" />
+														<float name="value" value="10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 													</template_reference>
 												</list>
@@ -544,6 +544,11 @@
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073750053" />
+									</template_reference>
+									<template_reference name="action" value="action\slot_item_add">
+										<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
+										<bool name="permanent" value="True" />
+										<uniqueid name="id" value="1073800061" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

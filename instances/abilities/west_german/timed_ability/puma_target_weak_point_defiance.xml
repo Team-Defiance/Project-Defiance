@@ -24,9 +24,9 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="False" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="0" />
-								<locstring name="help_text" value="0" />
-								<icon name="icon_name" value="Icons_abilities_ability_aef_shell_shock" />
+								<locstring name="screen_name" value="4323" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="4324" mod="84428889d71d41a48e2eff09c2425d54" />
+								<icon name="icon_name" value="Icons_abilities_ability_british_target_tread" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
 							<uniqueid name="id" value="1073754717" />
@@ -40,6 +40,22 @@
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073754721" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.5" />
+							<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073799333" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -112,7 +128,7 @@
 			<locstring name="extra_text" value="2481" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2480" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="E" />
-			<icon name="icon_name" value="Icons_abilities_ability_german_stun_critical" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_target_tread" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
 			<locstring name="screen_name" value="2479" mod="84428889d71d41a48e2eff09c2425d54" />

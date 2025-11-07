@@ -122,14 +122,6 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\commander\defiance\unlock\lend_lease_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_structure">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-				<int name="required_structure_count" value="1" />
-				<bool name="check_team" value="False" />
-				<bool name="require_construction_complete" value="True" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="20" />
@@ -160,6 +152,14 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
+			<template_reference name="required" value="requirements\required_structure">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<int name="required_structure_count" value="1" />
+				<bool name="check_team" value="False" />
+				<bool name="require_construction_complete" value="True" />
+			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />

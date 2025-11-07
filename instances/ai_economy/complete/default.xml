@@ -191,7 +191,7 @@
 				<float name="per_unit_scale" value="1" />
 				<float name="per_unit_scale_historical" value="1" />
 				<float name="utility" value="0" />
-				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\tact_support\infantry\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
@@ -506,7 +506,7 @@
 				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="0" />
 				<float name="utility" value="130" />
-				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\mechanized\vehicles\m4a3_sherman_105mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="blueprint" value="sbps\races\aef\doctrine\m4a3_sherman_105mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
@@ -597,7 +597,7 @@
 				<float name="per_unit_scale" value="1" />
 				<float name="per_unit_scale_historical" value="1" />
 				<float name="utility" value="120" />
-				<instance_reference name="blueprint" value="sbps\races\british\forward_assembly\lovat_sharpshooter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_1\lovat_sharpshooter_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
@@ -674,7 +674,7 @@
 				<float name="per_unit_scale" value="0.2" />
 				<float name="per_unit_scale_historical" value="-1" />
 				<float name="utility" value="50" />
-				<instance_reference name="blueprint" value="sbps\races\british\forward_assembly\vickers_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="blueprint" value="sbps\races\british\tier_0\vickers_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">
@@ -702,7 +702,7 @@
 				<float name="per_unit_scale" value="-1" />
 				<float name="per_unit_scale_historical" value="0.03" />
 				<float name="utility" value="106" />
-				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\gebirgjaeger_squad\gebirgjaeger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="blueprint" value="sbps\races\west_german\soldiers\panzer_lehr_grenadiere_squad\panzer_lehr_grenadiere_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<float name="utility_random_range_offset" value="-1" />
 			</group>
 			<group name="squad_utility">

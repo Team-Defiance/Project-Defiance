@@ -16,9 +16,11 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_defiance_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_wp_defiance_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\artillery_barrage_ability\pack_howitzer_barrage_smoke_defiance_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -337,6 +339,27 @@
 								<float name="z" value="0" />
 							</group>
 							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\075mm_pack_howitzer_smoke_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="0" />
+								<float name="y" value="1.5" />
+								<float name="z" value="0" />
+							</group>
+							<enum name="type" value="default" />
 							<instance_reference name="weapon" value="weapon\aef\explosive_weapons\light_artillery\075mm_pack_howitzer_wp_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
@@ -423,7 +446,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\aef\doctrine\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\aef\doctrine\tact_support\infantry\75mm_pack_howitzer_squad" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">

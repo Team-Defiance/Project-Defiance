@@ -28,7 +28,7 @@
 						<instance_reference name="weapon_03" value="" />
 					</group>
 					<float name="num_salvo" value="4" />
-					<float name="use_hardpoint" value="3" />
+					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073754471" />
 					<bool name="target_override_direction_times_max_range" value="False" />
@@ -140,15 +140,20 @@
 					</template_reference>
 				</list>
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4454" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="32" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_mortar_halftrack_barrage" />
-		<float name="ui_reticule_radius_min" value="3.5" />
-		<float name="ui_reticule_radius_max" value="12" />
+		<float name="ui_reticule_radius_min" value="5.5" />
+		<float name="ui_reticule_radius_max" value="14" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

@@ -112,8 +112,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="125" />
-					<float name="manpower" value="375" />
+					<float name="fuel" value="130" />
+					<float name="manpower" value="380" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -127,7 +127,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="640" />
+			<float name="hitpoints" value="700" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -241,7 +241,7 @@
 					<uniqueid name="id" value="1073755463" />
 				</template_reference>
 			</list>
-			<float name="armor" value="160" />
+			<float name="armor" value="180" />
 			<float name="rear_armor" value="90" />
 			<float name="target_size" value="21" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -1043,19 +1043,19 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="4" />
+			<float name="deceleration" value="4.2" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
-			<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
+			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
-			<float name="acceleration" value="2.2" />
+			<float name="acceleration" value="2.5" />
 			<float name="rotation_rate" value="32" />
 			<float name="speed_max" value="6.9" />
-			<float name="on_ice_accel_decel_multiplier" value="0.15" />
+			<float name="on_ice_accel_decel_multiplier" value="0.3" />
 			<float name="on_land_overturn_scale" value="0.03" />
 			<float name="on_ice_overturn_scale" value="3" />
 		</template_reference>

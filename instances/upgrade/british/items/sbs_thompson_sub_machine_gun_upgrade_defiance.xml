@@ -64,27 +64,19 @@
 				<locstring name="ui_name" value="11074843" />
 				<float name="required_free_slot_size" value="2" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\field_defenses\forward_assembly_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-				</list>
+				<locstring name="ui_name" value="4476" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="1" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />

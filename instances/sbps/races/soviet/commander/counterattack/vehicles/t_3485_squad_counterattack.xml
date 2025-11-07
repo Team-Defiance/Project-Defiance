@@ -305,6 +305,22 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="enable" />
+							<float name="value" value="-1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073799622" />
+				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>
@@ -339,6 +355,15 @@
 												<enum name="usage_type" value="multiply_add" />
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\soviet_t34_85_here_we_go" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073753709" />
@@ -499,6 +524,33 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="enable" />
+												<float name="value" value="1" />
+												<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
+												<enum name="application_type" value="apply_to_squad" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\capture_revert_rate_squad_modifier" />
+											</template_reference>
 											<template_reference name="modifier" value="modifiers\entity_veterency_experience_modifier">
 												<enum name="application_type" value="apply_to_squad" />
 												<bool name="exclusive" value="False" />
@@ -513,31 +565,6 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
-									<template_reference name="action" value="action\apply_modifiers_action">
-										<float name="duration" value="0" />
-										<bool name="permanent" value="False" />
-										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
-												<enum name="application_type" value="apply_to_weapon" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.15" />
-												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\weapon_scatter">
-												<enum name="application_type" value="apply_to_weapon" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="hardpoint_01" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.9" />
-												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
-											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073753718" />
-									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
@@ -577,6 +604,31 @@
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
+									<template_reference name="action" value="action\apply_modifiers_action">
+										<float name="duration" value="0" />
+										<bool name="permanent" value="False" />
+										<list name="modifiers">
+											<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.15" />
+												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\weapon_scatter">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.85" />
+												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+											</template_reference>
+										</list>
+										<uniqueid name="id" value="1073799621" />
+									</template_reference>
 								</list>
 							</group>
 						</list>
@@ -615,8 +667,8 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
 			<float name="capture_distance" value="4" />
-			<float name="capture_rate_multiplier" value="0" />
-			<float name="revert_rate_multiplier" value="0" />
+			<float name="capture_rate_multiplier" value="1" />
+			<float name="revert_rate_multiplier" value="1" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741961" />

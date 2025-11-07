@@ -121,7 +121,7 @@
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\wg_hq_pioneer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\01_rocket_p4" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\02_gebirgs_stg" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\02_infiltration_nades_and_stg" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\03_radio_silence_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\04_stuka_smoke_bomb" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\spec_ops\05_37mm_at_strafe_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -141,6 +141,14 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\05_breakthrough_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\06_king_tiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\elite_armor_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\grand_offensive\opel_blitz_heart_of_the_reich" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\01_early_warning_systems_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\02_heavy_fortifications_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\03_for_the_fatherland_defensive_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\04_wg_pak_43_emplacement" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\05_wg_lefh_emplacement" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\06_zeroing_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\fortifications_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
@@ -166,7 +174,7 @@
 					<instance_reference name="dispatch_ability" value="" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051192" />
+					<locstring name="screen_name" value="4443" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_west_german_hq" />
 					<enum name="unit_type" value="hq" />
 					<icon name="icon_name" value="Icons_tooltips_building_west_german_hq_symbol" />
@@ -184,7 +192,7 @@
 					<instance_reference name="dispatch_ability" value="abilities\west_german\always_on_ability\dispatch_ability\sws_halftrack_interval_dispatch" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051193" />
+					<locstring name="screen_name" value="4444" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_west_german_mechanized_regiment_hq" />
 					<enum name="unit_type" value="barracks" />
 					<icon name="icon_name" value="Icons_tooltips_building_west_german_mechanized_regiment_hq_symbol" />
@@ -202,7 +210,7 @@
 					<instance_reference name="dispatch_ability" value="abilities\west_german\always_on_ability\dispatch_ability\sws_halftrack_interval_dispatch" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051194" />
+					<locstring name="screen_name" value="4445" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_west_german_schwerwer_panzer_hq" />
 					<enum name="unit_type" value="armory" />
 					<icon name="icon_name" value="Icons_tooltips_building_west_german_schwerwer_panzer_hq_symbol" />
@@ -220,7 +228,7 @@
 					<instance_reference name="dispatch_ability" value="abilities\west_german\always_on_ability\dispatch_ability\sws_halftrack_interval_dispatch" />
 				</group>
 				<group name="building">
-					<locstring name="screen_name" value="11051195" />
+					<locstring name="screen_name" value="4446" mod="84428889d71d41a48e2eff09c2425d54" />
 					<icon name="symbol_icon_name" value="Icons_taskbar_coh_taskbar_west_german_battle_group_hq" />
 					<enum name="unit_type" value="motor_pool_light" />
 					<icon name="icon_name" value="Icons_tooltips_building_west_german_battle_group_hq_symbol" />

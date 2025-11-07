@@ -36,7 +36,7 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_zis3sh_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon" value="" />
 					<uniqueid name="id" value="1073753193" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
@@ -148,7 +148,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="help_text" value="4327" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
 			<string name="overlay_name" value="" />

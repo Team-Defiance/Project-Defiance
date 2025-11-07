@@ -248,7 +248,7 @@
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
-				<float name="time_seconds" value="100" />
+				<float name="time_seconds" value="120" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext">
@@ -355,7 +355,7 @@
 			<bool name="prevent_prone" value="True" />
 			<float name="range_x" value="4.5" />
 			<float name="range_y" value="2.5" />
-			<float name="range_z" value="4.5" />
+			<float name="range_z" value="3.5" />
 			<bool name="require_standing" value="False" />
 			<bool name="use_simbox_range" value="False" />
 			<bool name="use_simbox_range_plus_spots" value="False" />

@@ -9,7 +9,7 @@
 				</template_reference>
 				<template_reference name="action" value="action\override_weapon_attributes">
 					<float name="hardpoint" value="1" />
-					<string name="munition_name" value="shell_medium_heat" />
+					<string name="munition_name" value="shell_medium" />
 					<instance_reference name="projectile" value="ebps\projectile\076mm_zis3sh_apcr_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 					<string name="target_name" value="" />
 					<string name="tracer_name" value="" />

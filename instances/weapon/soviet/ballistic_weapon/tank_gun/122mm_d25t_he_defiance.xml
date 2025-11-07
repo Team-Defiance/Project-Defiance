@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="1" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.8" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.14" />
 			</group>
 			<group name="distance">
-				<float name="far" value="7.5" />
-				<float name="near" value="0.75" />
-				<float name="mid" value="1.875" />
+				<float name="far" value="9" />
+				<float name="near" value="0.4" />
+				<float name="mid" value="1" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -401,7 +401,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="1.45" />
+			<float name="distance_scatter_max" value="1.2" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />

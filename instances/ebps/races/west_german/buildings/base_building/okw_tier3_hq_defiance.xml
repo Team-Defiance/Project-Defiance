@@ -140,7 +140,8 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\west_german\toggle_ability\flak_aa_mode_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\timed_ability\flak_aa_mode_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\always_on_ability\dispatch_ability\sws_halftrack_forward_receivers_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext">
@@ -361,7 +362,7 @@
 			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
-			<locstring name="help_text" value="11055052" />
+			<locstring name="help_text" value="4316" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_buildings_building_west_german_battle_group_hq" />
 			<enum name="kill_type" value="building" />
@@ -671,7 +672,7 @@
 								<float name="z" value="-1.5" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\base_building_flak_20mm_flak38_aa_mp" />
+							<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\037mm_base_building_flak_aa_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -749,25 +750,25 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\soldiers\gebirgjaeger_squad\gebirgjaeger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\soldiers\panzer_lehr_grenadiere_squad\panzer_lehr_grenadiere_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\team_weapons\rocket_mattress\rocket_mattress_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\wg_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\panzer_iv_squad\wg_panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="14" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\west_german\vehicles\jagdpanzer_iv_squad\jagdpanzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\west_german\vehicles\halftrack_squads\sdkfz_251_wurfrahmen_40_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>

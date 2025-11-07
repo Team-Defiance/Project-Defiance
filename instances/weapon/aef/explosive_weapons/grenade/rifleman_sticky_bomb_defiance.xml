@@ -24,13 +24,13 @@
 		</group>
 		<group name="anim_table">
 			<string name="cooldown_time_name" value="" />
-			<string name="state_name" value="satchel_charge_state" />
+			<string name="state_name" value="Grenade_State" />
 			<string name="track_horizontal" value="" />
 			<string name="track_horizontal_speed" value="" />
 			<string name="track_vertical" value="" />
 			<string name="track_vertical_speed" value="" />
 			<string name="variety_name" value="" />
-			<string name="visibility_name" value="" />
+			<string name="visibility_name" value="grenade_rpg43_visible" />
 			<string name="target_range_name" value="" />
 		</group>
 		<group name="area_effect">
@@ -370,7 +370,7 @@
 		</group>
 		<group name="fire">
 			<float name="wind_down" value="0.75" />
-			<float name="wind_up" value="0.75" />
+			<float name="wind_up" value="0.125" />
 			<list name="on_fire_actions">
 			</list>
 		</group>

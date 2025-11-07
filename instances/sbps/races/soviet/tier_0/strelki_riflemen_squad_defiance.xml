@@ -165,7 +165,7 @@
 					<instance_reference name="type" value="ebps\races\soviet\soldiers\strelki\sov_rifleman_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<group name="loadout_data">
-					<float name="num" value="2" />
+					<float name="num" value="3" />
 					<instance_reference name="type" value="ebps\races\soviet\soldiers\strelki\sov_rifleman_2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
@@ -805,15 +805,6 @@
 												<float name="value" value="1.35" />
 												<instance_reference name="tooltip" value="modifier_tooltip\construction_rate" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="2.5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\strelki_urah_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744073" />
 									</template_reference>
@@ -899,15 +890,6 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="2.5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\strelki_urah_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744075" />
 									</template_reference>
@@ -923,17 +905,8 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
+												<float name="value" value="0.6" />
 												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\health_maximum_modifier">
-												<enum name="application_type" value="apply_to_entity" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744076" />
@@ -1121,7 +1094,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="0.525" />
+				<float name="cost_percentage" value="0.625" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">
@@ -1187,7 +1160,15 @@
 						</group>
 						<group name="construction_item">
 							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\soviet_incendiary_mine_counterattack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="ui_position" value="13" />
+							<int name="ui_position" value="21" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_57_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="22" />
+						</group>
+						<group name="construction_item">
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_6_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="ui_position" value="21" />
 						</group>
 					</list>
 					<enum name="construction_type" value="tp_construction_soviet_conscripts" />
@@ -1210,7 +1191,7 @@
 			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_population_ext">
-			<float name="personnel_pop" value="2" />
+			<float name="personnel_pop" value="1" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741849" />

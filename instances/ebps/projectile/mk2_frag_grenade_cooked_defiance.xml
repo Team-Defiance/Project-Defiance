@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="0.4" />
+				<float name="chance_splat_only" value="0.25" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
@@ -89,7 +89,7 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.0005" />
+					<float name="vertical_scale" value="0.0008" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
 				<float name="radius_max" value="1.75" />

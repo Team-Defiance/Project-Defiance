@@ -152,7 +152,7 @@
 					<list name="delayed_actions">
 						<template_reference name="action" value="action\spawn_entity">
 							<float name="duration" value="1" />
-							<instance_reference name="entity_blueprint" value="ebps\races\german\team_weapons\at_gun\pak40_75mm_at_gun_mp" />
+							<instance_reference name="entity_blueprint" value="ebps\races\aef\team_weapons\at_guns\usf_57mm_gun_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="permanent" value="True" />
 							<bool name="player_owned" value="False" />
 							<group name="target_info">

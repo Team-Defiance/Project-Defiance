@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="3" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.5" />
-				<float name="min" value="0.5" />
+				<float name="max" value="0.25" />
+				<float name="min" value="0.25" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -80,8 +80,8 @@
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="0.001" />
-				<float name="far" value="0.005" />
+				<float name="mid" value="0.175" />
+				<float name="far" value="0.0015" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -354,7 +354,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="4.67" />
+			<float name="wind_down" value="4.625" />
 			<float name="wind_up" value="0.625" />
 			<list name="on_fire_actions">
 			</list>
@@ -399,7 +399,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\m7b1_priest_airburst_105mm_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="projectile" value="ebps\projectile\105mm_m7b1_priest_airburst_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="250" />

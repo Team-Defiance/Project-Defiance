@@ -40,8 +40,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="125" />
-			<float name="manpower" value="375" />
+			<float name="fuel" value="130" />
+			<float name="manpower" value="380" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -115,14 +115,6 @@
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
@@ -160,6 +152,14 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />

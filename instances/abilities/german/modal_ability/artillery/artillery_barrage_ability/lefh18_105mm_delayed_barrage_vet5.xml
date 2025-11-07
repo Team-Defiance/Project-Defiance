@@ -116,81 +116,6 @@
 								<bool name="target_override_direction_times_max_range" value="False" />
 							</template_reference>
 						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="4" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744830" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="3" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744834" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="4" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744836" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="3" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744835" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
-						<list name="actions">
-							<template_reference name="action" value="action\artillery_attack">
-								<bool name="disable_parent_hardpoint" value="False" />
-								<group name="filter_weapons">
-									<instance_reference name="weapon_01" value="" />
-									<instance_reference name="weapon_02" value="" />
-									<instance_reference name="weapon_03" value="" />
-								</group>
-								<float name="num_salvo" value="1" />
-								<float name="use_hardpoint" value="4" />
-								<bool name="face_to_target" value="True" />
-								<uniqueid name="id" value="1073744837" />
-								<bool name="target_override_direction_times_max_range" value="False" />
-							</template_reference>
-						</list>
 					</list>
 					<bool name="run_now" value="False" />
 				</template_reference>
@@ -218,7 +143,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="30" />
+			<float name="munition" value="20" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -243,7 +168,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="280" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="150" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
@@ -274,7 +199,7 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="436" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="433" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="F" />
+			<string name="hotkey_name" value="C" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_british_airburst_shells" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -297,7 +222,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />

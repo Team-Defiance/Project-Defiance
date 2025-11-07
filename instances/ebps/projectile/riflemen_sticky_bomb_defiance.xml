@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\soviet\projectiles\satchel_charge\satchel_charge" />
+			<file name="animator" value="armies\soviet\projectiles\grenade_rpg40\grenade_rpg40" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -185,7 +185,7 @@
 				</template_reference>
 			</group>
 			<float name="deathtimer" value="0" />
-			<float name="delay_detonate_time" value="1.5" />
+			<float name="delay_detonate_time" value="1.25" />
 			<bool name="delay_detonate_ui_enabled" value="True" />
 			<string name="launcher_marker" value="Marker_Grenade" />
 			<float name="life_time_while_alive" value="0" />
