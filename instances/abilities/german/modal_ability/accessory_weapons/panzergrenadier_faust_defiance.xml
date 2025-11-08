@@ -185,36 +185,6 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\bereich_festung_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\dolch_aktionen_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_structure">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\german\buildings\base_building\hintere_panzerwerk_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						<int name="required_structure_count" value="1" />
-						<bool name="check_team" value="False" />
-						<bool name="require_construction_complete" value="True" />
-					</template_reference>
-				</list>
-			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
