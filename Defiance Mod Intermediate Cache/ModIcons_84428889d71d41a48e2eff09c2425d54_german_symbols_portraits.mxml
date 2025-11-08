@@ -2,10 +2,14 @@
 <display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
 	<fx:Script>
 		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/portraits/grenadiere_small.png')]
+		public static var grenadiere_small:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/portraits/osttruppen_large_summer.png')]
 		public static var osttruppen_large_summer:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/portraits/osttruppen_large_winter.png')]
 		public static var osttruppen_large_winter:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/german/symbols/portraits/stosstruppen_small.png')]
+		public static var stosstruppen_small:Class;
 		]]>
 	</fx:Script>
 </display:MovieClip>
