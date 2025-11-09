@@ -46,7 +46,7 @@
 										<float name="angle_left" value="0" />
 										<float name="angle_right" value="0" />
 										<enum name="area_type" value="circle" />
-										<float name="radius" value="15" />
+										<float name="radius" value="20" />
 									</group>
 									<float name="duration" value="30" />
 									<float name="interval" value="4" />
@@ -117,7 +117,7 @@
 						<template_reference name="action" value="action\reticule_action">
 							<uniqueid name="id" value="1073797251" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-							<float name="radius" value="16" />
+							<float name="radius" value="21" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073797249" />
@@ -239,8 +239,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_artillery_barrage" />
-		<float name="ui_reticule_radius_min" value="15" />
-		<float name="ui_reticule_radius_max" value="15" />
+		<float name="ui_reticule_radius_min" value="20" />
+		<float name="ui_reticule_radius_max" value="20" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
