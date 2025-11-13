@@ -27,8 +27,8 @@
 						<template_reference name="action" value="action\ui_unit_modifier_action">
 							<bool name="die_with_creator" value="True" />
 							<template_reference name="ui_info" value="tables\ui_info">
-								<locstring name="screen_name" value="3943" mod="84428889d71d41a48e2eff09c2425d54" />
-								<locstring name="help_text" value="3944" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="screen_name" value="4638" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="4637" mod="84428889d71d41a48e2eff09c2425d54" />
 								<icon name="icon_name" value="Icons_commander_cmdr_soviet_tank_awareness" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
@@ -66,7 +66,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="35" />
+			<float name="munition" value="20" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -138,11 +138,6 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_constructionstate">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11095644" />
-				<bool name="do_construction_completion_check" value="True" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="31" />

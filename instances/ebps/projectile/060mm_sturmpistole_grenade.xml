@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\german\projectiles\rifle_grenade\rifle_grenade" />
+			<file name="animator" value="armies\soviet\projectiles\grenade_rpg43\grenade_rpg43" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -187,7 +187,7 @@
 			<float name="deathtimer" value="2.5" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
-			<string name="launcher_marker" value="pzb39_target" />
+			<string name="launcher_marker" value="luger_target" />
 			<float name="life_time_while_alive" value="1" />
 			<float name="rotation_speed" value="10000" />
 			<bool name="spawn_collision_fx" value="False" />
