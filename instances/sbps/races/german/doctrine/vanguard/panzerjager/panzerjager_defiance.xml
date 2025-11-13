@@ -29,12 +29,12 @@
 							<string name="code_3" value="" />
 						</group>
 						<group name="speech_code_2">
-							<string name="code_1" value="pn" />
-							<string name="code_2" value="in" />
+							<string name="code_1" value="in" />
+							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
 						<group name="speech_code_3">
-							<string name="code_1" value="pio" />
+							<string name="code_1" value="sto" />
 							<string name="code_2" value="inf" />
 							<string name="code_3" value="" />
 						</group>
@@ -199,6 +199,59 @@
 					<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="permanent" value="True" />
 					<uniqueid name="id" value="1073800864" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\german\items\pjaeger_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\slot_item_remove">
+							<bool name="fire_and_forget" value="False" />
+							<bool name="random" value="False" />
+							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\sturmpistole_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073800878" />
+						</template_reference>
+						<template_reference name="action" value="action\slot_item_remove">
+							<bool name="fire_and_forget" value="False" />
+							<bool name="random" value="False" />
+							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073800879" />
+						</template_reference>
+						<template_reference name="action" value="action\slot_item_remove">
+							<bool name="fire_and_forget" value="False" />
+							<bool name="random" value="False" />
+							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073800880" />
+						</template_reference>
+						<template_reference name="action" value="action\slot_item_add">
+							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="permanent" value="True" />
+							<uniqueid name="id" value="1073800881" />
+						</template_reference>
+						<template_reference name="action" value="action\slot_item_add">
+							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="permanent" value="True" />
+							<uniqueid name="id" value="1073800882" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073800877" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
