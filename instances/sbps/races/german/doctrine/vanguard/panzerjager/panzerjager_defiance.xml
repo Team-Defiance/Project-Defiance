@@ -54,7 +54,7 @@
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
-						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_pioneer_symbol" />
+						<icon name="symbol_icon_name" value="ModIcons_84428889d71d41a48e2eff09c2425d54_german_symbols_infantry_panzerjaeger" />
 						<bool name="speaker_highest_priority" value="False" />
 						<enum name="ui_style" value="default" />
 						<string name="cover_level_icon_postfix" value="" />
@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="5" />
-					<instance_reference name="type" value="ebps\races\german\soldiers\panzerkrieger\panzerkrieger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\german\doctrine\vanguard\panzerjager_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -180,88 +180,25 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\items\pkrieger_minesweeper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="upgrade" value="upgrade\german\items\pgren_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\pjaeger_panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
 			<list name="actions">
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="True" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="True" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_player_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="True" />
-							<float name="max_completed" value="100" />
-							<float name="min_completed" value="1" />
-							<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\slot_item_add">
-							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\pzb_39_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="True" />
-							<uniqueid name="id" value="1073745933" />
-						</template_reference>
-						<template_reference name="action" value="action\slot_item_add">
-							<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\pzb_39_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="permanent" value="True" />
-							<uniqueid name="id" value="1073745934" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073745932" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\sturmpistole_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073800862" />
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_squad_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="include_queued" value="False" />
-							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\german\items\pkrieger_minesweeper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\capture_rate_squad_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.25" />
-									<instance_reference name="tooltip" value="modifier_tooltip\capture_rate_squad_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073745936" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073745937" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073800863" />
+				</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073800864" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -519,7 +456,7 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="550" />
+								<float name="experience_value" value="640" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="581" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -563,13 +500,22 @@
 												<float name="value" value="1.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744008" />
 									</template_reference>
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1100" />
+								<float name="experience_value" value="1280" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="282" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -622,14 +568,14 @@
 												<float name="value" value="1.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+											<template_reference name="modifier" value="modifiers\received_damage_modifier">
 												<enum name="application_type" value="apply_to_entity" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.81" />
-												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073792161" />
@@ -637,7 +583,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2200" />
+								<float name="experience_value" value="2560" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="283" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -687,7 +633,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2750" />
+								<float name="experience_value" value="3840" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="297" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -713,10 +659,19 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pkrieger_grenade_assault" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\hhl_3_at_panzerjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="3" />
+												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_01" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1" />
+												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744092" />
@@ -726,7 +681,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="3625" />
+								<float name="experience_value" value="5120" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="298" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -752,7 +707,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pkrieger_grenade_assault" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\panzerjaeger_grenade_assault" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -846,10 +801,12 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\retreat_to_forward_hq" />
-				<instance_reference name="ability" value="abilities\repair_ability\repair_panzerkrieger" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\pkrieger_grenade_assault" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\hhl_3_at_panzerjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\panzerkrieger_wirecutters" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\german_medkits_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\always_on_ability\jaeger_camouflage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\german\timed_ability\pjaeger_tank_detection_ability" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

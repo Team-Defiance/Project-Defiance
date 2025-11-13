@@ -481,7 +481,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\spearhead_doctrine_selection.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle\toggle_lab.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\spearhead\toggle\toggle_smoke.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_1_panzerjager.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\01_panzerjager.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_2_forward_repair_station.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_3_stuka_ace.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\commander\vanguard\ability_4_command_panzer_iv.rgd
@@ -629,6 +629,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_rifle_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\grenadiere_rifle_grenade_vet5.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\hhl_3_at_brandenburger_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\hhl_3_at_panzerjaeger_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\light_at_jaeger.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\m43_bundle.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\m43_bundle_pgrens.rgd
@@ -640,7 +641,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\m43_stielgranate_splitter.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\m44_brandgranate.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\osttruppen_at_grenade_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\pkrieger_grenade_assault.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\grenades\panzerjaeger_grenade_assault.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\modal_ability\unused\ability_5_stuka_bombing_strike.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\passives_ui\brandenburger_fast_decap_ui_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\passives_ui\osttruppen_cover_bonus_ui_defiance.rgd
@@ -671,6 +672,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\panzergrenadier_sprint_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\panzer_grenadiers_combined_arms.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\pioneer_sprint_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\pjaeger_tank_detection_ability.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\stormtrooper_sprint.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\stoss_suppressing_fire.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\abilities\german\timed_ability\stug_ammo_switch_ap_defiance.rgd
@@ -1404,6 +1406,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\057mm_zis4_apcr_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\057mm_zis4_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\060mm_m9_bazooka_rocket.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\060mm_sturmpistole_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\075mm_british_tank_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\075mm_kwk37_ap_shell.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\projectile\075mm_kwk37_barrage_shell.rgd
@@ -1810,10 +1813,9 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\overwatch\field_defenses\barbed_wire_overwatch_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\overwatch\field_defenses\sandbag_wall_overwatch_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\overwatch\field_defenses\tank_trap_overwatch_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\spearhead\panzerjager_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\spearhead\sdkfz_250_transport_halftrack_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\spearhead\stormtrooper_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\vanguard\lefh18\lefh_18_vanguard_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\doctrine\vanguard\panzerjager_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\paradrop_crates\airdrop_german_fuel_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\paradrop_crates\airdrop_german_med_crates_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\ebps\races\german\paradrop_crates\airdrop_german_munitions_defiance.rgd
@@ -2085,7 +2087,6 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\spearhead\mechanized_panzergrenadiere\mechanized_panzergrenadiere_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\spearhead\sdkfz_250_halftrack\sdkfz_250_halftrack_transport_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\spearhead\stormtrooper\stormtrooper_defiance.rgd
-	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\vanguard\lefh18\lefh_18_squad_vanguard_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\doctrine\vanguard\panzerjager\panzerjager_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\soldiers\ger_sniper\ger_sniper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\sbps\races\german\soldiers\grenadiere\grenadiere_defiance.rgd
@@ -2247,6 +2248,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\ballistic_weapon\infantry_at_weapon\panzerschreck_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\ballistic_weapon\infantry_at_weapon\pkrieger_at_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\ballistic_weapon\infantry_at_weapon\pzb_39_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\ballistic_weapon\infantry_at_weapon\sturmpistole_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\explosive_weapon\grenade\brandenburger_stun_grenade_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\explosive_weapon\grenade\grenadiere_at_rifle_grenade.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\slot_item\german\explosive_weapon\grenade\grenadiere_at_rifle_grenade_vet2.rgd
@@ -2490,6 +2492,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\pgren_panzerschreck_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\pioneer_flamethrower_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\pioneer_minesweeper_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\pjaeger_panzerschreck_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\pkrieger_minesweeper_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\spotting_scopes_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\upgrade\german\items\stormtrooper_lmg42.rgd
@@ -2721,6 +2724,7 @@ TOCStart name="attrib" alias="attrib" path="" relativeroot="attrib"
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\panzerschreck_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\pzb_39_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\pzb_39_osttruppen_defiance.rgd
+	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\sturmpistole_panzerjaeger.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\tank_gun\037mm_flak43_defiance.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk37_heat.rgd
 	C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\attrib\attrib\weapon\axis\ballistic_weapon\tank_gun\075mm_kwk37_panzer4_f_defiance.rgd

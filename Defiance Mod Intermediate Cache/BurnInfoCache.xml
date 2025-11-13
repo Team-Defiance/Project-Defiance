@@ -1918,8 +1918,8 @@
 			<FileHash>fc81f9fc290d53c22c5b6cacf1dbbf7a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\commander\vanguard\ability_1_panzerjager.xml</FileName>
-			<FileHash>7ddd52c9b06ea304e305bbea46f56f3e</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\commander\vanguard\01_panzerjager.xml</FileName>
+			<FileHash>cb847dc16022acbe9b3c1e084f31c418</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\commander\vanguard\ability_2_forward_repair_station.xml</FileName>
@@ -2510,6 +2510,10 @@
 			<FileHash>7e5e501348485f3e3704db0f80c2ceab</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\grenades\hhl_3_at_panzerjaeger_defiance.xml</FileName>
+			<FileHash>4f979b43d25b8015f3897e636b8309d1</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\grenades\light_at_jaeger.xml</FileName>
 			<FileHash>61195efce5a0872c1e3811ed97bb4a7c</FileHash>
 		</BurnInfo>
@@ -2554,7 +2558,7 @@
 			<FileHash>c9a4db722314fa658df1d120b8b55fee</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\grenades\pkrieger_grenade_assault.xml</FileName>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\modal_ability\grenades\panzerjaeger_grenade_assault.xml</FileName>
 			<FileHash>129e61884bbc8712092a501d7fdadb76</FileHash>
 		</BurnInfo>
 		<BurnInfo>
@@ -2676,6 +2680,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\timed_ability\pioneer_sprint_defiance.xml</FileName>
 			<FileHash>f9ef5d1b0faf679a9ecf331a785359ec</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\timed_ability\pjaeger_tank_detection_ability.xml</FileName>
+			<FileHash>a40f97d4489e41bcdc847cf1aff9fe12</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\german\timed_ability\stormtrooper_sprint.xml</FileName>
@@ -5403,7 +5411,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\army\german.xml</FileName>
-			<FileHash>b4cb8976ed91cb4666798de9d1f543e0</FileHash>
+			<FileHash>5c548f7f1708fc669a20cd6b29611354</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\army\soviet.xml</FileName>
@@ -5608,6 +5616,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\060mm_m9_bazooka_rocket.xml</FileName>
 			<FileHash>5abc2f8cd3560003ba5ee534b36449eb</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\060mm_sturmpistole_grenade.xml</FileName>
+			<FileHash>2f95b1dd88796e15b0ca85975e98dfc5</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\projectile\075mm_british_tank_shell.xml</FileName>
@@ -7234,10 +7246,6 @@
 			<FileHash>108f626fcaf9fa928dd2aa059b932763</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\doctrine\spearhead\panzerjager_defiance.xml</FileName>
-			<FileHash>a42f21bd10c691c375738f72e6c6c8f2</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\doctrine\spearhead\sdkfz_250_transport_halftrack_defiance.xml</FileName>
 			<FileHash>d967a6ae598199a35ec9b5197809aa9d</FileHash>
 		</BurnInfo>
@@ -7246,8 +7254,8 @@
 			<FileHash>43a3051c095b65d3b8f83188fa55885f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\doctrine\vanguard\lefh18\lefh_18_vanguard_defiance.xml</FileName>
-			<FileHash>c791c7d5aab85f6a1241dd9bc5105998</FileHash>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\doctrine\vanguard\panzerjager_defiance.xml</FileName>
+			<FileHash>01b6521e572643e465b8d83065877516</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\german\paradrop_crates\airdrop_german_fuel_defiance.xml</FileName>
@@ -8334,12 +8342,8 @@
 			<FileHash>6f07424059ce21026d92d4fdab3b07b9</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\doctrine\vanguard\lefh18\lefh_18_squad_vanguard_defiance.xml</FileName>
-			<FileHash>9ff388d3c10a417e2226174d6009544c</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\doctrine\vanguard\panzerjager\panzerjager_defiance.xml</FileName>
-			<FileHash>1aef060319050a3fb5e9506495b7a5ad</FileHash>
+			<FileHash>5fa7710a3bd56b609e52ded4dd88b048</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\soldiers\ger_sniper\ger_sniper_defiance.xml</FileName>
@@ -8371,7 +8375,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\soldiers\pioniere\pioniere_defiance.xml</FileName>
-			<FileHash>a76be146479ad0a3e5eb1a34b91b4807</FileHash>
+			<FileHash>63359250d5e77e8dcffb54e08fd32b71</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\german\unused\stuh_42_assault_gun\stuh_42.xml</FileName>
@@ -8980,6 +8984,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\slot_item\german\ballistic_weapon\infantry_at_weapon\pzb_39_defiance.xml</FileName>
 			<FileHash>be0e896d0a0bece6ab7d52f1fcd19c82</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\slot_item\german\ballistic_weapon\infantry_at_weapon\sturmpistole_defiance.xml</FileName>
+			<FileHash>327f53edd9b904845d6a8fb059c0916a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\slot_item\german\explosive_weapon\grenade\brandenburger_stun_grenade_defiance.xml</FileName>
@@ -9954,6 +9962,10 @@
 			<FileHash>a1c6efe8dbca46563b9f05988df1a49f</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\upgrade\german\items\pjaeger_panzerschreck_defiance.xml</FileName>
+			<FileHash>702dd5729ed365d26a0e3d513181f108</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\upgrade\german\items\pkrieger_minesweeper_defiance.xml</FileName>
 			<FileHash>6c4f5fcacfb34732b4f72e15512faabf</FileHash>
 		</BurnInfo>
@@ -10876,6 +10888,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\pzb_39_osttruppen_defiance.xml</FileName>
 			<FileHash>1b322eeefd3ce6a898544b20cb732770</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\infantry_anti_tank_weapon\sturmpistole_panzerjaeger.xml</FileName>
+			<FileHash>eac50a8ad6ff42ba1b3d2e835798d17c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\weapon\axis\ballistic_weapon\tank_gun\037mm_flak43_defiance.xml</FileName>
@@ -12507,7 +12523,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>995f59f598510c69015f11e400a95b63</FileHash>
+			<FileHash>f1f22bd16fc413a79fbaee8cb1f65569</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>
@@ -12836,6 +12852,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\data\ui\german\symbols\abilities\hhl3.png</FileName>
 			<FileHash>95ffc285e2572a72cae78a62da7c1ab7</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\data\ui\german\symbols\infantry\panzerjaeger.png</FileName>
+			<FileHash>5698c07c733353b3762c4917d9841e4a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\data\ui\german\symbols\portraits\grenadiere_small.png</FileName>

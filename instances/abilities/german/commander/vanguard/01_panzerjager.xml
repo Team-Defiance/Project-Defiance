@@ -16,7 +16,7 @@
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\german\soldiers\stormtrooper_squad\stormtrooper_squad_mp" />
+						<instance_reference name="squad" value="sbps\races\german\doctrine\vanguard\panzerjager\panzerjager_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
 					<uniqueid name="id" value="1073752012" />
@@ -41,7 +41,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
-			<float name="manpower" value="340" />
+			<float name="manpower" value="350" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -112,13 +112,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11052709" />
-			<locstring name="help_text" value="11052708" />
+			<locstring name="extra_text" value="4630" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4632" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_units_unit_axis_stormtrooper" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="True" />
-			<locstring name="screen_name" value="11052707" />
+			<locstring name="screen_name" value="4629" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -136,7 +136,7 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\vanguard_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\passive\stug_short_barrel" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
@@ -162,7 +162,7 @@
 		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="1" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
-		<enum name="ui_group" value="group_primary" />
+		<enum name="ui_group" value="group_secondary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
