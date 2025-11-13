@@ -42,6 +42,34 @@
 		</group>
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
+			<template_reference name="action" value="action\slot_item_remove">
+				<bool name="fire_and_forget" value="False" />
+				<bool name="random" value="False" />
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\sturmpistole_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073800883" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_remove">
+				<bool name="fire_and_forget" value="False" />
+				<bool name="random" value="False" />
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073800884" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_remove">
+				<bool name="fire_and_forget" value="False" />
+				<bool name="random" value="False" />
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerbuchse_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073800885" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073800886" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\german\ballistic_weapon\infantry_at_weapon\panzerschreck_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073800887" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
