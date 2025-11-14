@@ -1,1 +1,73 @@
 *.sga
+
+# =========================
+# Visual Studio / IDE files
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+
+# =========================
+# Build artifacts (backend + frontend)
+# =========================
+# Backend
+DefianceWebModule/DefianceBackendAPI/bin/
+DefianceWebModule/DefianceBackendAPI/obj/
+
+# Frontend
+DefianceWebModule/DefianceFrontend/DefianceFrontend/bin/
+DefianceWebModule/DefianceFrontend/DefianceFrontend/obj/
+DefianceWebModule/DefianceFrontend/DefianceFrontend/wwwroot/_framework/
+DefianceWebModule/DefianceFrontend/DefianceFrontend/wwwroot/_bin/
+DefianceWebModule/DefianceFrontend/DefianceFrontend/wwwroot/**/*.map
+DefianceWebModule/DefianceFrontend/DefianceFrontend/wwwroot/_content/
+
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/bin/
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/obj/
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/wwwroot/_framework/
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/wwwroot/_bin/
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/wwwroot/**/*.map
+DefianceWebModule/DefianceFrontend/DefianceFrontend.Client/wwwroot/_content/
+
+# =========================
+# Publish / deployment folders
+# =========================
+publish/
+*.publish/
+*.deploy/
+*.deploy.cmd
+
+# =========================
+# NuGet packages
+# =========================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# =========================
+# User / OS temp files
+# =========================
+*.log
+*.vsix
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.stackdump
+
+# =========================
+# Dotnet temp / tooling
+# =========================
+*.dotCover
+*.ncrunch*
+*.resharper*
+_ReSharper*/
+*.dotSettings.user
