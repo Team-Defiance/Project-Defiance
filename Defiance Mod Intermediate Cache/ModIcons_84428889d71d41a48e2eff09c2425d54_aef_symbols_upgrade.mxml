@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<display:MovieClip xmlns:fx='http://ns.adobe.com/mxml/2009' xmlns:display='flash.display.*'>
+	<fx:Script>
+		<![CDATA[
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t1.png')]
+		public static var t1:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t1p.png')]
+		public static var t1p:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t2.png')]
+		public static var t2:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t2p.png')]
+		public static var t2p:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t3.png')]
+		public static var t3:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/aef/symbols/upgrade/t3p.png')]
+		public static var t3p:Class;
+		]]>
+	</fx:Script>
+</display:MovieClip>

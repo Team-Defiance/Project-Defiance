@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="armies\common\base\commonhuman\commonhuman" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\aef\soldiers\rear_echelon_troop\rear_echelon_troop" />
+			<file name="animator" value="armies\aef\soldiers\rifleman\rifleman" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -369,9 +369,9 @@
 			<icon name="symbol_icon_name" value="" />
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="Marker_FX_UI" />
-			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="" />
-			<string name="skin_winter" value="" />
+			<bool name="skin_pack_override" value="True" />
+			<string name="skin_summer" value="cavalry_summer" />
+			<string name="skin_winter" value="cavalry_winter" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_ext">
 			<bool name="should_face_target" value="True" />

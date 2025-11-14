@@ -754,7 +754,7 @@
 			<instance_reference name="vaulting_formation" value="squad_formations\vaulting" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_population_ext">
-			<float name="personnel_pop" value="3" />
+			<float name="personnel_pop" value="2" />
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_type_ext">
 			<list name="squad_type_list">
