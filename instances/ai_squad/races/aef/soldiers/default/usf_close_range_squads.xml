@@ -171,7 +171,7 @@
 		<group name="applicable_squads">
 			<list name="squad_blueprints">
 				<instance_reference name="squad_blueprint" value="sbps\races\aef\tier_0\rifleman_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="squad_blueprint" value="sbps\races\aef\doctrine\infantry\infantry\ranger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="squad_blueprint" value="sbps\races\aef\doctrine\heavy_cav\infantry\ranger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unit_class_reqs">
 				<enum name="unit_class_req" value="infantry" />

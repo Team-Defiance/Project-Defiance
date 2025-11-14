@@ -935,24 +935,17 @@
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 											</template_reference>
-										</list>
-										<uniqueid name="id" value="1073744955" />
-									</template_reference>
-									<template_reference name="action" value="action\apply_modifiers_action">
-										<float name="duration" value="0" />
-										<bool name="permanent" value="True" />
-										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\health_maximum_modifier">
+											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
 												<enum name="application_type" value="apply_to_entity" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="10" />
-												<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.875" />
+												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073747007" />
+										<uniqueid name="id" value="1073744955" />
 									</template_reference>
 								</list>
 							</group>

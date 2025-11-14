@@ -234,6 +234,15 @@
 											<float name="value" value="60" />
 											<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 										</template_reference>
+										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_01" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
+										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752832" />
 								</template_reference>
