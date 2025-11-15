@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefianceFrontend", "Defianc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefianceFrontend.Client", "DefianceFrontend\DefianceFrontend.Client\DefianceFrontend.Client.csproj", "{18234C36-E717-46AE-B096-0133B1C3DB78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModImporter.CLI", "ModImporter.CLI\ModImporter.CLI.csproj", "{4A533AF0-A388-4022-B418-DE088C58A94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModImporter", "ModImporter\ModImporter.csproj", "{853742DF-3C78-4893-8777-649B7CE0639F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{18234C36-E717-46AE-B096-0133B1C3DB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18234C36-E717-46AE-B096-0133B1C3DB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18234C36-E717-46AE-B096-0133B1C3DB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A533AF0-A388-4022-B418-DE088C58A94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A533AF0-A388-4022-B418-DE088C58A94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A533AF0-A388-4022-B418-DE088C58A94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A533AF0-A388-4022-B418-DE088C58A94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853742DF-3C78-4893-8777-649B7CE0639F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853742DF-3C78-4893-8777-649B7CE0639F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853742DF-3C78-4893-8777-649B7CE0639F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853742DF-3C78-4893-8777-649B7CE0639F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
