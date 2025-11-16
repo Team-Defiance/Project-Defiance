@@ -1,10 +1,13 @@
-﻿using System.Text.Json;
-using ModImporter.Interfaces;
+﻿using ModImporter.Interfaces;
+using Newtonsoft.Json;
+using System.Text.Json;
+using System.Xml;
 
 namespace ModImporter.Services;
 
 public class ModImportService : IModImporter
 {
+ 
     private readonly string _configFile = "target_folders.json";
     public async Task ImportAsync()
     {
@@ -15,7 +18,7 @@ public class ModImportService : IModImporter
         }
 
         var jsonText = await File.ReadAllTextAsync(_configFile);
-        var targetFolders = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonText);
+        var targetFolders = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(jsonText);
 
         if (targetFolders == null || targetFolders.Count == 0)
         {
@@ -34,7 +37,9 @@ public class ModImportService : IModImporter
             var category = kvp.Key;
             var relativePath = kvp.Value;
 
-            var absolutePath = Path.Combine(repoRoot, relativePath);
+            var absolutePath = Path.Combine(repoRoot, relativePath); // this is finding the folder
+
+            // Console.WriteLine(absolutePath); 
 
             if (!Directory.Exists(absolutePath))
             {
@@ -54,9 +59,33 @@ public class ModImportService : IModImporter
             allFiles[category] = files;
 
             Console.WriteLine($"Found {files.Count} XML files for category '{category}'.");
-        }
 
-        // TODO: Convert files to JSON and call backend API
+
+            // TODO: Convert files to JSON and call backend API
+
+            
+        }
         Console.WriteLine("Scanning complete. Ready for parsing and API call.");
+        XmlDocument doc = new XmlDocument();
+
+        var allconvertedjson = new Dictionary<string, List<string>>();
+
+
+
+        foreach (var items in allFiles.Values) //grabing strings from all the files
+        {
+            var convertedjson = new List<string>();
+
+            foreach (var item in items) // grabing individual strings
+            {
+                doc.LoadXml(item);
+                string jsonText_convertor = JsonConvert.SerializeXmlNode(doc);
+                convertedjson.Add(jsonText_convertor);
+            }
+
+            allconvertedjson[items.First().Substring(items.First().LastIndexOf("/") + 1)] = convertedjson;
+
+        }
+        Console.WriteLine("conversion complete");
     }
 }
