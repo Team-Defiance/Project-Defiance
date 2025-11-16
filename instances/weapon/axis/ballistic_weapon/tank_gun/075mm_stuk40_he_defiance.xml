@@ -46,12 +46,12 @@
 				<float name="radius" value="4.95" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.12" />
+				<float name="far" value="0.1" />
 				<float name="near" value="0.75" />
 				<float name="mid" value="0.4" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.06" />
+				<float name="far" value="0.05" />
 				<float name="near" value="0.375" />
 				<float name="mid" value="0.2" />
 			</group>
@@ -697,7 +697,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\075mm_stuk40_he_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="25" />
+			<float name="max" value="30" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
