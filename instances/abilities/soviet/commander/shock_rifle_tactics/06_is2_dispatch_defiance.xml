@@ -8,6 +8,20 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
+				<template_reference name="action" value="action\reinforcements_action">
+					<bool name="allow_building_spawn" value="False" />
+					<float name="minimum_pop_used" value="21" />
+					<float name="points_total" value="0" />
+					<bool name="spawn_random_squads" value="False" />
+					<list name="entity_table">
+					</list>
+					<list name="squad_table">
+						<instance_reference name="squad" value="sbps\races\soviet\commander\shock_rifle_tactics\vehicles\is2_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</list>
+					<bool name="use_attack_move" value="False" />
+					<uniqueid name="id" value="1073800986" />
+					<bool name="ignore_requirements" value="False" />
+				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
 					<float name="event_extra_param" value="0" />
 					<float name="event_param_begin" value="1" />
@@ -15,69 +29,6 @@
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
 					<uniqueid name="id" value="1073746039" />
-				</template_reference>
-				<template_reference name="action" value="action\random_action">
-					<bool name="instant" value="False" />
-					<list name="random_actions">
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\reinforcements_action">
-									<bool name="allow_building_spawn" value="False" />
-									<float name="minimum_pop_used" value="21" />
-									<float name="points_total" value="0" />
-									<bool name="spawn_random_squads" value="False" />
-									<list name="entity_table">
-									</list>
-									<list name="squad_table">
-										<instance_reference name="squad" value="sbps\races\soviet\commander\shock_rifle_tactics\vehicles\is2_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-									</list>
-									<bool name="use_attack_move" value="False" />
-									<uniqueid name="id" value="1073800971" />
-									<bool name="ignore_requirements" value="False" />
-								</template_reference>
-							</list>
-							<int name="weight" value="80" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\reinforcements_action">
-									<bool name="allow_building_spawn" value="False" />
-									<float name="minimum_pop_used" value="18" />
-									<float name="points_total" value="0" />
-									<bool name="spawn_random_squads" value="False" />
-									<list name="entity_table">
-									</list>
-									<list name="squad_table">
-										<instance_reference name="squad" value="sbps\races\soviet\commander\reserve_infantry_tactics\vehicles\kv2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-									</list>
-									<bool name="use_attack_move" value="False" />
-									<uniqueid name="id" value="1073800972" />
-									<bool name="ignore_requirements" value="False" />
-								</template_reference>
-							</list>
-							<int name="weight" value="10" />
-						</group>
-						<group name="action_choice">
-							<list name="actions">
-								<template_reference name="action" value="action\reinforcements_action">
-									<bool name="allow_building_spawn" value="False" />
-									<float name="minimum_pop_used" value="22" />
-									<float name="points_total" value="0" />
-									<bool name="spawn_random_squads" value="False" />
-									<list name="entity_table">
-									</list>
-									<list name="squad_table">
-										<instance_reference name="squad" value="sbps\races\soviet\vehicles\stalin_tanks\isu_152_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-									</list>
-									<bool name="use_attack_move" value="False" />
-									<uniqueid name="id" value="1073800973" />
-									<bool name="ignore_requirements" value="False" />
-								</template_reference>
-							</list>
-							<int name="weight" value="10" />
-						</group>
-					</list>
-					<uniqueid name="id" value="1073800969" />
 				</template_reference>
 			</list>
 		</group>
