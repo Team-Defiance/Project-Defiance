@@ -127,7 +127,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="60" />
+			<float name="munition" value="40" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -150,7 +150,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="75" />
+		<float name="range" value="70" />
 		<bool name="range_ignore" value="True" />
 		<float name="recharge_time" value="120" />
 		<bool name="refundable" value="True" />
@@ -183,8 +183,8 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11097713" />
-			<locstring name="help_text" value="11084728" />
+			<locstring name="extra_text" value="4645" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4644" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_tulip_rocket_strike" />
 			<string name="overlay_name" value="" />
