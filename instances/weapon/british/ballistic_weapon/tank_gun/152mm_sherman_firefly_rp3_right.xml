@@ -404,7 +404,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\firefly_tulip_60lb_rocket_right_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\152mm_rp3_right_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="80" />
@@ -438,10 +438,10 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="5" />
+			<float name="distance_scatter_max" value="2" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="1" />
-			<float name="distance_scatter_ratio" value="0.15" />
+			<float name="distance_scatter_ratio" value="0.1" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
