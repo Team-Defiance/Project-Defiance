@@ -12,7 +12,7 @@
 					<string name="dca_action_name" value="UI\v1_incoming_sound" />
 					<float name="duration" value="10" />
 					<bool name="is_terrain_only" value="True" />
-					<uniqueid name="id" value="1073745312" />
+					<uniqueid name="id" value="1073801057" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="8" />
@@ -29,10 +29,10 @@
 							<float name="time_range_between_shells_max" value="3" />
 							<float name="time_range_between_shells_min" value="3" />
 							<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\stuka_250_kg_bomb" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073745313" />
+							<uniqueid name="id" value="1073801058" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073745314" />
+					<uniqueid name="id" value="1073801059" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
@@ -47,10 +47,10 @@
 							<float name="event_param_end" value="-1" />
 							<enum name="event_type" value="artillery_set" />
 							<bool name="event_send_to_target_player" value="False" />
-							<uniqueid name="id" value="1073745315" />
+							<uniqueid name="id" value="1073801060" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073745316" />
+					<uniqueid name="id" value="1073801061" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -187,12 +187,12 @@
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
 		<enum name="ui_combine_type" value="intersection" />
+		<enum name="ui_group_cast_type" value="single" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
-		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -205,5 +205,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="1073741948" />
+	<uniqueid name="pbgid" value="1073742177" />
 </instance>

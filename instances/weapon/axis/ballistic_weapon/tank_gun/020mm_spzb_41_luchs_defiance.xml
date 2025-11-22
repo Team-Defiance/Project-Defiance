@@ -275,6 +275,102 @@
 			<float name="max" value="20" />
 			<float name="min" value="20" />
 			<list name="on_penetrated_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\sequence_action">
+									<uniqueid name="id" value="1073801045" />
+									<list name="action_list_sequences">
+										<list name="actions">
+											<template_reference name="action" value="action\requirement_action">
+												<bool name="check_self" value="False" />
+												<bool name="global_fire_and_forget_on_success" value="False" />
+												<bool name="instant_requirement_check" value="True" />
+												<bool name="kill_action_on_failed_requirements" value="False" />
+												<bool name="no_retrigger" value="False" />
+												<bool name="validate_all_sub_actions" value="True" />
+												<list name="requirement_table">
+													<template_reference name="required" value="requirements\required_critical">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="critical_name" value="critical\vehicle_aec_temp_engine_damage" />
+														<bool name="is_present" value="True" />
+													</template_reference>
+												</list>
+												<list name="action_table">
+													<template_reference name="action" value="action\trigger_critical_action">
+														<float name="remove_at_health" value="1" />
+														<instance_reference name="critical" value="critical\vehicle_aec_temp_immobility" />
+														<uniqueid name="id" value="1073801046" />
+													</template_reference>
+												</list>
+												<uniqueid name="id" value="1073801047" />
+												<bool name="fire_and_forget_non_global" value="False" />
+												<template_reference name="ui_help_text" value="tables\help_text_phrase">
+													<int name="phrase_order" value="0" />
+													<locstring name="phrase" value="0" />
+												</template_reference>
+											</template_reference>
+										</list>
+										<list name="actions">
+											<template_reference name="action" value="action\trigger_critical_action">
+												<float name="remove_at_health" value="1" />
+												<instance_reference name="critical" value="critical\vehicle_aec_temp_engine_damage" />
+												<uniqueid name="id" value="1073801048" />
+											</template_reference>
+										</list>
+									</list>
+									<bool name="run_now" value="True" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801049" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073801050" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 			<list name="post_damage_actions">
 			</list>
@@ -287,6 +383,102 @@
 			<float name="deflection_damage_multiplier" value="0.025" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="True" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_entity_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<instance_reference name="upgrade_name" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
+							<bool name="include_queued" value="False" />
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="True" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_unit_type">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="unit_type" value="vehicle" />
+									<template_reference name="qualify_option" value="options\none">
+									</template_reference>
+									<bool name="search_load_out" value="False" />
+									<bool name="owned_by_player_only" value="True" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\sequence_action">
+									<uniqueid name="id" value="1073801051" />
+									<list name="action_list_sequences">
+										<list name="actions">
+											<template_reference name="action" value="action\requirement_action">
+												<bool name="check_self" value="False" />
+												<bool name="global_fire_and_forget_on_success" value="False" />
+												<bool name="instant_requirement_check" value="True" />
+												<bool name="kill_action_on_failed_requirements" value="False" />
+												<bool name="no_retrigger" value="False" />
+												<bool name="validate_all_sub_actions" value="True" />
+												<list name="requirement_table">
+													<template_reference name="required" value="requirements\required_critical">
+														<enum name="reason" value="usage" />
+														<locstring name="ui_name" value="0" />
+														<instance_reference name="critical_name" value="critical\vehicle_blind" />
+														<bool name="is_present" value="True" />
+													</template_reference>
+												</list>
+												<list name="action_table">
+													<template_reference name="action" value="action\trigger_critical_action">
+														<float name="remove_at_health" value="1" />
+														<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
+														<uniqueid name="id" value="1073801052" />
+													</template_reference>
+												</list>
+												<uniqueid name="id" value="1073801053" />
+												<bool name="fire_and_forget_non_global" value="False" />
+												<template_reference name="ui_help_text" value="tables\help_text_phrase">
+													<int name="phrase_order" value="0" />
+													<locstring name="phrase" value="0" />
+												</template_reference>
+											</template_reference>
+										</list>
+										<list name="actions">
+											<template_reference name="action" value="action\trigger_critical_action">
+												<float name="remove_at_health" value="1" />
+												<instance_reference name="critical" value="critical\vehicle_blind" />
+												<uniqueid name="id" value="1073801054" />
+											</template_reference>
+										</list>
+									</list>
+									<bool name="run_now" value="True" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801055" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073801056" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
 			</list>
 		</group>
 		<group name="fire">
