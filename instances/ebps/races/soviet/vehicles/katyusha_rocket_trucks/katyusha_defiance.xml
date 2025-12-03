@@ -19,7 +19,7 @@
 				<instance_reference name="ability" value="abilities\german\modal_ability\commander_ability\german_hulldown_disable" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\katyusha_speed" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\srf_vehicle_crew_repair_toggle_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -550,7 +550,7 @@
 								<float name="z" value="1.3" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm_13_16_rocket_victortarget_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm13_16n_rocket_precision" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />

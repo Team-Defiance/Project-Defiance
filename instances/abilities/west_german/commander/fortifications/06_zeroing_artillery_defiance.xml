@@ -80,6 +80,11 @@
 									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
 									<float name="radius" value="30" />
 								</template_reference>
+								<template_reference name="action" value="action\blip_action">
+									<enum name="blip_type" value="sector_artillery" />
+									<float name="duration" value="0" />
+									<uniqueid name="id" value="1073801084" />
+								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073800558" />
 						</template_reference>
