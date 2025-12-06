@@ -6,6 +6,14 @@
 					<int name="hardpoint_index" value="1" />
 					<uniqueid name="id" value="1073743024" />
 				</template_reference>
+				<template_reference name="action" value="action\override_weapon_attributes">
+					<float name="hardpoint" value="1" />
+					<string name="munition_name" value="hmg_large" />
+					<instance_reference name="projectile" value="" />
+					<string name="target_name" value="dshk38_target" />
+					<string name="tracer_name" value="fx_dshk38_tracer" />
+					<uniqueid name="id" value="1073801087" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -41,20 +49,21 @@
 							<float name="value" value="1.25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 						</template_reference>
+						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.5" />
+							<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073743025" />
 				</template_reference>
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="1" />
 					<uniqueid name="id" value="1073743026" />
-				</template_reference>
-				<template_reference name="action" value="action\animator_set_state">
-					<bool name="apply_to_leader_only" value="True" />
-					<string name="do_action_state_name" value="on" />
-					<bool name="retrigger" value="True" />
-					<string name="state_machine_name" value="ability_attack_buff_state" />
-					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073743027" />
 				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
@@ -71,6 +80,22 @@
 					</list>
 					<enum name="change_target_type" value="squad" />
 					<uniqueid name="id" value="1073743029" />
+				</template_reference>
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="True" />
+					<string name="do_action_state_name" value="on" />
+					<bool name="retrigger" value="True" />
+					<string name="state_machine_name" value="ability_attack_buff_state" />
+					<string name="undo_action_state_name" value="off" />
+					<uniqueid name="id" value="1073743027" />
+				</template_reference>
+				<template_reference name="action" value="action\override_weapon_attributes">
+					<float name="hardpoint" value="1" />
+					<string name="munition_name" value="mg_phosphorus" />
+					<instance_reference name="projectile" value="" />
+					<string name="target_name" value="" />
+					<string name="tracer_name" value="" />
+					<uniqueid name="id" value="1073801086" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
