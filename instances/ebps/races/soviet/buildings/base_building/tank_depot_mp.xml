@@ -374,13 +374,13 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\tier_4\kv1_heavy_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_3\t34_76mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\tier_4\katyusha_132mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_4\kv1_heavy_tank_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
@@ -390,13 +390,19 @@
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
+					<int name="ui_position" value="14" />
+					<instance_reference name="entity" value="" />
+					<instance_reference name="squad" value="sbps\races\soviet\tier_4\katyusha_132mm_squad" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="spawn_at_map_entry_point" value="True" />
+				</group>
+				<group name="spawn_item">
 					<int name="ui_position" value="21" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\soviet\commander\counterattack\vehicles\t_3485_squad_counterattack" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
-					<int name="ui_position" value="21" />
+					<int name="ui_position" value="23" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\soviet\commander\counterattack\vehicles\su_100_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />

@@ -1,4 +1,4 @@
-<instance description="Incendiary barrage ability for the Panzerwerfer.&#xA;" template="abilities">
+<instance description="Barrage ability for the Panzerwerfer.&#xA;Multiplayer Clone." template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -16,7 +16,7 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="pintle_mg42_state" />
 							<string name="undo_action_state_name" value="ready" />
-							<uniqueid name="id" value="1073742582" />
+							<uniqueid name="id" value="1073801088" />
 						</template_reference>
 						<template_reference name="action" value="action\apply_modifiers_action">
 							<float name="duration" value="0" />
@@ -32,10 +32,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742583" />
+							<uniqueid name="id" value="1073801089" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742584" />
+					<uniqueid name="id" value="1073801090" />
 				</template_reference>
 				<template_reference name="action" value="action\change_target_action">
 					<list name="actions">
@@ -43,11 +43,11 @@
 							<bool name="apply_to_entities_in_squad" value="False" />
 							<bool name="trigger_publish_event" value="False" />
 							<instance_reference name="upgrade" value="upgrade\german\veteran\panzerwerfer_counter_barrage_cooldown_mp" />
-							<uniqueid name="id" value="1073742585" />
+							<uniqueid name="id" value="1073801091" />
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="squad" />
-					<uniqueid name="id" value="1073742586" />
+					<uniqueid name="id" value="1073801092" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -59,9 +59,9 @@
 						<instance_reference name="weapon_03" value="" />
 					</group>
 					<float name="num_salvo" value="10" />
-					<float name="use_hardpoint" value="6" />
+					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="False" />
-					<uniqueid name="id" value="1073742587" />
+					<uniqueid name="id" value="1073801093" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -70,11 +70,11 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073742588" />
+					<uniqueid name="id" value="1073801094" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073742589" />
+					<uniqueid name="id" value="1073801095" />
 				</template_reference>
 			</list>
 		</group>
@@ -88,7 +88,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="40" />
+			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -142,49 +142,44 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="491" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="490" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="H" />
-			<icon name="icon_name" value="Icons_abilities_ability_german_rocket_barrage" />
+			<locstring name="extra_text" value="489" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="11007847" />
+			<string name="hotkey_name" value="B" />
+			<icon name="icon_name" value="Icons_fatalities_fatality_panzerwerfer_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="88" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11007846" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
 		</group>
-		<locstring name="ui_usage_txt" value="0" />
+		<locstring name="ui_usage_txt" value="11007848" />
 		<bool name="validate_actions" value="False" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_critical">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="11037027" />
 				<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
 				<bool name="is_present" value="False" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_critical">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="11050180" />
 				<instance_reference name="critical_name" value="critical\vehicle_gunner_injured" />
 				<bool name="is_present" value="False" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="91" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="31" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="True" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_panzerwerfer_rocket" />
-		<float name="ui_reticule_radius_min" value="3.75" />
+		<float name="ui_reticule_radius_min" value="7.5" />
 		<float name="ui_reticule_radius_max" value="25" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
@@ -211,5 +206,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741838" />
+	<uniqueid name="pbgid" value="1073742755" />
 </instance>

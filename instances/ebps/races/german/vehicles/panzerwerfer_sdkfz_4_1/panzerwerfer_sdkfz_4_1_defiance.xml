@@ -15,10 +15,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_rocket_barrage_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_rocket_victortarget_barrage_mp" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_flame_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_heat_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
@@ -30,7 +30,7 @@
 					<string name="state_machine_name" value="Fake_Wreck" />
 					<string name="undo_action_state_name" value="" />
 					<bool name="retrigger" value="False" />
-					<uniqueid name="id" value="1073742508" />
+					<uniqueid name="id" value="1073801129" />
 				</template_reference>
 				<template_reference name="action" value="action\animator_set_state">
 					<string name="do_action_state_name" value="axis" />
@@ -38,7 +38,7 @@
 					<bool name="apply_to_leader_only" value="False" />
 					<bool name="retrigger" value="False" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073742509" />
+					<uniqueid name="id" value="1073801130" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -97,14 +97,14 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073742510" />
+									<uniqueid name="id" value="1073801131" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073742511" />
+							<uniqueid name="id" value="1073801132" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742512" />
+					<uniqueid name="id" value="1073801133" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -155,7 +155,7 @@
 						<group name="action_choice">
 							<list name="actions">
 								<template_reference name="action" value="action\no_action">
-									<uniqueid name="id" value="1073794708" />
+									<uniqueid name="id" value="1073801134" />
 									<template_reference name="ui_help_text" value="options\none">
 									</template_reference>
 								</template_reference>
@@ -173,7 +173,7 @@
 										<template_reference name="target_info" value="type_ability_target_type\all">
 										</template_reference>
 									</group>
-									<uniqueid name="id" value="1073794709" />
+									<uniqueid name="id" value="1073801135" />
 									<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
 										<string name="attach_target_marker_name" value="" />
 										<string name="attach_action_name" value="" />
@@ -185,7 +185,7 @@
 									<list name="spawned_entity_actions">
 										<template_reference name="actions" value="action\self_destruction_action">
 											<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\mortarincendiary_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
-											<uniqueid name="id" value="1073794710" />
+											<uniqueid name="id" value="1073801136" />
 										</template_reference>
 									</list>
 									<group name="offset">
@@ -198,7 +198,7 @@
 							<int name="weight" value="10" />
 						</group>
 					</list>
-					<uniqueid name="id" value="1073794711" />
+					<uniqueid name="id" value="1073801137" />
 				</template_reference>
 			</list>
 			<float name="armor" value="20" />
@@ -607,7 +607,7 @@
 								<float name="z" value="-1.75" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_rockets_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_he_rockets" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -628,7 +628,7 @@
 								<float name="z" value="-1.75" />
 							</group>
 							<enum name="type" value="squad" />
-							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_victor_target_rockets_mp" />
+							<instance_reference name="weapon" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_smoke_rockets_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -756,7 +756,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742513" />
+						<uniqueid name="id" value="1073801138" />
 					</template_reference>
 				</list>
 			</group>
@@ -774,7 +774,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742514" />
+						<uniqueid name="id" value="1073801139" />
 					</template_reference>
 				</list>
 			</group>
@@ -792,7 +792,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742515" />
+						<uniqueid name="id" value="1073801140" />
 					</template_reference>
 				</list>
 			</group>
@@ -810,7 +810,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742516" />
+						<uniqueid name="id" value="1073801141" />
 					</template_reference>
 				</list>
 			</group>
@@ -828,7 +828,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742517" />
+						<uniqueid name="id" value="1073801142" />
 					</template_reference>
 				</list>
 			</group>
@@ -856,7 +856,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073742518" />
+						<uniqueid name="id" value="1073801143" />
 					</template_reference>
 				</list>
 			</group>
@@ -1104,7 +1104,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\german\vehicles\panzerwerfer_squad\panzerwerfer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_capture_crew_size" value="2" />
 						<float name="min_capture_crew_size" value="2" />
 						<list name="recrew_penalties_list">
@@ -1137,5 +1137,5 @@
 			<bool name="use_simbox_range_plus_spots" value="True" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1586" />
+	<uniqueid name="pbgid" value="1073742474" />
 </instance>

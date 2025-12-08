@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\german\vehicles\panzerwerfer_sdkfz_4_1\panzerwerfer_sdkfz_4_1_mp" />
+					<instance_reference name="type" value="ebps\races\german\vehicles\panzerwerfer_sdkfz_4_1\panzerwerfer_sdkfz_4_1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -198,7 +198,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073742557" />
+					<uniqueid name="id" value="1073801096" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="True" />
@@ -278,10 +278,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073745353" />
+							<uniqueid name="id" value="1073801097" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073745354" />
+					<uniqueid name="id" value="1073801098" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -435,11 +435,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742558" />
+										<uniqueid name="id" value="1073801099" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073742559" />
+										<uniqueid name="id" value="1073801100" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -468,7 +468,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.7" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_flame_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -486,14 +486,14 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.7" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_rocket_barrage_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073742560" />
+												<uniqueid name="id" value="1073801101" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073742561" />
+										<uniqueid name="id" value="1073801102" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -509,11 +509,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742562" />
+										<uniqueid name="id" value="1073801103" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073742563" />
+										<uniqueid name="id" value="1073801104" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -539,7 +539,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_rocket_barrage_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_he_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="40" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -557,17 +557,17 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_flame_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\panzerwerfer_smoke_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="40" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073742564" />
+												<uniqueid name="id" value="1073801105" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073742565" />
+										<uniqueid name="id" value="1073801106" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -583,11 +583,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073742567" />
+										<uniqueid name="id" value="1073801107" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
-										<uniqueid name="id" value="1073742568" />
+										<uniqueid name="id" value="1073801108" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -617,7 +617,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073744345" />
+										<uniqueid name="id" value="1073801109" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -644,14 +644,14 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073744347" />
+										<uniqueid name="id" value="1073801110" />
 									</template_reference>
 									<template_reference name="action" value="action\change_move_data_action">
 										<float name="acceleration_multiplier" value="1.2" />
 										<float name="deceleration_multiplier" value="1.2" />
 										<float name="pathfinding_size_x" value="0" />
 										<float name="pathfinding_size_y" value="0" />
-										<uniqueid name="id" value="1073744348" />
+										<uniqueid name="id" value="1073801111" />
 									</template_reference>
 								</list>
 							</group>
@@ -679,7 +679,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073744346" />
+										<uniqueid name="id" value="1073801112" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -697,7 +697,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073744349" />
+										<uniqueid name="id" value="1073801113" />
 									</template_reference>
 								</list>
 							</group>
@@ -734,5 +734,5 @@
 			<float name="revert_rate_multiplier" value="4" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="57" />
+	<uniqueid name="pbgid" value="1073742025" />
 </instance>
