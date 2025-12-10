@@ -39,11 +39,11 @@
 								<icon name="icon_name" value="Icons_abilities_blitzkrieg_assault_tiger_on" />
 								<string name="hotkey_name" value="" />
 							</template_reference>
-							<uniqueid name="id" value="1073799946" />
+							<uniqueid name="id" value="1073801176" />
 						</template_reference>
 					</list>
 					<enum name="change_target_type" value="squad" />
-					<uniqueid name="id" value="1073799947" />
+					<uniqueid name="id" value="1073801177" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -77,7 +77,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073799948" />
+					<uniqueid name="id" value="1073801178" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
 					<float name="delay" value="4" />
@@ -108,7 +108,7 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073799949" />
+							<uniqueid name="id" value="1073801179" />
 						</template_reference>
 						<template_reference name="action" value="action\animator_set_state">
 							<bool name="apply_to_leader_only" value="False" />
@@ -116,7 +116,7 @@
 							<bool name="retrigger" value="True" />
 							<string name="state_machine_name" value="ability_sight_buff_state" />
 							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073799950" />
+							<uniqueid name="id" value="1073801180" />
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="True" />
@@ -162,10 +162,10 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073799951" />
+									<uniqueid name="id" value="1073801181" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073799952" />
+							<uniqueid name="id" value="1073801182" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -173,7 +173,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073799953" />
+					<uniqueid name="id" value="1073801183" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
