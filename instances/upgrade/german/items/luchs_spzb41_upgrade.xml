@@ -30,12 +30,12 @@
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="2" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="0" />
-			<locstring name="help_text" value="0" />
+			<locstring name="extra_text" value="4657" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4658" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="K" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_german_panzer_iv" />
+			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_german_222_dualbarrel" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="4655" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="screen_name_short" value="0" />
 			<enum name="ui_style" value="default" />
@@ -78,6 +78,11 @@
 				<float name="hardpoint" value="1" />
 				<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\020mm_spzb_41_luchs_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073801036" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\german\small_arms\kwk_20mm_222_armored_car_mp" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073801249" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -145,13 +150,13 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\vanguard_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\passive\stug_short_barrel" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
-		<locstring name="ui_squad_name_override" value="0" />
-		<locstring name="ui_squad_help_text_override" value="0" />
-		<locstring name="ui_squad_extra_text_override" value="0" />
+		<locstring name="ui_squad_name_override" value="4656" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_help_text_override" value="4659" mod="84428889d71d41a48e2eff09c2425d54" />
+		<locstring name="ui_squad_extra_text_override" value="4660" mod="84428889d71d41a48e2eff09c2425d54" />
 		<list name="ui_preview">
 		</list>
 		<list name="on_cancel_actions">

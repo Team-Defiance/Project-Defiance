@@ -171,9 +171,17 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\ability_lock_out\toggle_ability2" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_airstrike" />
-		<int name="ui_position" value="110" />
+		<int name="ui_position" value="60" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
