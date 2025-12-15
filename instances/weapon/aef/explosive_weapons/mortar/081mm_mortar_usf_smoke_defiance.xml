@@ -338,8 +338,8 @@
 			<instance_reference name="projectile" value="ebps\projectile\smoke_mortar_round_mp" />
 		</group>
 		<group name="range">
-			<float name="max" value="85" />
-			<float name="min" value="15" />
+			<float name="max" value="100" />
+			<float name="min" value="25" />
 			<group name="distance">
 				<float name="near" value="-1" />
 				<float name="far" value="-1" />
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="0" />
-				<float name="min" value="0" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.125" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
