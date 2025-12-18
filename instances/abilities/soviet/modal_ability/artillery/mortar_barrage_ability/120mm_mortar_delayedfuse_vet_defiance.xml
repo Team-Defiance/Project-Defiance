@@ -12,7 +12,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="ability_barrage_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073746066" />
+					<uniqueid name="id" value="1073801270" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -23,10 +23,10 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="5" />
+					<float name="num_salvo" value="4" />
 					<float name="use_hardpoint" value="4" />
 					<bool name="face_to_target" value="True" />
-					<uniqueid name="id" value="1073746067" />
+					<uniqueid name="id" value="1073801271" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -35,11 +35,11 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="artillery_set" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073746068" />
+					<uniqueid name="id" value="1073801272" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_BarrageEvent" />
-					<uniqueid name="id" value="1073746069" />
+					<uniqueid name="id" value="1073801273" />
 				</template_reference>
 			</list>
 		</group>
@@ -53,7 +53,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="0" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -76,9 +76,9 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="90" />
+		<float name="range" value="100" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_sync_mortar_barrage" />
@@ -107,15 +107,15 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11038401" />
-			<locstring name="help_text" value="650" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="B" />
+			<locstring name="extra_text" value="4676" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="0" />
+			<string name="hotkey_name" value="F" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_120mm_mortar_barrage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11007461" />
+			<locstring name="screen_name" value="4670" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
-			<locstring name="brief_text" value="11039218" />
+			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
 			<locstring name="screen_name_alternate" value="0" />
 			<locstring name="screen_name_short" value="0" />
@@ -125,27 +125,10 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_not">
+			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_race">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="race" value="racebps\soviet" />
-					</template_reference>
-				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_squad_veterancy">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<float name="veterancy_rank" value="4" />
-					</template_reference>
-				</list>
+				<float name="veterancy_rank" value="4" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -154,8 +137,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_120mm_mortar_barrage" />
-		<float name="ui_reticule_radius_min" value="7.25" />
-		<float name="ui_reticule_radius_max" value="12" />
+		<float name="ui_reticule_radius_min" value="5" />
+		<float name="ui_reticule_radius_max" value="8.75" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -181,5 +164,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741970" />
+	<uniqueid name="pbgid" value="1073742761" />
 </instance>

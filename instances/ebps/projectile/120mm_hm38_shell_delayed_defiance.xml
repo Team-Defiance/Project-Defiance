@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\common\projectiles\shell_medium\shell_medium" />
+			<file name="animator" value="armies\aef\projectiles\aef_delayed_mortar\aef_delayed_mortar" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -19,10 +19,10 @@
 				<float name="chance_splat_only" value="0" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
-					<string name="deform_decal_file" value="crater" />
+					<string name="deform_decal_file" value="mortar_crater" />
 					<bool name="limited" value="True" />
 					<bool name="random_rotation" value="True" />
-					<float name="rotation" value="0" />
+					<float name="rotation" value="360" />
 					<group name="splat_list">
 						<group name="entry_01">
 							<string name="splat_texture" value="" />
@@ -89,10 +89,10 @@
 							<instance_reference name="terrain_material" value="" />
 						</group>
 					</group>
-					<float name="vertical_scale" value="0.00105" />
+					<float name="vertical_scale" value="0.0012" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="4" />
+				<float name="radius_max" value="2.57" />
 				<float name="radius_min" value="2" />
 				<float name="splat_only_splat_seconds" value="90" />
 				<group name="splat_only_splats">
@@ -163,79 +163,49 @@
 				</group>
 			</group>
 			<list name="on_detonate_actions">
-				<template_reference name="action" value="action\spawn_entity">
-					<float name="duration" value="1" />
-					<instance_reference name="entity_blueprint" value="ebps\props\muni_fx_dummy_charge" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="permanent" value="False" />
-					<bool name="player_owned" value="False" />
-					<group name="target_info">
-						<template_reference name="target_info" value="type_ability_target_type\all">
-						</template_reference>
-					</group>
-					<uniqueid name="id" value="1073801257" />
-					<template_reference name="spawn_attached_option" value="options\action\spawn_entity_action\spawn_attached">
-						<string name="attach_target_marker_name" value="" />
-						<string name="attach_action_name" value="" />
-						<string name="detach_action_name" value="" />
-						<bool name="destroy_on_cancel" value="True" />
-						<list name="detach_entity_actions">
-						</list>
-					</template_reference>
-					<list name="spawned_entity_actions">
-						<template_reference name="actions" value="action\self_destruction_action">
-							<instance_reference name="detonation_weapon_name" value="weapon\muni_fx\shell_heavy_he_dummy" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073801258" />
-						</template_reference>
-					</list>
-					<group name="offset">
-						<float name="x" value="0" />
-						<float name="y" value="0" />
-						<float name="z" value="0" />
-					</group>
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="30" />
+			<float name="acceleration" value="50" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="True" />
 				<bool name="is_target_only" value="False" />
 				<float name="speed_distance_multiplier" value="0.1" />
 				<float name="speed_increment" value="0.5" />
-				<enum name="firing_angle_type" value="low_angle" />
+				<enum name="firing_angle_type" value="high_angle" />
 				<bool name="use_homing_when_no_blocker" value="True" />
 				<float name="non_collide_start_angle" value="10" />
 				<float name="non_collide_end_angle" value="89" />
 			</group>
-			<float name="building_hit_fx_delay" value="0" />
+			<float name="building_hit_fx_delay" value="2" />
 			<bool name="collision_building_wall_panel_ignore" value="False" />
 			<group name="collision_type">
 				<template_reference name="collision_type" value="type_projectile_collision\tp_artillery">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="2.5" />
-			<float name="delay_detonate_time" value="0.625" />
+			<float name="deathtimer" value="3" />
+			<float name="delay_detonate_time" value="2.5" />
 			<bool name="delay_detonate_ui_enabled" value="True" />
-			<string name="launcher_marker" value="marker_muzzle" />
+			<string name="launcher_marker" value="marker_barrel" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
-			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="33.75" />
+			<bool name="spawn_collision_fx" value="True" />
+			<float name="speed" value="27" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
 			<list name="actions">
 				<template_reference name="action" value="action\animator_set_state">
 					<bool name="apply_to_leader_only" value="False" />
-					<string name="do_action_state_name" value="artillery" />
+					<string name="do_action_state_name" value="mortar" />
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073744749" />
+					<uniqueid name="id" value="1073801259" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741882" />
+	<uniqueid name="pbgid" value="1073742477" />
 </instance>

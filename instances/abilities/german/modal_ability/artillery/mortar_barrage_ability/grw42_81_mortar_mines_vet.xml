@@ -76,7 +76,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="65" />
+		<float name="range" value="70" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="50" />
 		<bool name="refundable" value="True" />
@@ -138,7 +138,7 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
 		<float name="ui_reticule_radius_min" value="4.75" />
-		<float name="ui_reticule_radius_max" value="11" />
+		<float name="ui_reticule_radius_max" value="12.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
