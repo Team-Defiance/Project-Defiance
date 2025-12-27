@@ -45,7 +45,7 @@
 						</template_reference>
 					</list>
 					<group name="offset">
-						<float name="x" value="0" />
+						<float name="x" value="5" />
 						<float name="y" value="0" />
 						<float name="z" value="0" />
 					</group>
@@ -196,7 +196,7 @@
 					<bool name="die_with_creator" value="False" />
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="11053327" />
-						<locstring name="help_text" value="11053328" />
+						<locstring name="help_text" value="4694" mod="84428889d71d41a48e2eff09c2425d54" />
 						<icon name="icon_name" value="Icons_abilities_ability_west_german_retreat_point_unlock" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
@@ -337,16 +337,16 @@
 				<enum name="reason" value="usage" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
+				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\heavy_cav_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\research\aef_tech_up\tier_3_battalion_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
