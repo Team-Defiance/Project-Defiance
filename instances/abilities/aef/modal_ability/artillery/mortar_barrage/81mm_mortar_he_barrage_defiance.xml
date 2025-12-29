@@ -80,7 +80,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="75" />
+		<float name="range" value="80" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="30" />
 		<bool name="refundable" value="True" />
@@ -112,7 +112,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="11051131" />
-			<locstring name="help_text" value="11116619" />
+			<locstring name="help_text" value="4679" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_slow_firing" />
 			<string name="overlay_name" value="" />
@@ -129,6 +129,17 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_squad_veterancy">
+						<enum name="reason" value="usage_and_display" />
+						<locstring name="ui_name" value="0" />
+						<float name="veterancy_rank" value="4" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="31" />
@@ -136,8 +147,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
-		<float name="ui_reticule_radius_min" value="4.375" />
-		<float name="ui_reticule_radius_max" value="8" />
+		<float name="ui_reticule_radius_min" value="4.5" />
+		<float name="ui_reticule_radius_max" value="7.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

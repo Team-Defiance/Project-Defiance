@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="40" />
+				<float name="munition" value="60" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="25" />
@@ -46,6 +46,11 @@
 				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073795843" />
+			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\aef\ballistic_weapon\ranger_bazooka_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073800974" />
 			</template_reference>
 		</list>
 		<list name="requirements">

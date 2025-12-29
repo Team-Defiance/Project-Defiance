@@ -557,7 +557,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.73" comment="Minimum total cycle = 0.5 + 4.575 + 1.125 = 6.2 s&#xA;Maximum total cycle = 0.5 + 4.775 + 1.125 = 6.4 s&#xA;Average ≈ 6.3 s&#xD;&#xA;Target total = 6.3 × 0.8 = 5.04 s&#xD;&#xA;0.5 + (R×M) + 1.125 = 5.04 s&#xD;&#xA;0.5 + (4.675 × M) + 1.125 = 5.04&#xD;&#xA;4.675M = 5.04 − 1.625&#xD;&#xA;4.675M = 3.415&#xD;&#xA;M = 3.415/4.675 = 0.73" />
+												<float name="value" value="0.85" />
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>
@@ -621,7 +621,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.798" comment="Total (base) = 6.3 s&#xD;&#xA;Target = 6.3 × 0.85 = 5.355 s&#xD;&#xA;0.5 + (4.675 × M) + 1.125 = 5.355&#xD;&#xA;4.675M = 5.355 − 1.625 = 3.73&#xD;&#xA;M = 3.73/4.675 =0.798" />
+												<float name="value" value="0.85" />
 												<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 											</template_reference>
 										</list>

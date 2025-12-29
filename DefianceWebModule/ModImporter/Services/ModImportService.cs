@@ -23,7 +23,7 @@ public class ModImportService : IModImporter
             return;
         }
 
-        // Assumes ModImporter project is at DefianceWebModule/ModImporter/
+        // Assumes ModImporter project is at DefianceWebModule/ModImporter/ - kido was here
         var repoRoot = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", ".."));
         Console.WriteLine($"Detected repository root: {repoRoot}");
 

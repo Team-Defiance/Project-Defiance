@@ -28,7 +28,7 @@
 						<template_reference name="required" value="requirements\required_squad_veterancy">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<float name="veterancy_rank" value="2" />
+							<float name="veterancy_rank" value="3" />
 						</template_reference>
 					</list>
 					<list name="action_table">
@@ -42,7 +42,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
+									<float name="value" value="0.8" />
 									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -51,7 +51,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_02" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
+									<float name="value" value="0.8" />
 									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -60,7 +60,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_03" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
+									<float name="value" value="0.8" />
 									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -69,14 +69,73 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_04" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.75" />
+									<float name="value" value="0.8" />
 									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795183" />
+							<uniqueid name="id" value="1073801288" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795184" />
+					<uniqueid name="id" value="1073801289" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_squad_veterancy">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<float name="veterancy_rank" value="4" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_ownership">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<enum name="ownership_type" value="neutral" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\weapon_scatter">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.8" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\weapon_scatter">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_02" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.8" />
+									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801290" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073801291" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -113,38 +172,20 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+								<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.7" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_02" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.7" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_03" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.7" />
-									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+									<enum name="usage_type" value="addition" />
+									<float name="value" value="5" />
+									<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795185" />
+							<uniqueid name="id" value="1073801292" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795186" />
+					<uniqueid name="id" value="1073801293" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />

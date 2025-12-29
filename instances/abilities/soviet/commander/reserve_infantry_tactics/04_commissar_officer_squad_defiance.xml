@@ -142,6 +142,14 @@
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\unlock\reserve_army_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_population">
+				<enum name="reason" value="usage" />
+				<group name="free_pop">
+					<float name="medic" value="0" />
+					<float name="personnel" value="8" />
+					<float name="vehicle" value="0" />
+				</group>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="40" />
