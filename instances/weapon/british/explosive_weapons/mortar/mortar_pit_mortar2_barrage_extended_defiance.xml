@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.5" />
-				<float name="min" value="2.5" />
+				<float name="max" value="2.625" />
+				<float name="min" value="2.375" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -369,10 +369,10 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="12" />
+			<float name="distance_scatter_max" value="10" />
 			<float name="distance_scatter_obj_hit_min" value="7" />
 			<float name="distance_scatter_offset" value="0" />
-			<float name="distance_scatter_ratio" value="0.1" />
+			<float name="distance_scatter_ratio" value="0.075" />
 			<float name="fow_angle_multiplier" value="1.5" />
 			<float name="fow_distance_multiplier" value="1.5" />
 			<float name="max_tilt_angle" value="0" />

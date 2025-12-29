@@ -140,8 +140,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
-				<float name="far" value="0.25" />
-				<float name="mid" value="0.75" />
+				<float name="far" value="0.8" />
+				<float name="mid" value="0.9" />
 			</group>
 			<group name="rate_of_fire_multiplier">
 				<float name="near" value="1" />
@@ -342,7 +342,7 @@
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="10" />
-				<float name="far" value="30" />
+				<float name="far" value="35" />
 				<float name="mid" value="20" />
 			</group>
 		</group>

@@ -220,7 +220,7 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Orders in Field Engineers, Strelki Riflemen, and Penal Troops. Can research Medics and Mobilize Reserves Upgrade." />
+			<string name="extra_text_deprecated" value="" />
 			<bool name="ghost_enable" value="False" />
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="4317" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -817,12 +817,6 @@
 					<int name="ui_position" value="12" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\soviet\tier_0\strelki_riflemen_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="False" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="13" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\soviet\tier_0\penal_battalion_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">

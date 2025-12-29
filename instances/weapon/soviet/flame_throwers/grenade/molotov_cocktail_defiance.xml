@@ -470,35 +470,6 @@
 									<enum name="crit_weapon_type" value="big_explosive" />
 									<uniqueid name="id" value="1073793553" />
 								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073793978" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073793979" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073793554" />
 							<bool name="can_prevent_refund" value="True" />
@@ -539,212 +510,10 @@
 							<uniqueid name="id" value="1073793558" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="6.5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073793559" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073793560" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073793561" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073793562" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7.5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073793980" />
-								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073793982" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073793983" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073793564" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="8" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799966" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073793566" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799967" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799968" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799969" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799970" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799971" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799972" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="True" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799973" />
-								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073799975" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073799976" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799974" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="10" />
+									<float name="duration" value="6" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\ui_unit_modifier_action">
@@ -793,39 +562,25 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073752711" />
-						</template_reference>
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="False" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="True" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_health">
-									<float name="health_range_min_percentage" value="0" />
-									<float name="health_range_max_percentage" value="0.5" />
-									<locstring name="ui_name" value="0" />
-									<enum name="reason" value="usage" />
-								</template_reference>
+						<template_reference name="action" value="action\sequence_action">
+							<uniqueid name="id" value="1073801246" />
+							<list name="action_list_sequences">
+								<list name="actions">
+									<template_reference name="action" value="action\trigger_critical_action">
+										<float name="remove_at_health" value="0.8" />
+										<instance_reference name="critical" value="critical\vehicle_damage_engine_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										<uniqueid name="id" value="1073801247" />
+									</template_reference>
+								</list>
+								<list name="actions">
+									<template_reference name="action" value="action\trigger_critical_action">
+										<float name="remove_at_health" value="1" />
+										<instance_reference name="critical" value="critical\vehicle_engine_damage_light_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+										<uniqueid name="id" value="1073801248" />
+									</template_reference>
+								</list>
 							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\trigger_critical_action">
-									<float name="remove_at_health" value="0.8" />
-									<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-									<uniqueid name="id" value="1073752712" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073752713" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
+							<bool name="run_now" value="True" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073752714" />
@@ -1083,209 +838,14 @@
 									<enum name="crit_weapon_type" value="big_explosive" />
 									<uniqueid name="id" value="1073794302" />
 								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073794303" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073794304" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073794305" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="5.5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073794306" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073794307" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="6" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073794308" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073794309" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="6.5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073794318" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073794321" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799954" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799955" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="7.5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="False" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799960" />
-								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073799961" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073799962" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799957" />
-							<bool name="can_prevent_refund" value="True" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="8" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="5" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="True" />
-									<enum name="crit_weapon_type" value="big_explosive" />
-									<uniqueid name="id" value="1073799963" />
-								</template_reference>
-								<template_reference name="action" value="action\requirement_action">
-									<bool name="check_self" value="False" />
-									<bool name="global_fire_and_forget_on_success" value="False" />
-									<bool name="instant_requirement_check" value="True" />
-									<bool name="kill_action_on_failed_requirements" value="False" />
-									<bool name="no_retrigger" value="False" />
-									<bool name="validate_all_sub_actions" value="True" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_health">
-											<float name="health_range_min_percentage" value="0" />
-											<float name="health_range_max_percentage" value="0.5" />
-											<locstring name="ui_name" value="0" />
-											<enum name="reason" value="usage" />
-										</template_reference>
-									</list>
-									<list name="action_table">
-										<template_reference name="action" value="action\trigger_critical_action">
-											<float name="remove_at_health" value="0.8" />
-											<instance_reference name="critical" value="critical\vehicle_damage_engine_snare" />
-											<uniqueid name="id" value="1073799964" />
-										</template_reference>
-									</list>
-									<uniqueid name="id" value="1073799965" />
-									<bool name="fire_and_forget_non_global" value="False" />
-									<template_reference name="ui_help_text" value="tables\help_text_phrase">
-										<int name="phrase_order" value="0" />
-										<locstring name="phrase" value="0" />
-									</template_reference>
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799959" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 						<template_reference name="action" value="action\change_target_action">
 							<list name="actions">
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="8" />
+									<float name="duration" value="5" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\ui_unit_modifier_action">

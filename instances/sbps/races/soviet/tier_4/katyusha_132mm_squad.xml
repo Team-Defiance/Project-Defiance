@@ -50,7 +50,7 @@
 						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_soviet_katyush_rocket_truck_s_portrait" />
 						<float name="minimap_texture_scale" value="0.8" />
 						<locstring name="brief_text" value="11038687" />
-						<locstring name="screen_name_short" value="11045798" />
+						<locstring name="screen_name_short" value="4652" mod="84428889d71d41a48e2eff09c2425d54" />
 						<enum name="map_rotation_type_override" value="no_override" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
@@ -171,28 +171,6 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
-				<template_reference name="required" value="requirements\required_all_in_list">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="2088" mod="84428889d71d41a48e2eff09c2425d54" />
-					<list name="requirements">
-						<template_reference name="requirement" value="requirements\required_structure">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\weapon_support_center_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="required_structure_count" value="1" />
-							<bool name="check_team" value="False" />
-							<bool name="require_construction_complete" value="True" />
-						</template_reference>
-						<template_reference name="requirement" value="requirements\required_structure">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\barracks_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="required_structure_count" value="1" />
-							<bool name="check_team" value="False" />
-							<bool name="require_construction_complete" value="True" />
-						</template_reference>
-					</list>
-				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
@@ -477,7 +455,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_first_row" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -486,7 +464,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073743543" />
@@ -502,6 +480,15 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_02" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.8" />
+												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\weapon_scatter">
+												<enum name="application_type" value="apply_to_weapon" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<string name="target_type_name" value="hardpoint_03" />
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.8" />
 												<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
@@ -547,7 +534,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_first_row" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="50" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -556,7 +543,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="50" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -602,7 +589,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -611,7 +598,7 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_first_row" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
 												<float name="value" value="10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -623,7 +610,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.9" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -632,7 +619,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.9" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_first_row" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\katyusha_barrage_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073745883" />
@@ -666,18 +653,9 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\katyusha_speed" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
-											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
-												<enum name="application_type" value="apply_to_ability" />
-												<bool name="exclusive" value="False" />
-												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_smoke" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0" />
+												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\artillery\artillery_barrage_ability\kaytusha_barrage_creeping_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>

@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="8.5" />
+				<float name="radius" value="0" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="16" />
-			<float name="min" value="16" />
+			<float name="max" value="0" />
+			<float name="min" value="0" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -466,9 +466,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="ui_setfacing\weapon_artillery" />
 		<group name="penetration">
-			<float name="near" value="7" />
-			<float name="far" value="7" />
-			<float name="mid" value="7" />
+			<float name="near" value="0" />
+			<float name="far" value="0" />
+			<float name="mid" value="0" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

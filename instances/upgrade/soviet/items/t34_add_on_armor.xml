@@ -66,6 +66,14 @@
 				<string name="undo_action_state_name" value="" />
 				<uniqueid name="id" value="1073743939" />
 			</template_reference>
+			<template_reference name="action" value="action\animator_set_state">
+				<string name="do_action_state_name" value="on" />
+				<string name="state_machine_name" value="hull_extras" />
+				<bool name="apply_to_leader_only" value="False" />
+				<bool name="retrigger" value="False" />
+				<string name="undo_action_state_name" value="" />
+				<uniqueid name="id" value="1073801253" />
+			</template_reference>
 			<template_reference name="action" value="action\slot_item_add">
 				<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
 				<bool name="permanent" value="True" />

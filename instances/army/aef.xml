@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="30" />
-			<float name="manpower" value="400" />
+			<float name="manpower" value="380" />
 			<float name="munition" value="15" />
 			<float name="popcap" value="0" />
 		</group>
@@ -135,10 +135,10 @@
 			<instance_reference name="ability" value="abilities\aef\commander\armor_company\05_m4_jumbo_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\armor_company\06_240mm_offmap_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\airborne_company_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\01_m8_hmc_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\02_raid_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\03_pathfinders_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\04_paratroopers_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\01_raid_tactics_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\02_pathfinders_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\03_paratroopers_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\04_team_weapons_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\05_p47_strafing_run" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\airborne_company\06_p47_rocket_attack" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\mechanized\assault_engineer_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -146,9 +146,10 @@
 			<instance_reference name="ability" value="abilities\aef\commander\tact_support\01_m36_jackson_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\tact_support\02_breakthrough_equipment_usf" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\tact_support\03_riflemen_1919_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\tact_support\04_team_weapons_paradrop_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\aef\commander\tact_support\05_p47_recon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\04_p47_recon_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\tact_support\05_m4a1_105_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\tact_support\06_man_the_defenses_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\aef\commander\m3_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">

@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="0.25" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1.5" />
-				<float name="min" value="1.5" />
+				<float name="max" value="1" />
+				<float name="min" value="1" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1.75" />
@@ -433,6 +433,91 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073797260" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="True" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="True" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_in_state">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<bool name="garrisoned" value="False" />
+									<bool name="healed" value="False" />
+									<float name="in_combat_since" value="-1" />
+									<bool name="injured" value="False" />
+									<bool name="leader" value="False" />
+									<bool name="not_moving" value="False" />
+									<bool name="not_retreating" value="True" />
+									<bool name="pinned" value="False" />
+									<bool name="suppressed" value="False" />
+									<bool name="camouflaged" value="False" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="2.5" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+													<enum name="application_type" value="apply_to_squad" />
+													<bool name="exclusive" value="True" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="0.75" />
+													<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073801398" />
+										</template_reference>
+										<template_reference name="action" value="action\kicker_message_action">
+											<float name="loop_interval" value="0" />
+											<locstring name="message" value="11008117" />
+											<float name="message_colour_a" value="255" />
+											<float name="message_colour_b" value="0" />
+											<float name="message_colour_g" value="170" />
+											<float name="message_colour_r" value="170" />
+											<float name="message_duration" value="5" />
+											<bool name="team_only" value="True" />
+											<bool name="check_fow" value="False" />
+											<uniqueid name="id" value="1073801399" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073801400" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801401" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073801402" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 		</group>

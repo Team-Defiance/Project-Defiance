@@ -15,7 +15,7 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="4" />
+					<float name="num_salvo" value="5" />
 					<float name="use_hardpoint" value="3" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073746539" />
@@ -117,8 +117,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
-		<float name="ui_reticule_radius_min" value="4.5" />
-		<float name="ui_reticule_radius_max" value="12" />
+		<float name="ui_reticule_radius_min" value="5" />
+		<float name="ui_reticule_radius_max" value="7.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
