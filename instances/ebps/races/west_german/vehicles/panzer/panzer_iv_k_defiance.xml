@@ -686,8 +686,8 @@
 			<enum name="decorator_visibility" value="default" />
 			<string name="decorator_marker_name" value="fx_ui" />
 			<bool name="skin_pack_override" value="False" />
-			<string name="skin_summer" value="german_default_summer" />
-			<string name="skin_winter" value="german_default_winter" />
+			<string name="skin_summer" value="" />
+			<string name="skin_winter" value="" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\attention_gen_ext">
 			<string name="animation_event_name" value="" />
