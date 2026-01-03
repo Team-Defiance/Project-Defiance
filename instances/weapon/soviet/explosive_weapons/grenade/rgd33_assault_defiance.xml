@@ -56,21 +56,21 @@
 				<float name="mid" value="0.25" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3" />
+				<float name="far" value="2.25" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="1.75" />
+				<float name="mid" value="1.5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="True" />
 			<group name="suppression">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="far" value="0.2" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="suppression_friendly">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.25" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="9" />
+			<float name="reaction_radius" value="8.25" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -336,7 +336,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="9" />
+		<float name="flinch_radius" value="8.25" />
 		<string name="fx_action_target_name" value="grenade_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -379,7 +379,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\rgd_33_assault" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="20" />
+			<float name="max" value="25" />
 			<float name="min" value="5" />
 			<group name="distance">
 				<float name="near" value="-1" />
