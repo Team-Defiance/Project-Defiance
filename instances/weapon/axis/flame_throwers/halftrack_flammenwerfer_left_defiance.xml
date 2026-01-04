@@ -515,6 +515,15 @@
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="ambient_building" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1" />
+					<float name="damage_multiplier" value="2.5" />
+					<float name="penetration_multiplier" value="2" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
 		</list>
 	</group>
 	<uniqueid name="pbgid" value="1073742347" />
