@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
-			<float name="far" value="0.03" />
-			<float name="mid" value="0.05" />
+			<float name="near" value="0.075" />
+			<float name="far" value="0.035" />
+			<float name="mid" value="0.055" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -290,7 +290,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="1.125" />
+			<float name="wind_down" value="1" />
 			<float name="wind_up" value="0.5" />
 			<list name="on_fire_actions">
 			</list>
@@ -307,12 +307,12 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.45" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
-			<float name="moving_end_time" value="1.5" />
-			<float name="moving_start_time" value="1.8" />
+			<float name="moving_end_time" value="0" />
+			<float name="moving_start_time" value="0" />
 		</group>
 		<string name="name" value="M26 Pershing Heavy Tank HVAP Gun" />
 		<group name="offhand">
