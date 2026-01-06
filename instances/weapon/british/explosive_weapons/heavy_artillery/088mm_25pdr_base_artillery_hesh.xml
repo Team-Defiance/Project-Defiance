@@ -278,7 +278,7 @@
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
+					<bool name="instant_requirement_check" value="True" />
 					<bool name="kill_action_on_failed_requirements" value="False" />
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
@@ -296,8 +296,8 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
-							<uniqueid name="id" value="1073801076" />
+							<instance_reference name="critical" value="critical\vehicle_crew_stunned_2_5sec" />
+							<uniqueid name="id" value="1073801471" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073801077" />

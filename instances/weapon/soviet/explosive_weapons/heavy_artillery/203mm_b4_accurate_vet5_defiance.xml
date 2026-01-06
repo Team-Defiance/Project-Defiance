@@ -296,7 +296,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
+							<instance_reference name="critical" value="critical\vehicle_crew_stunned_2_5sec" />
 							<uniqueid name="id" value="1073753763" />
 						</template_reference>
 					</list>
