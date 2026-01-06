@@ -273,8 +273,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="25" />
-			<float name="min" value="25" />
+			<float name="max" value="30" />
+			<float name="min" value="30" />
 			<list name="on_penetrated_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -518,20 +518,14 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
+						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_unit_type">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<enum name="unit_type" value="infantry" />
-									<template_reference name="qualify_option" value="options\none">
-									</template_reference>
-									<bool name="search_load_out" value="False" />
-									<bool name="owned_by_player_only" value="True" />
-								</template_reference>
-							</list>
+							<enum name="unit_type" value="vehicle" />
+							<template_reference name="qualify_option" value="options\none">
+							</template_reference>
+							<bool name="search_load_out" value="False" />
+							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
@@ -550,14 +544,6 @@
 						</template_reference>
 					</list>
 					<list name="action_table">
-						<template_reference name="action" value="action\damage">
-							<float name="damage" value="40" />
-							<bool name="percentage" value="False" />
-							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
-							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073756795" />
-						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="True" />
 							<bool name="global_fire_and_forget_on_success" value="False" />
@@ -579,10 +565,10 @@
 									<bool name="set" value="False" />
 									<bool name="cause_criticals" value="True" />
 									<enum name="crit_weapon_type" value="ballistic" />
-									<uniqueid name="id" value="1073756796" />
+									<uniqueid name="id" value="1073801466" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073756797" />
+							<uniqueid name="id" value="1073801467" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -591,87 +577,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073756798" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_unit_type">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<enum name="unit_type" value="infantry" />
-									<template_reference name="qualify_option" value="options\none">
-									</template_reference>
-									<bool name="search_load_out" value="False" />
-									<bool name="owned_by_player_only" value="True" />
-								</template_reference>
-							</list>
-						</template_reference>
-						<template_reference name="required" value="requirements\required_slot_item">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="check_item_on_entity" value="False" />
-							<bool name="display_requirement" value="True" />
-							<float name="max_owned" value="10" />
-							<float name="min_owned" value="1" />
-							<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\damage">
-							<float name="damage" value="28" />
-							<bool name="percentage" value="False" />
-							<bool name="set" value="False" />
-							<bool name="cause_criticals" value="True" />
-							<enum name="crit_weapon_type" value="ballistic" />
-							<uniqueid name="id" value="1073756799" />
-						</template_reference>
-						<template_reference name="action" value="action\requirement_action">
-							<bool name="check_self" value="True" />
-							<bool name="global_fire_and_forget_on_success" value="False" />
-							<bool name="instant_requirement_check" value="True" />
-							<bool name="kill_action_on_failed_requirements" value="False" />
-							<bool name="no_retrigger" value="False" />
-							<bool name="validate_all_sub_actions" value="True" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_squad_veterancy">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="3" />
-								</template_reference>
-							</list>
-							<list name="action_table">
-								<template_reference name="action" value="action\damage">
-									<float name="damage" value="16" />
-									<bool name="percentage" value="False" />
-									<bool name="set" value="False" />
-									<bool name="cause_criticals" value="True" />
-									<enum name="crit_weapon_type" value="ballistic" />
-									<uniqueid name="id" value="1073756800" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073756801" />
-							<bool name="fire_and_forget_non_global" value="False" />
-							<template_reference name="ui_help_text" value="tables\help_text_phrase">
-								<int name="phrase_order" value="0" />
-								<locstring name="phrase" value="0" />
-							</template_reference>
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756802" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -844,8 +749,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4" />
-				<float name="min" value="4" />
+				<float name="max" value="7.5" />
+				<float name="min" value="7.5" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
