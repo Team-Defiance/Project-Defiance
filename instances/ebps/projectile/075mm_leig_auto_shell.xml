@@ -16,7 +16,7 @@
 		<template_reference name="exts" value="ebpextensions\explosion_ext">
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
-				<float name="chance_splat_only" value="1" />
+				<float name="chance_splat_only" value="0" />
 				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="8" />
+			<float name="acceleration" value="7" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="True" />
@@ -184,14 +184,14 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_artillery">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="6" />
+			<float name="deathtimer" value="2.5" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="marker_muzzle" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="1000" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="30" />
+			<float name="speed" value="20" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073794275" />
+					<uniqueid name="id" value="1073743761" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742343" />
+	<uniqueid name="pbgid" value="1073741864" />
 </instance>
