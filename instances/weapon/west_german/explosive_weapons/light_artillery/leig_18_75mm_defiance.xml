@@ -293,18 +293,6 @@
 			<float name="wind_down" value="1" />
 			<float name="wind_up" value="0.875" />
 			<list name="on_fire_actions">
-				<template_reference name="action" value="action\kicker_message_action">
-					<float name="loop_interval" value="0" />
-					<locstring name="message" value="11053787" />
-					<float name="message_colour_a" value="255" />
-					<float name="message_colour_b" value="255" />
-					<float name="message_colour_g" value="0" />
-					<float name="message_colour_r" value="255" />
-					<float name="message_duration" value="0.2" />
-					<bool name="team_only" value="True" />
-					<bool name="check_fow" value="False" />
-					<uniqueid name="id" value="1073743759" />
-				</template_reference>
 			</list>
 		</group>
 		<float name="flinch_radius" value="4" />
