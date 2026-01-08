@@ -4,7 +4,7 @@
 			<list name="end_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\075mm_pak_42_iv70_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\075mm_pak42_iv70_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073752898" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
