@@ -59,21 +59,40 @@
 			</template_reference>
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_player_upgrade">
+			<template_reference name="required" value="requirements\required_slot_item_size">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="11117660" />
+				<float name="required_free_slot_size" value="2" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_in_territory">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11158277" />
+				<locstring name="ui_name" value="0" />
 				<bool name="in_supply" value="True" />
 				<bool name="is_secured" value="False" />
 				<bool name="is_secured_by_checkpoint" value="False" />
 				<bool name="not_in_transition" value="False" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\vanguard_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="2074" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="2" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
+				</template_reference>
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
