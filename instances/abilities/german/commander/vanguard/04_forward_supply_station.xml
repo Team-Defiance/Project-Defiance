@@ -10,7 +10,7 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\convert_building">
 					<instance_reference name="upgrade_to_remove" value="upgrade\soviet\commander\ability\forward_hq_aura" />
-					<uniqueid name="id" value="1073752014" />
+					<uniqueid name="id" value="1073801505" />
 				</template_reference>
 				<template_reference name="action" value="action\activate_extension_action">
 					<bool name="activation" value="True" />
@@ -18,7 +18,7 @@
 					<bool name="repair_station_ext" value="True" />
 					<bool name="supply_ext" value="False" />
 					<bool name="territory_ext" value="False" />
-					<uniqueid name="id" value="1073752015" />
+					<uniqueid name="id" value="1073801506" />
 				</template_reference>
 				<template_reference name="action" value="action\spawn_entity">
 					<float name="duration" value="0" />
@@ -29,7 +29,7 @@
 						<template_reference name="target_info" value="type_ability_target_type\all">
 						</template_reference>
 					</group>
-					<uniqueid name="id" value="1073752016" />
+					<uniqueid name="id" value="1073801507" />
 					<template_reference name="spawn_attached_option" value="options\none">
 					</template_reference>
 					<list name="spawned_entity_actions">
@@ -165,21 +165,21 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2002" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="4722" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="2" />
+					<float name="command" value="5" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
-					<float name="popcap" value="0" />
 					<float name="soviet_progression" value="0" />
 					<float name="soviet_227" value="0" />
+					<float name="popcap" value="0" />
 				</template_reference>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="10" />
+		<int name="ui_position" value="40" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

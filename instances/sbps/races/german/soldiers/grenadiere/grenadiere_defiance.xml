@@ -189,6 +189,7 @@
 				<instance_reference name="upgrade" value="upgrade\german\doctrines\festung\items\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\doctrines\overwatch\ambush_camouflage_infantry_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\doctrines\spearhead\grenadiere_stg44_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\grenadier_g43k_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -1112,6 +1113,7 @@
 				<instance_reference name="ability" value="abilities\german\timed_ability\grenadier_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\accessory_weapons\grenadier_lmg_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\grenadiere_rifle_grenade_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\grenadiere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
