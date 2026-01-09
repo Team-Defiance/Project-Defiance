@@ -116,6 +116,11 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073799697" />
 			</template_reference>
+			<template_reference name="action" value="action\slot_item_add">
+				<instance_reference name="slot_item" value="slot_item\soviet\flame_weapon\kv8_voice_item" mod="84428889d71d41a48e2eff09c2425d54" />
+				<bool name="permanent" value="True" />
+				<uniqueid name="id" value="1073801556" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
