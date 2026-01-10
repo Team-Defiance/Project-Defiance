@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="30" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="20" />
@@ -88,7 +88,7 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_any_in_list">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="4744" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="requirements">
 					<template_reference name="requirement" value="requirements\required_near_entity">
 						<enum name="alliance_requirement" value="self" />
