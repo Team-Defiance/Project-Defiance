@@ -912,7 +912,7 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="4.4" />
+			<float name="deceleration" value="4.1" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
@@ -921,9 +921,9 @@
 			<float name="rotation_rate_stand" value="270" />
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
-			<float name="acceleration" value="2.2" />
-			<float name="rotation_rate" value="34" />
-			<float name="speed_max" value="6.4" />
+			<float name="acceleration" value="2.1" />
+			<float name="rotation_rate" value="32" />
+			<float name="speed_max" value="6.2" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.2" />
 			<float name="on_ice_overturn_scale" value="2" />
