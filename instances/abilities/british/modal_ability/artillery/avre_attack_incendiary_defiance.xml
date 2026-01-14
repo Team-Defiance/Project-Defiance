@@ -40,7 +40,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\use_accessory_weapon">
-					<instance_reference name="accessory_weapon_item" value="slot_item\british\ballistic\avre_spigot_mortar_vet_3_mp" />
+					<instance_reference name="accessory_weapon_item" value="slot_item\british\ballistic\avre_spigot_mortar_flame_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="decrement_accessory_item" value="" />
 					<bool name="entity_target_only" value="False" />
 					<bool name="force_squad_to_target" value="False" />
@@ -100,7 +100,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="150" />
+		<float name="range" value="30" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="50" comment="There is an upgrade given in the end self actions that has a delayed action in it that needs to match the ability recharge time." />
 		<bool name="refundable" value="True" />
@@ -183,9 +183,9 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_katyusha" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_kaytusha_rocket" />
-		<float name="ui_reticule_radius_min" value="7.5" />
-		<float name="ui_reticule_radius_max" value="7.5" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
+		<float name="ui_reticule_radius_min" value="13" />
+		<float name="ui_reticule_radius_max" value="13" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

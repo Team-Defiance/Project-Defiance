@@ -40,7 +40,7 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="160" />
+			<float name="fuel" value="170" />
 			<float name="manpower" value="560" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
@@ -140,19 +140,13 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-				</list>
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

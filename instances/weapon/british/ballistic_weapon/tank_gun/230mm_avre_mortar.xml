@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="4" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1.5" />
-				<float name="min" value="1.5" />
+				<float name="max" value="0.8" />
+				<float name="min" value="0.8" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -35,15 +35,15 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="2" />
+				<float name="near" value="8" />
+				<float name="mid" value="4" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="12" />
+				<float name="radius" value="13" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.05" />
@@ -57,7 +57,7 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="11.5" />
-				<float name="near" value="0.4" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="4.5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -76,7 +76,7 @@
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
 				<float name="mid" value="30" />
-				<float name="near" value="180" />
+				<float name="near" value="370" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
@@ -296,7 +296,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_crew_shocked_avre" />
+							<instance_reference name="critical" value="critical\vehicle_crew_stunned" />
 							<uniqueid name="id" value="1073756885" />
 						</template_reference>
 					</list>
@@ -407,7 +407,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.7" />
+			<float name="deflection_damage_multiplier" value="0.75" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
@@ -479,7 +479,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\british_avre_290mm_mortar" />
+			<instance_reference name="projectile" value="ebps\projectile\230mm_avre_shell" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="40" />
@@ -578,9 +578,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="200" />
-			<float name="far" value="200" />
-			<float name="mid" value="200" />
+			<float name="near" value="420" />
+			<float name="far" value="420" />
+			<float name="mid" value="420" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
