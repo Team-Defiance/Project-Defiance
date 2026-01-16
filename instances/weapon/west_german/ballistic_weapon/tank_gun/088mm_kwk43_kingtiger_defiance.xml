@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4.2" />
+				<float name="radius" value="4.25" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.75" />
+				<float name="near" value="1" />
 				<float name="mid" value="0.3" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
-				<float name="near" value="0.375" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="0.15" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3.25" />
+				<float name="far" value="4" />
 				<float name="near" value="0.1" />
-				<float name="mid" value="0.5" />
+				<float name="mid" value="0.75" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -307,7 +307,7 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.45" />
+			<float name="accuracy_multiplier" value="0.55" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
