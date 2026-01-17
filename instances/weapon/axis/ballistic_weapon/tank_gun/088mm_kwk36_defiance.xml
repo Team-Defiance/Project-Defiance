@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
+			<float name="near" value="0.065" />
 			<float name="far" value="0.035" />
-			<float name="mid" value="0.0525" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,20 +43,20 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4.2" />
+				<float name="radius" value="4.5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="0.3" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.375" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3.375" />
+				<float name="far" value="4" />
 				<float name="near" value="0.1" />
 				<float name="mid" value="1" />
 			</group>
