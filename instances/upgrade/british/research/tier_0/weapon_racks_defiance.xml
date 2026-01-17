@@ -28,7 +28,7 @@
 		</group>
 		<bool name="ui_event_cue" value="True" />
 		<enum name="ui_group" value="unit_upgrade_panel" />
-		<int name="ui_position" value="1" />
+		<int name="ui_position" value="3" />
 		<group name="ui_info">
 			<locstring name="extra_text" value="4390" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="4391" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -44,6 +44,11 @@
 		<list name="actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_race">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4712" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="race" value="racebps\british" />
+			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
 		<locstring name="ui_squad_name_override" value="0" />
