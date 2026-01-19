@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="1.3125" />
+				<float name="radius" value="2.75" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
@@ -56,9 +56,9 @@
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="far" value="1.25" />
+				<float name="far" value="2.5" />
 				<float name="near" value="0.1" />
-				<float name="mid" value="0.6" />
+				<float name="mid" value="1.2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -80,8 +80,8 @@
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="mid" value="0.2" />
+				<float name="far" value="0.001" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
