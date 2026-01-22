@@ -1229,7 +1229,7 @@
 		<template_reference name="exts" value="ebpextensions\crew_ext">
 			<list name="race_list">
 				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\german" />
+					<instance_reference name="ext_key" value="" />
 					<group name="info">
 						<string name="sync_target_name" value="Vehicle_Target" />
 						<list name="role_list">
@@ -1251,86 +1251,6 @@
 								<string name="sync_action_name" value="Attach_Spotter" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_gunner" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\soviet" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\soviet\soldiers\tank_crew_1\tank_crew_1" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\west_german" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="racebps\aef" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\aef\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
-								<string name="animator_bp_female" value="" />
-							</group>
-						</list>
-						<template_reference name="additional_crew_option" value="options\none">
-						</template_reference>
-					</group>
-				</group>
-				<group name="race_data">
-					<instance_reference name="ext_key" value="" />
-					<group name="info">
-						<string name="sync_target_name" value="Vehicle_Target" />
-						<list name="role_list">
-							<group name="role">
-								<string name="animator_bp" value="armies\german\soldiers\vehicle_crew\vehicle_crew" />
-								<string name="death_event_name" value="Death_crew" />
-								<string name="desync_action_name" value="Detach_Skeleton" />
-								<string name="role_name" value="Gunner" />
-								<string name="sync_action_name" value="Attach_Gunner" />
-								<bool name="sync_on_create" value="True" />
-								<string name="abandon_event_name" value="abandon_turret" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>

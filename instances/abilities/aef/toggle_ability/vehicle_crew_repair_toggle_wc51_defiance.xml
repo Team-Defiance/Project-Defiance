@@ -38,6 +38,37 @@
 							</group>
 							<uniqueid name="id" value="1073793864" />
 						</template_reference>
+						<template_reference name="action" value="action\requirement_action">
+							<bool name="check_self" value="True" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="4" />
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\heal_action">
+									<float name="amount" value="2.5" />
+									<group name="target_info">
+										<template_reference name="target_info" value="type_ability_target_type\all">
+										</template_reference>
+									</group>
+									<uniqueid name="id" value="1073801687" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801681" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073793867" />
 					<bool name="fire_and_forget_non_global" value="False" />
@@ -136,15 +167,6 @@
 							<float name="value" value="-1" />
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
-						<template_reference name="modifier" value="modifiers\received_damage_modifier">
-							<enum name="application_type" value="apply_to_entity" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="2" />
-							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-						</template_reference>
 						<template_reference name="modifier" value="modifiers\armor_modifier">
 							<enum name="application_type" value="apply_to_entity" />
 							<bool name="exclusive" value="True" />
@@ -160,6 +182,51 @@
 				<template_reference name="action" value="action\ui_decorator_state_action">
 					<uniqueid name="id" value="1073797514" />
 					<string name="state_icon" value="FrameBraceEnabled" />
+				</template_reference>
+				<template_reference name="action" value="action\requirement_action">
+					<bool name="check_self" value="False" />
+					<bool name="global_fire_and_forget_on_success" value="False" />
+					<bool name="instant_requirement_check" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="no_retrigger" value="False" />
+					<bool name="validate_all_sub_actions" value="True" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_not">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_squad_veterancy">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="0" />
+									<float name="veterancy_rank" value="4" />
+								</template_reference>
+							</list>
+						</template_reference>
+					</list>
+					<list name="action_table">
+						<template_reference name="action" value="action\apply_modifiers_action">
+							<float name="duration" value="0" />
+							<bool name="permanent" value="False" />
+							<list name="modifiers">
+								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+									<enum name="application_type" value="apply_to_entity" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="2" />
+									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073801699" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073801693" />
+					<bool name="fire_and_forget_non_global" value="False" />
+					<template_reference name="ui_help_text" value="tables\help_text_phrase">
+						<int name="phrase_order" value="0" />
+						<locstring name="phrase" value="0" />
+					</template_reference>
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
