@@ -161,7 +161,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="900" />
+			<float name="hitpoints" value="990" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -229,7 +229,7 @@
 					<uniqueid name="id" value="1073755503" />
 				</template_reference>
 			</list>
-			<float name="armor" value="250" />
+			<float name="armor" value="260" />
 			<float name="rear_armor" value="180" />
 			<float name="target_size" value="22.5" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -1098,7 +1098,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="1.4" />
-			<float name="deceleration" value="1.9" />
+			<float name="deceleration" value="2" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
