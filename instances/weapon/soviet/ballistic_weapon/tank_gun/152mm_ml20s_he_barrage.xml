@@ -46,14 +46,14 @@
 				<float name="radius" value="9" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.075" />
-				<float name="near" value="0.875" />
-				<float name="mid" value="0.25" />
+				<float name="far" value="0.08" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.26" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0375" />
-				<float name="near" value="0.4375" />
-				<float name="mid" value="0.125" />
+				<float name="far" value="0.04" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.13" />
 			</group>
 			<group name="distance">
 				<float name="far" value="7.2" />
@@ -79,9 +79,9 @@
 				<float name="near" value="140" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="0.875" />
-				<float name="mid" value="0.125" />
-				<float name="far" value="0.00075" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.13" />
+				<float name="far" value="0.0008" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="240" />
-			<float name="min" value="240" />
+			<float name="max" value="250" />
+			<float name="min" value="250" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -449,13 +449,13 @@
 				<enum name="unit_type" value="vehicle" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
-					<float name="damage_multiplier" value="1.25" />
+					<float name="damage_multiplier" value="1.28" />
 					<float name="penetration_multiplier" value="0.5" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>
 			<group name="target_unit_type_multipliers">
-				<enum name="unit_type" value="defence_building" />
+				<enum name="unit_type" value="building" />
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="2" />
