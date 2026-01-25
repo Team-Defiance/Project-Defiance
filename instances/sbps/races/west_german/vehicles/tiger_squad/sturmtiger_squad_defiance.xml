@@ -386,8 +386,8 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="-10" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.9" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\sturmtiger_380mm_rocket_reload_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
@@ -563,8 +563,8 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<enum name="usage_type" value="addition" />
-												<float name="value" value="-5" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.9" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\sturmtiger_380mm_rocket_reload_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
