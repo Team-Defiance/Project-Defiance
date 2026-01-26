@@ -10,16 +10,16 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="18" />
+					<float name="minimum_pop_used" value="22" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\west_german\vehicles\tiger_squad\jagdtiger_td_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073755241" />
+					<uniqueid name="id" value="1073801830" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073755242" />
+					<uniqueid name="id" value="1073801831" />
 				</template_reference>
 			</list>
 		</group>
@@ -40,8 +40,8 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="200" />
-			<float name="manpower" value="600" />
+			<float name="fuel" value="250" />
+			<float name="manpower" value="720" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
@@ -67,10 +67,10 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="120" />
+		<float name="recharge_time" value="180" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="free_fire" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="" />
@@ -78,12 +78,12 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="" />
+			<string name="code_1" value="jtg" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
-		<enum name="target" value="tp_entity_and_position" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
 			<template_reference name="target_special_validation" value="type_ability_target_type\all">
 			</template_reference>
@@ -96,13 +96,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11072622" />
-			<locstring name="help_text" value="11072515" />
+			<locstring name="extra_text" value="11066359" />
+			<locstring name="help_text" value="11052618" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_sturmtiger" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_jagdtiger" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2643" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11052465" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -114,58 +114,44 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_population">
+			<template_reference name="required" value="requirements\required_not">
 				<enum name="reason" value="usage" />
-				<group name="free_pop">
-					<float name="medic" value="0" />
-					<float name="personnel" value="18" />
-					<float name="vehicle" value="0" />
-				</group>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\wg_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\jagdtiger_td_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="11095059" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_any_in_list">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<list name="requirements">
+							<template_reference name="requirement" value="requirements\required_entity">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\vehicles\jagdtiger_sdkfz_186\jagdtiger_sdkfz_186_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="entity_type" value="" />
+							</template_reference>
+							<template_reference name="requirement" value="requirements\required_entity">
+								<enum name="reason" value="usage" />
+								<locstring name="ui_name" value="0" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\vehicles\king_tiger_sdkfz_182\king_tiger_sdkfz_182_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="entity_type" value="" />
+							</template_reference>
+						</list>
+					</template_reference>
+				</list>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage" />
+				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\commander\ability\jagdtiger" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1378" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="11051962" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="11" />
+					<float name="command" value="14" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
@@ -175,19 +161,27 @@
 				</template_reference>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
+				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\west_german\commander\unlock\urban_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_population">
+				<enum name="reason" value="usage" />
+				<group name="free_pop">
+					<float name="medic" value="0" />
+					<float name="personnel" value="22" />
+					<float name="vehicle" value="0" />
+				</group>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="60" />
+		<int name="ui_position" value="130" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
+		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_reticule" value="" />
 		<float name="ui_reticule_radius_min" value="0" />
 		<float name="ui_reticule_radius_max" value="0" />
@@ -244,7 +238,7 @@
 			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
-		<bool name="ability_super_event_cue" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="1073742361" />
+	<uniqueid name="pbgid" value="1073742779" />
 </instance>
