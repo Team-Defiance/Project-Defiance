@@ -528,7 +528,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
-							<float name="number_of_experience_points" value="-660" />
+							<float name="number_of_experience_points" value="-560" />
 							<uniqueid name="id" value="1073792611" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
@@ -538,7 +538,7 @@
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
 								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="660" />
+									<float name="number_of_experience_points" value="560" />
 									<uniqueid name="id" value="1073792612" />
 								</template_reference>
 							</list>
@@ -813,7 +813,7 @@
 						<float name="max_persistent_squads" value="3" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="660" />
+								<float name="experience_value" value="560" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="2777" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -859,7 +859,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1320" />
+								<float name="experience_value" value="1120" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="3100" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -896,7 +896,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.75" />
+												<float name="value" value="0.7" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\detect_global_camouflage_radius">
@@ -914,7 +914,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2640" />
+								<float name="experience_value" value="2240" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="3101" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -978,7 +978,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="3960" />
+								<float name="experience_value" value="3360" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="3102" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -1044,7 +1044,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="5280" />
+								<float name="experience_value" value="4480" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="3103" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />

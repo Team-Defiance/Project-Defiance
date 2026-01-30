@@ -699,7 +699,7 @@
 				<float name="utility_random_range_offset" value="0" />
 			</group>
 			<group name="squad_utility">
-				<float name="per_unit_scale" value="-1" />
+				<float name="per_unit_scale" value="1" />
 				<float name="per_unit_scale_historical" value="1" />
 				<float name="utility" value="105" />
 				<instance_reference name="blueprint" value="sbps\races\aef\tier_0\captain_squad_defiance_ai" mod="84428889d71d41a48e2eff09c2425d54" />
