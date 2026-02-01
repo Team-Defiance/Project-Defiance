@@ -4,45 +4,48 @@
 			<list name="end_self_actions">
 			</list>
 			<list name="end_target_actions">
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="inactive" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="blowtorch_state" />
+					<string name="undo_action_state_name" value="" />
+					<uniqueid name="id" value="1073801910" />
+				</template_reference>
 			</list>
 			<list name="start_self_actions">
-				<template_reference name="action" value="action\non_blocking_list_action">
-					<list name="action_list">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.5" />
-									<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\received_damage_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.25" />
-									<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073796389" />
+				<template_reference name="action" value="action\animator_set_state">
+					<bool name="apply_to_leader_only" value="False" />
+					<string name="do_action_state_name" value="active" />
+					<bool name="retrigger" value="False" />
+					<string name="state_machine_name" value="blowtorch_state" />
+					<string name="undo_action_state_name" value="inactive" />
+					<uniqueid name="id" value="1073801911" />
+				</template_reference>
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\received_damage_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="3" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
-						<template_reference name="action" value="action\animator_set_state">
-							<bool name="apply_to_leader_only" value="True" />
-							<string name="do_action_state_name" value="on" />
-							<bool name="retrigger" value="True" />
-							<string name="state_machine_name" value="ability_attack_debuff_state" />
-							<string name="undo_action_state_name" value="off" />
-							<uniqueid name="id" value="1073796390" />
+						<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="3" />
+							<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796391" />
+					<uniqueid name="id" value="1073801912" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -50,7 +53,7 @@
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="True" />
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
@@ -86,7 +89,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="14" />
+							<float name="delay" value="6" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="True" />
 							<bool name="randomize" value="False" />
@@ -103,22 +106,22 @@
 												<float name="command" value="0" />
 												<float name="fuel" value="12" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="36" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
 											</template_reference>
 											<bool name="modify_per_second" value="False" />
 											<bool name="ignore_resource_cap" value="False" />
-											<uniqueid name="id" value="1073796392" />
+											<uniqueid name="id" value="1073801918" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073796393" />
+									<uniqueid name="id" value="1073801919" />
 								</template_reference>
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
 										<template_reference name="action" value="action\kicker_resource_action">
-											<uniqueid name="id" value="1073796394" />
+											<uniqueid name="id" value="1073801920" />
 											<bool name="check_fow" value="False" />
 											<bool name="team_only" value="True" />
 											<template_reference name="amount" value="tables\resource_table">
@@ -126,7 +129,7 @@
 												<float name="command" value="0" />
 												<float name="fuel" value="12" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="36" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
@@ -134,11 +137,11 @@
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="self" />
-									<uniqueid name="id" value="1073796395" />
+									<uniqueid name="id" value="1073801921" />
 								</template_reference>
 								<template_reference name="action" value="action\animator_set_event">
 									<string name="event_name" value="death_wreck" />
-									<uniqueid name="id" value="1073796396" />
+									<uniqueid name="id" value="1073801922" />
 								</template_reference>
 								<template_reference name="action" value="action\make_dead">
 									<enum name="death_intensity" value="death_intensity_low" />
@@ -146,14 +149,14 @@
 									<bool name="destroy" value="True" />
 									<list name="death_reaction_table">
 									</list>
-									<uniqueid name="id" value="1073796397" />
+									<uniqueid name="id" value="1073801923" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073796398" />
+							<uniqueid name="id" value="1073801924" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796399" />
+					<uniqueid name="id" value="1073801925" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -164,7 +167,7 @@
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="True" />
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
@@ -215,7 +218,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="14" />
+							<float name="delay" value="6" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="True" />
 							<bool name="randomize" value="False" />
@@ -232,30 +235,30 @@
 												<float name="command" value="0" />
 												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="15" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
 											</template_reference>
 											<bool name="modify_per_second" value="False" />
 											<bool name="ignore_resource_cap" value="False" />
-											<uniqueid name="id" value="1073796400" />
+											<uniqueid name="id" value="1073801926" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073796401" />
+									<uniqueid name="id" value="1073801927" />
 								</template_reference>
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
 										<template_reference name="action" value="action\kicker_resource_action">
-											<uniqueid name="id" value="1073796402" />
+											<uniqueid name="id" value="1073801928" />
 											<bool name="check_fow" value="False" />
 											<bool name="team_only" value="True" />
 											<template_reference name="amount" value="tables\resource_table">
 												<float name="action" value="0" />
 												<float name="command" value="0" />
-												<float name="fuel" value="8" />
+												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="23" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
@@ -263,7 +266,7 @@
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="self" />
-									<uniqueid name="id" value="1073796403" />
+									<uniqueid name="id" value="1073801929" />
 								</template_reference>
 								<template_reference name="action" value="action\make_dead">
 									<enum name="death_intensity" value="death_intensity_low" />
@@ -275,14 +278,14 @@
 											<float name="weight" value="1" />
 										</group>
 									</list>
-									<uniqueid name="id" value="1073796404" />
+									<uniqueid name="id" value="1073801930" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073796405" />
+							<uniqueid name="id" value="1073801931" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796406" />
+					<uniqueid name="id" value="1073801932" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -329,7 +332,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="14" />
+							<float name="delay" value="6" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="True" />
 							<bool name="randomize" value="False" />
@@ -346,30 +349,30 @@
 												<float name="command" value="0" />
 												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="15" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
 											</template_reference>
 											<bool name="modify_per_second" value="False" />
 											<bool name="ignore_resource_cap" value="False" />
-											<uniqueid name="id" value="1073796407" />
+											<uniqueid name="id" value="1073801933" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073796408" />
+									<uniqueid name="id" value="1073801934" />
 								</template_reference>
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
 										<template_reference name="action" value="action\kicker_resource_action">
-											<uniqueid name="id" value="1073796409" />
+											<uniqueid name="id" value="1073801935" />
 											<bool name="check_fow" value="False" />
 											<bool name="team_only" value="True" />
 											<template_reference name="amount" value="tables\resource_table">
 												<float name="action" value="0" />
 												<float name="command" value="0" />
-												<float name="fuel" value="8" />
+												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="23" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
@@ -377,11 +380,11 @@
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="self" />
-									<uniqueid name="id" value="1073796410" />
+									<uniqueid name="id" value="1073801936" />
 								</template_reference>
 								<template_reference name="action" value="action\animator_set_event">
 									<string name="event_name" value="death_wreck" />
-									<uniqueid name="id" value="1073796411" />
+									<uniqueid name="id" value="1073801937" />
 								</template_reference>
 								<template_reference name="action" value="action\make_dead">
 									<enum name="death_intensity" value="death_intensity_low" />
@@ -389,14 +392,14 @@
 									<bool name="destroy" value="True" />
 									<list name="death_reaction_table">
 									</list>
-									<uniqueid name="id" value="1073796412" />
+									<uniqueid name="id" value="1073801938" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073796413" />
+							<uniqueid name="id" value="1073801939" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796414" />
+					<uniqueid name="id" value="1073801940" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -407,7 +410,7 @@
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
 					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
+					<bool name="kill_action_on_failed_requirements" value="True" />
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
@@ -443,7 +446,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="10" />
+							<float name="delay" value="6" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="True" />
 							<bool name="randomize" value="False" />
@@ -460,30 +463,30 @@
 												<float name="command" value="0" />
 												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="15" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
 											</template_reference>
 											<bool name="modify_per_second" value="False" />
 											<bool name="ignore_resource_cap" value="False" />
-											<uniqueid name="id" value="1073796415" />
+											<uniqueid name="id" value="1073801941" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073796416" />
+									<uniqueid name="id" value="1073801942" />
 								</template_reference>
 								<template_reference name="action" value="action\change_target_action">
 									<list name="actions">
 										<template_reference name="action" value="action\kicker_resource_action">
-											<uniqueid name="id" value="1073796417" />
+											<uniqueid name="id" value="1073801943" />
 											<bool name="check_fow" value="False" />
 											<bool name="team_only" value="True" />
 											<template_reference name="amount" value="tables\resource_table">
 												<float name="action" value="0" />
 												<float name="command" value="0" />
-												<float name="fuel" value="8" />
+												<float name="fuel" value="5" />
 												<float name="manpower" value="0" />
-												<float name="munition" value="23" />
+												<float name="munition" value="0" />
 												<float name="soviet_progression" value="0" />
 												<float name="soviet_227" value="0" />
 												<float name="popcap" value="0" />
@@ -491,11 +494,11 @@
 										</template_reference>
 									</list>
 									<enum name="change_target_type" value="self" />
-									<uniqueid name="id" value="1073796418" />
+									<uniqueid name="id" value="1073801944" />
 								</template_reference>
 								<template_reference name="action" value="action\animator_set_event">
 									<string name="event_name" value="death_wreck" />
-									<uniqueid name="id" value="1073796419" />
+									<uniqueid name="id" value="1073801945" />
 								</template_reference>
 								<template_reference name="action" value="action\make_dead">
 									<enum name="death_intensity" value="death_intensity_low" />
@@ -507,14 +510,14 @@
 											<float name="weight" value="1" />
 										</group>
 									</list>
-									<uniqueid name="id" value="1073796420" />
+									<uniqueid name="id" value="1073801946" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073796421" />
+							<uniqueid name="id" value="1073801947" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073796422" />
+					<uniqueid name="id" value="1073801948" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -526,7 +529,7 @@
 		<enum name="activation" value="targeted" />
 		<bool name="can_interrupt" value="True" />
 		<bool name="can_target_in_fow" value="True" />
-		<float name="caster_close_in_distance" value="1" />
+		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="True" />
 		<group name="cost">
 			<float name="action" value="0" />
@@ -539,48 +542,52 @@
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="True" />
-		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="15" />
+		<bool name="disable_when_active" value="False" />
+		<float name="duration_time" value="7" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
-		<bool name="engage_combat" value="True" />
-		<float name="entity_busy_time" value="10" />
+		<bool name="engage_combat" value="False" />
+		<float name="entity_busy_time" value="0" />
 		<float name="facing_angle" value="5" />
 		<bool name="facing_ignore" value="False" />
-		<float name="final_close_in_distance" value="2" />
+		<float name="final_close_in_distance" value="0" />
 		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="True" />
 		<float name="initial_delay_time" value="0" />
 		<bool name="initial_recharge" value="False" />
-		<bool name="is_default_action" value="False" />
+		<bool name="is_default_action" value="True" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="3.5" />
+		<float name="range" value="5" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
-		<bool name="shared_timer_player_wide" value="False" />
+		<bool name="shared_timer_player_wide" value="True" />
 		<group name="speech_code_2">
-			<string name="code_1" value="cw" />
+			<string name="code_1" value="" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="sal" />
+			<string name="code_1" value="ssv" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
-		<enum name="squad_caster" value="squad" />
-		<enum name="target" value="tp_entity" />
+		<enum name="squad_caster" value="all_entities" />
+		<enum name="target" value="tp_entity_and_squad_entity" />
 		<group name="target_special_validation">
-			<template_reference name="target_special_validation" value="type_ability_target_type\has_all_in_list">
+			<template_reference name="target_special_validation" value="type_ability_target_type\has_any_in_list">
 				<list name="target_infos">
-					<template_reference name="info" value="type_ability_target_type\has_any_in_list">
+					<template_reference name="info" value="type_ability_target_type\has_all_in_list">
 						<list name="target_infos">
-							<template_reference name="info" value="type_ability_target_type\enemy">
+							<template_reference name="info" value="type_ability_target_type\not">
+								<group name="target_info">
+									<template_reference name="target_info" value="type_ability_target_type\enemy">
+									</template_reference>
+								</group>
 							</template_reference>
 							<template_reference name="info" value="type_ability_target_type\not">
 								<group name="target_info">
@@ -601,16 +608,16 @@
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
 			<string name="cursor_good" value="modal_ability" />
-			<string name="cursor_nonmodal_good" value="" />
+			<string name="cursor_nonmodal_good" value="nonmodal_repair" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="3900" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3899" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="O" />
-			<icon name="icon_name" value="Icons_commander_cmdr_west_german_thorough_salvage" />
+			<locstring name="extra_text" value="4805" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="11094985" />
+			<string name="hotkey_name" value="X" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_salvage" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11072284" />
+			<locstring name="screen_name" value="4806" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -618,16 +625,43 @@
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
-		<bool name="validate_actions" value="False" />
+		<bool name="validate_actions" value="True" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11074362" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_in_state">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="garrisoned" value="False" />
+						<bool name="healed" value="False" />
+						<float name="in_combat_since" value="-1" />
+						<bool name="injured" value="False" />
+						<bool name="leader" value="False" />
+						<bool name="not_moving" value="False" />
+						<bool name="not_retreating" value="False" />
+						<bool name="pinned" value="True" />
+						<bool name="suppressed" value="False" />
+						<bool name="camouflaged" value="False" />
+					</template_reference>
+				</list>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="False" />
+				<bool name="is_present" value="True" />
+				<instance_reference name="upgrade_name" value="upgrade\british\items\sapper_flamethrower" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="31" />
+		<int name="ui_position" value="33" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
+		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_reticule" value="" />
 		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="1" />
@@ -637,13 +671,13 @@
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
-		<enum name="ui_combine_type" value="intersection" />
-		<enum name="ui_group_cast_type" value="single" />
+		<enum name="ui_combine_type" value="union" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
 			<bool name="map_sector" value="False" />
 			<bool name="map_sector_hq_link_extender" value="False" />
 		</enum_table>
+		<enum name="ui_group_cast_type" value="single" />
 		<list name="requirements_target">
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
@@ -656,5 +690,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742634" />
+	<uniqueid name="pbgid" value="1073742784" />
 </instance>

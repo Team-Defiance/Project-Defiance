@@ -200,6 +200,13 @@
 				<bool name="check_team" value="False" />
 				<bool name="require_construction_complete" value="True" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="False" />
+				<bool name="is_present" value="True" />
+				<instance_reference name="upgrade_name" value="upgrade\british\items\sapper_flamethrower" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="33" />
