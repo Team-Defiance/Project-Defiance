@@ -19,26 +19,8 @@
 							<float name="value" value="0.25" />
 							<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 						</template_reference>
-						<template_reference name="modifier" value="modifiers\weapon_burst_length_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="1.25" />
-							<instance_reference name="tooltip" value="modifier_tooltip\weapon_burst_length_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.875" />
-							<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
-						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797543" />
+					<uniqueid name="id" value="1073802005" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -68,20 +50,20 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">
+								<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="0.01" />
-									<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="0.6" />
+									<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073797544" />
+							<uniqueid name="id" value="1073801997" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797545" />
+					<uniqueid name="id" value="1073801998" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -94,7 +76,7 @@
 					<bool name="retrigger" value="True" />
 					<string name="state_machine_name" value="ability_attack_buff_state" />
 					<string name="undo_action_state_name" value="off" />
-					<uniqueid name="id" value="1073797546" />
+					<uniqueid name="id" value="1073801999" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="True" />
@@ -133,14 +115,14 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073797547" />
+									<uniqueid name="id" value="1073802000" />
 								</template_reference>
 							</list>
 							<enum name="change_target_type" value="entities" />
-							<uniqueid name="id" value="1073797548" />
+							<uniqueid name="id" value="1073802001" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073797549" />
+					<uniqueid name="id" value="1073802002" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -150,16 +132,16 @@
 				<template_reference name="action" value="action\ui_unit_modifier_action">
 					<bool name="die_with_creator" value="True" />
 					<template_reference name="ui_info" value="tables\ui_info">
-						<locstring name="screen_name" value="11053500" />
-						<locstring name="help_text" value="11053501" />
-						<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
+						<locstring name="screen_name" value="4845" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="4844" mod="84428889d71d41a48e2eff09c2425d54" />
+						<icon name="icon_name" value="Icons_abilities_ability_british_tulip_rocket_strike" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
-					<uniqueid name="id" value="1073797550" />
+					<uniqueid name="id" value="1073802003" />
 				</template_reference>
 				<template_reference name="action" value="action\kicker_message_action">
 					<float name="loop_interval" value="0" />
-					<locstring name="message" value="4241" mod="84428889d71d41a48e2eff09c2425d54" />
+					<locstring name="message" value="4846" mod="84428889d71d41a48e2eff09c2425d54" />
 					<float name="message_colour_a" value="255" />
 					<float name="message_colour_b" value="255" />
 					<float name="message_colour_g" value="255" />
@@ -167,7 +149,7 @@
 					<float name="message_duration" value="5" />
 					<bool name="team_only" value="False" />
 					<bool name="check_fow" value="False" />
-					<uniqueid name="id" value="1073797551" />
+					<uniqueid name="id" value="1073802004" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -237,13 +219,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="3636" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3635" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4843" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4841" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
-			<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
+			<icon name="icon_name" value="Icons_abilities_ability_british_tulip_rocket_strike" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="3634" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="4842" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -291,7 +273,7 @@
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="False" />
+				<bool name="is_present" value="True" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\items\rear_echelon_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
@@ -328,5 +310,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742571" />
+	<uniqueid name="pbgid" value="1073742787" />
 </instance>
