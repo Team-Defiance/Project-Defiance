@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="7.5" />
+				<float name="radius" value="5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.075" />
@@ -56,7 +56,7 @@
 				<float name="mid" value="0.075" />
 			</group>
 			<group name="distance">
-				<float name="far" value="5" />
+				<float name="far" value="3.75" />
 				<float name="near" value="1.25" />
 				<float name="mid" value="2.5" />
 			</group>
@@ -407,7 +407,7 @@
 			<instance_reference name="projectile" value="ebps\projectile\152mm_rp3_left_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
-			<float name="max" value="70" />
+			<float name="max" value="75" />
 			<float name="min" value="0" />
 			<group name="distance">
 				<float name="near" value="5" />
