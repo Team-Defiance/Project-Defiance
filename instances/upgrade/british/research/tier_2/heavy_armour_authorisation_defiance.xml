@@ -58,6 +58,30 @@
 				</list>
 				<uniqueid name="id" value="1073797582" />
 			</template_reference>
+			<template_reference name="action" value="action\player_target_action">
+				<bool name="allies" value="False" />
+				<bool name="enemies" value="False" />
+				<bool name="neutral" value="False" />
+				<bool name="self" value="True" />
+				<list name="subactions">
+					<template_reference name="action" value="action\modify_resources">
+						<template_reference name="resource_to_modify" value="tables\resource_table">
+							<float name="action" value="750" />
+							<float name="command" value="0" />
+							<float name="fuel" value="0" />
+							<float name="manpower" value="0" />
+							<float name="munition" value="0" />
+							<float name="soviet_progression" value="0" />
+							<float name="soviet_227" value="0" />
+							<float name="popcap" value="0" />
+						</template_reference>
+						<bool name="modify_per_second" value="False" />
+						<bool name="ignore_resource_cap" value="False" />
+						<uniqueid name="id" value="1073802008" />
+					</template_reference>
+				</list>
+				<uniqueid name="id" value="1073802009" />
+			</template_reference>
 		</list>
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_player_upgrade">
