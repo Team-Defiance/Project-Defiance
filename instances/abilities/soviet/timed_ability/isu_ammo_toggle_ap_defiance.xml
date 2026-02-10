@@ -129,23 +129,10 @@
 				<locstring name="ui_name" value="11071180" />
 				<enum name="reason" value="usage" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
+			<template_reference name="required" value="requirements\required_weapon_hardpoint">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11070979" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_critical">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun" />
-						<bool name="is_present" value="False" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_critical">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="critical_name" value="critical\vehicle_destroy_maingun_ramming" />
-						<bool name="is_present" value="False" />
-					</template_reference>
-				</list>
+				<locstring name="ui_name" value="3157" mod="84428889d71d41a48e2eff09c2425d54" />
+				<string name="hardpoint_name" value="hardpoint_01" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
