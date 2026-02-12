@@ -230,7 +230,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
-							<float name="number_of_experience_points" value="-780" />
+							<float name="number_of_experience_points" value="-540" />
 							<uniqueid name="id" value="1073793520" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
@@ -240,7 +240,7 @@
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
 								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="780" />
+									<float name="number_of_experience_points" value="540" />
 									<uniqueid name="id" value="1073793521" />
 								</template_reference>
 							</list>
@@ -708,6 +708,12 @@
 			<float name="capture_distance" value="5" />
 			<float name="capture_rate_multiplier" value="0" />
 			<float name="revert_rate_multiplier" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_shared_veterancy_ext">
+			<float name="multiplier_pct_self" value="1" />
+			<float name="multiplier_pct_share" value="0.25" />
+			<float name="radius" value="35" />
+			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741935" />

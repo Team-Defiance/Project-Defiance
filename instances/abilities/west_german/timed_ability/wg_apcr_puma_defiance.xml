@@ -8,7 +8,7 @@
 					<uniqueid name="id" value="1073752912" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="4.3" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -33,7 +33,7 @@
 					<uniqueid name="id" value="1073752915" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="4" />
+					<float name="duration" value="4.3" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -49,7 +49,7 @@
 					<uniqueid name="id" value="1073752916" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="4" />
+					<float name="delay" value="4.3" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="True" />
 					<bool name="randomize" value="False" />
@@ -103,7 +103,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="30" />
+		<float name="duration_time" value="40" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -121,7 +121,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="45" />
+		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="okw_elite_armor_ability_group" />
@@ -189,6 +189,21 @@
 					<float name="soviet_progression" value="0" />
 					<float name="soviet_227" value="0" />
 				</template_reference>
+			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="1816" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

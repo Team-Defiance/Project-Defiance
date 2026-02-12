@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11007360" />
 						<bool name="has_speech_code" value="False" />
-						<locstring name="help_text" value="11097762" />
+						<locstring name="help_text" value="4795" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_m5_halftrack" />
 						<bool name="minimap_team_only" value="False" />
@@ -809,6 +809,12 @@
 			<float name="capture_distance" value="5" />
 			<float name="capture_rate_multiplier" value="0" />
 			<float name="revert_rate_multiplier" value="0" />
+		</template_reference>
+		<template_reference name="squadexts" value="sbpextensions\squad_shared_veterancy_ext">
+			<float name="multiplier_pct_self" value="1" />
+			<float name="multiplier_pct_share" value="0.25" />
+			<float name="radius" value="35" />
+			<enum name="shared_veterancy_type" value="tp_commonwealth_infantry" />
 		</template_reference>
 	</list>
 	<uniqueid name="pbgid" value="1073741907" />

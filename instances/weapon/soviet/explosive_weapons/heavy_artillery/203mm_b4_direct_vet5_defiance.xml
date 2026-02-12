@@ -57,7 +57,7 @@
 			</group>
 			<group name="distance">
 				<float name="far" value="11" />
-				<float name="near" value="0.4" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="4.5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
@@ -80,10 +80,10 @@
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="0.5" />
-				<float name="far" value="0.005" />
+				<float name="mid" value="0.05" />
+				<float name="far" value="0.0005" />
 			</group>
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
@@ -296,7 +296,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_shell_shocked" />
+							<instance_reference name="critical" value="critical\vehicle_crew_stunned_2_5sec" />
 							<uniqueid name="id" value="1073800514" />
 						</template_reference>
 					</list>
@@ -407,7 +407,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.7" />
+			<float name="deflection_damage_multiplier" value="0.75" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>

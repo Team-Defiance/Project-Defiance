@@ -2,6 +2,18 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\british\items\avre_mortar_reload" />
+							<uniqueid name="id" value="1073801608" />
+						</template_reference>
+					</list>
+					<enum name="change_target_type" value="entities" />
+					<uniqueid name="id" value="1073801609" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -27,17 +39,18 @@
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
-				<template_reference name="action" value="action\artillery_attack">
-					<bool name="disable_parent_hardpoint" value="False" />
-					<group name="filter_weapons">
-						<instance_reference name="weapon_01" value="" />
-						<instance_reference name="weapon_02" value="" />
-						<instance_reference name="weapon_03" value="" />
+				<template_reference name="action" value="action\use_accessory_weapon">
+					<instance_reference name="accessory_weapon_item" value="slot_item\british\ballistic\avre_spigot_mortar_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="decrement_accessory_item" value="" />
+					<bool name="entity_target_only" value="False" />
+					<bool name="force_squad_to_target" value="False" />
+					<bool name="no_decrement" value="True" />
+					<float name="number_of_shots" value="1" />
+					<group name="target_info">
+						<template_reference name="target_info" value="type_ability_target_type\all">
+						</template_reference>
 					</group>
-					<float name="num_salvo" value="1" />
-					<float name="use_hardpoint" value="2" />
-					<bool name="face_to_target" value="False" />
-					<uniqueid name="id" value="1073756943" />
+					<uniqueid name="id" value="1073801607" />
 					<bool name="target_override_direction_times_max_range" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -87,7 +100,7 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="150" />
+		<float name="range" value="30" />
 		<bool name="range_ignore" value="False" />
 		<float name="recharge_time" value="50" comment="There is an upgrade given in the end self actions that has a delayed action in it that needs to match the ability recharge time." />
 		<bool name="refundable" value="True" />
@@ -176,9 +189,9 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_katyusha" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_kaytusha_rocket" />
-		<float name="ui_reticule_radius_min" value="10" />
-		<float name="ui_reticule_radius_max" value="12" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
+		<float name="ui_reticule_radius_min" value="13" />
+		<float name="ui_reticule_radius_max" value="13" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

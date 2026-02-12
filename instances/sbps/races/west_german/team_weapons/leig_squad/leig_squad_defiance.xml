@@ -528,7 +528,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
-							<float name="number_of_experience_points" value="-560" />
+							<float name="number_of_experience_points" value="-600" />
 							<uniqueid name="id" value="1073754618" />
 						</template_reference>
 						<template_reference name="action" value="action\delay">
@@ -538,7 +538,7 @@
 							<bool name="randomize" value="False" />
 							<list name="delayed_actions">
 								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="560" />
+									<float name="number_of_experience_points" value="600" />
 									<uniqueid name="id" value="1073754619" />
 								</template_reference>
 							</list>
@@ -845,7 +845,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -854,7 +854,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.75" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073748211" />
@@ -906,7 +906,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -915,7 +915,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -924,7 +924,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 													<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 														<enum name="application_type" value="apply_to_ability" />
@@ -933,7 +933,7 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="0.8" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073748215" />
@@ -982,7 +982,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
@@ -991,7 +991,7 @@
 														<enum name="application_type" value="apply_to_ability" />
 														<bool name="exclusive" value="False" />
 														<string name="modifier_id" value="" />
-														<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+														<instance_reference name="target_type_name" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_smoke_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 														<enum name="usage_type" value="addition" />
 														<float name="value" value="10" />
 														<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />

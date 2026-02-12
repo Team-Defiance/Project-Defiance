@@ -25,6 +25,7 @@
 				<instance_reference name="ability" value="abilities\west_german\toggle_ability\tiger_spec_ops_spearhead_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\passives_ui\okw_combined_arms_passive_tiger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\west_german\toggle_ability\hull_down_tiger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\ea_coordinated_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -388,7 +389,7 @@
 					<uniqueid name="id" value="1073755531" />
 				</template_reference>
 			</list>
-			<float name="armor" value="230" />
+			<float name="armor" value="240" />
 			<float name="rear_armor" value="170" />
 			<float name="target_size" value="23.5" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -1171,6 +1172,16 @@
 								<string name="sync_action_name" value="Attach_Gunner" />
 								<bool name="sync_on_create" value="True" />
 								<string name="abandon_event_name" value="abandon_turret" />
+								<string name="animator_bp_female" value="" />
+							</group>
+							<group name="role">
+								<string name="animator_bp" value="armies\west_german\soldiers\brigadefuhrer\brigadefuhrer" />
+								<string name="death_event_name" value="Death_Crew" />
+								<string name="desync_action_name" value="Detach_Skeleton" />
+								<string name="role_name" value="Spotter" />
+								<string name="sync_action_name" value="Attach_Spotter" />
+								<bool name="sync_on_create" value="True" />
+								<string name="abandon_event_name" value="abandon_gunner" />
 								<string name="animator_bp_female" value="" />
 							</group>
 						</list>

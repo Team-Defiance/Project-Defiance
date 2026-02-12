@@ -252,6 +252,30 @@
 					<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_2_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073748022" />
 				</template_reference>
+				<template_reference name="action" value="action\player_target_action">
+					<bool name="allies" value="False" />
+					<bool name="enemies" value="False" />
+					<bool name="neutral" value="False" />
+					<bool name="self" value="True" />
+					<list name="subactions">
+						<template_reference name="action" value="action\modify_resources">
+							<template_reference name="resource_to_modify" value="tables\resource_table">
+								<float name="action" value="25" />
+								<float name="command" value="0" />
+								<float name="fuel" value="0" />
+								<float name="manpower" value="0" />
+								<float name="munition" value="0" />
+								<float name="soviet_progression" value="0" />
+								<float name="soviet_227" value="0" />
+								<float name="popcap" value="0" />
+							</template_reference>
+							<bool name="modify_per_second" value="False" />
+							<bool name="ignore_resource_cap" value="False" />
+							<uniqueid name="id" value="1073802020" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073802021" />
+				</template_reference>
 			</list>
 			<list name="materials">
 				<instance_reference name="material" value="material\ice" />

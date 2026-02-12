@@ -544,7 +544,7 @@
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="mg_phosphorus" />
 		<string name="fx_tracer_name" value="fx_ptrs41_tracer" />
-		<float name="fx_tracer_speed" value="0" />
+		<float name="fx_tracer_speed" value="90" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
@@ -583,7 +583,7 @@
 			<float name="max" value="50" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="10" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>

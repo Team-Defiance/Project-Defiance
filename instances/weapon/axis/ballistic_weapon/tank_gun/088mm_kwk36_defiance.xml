@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
+			<float name="near" value="0.065" />
 			<float name="far" value="0.035" />
-			<float name="mid" value="0.0525" />
+			<float name="mid" value="0.05" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -43,20 +43,20 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="4.2" />
+				<float name="radius" value="4.5" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.1" />
 				<float name="near" value="0.75" />
-				<float name="mid" value="0.3" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.05" />
 				<float name="near" value="0.375" />
-				<float name="mid" value="0.15" />
+				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
-				<float name="far" value="3.375" />
+				<float name="far" value="4" />
 				<float name="near" value="0.1" />
 				<float name="mid" value="1" />
 			</group>
@@ -83,7 +83,7 @@
 				<float name="mid" value="0.15" />
 				<float name="far" value="0.001" />
 			</group>
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_shell" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.2" />
-				<float name="min" value="6" />
+				<float name="max" value="6.3" />
+				<float name="min" value="5.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="4.6" />
+			<float name="distance_scatter_max" value="5.4" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />

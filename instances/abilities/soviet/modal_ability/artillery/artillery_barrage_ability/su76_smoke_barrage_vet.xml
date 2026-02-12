@@ -173,6 +173,21 @@
 				<locstring name="ui_name" value="0" />
 				<float name="veterancy_rank" value="4" />
 			</template_reference>
+			<template_reference name="required" value="requirements\required_not">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="1816" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirement_table">
+					<template_reference name="required" value="requirements\required_slot_item">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="check_item_on_entity" value="True" />
+						<bool name="display_requirement" value="True" />
+						<float name="max_owned" value="10" />
+						<float name="min_owned" value="1" />
+						<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
+					</template_reference>
+				</list>
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="32" />

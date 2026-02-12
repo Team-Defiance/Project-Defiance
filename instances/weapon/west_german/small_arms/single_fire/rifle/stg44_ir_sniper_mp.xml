@@ -522,12 +522,12 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="fx_g34_sniperfire_target" />
+		<string name="fx_action_target_name" value="mp44_infrared_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="sniper" />
-		<string name="fx_tracer_name" value="fx_g34_sniperfire_tracer" />
+		<string name="fx_tracer_name" value="mp44_infrared_tracer" />
 		<float name="fx_tracer_speed" value="65" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
@@ -567,7 +567,7 @@
 			<float name="max" value="50" />
 			<float name="min" value="0" />
 			<group name="distance">
-				<float name="near" value="10" />
+				<float name="near" value="5" />
 				<float name="far" value="-1" />
 				<float name="mid" value="-1" />
 			</group>
@@ -660,9 +660,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\range_sniper" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="1" />
+			<float name="near" value="1.35" />
 			<float name="far" value="1" />
-			<float name="mid" value="1" />
+			<float name="mid" value="1.1" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

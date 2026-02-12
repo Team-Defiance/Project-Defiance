@@ -279,7 +279,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\modify_resources">
 							<template_reference name="resource_to_modify" value="tables\resource_table">
-								<float name="action" value="425" />
+								<float name="action" value="250" />
 								<float name="command" value="0" />
 								<float name="fuel" value="0" />
 								<float name="manpower" value="0" />
@@ -461,7 +461,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="-1" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\british\forward_assembly\ml_3_inch_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\british\doctrines\royal_engineer\81mm_mortar_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 				<group name="spawn_item">
@@ -481,7 +481,7 @@
 			<bool name="must_be_in_supply" value="False" />
 			<float name="number_of_standard_slots" value="-1" />
 			<list name="standard_upgrades">
-				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\weapon_racks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\bolster_squads_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\british\research\tier_1\platoon_aec_research" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>

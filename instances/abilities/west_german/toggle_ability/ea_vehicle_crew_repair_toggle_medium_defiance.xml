@@ -31,7 +31,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\heal_action">
-							<float name="amount" value="7" />
+							<float name="amount" value="10" />
 							<group name="target_info">
 								<template_reference name="target_info" value="type_ability_target_type\all">
 								</template_reference>
@@ -55,7 +55,7 @@
 					<bool name="die_with_creator" value="True" />
 					<template_reference name="ui_info" value="tables\ui_info">
 						<locstring name="screen_name" value="3744" mod="84428889d71d41a48e2eff09c2425d54" />
-						<locstring name="help_text" value="3745" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="3389" mod="84428889d71d41a48e2eff09c2425d54" />
 						<icon name="icon_name" value="Icons_abilities_ability_british_engine_critical_self_repair" />
 						<string name="hotkey_name" value="" />
 					</template_reference>
@@ -136,6 +136,15 @@
 							<float name="value" value="-1" />
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_entity" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="0.75" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073795611" />
 				</template_reference>
@@ -157,7 +166,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="20" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -211,8 +220,8 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="3734" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="3733" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4771" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4762" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="V" />
 			<icon name="icon_name" value="Icons_abilities_ability_british_engine_critical_self_repair" />
 			<string name="overlay_name" value="" />

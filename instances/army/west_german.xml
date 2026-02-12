@@ -135,7 +135,7 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\06_sturmtiger_pe_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\urban_assault\urban_assault_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\01_breakthrough_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\02_vehicle_crew_repair" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\02_elite_vehicle_crew" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\03_vehicle_speed_passive" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\04_special_shells" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\elite_armor\05_breakthrough_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -149,6 +149,7 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\05_wg_lefh_emplacement" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\06_zeroing_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\fortifications_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\jagdtiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">

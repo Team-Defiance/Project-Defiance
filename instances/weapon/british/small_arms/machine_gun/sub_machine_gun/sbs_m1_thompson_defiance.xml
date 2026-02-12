@@ -17,7 +17,7 @@
 				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
-				<float name="near" value="0.375" />
+				<float name="near" value="0.25" />
 				<float name="far" value="2" />
 				<float name="mid" value="1" />
 			</group>
@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="0.65" />
-				<float name="min" value="0.45" />
+				<float name="max" value="0.7" />
+				<float name="min" value="0.5" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.025" />
@@ -135,8 +135,8 @@
 				</group>
 			</group>
 			<group name="rate_of_fire">
-				<float name="max" value="11.5" />
-				<float name="min" value="11.5" />
+				<float name="max" value="12" />
+				<float name="min" value="12" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="1" />
@@ -307,9 +307,9 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.6" />
-			<float name="burst_multiplier" value="0.375" />
-			<float name="cooldown_multiplier" value="0.25" />
+			<float name="accuracy_multiplier" value="0.7" />
+			<float name="burst_multiplier" value="0.4" />
+			<float name="cooldown_multiplier" value="0.4" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -348,7 +348,7 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="3.7" />
+				<float name="max" value="3.4" />
 				<float name="min" value="2.9" />
 			</group>
 			<group name="duration_multiplier">

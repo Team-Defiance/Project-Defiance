@@ -82,7 +82,7 @@
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\grandslam_signal_smoke" />
+					<string name="dca_action_name" value="UI\paradrop_warning_smoke" />
 					<float name="duration" value="5" />
 					<bool name="is_terrain_only" value="True" />
 					<uniqueid name="id" value="1073793915" />

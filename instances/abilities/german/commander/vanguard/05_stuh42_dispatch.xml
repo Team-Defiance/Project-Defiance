@@ -8,26 +8,48 @@
 			<list name="start_self_actions">
 			</list>
 			<list name="start_target_actions">
+				<template_reference name="action" value="action\reinforcements_action">
+					<bool name="allow_building_spawn" value="False" />
+					<float name="minimum_pop_used" value="13" />
+					<float name="points_total" value="0" />
+					<bool name="spawn_random_squads" value="False" />
+					<list name="entity_table">
+					</list>
+					<list name="squad_table">
+						<instance_reference name="squad" value="sbps\races\german\doctrine\vanguard\stuh\stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
+					</list>
+					<bool name="use_attack_move" value="False" />
+					<uniqueid name="id" value="1073801508" />
+					<bool name="ignore_requirements" value="False" />
+				</template_reference>
+				<template_reference name="action" value="action\game_event_action">
+					<float name="event_extra_param" value="0" />
+					<float name="event_param_begin" value="1" />
+					<float name="event_param_end" value="-1" />
+					<enum name="event_type" value="flag_drop" />
+					<bool name="event_send_to_target_player" value="False" />
+					<uniqueid name="id" value="1073801509" />
+				</template_reference>
 			</list>
 		</group>
-		<enum name="activation" value="toggle" />
+		<enum name="activation" value="targeted" />
 		<bool name="can_interrupt" value="False" />
-		<bool name="can_target_in_fow" value="False" />
+		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="0" />
-			<float name="manpower" value="0" />
+			<float name="fuel" value="135" />
+			<float name="manpower" value="390" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="True" />
-		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="0" />
+		<bool name="disable_combat" value="False" />
+		<bool name="disable_when_active" value="False" />
+		<float name="duration_time" value="-1" />
 		<bool name="enable_in_building" value="False" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -45,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="85" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="120" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -56,12 +78,12 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="105" />
+			<string name="code_1" value="ste" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
-		<enum name="squad_caster" value="squad" />
-		<enum name="target" value="tp_any" />
+		<enum name="squad_caster" value="one_entity" />
+		<enum name="target" value="tp_position" />
 		<group name="target_special_validation">
 			<template_reference name="target_special_validation" value="type_ability_target_type\all">
 			</template_reference>
@@ -74,13 +96,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11048154" />
-			<locstring name="help_text" value="11048155" />
+			<locstring name="extra_text" value="4741" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4740" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_vehicles_vehicle_german_howitzer" />
+			<icon name="icon_name" value="Icons_vehicles_vehicle_german_stug_iii_e" />
 			<string name="overlay_name" value="" />
-			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11048153" />
+			<bool name="reveal_for_decryption" value="True" />
+			<locstring name="screen_name" value="4723" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -92,6 +114,20 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_resource">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4743" mod="84428889d71d41a48e2eff09c2425d54" />
+				<template_reference name="resource" value="tables\resource_table">
+					<float name="action" value="0" />
+					<float name="command" value="5" />
+					<float name="fuel" value="0" />
+					<float name="manpower" value="0" />
+					<float name="munition" value="0" />
+					<float name="popcap" value="0" />
+					<float name="soviet_progression" value="0" />
+					<float name="soviet_227" value="0" />
+				</template_reference>
+			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
@@ -102,16 +138,16 @@
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="4663" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_3_mp" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="50" />
-		<bool name="ui_mini_map_capture" value="False" />
+		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_reticule" value="" />
@@ -140,7 +176,7 @@
 		<list name="requirements_self_recharge">
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
-		<bool name="ability_super_event_cue" value="False" />
+		<bool name="ability_super_event_cue" value="True" />
 	</group>
 	<uniqueid name="pbgid" value="1073742176" />
 </instance>
