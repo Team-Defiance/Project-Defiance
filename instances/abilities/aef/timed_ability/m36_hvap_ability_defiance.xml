@@ -7,28 +7,21 @@
 					<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\090mm_m36_jackson_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073799913" />
 				</template_reference>
-				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="6.4" />
-					<bool name="fire_and_forget" value="True" />
-					<list name="subactions">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-									<enum name="application_type" value="apply_to_weapon" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="hardpoint_01" />
-									<enum name="usage_type" value="enable" />
-									<float name="value" value="-1" />
-									<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073799914" />
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="7.2" />
+					<bool name="permanent" value="False" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
+							<enum name="application_type" value="apply_to_weapon" />
+							<bool name="exclusive" value="False" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="hardpoint_01" />
+							<enum name="usage_type" value="enable" />
+							<float name="value" value="-1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073799915" />
+					<uniqueid name="id" value="1073801655" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -40,7 +33,7 @@
 					<uniqueid name="id" value="1073799916" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="6.4" />
+					<float name="duration" value="7.2" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -56,7 +49,7 @@
 					<uniqueid name="id" value="1073799917" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="6.4" />
+					<float name="delay" value="7.2" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="True" />
 					<bool name="randomize" value="False" />
@@ -110,7 +103,7 @@
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
-		<float name="duration_time" value="30" />
+		<float name="duration_time" value="40" />
 		<bool name="enable_in_building" value="True" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -128,7 +121,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="45" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

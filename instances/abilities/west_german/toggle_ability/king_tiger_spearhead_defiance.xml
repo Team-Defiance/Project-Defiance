@@ -57,8 +57,8 @@
 					<uniqueid name="id" value="1073793451" />
 				</template_reference>
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="4" />
-					<float name="delay_min" value="4" />
+					<float name="delay" value="3" />
+					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
 					<list name="delayed_actions">
@@ -72,7 +72,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="addition" />
-									<float name="value" value="7.5" />
+									<float name="value" value="5" />
 									<instance_reference name="tooltip" value="modifier_tooltip\sight_radius_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\weapon_suppression_modifier">

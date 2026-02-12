@@ -191,6 +191,30 @@
 					<instance_reference name="upgrade" value="upgrade\german\research\german_equipment_dummy_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073747041" />
 				</template_reference>
+				<template_reference name="action" value="action\player_target_action">
+					<bool name="allies" value="False" />
+					<bool name="enemies" value="False" />
+					<bool name="neutral" value="False" />
+					<bool name="self" value="True" />
+					<list name="subactions">
+						<template_reference name="action" value="action\modify_resources">
+							<template_reference name="resource_to_modify" value="tables\resource_table">
+								<float name="action" value="325" />
+								<float name="command" value="0" />
+								<float name="fuel" value="0" />
+								<float name="manpower" value="0" />
+								<float name="munition" value="0" />
+								<float name="soviet_progression" value="0" />
+								<float name="soviet_227" value="0" />
+								<float name="popcap" value="0" />
+							</template_reference>
+							<bool name="modify_per_second" value="False" />
+							<bool name="ignore_resource_cap" value="False" />
+							<uniqueid name="id" value="1073802028" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073802029" />
+				</template_reference>
 			</list>
 			<list name="materials">
 			</list>
@@ -532,12 +556,6 @@
 					<int name="ui_position" value="13" />
 					<instance_reference name="entity" value="" />
 					<instance_reference name="squad" value="sbps\races\german\vehicles\panzer_iv_squad\panzer_iv_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<bool name="spawn_at_map_entry_point" value="True" />
-				</group>
-				<group name="spawn_item">
-					<int name="ui_position" value="21" />
-					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\unused\stuh_42_assault_gun\stuh_42" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="True" />
 				</group>
 			</list>

@@ -156,7 +156,7 @@
 			<float name="encounter_pos_in_combat_setup_weapon_distance_scale" value="0.1" />
 		</group>
 		<bool name="should_update_threat_map" value="False" />
-		<float name="attack_objective_replan_time" value="3" />
+		<float name="attack_objective_replan_time" value="15" />
 		<group name="combat_ratings">
 			<group name="cover_table">
 				<group name="tp_defcover">
@@ -259,7 +259,7 @@
 			<float name="min_range" value="35" />
 			<float name="vehicle_decrew" value="35" />
 		</enum_table>
-		<float name="combat_task_retargeting_time" value="3" />
+		<float name="combat_task_retargeting_time" value="15" />
 		<bool name="designer_lock_squads_by_default" value="False" />
 	</group>
 	<uniqueid name="pbgid" value="1073741823" />

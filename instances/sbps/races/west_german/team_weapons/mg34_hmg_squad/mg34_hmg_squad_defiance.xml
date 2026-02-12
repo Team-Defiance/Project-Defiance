@@ -13,7 +13,7 @@
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
 						<bool name="minimap_team_only" value="False" />
-						<icon name="minimap_texture" value="" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11066571" />
@@ -41,17 +41,17 @@
 						<bool name="tacmap_team_only" value="False" />
 						<int name="ui_priority" value="39" />
 						<bool name="use_random_entity_speaker" value="False" />
-						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_west_german_hmg_crew_w" />
 						<group name="speaker_specific_alt">
 							<string name="code_1" value="" />
 							<string name="code_2" value="" />
 							<string name="code_3" value="" />
 						</group>
-						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
-						<float name="minimap_texture_scale" value="1" />
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_west_german_hmg_crew_s" />
+						<float name="minimap_texture_scale" value="0.55" />
 						<locstring name="brief_text" value="1068" mod="84428889d71d41a48e2eff09c2425d54" />
 						<locstring name="screen_name_short" value="0" />
-						<enum name="map_rotation_type_override" value="no_override" />
+						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
 						<bool name="show_in_build_log" value="True" />
 						<bool name="speaker_highest_priority" value="False" />

@@ -16,9 +16,11 @@
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
+				<instance_reference name="ability" value="abilities\british\modal_ability\commander_ability\passive_ability\command_vehicle_plane" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\avre_attack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\british\modal_ability\artillery\avre_attack_incendiary_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\british\timed_ability\brit_vehicle_crew_repair_mp" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -29,7 +31,7 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="variant" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073756893" />
+					<uniqueid name="id" value="1073801587" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -38,7 +40,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="160" />
+					<float name="fuel" value="170" />
 					<float name="manpower" value="560" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -50,10 +52,10 @@
 			<bool name="can_repair" value="True" />
 			<bool name="cuttable" value="False" />
 			<string name="death_event_name" value="Death" />
-			<float name="death_seconds" value="1.8" />
+			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="960" />
+			<float name="hitpoints" value="1040" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -76,15 +78,15 @@
 					<float name="offset_scale_x" value="1.5" />
 					<float name="offset_scale_y" value="1.5" />
 					<float name="offset_scale_z" value="1.5" />
-					<uniqueid name="id" value="1073756894" />
+					<uniqueid name="id" value="1073801588" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_Armor_Command_DeSpawn_LMG_Rack" />
-					<uniqueid name="id" value="1073756895" />
+					<uniqueid name="id" value="1073801589" />
 				</template_reference>
 				<template_reference name="action" value="action\scar_function_call">
 					<string name="function_name" value="AE_Armor_Command_DeSpawn_AT_Rack" />
-					<uniqueid name="id" value="1073756896" />
+					<uniqueid name="id" value="1073801590" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
 					<float name="duration" value="1" />
@@ -116,13 +118,13 @@
 										<template_reference name="action" value="action\upgrade_remove">
 											<bool name="apply_to_entities_in_squad" value="False" />
 											<instance_reference name="upgrade" value="upgrade\british\commander\passive\command_vehicle_active_player" />
-											<uniqueid name="id" value="1073756897" />
+											<uniqueid name="id" value="1073801591" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073756898" />
+									<uniqueid name="id" value="1073801592" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073756899" />
+							<uniqueid name="id" value="1073801593" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -130,7 +132,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756900" />
+					<uniqueid name="id" value="1073801594" />
 				</template_reference>
 			</list>
 			<float name="armor" value="290" />
@@ -250,7 +252,7 @@
 					</list>
 				</group>
 				<group name="critical_group">
-					<float name="max_health_percentage" value="0.25" />
+					<float name="max_health_percentage" value="0.2" />
 					<list name="critical_info">
 						<group name="info">
 							<float name="weight" value="90" />
@@ -393,7 +395,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="17" />
+			<float name="personnel_pop" value="18" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -403,7 +405,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -498,7 +500,7 @@
 			<float name="minimap_icon_scale" value="1" />
 			<icon name="portrait_icon_summer" value="Icons_portraits_vehicle_british_churchill_avre_s_portrait" />
 			<locstring name="brief_text" value="0" />
-			<locstring name="extra_text" value="0" />
+			<locstring name="extra_text" value="11077619" />
 			<locstring name="screen_name_short" value="0" />
 			<bool name="show_in_build_log" value="True" />
 			<bool name="show_entity_appearance" value="True" />
@@ -550,10 +552,10 @@
 								<float name="z" value="0.1" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_avre_coax" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\churchill_turret_avre_dummy_mp" />
 						</group>
 					</list>
-					<bool name="receives_attack_commands" value="True" />
+					<bool name="receives_attack_commands" value="False" />
 				</group>
 				<group name="hardpoint">
 					<float name="parent_hardpoint" value="1" />
@@ -562,7 +564,28 @@
 							<group name="heading">
 								<float name="x" value="0" />
 								<float name="y" value="0" />
-								<float name="z" value="2" />
+								<float name="z" value="1" />
+							</group>
+							<float name="length" value="0" />
+							<group name="origin">
+								<float name="x" value="-0.15" />
+								<float name="y" value="2.45" />
+								<float name="z" value="0.1" />
+							</group>
+							<enum name="type" value="default" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_avre_coax" mod="84428889d71d41a48e2eff09c2425d54" />
+						</group>
+					</list>
+					<bool name="receives_attack_commands" value="False" />
+				</group>
+				<group name="hardpoint">
+					<float name="parent_hardpoint" value="-1" />
+					<list name="weapon_table">
+						<group name="weapon">
+							<group name="heading">
+								<float name="x" value="0" />
+								<float name="y" value="0" />
+								<float name="z" value="4" />
 							</group>
 							<float name="length" value="0" />
 							<group name="origin">
@@ -571,7 +594,7 @@
 								<float name="z" value="2.45" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\british\ballistic_weapon\tank_gun\230mm_avre_mortar" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\british\small_arms\machine_gun\light_machine_gun\besa_churchill_hull_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -635,7 +658,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756901" />
+						<uniqueid name="id" value="1073801595" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.8" />
@@ -653,7 +676,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756902" />
+						<uniqueid name="id" value="1073801596" />
 					</template_reference>
 				</list>
 				<float name="speed_multiplier" value="0.9" />
@@ -672,7 +695,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756903" />
+						<uniqueid name="id" value="1073801597" />
 					</template_reference>
 				</list>
 			</group>
@@ -690,7 +713,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756904" />
+						<uniqueid name="id" value="1073801598" />
 					</template_reference>
 				</list>
 			</group>
@@ -708,7 +731,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756905" />
+						<uniqueid name="id" value="1073801599" />
 					</template_reference>
 				</list>
 			</group>
@@ -736,7 +759,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756906" />
+						<uniqueid name="id" value="1073801600" />
 					</template_reference>
 				</list>
 			</group>
@@ -768,7 +791,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756907" />
+						<uniqueid name="id" value="1073801601" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -786,7 +809,7 @@
 						<bool name="fire_and_forget" value="True" />
 						<bool name="is_terrain_only" value="False" />
 						<bool name="allies_only" value="False" />
-						<uniqueid name="id" value="1073756908" />
+						<uniqueid name="id" value="1073801602" />
 					</template_reference>
 				</list>
 				<group name="posture">
@@ -980,10 +1003,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073756909" />
+							<uniqueid name="id" value="1073801603" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756910" />
+					<uniqueid name="id" value="1073801604" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -1010,10 +1033,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073756911" />
+							<uniqueid name="id" value="1073801605" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073756912" />
+					<uniqueid name="id" value="1073801606" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 			</list>
@@ -1064,7 +1087,7 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<instance_reference name="capture_squad_blueprint" value="" />
+						<instance_reference name="capture_squad_blueprint" value="sbps\races\british\vehicles\churchill_squad\churchill_avre_squad_mp" />
 						<float name="max_capture_crew_size" value="3" />
 						<float name="min_capture_crew_size" value="3" />
 						<list name="recrew_penalties_list">
@@ -1089,5 +1112,5 @@
 		<template_reference name="exts" value="ebpextensions\marker_ext">
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742284" />
+	<uniqueid name="pbgid" value="1073742481" />
 </instance>

@@ -1,13 +1,13 @@
 <instance description="" template="ai_ability">
 	<group name="ai_ability_bag">
 		<list name="abilities">
-			<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\modal_ability\artillery\mortar_barrage_ability\leig_75_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="ai_tactic">
 			<string name="entity_target_filter" value="EntityTargetFilter_FirstEnemyStructure" />
 			<string name="position_target_filter" value="" />
-			<float name="priority" value="45" />
+			<float name="priority" value="20" />
 			<string name="squad_target_filter" value="SquadTargetFilter_BestSmokeMortar" />
 			<string name="tactic_filter_start" value="TacticFilter_NotInCombatTen" />
 			<float name="tactic_max_range_override" value="-1" />

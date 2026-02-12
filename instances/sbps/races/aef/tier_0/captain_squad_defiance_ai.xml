@@ -183,7 +183,7 @@
 					<enum name="reason" value="usage" />
 					<locstring name="ui_name" value="3598" mod="84428889d71d41a48e2eff09c2425d54" />
 					<float name="max_squad_cap" value="1" />
-					<instance_reference name="squad_name" value="sbps\races\aef\tier_0\captain_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad_name" value="sbps\races\aef\tier_0\captain_squad_defiance_ai" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
@@ -637,6 +637,17 @@
 						</group>
 					</list>
 					<uniqueid name="id" value="1073800794" />
+				</template_reference>
+				<template_reference name="action" value="action\slot_item_add">
+					<instance_reference name="slot_item" value="slot_item\aef\small_arms\pathfinder_thompson_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<bool name="permanent" value="True" />
+					<uniqueid name="id" value="1073801504" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\healing_ai" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073801634" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">

@@ -17,7 +17,7 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect_vehicle" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\smoke_sherman_mortar_barrage_bulldozer_mp" />
-				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
+				<instance_reference name="ability" value="abilities\global\toggle_ability\heavy_ai_vehicle_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\sherman105_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\modal_ability\artillery\sherman105_barrage_vet" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\vehicle_crew_repair_toggle_medium_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -912,7 +912,7 @@
 			<bool name="crushes_buildings" value="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
-			<float name="deceleration" value="4.4" />
+			<float name="deceleration" value="4.1" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\medium_crusher" />
@@ -921,9 +921,9 @@
 			<float name="rotation_rate_stand" value="270" />
 			<bool name="smooth_path" value="True" />
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
-			<float name="acceleration" value="2.2" />
-			<float name="rotation_rate" value="34" />
-			<float name="speed_max" value="6.4" />
+			<float name="acceleration" value="2.1" />
+			<float name="rotation_rate" value="32" />
+			<float name="speed_max" value="6.2" />
 			<float name="on_ice_accel_decel_multiplier" value="0.6" />
 			<float name="on_land_overturn_scale" value="0.2" />
 			<float name="on_ice_overturn_scale" value="2" />

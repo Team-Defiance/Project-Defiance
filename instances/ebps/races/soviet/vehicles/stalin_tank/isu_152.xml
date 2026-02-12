@@ -20,7 +20,7 @@
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\isu_ammo_toggle_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\timed_ability\isu_ammo_toggle_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\aef\toggle_ability\usf_hold_fire_mp" />
-				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\isu152_concrete_piercing_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\soviet\modal_ability\artillery\isu152_concrete_piercing_shell_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\action_apply_ext">
@@ -161,7 +161,7 @@
 			<float name="death_seconds" value="0.1" />
 			<bool name="delete_when_dead" value="True" />
 			<bool name="force_attacker_memory" value="False" />
-			<float name="hitpoints" value="900" />
+			<float name="hitpoints" value="990" />
 			<bool name="is_invincible" value="False" />
 			<bool name="is_salvagable_wreck" value="False" />
 			<bool name="keep_wreck_ownership" value="False" />
@@ -229,7 +229,7 @@
 					<uniqueid name="id" value="1073755503" />
 				</template_reference>
 			</list>
-			<float name="armor" value="230" />
+			<float name="armor" value="260" />
 			<float name="rear_armor" value="180" />
 			<float name="target_size" value="22.5" />
 			<bool name="dies_from_broken_ice" value="True" />
@@ -651,7 +651,7 @@
 								<float name="z" value="2.47" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\152mm_ml20s_he_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\152mm_ml20s_ac_shot" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -1098,11 +1098,11 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\moving_ext">
 			<float name="acceleration" value="1.4" />
-			<float name="deceleration" value="1.7" />
+			<float name="deceleration" value="2" />
 			<float name="high_path_look_ahead_max_dist" value="25" />
 			<bool name="orient_to_terrain" value="True" />
 			<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
-			<float name="rotation_rate" value="16" />
+			<float name="rotation_rate" value="22" />
 			<float name="rotation_rate_crouch" value="870" />
 			<float name="rotation_rate_prone" value="225" />
 			<float name="rotation_rate_stand" value="870" />

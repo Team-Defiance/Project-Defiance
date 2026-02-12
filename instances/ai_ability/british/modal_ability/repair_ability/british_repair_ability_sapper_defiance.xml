@@ -1,7 +1,7 @@
 <instance description="" template="ai_ability">
 	<group name="ai_ability_bag">
 		<list name="abilities">
-			<instance_reference name="ability" value="abilities\british\modal_ability\modal_ability\royal_engineer_standard_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\british\modal_ability\sappers_standard_repair_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="ai_tactic">
 			<string name="entity_target_filter" value="EntityTargetFilter_FirstRepairableEntity" />

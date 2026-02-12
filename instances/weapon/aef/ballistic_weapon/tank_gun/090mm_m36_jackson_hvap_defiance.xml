@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
-			<float name="far" value="0.03" />
-			<float name="mid" value="0.05" />
+			<float name="near" value="0.075" />
+			<float name="far" value="0.035" />
+			<float name="mid" value="0.055" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -83,7 +83,7 @@
 				<float name="mid" value="0.075" />
 				<float name="far" value="0.0005" />
 			</group>
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
@@ -290,7 +290,7 @@
 			</list>
 		</group>
 		<group name="fire">
-			<float name="wind_down" value="1.125" />
+			<float name="wind_down" value="0.75" />
 			<float name="wind_up" value="0.5" />
 			<list name="on_fire_actions">
 			</list>
@@ -307,12 +307,12 @@
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
-			<float name="accuracy_multiplier" value="0.5" />
+			<float name="accuracy_multiplier" value="0.45" />
 			<float name="burst_multiplier" value="1" />
 			<float name="cooldown_multiplier" value="1" />
 			<bool name="disable_moving_firing" value="False" />
-			<float name="moving_end_time" value="1.5" />
-			<float name="moving_start_time" value="1.8" />
+			<float name="moving_end_time" value="0" />
+			<float name="moving_start_time" value="0" />
 		</group>
 		<string name="name" value="M26 Pershing Heavy Tank HVAP Gun" />
 		<group name="offhand">
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="5.575" />
-				<float name="min" value="5.175" />
+				<float name="max" value="5.95" />
+				<float name="min" value="5.45" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -371,7 +371,7 @@
 			<float name="distance_bracket_count_ground" value="1" />
 			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
-			<float name="distance_scatter_offset" value="0" />
+			<float name="distance_scatter_offset" value="0.25" />
 			<float name="distance_scatter_ratio" value="0.2" />
 			<float name="fow_angle_multiplier" value="1.25" />
 			<float name="fow_distance_multiplier" value="1.25" />
@@ -431,7 +431,7 @@
 		</group>
 		<locstring name="ui_name" value="0" />
 		<enum name="weapon_type" value="ballistic" />
-		<instance_reference name="ui_range" value="" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
 			<float name="near" value="505" />

@@ -239,7 +239,7 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="3636" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="3635" mod="84428889d71d41a48e2eff09c2425d54" />
-			<string name="hotkey_name" value="B" />
+			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_aef_volley_fire" />
 			<string name="overlay_name" value="overlay\overlay_UR_fireup" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -286,6 +286,13 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_0\weapon_rack_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="False" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\items\rear_echelon_bazooka_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

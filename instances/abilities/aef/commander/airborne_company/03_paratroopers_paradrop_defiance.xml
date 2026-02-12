@@ -9,8 +9,8 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\trigger_dca_action">
-					<string name="dca_action_name" value="UI\Paradrop_Warning_Smoke" />
-					<float name="duration" value="3" />
+					<string name="dca_action_name" value="UI\grandslam_signal_smoke" />
+					<float name="duration" value="5" />
 					<bool name="is_terrain_only" value="True" />
 					<uniqueid name="id" value="1073795849" />
 				</template_reference>

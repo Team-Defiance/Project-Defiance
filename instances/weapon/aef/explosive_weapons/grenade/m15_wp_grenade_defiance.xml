@@ -35,55 +35,55 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="5" />
-				<float name="near" value="5" />
-				<float name="mid" value="5" />
+				<float name="far" value="15" />
+				<float name="near" value="15" />
+				<float name="mid" value="15" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="3" />
+				<float name="radius" value="5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="1" />
+				<float name="far" value="0.5" />
 				<float name="near" value="1" />
-				<float name="mid" value="1" />
+				<float name="mid" value="0.6" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.25" />
-				<float name="near" value="0.25" />
-				<float name="mid" value="0.25" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.3" />
 			</group>
 			<group name="distance">
 				<float name="far" value="3" />
-				<float name="near" value="3" />
-				<float name="mid" value="3" />
+				<float name="near" value="1" />
+				<float name="mid" value="2" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="True" />
 			<group name="suppression">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
 			</group>
 			<group name="suppression_friendly">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.1" />
-				<float name="mid" value="0.1" />
+				<float name="far" value="0" />
+				<float name="near" value="0" />
+				<float name="mid" value="0" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
-				<float name="far" value="15" />
-				<float name="mid" value="15" />
-				<float name="near" value="15" />
+				<float name="far" value="1" />
+				<float name="mid" value="1.5" />
+				<float name="near" value="2.5" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="1" />
-				<float name="mid" value="1" />
-				<float name="far" value="1" />
+				<float name="mid" value="0.3" />
+				<float name="far" value="0.005" />
 			</group>
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="1" />
-			<float name="min" value="1" />
+			<float name="max" value="20" />
+			<float name="min" value="20" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -321,8 +321,8 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0" />
-			<bool name="has_deflection_damage" value="False" />
+			<float name="deflection_damage_multiplier" value="0.25" />
+			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
 		</group>

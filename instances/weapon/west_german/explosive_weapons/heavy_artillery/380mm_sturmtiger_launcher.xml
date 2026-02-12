@@ -83,7 +83,7 @@
 				<float name="mid" value="0.0625" />
 				<float name="far" value="0.0004375" />
 			</group>
-			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_sturmtiger" />
+			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
 			<int name="damage_max_members_per_squad" value="-1" />
 		</group>
@@ -296,8 +296,8 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_crew_shocked_avre" />
-							<uniqueid name="id" value="1073755180" />
+							<instance_reference name="critical" value="critical\vehicle_crew_stunned" />
+							<uniqueid name="id" value="1073801474" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073755181" />
@@ -407,7 +407,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.7" />
+			<float name="deflection_damage_multiplier" value="0.75" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>

@@ -200,60 +200,6 @@
 					<bool name="permanent" value="True" />
 					<uniqueid name="id" value="1073800864" />
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="False" />
-									<bool name="not_retreating" value="False" />
-									<bool name="pinned" value="True" />
-									<bool name="suppressed" value="True" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\camouflage_enable">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="enable" />
-									<float name="value" value="1" />
-									<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073800888" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073800889" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 				<template_reference name="action" value="action\requirement_action">
@@ -314,13 +260,19 @@
 									</list>
 									<uniqueid name="id" value="1073801029" />
 								</template_reference>
-								<template_reference name="action" value="action\animator_set_state">
-									<bool name="apply_to_leader_only" value="True" />
-									<string name="do_action_state_name" value="on" />
-									<bool name="retrigger" value="True" />
-									<string name="state_machine_name" value="ability_attack_buff_state" />
-									<string name="undo_action_state_name" value="off" />
-									<uniqueid name="id" value="1073801030" />
+								<template_reference name="action" value="action\change_target_action">
+									<list name="actions">
+										<template_reference name="action" value="action\animator_set_state">
+											<bool name="apply_to_leader_only" value="True" />
+											<string name="do_action_state_name" value="on" />
+											<bool name="retrigger" value="True" />
+											<string name="state_machine_name" value="ability_attack_buff_state" />
+											<string name="undo_action_state_name" value="off" />
+											<uniqueid name="id" value="1073801585" />
+										</template_reference>
+									</list>
+									<enum name="change_target_type" value="squad" />
+									<uniqueid name="id" value="1073801583" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073801031" />
@@ -588,7 +540,7 @@
 						<float name="max_persistent_squads" value="0" />
 						<list name="veterancy_rank_info">
 							<group name="veterancy_rank">
-								<float name="experience_value" value="640" />
+								<float name="experience_value" value="720" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="581" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -647,7 +599,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="1280" />
+								<float name="experience_value" value="1440" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="282" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -715,7 +667,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="2560" />
+								<float name="experience_value" value="2880" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="283" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -765,7 +717,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="3840" />
+								<float name="experience_value" value="4320" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="297" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -813,7 +765,7 @@
 								</list>
 							</group>
 							<group name="veterancy_rank">
-								<float name="experience_value" value="5120" />
+								<float name="experience_value" value="5760" />
 								<bool name="hide_ingame_veterancy_art" value="False" />
 								<locstring name="screen_name" value="298" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="single_player_only" value="False" />
@@ -863,9 +815,10 @@
 				<instance_reference name="ability" value="abilities\german\timed_ability\retreat_to_forward_hq" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\hhl_3_at_panzerjaeger_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\panzerkrieger_wirecutters" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\always_on_ability\jaeger_camouflage" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\always_on_ability\panzerjaeger_in_cover_stationary_camouflage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
 				<instance_reference name="ability" value="abilities\german\timed_ability\pjaeger_tank_detection_ability" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\passives_ui\superschreck_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

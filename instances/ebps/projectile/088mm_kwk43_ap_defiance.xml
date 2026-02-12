@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.00088" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1.6" />
-				<float name="radius_min" value="1.1" />
+				<float name="radius_max" value="2" />
+				<float name="radius_min" value="1.165" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -166,7 +166,7 @@
 			</list>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="60" />
+			<float name="acceleration" value="0" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="False" />
