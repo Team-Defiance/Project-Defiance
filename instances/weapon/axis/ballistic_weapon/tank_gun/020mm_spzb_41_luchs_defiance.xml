@@ -1,16 +1,16 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.1" />
+			<float name="near" value="0.12" />
 			<float name="far" value="0.05" />
-			<float name="mid" value="0.075" />
+			<float name="mid" value="0.085" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
 				<float name="max" value="0.125" />
 				<float name="min" value="0.125" />
 			</group>
-			<float name="post_firing_aim_time" value="1" />
+			<float name="post_firing_aim_time" value="2" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
 				<float name="max" value="0.25" />
@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="2" />
-				<float name="near" value="8" />
-				<float name="mid" value="4" />
+				<float name="far" value="1" />
+				<float name="near" value="4" />
+				<float name="mid" value="2" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -420,7 +420,7 @@
 							</list>
 							<list name="action_table">
 								<template_reference name="action" value="action\sequence_action">
-									<uniqueid name="id" value="1073801051" />
+									<uniqueid name="id" value="1073802041" />
 									<list name="action_list_sequences">
 										<list name="actions">
 											<template_reference name="action" value="action\requirement_action">
@@ -434,18 +434,18 @@
 													<template_reference name="required" value="requirements\required_critical">
 														<enum name="reason" value="usage" />
 														<locstring name="ui_name" value="0" />
-														<instance_reference name="critical_name" value="critical\vehicle_blind" />
+														<instance_reference name="critical_name" value="critical\vehicle_aec_temp_engine_damage" />
 														<bool name="is_present" value="True" />
 													</template_reference>
 												</list>
 												<list name="action_table">
 													<template_reference name="action" value="action\trigger_critical_action">
 														<float name="remove_at_health" value="1" />
-														<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-														<uniqueid name="id" value="1073801052" />
+														<instance_reference name="critical" value="critical\vehicle_aec_temp_immobility" />
+														<uniqueid name="id" value="1073802042" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073801053" />
+												<uniqueid name="id" value="1073802043" />
 												<bool name="fire_and_forget_non_global" value="False" />
 												<template_reference name="ui_help_text" value="tables\help_text_phrase">
 													<int name="phrase_order" value="0" />
@@ -456,15 +456,15 @@
 										<list name="actions">
 											<template_reference name="action" value="action\trigger_critical_action">
 												<float name="remove_at_health" value="1" />
-												<instance_reference name="critical" value="critical\vehicle_blind" />
-												<uniqueid name="id" value="1073801054" />
+												<instance_reference name="critical" value="critical\vehicle_aec_temp_engine_damage" />
+												<uniqueid name="id" value="1073802044" />
 											</template_reference>
 										</list>
 									</list>
 									<bool name="run_now" value="True" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073801055" />
+							<uniqueid name="id" value="1073802045" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -642,6 +642,15 @@
 				<group name="weapon_multipliers">
 					<float name="accuracy_multiplier" value="1" />
 					<float name="damage_multiplier" value="2" />
+					<float name="penetration_multiplier" value="1" />
+					<float name="suppression_multiplier" value="1" />
+				</group>
+			</group>
+			<group name="target_unit_type_multipliers">
+				<enum name="unit_type" value="infantry" />
+				<group name="weapon_multipliers">
+					<float name="accuracy_multiplier" value="1.5" />
+					<float name="damage_multiplier" value="1" />
 					<float name="penetration_multiplier" value="1" />
 					<float name="suppression_multiplier" value="1" />
 				</group>
