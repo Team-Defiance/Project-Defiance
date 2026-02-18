@@ -437,7 +437,7 @@
 			<float name="duration" value="2.25" />
 			<bool name="has_instant_setup" value="False" />
 			<bool name="can_interrupt_setup" value="False" />
-			<float name="attach_duration" value="1.3" />
+			<float name="attach_duration" value="0" />
 		</group>
 		<group name="suppressed">
 			<float name="pinned_burst_multiplier" value="1" />
