@@ -31,7 +31,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -118,7 +118,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -127,32 +127,14 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.1" />
-											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\weapon_scatter">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
+											<enum name="usage_type" value="addition" />
+											<float name="value" value="5" />
+											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752391" />
@@ -199,7 +181,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -208,23 +190,23 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="addition" />
-											<float name="value" value="5" />
-											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
-										</template_reference>
-										<template_reference name="modifier" value="modifiers\horizontal_speed_weapon_modifier">
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.15" />
-											<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
+											<float name="value" value="0.8" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+										</template_reference>
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
+											<enum name="application_type" value="apply_to_weapon" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="hardpoint_04" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="0.8" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752405" />
@@ -271,7 +253,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -280,22 +262,13 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\weapon_scatter">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.85" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\horizontal_speed_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.15" />
+											<float name="value" value="1.2" />
 											<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
 										</template_reference>
 									</list>
@@ -343,7 +316,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -352,15 +325,6 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\range_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
@@ -415,7 +379,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="4" />
+							<float name="delay" value="5" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -424,32 +388,23 @@
 									<float name="duration" value="0" />
 									<bool name="permanent" value="False" />
 									<list name="modifiers">
-										<template_reference name="modifier" value="modifiers\weapon_scatter">
-											<enum name="application_type" value="apply_to_weapon" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
-											<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="0.9" />
+											<float name="value" value="0.8" />
 											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+										<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
 											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="hardpoint_01" />
+											<string name="target_type_name" value="hardpoint_04" />
 											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.1" />
-											<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
+											<float name="value" value="0.8" />
+											<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073752411" />

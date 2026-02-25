@@ -2,8 +2,8 @@
 	<group name="weapon_bag">
 		<group name="accuracy">
 			<float name="near" value="0.06" />
-			<float name="far" value="0.01" />
-			<float name="mid" value="0.035" />
+			<float name="far" value="0.02" />
+			<float name="mid" value="0.04" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -421,7 +421,7 @@
 				<float name="max_left" value="-180" />
 				<float name="max_right" value="180" />
 				<float name="max_up" value="20" />
-				<float name="speed_horizontal" value="15" />
+				<float name="speed_horizontal" value="16" />
 				<float name="speed_vertical" value="10" />
 			</group>
 			<float name="pivot_end_time" value="0" />
