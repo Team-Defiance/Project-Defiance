@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="6.3" />
-				<float name="min" value="5.9" />
+				<float name="max" value="6.2" />
+				<float name="min" value="5.8" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -364,7 +364,7 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="7.5" />
+			<float name="angle_scatter" value="6" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
