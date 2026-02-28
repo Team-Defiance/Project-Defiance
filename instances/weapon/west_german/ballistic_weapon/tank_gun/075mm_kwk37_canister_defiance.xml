@@ -175,9 +175,9 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_garrison_cover">
-				<float name="accuracy_multiplier" value="0.4" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.25" />
-				<float name="penetration_multiplier" value="0.625" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
@@ -189,7 +189,7 @@
 			<group name="tp_heavy">
 				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
-				<float name="penetration_multiplier" value="0.75" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -224,7 +224,7 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
