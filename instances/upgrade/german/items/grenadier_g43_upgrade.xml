@@ -43,19 +43,9 @@
 		<bool name="validate_actions" value="True" />
 		<list name="actions">
 			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\german\small_arms\g43k_grenadier_item" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="slot_item" value="slot_item\west_german\small_arms\g43_fusilier_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073745009" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\german\small_arms\g43k_grenadier_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073801554" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\german\small_arms\g43k_grenadier_item" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073801555" />
 			</template_reference>
 		</list>
 		<list name="requirements">
