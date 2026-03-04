@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="30" />
+				<float name="munition" value="45" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="30" />
@@ -57,7 +57,7 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\outdated\spearhead_doctrine_defiance_outdated" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
@@ -80,20 +80,6 @@
 				<bool name="is_secured" value="False" />
 				<bool name="is_secured_by_checkpoint" value="False" />
 				<bool name="not_in_transition" value="False" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_entity_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\panther_ap_top_gunner_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="include_queued" value="False" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_entity_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\german\items\tiger_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="include_queued" value="False" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="Icons_weapons_weapon_mg42" />

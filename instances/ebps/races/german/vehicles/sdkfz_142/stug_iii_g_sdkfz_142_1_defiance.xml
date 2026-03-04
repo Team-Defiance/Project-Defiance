@@ -243,7 +243,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="1.5" />
+							<float name="delay" value="2" />
 							<float name="delay_min" value="1.5" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
