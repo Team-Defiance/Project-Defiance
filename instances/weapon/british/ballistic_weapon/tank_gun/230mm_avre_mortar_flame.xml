@@ -410,20 +410,20 @@
 						<float name="min_distance" value="1" />
 					</group>
 					<group name="distance_01">
-						<float name="final_damage_multiplier" value="0.5" />
+						<float name="final_damage_multiplier" value="1" />
 						<float name="min_distance" value="2" />
 					</group>
 					<group name="distance_02">
-						<float name="final_damage_multiplier" value="0.25" />
-						<float name="min_distance" value="2" />
+						<float name="final_damage_multiplier" value="1" />
+						<float name="min_distance" value="3" />
 					</group>
 					<group name="distance_03">
-						<float name="final_damage_multiplier" value="-1" />
-						<float name="min_distance" value="-1" />
+						<float name="final_damage_multiplier" value="1" />
+						<float name="min_distance" value="4" />
 					</group>
 					<group name="distance_04">
-						<float name="final_damage_multiplier" value="-1" />
-						<float name="min_distance" value="-1" />
+						<float name="final_damage_multiplier" value="1" />
+						<float name="min_distance" value="5" />
 					</group>
 				</group>
 				<float name="damage_frequency" value="1" />
