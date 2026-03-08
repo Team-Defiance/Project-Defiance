@@ -46,19 +46,19 @@
 				<float name="radius" value="6.35" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.0875" />
 				<float name="near" value="1" />
 				<float name="mid" value="0.35" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.0375" />
+				<float name="far" value="0.04375" />
 				<float name="near" value="0.5" />
 				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
 				<float name="far" value="5.25" />
-				<float name="near" value="0.6" />
-				<float name="mid" value="1.65" />
+				<float name="near" value="0.75" />
+				<float name="mid" value="1.7" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -421,12 +421,12 @@
 			</list>
 		</group>
 		<group name="scatter">
-			<float name="angle_scatter" value="12" />
+			<float name="angle_scatter" value="15" />
 			<bool name="burst_pattern_enable" value="False" />
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="12" />
+			<float name="distance_scatter_max" value="15" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.125" />
