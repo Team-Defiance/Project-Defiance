@@ -487,7 +487,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\add_aura">
-							<instance_reference name="aura" value="aura\aef_auras\base_repair_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="aura" value="aura\aef\base_repair_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<group name="area_info">
 								<float name="angle_left" value="0" />
 								<float name="angle_right" value="0" />
@@ -516,6 +516,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext">
 			<list name="abilities">
+				<instance_reference name="ability" value="abilities\aef\passive_ability\corrective_maintenance_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 	</list>
