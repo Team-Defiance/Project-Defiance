@@ -48,17 +48,17 @@
 			<group name="damage">
 				<float name="far" value="0.05" />
 				<float name="near" value="1" />
-				<float name="mid" value="0.1" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
 				<float name="far" value="0.025" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.05" />
+				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
-				<float name="far" value="18" />
-				<float name="near" value="3" />
-				<float name="mid" value="6" />
+				<float name="far" value="12" />
+				<float name="near" value="4" />
+				<float name="mid" value="8" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
