@@ -128,18 +128,6 @@
 					<float name="soviet_227" value="0" />
 				</template_reference>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11095059" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_entity">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<instance_reference name="entity_blueprint_name" value="ebps\races\german\vehicles\elefant_sdkfz_184\elefant_sdkfz_184_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<enum name="entity_type" value="" />
-					</template_reference>
-				</list>
-			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
@@ -186,12 +174,6 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\german\vehicles\elefant_tank_destroyer_squad\elefant_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
