@@ -25,47 +25,47 @@
 					<float name="rotation" value="90" />
 					<group name="splat_list">
 						<group name="entry_01">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\cement" />
 						</group>
 						<group name="entry_02">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\crater_concrete" />
 						</group>
 						<group name="entry_03">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\crater_stone" />
 						</group>
 						<group name="entry_04">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\road_asphalt" />
 						</group>
 						<group name="entry_05">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\rubble" />
 						</group>
 						<group name="entry_06">
-							<string name="splat_texture" value="Crater_Sand\Crater_Sand_Artillery" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\sand" />
 						</group>
 						<group name="entry_07">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\stone_road" />
 						</group>
 						<group name="entry_08">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\urban" />
 						</group>
 						<group name="entry_09">
-							<string name="splat_texture" value="Crater_Concrete\OM_Artillery_Concrete" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\urban_narrow" />
 						</group>
 						<group name="entry_10">
-							<string name="splat_texture" value="Crater_Sand\Crater_Sand_Artillery" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\shingle_sp_m01" />
 						</group>
 						<group name="entry_11">
-							<string name="splat_texture" value="nm_craters\grenade_crater_snow_01" />
+							<string name="splat_texture" value="" />
 							<instance_reference name="terrain_material" value="material\snow" />
 						</group>
 						<group name="entry_12">
@@ -93,7 +93,7 @@
 					<enum name="deform_type" value="tp_additive" />
 				</group>
 				<float name="radius_max" value="1.48" />
-				<float name="radius_min" value="1.3" />
+				<float name="radius_min" value="1.295" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
