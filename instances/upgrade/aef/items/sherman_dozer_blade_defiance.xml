@@ -1,4 +1,4 @@
-<instance description="Dozer blade upgrade for the Sherman 105" template="upgrade">
+<instance description="Top gunner for Panther" template="upgrade">
 	<group name="upgrade_bag">
 		<bool name="enable_in_hold" value="True" />
 		<float name="global_max_limit" value="0" />
@@ -11,17 +11,17 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="doz" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="tkc" />
+			<string name="code_2" value="doz" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="time_cost">
 			<group name="cost">
 				<float name="action" value="0" />
 				<float name="command" value="0" />
-				<float name="fuel" value="0" />
-				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="fuel" value="20" />
+				<float name="manpower" value="50" />
+				<float name="munition" value="0" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="45" />
@@ -30,8 +30,8 @@
 		<enum name="ui_group" value="unit_upgrade_panel" />
 		<int name="ui_position" value="2" />
 		<group name="ui_info">
-			<locstring name="extra_text" value="4202" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11145491" />
+			<locstring name="extra_text" value="4885" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4886" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="X" />
 			<icon name="icon_name" value="Icons_upgrades_icon_upgrade_aef_sherman_m4a3_blade" />
 			<bool name="reveal_for_decryption" value="False" />
@@ -48,15 +48,15 @@
 				<bool name="retrigger" value="False" />
 				<string name="state_machine_name" value="tank_variation" />
 				<string name="undo_action_state_name" value="" />
-				<uniqueid name="id" value="1073751083" />
+				<uniqueid name="id" value="1073802215" />
 			</template_reference>
 			<template_reference name="action" value="action\set_crush_mode">
 				<enum name="crush_mode" value="crush_heavy" />
-				<uniqueid name="id" value="1073751084" />
+				<uniqueid name="id" value="1073802216" />
 			</template_reference>
 			<template_reference name="action" value="action\pass_type_action">
 				<instance_reference name="pass_type" value="pass_types\heavy_crusher" />
-				<uniqueid name="id" value="1073751085" />
+				<uniqueid name="id" value="1073802217" />
 			</template_reference>
 			<template_reference name="action" value="action\modify_crush_obb">
 				<float name="offset_centre_x" value="0" />
@@ -65,20 +65,20 @@
 				<float name="offset_scale_x" value="0" />
 				<float name="offset_scale_y" value="0" />
 				<float name="offset_scale_z" value="0.75" />
-				<uniqueid name="id" value="1073751086" />
+				<uniqueid name="id" value="1073802218" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_modifiers_action">
 				<float name="duration" value="0" />
 				<bool name="permanent" value="True" />
 				<list name="modifiers">
-					<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+					<template_reference name="modifier" value="modifiers\rotation_speed_modifier">
 						<enum name="application_type" value="apply_to_entity" />
 						<bool name="exclusive" value="False" />
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="multiplication" />
-						<float name="value" value="0.85" />
-						<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+						<float name="value" value="0.95" />
+						<instance_reference name="tooltip" value="modifier_tooltip\rotation_speed_modifier" />
 					</template_reference>
 					<template_reference name="modifier" value="modifiers\health_maximum_modifier">
 						<enum name="application_type" value="apply_to_entity" />
@@ -86,7 +86,7 @@
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="addition" />
-						<float name="value" value="90" />
+						<float name="value" value="80" />
 						<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 					</template_reference>
 					<template_reference name="modifier" value="modifiers\armor_modifier">
@@ -95,7 +95,7 @@
 						<string name="modifier_id" value="" />
 						<string name="target_type_name" value="" />
 						<enum name="usage_type" value="addition" />
-						<float name="value" value="20" />
+						<float name="value" value="25" />
 						<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 					</template_reference>
 					<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
@@ -108,17 +108,17 @@
 						<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
 					</template_reference>
 				</list>
-				<uniqueid name="id" value="1073751087" />
+				<uniqueid name="id" value="1073802219" />
 			</template_reference>
 			<template_reference name="action" value="action\upgrade_add">
 				<bool name="apply_to_entities_in_squad" value="True" />
 				<bool name="trigger_publish_event" value="False" />
 				<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\dozer_upgrade_item_mp" />
-				<uniqueid name="id" value="1073751088" />
+				<uniqueid name="id" value="1073802220" />
 			</template_reference>
 			<template_reference name="action" value="action\ui_decorator_action">
-				<icon name="symbol_icon" value="ModIcons_84428889d71d41a48e2eff09c2425d54_aef_symbols_vehicles_m4a3_105_dozer" />
-				<uniqueid name="id" value="1073755638" />
+				<icon name="symbol_icon" value="Icons_symbols_vehicle_aef_m4a3_sherman_bulldozer_symbol" />
+				<uniqueid name="id" value="1073802221" />
 			</template_reference>
 		</list>
 		<list name="requirements">
@@ -129,6 +129,14 @@
 				<bool name="is_secured" value="False" />
 				<bool name="is_secured_by_checkpoint" value="False" />
 				<bool name="not_in_transition" value="False" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\tact_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="" />
@@ -142,5 +150,5 @@
 		<list name="on_begin_actions">
 		</list>
 	</group>
-	<uniqueid name="pbgid" value="1073741926" />
+	<uniqueid name="pbgid" value="1073742106" />
 </instance>

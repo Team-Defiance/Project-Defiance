@@ -16,10 +16,10 @@
 					<list name="entity_table">
 					</list>
 					<list name="squad_table">
-						<instance_reference name="squad" value="sbps\races\aef\doctrine\tact_support\vehicles\m4a3_sherman_105mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="squad" value="sbps\races\aef\doctrine\mechanized\vehicles\m4a3_sherman_105mm_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</list>
 					<bool name="use_attack_move" value="False" />
-					<uniqueid name="id" value="1073801250" />
+					<uniqueid name="id" value="1073802259" />
 					<bool name="ignore_requirements" value="False" />
 				</template_reference>
 				<template_reference name="action" value="action\game_event_action">
@@ -28,7 +28,7 @@
 					<float name="event_param_end" value="-1" />
 					<enum name="event_type" value="flag_drop" />
 					<bool name="event_send_to_target_player" value="False" />
-					<uniqueid name="id" value="1073801251" />
+					<uniqueid name="id" value="1073802260" />
 				</template_reference>
 			</list>
 		</group>
@@ -40,7 +40,7 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="125" />
+			<float name="fuel" value="140" />
 			<float name="manpower" value="380" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
@@ -96,13 +96,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="4666" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="4665" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4880" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4879" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_vehicles_vehicle_aef_m4a3_sherman_bulldozer" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="4664" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="4881" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -114,14 +114,6 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="True" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\tact_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11171734" />
@@ -137,6 +129,14 @@
 				</template_reference>
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<float name="max_completed" value="100" />
+				<float name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\aef\commander\ability\sherman_bulldozer_dispatch" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
 				<bool name="is_present" value="True" />
@@ -146,7 +146,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="50" />
+		<int name="ui_position" value="60" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
@@ -154,7 +154,7 @@
 		<float name="ui_reticule_radius_min" value="0" />
 		<float name="ui_reticule_radius_max" value="0" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
-		<enum name="ui_group" value="group_primary" />
+		<enum name="ui_group" value="group_secondary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
@@ -178,5 +178,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="True" />
 	</group>
-	<uniqueid name="pbgid" value="1073742616" />
+	<uniqueid name="pbgid" value="1073742793" />
 </instance>
