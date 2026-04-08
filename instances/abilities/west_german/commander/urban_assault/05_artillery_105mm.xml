@@ -40,7 +40,7 @@
 							<uniqueid name="id" value="1073745411" />
 						</template_reference>
 						<template_reference name="action" value="action\timed_action">
-							<float name="duration" value="15" />
+							<float name="duration" value="20" />
 							<bool name="fire_and_forget" value="False" />
 							<list name="subactions">
 								<template_reference name="action" value="action\reticule_action">
@@ -97,13 +97,13 @@
 									<uniqueid name="id" value="1073745413" />
 								</template_reference>
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="3" />
+									<float name="duration" value="7.5" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\reticule_action">
 											<uniqueid name="id" value="1073802322" />
 											<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-											<float name="radius" value="35" />
+											<float name="radius" value="27.5" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073802317" />
@@ -162,13 +162,13 @@
 									<uniqueid name="id" value="1073745416" />
 								</template_reference>
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="3" />
+									<float name="duration" value="7.5" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\reticule_action">
 											<uniqueid name="id" value="1073802318" />
 											<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-											<float name="radius" value="35" />
+											<float name="radius" value="30" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073802319" />
@@ -227,13 +227,13 @@
 									<uniqueid name="id" value="1073745419" />
 								</template_reference>
 								<template_reference name="action" value="action\timed_action">
-									<float name="duration" value="3" />
+									<float name="duration" value="7.5" />
 									<bool name="fire_and_forget" value="False" />
 									<list name="subactions">
 										<template_reference name="action" value="action\reticule_action">
 											<uniqueid name="id" value="1073802320" />
 											<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-											<float name="radius" value="35" />
+											<float name="radius" value="32.5" />
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073802321" />
@@ -290,6 +290,18 @@
 									<float name="time_range_between_shells_min" value="0.5" />
 									<instance_reference name="weapon_name" value="weapon\west_german\explosive_weapons\heavy_artillery\105mm_lefh_offmap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<uniqueid name="id" value="1073745422" />
+								</template_reference>
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="7.5" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\reticule_action">
+											<uniqueid name="id" value="1073802323" />
+											<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+											<float name="radius" value="35" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073802324" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073745423" />

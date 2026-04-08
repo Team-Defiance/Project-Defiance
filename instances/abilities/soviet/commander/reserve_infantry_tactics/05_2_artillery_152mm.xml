@@ -76,13 +76,13 @@
 					<uniqueid name="id" value="1073799379" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="17" />
+					<float name="duration" value="20" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\reticule_action">
 							<uniqueid name="id" value="1073802306" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-							<float name="radius" value="22" />
+							<float name="radius" value="22.5" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073802307" />

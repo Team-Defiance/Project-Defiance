@@ -63,13 +63,13 @@
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
-					<float name="duration" value="17" />
+					<float name="duration" value="15" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
 						<template_reference name="action" value="action\reticule_action">
 							<uniqueid name="id" value="1073802305" />
 							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
-							<float name="radius" value="17" />
+							<float name="radius" value="17.5" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073802304" />
