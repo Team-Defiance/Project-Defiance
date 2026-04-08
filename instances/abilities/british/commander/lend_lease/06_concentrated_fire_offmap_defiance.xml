@@ -88,6 +88,18 @@
 					<uniqueid name="id" value="1073792384" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
+				<template_reference name="action" value="action\timed_action">
+					<float name="duration" value="22" />
+					<bool name="fire_and_forget" value="False" />
+					<list name="subactions">
+						<template_reference name="action" value="action\reticule_action">
+							<uniqueid name="id" value="1073802308" />
+							<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+							<float name="radius" value="25" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073802309" />
+				</template_reference>
 			</list>
 		</group>
 		<enum name="activation" value="targeted" />
