@@ -56,9 +56,9 @@
 				<float name="mid" value="0.2" />
 			</group>
 			<group name="distance">
-				<float name="far" value="0.05" />
-				<float name="near" value="0.375" />
-				<float name="mid" value="0.2" />
+				<float name="far" value="4.5" />
+				<float name="near" value="0.1" />
+				<float name="mid" value="0.8" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -79,9 +79,9 @@
 				<float name="near" value="25" />
 			</template_reference>
 			<group name="building_damage">
-				<float name="near" value="0.75" />
+				<float name="near" value="1" />
 				<float name="mid" value="0.2" />
-				<float name="far" value="0.0012" />
+				<float name="far" value="0.001" />
 			</group>
 			<instance_reference name="weapon_building_damage" value="weapon_building_damage\aoe_profile_no_change" />
 			<enum name="aoe_origin_and_direction" value="hit_position_and_direction" />
