@@ -4,7 +4,7 @@
 			<list name="end_self_actions">
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073802263" />
+					<uniqueid name="id" value="1073802355" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -12,35 +12,19 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\force_reload_action">
 					<int name="hardpoint_index" value="2" />
-					<uniqueid name="id" value="1073802264" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_02" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0" />
-							<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073802325" />
+					<uniqueid name="id" value="1073802354" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\artillery_attack">
-					<bool name="disable_parent_hardpoint" value="False" />
+					<bool name="disable_parent_hardpoint" value="True" />
 					<group name="filter_weapons">
 						<instance_reference name="weapon_01" value="" />
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="20" />
-					<float name="use_hardpoint" value="2" />
+					<float name="num_salvo" value="5" />
+					<float name="use_hardpoint" value="3" />
 					<bool name="face_to_target" value="False" />
 					<uniqueid name="id" value="1073802265" />
 					<bool name="target_override_direction_times_max_range" value="False" />
@@ -69,20 +53,20 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="25" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
-		<bool name="disable_when_active" value="False" />
+		<bool name="disable_when_active" value="True" />
 		<float name="duration_time" value="-1" />
-		<bool name="enable_in_building" value="False" />
+		<bool name="enable_in_building" value="True" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
 		<float name="entity_busy_time" value="0" />
-		<float name="facing_angle" value="1" />
-		<bool name="facing_ignore" value="True" />
+		<float name="facing_angle" value="360" />
+		<bool name="facing_ignore" value="False" />
 		<float name="final_close_in_distance" value="0" />
 		<bool name="fire_and_forget" value="False" />
 		<bool name="garrison_target" value="False" />
@@ -92,12 +76,12 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="100" />
+		<float name="range" value="40" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="70" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
-		<enum name="shared_timer" value="Katusha_Rocket_Barrage" />
+		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
 			<string name="code_1" value="kb" />
@@ -137,7 +121,7 @@
 			<locstring name="screen_name_short" value="0" />
 		</group>
 		<locstring name="ui_usage_txt" value="0" />
-		<bool name="validate_actions" value="False" />
+		<bool name="validate_actions" value="True" />
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
@@ -160,7 +144,7 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_105mm_howitzer_barrage" />
 		<float name="ui_reticule_radius_min" value="6.75" />
-		<float name="ui_reticule_radius_max" value="15" />
+		<float name="ui_reticule_radius_max" value="9" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
@@ -176,7 +160,10 @@
 		<enum name="ui_group_cast_type" value="multi" />
 		<list name="requirements_target">
 		</list>
-		<template_reference name="targeted_ability_option" value="options\none">
+		<template_reference name="targeted_ability_option" value="options\abilities\targeted_ability_option">
+			<bool name="persist_targeted_ability" value="True" />
+			<bool name="post_ability_out_of_range_stop" value="True" />
+			<bool name="range_ignore_target_far_position" value="False" />
 		</template_reference>
 		<enum name="ui_direction_requirement" value="nondirectional" />
 		<instance_reference name="cursor_ghost_ebp" value="" />
