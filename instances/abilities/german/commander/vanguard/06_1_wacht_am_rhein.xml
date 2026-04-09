@@ -29,7 +29,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
+									<float name="value" value="1.1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
@@ -387,7 +387,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="80" />
+			<float name="munition" value="110" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
