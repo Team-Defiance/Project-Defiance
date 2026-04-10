@@ -75,7 +75,7 @@
 		</group>
 		<group name="ui_info">
 			<locstring name="extra_text" value="328" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="11201237" />
+			<locstring name="help_text" value="4921" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
 			<icon name="icon_name" value="Icons_abilities_ability_raid" />
 			<string name="overlay_name" value="" />
@@ -92,9 +92,14 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
+			<template_reference name="required" value="requirements\required_squad_veterancy">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="4920" mod="84428889d71d41a48e2eff09c2425d54" />
+				<float name="veterancy_rank" value="1" />
+			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="33" />
+		<int name="ui_position" value="34" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -115,10 +120,6 @@
 		</enum_table>
 		<enum name="ui_group_cast_type" value="multi" />
 		<list name="requirements_target">
-			<template_reference name="required" value="requirements\required_none">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-			</template_reference>
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
@@ -130,5 +131,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741905" />
+	<uniqueid name="pbgid" value="1073742797" />
 </instance>
