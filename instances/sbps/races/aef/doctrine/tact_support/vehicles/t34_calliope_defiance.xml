@@ -602,8 +602,6 @@
 										</list>
 										<uniqueid name="id" value="1073802261" />
 									</template_reference>
-								</list>
-								<list name="squad_entity_actions">
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
 										<bool name="permanent" value="False" />
@@ -618,8 +616,10 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802272" />
+										<uniqueid name="id" value="1073802368" />
 									</template_reference>
+								</list>
+								<list name="squad_entity_actions">
 								</list>
 							</group>
 						</list>
