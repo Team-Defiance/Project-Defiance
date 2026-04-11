@@ -63,14 +63,14 @@
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
 			<group name="suppression">
-				<float name="far" value="0.1" />
-				<float name="near" value="0.2" />
-				<float name="mid" value="0.15" />
+				<float name="far" value="0.2" />
+				<float name="near" value="1" />
+				<float name="mid" value="0.5" />
 			</group>
 			<group name="suppression_friendly">
 				<float name="far" value="0.1" />
-				<float name="near" value="0.2" />
-				<float name="mid" value="0.15" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.25" />
 			</group>
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
@@ -194,13 +194,13 @@
 			</group>
 			<group name="tp_light">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1.1" />
+				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.75" />
 			</group>
 			<group name="tp_negative">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
@@ -208,7 +208,7 @@
 				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_smoke">
 				<float name="accuracy_multiplier" value="1" />

@@ -532,7 +532,7 @@
 		</group>
 		<group name="suppression">
 			<float name="nearby_suppression_multiplier" value="0.1" />
-			<float name="nearby_suppression_radius" value="12" />
+			<float name="nearby_suppression_radius" value="12.5" />
 			<group name="target_pinned_multipliers">
 				<float name="accuracy_multiplier" value="0.25" />
 				<float name="damage_multiplier" value="1" />
@@ -545,7 +545,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="1" />
+			<float name="amount" value="0.8" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
