@@ -116,6 +116,19 @@
 									<template_reference name="info" value="type_ability_target_type\has_unit_type">
 										<enum name="unit_type" value="vehicle" />
 									</template_reference>
+									<template_reference name="info" value="type_ability_target_type\not">
+										<group name="target_info">
+											<template_reference name="target_info" value="type_ability_target_type\has_any_in_list">
+												<list name="target_infos">
+													<template_reference name="info" value="type_ability_target_type\has_unit_type">
+														<enum name="unit_type" value="hq" />
+													</template_reference>
+													<template_reference name="info" value="type_ability_target_type\is_command_sector">
+													</template_reference>
+												</list>
+											</template_reference>
+										</group>
+									</template_reference>
 								</list>
 							</template_reference>
 							<int name="number_aircraft" value="1" />

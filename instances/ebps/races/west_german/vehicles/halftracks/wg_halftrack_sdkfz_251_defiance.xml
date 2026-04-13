@@ -228,7 +228,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="addition" />
-									<float name="value" value="5.5" />
+									<float name="value" value="5" />
 									<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\health_maximum_modifier">
@@ -237,7 +237,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="addition" />
-									<float name="value" value="40" />
+									<float name="value" value="20" />
 									<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 								</template_reference>
 							</list>
