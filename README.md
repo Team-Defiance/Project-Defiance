@@ -1,11 +1,11 @@
-# Project Defiance
+# CoH2: Defiance
 
 _A fan-made game modification for **Company of Heroes 2**, designed to deliver a fresh yet familiar experience._
 
 ---
 
 ## 🎯 Introduction
-Project Defiance is a total overhaul of the Company of Heroes 2 ruleset. It keeps the core gameplay recognizable for veterans while refining mechanics and introducing new options that make every match feel fresh. The transition from vanilla CoH2 to Defiance is smooth, so you can dive in without relearning the entire game, but engaging enough to keep you hooked.
+Defiance (formerly Project Defiance) is a total overhaul of the Company of Heroes 2 ruleset. It keeps the core gameplay recognizable for veterans while refining mechanics and introducing new options that make every match feel fresh. The transition from vanilla CoH2 to Defiance is smooth, so you can dive in without relearning the entire game, but engaging enough to keep you hooked.
 
 ---
 
@@ -51,7 +51,7 @@ There are three ways to install Project Defiance:
   Vanilla-like gameplay that feels familiar but with enough new mechanics to keep players engaged.
 
 - **Planned Growth**  
-  Launch includes 3 doctrines per faction, with additional free doctrines planned post-release
+  Launch includes 4 doctrines per faction, with additional free doctrines planned post-release
   
 ---
 
