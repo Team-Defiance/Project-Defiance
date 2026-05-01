@@ -40,7 +40,7 @@
 		<group name="cost">
 			<float name="action" value="0" />
 			<float name="command" value="0" />
-			<float name="fuel" value="120" />
+			<float name="fuel" value="125" />
 			<float name="manpower" value="400" />
 			<float name="munition" value="0" />
 			<float name="popcap" value="0" />
@@ -67,7 +67,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="80" />
+		<float name="recharge_time" value="90" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

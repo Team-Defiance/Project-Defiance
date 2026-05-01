@@ -40,9 +40,9 @@
 					</group>
 					<float name="num_salvo" value="1" />
 					<float name="use_hardpoint" value="5" />
-					<bool name="face_to_target" value="True" />
+					<bool name="face_to_target" value="False" />
 					<uniqueid name="id" value="1073746822" />
-					<bool name="target_override_direction_times_max_range" value="False" />
+					<bool name="target_override_direction_times_max_range" value="True" />
 				</template_reference>
 			</list>
 		</group>
@@ -80,20 +80,20 @@
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="45" />
-		<bool name="range_ignore" value="False" />
+		<bool name="range_ignore" value="True" />
 		<float name="recharge_time" value="75" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="squad_ability_2" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="ab" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="" />
+			<string name="code_2" value="he" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="b75" />
-			<string name="code_2" value="brg" />
+			<string name="code_1" value="stc" />
+			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="one_entity" />
@@ -152,10 +152,10 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
-		<float name="ui_reticule_radius_min" value="6" />
-		<float name="ui_reticule_radius_max" value="7" />
-		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_directional_skill_shot" />
+		<float name="ui_reticule_radius_min" value="4" />
+		<float name="ui_reticule_radius_max" value="12" />
+		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
@@ -172,7 +172,7 @@
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
-		<enum name="ui_direction_requirement" value="nondirectional" />
+		<enum name="ui_direction_requirement" value="direction_to_target" />
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
