@@ -213,7 +213,7 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_81mm_mortar_barrage" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
 		<float name="ui_reticule_radius_min" value="4" />
 		<float name="ui_reticule_radius_max" value="4" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />

@@ -619,9 +619,9 @@
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\german\modal_ability\commander_ability\officer_smoke_artillery" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="1.4" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\officer_smoke_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\received_accuracy_modifier">
@@ -632,6 +632,15 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.85" />
 												<instance_reference name="tooltip" value="modifier_tooltip\received_accuracy_modifier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\artillery\artillery_barrage_ability\120mm_barrage_officer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073795029" />

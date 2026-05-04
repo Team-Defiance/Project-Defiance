@@ -216,20 +216,7 @@
 						<enum name="reason" value="usage_and_display" />
 						<locstring name="ui_name" value="0" />
 						<bool name="is_present" value="True" />
-						<instance_reference name="upgrade_name" value="upgrade\german\items\panther_ap_top_gunner_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-						<bool name="include_queued" value="True" />
-					</template_reference>
-				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_entity_upgrade">
-						<enum name="reason" value="usage_and_display" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<instance_reference name="upgrade_name" value="upgrade\german\items\tiger_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="upgrade_name" value="upgrade\german\items\tiger_wg_panther_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="include_queued" value="True" />
 					</template_reference>
 				</list>
