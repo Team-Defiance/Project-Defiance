@@ -10,7 +10,7 @@
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
 					<bool name="allow_building_spawn" value="False" />
-					<float name="minimum_pop_used" value="7" />
+					<float name="minimum_pop_used" value="6" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
 					<list name="entity_table">
