@@ -140,12 +140,6 @@
 					</template_reference>
 					<template_reference name="requirement" value="requirements\required_squad">
 						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="3558" mod="84428889d71d41a48e2eff09c2425d54" />
-						<float name="max_squad_cap" value="1" />
-						<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_squad">
-						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="3559" mod="84428889d71d41a48e2eff09c2425d54" />
 						<float name="max_squad_cap" value="1" />
 						<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\king_tiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -207,12 +201,6 @@
 				<locstring name="ui_name" value="0" />
 				<float name="max_squad_cap" value="1" />
 				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\panther_squad\panther_commander_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="max_squad_cap" value="1" />
-				<instance_reference name="squad_name" value="sbps\races\west_german\vehicles\tiger_squad\sturmtiger_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad">
 				<enum name="reason" value="usage" />

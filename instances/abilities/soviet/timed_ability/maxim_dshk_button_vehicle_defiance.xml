@@ -17,39 +17,21 @@
 					<instance_reference name="upgrade" value="upgrade\german\pak_at_stun_active" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073802372" />
 				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\weapon_penetration_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="2" />
-							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\damage_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.5" />
-							<instance_reference name="tooltip" value="modifier_tooltip\damage_weapon_modifier" />
-						</template_reference>
-						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="0.75" />
-							<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
+				<template_reference name="action" value="action\change_target_action">
+					<list name="actions">
+						<template_reference name="action" value="action\ui_unit_modifier_action">
+							<bool name="die_with_creator" value="True" />
+							<template_reference name="ui_info" value="tables\ui_info">
+								<locstring name="screen_name" value="4933" mod="84428889d71d41a48e2eff09c2425d54" />
+								<locstring name="help_text" value="0" />
+								<icon name="icon_name" value="Icons_abilities_ability_soviet_button_vehicle" />
+								<string name="hotkey_name" value="" />
+							</template_reference>
+							<uniqueid name="id" value="1073802419" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073802373" />
+					<enum name="change_target_type" value="squad" />
+					<uniqueid name="id" value="1073802418" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -65,14 +47,14 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="30" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
 		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="False" />
-		<float name="duration_time" value="12" />
+		<float name="duration_time" value="10" />
 		<bool name="enable_in_building" value="True" />
 		<bool name="enable_in_vehicle" value="False" />
 		<bool name="engage_combat" value="False" />
@@ -90,7 +72,7 @@
 		<float name="move_back_distance" value="0" />
 		<float name="range" value="30" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="30" />
+		<float name="recharge_time" value="45" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="True" />
 		<enum name="shared_timer" value="squad_ability_2" />
@@ -121,11 +103,11 @@
 		<group name="ui_info">
 			<locstring name="extra_text" value="0" />
 			<locstring name="help_text" value="0" />
-			<string name="hotkey_name" value="F" />
+			<string name="hotkey_name" value="M" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_button_vehicle" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="0" />
+			<locstring name="screen_name" value="4932" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -137,14 +119,9 @@
 		<list name="global_self_actions">
 		</list>
 		<list name="requirements">
-			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<float name="veterancy_rank" value="1" />
-			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="34" />
+		<int name="ui_position" value="32" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
