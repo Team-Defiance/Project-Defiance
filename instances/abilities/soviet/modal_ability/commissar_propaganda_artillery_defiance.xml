@@ -61,7 +61,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="45" />
+			<float name="munition" value="50" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -80,13 +80,13 @@
 		<bool name="garrison_target" value="False" />
 		<bool name="has_speech_code" value="False" />
 		<float name="initial_delay_time" value="0" />
-		<bool name="initial_recharge" value="False" />
+		<bool name="initial_recharge" value="True" />
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="35" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="100" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
