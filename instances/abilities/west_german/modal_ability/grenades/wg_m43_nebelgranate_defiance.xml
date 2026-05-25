@@ -188,7 +188,7 @@
 		<int name="ui_position" value="23" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
-		<instance_reference name="ui_range" value="ui_reticule\ability_target_dispatch" />
+		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_positive" />
 		<float name="ui_reticule_radius_min" value="4" />
 		<float name="ui_reticule_radius_max" value="4" />
