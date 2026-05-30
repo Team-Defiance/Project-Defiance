@@ -137,12 +137,27 @@
 					</template_reference>
 				</list>
 			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
+			<template_reference name="required" value="requirements\required_any_in_list">
+				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="False" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\scout_package_saperi" mod="84428889d71d41a48e2eff09c2425d54" />
+				<list name="requirements">
+					<template_reference name="requirement" value="requirements\required_structure">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+						<int name="required_structure_count" value="1" />
+						<bool name="check_team" value="False" />
+						<bool name="require_construction_complete" value="True" />
+					</template_reference>
+					<template_reference name="requirement" value="requirements\required_player_upgrade">
+						<enum name="reason" value="usage" />
+						<locstring name="ui_name" value="0" />
+						<bool name="is_present" value="True" />
+						<float name="max_completed" value="100" />
+						<float name="min_completed" value="1" />
+						<instance_reference name="upgrade_name" value="upgrade\soviet\research\mobilize_reserves_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					</template_reference>
+				</list>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -174,19 +189,6 @@
 		<instance_reference name="cursor_ghost_ebp" value="" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_squad_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="include_queued" value="False" />
-						<bool name="is_present" value="True" />
-						<instance_reference name="upgrade_name" value="upgrade\german\ability_lock_out\ability_lock_infiltration_abilities_mp" />
-					</template_reference>
-				</list>
-			</template_reference>
 		</list>
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
