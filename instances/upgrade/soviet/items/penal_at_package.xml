@@ -57,11 +57,6 @@
 				<bool name="permanent" value="True" />
 				<uniqueid name="id" value="1073744668" />
 			</template_reference>
-			<template_reference name="action" value="action\add_to_squad_loadout_action">
-				<uniqueid name="id" value="1073751894" />
-				<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\shtrafniki\penal_soldier" mod="84428889d71d41a48e2eff09c2425d54" />
-				<int name="count" value="1" />
-			</template_reference>
 			<template_reference name="action" value="action\add_ability_action">
 				<uniqueid name="id" value="1073797298" />
 				<instance_reference name="ability_to_add" value="abilities\soviet\toggle_ability\sniper_hold_fire_mp" />
@@ -86,14 +81,7 @@
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="True" />
 				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\penal_officer_summer" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_squad_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="include_queued" value="True" />
-				<bool name="is_present" value="False" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\items\penal_officer_winter" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\items\penal_svs" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage_and_display" />

@@ -841,7 +841,7 @@
 					<string name="role_name" value="Loader" />
 				</group>
 			</list>
-			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<float name="destroy_on_abandon_health_threshold" value="0.05" />
 			<list name="on_abandon_weapon_action">
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />

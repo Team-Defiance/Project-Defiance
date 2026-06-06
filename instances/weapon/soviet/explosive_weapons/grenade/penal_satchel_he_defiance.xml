@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="2" />
-				<float name="near" value="8" />
-				<float name="mid" value="4" />
+				<float name="far" value="6" />
+				<float name="near" value="10" />
+				<float name="mid" value="8" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -435,7 +435,7 @@
 		</group>
 		<group name="projectile">
 			<bool name="delete_previous_on_hit" value="False" />
-			<instance_reference name="projectile" value="ebps\projectile\satchel_charge_throw_at_skillshot_mp" />
+			<instance_reference name="projectile" value="ebps\projectile\satchel_charge_he_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 		</group>
 		<group name="range">
 			<float name="max" value="10" />

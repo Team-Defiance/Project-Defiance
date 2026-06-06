@@ -360,7 +360,7 @@
 					<string name="role_name" value="Gunner" />
 				</group>
 			</list>
-			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<float name="destroy_on_abandon_health_threshold" value="0.05" />
 			<list name="on_abandon_weapon_action">
 			</list>
 		</template_reference>

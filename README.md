@@ -1,25 +1,25 @@
-# Project Defiance
+# CoH2: Defiance
 
 _A fan-made game modification for **Company of Heroes 2**, designed to deliver a fresh yet familiar experience._
 
 ---
 
 ## 🎯 Introduction
-Project Defiance is a total overhaul of the Company of Heroes 2 ruleset. It keeps the core gameplay recognizable for veterans while refining mechanics and introducing new options that make every match feel fresh. The transition from vanilla CoH2 to Defiance is smooth, so you can dive in without relearning the entire game, but engaging enough to keep you hooked.
+Defiance (formerly Project Defiance) is a total overhaul of the Company of Heroes 2 ruleset. It keeps the core gameplay recognizable for veterans while refining mechanics and introducing new options that make every match feel fresh. The transition from vanilla CoH2 to Defiance is smooth, so you can dive in without relearning the entire game, but engaging enough to keep you hooked.
 
 ---
 
 ## 📖 Overview
-Defiance reimagines balance, abilities, and gameplay flow while respecting the vanilla feel. Weapon damage, cover interactions, and explosive effects have been streamlined to reduce frustrating randomness and improve consistency. The result is a mechanically polished, accessible experience that emphasizes fun and battlefield flow over strict competitive balance.
+Defiance reworks balance, abilities, and gameplay flow while staying true to the vanilla feel. Weapon damage, cover interactions, and explosive effects have been streamlined to reduce arbitrary randomness and improve consistency across all factions. The result is a mod where every match is decided by strategy and skill rather than broken mechanics or lopsided matchups.
 
 ---
 
 ## 📥 Installation
 
-There are three ways to install Project Defiance:
+There are three ways to install CoH2: Defiance:
 
 ### 1. Steam Workshop (coming soon)
-- Subscribe to the official Project Defiance Steam Workshop item.
+- Subscribe to the official CoH2: Defiance Steam Workshop item.
 - Restart the game.
 
 ### 2. Download the `.sga` file
@@ -39,20 +39,20 @@ There are three ways to install Project Defiance:
 
 ## 🚀 Features
 - **Standalone Doctrine System**  
-  Replaces the vanilla commander system. All doctrines are available from the start, each bringing unique units, upgrades, and abilities.
+  Replaces the vanilla commander system. All doctrines are available from the start, each bringing unique units, upgrades, and abilities. Launches with 4 doctrines per faction, with additional free doctrines planned post-release.
 
-- **Refined Gameplay Mechanics**  
-  Streamlined weapon damage, cover behavior, and explosive interactions for consistency and clarity.
+- **Reworked Balance**  
+  All unit statistics, weapon damage, cover interactions, and explosive effects have been reworked from vanilla baselines for consistency and clarity.
 
 - **New Units and Abilities**  
-  Expands each faction’s toolkit with fresh strategic options.
+  Each faction's roster has been expanded and reworked with new strategic options.
 
-- **Accessible Yet Fresh**  
-  Vanilla-like gameplay that feels familiar but with enough new mechanics to keep players engaged.
+- **Reduced RNG**  
+  Random elements such as vehicle criticals and explosive damage variance have been streamlined or removed. Unpredictability is preserved where it enhances gameplay.
 
-- **Planned Growth**  
-  Launch includes 3 doctrines per faction, with additional free doctrines planned post-release
-  
+- **Five Distinct Factions**  
+  Soviet Union, Wehrmacht, US Forces, OKW, and UK Forces; each rebuilt from the ground up with unique strengths, playstyles, and counters.
+
 ---
 
 ## ❓ FAQ

@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048759" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048755" />
+						<locstring name="help_text" value="4957" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_commander_dshk_icon" />
 						<bool name="minimap_team_only" value="False" />
@@ -66,7 +66,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048761" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048765" />
+						<locstring name="help_text" value="4958" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="J" />
 						<icon name="icon_name" value="Icons_commander_dshk_icon" />
 						<bool name="minimap_team_only" value="False" />
@@ -123,7 +123,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048759" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048755" />
+						<locstring name="help_text" value="4959" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_commander_dshk_icon" />
 						<bool name="minimap_team_only" value="False" />
@@ -180,7 +180,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048761" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048765" />
+						<locstring name="help_text" value="4960" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_commander_dshk_icon" />
 						<bool name="minimap_team_only" value="False" />
@@ -237,7 +237,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048761" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048765" />
+						<locstring name="help_text" value="4961" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_commander_dshk_icon" />
 						<bool name="minimap_team_only" value="False" />
@@ -294,7 +294,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11048759" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="11048755" />
+						<locstring name="help_text" value="4962" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_soviet_dshk_38_50_cal_hmg" />
 						<bool name="minimap_team_only" value="False" />
@@ -836,88 +836,6 @@
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_all_in_list">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="-1" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="False" />
-									<bool name="not_retreating" value="True" />
-									<bool name="pinned" value="False" />
-									<bool name="suppressed" value="False" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_in_territory">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="in_supply" value="True" />
-									<bool name="is_secured" value="False" />
-									<bool name="is_secured_by_checkpoint" value="False" />
-									<bool name="not_in_transition" value="False" />
-								</template_reference>
-							</list>
-						</template_reference>
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_in_state">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<bool name="garrisoned" value="False" />
-									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="10" />
-									<bool name="injured" value="False" />
-									<bool name="leader" value="False" />
-									<bool name="not_moving" value="False" />
-									<bool name="not_retreating" value="False" />
-									<bool name="pinned" value="False" />
-									<bool name="suppressed" value="False" />
-									<bool name="camouflaged" value="False" />
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\apply_modifiers_action">
-							<float name="duration" value="0" />
-							<bool name="permanent" value="False" />
-							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\posture_speed_modifier">
-									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="addition" />
-									<float name="value" value="1" />
-									<instance_reference name="tooltip" value="modifier_tooltip\posture_speed_modifier" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073742966" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073742967" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
 			</list>
@@ -1046,6 +964,24 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\maxim_dshk_button_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_cost_munition_multiplier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\dshk_ap_belt" mod="84428889d71d41a48e2eff09c2425d54" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744339" />
 									</template_reference>
@@ -1076,6 +1012,24 @@
 												<float name="value" value="0.2" />
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.25" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\maxim_dshk_button_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="1.25" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\dshk_ap_belt" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073744340" />
 									</template_reference>
@@ -1095,7 +1049,6 @@
 				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing" />
 				<instance_reference name="ability" value="abilities\global\modal_ability\garrisoned_squad_facing_unset" />
 				<instance_reference name="ability" value="abilities\soviet\toggle_ability\mg_camo_hold_fire_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\soviet\toggle_ability\maskirovka_hmg" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>

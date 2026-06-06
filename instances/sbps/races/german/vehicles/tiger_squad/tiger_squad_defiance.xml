@@ -180,7 +180,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_ext">
 			<float name="number_of_slots" value="-1" />
 			<list name="upgrades">
-				<instance_reference name="upgrade" value="upgrade\german\doctrines\spearhead\panzer_commander_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\spotting_scopes_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -243,7 +243,7 @@
 									<bool name="is_present" value="True" />
 									<float name="max_completed" value="100" />
 									<float name="min_completed" value="1" />
-									<instance_reference name="upgrade_name" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="upgrade_name" value="upgrade\german\research\medkit_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
 								<template_reference name="requirement" value="requirements\required_player_upgrade">
 									<enum name="reason" value="usage" />
@@ -461,7 +461,6 @@
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\german\timed_ability\ost_tiger_blitz_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\coordinated_stuka_fragmentation_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -549,15 +548,6 @@
 														<enum name="usage_type" value="multiplication" />
 														<float name="value" value="1.3" />
 														<instance_reference name="tooltip" value="modifier_tooltip\horizontal_speed_weapon_modifier" />
-													</template_reference>
-													<template_reference name="modifier" value="modifiers\weapon_scatter">
-														<enum name="application_type" value="apply_to_weapon" />
-														<bool name="exclusive" value="False" />
-														<string name="modifier_id" value="" />
-														<string name="target_type_name" value="hardpoint_01" />
-														<enum name="usage_type" value="multiplication" />
-														<float name="value" value="0.9" />
-														<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 													</template_reference>
 												</list>
 												<uniqueid name="id" value="1073744242" />

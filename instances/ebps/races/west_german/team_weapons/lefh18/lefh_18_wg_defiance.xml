@@ -44,7 +44,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="60" />
+					<float name="fuel" value="55" />
 					<float name="manpower" value="160" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
@@ -140,7 +140,7 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\population_ext">
 			<float name="medic_pop" value="0" />
-			<float name="personnel_pop" value="8" />
+			<float name="personnel_pop" value="7" />
 			<float name="vehicle_pop" value="0" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\sight_ext">
@@ -402,7 +402,7 @@
 					<string name="role_name" value="Loader" />
 				</group>
 			</list>
-			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<float name="destroy_on_abandon_health_threshold" value="0.05" />
 			<list name="on_abandon_weapon_action">
 			</list>
 		</template_reference>

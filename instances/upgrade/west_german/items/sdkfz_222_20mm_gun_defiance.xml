@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="45" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="5" />
@@ -66,13 +66,13 @@
 						<float name="z" value="-0.2" />
 					</group>
 					<enum name="type" value="squad" />
-					<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\sdkfz_222_kwk38_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\020mm_kwk38_222_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 				<uniqueid name="id" value="1073747977" />
 			</template_reference>
 			<template_reference name="action" value="action\change_weapon">
 				<float name="hardpoint" value="1" />
-				<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\sdkfz_222_kwk38_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\020mm_kwk38_222_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<uniqueid name="id" value="1073747978" />
 			</template_reference>
 			<template_reference name="action" value="action\apply_crew_action">

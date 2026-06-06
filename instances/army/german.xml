@@ -54,7 +54,7 @@
 			<float name="action" value="0" />
 			<float name="command" value="0" />
 			<float name="fuel" value="20" />
-			<float name="manpower" value="400" />
+			<float name="manpower" value="420" />
 			<float name="munition" value="10" />
 			<float name="popcap" value="0" />
 		</group>
@@ -138,14 +138,15 @@
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\04_2_supply_break_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\05_camo_netting" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\overwatch\06_elefant_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\02_gg_car" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\01_passive_panzer_commander" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\03_stosstruppen_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\04_supply_drop" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\01_gg_car" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\04_passive_scopes" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\02_stosstruppen_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\03_supply_drop" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_1_stuka_smoke_bombs_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_2_leig_18_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\spearhead\05_2_stuka_fragmentation_bomb_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\spearhead\06_tiger_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\german\commander\vanguard\01_p2_spzb41" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\unused\leig_18_barrage" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\german\commander\vanguard\01_light_vehicle_refit" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\vanguard\02_jaeger_infantry_equipment" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\vanguard\03_panzerjager" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\german\commander\vanguard\04_forward_supply_station" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -268,7 +269,7 @@
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\german\research\hq_healing_aura_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="upgrade_pbg" value="upgrade\german\research\medkit_upgrade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">

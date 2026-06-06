@@ -75,15 +75,6 @@
 									<float name="value" value="0.95" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 								</template_reference>
-								<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.025" />
-									<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-								</template_reference>
 								<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 									<enum name="application_type" value="apply_to_weapon" />
 									<bool name="exclusive" value="False" />
@@ -95,6 +86,160 @@
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073743468" />
+						</template_reference>
+						<template_reference name="action" value="action\requirement_action" comment="Speed boost">
+							<bool name="check_self" value="False" />
+							<bool name="global_fire_and_forget_on_success" value="False" />
+							<bool name="instant_requirement_check" value="False" />
+							<bool name="kill_action_on_failed_requirements" value="False" />
+							<bool name="no_retrigger" value="False" />
+							<bool name="validate_all_sub_actions" value="True" />
+							<list name="requirement_table">
+								<template_reference name="required" value="requirements\required_all_in_list">
+									<enum name="reason" value="usage" />
+									<locstring name="ui_name" value="11043026" />
+									<list name="requirements">
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine_incremental" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_destroy_engine" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_destroy_engine_rear" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_driver_injured" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_engine_burning" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_exhaust_damaged" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_kill_driver_russian" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine_rear" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine_rear" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_lose_treads_or_wheels" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear_ramming" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+										<template_reference name="requirement" value="requirements\required_critical">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="0" />
+											<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<bool name="is_present" value="False" />
+										</template_reference>
+									</list>
+								</template_reference>
+							</list>
+							<list name="action_table">
+								<template_reference name="action" value="action\apply_modifiers_action">
+									<float name="duration" value="0" />
+									<bool name="permanent" value="False" />
+									<list name="modifiers">
+										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+											<enum name="application_type" value="apply_to_entity" />
+											<bool name="exclusive" value="False" />
+											<string name="modifier_id" value="" />
+											<string name="target_type_name" value="" />
+											<enum name="usage_type" value="multiplication" />
+											<float name="value" value="1.025" />
+											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073802546" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073802545" />
+							<bool name="fire_and_forget_non_global" value="False" />
+							<template_reference name="ui_help_text" value="tables\help_text_phrase">
+								<int name="phrase_order" value="0" />
+								<locstring name="phrase" value="0" />
+							</template_reference>
 						</template_reference>
 						<template_reference name="action" value="action\requirement_action">
 							<bool name="check_self" value="False" />
@@ -143,15 +288,6 @@
 											<float name="value" value="0.95" />
 											<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 										</template_reference>
-										<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-											<enum name="application_type" value="apply_to_entity" />
-											<bool name="exclusive" value="False" />
-											<string name="modifier_id" value="" />
-											<string name="target_type_name" value="" />
-											<enum name="usage_type" value="multiplication" />
-											<float name="value" value="1.025" />
-											<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-										</template_reference>
 										<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 											<enum name="application_type" value="apply_to_weapon" />
 											<bool name="exclusive" value="False" />
@@ -163,6 +299,160 @@
 										</template_reference>
 									</list>
 									<uniqueid name="id" value="1073743471" />
+								</template_reference>
+								<template_reference name="action" value="action\requirement_action" comment="Speed boost">
+									<bool name="check_self" value="False" />
+									<bool name="global_fire_and_forget_on_success" value="False" />
+									<bool name="instant_requirement_check" value="False" />
+									<bool name="kill_action_on_failed_requirements" value="False" />
+									<bool name="no_retrigger" value="False" />
+									<bool name="validate_all_sub_actions" value="True" />
+									<list name="requirement_table">
+										<template_reference name="required" value="requirements\required_all_in_list">
+											<enum name="reason" value="usage" />
+											<locstring name="ui_name" value="11043026" />
+											<list name="requirements">
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine_incremental" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_destroy_engine" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_destroy_engine_rear" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_driver_injured" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_engine_burning" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_exhaust_damaged" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_kill_driver_russian" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine_rear" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine_rear" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_lose_treads_or_wheels" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear_ramming" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+												<template_reference name="requirement" value="requirements\required_critical">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="0" />
+													<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+													<bool name="is_present" value="False" />
+												</template_reference>
+											</list>
+										</template_reference>
+									</list>
+									<list name="action_table">
+										<template_reference name="action" value="action\apply_modifiers_action">
+											<float name="duration" value="0" />
+											<bool name="permanent" value="False" />
+											<list name="modifiers">
+												<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+													<enum name="application_type" value="apply_to_entity" />
+													<bool name="exclusive" value="False" />
+													<string name="modifier_id" value="" />
+													<string name="target_type_name" value="" />
+													<enum name="usage_type" value="multiplication" />
+													<float name="value" value="1.025" />
+													<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073802547" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073802548" />
+									<bool name="fire_and_forget_non_global" value="False" />
+									<template_reference name="ui_help_text" value="tables\help_text_phrase">
+										<int name="phrase_order" value="0" />
+										<locstring name="phrase" value="0" />
+									</template_reference>
 								</template_reference>
 								<template_reference name="action" value="action\requirement_action">
 									<bool name="check_self" value="False" />
@@ -211,15 +501,6 @@
 													<float name="value" value="0.95" />
 													<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 												</template_reference>
-												<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-													<enum name="application_type" value="apply_to_entity" />
-													<bool name="exclusive" value="False" />
-													<string name="modifier_id" value="" />
-													<string name="target_type_name" value="" />
-													<enum name="usage_type" value="multiplication" />
-													<float name="value" value="1.025" />
-													<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-												</template_reference>
 												<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 													<enum name="application_type" value="apply_to_weapon" />
 													<bool name="exclusive" value="False" />
@@ -231,6 +512,160 @@
 												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073743476" />
+										</template_reference>
+										<template_reference name="action" value="action\requirement_action" comment="Speed boost">
+											<bool name="check_self" value="False" />
+											<bool name="global_fire_and_forget_on_success" value="False" />
+											<bool name="instant_requirement_check" value="False" />
+											<bool name="kill_action_on_failed_requirements" value="False" />
+											<bool name="no_retrigger" value="False" />
+											<bool name="validate_all_sub_actions" value="True" />
+											<list name="requirement_table">
+												<template_reference name="required" value="requirements\required_all_in_list">
+													<enum name="reason" value="usage" />
+													<locstring name="ui_name" value="11043026" />
+													<list name="requirements">
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine_incremental" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_destroy_engine" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_destroy_engine_rear" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_driver_injured" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_engine_burning" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_exhaust_damaged" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_kill_driver_russian" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine_rear" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine_rear" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_lose_treads_or_wheels" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear_ramming" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+														<template_reference name="requirement" value="requirements\required_critical">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="0" />
+															<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+															<bool name="is_present" value="False" />
+														</template_reference>
+													</list>
+												</template_reference>
+											</list>
+											<list name="action_table">
+												<template_reference name="action" value="action\apply_modifiers_action">
+													<float name="duration" value="0" />
+													<bool name="permanent" value="False" />
+													<list name="modifiers">
+														<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+															<enum name="application_type" value="apply_to_entity" />
+															<bool name="exclusive" value="False" />
+															<string name="modifier_id" value="" />
+															<string name="target_type_name" value="" />
+															<enum name="usage_type" value="multiplication" />
+															<float name="value" value="1.025" />
+															<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073802549" />
+												</template_reference>
+											</list>
+											<uniqueid name="id" value="1073802550" />
+											<bool name="fire_and_forget_non_global" value="False" />
+											<template_reference name="ui_help_text" value="tables\help_text_phrase">
+												<int name="phrase_order" value="0" />
+												<locstring name="phrase" value="0" />
+											</template_reference>
 										</template_reference>
 										<template_reference name="action" value="action\requirement_action">
 											<bool name="check_self" value="False" />
@@ -279,15 +714,6 @@
 															<float name="value" value="0.95" />
 															<instance_reference name="tooltip" value="modifier_tooltip\weapon_scatter" />
 														</template_reference>
-														<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
-															<enum name="application_type" value="apply_to_entity" />
-															<bool name="exclusive" value="False" />
-															<string name="modifier_id" value="" />
-															<string name="target_type_name" value="" />
-															<enum name="usage_type" value="multiplication" />
-															<float name="value" value="1.025" />
-															<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
-														</template_reference>
 														<template_reference name="modifier" value="modifiers\cooldown_weapon_modifier">
 															<enum name="application_type" value="apply_to_weapon" />
 															<bool name="exclusive" value="False" />
@@ -299,6 +725,160 @@
 														</template_reference>
 													</list>
 													<uniqueid name="id" value="1073743473" />
+												</template_reference>
+												<template_reference name="action" value="action\requirement_action" comment="Speed boost">
+													<bool name="check_self" value="False" />
+													<bool name="global_fire_and_forget_on_success" value="False" />
+													<bool name="instant_requirement_check" value="False" />
+													<bool name="kill_action_on_failed_requirements" value="False" />
+													<bool name="no_retrigger" value="False" />
+													<bool name="validate_all_sub_actions" value="True" />
+													<list name="requirement_table">
+														<template_reference name="required" value="requirements\required_all_in_list">
+															<enum name="reason" value="usage" />
+															<locstring name="ui_name" value="11043026" />
+															<list name="requirements">
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine_incremental" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_destroy_engine" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_destroy_engine_rear" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_driver_injured" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_engine_burning" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_exhaust_damaged" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_kill_driver_russian" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_light_damage_engine_rear" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_light_destroy_engine_rear" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_lose_treads_or_wheels" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine_rear_ramming" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_damage_engine_snare_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+																<template_reference name="requirement" value="requirements\required_critical">
+																	<enum name="reason" value="usage" />
+																	<locstring name="ui_name" value="0" />
+																	<instance_reference name="critical_name" value="critical\vehicle_engine_damage_light_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+																	<bool name="is_present" value="False" />
+																</template_reference>
+															</list>
+														</template_reference>
+													</list>
+													<list name="action_table">
+														<template_reference name="action" value="action\apply_modifiers_action">
+															<float name="duration" value="0" />
+															<bool name="permanent" value="False" />
+															<list name="modifiers">
+																<template_reference name="modifier" value="modifiers\speed_maximum_modifier">
+																	<enum name="application_type" value="apply_to_entity" />
+																	<bool name="exclusive" value="False" />
+																	<string name="modifier_id" value="" />
+																	<string name="target_type_name" value="" />
+																	<enum name="usage_type" value="multiplication" />
+																	<float name="value" value="1.025" />
+																	<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
+																</template_reference>
+															</list>
+															<uniqueid name="id" value="1073802551" />
+														</template_reference>
+													</list>
+													<uniqueid name="id" value="1073802552" />
+													<bool name="fire_and_forget_non_global" value="False" />
+													<template_reference name="ui_help_text" value="tables\help_text_phrase">
+														<int name="phrase_order" value="0" />
+														<locstring name="phrase" value="0" />
+													</template_reference>
 												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073743475" />

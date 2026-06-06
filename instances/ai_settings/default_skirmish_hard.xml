@@ -217,7 +217,7 @@
 		</group>
 		<group name="tactics">
 			<float name="avoidance_delay_time_min" value="3" />
-			<float name="avoidance_ignore_chance" value="0.25" />
+			<float name="avoidance_ignore_chance" value="0.15" />
 			<float name="vehicle_update_pos_delay_time" value="3" />
 			<bool name="should_protect_weak_rear_armour" value="True" />
 			<bool name="should_vehicle_out_maneuvre_enemy" value="True" />

@@ -256,7 +256,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="4" />
+							<float name="value" value="3" />
 							<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\armor_modifier">
@@ -282,7 +282,7 @@
 				</template_reference>
 				<template_reference name="action" value="action\kicker_message_action">
 					<float name="loop_interval" value="4" />
-					<locstring name="message" value="11085918" />
+					<locstring name="message" value="4922" mod="84428889d71d41a48e2eff09c2425d54" />
 					<float name="message_colour_a" value="255" />
 					<float name="message_colour_b" value="255" />
 					<float name="message_colour_g" value="255" />
@@ -408,7 +408,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="75" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />

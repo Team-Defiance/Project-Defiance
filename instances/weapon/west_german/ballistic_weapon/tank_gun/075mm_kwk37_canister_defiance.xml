@@ -35,9 +35,9 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="1.5" />
-				<float name="near" value="6" />
-				<float name="mid" value="3" />
+				<float name="far" value="6" />
+				<float name="near" value="10" />
+				<float name="mid" value="8" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
@@ -98,7 +98,7 @@
 			<bool name="enable_auto_target_search" value="True" />
 			<bool name="fire_at_building_combat_slot" value="False" />
 			<float name="ground_hit_rate" value="1" />
-			<bool name="ignore_shot_blocking" value="False" />
+			<bool name="ignore_shot_blocking" value="True" />
 			<bool name="non_moving_setup" value="False" />
 			<bool name="point_blank" value="False" />
 			<bool name="prevents_prone" value="False" />
@@ -117,7 +117,7 @@
 			<bool name="ignore_relations" value="False" />
 			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
-			<enum name="attack_ground_type" value="outside_hold_only" />
+			<enum name="attack_ground_type" value="anywhere" />
 			<bool name="non_moving_setup_requires_facing" value="False" />
 		</group>
 		<group name="burst">
@@ -177,7 +177,7 @@
 			<group name="tp_garrison_cover">
 				<float name="accuracy_multiplier" value="0.4" />
 				<float name="damage_multiplier" value="0.25" />
-				<float name="penetration_multiplier" value="0.625" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
@@ -189,20 +189,20 @@
 			<group name="tp_heavy">
 				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
-				<float name="penetration_multiplier" value="0.75" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
 			</group>
 			<group name="tp_light">
 				<float name="accuracy_multiplier" value="0.9" />
 				<float name="damage_multiplier" value="0.9" />
-				<float name="penetration_multiplier" value="0.95" />
+				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
 			<group name="tp_negative">
 				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -224,7 +224,7 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
