@@ -332,7 +332,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_old" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="" />
 					<uniqueid name="id" value="1073744839" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -349,7 +349,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_new" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="weapon\axis\ballistic_weapon\tank_gun\020mm_kwk38_luchs_he" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073744840" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -366,7 +366,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_flame" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="weapon\axis\ballistic_weapon\tank_gun\020mm_kwk38_luchs_flame" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073744841" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -451,7 +451,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\west_german\small_arms\tank_gun\sdkfz_222_kwk38_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="weapon\west_german\ballistic_weapon\tank_gun\020mm_kwk38_222_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073748250" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -468,7 +468,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\west_german\ballistic_weapon\tank_gun\222_20mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="" />
 					<uniqueid name="id" value="1073751008" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />
@@ -689,7 +689,7 @@
 							<bool name="owned_by_player_only" value="True" />
 						</template_reference>
 					</list>
-					<instance_reference name="weapon_to_override" value="weapon\axis\small_arms\tank_gun\panzer_ii_20mm_kwk38_ap" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="weapon_to_override" value="weapon\axis\ballistic_weapon\tank_gun\020mm_kwk38_luchs_ap" mod="84428889d71d41a48e2eff09c2425d54" />
 					<uniqueid name="id" value="1073800799" />
 					<bool name="auto_attack_only" value="True" />
 					<bool name="persist_on_weapon_change" value="True" />

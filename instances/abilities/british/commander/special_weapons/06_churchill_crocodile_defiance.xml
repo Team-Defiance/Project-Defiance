@@ -65,6 +65,18 @@
 								<locstring name="phrase" value="0" />
 							</template_reference>
 						</template_reference>
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="19" />
+							<bool name="fire_and_forget" value="False" />
+							<list name="subactions">
+								<template_reference name="action" value="action\reticule_action">
+									<uniqueid name="id" value="1073802291" />
+									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_pulse" />
+									<float name="radius" value="60" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073802292" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073796481" />
 					<bool name="can_prevent_refund" value="True" />
@@ -272,6 +284,14 @@
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
 				<instance_reference name="upgrade_name" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_population">
+				<enum name="reason" value="usage" />
+				<group name="free_pop">
+					<float name="medic" value="0" />
+					<float name="personnel" value="20" />
+					<float name="vehicle" value="0" />
+				</group>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />

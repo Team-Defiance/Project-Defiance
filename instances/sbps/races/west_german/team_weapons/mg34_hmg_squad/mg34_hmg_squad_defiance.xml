@@ -9,7 +9,7 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11066573" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="1067" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="help_text" value="11201222" />
 						<string name="hotkey_name" value="H" />
 						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
 						<bool name="minimap_team_only" value="False" />
@@ -17,6 +17,177 @@
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
 						<locstring name="screen_name" value="11066571" />
+						<string name="selection_group" value="hmg" />
+						<group name="speaker_generic">
+							<string name="code_1" value="xs" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="m4" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_2">
+							<string name="code_1" value="mg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_3">
+							<string name="code_1" value="m34" />
+							<string name="code_2" value="hmg" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="tacmap_team_only" value="False" />
+						<int name="ui_priority" value="39" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
+						<float name="minimap_texture_scale" value="0.55" />
+						<locstring name="brief_text" value="11066576" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<bool name="decoratable" value="True" />
+						<bool name="show_in_build_log" value="True" />
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_m1910_hmg_symbol" />
+						<enum name="ui_style" value="default" />
+						<string name="cover_level_icon_postfix" value="" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\german" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="11066577" />
+						<bool name="has_speech_code" value="True" />
+						<locstring name="help_text" value="11201222" />
+						<string name="hotkey_name" value="H" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
+						<bool name="minimap_team_only" value="False" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="11066580" />
+						<string name="selection_group" value="hmg" />
+						<group name="speaker_generic">
+							<string name="code_1" value="gs" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="wp" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_2">
+							<string name="code_1" value="mg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_3">
+							<string name="code_1" value="hmg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="tacmap_team_only" value="False" />
+						<int name="ui_priority" value="39" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_soviet_maxim_hmg_w_portrait" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_soviet_maxim_hmg_s_portrait" />
+						<float name="minimap_texture_scale" value="0.55" />
+						<locstring name="brief_text" value="11066576" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<bool name="decoratable" value="True" />
+						<bool name="show_in_build_log" value="True" />
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_m1910_hmg_symbol" />
+						<enum name="ui_style" value="default" />
+						<string name="cover_level_icon_postfix" value="" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\soviet" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="11066578" />
+						<bool name="has_speech_code" value="True" />
+						<locstring name="help_text" value="11201222" />
+						<string name="hotkey_name" value="H" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
+						<bool name="minimap_team_only" value="False" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="11066581" />
+						<string name="selection_group" value="hmg" />
+						<group name="speaker_generic">
+							<string name="code_1" value="wd" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="wd" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_2">
+							<string name="code_1" value="mg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_3">
+							<string name="code_1" value="hmg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="tacmap_team_only" value="False" />
+						<int name="ui_priority" value="39" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_aef_mg_crew_w_portrait" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_aef_mg_crew_s_portrait" />
+						<float name="minimap_texture_scale" value="0.55" />
+						<locstring name="brief_text" value="11066576" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<bool name="decoratable" value="True" />
+						<bool name="show_in_build_log" value="True" />
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_m1910_hmg_symbol" />
+						<enum name="ui_style" value="default" />
+						<string name="cover_level_icon_postfix" value="" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\aef" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="11066579" />
+						<bool name="has_speech_code" value="True" />
+						<locstring name="help_text" value="11201222" />
+						<string name="hotkey_name" value="H" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_hmg_crew" />
+						<bool name="minimap_team_only" value="False" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="11066582" />
 						<string name="selection_group" value="hmg" />
 						<group name="speaker_generic">
 							<string name="code_1" value="wp" />
@@ -49,7 +220,121 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_unit_west_german_hmg_crew_s" />
 						<float name="minimap_texture_scale" value="0.55" />
-						<locstring name="brief_text" value="1068" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="brief_text" value="11066576" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<bool name="decoratable" value="True" />
+						<bool name="show_in_build_log" value="True" />
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_m1910_hmg_symbol" />
+						<enum name="ui_style" value="default" />
+						<string name="cover_level_icon_postfix" value="" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\west_german" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="11066578" />
+						<bool name="has_speech_code" value="True" />
+						<locstring name="help_text" value="11201222" />
+						<string name="hotkey_name" value="H" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
+						<bool name="minimap_team_only" value="False" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="11066581" />
+						<string name="selection_group" value="hmg" />
+						<group name="speaker_generic">
+							<string name="code_1" value="wd" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="wd" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_2">
+							<string name="code_1" value="mg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_3">
+							<string name="code_1" value="hmg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="tacmap_team_only" value="False" />
+						<int name="ui_priority" value="39" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_british_tommy_w_portrait" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_british_tommy_s_portrait" />
+						<float name="minimap_texture_scale" value="0.55" />
+						<locstring name="brief_text" value="11066576" />
+						<locstring name="screen_name_short" value="0" />
+						<enum name="map_rotation_type_override" value="heading" />
+						<bool name="decoratable" value="True" />
+						<bool name="show_in_build_log" value="True" />
+						<bool name="speaker_highest_priority" value="False" />
+						<icon name="symbol_icon_name" value="Icons_symbols_unit_german_m1910_hmg_symbol" />
+						<enum name="ui_style" value="default" />
+						<string name="cover_level_icon_postfix" value="" />
+					</group>
+					<instance_reference name="ext_key" value="racebps\british" />
+				</group>
+				<group name="race_data">
+					<group name="info">
+						<bool name="allow_spawner_production" value="False" />
+						<locstring name="extra_text" value="11066573" />
+						<bool name="has_speech_code" value="True" />
+						<locstring name="help_text" value="11201222" />
+						<string name="hotkey_name" value="H" />
+						<icon name="icon_name" value="Icons_units_unit_west_german_mg34_hmg" />
+						<bool name="minimap_team_only" value="False" />
+						<icon name="minimap_texture" value="Icons_minimap_global_mg_facing" />
+						<instance_reference name="modal_ability" value="" />
+						<bool name="reveal_for_decryption" value="True" />
+						<locstring name="screen_name" value="11066571" />
+						<string name="selection_group" value="hmg" />
+						<group name="speaker_generic">
+							<string name="code_1" value="xs" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speaker_specific">
+							<string name="code_1" value="m4" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_2">
+							<string name="code_1" value="mg" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<group name="speech_code_3">
+							<string name="code_1" value="m34" />
+							<string name="code_2" value="hmg" />
+							<string name="code_3" value="" />
+						</group>
+						<bool name="tacmap_team_only" value="False" />
+						<int name="ui_priority" value="39" />
+						<bool name="use_random_entity_speaker" value="False" />
+						<icon name="portrait_name_winter" value="Icons_portraits_unit_german_mg42_crew_w_portrait" />
+						<group name="speaker_specific_alt">
+							<string name="code_1" value="" />
+							<string name="code_2" value="" />
+							<string name="code_3" value="" />
+						</group>
+						<icon name="portrait_name_summer" value="Icons_portraits_unit_german_mg42_crew_s_portrait" />
+						<float name="minimap_texture_scale" value="0.55" />
+						<locstring name="brief_text" value="11066576" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
@@ -289,36 +574,11 @@
 							<float name="min_completed" value="1" />
 							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_squad_veterancy">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<float name="veterancy_rank" value="1" />
-								</template_reference>
-							</list>
-						</template_reference>
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\veterancy_action">
-							<float name="number_of_experience_points" value="-400" />
-							<uniqueid name="id" value="1073754622" />
-						</template_reference>
-						<template_reference name="action" value="action\delay">
-							<float name="delay" value="5" />
-							<float name="delay_min" value="0" />
-							<bool name="progress_bar" value="False" />
-							<bool name="randomize" value="False" />
-							<list name="delayed_actions">
-								<template_reference name="action" value="action\veterancy_action">
-									<float name="number_of_experience_points" value="400" />
-									<uniqueid name="id" value="1073754623" />
-								</template_reference>
-							</list>
-							<uniqueid name="id" value="1073754624" />
-							<bool name="can_prevent_refund" value="True" />
+							<float name="number_of_experience_points" value="320" />
+							<uniqueid name="id" value="1073802478" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073754625" />

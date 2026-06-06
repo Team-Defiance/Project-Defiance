@@ -63,7 +63,7 @@
 			</list>
 			<float name="armor" value="1" />
 			<float name="rear_armor" value="0" />
-			<float name="target_size" value="0.87" />
+			<float name="target_size" value="0.85" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -840,7 +840,7 @@
 			<float name="attack_priority" value="5" />
 			<enum name="camouflage_type" value="tp_global" />
 			<bool name="chain_revealer" value="True" />
-			<float name="detection_radius" value="6" />
+			<float name="detection_radius" value="4" />
 			<bool name="must_be_fully_constructed" value="False" />
 			<bool name="permanently_activated" value="False" />
 			<float name="combat_reset_time" value="10" />

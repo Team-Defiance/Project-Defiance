@@ -199,7 +199,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\modify_resources">
 							<template_reference name="resource_to_modify" value="tables\resource_table">
-								<float name="action" value="185" />
+								<float name="action" value="120" />
 								<float name="command" value="0" />
 								<float name="fuel" value="0" />
 								<float name="manpower" value="0" />
@@ -238,8 +238,8 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="5" />
-					<float name="manpower" value="40" />
+					<float name="fuel" value="10" />
+					<float name="manpower" value="80" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -290,7 +290,7 @@
 			<bool name="ap_loss_kicker" value="True" />
 			<bool name="cullsphere_selectable" value="False" />
 			<float name="decorator_offset" value="0" />
-			<string name="extra_text_deprecated" value="Allows for the production of the MG42 HMG, Sniper, and GrW 42 Mortar" />
+			<string name="extra_text_deprecated" value="Allows for the production of Grenadiere, Scharfschütze, and GrW 42 Mortar teams" />
 			<bool name="ghost_enable" value="True" />
 			<bool name="has_speech_code" value="True" />
 			<locstring name="help_text" value="2585" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -552,7 +552,7 @@
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
 					<instance_reference name="entity" value="" />
-					<instance_reference name="squad" value="sbps\races\german\soldiers\heavy_machine_gun_squad\hmg42_machine_gun_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="squad" value="sbps\races\german\soldiers\grenadiere\grenadiere_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="spawn_at_map_entry_point" value="False" />
 				</group>
 				<group name="spawn_item">

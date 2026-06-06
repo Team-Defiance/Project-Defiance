@@ -457,36 +457,6 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_squad_upgrade">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<bool name="include_queued" value="False" />
-							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\soviet\items\mobilize_reserves_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\add_to_squad_loadout_action">
-							<uniqueid name="id" value="1073744049" />
-							<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\strelki\sov_rifleman_medic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-							<int name="count" value="1" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073744051" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="False" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
 						<template_reference name="required" value="requirements\required_not">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
@@ -496,7 +466,7 @@
 									<locstring name="ui_name" value="0" />
 									<bool name="garrisoned" value="False" />
 									<bool name="healed" value="False" />
-									<float name="in_combat_since" value="20" />
+									<float name="in_combat_since" value="15" />
 									<bool name="injured" value="False" />
 									<bool name="leader" value="False" />
 									<bool name="not_moving" value="False" />
@@ -613,20 +583,16 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.88" />
+									<float name="value" value="0.875" />
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_cost_manpower_modifier" />
-								</template_reference>
-								<template_reference name="modifier" value="modifiers\received_experience_squad_modifier">
-									<enum name="application_type" value="apply_to_squad" />
-									<bool name="exclusive" value="False" />
-									<string name="modifier_id" value="" />
-									<string name="target_type_name" value="" />
-									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.15" />
-									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073747005" />
+						</template_reference>
+						<template_reference name="action" value="action\add_to_squad_loadout_action">
+							<uniqueid name="id" value="1073802536" />
+							<instance_reference name="unit_type" value="ebps\races\soviet\soldiers\strelki\sov_rifleman_medic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="count" value="1" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073747003" />
@@ -664,7 +630,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.1" />
+									<float name="value" value="1.2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 								</template_reference>
 							</list>
@@ -905,7 +871,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="hardpoint_01" />
 												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0.6" />
+												<float name="value" value="0.65" />
 												<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 											</template_reference>
 										</list>
@@ -971,8 +937,8 @@
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\strelki_urah_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-												<enum name="usage_type" value="multiplication" />
-												<float name="value" value="0" />
+												<enum name="usage_type" value="addition" />
+												<float name="value" value="-10" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
@@ -1094,7 +1060,7 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_reinforce_ext">
 			<group name="time_cost_percentage">
-				<float name="cost_percentage" value="0.625" />
+				<float name="cost_percentage" value="0.6" />
 				<float name="time_percentage" value="1" />
 			</group>
 			<group name="ui_info">
@@ -1159,7 +1125,7 @@
 							<int name="ui_position" value="12" />
 						</group>
 						<group name="construction_item">
-							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\soviet_incendiary_mine_counterattack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="ebp" value="ebps\races\soviet\buildings\defensive_structures\pmd_57_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="ui_position" value="21" />
 						</group>
 						<group name="construction_item">

@@ -35,30 +35,30 @@
 		</group>
 		<group name="area_effect">
 			<group name="accuracy">
-				<float name="far" value="2" />
-				<float name="near" value="8" />
-				<float name="mid" value="4" />
+				<float name="far" value="6" />
+				<float name="near" value="10" />
+				<float name="mid" value="8" />
 			</group>
 			<group name="area_info">
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="12.75" />
+				<float name="radius" value="13.5" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.15" />
+				<float name="far" value="0.175" />
 				<float name="near" value="1" />
 				<float name="mid" value="0.35" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.075" />
+				<float name="far" value="0.0875" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="0.1875" />
+				<float name="mid" value="0.175" />
 			</group>
 			<group name="distance">
 				<float name="far" value="10.5" />
-				<float name="near" value="0.8" />
-				<float name="mid" value="3.375" />
+				<float name="near" value="1" />
+				<float name="mid" value="3.45" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -176,12 +176,12 @@
 			</group>
 			<group name="tp_garrison_cover">
 				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.4" />
+				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
@@ -224,7 +224,7 @@
 			</group>
 			<group name="tp_water">
 				<float name="accuracy_multiplier" value="1" />
-				<float name="damage_multiplier" value="1" />
+				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="1" />
 			</group>
@@ -316,7 +316,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.25" />
+			<float name="deflection_damage_multiplier" value="0.15" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 				<template_reference name="action" value="action\requirement_action">
@@ -498,9 +498,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="mid" value="20" />
-			<float name="far" value="20" />
-			<float name="near" value="20" />
+			<float name="mid" value="30" />
+			<float name="far" value="30" />
+			<float name="near" value="30" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

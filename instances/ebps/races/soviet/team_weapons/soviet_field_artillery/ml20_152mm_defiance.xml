@@ -34,7 +34,7 @@
 					<float name="action" value="0" />
 					<float name="command" value="0" />
 					<float name="fuel" value="60" />
-					<float name="manpower" value="190" />
+					<float name="manpower" value="175" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />
 				</group>
@@ -412,7 +412,7 @@
 					<string name="role_name" value="Loader" />
 				</group>
 			</list>
-			<float name="destroy_on_abandon_health_threshold" value="-1" />
+			<float name="destroy_on_abandon_health_threshold" value="0.05" />
 			<list name="on_abandon_weapon_action">
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />

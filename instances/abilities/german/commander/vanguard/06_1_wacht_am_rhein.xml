@@ -29,7 +29,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="1.2" />
+									<float name="value" value="1.1" />
 									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\capture_revert_rate_squad_modifier">
@@ -281,6 +281,18 @@
 								<locstring name="phrase" value="0" />
 							</template_reference>
 						</template_reference>
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="19" />
+							<bool name="fire_and_forget" value="False" />
+							<list name="subactions">
+								<template_reference name="action" value="action\reticule_action">
+									<uniqueid name="id" value="1073802297" />
+									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_pulse" />
+									<float name="radius" value="60" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073802298" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073801536" />
 					<bool name="can_prevent_refund" value="True" />
@@ -375,7 +387,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="80" />
+			<float name="munition" value="110" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />

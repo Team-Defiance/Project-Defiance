@@ -68,6 +68,18 @@
 					<float name="duration" value="40" />
 					<bool name="fire_and_forget" value="False" />
 					<list name="subactions">
+						<template_reference name="action" value="action\timed_action">
+							<float name="duration" value="17" />
+							<bool name="fire_and_forget" value="False" />
+							<list name="subactions">
+								<template_reference name="action" value="action\reticule_action">
+									<uniqueid name="id" value="1073802303" />
+									<instance_reference name="ui_reticule" value="ui_reticule\ability_target_il2_sturmovik_pulse" />
+									<float name="radius" value="20" />
+								</template_reference>
+							</list>
+							<uniqueid name="id" value="1073802302" />
+						</template_reference>
 						<template_reference name="action" value="action\delay">
 							<float name="delay" value="25" />
 							<float name="delay_min" value="0" />
@@ -102,6 +114,18 @@
 										<int name="phrase_order" value="0" />
 										<locstring name="phrase" value="0" />
 									</template_reference>
+								</template_reference>
+								<template_reference name="action" value="action\timed_action">
+									<float name="duration" value="12" />
+									<bool name="fire_and_forget" value="False" />
+									<list name="subactions">
+										<template_reference name="action" value="action\reticule_action">
+											<uniqueid name="id" value="1073802282" />
+											<instance_reference name="ui_reticule" value="ui_reticule\ability_target_recon_pulse" />
+											<float name="radius" value="55" />
+										</template_reference>
+									</list>
+									<uniqueid name="id" value="1073802281" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073750649" />

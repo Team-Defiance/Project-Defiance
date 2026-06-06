@@ -216,12 +216,12 @@
 			</group>
 		</group>
 		<group name="tactics">
-			<float name="avoidance_delay_time_min" value="2" />
-			<float name="avoidance_ignore_chance" value="0.25" />
+			<float name="avoidance_delay_time_min" value="1" />
+			<float name="avoidance_ignore_chance" value="0.05" />
 			<float name="vehicle_update_pos_delay_time" value="2" />
 			<bool name="should_protect_weak_rear_armour" value="True" />
 			<bool name="should_vehicle_out_maneuvre_enemy" value="True" />
-			<float name="avoidance_delay_time_max" value="2" />
+			<float name="avoidance_delay_time_max" value="1" />
 		</group>
 		<enum_table name="tactic_wait_timeout_defaults">
 			<float name="ability" value="-1" />

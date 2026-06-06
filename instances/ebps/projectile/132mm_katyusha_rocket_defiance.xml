@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.00132" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="1.7" />
-				<float name="radius_min" value="1" />
+				<float name="radius_max" value="1.675" />
+				<float name="radius_min" value="1.49" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -221,7 +221,7 @@
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
 			<bool name="spawn_collision_fx" value="False" />
-			<float name="speed" value="30" />
+			<float name="speed" value="26.25" />
 			<bool name="collision_land_ignore" value="False" />
 		</template_reference>
 	</list>

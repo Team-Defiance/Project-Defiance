@@ -104,7 +104,7 @@
 		<float name="toggled_recharge_time_on" value="0" />
 		<group name="ui_cursor">
 			<string name="cursor_bad" value="modal_ability_cancel" />
-			<string name="cursor_good" value="modal_attack" />
+			<string name="cursor_good" value="modal_ability" />
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
@@ -201,7 +201,7 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_dispatch" />
-		<float name="ui_reticule_radius_min" value="5.5" />
+		<float name="ui_reticule_radius_min" value="5" />
 		<float name="ui_reticule_radius_max" value="9.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
 		<enum name="ui_group" value="group_primary" />

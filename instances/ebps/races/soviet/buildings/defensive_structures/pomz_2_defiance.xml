@@ -502,7 +502,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\spawn_entity">
 							<float name="duration" value="5" />
-							<instance_reference name="entity_blueprint" value="ebps\races\soviet\buildings\defensive_structures\flare_fire_mp" />
+							<instance_reference name="entity_blueprint" value="ebps\races\soviet\buildings\defensive_structures\flare_fire_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="permanent" value="False" />
 							<bool name="player_owned" value="True" />
 							<group name="target_info">

@@ -21,7 +21,7 @@
 				<float name="command" value="0" />
 				<float name="fuel" value="0" />
 				<float name="manpower" value="0" />
-				<float name="munition" value="60" />
+				<float name="munition" value="50" />
 				<float name="popcap" value="0" />
 			</group>
 			<float name="time_seconds" value="45" />
@@ -115,11 +115,6 @@
 				<bool name="trigger_publish_event" value="False" />
 				<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\dozer_upgrade_item_mp" />
 				<uniqueid name="id" value="1073751088" />
-			</template_reference>
-			<template_reference name="action" value="action\slot_item_add">
-				<instance_reference name="slot_item" value="slot_item\west_german\wg_panzer_iv_armored_skirts" />
-				<bool name="permanent" value="True" />
-				<uniqueid name="id" value="1073752368" />
 			</template_reference>
 			<template_reference name="action" value="action\ui_decorator_action">
 				<icon name="symbol_icon" value="ModIcons_84428889d71d41a48e2eff09c2425d54_aef_symbols_vehicles_m4a3_105_dozer" />

@@ -78,7 +78,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="m5h" />
+			<string name="code_1" value="e4g" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -167,7 +167,7 @@
 		</list>
 		<enum name="ability_super" value="tp_none" />
 		<int name="ui_position" value="50" />
-		<bool name="ui_mini_map_capture" value="False" />
+		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_call_in" />
 		<instance_reference name="ui_reticule" value="" />
