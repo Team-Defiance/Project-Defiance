@@ -287,38 +287,6 @@
 						<template_reference name="required" value="requirements\required_unit_type">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="assualt_guns" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-							<bool name="owned_by_player_only" value="True" />
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_crew_stunned" />
-							<uniqueid name="id" value="1073756725" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756726" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
 							<enum name="unit_type" value="team_weapon" />
 							<template_reference name="qualify_option" value="options\none">
 							</template_reference>
@@ -334,139 +302,6 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073756728" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_all_in_list">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirements">
-								<template_reference name="requirement" value="requirements\required_not">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<list name="requirement_table">
-										<template_reference name="required" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="assualt_guns" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-									</list>
-								</template_reference>
-								<template_reference name="requirement" value="requirements\required_any_in_list">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<list name="requirements">
-										<template_reference name="requirement" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="medium_tank" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-										<template_reference name="requirement" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="heavy_tank" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-										<template_reference name="requirement" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="t_70" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-										<template_reference name="requirement" value="requirements\required_unit_type">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<enum name="unit_type" value="ostwind" />
-											<template_reference name="qualify_option" value="options\none">
-											</template_reference>
-											<bool name="search_load_out" value="False" />
-											<bool name="owned_by_player_only" value="True" />
-										</template_reference>
-									</list>
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_turret_disabled_temp" />
-							<uniqueid name="id" value="1073756729" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756730" />
-					<bool name="fire_and_forget_non_global" value="False" />
-					<template_reference name="ui_help_text" value="tables\help_text_phrase">
-						<int name="phrase_order" value="0" />
-						<locstring name="phrase" value="0" />
-					</template_reference>
-				</template_reference>
-				<template_reference name="action" value="action\requirement_action">
-					<bool name="check_self" value="False" />
-					<bool name="global_fire_and_forget_on_success" value="False" />
-					<bool name="instant_requirement_check" value="True" />
-					<bool name="kill_action_on_failed_requirements" value="False" />
-					<bool name="no_retrigger" value="False" />
-					<bool name="validate_all_sub_actions" value="True" />
-					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_unit_type">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<enum name="unit_type" value="light_vehicle" />
-							<template_reference name="qualify_option" value="options\none">
-							</template_reference>
-							<bool name="search_load_out" value="False" />
-							<bool name="owned_by_player_only" value="True" />
-						</template_reference>
-						<template_reference name="required" value="requirements\required_not">
-							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="0" />
-							<list name="requirement_table">
-								<template_reference name="required" value="requirements\required_unit_type">
-									<enum name="reason" value="usage" />
-									<locstring name="ui_name" value="0" />
-									<enum name="unit_type" value="t_70" />
-									<template_reference name="qualify_option" value="options\none">
-									</template_reference>
-									<bool name="search_load_out" value="False" />
-									<bool name="owned_by_player_only" value="True" />
-								</template_reference>
-							</list>
-						</template_reference>
-					</list>
-					<list name="action_table">
-						<template_reference name="action" value="action\trigger_critical_action">
-							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_damage_engine" />
-							<uniqueid name="id" value="1073756731" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073756732" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -559,6 +394,11 @@
 								<int name="phrase_order" value="0" />
 								<locstring name="phrase" value="0" />
 							</template_reference>
+						</template_reference>
+						<template_reference name="action" value="action\trigger_critical_action">
+							<float name="remove_at_health" value="1" />
+							<instance_reference name="critical" value="critical\vehicle_vison_block_damaged" />
+							<uniqueid name="id" value="1073802715" />
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073756798" />
