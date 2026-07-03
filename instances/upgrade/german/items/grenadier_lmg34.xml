@@ -51,33 +51,19 @@
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_in_territory">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
+				<locstring name="ui_name" value="11158277" />
 				<bool name="in_supply" value="True" />
 				<bool name="is_secured" value="False" />
 				<bool name="is_secured_by_checkpoint" value="False" />
 				<bool name="not_in_transition" value="False" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_slot_item">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="1" mod="84428889d71d41a48e2eff09c2425d54" />
-				<bool name="check_item_on_entity" value="False" />
-				<bool name="display_requirement" value="True" />
-				<float name="max_owned" value="0" />
-				<float name="min_owned" value="0" />
-				<instance_reference name="slot_item" value="slot_item\german\small_arms\grenadier_lmg34" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_slot_item_size">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11074943" />
-				<float name="required_free_slot_size" value="1" />
-			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="473" mod="84428889d71d41a48e2eff09c2425d54" />
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\festung_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\research\battle_phase_2_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -86,19 +72,12 @@
 				<bool name="is_present" value="False" />
 				<instance_reference name="upgrade_name" value="upgrade\german\items\grenadier_veteran_squad_leader_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_resource">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="2030" mod="84428889d71d41a48e2eff09c2425d54" />
-				<template_reference name="resource" value="tables\resource_table">
-					<float name="action" value="0" />
-					<float name="command" value="2" />
-					<float name="fuel" value="0" />
-					<float name="manpower" value="0" />
-					<float name="munition" value="0" />
-					<float name="soviet_progression" value="0" />
-					<float name="soviet_227" value="0" />
-					<float name="popcap" value="0" />
-				</template_reference>
+			<template_reference name="required" value="requirements\required_squad_upgrade">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="include_queued" value="True" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\german\doctrines\spearhead\grenadiere_stg44_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<icon name="ui_kicker_icon_name" value="Icons_weapons_weapon_lmg_mg34" />

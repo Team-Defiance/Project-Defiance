@@ -1,4 +1,4 @@
-<instance description="" template="abilities">
+<instance description="passive used for the display of this ability on the command bar." template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -25,7 +25,7 @@
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
 		<float name="cursor_ghost_blueprint_angle" value="0" />
-		<bool name="disable_combat" value="True" />
+		<bool name="disable_combat" value="False" />
 		<bool name="disable_when_active" value="True" />
 		<float name="duration_time" value="0" />
 		<bool name="enable_in_building" value="False" />
@@ -43,10 +43,10 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="30" />
+		<float name="range" value="85" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="55" />
-		<bool name="refundable" value="False" />
+		<float name="recharge_time" value="120" />
+		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
 		<bool name="shared_timer_player_wide" value="False" />
@@ -56,7 +56,7 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="jae" />
+			<string name="code_1" value="tcc" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -74,13 +74,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="4725" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="4724" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4970" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="4969" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_cmdr_german_jaeger_light_infantry" />
+			<icon name="icon_name" value="Icons_abilities_ability_german_stun_grenade" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="4726" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="11025952" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -98,25 +98,25 @@
 				<bool name="is_present" value="True" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\vanguard_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\german\commander\current\spearhead_doctrine_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_resource">
 				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="4662" mod="84428889d71d41a48e2eff09c2425d54" />
+				<locstring name="ui_name" value="2001" mod="84428889d71d41a48e2eff09c2425d54" />
 				<template_reference name="resource" value="tables\resource_table">
 					<float name="action" value="0" />
-					<float name="command" value="2" />
+					<float name="command" value="1" />
 					<float name="fuel" value="0" />
 					<float name="manpower" value="0" />
 					<float name="munition" value="0" />
+					<float name="popcap" value="0" />
 					<float name="soviet_progression" value="0" />
 					<float name="soviet_227" value="0" />
-					<float name="popcap" value="0" />
 				</template_reference>
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="20" />
+		<int name="ui_position" value="10" />
 		<bool name="ui_mini_map_capture" value="False" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />
@@ -148,5 +148,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742175" />
+	<uniqueid name="pbgid" value="1073742171" />
 </instance>
