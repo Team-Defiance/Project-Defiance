@@ -315,7 +315,7 @@
 									<enum name="usage_type" value="multiplication" />
 									<float name="value" value="0.85" />
 									<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-									<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\grenadiere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+									<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pioniere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073745119" />
@@ -1119,7 +1119,7 @@
 				<instance_reference name="ability" value="abilities\german\timed_ability\grenadier_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\snares\grenadier_panzerfaust_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\grenadiere_rifle_grenade_vet5" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\grenadiere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\pioniere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
