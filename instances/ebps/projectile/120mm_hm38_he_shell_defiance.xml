@@ -3,7 +3,7 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext">
 			<string name="alternate_sua" value="" />
 			<bool name="always_revealed_in_fow" value="False" />
-			<file name="animator" value="armies\aef\projectiles\aef_delayed_mortar\aef_delayed_mortar" />
+			<file name="animator" value="armies\common\projectiles\shell_medium\shell_medium" />
 			<bool name="is_visible_in_game" value="True" />
 			<float name="precise_size" value="-1" />
 		</template_reference>
@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.0012" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="2.57" />
-				<float name="radius_min" value="2" />
+				<float name="radius_max" value="2.5" />
+				<float name="radius_min" value="2.03" />
 				<float name="splat_only_splat_seconds" value="90" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -185,8 +185,8 @@
 				</template_reference>
 			</group>
 			<float name="deathtimer" value="3" />
-			<float name="delay_detonate_time" value="2.5" />
-			<bool name="delay_detonate_ui_enabled" value="True" />
+			<float name="delay_detonate_time" value="0" />
+			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="marker_barrel" />
 			<float name="life_time_while_alive" value="0" />
 			<float name="rotation_speed" value="0" />
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="projectile_use" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073801259" />
+					<uniqueid name="id" value="1073802747" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742477" />
+	<uniqueid name="pbgid" value="1073742498" />
 </instance>
