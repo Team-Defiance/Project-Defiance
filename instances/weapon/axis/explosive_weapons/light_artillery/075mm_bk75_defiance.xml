@@ -24,7 +24,7 @@
 		</group>
 		<group name="anim_table">
 			<string name="cooldown_time_name" value="" />
-			<string name="state_name" value="" />
+			<string name="state_name" value="main_gun_state" />
 			<string name="track_horizontal" value="" />
 			<string name="track_horizontal_speed" value="" />
 			<string name="track_vertical" value="" />
@@ -121,7 +121,7 @@
 			<bool name="non_moving_setup_requires_facing" value="False" />
 		</group>
 		<group name="burst">
-			<bool name="can_burst" value="True" />
+			<bool name="can_burst" value="False" />
 			<group name="duration">
 				<float name="max" value="7" />
 				<float name="min" value="7" />
@@ -272,8 +272,8 @@
 			</group>
 		</group>
 		<group name="damage">
-			<float name="max" value="150" />
-			<float name="min" value="150" />
+			<float name="max" value="100" />
+			<float name="min" value="100" />
 			<list name="on_penetrated_actions">
 			</list>
 			<list name="post_damage_actions">
@@ -348,8 +348,8 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="0" />
-				<float name="min" value="0" />
+				<float name="max" value="0.875" />
+				<float name="min" value="0.875" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
@@ -357,8 +357,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="50" />
-				<float name="min" value="50" />
+				<float name="max" value="0" />
+				<float name="min" value="0" />
 			</group>
 			<list name="on_reload_actions">
 			</list>
