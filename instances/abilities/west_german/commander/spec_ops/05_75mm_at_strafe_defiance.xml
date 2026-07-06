@@ -32,7 +32,7 @@
 							<bool name="use_long_path" value="False" />
 							<group name="loiter_info">
 								<float name="loiter_area_radius" value="17.5" />
-								<float name="loiter_time_sec" value="10" />
+								<float name="loiter_time_sec" value="1" />
 								<bool name="follow_target" value="False" />
 								<float name="lowest_altitude" value="0" />
 								<bool name="loiter_descend" value="False" />
@@ -107,7 +107,7 @@
 							<bool name="use_long_path" value="False" />
 							<group name="loiter_info">
 								<float name="loiter_area_radius" value="17.5" />
-								<float name="loiter_time_sec" value="10" />
+								<float name="loiter_time_sec" value="1" />
 								<bool name="follow_target" value="False" />
 								<float name="lowest_altitude" value="0" />
 								<bool name="loiter_descend" value="False" />
