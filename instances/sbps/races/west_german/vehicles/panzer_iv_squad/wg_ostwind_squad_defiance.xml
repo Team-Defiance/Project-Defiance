@@ -68,7 +68,7 @@
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="4266" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="hotkey_name" value="T" />
-						<icon name="icon_name" value="Icons_vehicles_vehicle_german_ostwind_flak_panzer" />
+						<icon name="icon_name" value="ModIcons_84428889d71d41a48e2eff09c2425d54_west_german_symbols_portraits_westwind_small" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
@@ -285,6 +285,14 @@
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_requirement_ext">
 			<list name="requirement_table">
+				<template_reference name="required" value="requirements\required_player_upgrade">
+					<enum name="reason" value="usage_and_display" />
+					<locstring name="ui_name" value="0" />
+					<bool name="is_present" value="True" />
+					<float name="max_completed" value="100" />
+					<float name="min_completed" value="1" />
+					<instance_reference name="upgrade_name" value="upgrade\west_german\commander\unlock\urban_assault_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				</template_reference>
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_upgrade_apply_ext">
@@ -313,7 +321,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073745517" />
+					<uniqueid name="id" value="1073802812" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -353,10 +361,10 @@
 									<instance_reference name="tooltip" value="modifier_tooltip\squad_invisible_on_mini_map_modifier" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795429" />
+							<uniqueid name="id" value="1073802813" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795430" />
+					<uniqueid name="id" value="1073802814" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -451,14 +459,14 @@
 											<instance_reference name="tooltip" value="modifier_tooltip\camouflage_enable" />
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073795527" />
+									<uniqueid name="id" value="1073802815" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073795528" />
+							<uniqueid name="id" value="1073802816" />
 							<bool name="can_prevent_refund" value="True" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073795441" />
+					<uniqueid name="id" value="1073802817" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -611,11 +619,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802831" />
+										<uniqueid name="id" value="1073802844" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073802832" />
+										<uniqueid name="id" value="1073802845" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -647,11 +655,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073802833" />
+												<uniqueid name="id" value="1073802846" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073802834" />
+										<uniqueid name="id" value="1073802847" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -667,11 +675,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802835" />
+										<uniqueid name="id" value="1073802848" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073802836" />
+										<uniqueid name="id" value="1073802849" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -721,18 +729,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073802837" />
+												<uniqueid name="id" value="1073802850" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073802838" />
+												<uniqueid name="id" value="1073802851" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073802839" />
+										<uniqueid name="id" value="1073802852" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -748,11 +756,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802840" />
+										<uniqueid name="id" value="1073802853" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
-										<uniqueid name="id" value="1073802841" />
+										<uniqueid name="id" value="1073802854" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -791,7 +799,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802842" />
+										<uniqueid name="id" value="1073802855" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -839,7 +847,7 @@
 												<instance_reference name="target_type_name" value="abilities\german\timed_ability\ostwind_button_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073802843" />
+										<uniqueid name="id" value="1073802856" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -879,5 +887,5 @@
 			<float name="revert_rate_multiplier" value="4" />
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741862" />
+	<uniqueid name="pbgid" value="1073742032" />
 </instance>
