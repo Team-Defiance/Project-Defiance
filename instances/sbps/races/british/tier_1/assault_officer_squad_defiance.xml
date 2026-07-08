@@ -10,7 +10,7 @@
 						<locstring name="extra_text" value="11095175" />
 						<bool name="has_speech_code" value="True" />
 						<locstring name="help_text" value="2895" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="" />
+						<string name="hotkey_name" value="C" />
 						<icon name="icon_name" value="Icons_units_unit_british_forward_observation_officer" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="" />
@@ -122,10 +122,10 @@
 					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="06_soldiers">
-					<float name="units_in_core" value="1" />
+					<float name="units_in_core" value="2" />
 					<float name="units_in_left_flank" value="2" />
 					<float name="units_in_right_flank" value="2" />
-					<float name="units_in_scout" value="1" />
+					<float name="units_in_scout" value="0" />
 				</group>
 				<group name="07_soldiers">
 					<float name="units_in_core" value="7" />
@@ -177,9 +177,9 @@
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_squad">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="11145664" />
+					<locstring name="ui_name" value="4979" mod="84428889d71d41a48e2eff09c2425d54" />
 					<float name="max_squad_cap" value="1" />
-					<instance_reference name="squad_name" value="sbps\races\british\soldiers\brit_officer_squad\air_support_officer_squad_mp" />
+					<instance_reference name="squad_name" value="sbps\races\british\tier_1\assault_officer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</template_reference>
 			</list>
 		</template_reference>
