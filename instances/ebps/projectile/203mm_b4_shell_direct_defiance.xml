@@ -14,7 +14,7 @@
 			<bool name="kill_paradrop" value="False" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\projectile_ext">
-			<float name="acceleration" value="5" />
+			<float name="acceleration" value="0" />
 			<group name="artillery">
 				<bool name="can_counter_barrage" value="True" />
 				<bool name="is_artillery" value="True" />
@@ -32,7 +32,7 @@
 				<template_reference name="collision_type" value="type_projectile_collision\tp_artillery">
 				</template_reference>
 			</group>
-			<float name="deathtimer" value="2.5" />
+			<float name="deathtimer" value="2" />
 			<float name="delay_detonate_time" value="0" />
 			<bool name="delay_detonate_ui_enabled" value="False" />
 			<string name="launcher_marker" value="marker_muzzle_end" />
