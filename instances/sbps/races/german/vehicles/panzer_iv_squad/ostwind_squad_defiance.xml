@@ -611,11 +611,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073745518" />
+										<uniqueid name="id" value="1073802831" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level1" />
-										<uniqueid name="id" value="1073745519" />
+										<uniqueid name="id" value="1073802832" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -647,11 +647,11 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\cooldown_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073745525" />
+												<uniqueid name="id" value="1073802833" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073745526" />
+										<uniqueid name="id" value="1073802834" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -667,11 +667,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073745528" />
+										<uniqueid name="id" value="1073802835" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level2" />
-										<uniqueid name="id" value="1073745529" />
+										<uniqueid name="id" value="1073802836" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -721,18 +721,18 @@
 														<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 													</template_reference>
 												</list>
-												<uniqueid name="id" value="1073745530" />
+												<uniqueid name="id" value="1073802837" />
 											</template_reference>
 											<template_reference name="action" value="action\change_move_data_action">
 												<float name="acceleration_multiplier" value="1.2" />
 												<float name="deceleration_multiplier" value="1.2" />
 												<float name="pathfinding_size_x" value="0" />
 												<float name="pathfinding_size_y" value="0" />
-												<uniqueid name="id" value="1073745531" />
+												<uniqueid name="id" value="1073802838" />
 											</template_reference>
 										</list>
 										<enum name="change_target_type" value="entities" />
-										<uniqueid name="id" value="1073745532" />
+										<uniqueid name="id" value="1073802839" />
 									</template_reference>
 									<template_reference name="action" value="action\apply_modifiers_action">
 										<float name="duration" value="0" />
@@ -748,11 +748,11 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\blank_tooltip" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073745534" />
+										<uniqueid name="id" value="1073802840" />
 									</template_reference>
 									<template_reference name="action" value="action\scar_function_call">
 										<string name="function_name" value="XP1_Vet_Level3" />
-										<uniqueid name="id" value="1073745535" />
+										<uniqueid name="id" value="1073802841" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -791,7 +791,7 @@
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_cost_munition_multiplier" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073745598" />
+										<uniqueid name="id" value="1073802842" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">
@@ -839,7 +839,7 @@
 												<instance_reference name="target_type_name" value="abilities\german\timed_ability\ostwind_button_vehicle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
-										<uniqueid name="id" value="1073745599" />
+										<uniqueid name="id" value="1073802843" />
 									</template_reference>
 								</list>
 								<list name="squad_entity_actions">

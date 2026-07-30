@@ -256,7 +256,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="multiplication" />
-							<float name="value" value="3" />
+							<float name="value" value="3.5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\health_maximum_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\armor_modifier">
@@ -265,7 +265,7 @@
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="" />
 							<enum name="usage_type" value="addition" />
-							<float name="value" value="5" />
+							<float name="value" value="7.5" />
 							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\health_regeneration_modifier">
@@ -408,7 +408,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="70" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
