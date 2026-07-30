@@ -204,7 +204,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\modify_resources">
 							<template_reference name="resource_to_modify" value="tables\resource_table">
-								<float name="action" value="255" />
+								<float name="action" value="280" />
 								<float name="command" value="0" />
 								<float name="fuel" value="0" />
 								<float name="manpower" value="0" />
@@ -243,7 +243,7 @@
 				<group name="cost">
 					<float name="action" value="0" />
 					<float name="command" value="0" />
-					<float name="fuel" value="100" />
+					<float name="fuel" value="110" />
 					<float name="manpower" value="240" />
 					<float name="munition" value="0" />
 					<float name="popcap" value="0" />

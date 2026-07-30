@@ -123,8 +123,8 @@
 		<group name="burst">
 			<bool name="can_burst" value="True" />
 			<group name="duration">
-				<float name="max" value="1.75" />
-				<float name="min" value="1.25" />
+				<float name="max" value="1.25" />
+				<float name="min" value="1" />
 			</group>
 			<group name="incremental_target_table">
 				<float name="accuracy_multiplier" value="1.08" />
@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />

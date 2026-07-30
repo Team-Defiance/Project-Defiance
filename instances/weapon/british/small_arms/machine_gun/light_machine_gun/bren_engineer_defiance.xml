@@ -139,7 +139,7 @@
 				<float name="min" value="8.5" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="0.8" />
+				<float name="near" value="0.75" />
 				<float name="far" value="1.2" />
 				<float name="mid" value="1" />
 			</group>
@@ -156,9 +156,9 @@
 				<float name="min" value="0.9" />
 			</group>
 			<group name="duration_multiplier">
-				<float name="near" value="1" />
+				<float name="near" value="0.9" />
 				<float name="far" value="1" />
-				<float name="mid" value="1" />
+				<float name="mid" value="0.95" />
 			</group>
 		</group>
 		<group name="cover_table">

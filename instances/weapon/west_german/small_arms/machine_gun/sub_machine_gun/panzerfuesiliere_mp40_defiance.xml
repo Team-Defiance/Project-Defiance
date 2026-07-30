@@ -309,7 +309,7 @@
 		<group name="moving">
 			<float name="accuracy_multiplier" value="0.75" />
 			<float name="burst_multiplier" value="0.4" />
-			<float name="cooldown_multiplier" value="0.3" />
+			<float name="cooldown_multiplier" value="0.35" />
 			<bool name="disable_moving_firing" value="False" />
 			<float name="moving_end_time" value="0" />
 			<float name="moving_start_time" value="0" />
@@ -343,7 +343,7 @@
 			<group name="distance">
 				<float name="near" value="10" />
 				<float name="far" value="30" />
-				<float name="mid" value="17.5" />
+				<float name="mid" value="20" />
 			</group>
 		</group>
 		<group name="reload">

@@ -181,8 +181,8 @@
 				<float name="suppression_multiplier" value="0" />
 			</group>
 			<group name="tp_garrison_halftrack">
-				<float name="accuracy_multiplier" value="0.5" />
-				<float name="damage_multiplier" value="0.5" />
+				<float name="accuracy_multiplier" value="0.4" />
+				<float name="damage_multiplier" value="0.25" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0" />
 			</group>
@@ -385,7 +385,7 @@
 						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073800435" />
-					<bool name="fire_and_forget_non_global" value="False" />
+					<bool name="fire_and_forget_non_global" value="True" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />

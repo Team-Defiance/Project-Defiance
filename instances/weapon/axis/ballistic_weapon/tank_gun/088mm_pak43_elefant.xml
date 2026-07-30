@@ -316,6 +316,14 @@
 									<instance_reference name="critical" value="critical\vehicle_crew_shocked_pak40" />
 									<uniqueid name="id" value="1073746384" />
 								</template_reference>
+								<template_reference name="action" value="action\damage">
+									<float name="damage" value="20" />
+									<bool name="percentage" value="False" />
+									<bool name="set" value="False" />
+									<bool name="cause_criticals" value="True" />
+									<enum name="crit_weapon_type" value="big_explosive" />
+									<uniqueid name="id" value="1073802865" />
+								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073746385" />
 							<bool name="fire_and_forget_non_global" value="False" />
