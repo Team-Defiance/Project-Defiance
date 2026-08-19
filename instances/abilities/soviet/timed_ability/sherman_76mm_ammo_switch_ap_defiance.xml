@@ -2,11 +2,10 @@
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
-				<template_reference name="action" value="action\upgrade_add">
+				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
-					<uniqueid name="id" value="1073754382" />
+					<uniqueid name="id" value="1073802917" />
 				</template_reference>
 			</list>
 			<list name="end_target_actions">
@@ -14,8 +13,8 @@
 			<list name="start_self_actions">
 				<template_reference name="action" value="action\change_weapon">
 					<float name="hardpoint" value="1" />
-					<instance_reference name="weapon" value="weapon\aef\ballistic_weapon\tank_gun\076mm_m1_m4a3e2_hvap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073754383" />
+					<instance_reference name="weapon" value="weapon\soviet\ballistic_weapon\tank_gun\076mm_m1_m4a2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073802918" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -31,7 +30,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073754384" />
+					<uniqueid name="id" value="1073802919" />
 				</template_reference>
 				<template_reference name="action" value="action\timed_action">
 					<float name="duration" value="6" />
@@ -39,7 +38,7 @@
 					<list name="subactions">
 						<template_reference name="action" value="action\kicker_message_action">
 							<float name="loop_interval" value="0.3" />
-							<locstring name="message" value="2620" mod="84428889d71d41a48e2eff09c2425d54" />
+							<locstring name="message" value="2614" mod="84428889d71d41a48e2eff09c2425d54" />
 							<float name="message_colour_a" value="255" />
 							<float name="message_colour_b" value="255" />
 							<float name="message_colour_g" value="255" />
@@ -47,17 +46,17 @@
 							<float name="message_duration" value="1" />
 							<bool name="team_only" value="False" />
 							<bool name="check_fow" value="True" />
-							<uniqueid name="id" value="1073755275" />
+							<uniqueid name="id" value="1073802920" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073755276" />
+					<uniqueid name="id" value="1073802921" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
 			</list>
 		</group>
 		<enum name="activation" value="timed" />
-		<bool name="can_interrupt" value="True" />
+		<bool name="can_interrupt" value="False" />
 		<bool name="can_target_in_fow" value="False" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />
@@ -97,12 +96,12 @@
 		<enum name="shared_timer" value="squad_ability_1" />
 		<bool name="shared_timer_player_wide" value="False" />
 		<group name="speech_code_2">
-			<string name="code_1" value="ph" />
+			<string name="code_1" value="rc" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="hvp" />
+			<string name="code_1" value="apr" />
 			<string name="code_2" value="" />
 			<string name="code_3" value="" />
 		</group>
@@ -120,13 +119,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="2519" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="2520" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="4990" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="help_text" value="2518" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="M" />
-			<icon name="icon_name" value="Icons_abilities_ability_aef_hvap_m93_armor_piercing_rounds" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_armor_piercing_rounds_sherman" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="2421" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="2422" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -141,7 +140,7 @@
 			<template_reference name="required" value="requirements\required_entity_upgrade">
 				<enum name="reason" value="usage_and_display" />
 				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
+				<bool name="is_present" value="True" />
 				<instance_reference name="upgrade_name" value="upgrade\aef\ability_lock_out\sherman_he_rounds" />
 				<bool name="include_queued" value="False" />
 			</template_reference>
@@ -205,7 +204,7 @@
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
 		<enum name="ui_targetable_receiver" value="local" />
-		<enum name="ui_combine_type" value="union" />
+		<enum name="ui_combine_type" value="intersection" />
 		<enum name="ui_group_cast_type" value="multi" />
 		<enum_table name="ui_modal_highlight">
 			<bool name="world_sector" value="False" />
@@ -224,5 +223,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742308" />
+	<uniqueid name="pbgid" value="1073742811" />
 </instance>
