@@ -99,7 +99,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="145" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="229" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="471" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="P" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_panzerfaust" />
@@ -144,8 +144,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_vehicle" />
-		<float name="ui_reticule_radius_min" value="1.2" />
-		<float name="ui_reticule_radius_max" value="1.2" />
+		<float name="ui_reticule_radius_min" value="1.5" />
+		<float name="ui_reticule_radius_max" value="1.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

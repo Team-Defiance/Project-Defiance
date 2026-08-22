@@ -16,7 +16,7 @@
 						<icon name="minimap_texture" value="" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="11072112" />
+						<locstring name="screen_name" value="5008" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="M4C Sherman" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -850,23 +850,23 @@
 										<float name="duration" value="0" />
 										<bool name="permanent" value="True" />
 										<list name="modifiers">
-											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\artillery\mortar_barrage_ability\smoke_sherman_mortar_barrage_mp" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="15" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<float name="value" value="-2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\sherman_76mm_ammo_switch_apcr_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
-											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+											<template_reference name="modifier" value="modifiers\ability_duration_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
 												<bool name="exclusive" value="False" />
 												<string name="modifier_id" value="" />
-												<instance_reference name="target_type_name" value="abilities\aef\modal_ability\accessory_weapons\sherman_76e8_wp_shot_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
-												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+												<float name="value" value="-2" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_duration_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\soviet\timed_ability\sherman_76mm_ammo_switch_ap_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073802905" />
