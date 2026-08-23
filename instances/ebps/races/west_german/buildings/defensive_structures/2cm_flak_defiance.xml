@@ -560,10 +560,10 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<string name="sync_target_name" value="flak_gun_target&#xD;&#xA;" />
+						<string name="sync_target_name" value="flak_gun_target" />
 						<list name="role_list">
 							<group name="role">
-								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
+								<string name="animator_bp" value="armies\west_german\soldiers\assault_pioneer\assault_pioneer" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="gunner" />
@@ -573,7 +573,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
+								<string name="animator_bp" value="armies\west_german\soldiers\assault_pioneer\assault_pioneer" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="loader" />

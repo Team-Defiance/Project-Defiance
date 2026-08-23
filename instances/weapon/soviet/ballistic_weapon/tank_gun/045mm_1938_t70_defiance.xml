@@ -58,7 +58,7 @@
 			<group name="distance">
 				<float name="far" value="2.2" />
 				<float name="near" value="0.5" />
-				<float name="mid" value="1.5" />
+				<float name="mid" value="1.375" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -434,9 +434,9 @@
 		<instance_reference name="ui_range" value="ui_reticule\ability_target_120mm_mortar_barrage" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="120" />
+			<float name="near" value="115" />
 			<float name="far" value="70" />
-			<float name="mid" value="95" />
+			<float name="mid" value="90" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

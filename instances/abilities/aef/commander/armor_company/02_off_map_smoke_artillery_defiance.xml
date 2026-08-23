@@ -9,7 +9,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\delay">
-					<float name="delay" value="1" />
+					<float name="delay" value="0.5" />
 					<float name="delay_min" value="0" />
 					<bool name="progress_bar" value="False" />
 					<bool name="randomize" value="False" />
@@ -47,7 +47,7 @@
 		</group>
 		<enum name="activation" value="targeted" />
 		<bool name="can_interrupt" value="False" />
-		<bool name="can_target_in_fow" value="False" />
+		<bool name="can_target_in_fow" value="True" />
 		<float name="caster_close_in_distance" value="2" />
 		<bool name="casters_can_evacuate" value="False" />
 		<group name="cost">
