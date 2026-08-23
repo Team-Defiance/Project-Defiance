@@ -1,4 +1,4 @@
-<instance description="Infantry Comp" template="abilities">
+<instance description="" template="abilities">
 	<group name="ability_bag">
 		<group name="action_list">
 			<list name="end_self_actions">
@@ -9,14 +9,13 @@
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\aef\commander\unlock\tact_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073800321" />
+					<instance_reference name="upgrade" value="upgrade\page_2" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073802981" />
 				</template_reference>
-				<template_reference name="action" value="action\upgrade_add">
+				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\commander_selected" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073802985" />
+					<instance_reference name="upgrade" value="upgrade\page_1" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073802983" />
 				</template_reference>
 			</list>
 			<list name="start_target_actions">
@@ -57,7 +56,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="60" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="50" />
+		<float name="recharge_time" value="0" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="" />
@@ -86,13 +85,13 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="4531" mod="84428889d71d41a48e2eff09c2425d54" />
-			<locstring name="help_text" value="4535" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="0" />
+			<locstring name="help_text" value="5012" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="" />
-			<icon name="icon_name" value="Icons_commander_portrait_aef_commander_08_small" />
+			<icon name="icon_name" value="Icons_research_german_battle_phase_03" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="4508" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="screen_name" value="5013" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -110,7 +109,7 @@
 				<bool name="is_present" value="False" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\heavy_cav_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\page_2" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_player_upgrade">
 				<enum name="reason" value="usage_and_display" />
@@ -118,31 +117,7 @@
 				<bool name="is_present" value="False" />
 				<float name="max_completed" value="100" />
 				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\armor_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\airborne_company_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\aef\commander\unlock\tact_support_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-			</template_reference>
-			<template_reference name="required" value="requirements\required_player_upgrade">
-				<enum name="reason" value="usage_and_display" />
-				<locstring name="ui_name" value="0" />
-				<bool name="is_present" value="False" />
-				<float name="max_completed" value="100" />
-				<float name="min_completed" value="1" />
-				<instance_reference name="upgrade_name" value="upgrade\page_1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\commander_selected" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -154,7 +129,7 @@
 		<float name="ui_reticule_radius_min" value="1" />
 		<float name="ui_reticule_radius_max" value="1" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
-		<enum name="ui_group" value="group_primary" />
+		<enum name="ui_group" value="group_secondary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
@@ -178,5 +153,5 @@
 		<bool name="can_cast_outside_active_battle_field" value="False" />
 		<bool name="ability_super_event_cue" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073742715" />
+	<uniqueid name="pbgid" value="1073742820" />
 </instance>

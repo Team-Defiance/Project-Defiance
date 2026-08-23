@@ -117,6 +117,12 @@
 				</list>
 				<uniqueid name="id" value="1073751949" />
 			</template_reference>
+			<template_reference name="action" value="action\upgrade_add">
+				<bool name="apply_to_entities_in_squad" value="False" />
+				<bool name="trigger_publish_event" value="False" />
+				<instance_reference name="upgrade" value="upgrade\page_1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073802984" />
+			</template_reference>
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\aef\modal_ability\dispatch_ability\aef_hq_engineer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -151,6 +157,8 @@
 			<instance_reference name="ability" value="abilities\aef\commander\tact_support\06_t34_calliope_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\m3_half_track_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\aef\commander\mechanized\sherman_105_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_1_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_2_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
