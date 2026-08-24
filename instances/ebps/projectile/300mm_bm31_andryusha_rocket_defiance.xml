@@ -17,7 +17,7 @@
 			<float name="explosion_time" value="0" />
 			<group name="terrain_hit">
 				<float name="chance_splat_only" value="0" />
-				<enum name="cover_type" value="tp_negative" />
+				<enum name="cover_type" value="tp_light" />
 				<group name="deformation">
 					<string name="deform_decal_file" value="crater" />
 					<bool name="limited" value="True" />
@@ -92,45 +92,45 @@
 					<float name="vertical_scale" value="0.003" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="3.895" />
-				<float name="radius_min" value="3.685" />
+				<float name="radius_max" value="3.43" />
+				<float name="radius_min" value="3.295" />
 				<float name="splat_only_splat_seconds" value="0" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\cement" />
 					</group>
 					<group name="entry_02">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\crater_concrete" />
 					</group>
 					<group name="entry_03">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\crater_stone" />
 					</group>
 					<group name="entry_04">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\road_asphalt" />
 					</group>
 					<group name="entry_05">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\rubble" />
 					</group>
 					<group name="entry_06">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\sand" />
 					</group>
 					<group name="entry_07">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\stone_road" />
 					</group>
 					<group name="entry_08">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\urban" />
 					</group>
 					<group name="entry_09">
 						<string name="splat_texture" value="" />
-						<instance_reference name="terrain_material" value="" />
+						<instance_reference name="terrain_material" value="material\urban_narrow" />
 					</group>
 					<group name="entry_10">
 						<string name="splat_texture" value="" />

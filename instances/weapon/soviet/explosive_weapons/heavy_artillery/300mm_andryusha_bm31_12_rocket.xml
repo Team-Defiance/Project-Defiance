@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="10.5" />
+				<float name="radius" value="11.25" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.09" />
-				<float name="near" value="0.9" />
+				<float name="far" value="0.08" />
+				<float name="near" value="1" />
 				<float name="mid" value="0.175" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.045" />
-				<float name="near" value="0.45" />
+				<float name="far" value="0.04" />
+				<float name="near" value="0.5" />
 				<float name="mid" value="0.0875" />
 			</group>
 			<group name="distance">
-				<float name="far" value="8.625" />
-				<float name="near" value="1" />
-				<float name="mid" value="4" />
+				<float name="far" value="8.75" />
+				<float name="near" value="1.25" />
+				<float name="mid" value="3.5" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -75,8 +75,8 @@
 			<bool name="damage_all_in_hold" value="True" />
 			<template_reference name="aoe_penetration" value="tables\range_table">
 				<float name="far" value="1.5" />
-				<float name="mid" value="15" />
-				<float name="near" value="200" />
+				<float name="mid" value="25" />
+				<float name="near" value="280" />
 			</template_reference>
 			<group name="building_damage">
 				<float name="near" value="0.9" />
@@ -275,8 +275,6 @@
 			<float name="max" value="200" />
 			<float name="min" value="200" />
 			<list name="on_penetrated_actions">
-			</list>
-			<list name="post_damage_actions">
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
 					<bool name="global_fire_and_forget_on_success" value="False" />
@@ -299,10 +297,10 @@
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
 							<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
-							<uniqueid name="id" value="1073794555" />
+							<uniqueid name="id" value="1073803010" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073794556" />
+					<uniqueid name="id" value="1073803011" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -328,7 +326,7 @@
 						</template_reference>
 						<template_reference name="required" value="requirements\required_health">
 							<float name="health_range_min_percentage" value="0" />
-							<float name="health_range_max_percentage" value="0.025" />
+							<float name="health_range_max_percentage" value="0.1" />
 							<locstring name="ui_name" value="0" />
 							<enum name="reason" value="usage" />
 						</template_reference>
@@ -342,7 +340,7 @@
 										<template_reference name="action" value="action\trigger_critical_action">
 											<float name="remove_at_health" value="1" />
 											<instance_reference name="critical" value="critical\burn_death" />
-											<uniqueid name="id" value="1073794557" />
+											<uniqueid name="id" value="1073803012" />
 										</template_reference>
 									</list>
 									<int name="weight" value="50" />
@@ -350,7 +348,7 @@
 								<group name="action_choice">
 									<list name="actions">
 										<template_reference name="action" value="action\no_action">
-											<uniqueid name="id" value="1073794558" />
+											<uniqueid name="id" value="1073803013" />
 											<template_reference name="ui_help_text" value="options\none">
 											</template_reference>
 										</template_reference>
@@ -358,16 +356,18 @@
 									<int name="weight" value="50" />
 								</group>
 							</list>
-							<uniqueid name="id" value="1073794559" />
+							<uniqueid name="id" value="1073803014" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073794560" />
+					<uniqueid name="id" value="1073803015" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
 						<locstring name="phrase" value="0" />
 					</template_reference>
 				</template_reference>
+			</list>
+			<list name="post_damage_actions">
 			</list>
 		</group>
 		<group name="damage_over_time">
@@ -525,9 +525,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="320" />
-			<float name="far" value="320" />
-			<float name="mid" value="320" />
+			<float name="near" value="400" />
+			<float name="far" value="400" />
+			<float name="mid" value="400" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />
