@@ -89,8 +89,8 @@
 										<float name="radius" value="0" />
 									</group>
 									<float name="duration" value="90" />
-									<float name="interval" value="8" />
-									<float name="interval_min" value="8" />
+									<float name="interval" value="7.5" />
+									<float name="interval_min" value="7.5" />
 									<float name="interval_multiplier" value="1" />
 									<float name="interval_reset_delay" value="8" />
 									<group name="target_info">
@@ -116,7 +116,7 @@
 											<float name="source_offset_y" value="300" />
 											<float name="source_offset_z" value="1" />
 											<float name="time_range_between_shells_max" value="0.5" />
-											<float name="time_range_between_shells_min" value="0.5" />
+											<float name="time_range_between_shells_min" value="0.4" />
 											<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm13_16n_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 											<uniqueid name="id" value="1073802993" />
 										</template_reference>
@@ -158,7 +158,7 @@
 											<float name="source_offset_y" value="300" />
 											<float name="source_offset_z" value="1" />
 											<float name="time_range_between_shells_max" value="0.5" />
-											<float name="time_range_between_shells_min" value="0.5" />
+											<float name="time_range_between_shells_min" value="0.4" />
 											<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\light_artillery\katyusha_bm13_16n_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 											<uniqueid name="id" value="1073802995" />
 										</template_reference>
@@ -199,7 +199,7 @@
 											<float name="source_offset_x" value="1" />
 											<float name="source_offset_y" value="300" />
 											<float name="source_offset_z" value="1" />
-											<float name="time_range_between_shells_max" value="1" />
+											<float name="time_range_between_shells_max" value="1.25" />
 											<float name="time_range_between_shells_min" value="1" />
 											<instance_reference name="weapon_name" value="weapon\soviet\explosive_weapons\heavy_artillery\300mm_andryusha_bm31_12_rocket" mod="84428889d71d41a48e2eff09c2425d54" />
 											<uniqueid name="id" value="1073803009" />
