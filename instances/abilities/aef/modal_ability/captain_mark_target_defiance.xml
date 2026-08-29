@@ -16,9 +16,9 @@
 							<float name="duration" value="0" />
 							<bool name="permanent" value="False" />
 							<list name="modifiers">
-								<template_reference name="modifier" value="modifiers\received_damage_modifier">
+								<template_reference name="modifier" value="modifiers\armor_modifier">
 									<enum name="application_type" value="apply_to_entity" />
-									<bool name="exclusive" value="False" />
+									<bool name="exclusive" value="True" />
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="" />
 									<enum name="usage_type" value="multiplication" />

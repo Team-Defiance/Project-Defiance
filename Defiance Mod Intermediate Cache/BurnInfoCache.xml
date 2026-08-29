@@ -163,7 +163,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\modal_ability\captain_mark_target_defiance.xml</FileName>
-			<FileHash>73937e9be4baaa4c3f9b632c817708cb</FileHash>
+			<FileHash>b7732bfb8297ae6ff0681a006d75eaed</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\modal_ability\captain_on_me_defiance.xml</FileName>
@@ -671,7 +671,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\modal_ability\repair_ability\repair_rear_echelon_defiance.xml</FileName>
-			<FileHash>07f95a9e54a68948dc683d314532b78c</FileHash>
+			<FileHash>19daaa8598af2febf8fa6c30ec137c0d</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\aef\modal_ability\repair_ability\repair_vehicle_crew_defiance.xml</FileName>
@@ -3087,7 +3087,11 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\lend_lease\06_close_the_pocket.xml</FileName>
-			<FileHash>c3a843a4e463de677757b1f406c4ccab</FileHash>
+			<FileHash>e443b210cd611ec0fead9502a6bc68e7</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\lend_lease\air_dropped_fuel_defiance.xml</FileName>
+			<FileHash>19aab3577459a482bcd8e838d4283745</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\lend_lease\choice_2_resources.xml</FileName>
@@ -3096,6 +3100,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\lend_lease\lend_lease_mech_selection.xml</FileName>
 			<FileHash>fcab63d79263e4fa2994637a1fc13188</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\lend_lease\lend_lease_supplies_defiance.xml</FileName>
+			<FileHash>f3e270d36879ffd9d6e2a590778d9373</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\abilities\soviet\commander\reserve_infantry_tactics\01_ppsh_strelki.xml</FileName>
@@ -5615,7 +5623,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\army\soviet.xml</FileName>
-			<FileHash>7f1f763dfca50b86b56095efd41197ea</FileHash>
+			<FileHash>3b2b0d9cb67a5c69214875ae195c9c04</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\army\west_german.xml</FileName>
@@ -6708,6 +6716,14 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\props\muni_fx_dummy_charge.xml</FileName>
 			<FileHash>1845e5dd1cbda2b7b0c47cf69138bfd8</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\props\paradrop_crate_soviet_atg_matt_defiance.xml</FileName>
+			<FileHash>02f3535732b471fa48a62b78c78ba83b</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\props\paradrop_crate_soviet_mg_matt_defiance.xml</FileName>
+			<FileHash>32d76bb6104d798d1a4fbcc448854f5c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\props\pioniere_medical_supplies.xml</FileName>
@@ -7823,7 +7839,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\tank_depot_mp.xml</FileName>
-			<FileHash>8949ff92699598118985a5478c7ebc46</FileHash>
+			<FileHash>266d2129b27f5d7166cf9e49d0db2157</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\buildings\base_building\weapon_support_center_mp.xml</FileName>
@@ -7966,6 +7982,10 @@
 			<FileHash>e3902bf73506e9791756ded3a340d21c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\soldiers\shturmovyie_gvardeitsy\shturmovyie_gvardeitsy.xml</FileName>
+			<FileHash>33c72f4f277010bc1c7c24c123643b08</FileHash>
+		</BurnInfo>
+		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\soldiers\sniper\sov_sniper_defiance.xml</FileName>
 			<FileHash>8b48eae5eb67b07b016173705a6be185</FileHash>
 		</BurnInfo>
@@ -8040,6 +8060,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\team_weapons\soviet_field_artillery\ml20_152mm_defiance.xml</FileName>
 			<FileHash>aa455d9ced8c26750751c2ebb4832101</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\cargo_aircraft\cargo_plane_supply_drop_soviet_defiance.xml</FileName>
+			<FileHash>e41803ce68730a9109cdf68d0b87d3f3</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\ebps\races\soviet\vehicles\halftracks\m5_soviet_halftrack_defiance.xml</FileName>
@@ -8455,7 +8479,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_0\rear_echelon_squad_defiance.xml</FileName>
-			<FileHash>34c8a63643f19d31f281515db37cbc34</FileHash>
+			<FileHash>1615a0d0bace1ca1a32653be94a80555</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_0\rifleman_squad_defiance.xml</FileName>
@@ -8499,7 +8523,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_2\usf_57mm_atgun_squad_defiance.xml</FileName>
-			<FileHash>59c295085e9a2ca961e6de21e6049bcd</FileHash>
+			<FileHash>d7ce4c9b530bc183e2eea128f4f4a60c</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\aef\tier_3\m10_gmc_squad_defiance.xml</FileName>
@@ -8623,7 +8647,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\british\tier_1\6_pounder_at_gun_squad_defiance.xml</FileName>
-			<FileHash>f649d40ea79151bd28e0e8243a564014</FileHash>
+			<FileHash>1d5a517032683f682e189281f6672f6e</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\british\tier_1\aec_armoured_car_squad_defiance.xml</FileName>
@@ -8846,7 +8870,11 @@
 			<FileHash>f917ed471542bb3f7089446734f4d417</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\commander\lend_lease_tactics\sherman_m4a2_76.xml</FileName>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\commander\lend_lease_tactics\infantry\shturmovyie_gvardeitsy.xml</FileName>
+			<FileHash>22cc5b843b1179dd0a61ffa03b155131</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\commander\lend_lease_tactics\vehicles\sherman_m4a2_76.xml</FileName>
 			<FileHash>d0177fc5e34e159eddf8188da36e2b28</FileHash>
 		</BurnInfo>
 		<BurnInfo>
@@ -8956,6 +8984,10 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\tier_4\t34_76mm_squad_defiance.xml</FileName>
 			<FileHash>562ec0fd90615e34938cc4cb34a7cc0e</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\vehicles\cargo\cargo_plane_supply_drop_soviet_defiance.xml</FileName>
+			<FileHash>f35db0730f200e93ef4c9a1da183ae6a</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\instances\sbps\races\soviet\vehicles\il-2_stumovik_squad\il-2_stumovik_squad_defiance.xml</FileName>
@@ -13135,7 +13167,7 @@
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\locale\english\english.ucs</FileName>
-			<FileHash>d2bd6c00414caca2c092753bd04d18a1</FileHash>
+			<FileHash>7524e91af63919e0c54270c724fcf176</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\Defiance Mod Intermediate Cache\Intermediate Files\info\84428889d71d41a48e2eff09c2425d54.info</FileName>
@@ -13562,22 +13594,6 @@
 			<FileHash>1cc038333481dd73bc6f4352d162bc10</FileHash>
 		</BurnInfo>
 		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\57mm_summer.png</FileName>
-			<FileHash>c5404da56d1fac65c0b08cd20be76ea9</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\57mm_summer_female.png</FileName>
-			<FileHash>c5404da56d1fac65c0b08cd20be76ea9</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\57mm_winter.png</FileName>
-			<FileHash>db583590960bd7f095c6171ff38e3b93</FileHash>
-		</BurnInfo>
-		<BurnInfo>
-			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\57mm_winter_female.png</FileName>
-			<FileHash>db583590960bd7f095c6171ff38e3b93</FileHash>
-		</BurnInfo>
-		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\desantniki_small.png</FileName>
 			<FileHash>9a5cd09974093c78d9919865c8fe02a1</FileHash>
 		</BurnInfo>
@@ -13680,6 +13696,22 @@
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\sniper_small.png</FileName>
 			<FileHash>047feb2fb1f6f106c4c8d6fd96478232</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\us_uk_atg_summer.png</FileName>
+			<FileHash>c5404da56d1fac65c0b08cd20be76ea9</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\us_uk_atg_summer_female.png</FileName>
+			<FileHash>c5404da56d1fac65c0b08cd20be76ea9</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\us_uk_atg_winter.png</FileName>
+			<FileHash>db583590960bd7f095c6171ff38e3b93</FileHash>
+		</BurnInfo>
+		<BurnInfo>
+			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\portraits\us_uk_atg_winter_female.png</FileName>
+			<FileHash>db583590960bd7f095c6171ff38e3b93</FileHash>
 		</BurnInfo>
 		<BurnInfo>
 			<FileName>C:\Mod\Project-Defiance\data\ui\soviet\symbols\slotitems\dp27.png</FileName>
