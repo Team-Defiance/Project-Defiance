@@ -36,13 +36,13 @@
 			<group name="heading">
 				<float name="x" value="0" />
 				<float name="y" value="0" />
-				<float name="z" value="0.5" />
+				<float name="z" value="1" />
 			</group>
 			<float name="length" value="0" />
 			<group name="origin">
-				<float name="x" value="0.4" />
-				<float name="y" value="3.4" />
-				<float name="z" value="0.3" />
+				<float name="x" value="-0.47" />
+				<float name="y" value="3.6" />
+				<float name="z" value="0.28" />
 			</group>
 			<enum name="type" value="squad" />
 			<instance_reference name="weapon" value="weapon\aef\small_arms\machine_gun\heavy_machine_gun\m2hb_sherman_pintle_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -53,28 +53,6 @@
 				<string name="crew_name" value="Gunner" />
 				<bool name="kill" value="True" />
 				<uniqueid name="id" value="1073754165" />
-			</template_reference>
-			<template_reference name="action" value="action\change_target_action">
-				<list name="actions">
-					<template_reference name="action" value="action\apply_modifiers_action">
-						<float name="duration" value="0" />
-						<bool name="permanent" value="False" />
-						<list name="modifiers">
-							<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-								<enum name="application_type" value="apply_to_weapon" />
-								<bool name="exclusive" value="False" />
-								<string name="modifier_id" value="" />
-								<string name="target_type_name" value="hardpoint_04" />
-								<enum name="usage_type" value="enable" />
-								<float name="value" value="1" />
-								<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-							</template_reference>
-						</list>
-						<uniqueid name="id" value="1073754166" />
-					</template_reference>
-				</list>
-				<enum name="change_target_type" value="entities" />
-				<uniqueid name="id" value="1073754167" />
 			</template_reference>
 		</list>
 		<list name="on_drop_actions">
