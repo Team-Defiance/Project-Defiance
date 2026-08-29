@@ -1022,7 +1022,7 @@
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\rgd_1_smoke_grenade_assault_guards_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
+												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
@@ -1031,7 +1031,7 @@
 												<string name="modifier_id" value="" />
 												<instance_reference name="target_type_name" value="abilities\soviet\modal_ability\grenades\assault_guards_satchel_at" mod="84428889d71d41a48e2eff09c2425d54" />
 												<enum name="usage_type" value="addition" />
-												<float name="value" value="5" />
+												<float name="value" value="3" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
 											</template_reference>
 										</list>
