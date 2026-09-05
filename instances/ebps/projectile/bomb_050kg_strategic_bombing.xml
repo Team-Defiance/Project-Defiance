@@ -92,8 +92,8 @@
 					<float name="vertical_scale" value="0.0016" />
 					<enum name="deform_type" value="tp_additive" />
 				</group>
-				<float name="radius_max" value="5.6" />
-				<float name="radius_min" value="4" />
+				<float name="radius_max" value="4.555" />
+				<float name="radius_min" value="2.985" />
 				<float name="splat_only_splat_seconds" value="80" />
 				<group name="splat_only_splats">
 					<group name="entry_01">
@@ -202,10 +202,10 @@
 					<bool name="retrigger" value="False" />
 					<string name="state_machine_name" value="audio_bomb_drop" />
 					<string name="undo_action_state_name" value="" />
-					<uniqueid name="id" value="1073799663" />
+					<uniqueid name="id" value="1073803382" />
 				</template_reference>
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073742438" />
+	<uniqueid name="pbgid" value="1073742525" />
 </instance>
