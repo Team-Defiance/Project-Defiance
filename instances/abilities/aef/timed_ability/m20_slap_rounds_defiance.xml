@@ -27,8 +27,8 @@
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="addition" />
-							<float name="value" value="10" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="3.2" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
