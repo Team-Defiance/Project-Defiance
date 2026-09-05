@@ -179,8 +179,8 @@
 			<string name="code_3" value="" />
 		</group>
 		<group name="speech_code_3">
-			<string name="code_1" value="brg" />
-			<string name="code_2" value="" />
+			<string name="code_1" value="her" />
+			<string name="code_2" value="art" />
 			<string name="code_3" value="" />
 		</group>
 		<enum name="squad_caster" value="squad" />
@@ -251,7 +251,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_artillery" />
-		<int name="ui_position" value="50" />
+		<int name="ui_position" value="40" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_artillery_barrage" />
@@ -259,7 +259,7 @@
 		<float name="ui_reticule_radius_min" value="12.5" />
 		<float name="ui_reticule_radius_max" value="12.5" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
-		<enum name="ui_group" value="group_secondary" />
+		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />
 		<string name="ui_targetable_on_key" value="" />
 		<string name="ui_targetable_off_key" value="" />
