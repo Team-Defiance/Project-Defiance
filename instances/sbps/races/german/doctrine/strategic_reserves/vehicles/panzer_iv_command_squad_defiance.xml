@@ -499,7 +499,7 @@
 												<string name="modifier_id" value="" />
 												<string name="target_type_name" value="" />
 												<enum name="usage_type" value="multiply_add" />
-												<float name="value" value="0.15" />
+												<float name="value" value="0.1" />
 												<instance_reference name="tooltip" value="modifier_tooltip\speed_maximum_modifier" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -515,8 +515,8 @@
 										<uniqueid name="id" value="1073803279" />
 									</template_reference>
 									<template_reference name="action" value="action\change_move_data_action">
-										<float name="acceleration_multiplier" value="1.15" />
-										<float name="deceleration_multiplier" value="1.15" />
+										<float name="acceleration_multiplier" value="1.1" />
+										<float name="deceleration_multiplier" value="1.1" />
 										<float name="pathfinding_size_x" value="0" />
 										<float name="pathfinding_size_y" value="0" />
 										<uniqueid name="id" value="1073803280" />
