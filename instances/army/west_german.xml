@@ -117,6 +117,12 @@
 				</list>
 				<uniqueid name="id" value="1073747044" />
 			</template_reference>
+			<template_reference name="action" value="action\upgrade_add">
+				<bool name="apply_to_entities_in_squad" value="False" />
+				<bool name="trigger_publish_event" value="False" />
+				<instance_reference name="upgrade" value="upgrade\page_1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073803395" />
+			</template_reference>
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\west_german\modal_ability\dispatch_ability\wg_hq_pioneer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -150,6 +156,8 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\06_zeroing_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\fortifications_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\jagdtiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_1_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_2_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
