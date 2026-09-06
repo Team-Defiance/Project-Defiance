@@ -23,6 +23,11 @@
 					</list>
 					<uniqueid name="id" value="1073752377" />
 				</template_reference>
+				<template_reference name="action" value="action\upgrade_remove">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<instance_reference name="upgrade" value="upgrade\timed_ammo_active" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073803426" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
@@ -78,6 +83,12 @@
 							<enum name="change_target_type" value="squad" />
 							<uniqueid name="id" value="1073803275" />
 						</template_reference>
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\timed_ammo_active" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073803422" />
+						</template_reference>
 					</list>
 					<uniqueid name="id" value="1073803276" />
 					<bool name="can_prevent_refund" value="True" />
@@ -121,7 +132,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="0" />
 		<bool name="range_ignore" value="True" />
-		<float name="recharge_time" value="60" />
+		<float name="recharge_time" value="80" />
 		<bool name="refundable" value="False" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="okw_elite_armor_ability_group" />
