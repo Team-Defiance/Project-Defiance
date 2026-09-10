@@ -193,12 +193,11 @@
 					<bool name="no_retrigger" value="False" />
 					<bool name="validate_all_sub_actions" value="True" />
 					<list name="requirement_table">
-						<template_reference name="required" value="requirements\required_entity_upgrade">
-							<enum name="reason" value="usage_and_display" />
+						<template_reference name="required" value="requirements\required_active_weapon">
+							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<bool name="is_present" value="False" />
-							<instance_reference name="upgrade_name" value="upgrade\timed_ammo_active" mod="84428889d71d41a48e2eff09c2425d54" />
-							<bool name="include_queued" value="False" />
+							<string name="hardpoint_name" value="hardpoint_01" />
+							<instance_reference name="weapon" value="weapon\axis\ballistic_weapon\tank_gun\075mm_kwk37_panzer4_f_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
 					</list>
 					<list name="action_table">

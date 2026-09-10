@@ -89,7 +89,7 @@
 										<float name="radius" value="0" />
 									</group>
 									<float name="duration" value="90" />
-									<float name="interval" value="10" />
+									<float name="interval" value="6" />
 									<float name="interval_min" value="5" />
 									<float name="interval_multiplier" value="1" />
 									<float name="interval_reset_delay" value="8" />
@@ -115,9 +115,9 @@
 											<float name="source_offset_x" value="1" />
 											<float name="source_offset_y" value="300" />
 											<float name="source_offset_z" value="1" />
-											<float name="time_range_between_shells_max" value="1" />
+											<float name="time_range_between_shells_max" value="1.25" />
 											<float name="time_range_between_shells_min" value="1" />
-											<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\sector_105mm_gun" />
+											<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\lefh_105mm_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											<uniqueid name="id" value="1073803349" />
 										</template_reference>
 									</list>
@@ -153,13 +153,13 @@
 									<list name="trigger_actions">
 										<template_reference name="action" value="action\off_map_artillery">
 											<float name="num_salvo" value="10" />
-											<float name="radius" value="15" />
+											<float name="radius" value="16" />
 											<float name="source_offset_x" value="1" />
 											<float name="source_offset_y" value="300" />
 											<float name="source_offset_z" value="1" />
 											<float name="time_range_between_shells_max" value="0.125" />
 											<float name="time_range_between_shells_min" value="0.125" />
-											<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_rockets_mp" />
+											<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\light_artillery\panzerwerfer_he_rockets" mod="84428889d71d41a48e2eff09c2425d54" />
 											<uniqueid name="id" value="1073803351" />
 										</template_reference>
 									</list>
@@ -201,13 +201,13 @@
 											<list name="delayed_actions">
 												<template_reference name="action" value="action\off_map_artillery">
 													<float name="num_salvo" value="1" />
-													<float name="radius" value="5" />
+													<float name="radius" value="6" />
 													<float name="source_offset_x" value="1" />
 													<float name="source_offset_y" value="550" />
 													<float name="source_offset_z" value="1" />
 													<float name="time_range_between_shells_max" value="3" />
 													<float name="time_range_between_shells_min" value="3" />
-													<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\stuka_500_lb_bomb_nodecap" />
+													<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\heavy_artillery\stuka_250_kg_bomb_nodecap" mod="84428889d71d41a48e2eff09c2425d54" />
 													<uniqueid name="id" value="1073803353" />
 												</template_reference>
 											</list>
@@ -301,14 +301,14 @@
 							</group>
 							<list name="trigger_actions">
 								<template_reference name="action" value="action\off_map_artillery">
-									<float name="num_salvo" value="2" />
+									<float name="num_salvo" value="3" />
 									<float name="radius" value="20" />
 									<float name="source_offset_x" value="1" />
 									<float name="source_offset_y" value="300" />
 									<float name="source_offset_z" value="1" />
 									<float name="time_range_between_shells_max" value="3" />
-									<float name="time_range_between_shells_min" value="3" />
-									<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\mortar\grw34_81mm_mortar_barrage_mp" />
+									<float name="time_range_between_shells_min" value="2.5" />
+									<instance_reference name="weapon_name" value="weapon\axis\explosive_weapons\mortar\grw42_81_mortar_barrage_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 									<uniqueid name="id" value="1073803361" />
 								</template_reference>
 							</list>
