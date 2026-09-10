@@ -117,6 +117,12 @@
 				</list>
 				<uniqueid name="id" value="1073799659" />
 			</template_reference>
+			<template_reference name="action" value="action\upgrade_add">
+				<bool name="apply_to_entities_in_squad" value="False" />
+				<bool name="trigger_publish_event" value="False" />
+				<instance_reference name="upgrade" value="upgrade\page_1" mod="84428889d71d41a48e2eff09c2425d54" />
+				<uniqueid name="id" value="1073803394" />
+			</template_reference>
 		</list>
 		<list name="abilities">
 			<instance_reference name="ability" value="abilities\soviet\always_on_ability\soviet_hq_engineer_call_in" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -129,9 +135,9 @@
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\02_mediums_t34_85" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\reserve_infantry_tactics\01_ppsh_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\04_for_mother_russia" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_b4_howitzer_passive" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\05_il2_ptab_strike" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\05_il2_recon_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\05_b4_howitzer_passive" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_ptab_strike" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\counterattack_artillery_tactics\06_il2_recon_loiter" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\unused\isu_dispatch_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\03_storm_group_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\shock_rifle_tactics\02_1_urban_engagement_kit" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -161,6 +167,18 @@
 			<instance_reference name="ability" value="abilities\soviet\commander\04_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\06_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\soviet\commander\terror_tactics\terror_tactics" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\01_sherman_76" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\02_assault_guard_troops_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\03_1_svs_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\03_2_snare_spam" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\04_repair_station" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\05_1_lend_lease_supplies_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\05_2_air_dropped_fuel_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\06_close_the_pocket" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\lend_lease\lend_lease_mech_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\soviet\commander\03_empty_slot" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_1_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\global\pagination\page_2_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">

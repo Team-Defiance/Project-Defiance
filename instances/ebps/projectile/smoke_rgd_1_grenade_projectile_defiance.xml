@@ -165,7 +165,7 @@
 			<list name="on_detonate_actions">
 				<template_reference name="action" value="action\spawn_entity">
 					<float name="duration" value="20" />
-					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_cloud_grenade" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_cloud_grenade" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="permanent" value="False" />
 					<bool name="player_owned" value="False" />
 					<group name="target_info">
@@ -185,7 +185,7 @@
 				</template_reference>
 				<template_reference name="action" value="action\spawn_entity">
 					<float name="duration" value="20" />
-					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_shot_block" />
+					<instance_reference name="entity_blueprint" value="ebps\gameplay\smoke_shot_block" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="permanent" value="False" />
 					<bool name="player_owned" value="False" />
 					<group name="target_info">

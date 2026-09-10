@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="0" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="0.25" />
-				<float name="min" value="0.25" />
+				<float name="max" value="0.375" />
+				<float name="min" value="0.375" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1" />
@@ -109,7 +109,7 @@
 			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
-			<float name="reaction_radius" value="0" />
+			<float name="reaction_radius" value="2.25" />
 			<bool name="can_be_pilfered" value="True" />
 			<bool name="causes_combat" value="True" />
 			<bool name="can_abort_winddown" value="False" />
@@ -117,7 +117,7 @@
 			<bool name="ignore_relations" value="False" />
 			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
-			<enum name="attack_ground_type" value="not_allowed" />
+			<enum name="attack_ground_type" value="outside_hold_only" />
 			<bool name="non_moving_setup_requires_facing" value="False" />
 		</group>
 		<group name="burst">
@@ -205,10 +205,10 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
-				<float name="accuracy_multiplier" value="1.5" />
+				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_smoke">
 				<float name="accuracy_multiplier" value="1" />
@@ -265,7 +265,7 @@
 				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_zz_team_weapon_heavy">
-				<float name="accuracy_multiplier" value="1" />
+				<float name="accuracy_multiplier" value="0.5" />
 				<float name="damage_multiplier" value="0.5" />
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.1" />
@@ -389,7 +389,7 @@
 				</template_reference>
 			</list>
 		</group>
-		<float name="flinch_radius" value="15" />
+		<float name="flinch_radius" value="2.25" />
 		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
@@ -397,7 +397,7 @@
 		<string name="fx_munition_name" value="rocket_light" />
 		<string name="fx_tracer_name" value="" />
 		<float name="fx_tracer_speed" value="0" />
-		<bool name="fx_use_building_panel_normal" value="False" />
+		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
 		<icon name="icon_name" value="" />
 		<group name="moving">
@@ -463,12 +463,12 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="5" />
-			<float name="distance_scatter_obj_hit_min" value="0" />
-			<float name="distance_scatter_offset" value="0.25" />
+			<float name="distance_scatter_max" value="10" />
+			<float name="distance_scatter_obj_hit_min" value="10" />
+			<float name="distance_scatter_offset" value="0.2" />
 			<float name="distance_scatter_ratio" value="1" />
-			<float name="fow_angle_multiplier" value="3" />
-			<float name="fow_distance_multiplier" value="2" />
+			<float name="fow_angle_multiplier" value="1.25" />
+			<float name="fow_distance_multiplier" value="1.25" />
 			<float name="max_tilt_angle" value="0" />
 			<float name="min_tilt_angle" value="0" />
 			<float name="tilt_max_distance" value="0" />
@@ -512,9 +512,9 @@
 			<float name="fire_cone_angle" value="15" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
-				<float name="max_left" value="-60" />
-				<float name="max_right" value="60" />
-				<float name="max_up" value="40" />
+				<float name="max_left" value="-180" />
+				<float name="max_right" value="180" />
+				<float name="max_up" value="45" />
 				<float name="speed_horizontal" value="90" />
 				<float name="speed_vertical" value="90" />
 			</group>
@@ -528,9 +528,9 @@
 		<instance_reference name="ui_range" value="" />
 		<instance_reference name="ui_setfacing" value="" />
 		<group name="penetration">
-			<float name="near" value="360" />
-			<float name="far" value="360" />
-			<float name="mid" value="360" />
+			<float name="near" value="325" />
+			<float name="far" value="325" />
+			<float name="mid" value="325" />
 		</group>
 		<group name="ui_map_colour">
 			<int name="red" value="0" />

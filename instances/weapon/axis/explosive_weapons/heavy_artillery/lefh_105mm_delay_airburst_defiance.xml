@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="13.5" />
+				<float name="radius" value="13.125" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.175" />
@@ -412,7 +412,7 @@
 		</group>
 		<group name="reload">
 			<group name="duration">
-				<float name="max" value="4.5" />
+				<float name="max" value="4.4" />
 				<float name="min" value="4" />
 			</group>
 			<group name="duration_multiplier">

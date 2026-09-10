@@ -142,7 +142,7 @@
 				<locstring name="ui_name" value="0" />
 				<bool name="include_queued" value="False" />
 				<bool name="is_present" value="True" />
-				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\shockarmy_svs39_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade_name" value="upgrade\soviet\commander\items\mech_svs39_strelki" mod="84428889d71d41a48e2eff09c2425d54" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
@@ -151,8 +151,8 @@
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
 		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_vehicle" />
-		<float name="ui_reticule_radius_min" value="1" />
-		<float name="ui_reticule_radius_max" value="1" />
+		<float name="ui_reticule_radius_min" value="1.2" />
+		<float name="ui_reticule_radius_max" value="1.2" />
 		<enum name="pending_ability_out_of_range_behaviour" value="ignore_range" />
 		<enum name="ui_group" value="group_primary" />
 		<string name="ui_targetable_sm_key" value="" />

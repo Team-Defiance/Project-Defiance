@@ -9,14 +9,14 @@
 						<bool name="allow_spawner_production" value="False" />
 						<locstring name="extra_text" value="11075543" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="997" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="F" />
+						<locstring name="help_text" value="5140" mod="84428889d71d41a48e2eff09c2425d54" />
+						<string name="hotkey_name" value="U" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_halftrack_sws" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="996" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="screen_name" value="5139" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="sWS" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -39,7 +39,7 @@
 							<string name="code_3" value="" />
 						</group>
 						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="21" />
+						<int name="ui_priority" value="28" />
 						<bool name="use_random_entity_speaker" value="False" />
 						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_halftrack_sws_w_portrait" />
 						<group name="speaker_specific_alt">
@@ -49,7 +49,7 @@
 						</group>
 						<icon name="portrait_name_summer" value="Icons_portraits_vehicle_west_german_halftrack_sws_s_portrait" />
 						<float name="minimap_texture_scale" value="0.65" />
-						<locstring name="brief_text" value="1107" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="brief_text" value="0" />
 						<locstring name="screen_name_short" value="0" />
 						<enum name="map_rotation_type_override" value="heading" />
 						<bool name="decoratable" value="True" />
