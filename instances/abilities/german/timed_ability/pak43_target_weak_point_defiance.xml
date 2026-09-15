@@ -34,7 +34,7 @@
 						<template_reference name="action" value="action\override_weapon_attributes">
 							<float name="hardpoint" value="1" />
 							<string name="munition_name" value="shell_heavy_heat" />
-							<instance_reference name="projectile" value="ebps\projectile\088mm_pak43_heat_atgun" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="projectile" value="ebps\projectile\088mm_pak43_apcr_atgun" mod="84428889d71d41a48e2eff09c2425d54" />
 							<string name="target_name" value="" />
 							<string name="tracer_name" value="" />
 							<uniqueid name="id" value="1073754343" />
@@ -51,6 +51,15 @@
 									<enum name="usage_type" value="multiplication" />
 									<float name="value" value="2" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
+								</template_reference>
+								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
+									<enum name="application_type" value="apply_to_weapon" />
+									<bool name="exclusive" value="False" />
+									<string name="modifier_id" value="" />
+									<string name="target_type_name" value="hardpoint_01" />
+									<enum name="usage_type" value="multiplication" />
+									<float name="value" value="1.25" />
+									<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 								</template_reference>
 							</list>
 							<uniqueid name="id" value="1073754344" />
@@ -135,7 +144,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="227" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="5146" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2989" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="W" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_stun_critical" />

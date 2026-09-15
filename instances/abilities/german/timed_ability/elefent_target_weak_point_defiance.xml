@@ -34,7 +34,7 @@
 						<template_reference name="action" value="action\override_weapon_attributes">
 							<float name="hardpoint" value="1" />
 							<string name="munition_name" value="shell_heavy_heat" />
-							<instance_reference name="projectile" value="ebps\projectile\088mm_pak43_heat_elefant" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="projectile" value="ebps\projectile\088mm_pak43_apcr_elefant" mod="84428889d71d41a48e2eff09c2425d54" />
 							<string name="target_name" value="" />
 							<string name="tracer_name" value="" />
 							<uniqueid name="id" value="1073746273" />
