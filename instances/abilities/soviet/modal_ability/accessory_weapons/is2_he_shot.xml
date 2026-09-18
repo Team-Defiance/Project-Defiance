@@ -6,6 +6,10 @@
 					<int name="hardpoint_index" value="1" />
 					<uniqueid name="id" value="1073752864" />
 				</template_reference>
+				<template_reference name="action" value="action\force_reload_action">
+					<int name="hardpoint_index" value="5" />
+					<uniqueid name="id" value="1073803442" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>
