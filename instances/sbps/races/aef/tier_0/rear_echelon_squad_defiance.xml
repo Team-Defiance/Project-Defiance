@@ -443,10 +443,17 @@
 							<float name="min_owned" value="1" />
 							<instance_reference name="slot_item" value="slot_item\aef\rear_echelon_rifle_grenade_activated" />
 						</template_reference>
+						<template_reference name="required" value="requirements\required_squad_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="include_queued" value="False" />
+							<bool name="is_present" value="False" />
+							<instance_reference name="upgrade_name" value="upgrade\aef\items\rear_echelon_smg_upgrade" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\slot_item_add">
-							<instance_reference name="slot_item" value="slot_item\aef\grenades\m17_rifle_grenade_slot_item_mp" />
+							<instance_reference name="slot_item" value="slot_item\aef\grenades\m17_rifle_grenade_slot_item_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="permanent" value="False" />
 							<uniqueid name="id" value="1073749315" />
 						</template_reference>
