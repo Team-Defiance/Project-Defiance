@@ -11,12 +11,12 @@
 			<float name="capture_team_weapon" value="1" />
 			<float name="recrew" value="1" />
 			<float name="rush_at_target" value="1" />
-			<float name="provide_reinforcement_point" value="5" />
-			<float name="finish_healing" value="5" />
-			<float name="capture_point" value="5" />
-			<float name="warm_up" value="5" />
-			<float name="min_range" value="5" />
-			<float name="vehicle_decrew" value="5" />
+			<float name="provide_reinforcement_point" value="1" />
+			<float name="finish_healing" value="1" />
+			<float name="capture_point" value="1" />
+			<float name="warm_up" value="1" />
+			<float name="min_range" value="1" />
+			<float name="vehicle_decrew" value="1" />
 		</enum_table>
 		<group name="target_identification">
 			<bool name="detect_squads_in_camoflauge" value="True" />
@@ -28,15 +28,15 @@
 			<float name="clump_detection_lead_movement_time" value="3" />
 		</group>
 		<group name="pathing">
-			<bool name="pathing_detects_squads_in_camoflauge" value="False" />
+			<bool name="pathing_detects_squads_in_camoflauge" value="True" />
 			<bool name="pathing_detects_squads_in_fog_of_war" value="True" />
-			<bool name="pathing_detects_accurate_enemy_shot_blocking" value="False" />
-			<bool name="pathing_detects_accurate_enemy_sight" value="False" />
+			<bool name="pathing_detects_accurate_enemy_shot_blocking" value="True" />
+			<bool name="pathing_detects_accurate_enemy_sight" value="True" />
 			<bool name="pathing_detects_opponents_fog_of_war" value="True" />
 			<bool name="pathing_detects_suppression" value="True" />
 			<bool name="pathing_detects_firing_arcs" value="True" />
 			<bool name="pathing_detects_min_firing_range" value="True" />
-			<float name="pathing_threat_memory_duration" value="90" />
+			<float name="pathing_threat_memory_duration" value="150" />
 		</group>
 		<group name="fallback">
 			<float name="fallback_combat_rating_ratio" value="0.5" />
@@ -54,9 +54,9 @@
 		</group>
 		<group name="skirmish_settings">
 			<group name="resource">
-				<float name="fuel_mult" value="1.15" />
-				<float name="manpower_mult" value="1.25" />
-				<float name="munitions_mult" value="1.2" />
+				<float name="fuel_mult" value="1.8" />
+				<float name="manpower_mult" value="1.85" />
+				<float name="munitions_mult" value="1.45" />
 			</group>
 			<group name="combat_eval">
 				<float name="combat_eval_min_class_rating" value="5" />
@@ -66,29 +66,29 @@
 			</group>
 			<enum_table name="attack_importance">
 				<float name="defensive_structure" value="1" />
-				<float name="fuel_point" value="8" />
+				<float name="fuel_point" value="10" />
 				<float name="hq_structure" value="4" />
-				<float name="munition_point" value="6" />
-				<float name="null_point" value="7" />
-				<float name="spawner_structure" value="7" />
-				<float name="support_structure" value="2" />
-				<float name="victory_point" value="11" />
+				<float name="munition_point" value="9" />
+				<float name="null_point" value="8" />
+				<float name="spawner_structure" value="8" />
+				<float name="support_structure" value="4" />
+				<float name="victory_point" value="12" />
 				<float name="wrecked_hq_structure" value="0" />
 				<float name="none" value="0" />
-				<float name="tactical_point" value="5" />
+				<float name="tactical_point" value="8" />
 			</enum_table>
 			<enum_table name="defend_importance">
-				<float name="defensive_structure" value="2" />
-				<float name="fuel_point" value="7" />
+				<float name="defensive_structure" value="7" />
+				<float name="fuel_point" value="8" />
 				<float name="hq_structure" value="4" />
-				<float name="munition_point" value="6" />
-				<float name="null_point" value="5" />
-				<float name="spawner_structure" value="9" />
-				<float name="support_structure" value="3" />
-				<float name="victory_point" value="9" />
-				<float name="tactical_point" value="3" />
+				<float name="munition_point" value="7" />
+				<float name="null_point" value="7" />
+				<float name="spawner_structure" value="10" />
+				<float name="support_structure" value="6" />
+				<float name="victory_point" value="10" />
+				<float name="tactical_point" value="7" />
 				<float name="wrecked_hq_structure" value="12" />
-				<float name="none" value="0" />
+				<float name="none" value="7" />
 			</enum_table>
 			<group name="catchup">
 				<float name="catchup_max_manpower_bonus" value="1" />
@@ -127,7 +127,7 @@
 					<int name="victory_point" value="1" />
 					<int name="tactical_point" value="1" />
 				</enum_table>
-				<bool name="forward_base_setup_at_hq" value="False" />
+				<bool name="forward_base_setup_at_hq" value="True" />
 			</group>
 			<group name="tasks">
 				<int name="max_num_attack_objectives" value="5" />
@@ -144,8 +144,8 @@
 			</group>
 			<bool name="use_offensive_player_abilities" value="True" />
 			<group name="reinforce">
-				<float name="reinforce_wait_time" value="15" />
-				<float name="reinforce_failed_retry_wait_time" value="15" />
+				<float name="reinforce_wait_time" value="5" />
+				<float name="reinforce_failed_retry_wait_time" value="5" />
 			</group>
 		</group>
 		<group name="encounter_positions">
@@ -166,19 +166,19 @@
 					<float name="class_rating_multiplier" value="1" />
 				</group>
 				<group name="tp_garrison_cover">
-					<float name="class_rating_multiplier" value="6" />
+					<float name="class_rating_multiplier" value="8" />
 				</group>
 				<group name="tp_garrison_halftrack">
 					<float name="class_rating_multiplier" value="4" />
 				</group>
 				<group name="tp_heavy">
-					<float name="class_rating_multiplier" value="4" />
+					<float name="class_rating_multiplier" value="6" />
 				</group>
 				<group name="tp_light">
 					<float name="class_rating_multiplier" value="2" />
 				</group>
 				<group name="tp_negative">
-					<float name="class_rating_multiplier" value="0.6" />
+					<float name="class_rating_multiplier" value="0.01" />
 				</group>
 				<group name="tp_open">
 					<float name="class_rating_multiplier" value="0.6" />
@@ -242,25 +242,25 @@
 			<float name="vehicle_decrew" value="-1" />
 		</enum_table>
 		<enum_table name="tactic_max_timeout_defaults">
-			<float name="ability" value="120" />
-			<float name="cover" value="35" />
-			<float name="hold" value="35" />
-			<float name="avoid" value="35" />
-			<float name="vehicle" value="35" />
-			<float name="force_attack" value="35" />
-			<float name="pickup" value="35" />
-			<float name="capture_team_weapon" value="35" />
-			<float name="recrew" value="35" />
-			<float name="rush_at_target" value="35" />
-			<float name="provide_reinforcement_point" value="35" />
-			<float name="finish_healing" value="35" />
-			<float name="capture_point" value="35" />
-			<float name="warm_up" value="35" />
-			<float name="min_range" value="35" />
-			<float name="vehicle_decrew" value="35" />
+			<float name="ability" value="30" />
+			<float name="cover" value="2" />
+			<float name="hold" value="6" />
+			<float name="avoid" value="1" />
+			<float name="vehicle" value="10" />
+			<float name="force_attack" value="5" />
+			<float name="pickup" value="1" />
+			<float name="capture_team_weapon" value="4" />
+			<float name="recrew" value="3" />
+			<float name="rush_at_target" value="10" />
+			<float name="provide_reinforcement_point" value="3" />
+			<float name="finish_healing" value="1" />
+			<float name="capture_point" value="4" />
+			<float name="warm_up" value="3" />
+			<float name="min_range" value="5" />
+			<float name="vehicle_decrew" value="10" />
 		</enum_table>
 		<float name="combat_task_retargeting_time" value="5" />
 		<bool name="designer_lock_squads_by_default" value="False" />
 	</group>
-	<uniqueid name="pbgid" value="1073741825" />
+	<uniqueid name="pbgid" value="2" />
 </instance>
