@@ -406,8 +406,8 @@
 			</group>
 			<group name="duration_multiplier">
 				<float name="far" value="1" />
-				<float name="near" value="0.8" />
-				<float name="mid" value="0.9" />
+				<float name="near" value="1" />
+				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
 				<float name="max" value="11" />
@@ -462,7 +462,7 @@
 				<float name="penetration_multiplier" value="1" />
 				<float name="suppression_multiplier" value="0.5" />
 			</group>
-			<float name="amount" value="0.00075" />
+			<float name="amount" value="0.075" />
 		</group>
 		<group name="teardown">
 			<float name="duration" value="0" />
@@ -504,7 +504,7 @@
 					<float name="accuracy_multiplier" value="1.5" />
 					<float name="damage_multiplier" value="1" />
 					<float name="penetration_multiplier" value="1" />
-					<float name="suppression_multiplier" value="100" />
+					<float name="suppression_multiplier" value="1" />
 				</group>
 			</group>
 		</list>
