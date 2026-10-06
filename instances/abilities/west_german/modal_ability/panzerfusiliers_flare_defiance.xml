@@ -90,7 +90,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="30" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -115,7 +115,7 @@
 		<float name="move_back_distance" value="10" />
 		<float name="range" value="50" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="90" />
+		<float name="recharge_time" value="100" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="axis_mortar_barrage" />
@@ -185,7 +185,7 @@
 			<template_reference name="required" value="requirements\required_squad_veterancy">
 				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="2568" mod="84428889d71d41a48e2eff09c2425d54" />
-				<float name="veterancy_rank" value="5" />
+				<float name="veterancy_rank" value="1" />
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
