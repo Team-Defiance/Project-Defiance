@@ -39,7 +39,7 @@
 				<template_reference name="action" value="action\upgrade_remove">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<instance_reference name="upgrade" value="upgrade\west_german\ability_lock_out\ability_lock_out_sws_truck" />
-					<uniqueid name="id" value="1073747794" />
+					<uniqueid name="id" value="1073803814" />
 				</template_reference>
 			</list>
 			<float name="armor" value="0" />
@@ -193,7 +193,7 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747795" />
+					<uniqueid name="id" value="1073803815" />
 				</template_reference>
 				<template_reference name="action" value="action\requirement_action">
 					<bool name="check_self" value="False" />
@@ -217,16 +217,16 @@
 							<bool name="apply_to_entities_in_squad" value="False" />
 							<bool name="trigger_publish_event" value="False" />
 							<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_2_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073747796" />
+							<uniqueid name="id" value="1073803816" />
 						</template_reference>
 						<template_reference name="action" value="action\upgrade_add">
 							<bool name="apply_to_entities_in_squad" value="False" />
 							<bool name="trigger_publish_event" value="False" />
 							<instance_reference name="upgrade" value="upgrade\west_german\passive\any_structure_unlock" mod="84428889d71d41a48e2eff09c2425d54" />
-							<uniqueid name="id" value="1073748020" />
+							<uniqueid name="id" value="1073803817" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747797" />
+					<uniqueid name="id" value="1073803818" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -234,7 +234,7 @@
 					</template_reference>
 				</template_reference>
 				<template_reference name="action" value="action\speech_action">
-					<uniqueid name="id" value="1073747798" />
+					<uniqueid name="id" value="1073803819" />
 					<float name="min_freq_second" value="1" />
 					<enum name="speech_path" value="speechaction" />
 					<enum name="speech_event_3_letter_code" value="hqc" />
@@ -250,7 +250,7 @@
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_2_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073748022" />
+					<uniqueid name="id" value="1073803820" />
 				</template_reference>
 				<template_reference name="action" value="action\player_target_action">
 					<bool name="allies" value="False" />
@@ -271,10 +271,10 @@
 							</template_reference>
 							<bool name="modify_per_second" value="False" />
 							<bool name="ignore_resource_cap" value="False" />
-							<uniqueid name="id" value="1073802020" />
+							<uniqueid name="id" value="1073803821" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073802021" />
+					<uniqueid name="id" value="1073803822" />
 				</template_reference>
 			</list>
 			<list name="materials">
@@ -423,7 +423,7 @@
 			<list name="actions">
 				<template_reference name="action" value="action\animator_set_event">
 					<string name="event_name" value="fond_camo_upgrade" />
-					<uniqueid name="id" value="1073747801" />
+					<uniqueid name="id" value="1073803823" />
 				</template_reference>
 				<template_reference name="action" value="action\add_aura">
 					<instance_reference name="aura" value="aura\heat_aura_mp" />
@@ -436,7 +436,7 @@
 					<template_reference name="target_info" value="type_ability_target_type\all">
 					</template_reference>
 					<bool name="permanent" value="True" />
-					<uniqueid name="id" value="1073747802" />
+					<uniqueid name="id" value="1073803824" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_deformation_action">
 					<group name="deform_decal">
@@ -516,7 +516,7 @@
 					<float name="scale_x" value="14" />
 					<float name="scale_y" value="14" />
 					<bool name="undoable" value="False" />
-					<uniqueid name="id" value="1073747803" />
+					<uniqueid name="id" value="1073803825" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
 					<float name="duration" value="0" />
@@ -532,16 +532,16 @@
 							<instance_reference name="tooltip" value="modifier_tooltip\received_damage_modifier" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073747804" />
+					<uniqueid name="id" value="1073803826" />
 				</template_reference>
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
 					<instance_reference name="upgrade" value="upgrade\west_german\ability_lock_out\ability_lock_out_sws_truck" />
-					<uniqueid name="id" value="1073747805" />
+					<uniqueid name="id" value="1073803827" />
 				</template_reference>
 				<template_reference name="action" value="action\speech_action">
-					<uniqueid name="id" value="1073747806" />
+					<uniqueid name="id" value="1073803828" />
 					<float name="min_freq_second" value="1" />
 					<enum name="speech_path" value="speechaction" />
 					<enum name="speech_event_3_letter_code" value="hqs" />
@@ -596,7 +596,7 @@
 						<template_reference name="required" value="requirements\required_structure">
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
-							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 							<int name="required_structure_count" value="1" />
 							<bool name="check_team" value="False" />
 							<bool name="require_construction_complete" value="False" />
@@ -832,5 +832,5 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741980" />
+	<uniqueid name="pbgid" value="2570" />
 </instance>

@@ -6,8 +6,132 @@
 			<list name="end_target_actions">
 			</list>
 			<list name="start_self_actions">
+				<template_reference name="action" value="action\apply_modifiers_action">
+					<float name="duration" value="0" />
+					<bool name="permanent" value="True" />
+					<list name="modifiers">
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+						<template_reference name="modifier" value="modifiers\armor_modifier">
+							<enum name="application_type" value="apply_to_squad" />
+							<bool name="exclusive" value="True" />
+							<string name="modifier_id" value="" />
+							<string name="target_type_name" value="" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="1" />
+							<instance_reference name="tooltip" value="modifier_tooltip\armor_modifier" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073803758" />
+				</template_reference>
 				<template_reference name="action" value="action\speech_action">
-					<uniqueid name="id" value="1073797636" />
+					<uniqueid name="id" value="1073803759" />
 					<float name="min_freq_second" value="1" />
 					<enum name="speech_path" value="speechaction" />
 					<enum name="speech_event_3_letter_code" value="hqs" />
@@ -22,7 +146,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\sequence_action">
-					<uniqueid name="id" value="1073797637" />
+					<uniqueid name="id" value="1073803760" />
 					<list name="action_list_sequences">
 						<list name="actions">
 							<template_reference name="action" value="action\move_action">
@@ -30,7 +154,7 @@
 								<float name="offset_angle" value="-1" />
 								<float name="offset_distance" value="5" />
 								<float name="radius" value="0.5" />
-								<uniqueid name="id" value="1073797638" />
+								<uniqueid name="id" value="1073803761" />
 								<bool name="stop_on_arrival" value="True" />
 								<float name="min_range" value="0" />
 								<enum name="progress_write_name" value="" />
@@ -42,8 +166,8 @@
 						</list>
 						<list name="actions">
 							<template_reference name="action" value="action\construct_action">
-								<uniqueid name="id" value="1073797639" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<uniqueid name="id" value="1073803762" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 								<bool name="query_only" value="False" />
 								<bool name="check_visible" value="False" />
 								<bool name="use_target_entity_facing" value="False" />
@@ -56,11 +180,11 @@
 										<bool name="destroy" value="True" />
 										<list name="death_reaction_table">
 										</list>
-										<uniqueid name="id" value="1073797640" />
+										<uniqueid name="id" value="1073803763" />
 									</template_reference>
 								</list>
 								<enum name="change_target_type" value="self" />
-								<uniqueid name="id" value="1073797641" />
+								<uniqueid name="id" value="1073803764" />
 							</template_reference>
 						</list>
 					</list>
@@ -161,7 +285,7 @@
 					<template_reference name="required" value="requirements\required_structure">
 						<enum name="reason" value="usage" />
 						<locstring name="ui_name" value="0" />
-						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 						<int name="required_structure_count" value="1" />
 						<bool name="check_team" value="False" />
 						<bool name="require_construction_complete" value="True" />
@@ -183,13 +307,13 @@
 							<template_reference name="requirement" value="requirements\required_entity">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\heavy_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="entity_type" value="" />
 							</template_reference>
 							<template_reference name="requirement" value="requirements\required_entity">
 								<enum name="reason" value="usage" />
 								<locstring name="ui_name" value="0" />
-								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 								<enum name="entity_type" value="" />
 							</template_reference>
 						</list>
@@ -257,7 +381,7 @@
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>
 		<enum name="ui_direction_requirement" value="optionally_directional" />
-		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+		<instance_reference name="cursor_ghost_ebp" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 		<bool name="can_cast_whilst_constructing" value="False" />
 		<list name="requirements_self_recharge">
 		</list>
