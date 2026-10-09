@@ -7,16 +7,16 @@
 				<group name="race_data">
 					<group name="info">
 						<bool name="allow_spawner_production" value="False" />
-						<locstring name="extra_text" value="11075543" />
+						<locstring name="extra_text" value="1011" mod="84428889d71d41a48e2eff09c2425d54" />
 						<bool name="has_speech_code" value="True" />
-						<locstring name="help_text" value="5140" mod="84428889d71d41a48e2eff09c2425d54" />
-						<string name="hotkey_name" value="U" />
+						<locstring name="help_text" value="1009" mod="84428889d71d41a48e2eff09c2425d54" />
+						<string name="hotkey_name" value="C" />
 						<icon name="icon_name" value="Icons_vehicles_vehicle_west_german_halftrack_sws" />
 						<bool name="minimap_team_only" value="False" />
 						<icon name="minimap_texture" value="Icons_minimap_unit_scout_car" />
 						<instance_reference name="modal_ability" value="" />
 						<bool name="reveal_for_decryption" value="True" />
-						<locstring name="screen_name" value="5139" mod="84428889d71d41a48e2eff09c2425d54" />
+						<locstring name="screen_name" value="1014" mod="84428889d71d41a48e2eff09c2425d54" />
 						<string name="selection_group" value="sWS" />
 						<group name="speaker_generic">
 							<string name="code_1" value="" />
@@ -39,7 +39,7 @@
 							<string name="code_3" value="" />
 						</group>
 						<bool name="tacmap_team_only" value="False" />
-						<int name="ui_priority" value="28" />
+						<int name="ui_priority" value="23" />
 						<bool name="use_random_entity_speaker" value="False" />
 						<icon name="portrait_name_winter" value="Icons_portraits_vehicle_west_german_halftrack_sws_w_portrait" />
 						<group name="speaker_specific_alt">
@@ -162,7 +162,7 @@
 			<list name="unit_list">
 				<group name="loadout_data">
 					<float name="num" value="1" />
-					<instance_reference name="type" value="ebps\races\west_german\vehicles\sws_halftracks\sws_halftrack_generic_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="type" value="ebps\races\west_german\vehicles\sws_halftracks\sws_halftrack_tier2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				</group>
 			</list>
 			<float name="squad_female_chance" value="0" />
@@ -173,33 +173,31 @@
 			<list name="requirement_table">
 				<template_reference name="required" value="requirements\required_all_in_list">
 					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="11106197" />
+					<locstring name="ui_name" value="0" />
 					<list name="requirements">
 						<template_reference name="requirement" value="requirements\required_not">
 							<enum name="reason" value="usage" />
-							<locstring name="ui_name" value="1175" mod="84428889d71d41a48e2eff09c2425d54" />
+							<locstring name="ui_name" value="0" />
 							<list name="requirement_table">
 								<template_reference name="required" value="requirements\required_all_in_list">
 									<enum name="reason" value="usage" />
 									<locstring name="ui_name" value="0" />
 									<list name="requirements">
-										<template_reference name="requirement" value="requirements\required_entity">
+										<template_reference name="requirement" value="requirements\required_structure">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											<enum name="entity_type" value="" />
+											<instance_reference name="structure_name" value="" />
+											<int name="required_structure_count" value="1" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="True" />
 										</template_reference>
-										<template_reference name="requirement" value="requirements\required_entity">
+										<template_reference name="requirement" value="requirements\required_structure">
 											<enum name="reason" value="usage" />
 											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											<enum name="entity_type" value="" />
-										</template_reference>
-										<template_reference name="requirement" value="requirements\required_entity">
-											<enum name="reason" value="usage" />
-											<locstring name="ui_name" value="0" />
-											<instance_reference name="entity_blueprint_name" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-											<enum name="entity_type" value="" />
+											<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											<int name="required_structure_count" value="1" />
+											<bool name="check_team" value="False" />
+											<bool name="require_construction_complete" value="True" />
 										</template_reference>
 									</list>
 								</template_reference>
@@ -209,6 +207,28 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<float name="max_cap" value="1" />
+						</template_reference>
+					</list>
+				</template_reference>
+				<template_reference name="required" value="requirements\required_not">
+					<enum name="reason" value="usage" />
+					<locstring name="ui_name" value="1045" mod="84428889d71d41a48e2eff09c2425d54" />
+					<list name="requirement_table">
+						<template_reference name="required" value="requirements\required_structure">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="False" />
+						</template_reference>
+						<template_reference name="required" value="requirements\required_structure">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<instance_reference name="structure_name" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+							<int name="required_structure_count" value="1" />
+							<bool name="check_team" value="False" />
+							<bool name="require_construction_complete" value="False" />
 						</template_reference>
 					</list>
 				</template_reference>
@@ -228,30 +248,8 @@
 				<template_reference name="action" value="action\upgrade_add">
 					<bool name="apply_to_entities_in_squad" value="False" />
 					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\west_german\items\nachtjager_sws_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073747078" />
-				</template_reference>
-				<template_reference name="action" value="action\upgrade_add">
-					<bool name="apply_to_entities_in_squad" value="False" />
-					<bool name="trigger_publish_event" value="False" />
-					<instance_reference name="upgrade" value="upgrade\west_german\items\pioneer_stg44_sws_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					<uniqueid name="id" value="1073748230" />
-				</template_reference>
-				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="0" />
-					<bool name="permanent" value="False" />
-					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
-							<enum name="application_type" value="apply_to_squad" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\capture_enable_squad_modifier" />
-						</template_reference>
-					</list>
-					<uniqueid name="id" value="1073795670" />
+					<instance_reference name="upgrade" value="upgrade\west_german\items\volk_fire_grenade" />
+					<uniqueid name="id" value="1073747080" />
 				</template_reference>
 			</list>
 			<list name="squad_entity_actions">
@@ -365,9 +363,7 @@
 		<template_reference name="squadexts" value="sbpextensions\squad_ability_ext">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\global\cold\blizzard_effect" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_okw_tier1_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_okw_tier2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="ability" value="abilities\west_german\modal_ability\generic_construct_okw_tier3_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\west_german\modal_ability\construct_okw_tier2_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
@@ -394,11 +390,6 @@
 				<enum name="squad_type" value="sws_truck" />
 			</list>
 		</template_reference>
-		<template_reference name="squadexts" value="sbpextensions\squad_capture_strategic_point_ext">
-			<float name="capture_distance" value="4" />
-			<float name="capture_rate_multiplier" value="0" />
-			<float name="revert_rate_multiplier" value="4" />
-		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="1073741880" />
+	<uniqueid name="pbgid" value="1073741882" />
 </instance>
