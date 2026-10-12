@@ -265,6 +265,27 @@
 					<bool name="kill" value="False" />
 					<uniqueid name="id" value="1073803854" />
 				</template_reference>
+				<template_reference name="action" value="action\player_target_action">
+					<bool name="allies" value="False" />
+					<bool name="enemies" value="False" />
+					<bool name="neutral" value="False" />
+					<bool name="self" value="True" />
+					<list name="subactions">
+						<template_reference name="action" value="action\upgrade_add">
+							<bool name="apply_to_entities_in_squad" value="False" />
+							<bool name="trigger_publish_event" value="False" />
+							<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_3_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
+							<uniqueid name="id" value="1073803894" />
+						</template_reference>
+					</list>
+					<uniqueid name="id" value="1073803893" />
+				</template_reference>
+				<template_reference name="action" value="action\upgrade_add">
+					<bool name="apply_to_entities_in_squad" value="False" />
+					<bool name="trigger_publish_event" value="False" />
+					<instance_reference name="upgrade" value="upgrade\west_german\passive\tier_3_constructed" mod="84428889d71d41a48e2eff09c2425d54" />
+					<uniqueid name="id" value="1073803895" />
+				</template_reference>
 			</list>
 			<list name="materials">
 				<instance_reference name="material" value="material\ice" />
