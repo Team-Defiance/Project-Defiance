@@ -241,11 +241,7 @@
 		<enum name="squad_caster" value="squad" />
 		<enum name="target" value="tp_position_in_territory" />
 		<group name="target_special_validation">
-			<template_reference name="target_special_validation" value="type_ability_target_type\not">
-				<group name="target_info">
-					<template_reference name="target_info" value="type_ability_target_type\is_command_sector">
-					</template_reference>
-				</group>
+			<template_reference name="target_special_validation" value="type_ability_target_type\all">
 			</template_reference>
 		</group>
 		<float name="toggled_recharge_time_off" value="0" />

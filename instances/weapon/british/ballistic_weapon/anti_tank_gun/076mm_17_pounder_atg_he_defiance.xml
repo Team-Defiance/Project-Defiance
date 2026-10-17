@@ -315,7 +315,7 @@
 									<list name="subactions">
 										<template_reference name="action" value="action\interval_action">
 											<float name="interval_second" value="0.125" />
-											<uniqueid name="id" value="1073803896" />
+											<uniqueid name="id" value="1073803952" />
 											<list name="interval_subactions">
 												<group name="interval_subaction_group">
 													<float name="trigger_time_second" value="0.125" />
@@ -325,17 +325,17 @@
 															<float name="duration" value="1" />
 															<bool name="fire_and_forget" value="True" />
 															<float name="radius" value="2.5" />
-															<uniqueid name="id" value="1073803897" />
+															<uniqueid name="id" value="1073803953" />
 														</template_reference>
 													</list>
 												</group>
 											</list>
 										</template_reference>
 									</list>
-									<uniqueid name="id" value="1073803898" />
+									<uniqueid name="id" value="1073803954" />
 								</template_reference>
 							</list>
-							<uniqueid name="id" value="1073803899" />
+							<uniqueid name="id" value="1073803955" />
 							<bool name="fire_and_forget_non_global" value="False" />
 							<template_reference name="ui_help_text" value="tables\help_text_phrase">
 								<int name="phrase_order" value="0" />
@@ -343,7 +343,7 @@
 							</template_reference>
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073803900" />
+					<uniqueid name="id" value="1073803956" />
 					<bool name="fire_and_forget_non_global" value="False" />
 					<template_reference name="ui_help_text" value="tables\help_text_phrase">
 						<int name="phrase_order" value="0" />
@@ -376,10 +376,10 @@
 							<bool name="retrigger" value="False" />
 							<string name="state_machine_name" value="artillery_state" />
 							<string name="undo_action_state_name" value="ready" />
-							<uniqueid name="id" value="1073803901" />
+							<uniqueid name="id" value="1073803957" />
 						</template_reference>
 					</list>
-					<uniqueid name="id" value="1073803902" />
+					<uniqueid name="id" value="1073803958" />
 				</template_reference>
 			</list>
 		</group>
