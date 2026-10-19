@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.5" />
-			<float name="far" value="0.4125" />
-			<float name="mid" value="0.45" />
+			<float name="near" value="0.54" />
+			<float name="far" value="0.4455" />
+			<float name="mid" value="0.486" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -13,8 +13,8 @@
 			<float name="post_firing_aim_time" value="1" />
 			<float name="post_firing_cooldown_interval" value="0" />
 			<group name="ready_aim_time">
-				<float name="max" value="1" />
-				<float name="min" value="0.75" />
+				<float name="max" value="0.875" />
+				<float name="min" value="0.625" />
 			</group>
 			<group name="aim_time_multiplier">
 				<float name="near" value="1.5" />
@@ -153,8 +153,8 @@
 		</group>
 		<group name="cooldown">
 			<group name="duration">
-				<float name="max" value="1.875" />
-				<float name="min" value="1.625" />
+				<float name="max" value="1.1" />
+				<float name="min" value="0.9" />
 			</group>
 			<group name="duration_multiplier">
 				<float name="near" value="0.8" />
@@ -203,7 +203,7 @@
 				<float name="accuracy_multiplier" value="1.1" />
 				<float name="damage_multiplier" value="1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
