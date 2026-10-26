@@ -49,7 +49,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="2" />
+									<float name="value" value="1.5" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\accuracy_weapon_modifier">
@@ -144,7 +144,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="5146" mod="84428889d71d41a48e2eff09c2425d54" />
+			<locstring name="extra_text" value="5145" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="2989" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="W" />
 			<icon name="icon_name" value="Icons_abilities_ability_german_stun_critical" />

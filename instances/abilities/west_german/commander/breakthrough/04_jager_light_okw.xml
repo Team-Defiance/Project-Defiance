@@ -9,7 +9,7 @@
 			</list>
 			<list name="start_target_actions">
 				<template_reference name="action" value="action\reinforcements_action">
-					<bool name="allow_building_spawn" value="False" />
+					<bool name="allow_building_spawn" value="True" />
 					<float name="minimum_pop_used" value="8" />
 					<float name="points_total" value="0" />
 					<bool name="spawn_random_squads" value="False" />
@@ -154,7 +154,7 @@
 			</template_reference>
 		</list>
 		<enum name="ability_super" value="tp_none" />
-		<int name="ui_position" value="20" />
+		<int name="ui_position" value="40" />
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="" />

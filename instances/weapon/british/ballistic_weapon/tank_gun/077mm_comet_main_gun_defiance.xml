@@ -43,22 +43,22 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="3" />
+				<float name="radius" value="3.25" />
 			</group>
 			<group name="damage">
-				<float name="far" value="0.08" />
-				<float name="near" value="0.55" />
-				<float name="mid" value="0.24" />
+				<float name="far" value="0.1" />
+				<float name="near" value="0.5" />
+				<float name="mid" value="0.25" />
 			</group>
 			<group name="damage_friendly">
-				<float name="far" value="0.04" />
-				<float name="near" value="0.275" />
-				<float name="mid" value="0.12" />
+				<float name="far" value="0.05" />
+				<float name="near" value="0.25" />
+				<float name="mid" value="0.125" />
 			</group>
 			<group name="distance">
 				<float name="far" value="2.5" />
-				<float name="near" value="1" />
-				<float name="mid" value="1.5" />
+				<float name="near" value="1.25" />
+				<float name="mid" value="1.75" />
 			</group>
 			<bool name="has_friendly_fire" value="True" />
 			<bool name="can_harm_shooter" value="False" />
@@ -447,7 +447,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="5.9" />
+			<float name="distance_scatter_max" value="5.7" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0" />
 			<float name="distance_scatter_ratio" value="0.2" />
