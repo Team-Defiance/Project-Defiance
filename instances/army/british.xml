@@ -252,26 +252,6 @@
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\items\weapon_rack_unlock_mp" />
-					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\british\buildings\defensive_structures\brit_weapon_rack_bren_lmg_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\commando_squad\commando_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\sapper_squad\sapper_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\items\weapon_rack_unlock_mp" />
-					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\british\buildings\defensive_structures\brit_weapon_rack_piat_launcher_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\sapper_squad\sapper_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\commando_squad\commando_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tech_structure_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="ebps\races\british\buildings\base_building\british_building_1_mp" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -286,56 +266,42 @@
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tommy_mills_bomb_mp" />
-					<instance_reference name="unlocked_ability" value="abilities\british\modal_ability\grenades\tommy_mills_bomb_mp" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tommy_mills_bomb_mp" />
-					<instance_reference name="unlocked_ability" value="abilities\british\modal_ability\grenades\tommy_gammon_bomb_heavy_mp" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tommy_increased_squad_size_mp" />
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_0\explosive_ordnance_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\sapper_squad\sapper_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\items\tommy_pyrotechnics_supplies" />
-					<instance_reference name="unlocked_ability" value="abilities\british\modal_ability\artillery\artillery_barrage_ability\qf_25lb_coordinated_fire_order_officer_mp" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\items\tommy_medical_supplies" />
-					<instance_reference name="unlocked_ability" value="abilities\british\timed_ability\brit_medic_tommy_timed_area_heal_mp" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\soldiers\tommy_squad\tommy_squad_mp" />
-					</list>
-				</group>
-				<group name="unlocking_upgrade_info">
-					<instance_reference name="upgrade_pbg" value="upgrade\british\items\firefly_tulip_rocket" />
-					<instance_reference name="unlocked_ability" value="abilities\british\modal_ability\artillery\firefly_tulip_rocket_barrage_mp" />
-					<instance_reference name="unlocked_building" value="" />
-					<list name="upgraded_squads">
-						<instance_reference name="upgraded_squad" value="sbps\races\british\vehicles\sherman_firefly_squad\sherman_firefly_squad_mp" />
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_0\royal_medic_corps_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_0\weapon_racks_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_1\platoon_aec_research" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_1\bolster_squads_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info">
+					<instance_reference name="upgrade_pbg" value="upgrade\british\research\tier_2\heavy_armour_authorisation_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
 					<instance_reference name="unlocked_building" value="" />
 					<list name="upgraded_squads">
