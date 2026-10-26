@@ -24,7 +24,7 @@
 				<string name="tactic_filter_abort" value="TacticFilter_ShouldCancelCapTeamWeapons" />
 			</group>
 			<group name="cover_tactic">
-				<float name="priority" value="200" />
+				<float name="priority" value="800" />
 				<string name="tactic_filter_start" value="" />
 				<float name="tactic_max_range_override" value="18" />
 				<enum_table name="class">
