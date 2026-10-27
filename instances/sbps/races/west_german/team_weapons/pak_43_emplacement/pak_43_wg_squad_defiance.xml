@@ -751,12 +751,12 @@
 			</group>
 			<group name="ui_info">
 				<locstring name="extra_text" value="0" />
-				<locstring name="help_text" value="0" />
-				<string name="hotkey_name" value="R" />
+				<locstring name="help_text" value="5226" mod="84428889d71d41a48e2eff09c2425d54" />
+				<string name="hotkey_name" value="reinforce" />
 				<icon name="icon_name" value="Icons_odds_reinforce" />
 				<string name="overlay_name" value="" />
 				<bool name="reveal_for_decryption" value="False" />
-				<locstring name="screen_name" value="0" />
+				<locstring name="screen_name" value="5215" mod="84428889d71d41a48e2eff09c2425d54" />
 			</group>
 			<list name="paradrop_requirements">
 				<template_reference name="required" value="requirements\required_all_in_list">
