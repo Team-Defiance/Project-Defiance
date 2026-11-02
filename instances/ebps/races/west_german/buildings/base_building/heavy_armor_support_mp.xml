@@ -728,6 +728,14 @@
 							<float name="min_completed" value="1" />
 							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t1_reinforcements_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</template_reference>
+						<template_reference name="requirement" value="requirements\required_player_upgrade">
+							<enum name="reason" value="usage" />
+							<locstring name="ui_name" value="0" />
+							<bool name="is_present" value="True" />
+							<float name="max_completed" value="100" />
+							<float name="min_completed" value="1" />
+							<instance_reference name="upgrade_name" value="upgrade\west_german\research\t1_hospital_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+						</template_reference>
 						<template_reference name="requirement" value="requirements\required_sector_type">
 							<enum name="reason" value="usage" />
 							<enum name="sector_type" value="sector_type_command" />
