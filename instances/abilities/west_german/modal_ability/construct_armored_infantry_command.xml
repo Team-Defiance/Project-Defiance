@@ -367,16 +367,6 @@
 				<bool name="is_secured_by_checkpoint" value="False" />
 				<bool name="not_in_transition" value="True" />
 			</template_reference>
-			<template_reference name="required" value="requirements\required_not">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="11071374" />
-				<list name="requirement_table">
-					<template_reference name="required" value="requirements\required_sector_type">
-						<enum name="reason" value="usage" />
-						<enum name="sector_type" value="sector_type_victory" />
-					</template_reference>
-				</list>
-			</template_reference>
 		</list>
 		<template_reference name="targeted_ability_option" value="options\none">
 		</template_reference>

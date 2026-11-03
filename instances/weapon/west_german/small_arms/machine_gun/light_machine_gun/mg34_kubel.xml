@@ -23,14 +23,14 @@
 			</group>
 		</group>
 		<group name="anim_table">
-			<string name="cooldown_time_name" value="LMG_CoolDownTime" />
-			<string name="state_name" value="LMG_State" />
-			<string name="track_horizontal" value="LMG_Angle" />
+			<string name="cooldown_time_name" value="pintle_mg34_cooldowntime" />
+			<string name="state_name" value="pintle_mg34_state" />
+			<string name="track_horizontal" value="pintle_mg34_horiz" />
 			<string name="track_horizontal_speed" value="" />
-			<string name="track_vertical" value="LMG_Tilt" />
+			<string name="track_vertical" value="pintle_mg34_vertical" />
 			<string name="track_vertical_speed" value="" />
 			<string name="variety_name" value="" />
-			<string name="visibility_name" value="LightMG34_Visible" />
+			<string name="visibility_name" value="pintle_mg34_visibility" />
 			<string name="target_range_name" value="" />
 		</group>
 		<group name="area_effect">
@@ -115,8 +115,7 @@
 			<bool name="can_abort_winddown" value="False" />
 			<enum name="reaction_type" value="normal" />
 			<bool name="ignore_relations" value="False" />
-			<template_reference name="wants_prone_firing_option" value="options\weapon\wants_prone_firing">
-				<float name="time_to_stay_prone_after_combat" value="3" />
+			<template_reference name="wants_prone_firing_option" value="options\none">
 			</template_reference>
 			<enum name="attack_ground_type" value="not_allowed" />
 			<bool name="non_moving_setup_requires_facing" value="False" />
