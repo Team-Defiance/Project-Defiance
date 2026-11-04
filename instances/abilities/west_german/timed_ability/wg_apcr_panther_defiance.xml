@@ -8,7 +8,7 @@
 					<uniqueid name="id" value="1073801382" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="6.7" />
+					<float name="duration" value="6.8" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
@@ -33,7 +33,7 @@
 					<uniqueid name="id" value="1073801384" />
 				</template_reference>
 				<template_reference name="action" value="action\apply_modifiers_action">
-					<float name="duration" value="6.7" />
+					<float name="duration" value="6.8" />
 					<bool name="permanent" value="False" />
 					<list name="modifiers">
 						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">

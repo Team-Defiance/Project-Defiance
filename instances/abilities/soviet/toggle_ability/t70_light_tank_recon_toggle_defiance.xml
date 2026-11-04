@@ -17,6 +17,10 @@
 					<uniqueid name="id" value="1073752759" />
 					<bool name="can_prevent_refund" value="True" />
 				</template_reference>
+				<template_reference name="action" value="action\force_reload_action">
+					<int name="hardpoint_index" value="1" />
+					<uniqueid name="id" value="1073803441" />
+				</template_reference>
 			</list>
 			<list name="end_target_actions">
 			</list>

@@ -29,15 +29,6 @@
 					<float name="duration" value="0" />
 					<bool name="permanent" value="True" />
 					<list name="modifiers">
-						<template_reference name="modifier" value="modifiers\enable_weapon_modifier">
-							<enum name="application_type" value="apply_to_weapon" />
-							<bool name="exclusive" value="False" />
-							<string name="modifier_id" value="" />
-							<string name="target_type_name" value="hardpoint_04" />
-							<enum name="usage_type" value="enable" />
-							<float name="value" value="-1" />
-							<instance_reference name="tooltip" value="modifier_tooltip\enable_weapon_modifier" />
-						</template_reference>
 						<template_reference name="modifier" value="modifiers\capture_enable_squad_modifier">
 							<enum name="application_type" value="apply_to_squad" />
 							<bool name="exclusive" value="False" />
@@ -881,7 +872,7 @@
 			<instance_reference name="turn_plan" value="turn_plan\tank_i" />
 			<float name="acceleration" value="2.1" />
 			<float name="rotation_rate" value="32" />
-			<float name="speed_max" value="6.1" />
+			<float name="speed_max" value="6.2" />
 			<float name="on_ice_accel_decel_multiplier" value="0.8" />
 			<float name="on_land_overturn_scale" value="0.3" />
 			<float name="on_ice_overturn_scale" value="2" />

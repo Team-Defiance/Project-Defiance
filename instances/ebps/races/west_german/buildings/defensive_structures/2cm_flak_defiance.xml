@@ -471,7 +471,7 @@
 								<float name="z" value="4" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\west_german\small_arms\tank_gun\flak_emplacement_20mm" />
+							<instance_reference name="weapon" value="weapon\west_german\ballistic_weapon\tank_gun\020mm_flak38_emplacement_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -560,10 +560,10 @@
 				<group name="race_data">
 					<instance_reference name="ext_key" value="" />
 					<group name="info">
-						<string name="sync_target_name" value="flak_gun_target&#xD;&#xA;" />
+						<string name="sync_target_name" value="flak_gun_target" />
 						<list name="role_list">
 							<group name="role">
-								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
+								<string name="animator_bp" value="armies\west_german\soldiers\assault_pioneer\assault_pioneer" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="gunner" />
@@ -573,7 +573,7 @@
 								<string name="animator_bp_female" value="" />
 							</group>
 							<group name="role">
-								<string name="animator_bp" value="armies\west_german\soldiers\volksgrenadier\volksgrenadier" />
+								<string name="animator_bp" value="armies\west_german\soldiers\assault_pioneer\assault_pioneer" />
 								<string name="death_event_name" value="Death_crew" />
 								<string name="desync_action_name" value="Detach_Skeleton" />
 								<string name="role_name" value="loader" />

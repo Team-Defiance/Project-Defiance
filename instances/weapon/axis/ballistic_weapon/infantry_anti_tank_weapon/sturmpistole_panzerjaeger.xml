@@ -1,9 +1,9 @@
 <instance description="" template="weapon">
 	<group name="weapon_bag">
 		<group name="accuracy">
-			<float name="near" value="0.07" />
-			<float name="far" value="0.0125" />
-			<float name="mid" value="0.04125" />
+			<float name="near" value="0.065" />
+			<float name="far" value="0.02" />
+			<float name="mid" value="0.0425" />
 		</group>
 		<group name="aim">
 			<group name="fire_aim_time">
@@ -202,7 +202,7 @@
 				<float name="accuracy_multiplier" value="1" />
 				<float name="damage_multiplier" value="1.1" />
 				<float name="penetration_multiplier" value="1" />
-				<float name="suppression_multiplier" value="1.25" />
+				<float name="suppression_multiplier" value="1" />
 			</group>
 			<group name="tp_open">
 				<float name="accuracy_multiplier" value="1.25" />
@@ -284,7 +284,7 @@
 			</template_reference>
 		</group>
 		<group name="deflection">
-			<float name="deflection_damage_multiplier" value="0.2" />
+			<float name="deflection_damage_multiplier" value="0.1" />
 			<bool name="has_deflection_damage" value="True" />
 			<list name="on_deflected_actions">
 			</list>
@@ -296,12 +296,12 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="luger_target" />
+		<string name="fx_action_target_name" value="" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="shell_medium_heat" />
-		<string name="fx_tracer_name" value="pistol_tracer" />
+		<string name="fx_tracer_name" value="" />
 		<float name="fx_tracer_speed" value="0" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
@@ -369,7 +369,7 @@
 			<float name="delay_bracket_change_chance" value="0" />
 			<float name="distance_bracket_count_air" value="0" />
 			<float name="distance_bracket_count_ground" value="1" />
-			<float name="distance_scatter_max" value="10" />
+			<float name="distance_scatter_max" value="8" />
 			<float name="distance_scatter_obj_hit_min" value="10" />
 			<float name="distance_scatter_offset" value="0.1" />
 			<float name="distance_scatter_ratio" value="0.2" />

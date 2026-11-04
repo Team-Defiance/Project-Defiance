@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="9" />
+				<float name="radius" value="8.75" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.0875" />
@@ -296,7 +296,7 @@
 					<list name="action_table">
 						<template_reference name="action" value="action\trigger_critical_action">
 							<float name="remove_at_health" value="1" />
-							<instance_reference name="critical" value="critical\vehicle_re_mine_debuff" />
+							<instance_reference name="critical" value="critical\vehicle_artillery_slow_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<uniqueid name="id" value="1073796919" />
 						</template_reference>
 					</list>

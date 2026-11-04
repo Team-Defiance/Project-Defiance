@@ -27,8 +27,8 @@
 							<bool name="exclusive" value="False" />
 							<string name="modifier_id" value="" />
 							<string name="target_type_name" value="hardpoint_01" />
-							<enum name="usage_type" value="addition" />
-							<float name="value" value="10" />
+							<enum name="usage_type" value="multiplication" />
+							<float name="value" value="3.2" />
 							<instance_reference name="tooltip" value="modifier_tooltip\weapon_penetration_modifier" />
 						</template_reference>
 						<template_reference name="modifier" value="modifiers\reload_weapon_modifier">
@@ -178,28 +178,6 @@
 						<float name="max_owned" value="10" />
 						<float name="min_owned" value="1" />
 						<instance_reference name="slot_item" value="slot_item\soviet\self_repair_dummy_slot_item" />
-					</template_reference>
-				</list>
-			</template_reference>
-			<template_reference name="required" value="requirements\required_any_in_list">
-				<enum name="reason" value="usage" />
-				<locstring name="ui_name" value="0" />
-				<list name="requirements">
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\aef\research\tier_2\mobile_combat_group_authorization_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-					</template_reference>
-					<template_reference name="requirement" value="requirements\required_player_upgrade">
-						<enum name="reason" value="usage" />
-						<locstring name="ui_name" value="0" />
-						<bool name="is_present" value="True" />
-						<float name="max_completed" value="100" />
-						<float name="min_completed" value="1" />
-						<instance_reference name="upgrade_name" value="upgrade\aef\research\aef_tech_up\tier_3_battalion_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					</template_reference>
 				</list>
 			</template_reference>

@@ -104,14 +104,14 @@
 													<float name="value" value="0.8" />
 													<instance_reference name="tooltip" value="modifier_tooltip\reload_weapon_modifier" />
 												</template_reference>
-												<template_reference name="modifier" value="modifiers\received_suppression_squad_modifier">
+												<template_reference name="modifier" value="modifiers\received_experience_squad_modifier">
 													<enum name="application_type" value="apply_to_squad" />
 													<bool name="exclusive" value="False" />
 													<string name="modifier_id" value="" />
 													<string name="target_type_name" value="" />
 													<enum name="usage_type" value="multiplication" />
-													<float name="value" value="1.15" />
-													<instance_reference name="tooltip" value="modifier_tooltip\received_suppression_squad_modifier" />
+													<float name="value" value="1.1" />
+													<instance_reference name="tooltip" value="modifier_tooltip\received_experience_squad_modifier" />
 												</template_reference>
 											</list>
 											<uniqueid name="id" value="1073794377" />
@@ -245,7 +245,7 @@
 			<string name="cursor_nonmodal_good" value="" />
 		</group>
 		<group name="ui_info">
-			<locstring name="extra_text" value="11157814" />
+			<locstring name="extra_text" value="5073" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="3449" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
 			<icon name="icon_name" value="Icons_abilities_ability_soviet_attack_buff" />

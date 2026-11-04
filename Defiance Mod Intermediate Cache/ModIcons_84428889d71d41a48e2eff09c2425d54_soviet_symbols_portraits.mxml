@@ -54,6 +54,14 @@
 		public static var raketen_winter_female:Class;
 		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/portraits/sniper_small.png')]
 		public static var sniper_small:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/portraits/us_uk_atg_summer.png')]
+		public static var us_uk_atg_summer:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/portraits/us_uk_atg_summer_female.png')]
+		public static var us_uk_atg_summer_female:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/portraits/us_uk_atg_winter.png')]
+		public static var us_uk_atg_winter:Class;
+		[Embed(source='C:/Mod/Project-Defiance/data/ui/soviet/symbols/portraits/us_uk_atg_winter_female.png')]
+		public static var us_uk_atg_winter_female:Class;
 		]]>
 	</fx:Script>
 </display:MovieClip>

@@ -190,6 +190,7 @@
 			<list name="upgrades">
 				<instance_reference name="upgrade" value="upgrade\german\items\pioneer_minesweeper_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="upgrade" value="upgrade\german\items\pioneer_flamethrower_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="upgrade" value="upgrade\german\items\pioneer_breakthrough_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 		</template_reference>
 		<template_reference name="squadexts" value="sbpextensions\squad_action_apply_ext">
@@ -530,6 +531,24 @@
 								<float name="value" value="0.25" />
 								<instance_reference name="tooltip" value="modifier_tooltip\accuracy_weapon_modifier" />
 							</template_reference>
+							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+								<enum name="application_type" value="apply_to_ability" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pioniere_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.65" />
+								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+							</template_reference>
+							<template_reference name="modifier" value="modifiers\ability_max_range_modifier">
+								<enum name="application_type" value="apply_to_ability" />
+								<bool name="exclusive" value="False" />
+								<string name="modifier_id" value="" />
+								<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pioniere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+								<enum name="usage_type" value="multiplication" />
+								<float name="value" value="0.65" />
+								<instance_reference name="tooltip" value="modifier_tooltip\ability_max_range_modifier" />
+							</template_reference>
 						</list>
 						<uniqueid name="id" value="1073741829" />
 					</template_reference>
@@ -838,7 +857,7 @@
 												<enum name="usage_type" value="multiplication" />
 												<float name="value" value="0.5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
-												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\m43_smoke_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pioniere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
 												<enum name="application_type" value="apply_to_ability" />
@@ -857,6 +876,15 @@
 												<float name="value" value="0.5" />
 												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
 												<instance_reference name="target_type_name" value="abilities\german\timed_ability\pioneer_sprint_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+											</template_reference>
+											<template_reference name="modifier" value="modifiers\ability_recharge_time_modifier">
+												<enum name="application_type" value="apply_to_ability" />
+												<bool name="exclusive" value="False" />
+												<string name="modifier_id" value="" />
+												<enum name="usage_type" value="multiplication" />
+												<float name="value" value="0.5" />
+												<instance_reference name="tooltip" value="modifier_tooltip\ability_recharge_time_modifier" />
+												<instance_reference name="target_type_name" value="abilities\german\modal_ability\grenades\pioniere_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
 											</template_reference>
 										</list>
 										<uniqueid name="id" value="1073742535" />
@@ -887,6 +915,7 @@
 				<instance_reference name="ability" value="abilities\german\modal_ability\flare_trap_capture_point_generic" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\passives_ui\pioniere_festung_ui_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\pioniere_stun_grenade_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="ability" value="abilities\german\modal_ability\grenades\pioniere_satchel" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<bool name="allow_targeted_abilities_whilst_moving" value="False" />
 		</template_reference>
