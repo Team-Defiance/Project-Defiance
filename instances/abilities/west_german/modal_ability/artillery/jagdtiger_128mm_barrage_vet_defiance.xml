@@ -38,7 +38,7 @@
 						<instance_reference name="weapon_02" value="" />
 						<instance_reference name="weapon_03" value="" />
 					</group>
-					<float name="num_salvo" value="5" />
+					<float name="num_salvo" value="1" />
 					<float name="use_hardpoint" value="2" />
 					<bool name="face_to_target" value="True" />
 					<uniqueid name="id" value="1073801824" />
@@ -68,7 +68,7 @@
 			<float name="command" value="0" />
 			<float name="fuel" value="0" />
 			<float name="manpower" value="0" />
-			<float name="munition" value="40" />
+			<float name="munition" value="35" />
 			<float name="popcap" value="0" />
 		</group>
 		<string name="cursor_ghost_blueprint" value="" />
@@ -91,9 +91,9 @@
 		<bool name="is_default_action" value="False" />
 		<bool name="move_back" value="False" />
 		<float name="move_back_distance" value="10" />
-		<float name="range" value="90" />
+		<float name="range" value="75" />
 		<bool name="range_ignore" value="False" />
-		<float name="recharge_time" value="75" />
+		<float name="recharge_time" value="60" />
 		<bool name="refundable" value="True" />
 		<bool name="require_no_shot_block" value="False" />
 		<enum name="shared_timer" value="free_fire" />
@@ -125,10 +125,10 @@
 			<locstring name="extra_text" value="4789" mod="84428889d71d41a48e2eff09c2425d54" />
 			<locstring name="help_text" value="4794" mod="84428889d71d41a48e2eff09c2425d54" />
 			<string name="hotkey_name" value="B" />
-			<icon name="icon_name" value="Icons_abilities_ability_west_german_128mm_supporting_fire" />
+			<icon name="icon_name" value="Icons_abilities_ability_aef_high_explosive_rounds_sherman" />
 			<string name="overlay_name" value="" />
 			<bool name="reveal_for_decryption" value="False" />
-			<locstring name="screen_name" value="11052310" />
+			<locstring name="screen_name" value="5245" mod="84428889d71d41a48e2eff09c2425d54" />
 			<icon name="icon_alternate_name" value="" />
 			<locstring name="brief_text" value="0" />
 			<locstring name="help_text_alternate" value="0" />
@@ -184,7 +184,7 @@
 				<bool name="include_queued" value="False" />
 			</template_reference>
 			<template_reference name="required" value="requirements\required_squad_veterancy">
-				<enum name="reason" value="usage_and_display" />
+				<enum name="reason" value="usage" />
 				<locstring name="ui_name" value="11145763" />
 				<float name="veterancy_rank" value="1" />
 			</template_reference>
@@ -194,7 +194,7 @@
 		<bool name="ui_mini_map_capture" value="True" />
 		<bool name="facing_ignore_during_active" value="False" />
 		<instance_reference name="ui_range" value="ui_reticule\ability_range_default" />
-		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_zis_barrage" />
+		<instance_reference name="ui_reticule" value="ui_reticule\ability_target_grenade_negative" />
 		<float name="ui_reticule_radius_min" value="4.5" />
 		<float name="ui_reticule_radius_max" value="8.4" />
 		<enum name="pending_ability_out_of_range_behaviour" value="chase" />
