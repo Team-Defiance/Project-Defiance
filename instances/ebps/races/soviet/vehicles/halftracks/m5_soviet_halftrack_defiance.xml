@@ -60,7 +60,7 @@
 							<enum name="reason" value="usage" />
 							<locstring name="ui_name" value="0" />
 							<bool name="is_present" value="True" />
-							<instance_reference name="upgrade_name" value="upgrade\soviet\items\m5_halftrack_72k_aa_gun_package_mp" />
+							<instance_reference name="upgrade_name" value="upgrade\soviet\items\soviet_m5_m17_meat_chopper_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 							<bool name="include_queued" value="False" />
 						</template_reference>
 					</list>
@@ -75,7 +75,7 @@
 									<string name="modifier_id" value="" />
 									<string name="target_type_name" value="hardpoint_01" />
 									<enum name="usage_type" value="multiplication" />
-									<float name="value" value="0.1" />
+									<float name="value" value="0.25" />
 									<instance_reference name="tooltip" value="modifier_tooltip\weapon_suppression_modifier" />
 								</template_reference>
 								<template_reference name="modifier" value="modifiers\weapon_scatter">
@@ -158,7 +158,7 @@
 			</list>
 			<float name="armor" value="16" />
 			<float name="rear_armor" value="10" />
-			<float name="target_size" value="20" />
+			<float name="target_size" value="18" />
 			<bool name="dies_from_broken_ice" value="True" />
 			<list name="criticals">
 				<group name="critical_group">
@@ -246,7 +246,7 @@
 			</group>
 			<bool name="extended_sight" value="False" />
 			<float name="extended_sight_radius" value="70" />
-			<float name="reveal_area_on_death_time" value="6" />
+			<float name="reveal_area_on_death_time" value="1" />
 			<group name="sight_package">
 				<float name="inner_height" value="2.5" />
 				<float name="inner_radius" value="1" />
@@ -393,7 +393,7 @@
 								<float name="z" value="1.41" />
 							</group>
 							<enum name="type" value="default" />
-							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\heavy_machine_gun\m5_halftrack_m2hb_hmg_mp" />
+							<instance_reference name="weapon" value="weapon\soviet\small_arms\machine_gun\heavy_machine_gun\m2hb_50cal_m5_halftrack_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 						</group>
 					</list>
 					<bool name="receives_attack_commands" value="False" />
@@ -790,14 +790,6 @@
 					<bool name="is_present" value="False" />
 					<instance_reference name="upgrade_name" value="upgrade\soviet\items\soviet_m5_m17_meat_chopper_package_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<bool name="include_queued" value="False" />
-				</template_reference>
-				<template_reference name="required" value="requirements\required_structure">
-					<enum name="reason" value="usage" />
-					<locstring name="ui_name" value="0" />
-					<instance_reference name="structure_name" value="ebps\races\soviet\buildings\base_building\motorpool_mp" mod="84428889d71d41a48e2eff09c2425d54" />
-					<int name="required_structure_count" value="1" />
-					<bool name="check_team" value="False" />
-					<bool name="require_construction_complete" value="True" />
 				</template_reference>
 			</list>
 			<bool name="spawn_to_hold_try_first" value="False" />

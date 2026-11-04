@@ -155,9 +155,16 @@
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\05_wg_lefh_emplacement" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\06_zeroing_artillery_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\west_german\commander\fortifications\fortifications_selection" mod="84428889d71d41a48e2eff09c2425d54" />
-			<instance_reference name="ability" value="abilities\west_german\commander\jagdtiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\06_jagdtiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\global\pagination\page_1_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 			<instance_reference name="ability" value="abilities\global\pagination\page_2_selection" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\01_volks_breakthrough" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\02_kubelwagen" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\03_opel" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\04_heat_leig" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\05_breaktrhough_arty" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\06_jagdtiger_dispatch" mod="84428889d71d41a48e2eff09c2425d54" />
+			<instance_reference name="ability" value="abilities\west_german\commander\breakthrough\breakthroug_selection" mod="84428889d71d41a48e2eff09c2425d54" />
 		</list>
 		<group name="resource_max_cap">
 			<template_reference name="resource" value="tables\resource_table">
@@ -248,30 +255,30 @@
 		</list>
 		<group name="ai_production_info">
 			<list name="base_building_list">
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
-				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\heavy_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="base_building" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 			</list>
 			<list name="unlocking_upgrade_list">
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\t1_hospital_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier1_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\heavy_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\t2_engineer_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier2_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\light_armor_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
 				<group name="unlocking_upgrade_info">
 					<instance_reference name="upgrade_pbg" value="upgrade\west_german\research\t3_tank_unlock_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
 					<instance_reference name="unlocked_ability" value="" />
-					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\okw_tier3_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+					<instance_reference name="unlocked_building" value="ebps\races\west_german\buildings\base_building\infantry_support_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 					<list name="upgraded_squads">
 					</list>
 				</group>
@@ -327,7 +334,7 @@
 		<list name="starting_buildings">
 			<group name="starting_building">
 				<string name="key" value="default" />
-				<instance_reference name="building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 					<group name="starting_squad">
 						<instance_reference name="squad" value="sbps\races\west_german\soldiers\panzer_pioneer_squad\panzer_pioneer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
@@ -339,7 +346,7 @@
 			</group>
 			<group name="starting_building">
 				<string name="key" value="default_mp" />
-				<instance_reference name="building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_defiance" mod="84428889d71d41a48e2eff09c2425d54" />
+				<instance_reference name="building" value="ebps\races\west_german\buildings\base_building\hq\west_german_hq_mp" mod="84428889d71d41a48e2eff09c2425d54" />
 				<list name="starting_squads">
 					<group name="starting_squad">
 						<instance_reference name="squad" value="sbps\races\west_german\soldiers\panzer_pioneer_squad\panzer_pioneer_squad_defiance" mod="84428889d71d41a48e2eff09c2425d54" />

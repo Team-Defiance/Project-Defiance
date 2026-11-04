@@ -193,8 +193,8 @@
 			<instance_reference name="placement_valid" value="ui_rectangle\construction_placement_valid" />
 			<instance_reference name="placement_invalid" value="ui_rectangle\construction_placement_invalid" />
 			<instance_reference name="ui_range" value="ui_reticule\construction_range_hq" />
-			<float name="ui_range_radius" value="50" />
-			<instance_reference name="ui_setfacing" value="ui_setfacing\construction_base_building" />
+			<float name="ui_range_radius" value="30" />
+			<instance_reference name="ui_setfacing" value="" />
 			<bool name="query_weapon_for_range_ui" value="True" />
 			<bool name="squad_ignore_pathfinding" value="False" />
 			<bool name="must_not_be_in_command_territory" value="False" />
@@ -332,7 +332,7 @@
 			<bool name="animated_spawning" value="False" />
 			<float name="animated_spawning_seconds" value="0" />
 			<bool name="must_be_in_supply" value="True" />
-			<float name="reinforce_radius" value="20" />
+			<float name="reinforce_radius" value="30" />
 			<list name="spawn_items">
 				<group name="spawn_item">
 					<int name="ui_position" value="11" />
