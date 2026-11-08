@@ -106,7 +106,7 @@
 			<bool name="share_parent_anim" value="False" />
 			<bool name="single_handed_weapon" value="False" />
 			<bool name="substitute_weapon" value="False" />
-			<bool name="support_weapon" value="True" />
+			<bool name="support_weapon" value="False" />
 			<bool name="surprises_idle" value="False" />
 			<bool name="piercing" value="False" />
 			<float name="reaction_radius" value="0" />
@@ -296,12 +296,12 @@
 			</list>
 		</group>
 		<float name="flinch_radius" value="0" />
-		<string name="fx_action_target_name" value="lmg_mg34_target" />
+		<string name="fx_action_target_name" value="pintle_mg42_gunner_target" />
 		<bool name="fx_always_visible" value="False" />
 		<float name="fx_building_hit_delay" value="0" />
 		<float name="fx_delay_in_building" value="0" />
 		<string name="fx_munition_name" value="hmg" />
-		<string name="fx_tracer_name" value="fx_lmg_mg34_tracer" />
+		<string name="fx_tracer_name" value="pintle_mg34_tracer" />
 		<float name="fx_tracer_speed" value="75" />
 		<bool name="fx_use_building_panel_normal" value="True" />
 		<locstring name="help_text" value="0" />
