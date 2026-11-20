@@ -43,7 +43,7 @@
 				<float name="angle_left" value="0" />
 				<float name="angle_right" value="0" />
 				<enum name="area_type" value="circle" />
-				<float name="radius" value="6.75" />
+				<float name="radius" value="6.55" />
 			</group>
 			<group name="damage">
 				<float name="far" value="0.0875" />
@@ -397,8 +397,8 @@
 				<float name="mid" value="1" />
 			</group>
 			<group name="frequency">
-				<float name="max" value="4" />
-				<float name="min" value="4" />
+				<float name="max" value="5" />
+				<float name="min" value="5" />
 			</group>
 			<list name="on_reload_actions" comment="This is to remove a slot item for an animator_set_state that we only want to trigger on the first shot of the calliope ability salvos&#xD;&#xA;&#xD;&#xA;/C-Mart Feb 6 2015">
 				<template_reference name="action" value="action\slot_item_remove">
