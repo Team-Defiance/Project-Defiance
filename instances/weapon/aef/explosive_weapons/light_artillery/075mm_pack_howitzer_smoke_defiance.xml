@@ -381,8 +381,8 @@
 			<float name="tilt_scatter_chance" value="0" />
 		</group>
 		<group name="setup">
-			<float name="duration" value="1.8" />
-			<bool name="has_instant_setup" value="False" />
+			<float name="duration" value="0" />
+			<bool name="has_instant_setup" value="True" />
 			<bool name="can_interrupt_setup" value="False" />
 			<float name="attach_duration" value="0" />
 		</group>
