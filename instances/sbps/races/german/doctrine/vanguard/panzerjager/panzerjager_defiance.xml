@@ -239,7 +239,7 @@
 					</list>
 					<list name="action_table">
 						<template_reference name="action" value="action\delay">
-							<float name="delay" value="1.5" />
+							<float name="delay" value="2" />
 							<float name="delay_min" value="0" />
 							<bool name="progress_bar" value="False" />
 							<bool name="randomize" value="False" />
@@ -254,7 +254,7 @@
 											<string name="modifier_id" value="" />
 											<string name="target_type_name" value="hardpoint_01" />
 											<enum name="usage_type" value="addition" />
-											<float name="value" value="5" />
+											<float name="value" value="10" />
 											<instance_reference name="tooltip" value="modifier_tooltip\range_weapon_modifier" />
 										</template_reference>
 									</list>
