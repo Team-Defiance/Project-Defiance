@@ -418,10 +418,10 @@
 			<float name="fire_cone_angle" value="3" />
 			<group name="normal">
 				<float name="max_down" value="-90" />
-				<float name="max_left" value="-90" />
-				<float name="max_right" value="90" />
+				<float name="max_left" value="-35" />
+				<float name="max_right" value="35" />
 				<float name="max_up" value="45" />
-				<float name="speed_horizontal" value="120" />
+				<float name="speed_horizontal" value="25" />
 				<float name="speed_vertical" value="60" />
 			</group>
 			<float name="pivot_end_time" value="0" />
